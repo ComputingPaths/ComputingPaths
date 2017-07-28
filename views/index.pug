@@ -1,5 +1,14 @@
 html
   head
+    link(
+      rel='stylesheet' 
+      href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' 
+      integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' 
+      crossorigin='anonymous')
     title= title
   body
-    h1= message
+    nav(class='navbar navbar-toggleable-sm navbar-light')
+      div(class='collapse navbar-collapse' id='navbarSupportedContent')
+        ul(class='navbar-nav mr-auto')
+          li(class='nav-item active')
+            a(class='nav-link' href="#") Stories
