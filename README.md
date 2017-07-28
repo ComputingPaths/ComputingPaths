@@ -1,2 +1,2 @@
 # ComputingPaths
-Development version of computingpath.ucsd.edu
+Development version of computingpaths.ucsd.edu
