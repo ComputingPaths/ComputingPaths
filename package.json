@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Development version of computingpaths.ucsd.edu",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "private": true,
   "dependencies": {
     "express": "^4.15.3",
