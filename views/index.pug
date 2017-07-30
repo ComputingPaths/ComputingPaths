@@ -5,10 +5,11 @@ html
       href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'
       integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ'
       crossorigin='anonymous')
-    link(
-      rel='stylesheet'
-      href='/css/style.css'
-    )
+    block style
+      link(
+        rel='stylesheet'
+        href='/css/index.css'
+      )
     script(
       src='https://code.jquery.com/jquery-3.1.1.slim.min.js'
       integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n'
@@ -23,7 +24,7 @@ html
       crossorigin='anonymous')
     title Computing Paths
   body
-    nav(class='navbar navbar-toggleable-sm navbar-light bg-faded')
+    nav(class='navbar navbar-toggleable-sm')
       button(
         class="navbar-toggler navbar-toggler-right" 
         type="button" 
@@ -34,24 +35,19 @@ html
         aria-label="Toggle navigation")
           span(class='navbar-toggler-icon')
 
-      a(class='navbar-brand' href='/')
-        img(src='/img/logo.png' height='30')
+      a(class='navbar-brand ml-5' href='/')
+        img(src='/img/logo.png')
 
       div(class='collapse navbar-collapse' id='navbarSupportedContent')
-        ul(class='navbar-nav mr-auto')
-          li(class='nav-item')
-            a(class='nav-link' href="/") Stories
-          li(class='nav-item')
-            a(class='nav-link' href="/") Majors
-          li(class='nav-item')
-            a(class='nav-link' href="/") Connect
-          li(class='nav-item')
-            a(class='nav-link' href="/") Projects
-          li(class='nav-item')
-            a(class='nav-link' href="/") Resources
+        div(class='navbar-nav')
+          a(class='nav-item nav-link ml-5' href="/") Stories
+          a(class='nav-item nav-link ml-5' href="/") Majors
+          a(class='nav-item nav-link ml-5' href="/") Connect
+          a(class='nav-item nav-link ml-5' href="/") Projects
+          a(class='nav-item nav-link ml-5' href="/") Resources
       
-      a(class='navbar-brand' href='http://www.ucsd.edu')
-        img(src='/img/logo_ucsd.png' height='30')
+      a(class='navbar-brand mr-5' href='http://www.ucsd.edu')
+        img(src='/img/logo_ucsd.png')
 
 
     block main

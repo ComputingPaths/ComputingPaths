@@ -1,0 +1,19 @@
+.intro {
+  height: 600px;
+  background: #F9F9F9;
+}
+
+.intro p:nth-child(1) {
+  margin: 300px 100px;
+  font-size: 48px;
+  font-style: bold;
+  color: gray;
+  position: absolute;
+}
+
+.intro p:nth-child(2) {
+  margin: 400px 100px;
+  color: gray;
+  font-size: 36px;
+  position: absolute;
+}

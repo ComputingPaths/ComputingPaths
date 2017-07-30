@@ -1,6 +1,12 @@
 extends index.pug
 
+block append style
+  link(
+    rel='stylesheet'
+    href='/css/home.css'
+  )
+  
 block main
-  div(class='home-intro')
+  div(class='intro')
     p Discover your path.
     p Find out how to make computing part of your journey.
