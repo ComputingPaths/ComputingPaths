@@ -13,7 +13,7 @@ app.get('/sample', (req, res) => {
     res.render('sample', {} )
 })
 app.get('/majors', (req, res) => {
-    res.render('majors', {} )
+    res.render('majors')
 })
 
 app.listen(3000, () => {

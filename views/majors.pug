@@ -1,15 +1,10 @@
-html
-  head
-    link(
-      rel="stylesheet" 
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
-      crossorigin="anonymous")
-    block style 
-      link(
-        rel='stylesheet'
-        href ='/css/index.css'
-      )
+extends index.pug
+
+block append style 
+  link(
+    rel='stylesheet'
+    href ='/css/majors.css'
+  )
         
   //- rel='stylesheet'
       href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'
@@ -20,17 +15,18 @@ html
         rel='stylesheet'
         href='/css/index.css'
       )
-  body
+  //-body
     
     //-ul(class = 'col-sm-12')
       li(class = 'col-sm-6')
         h3 Here is the majors page! 
       li(class = 'col-sm-6')
         h3 Here is the second column! //
-    footer(class = 'container')
-      ul(class = 'col-sm-12')
-        div(class = 'col-sm-6')
-            h3 Here is one column.
-        div(class = 'col-sm-6')
-            h3 Here is the second column. 
+block main
+  footer(class='container')
+    div(class='row')
+      div(class='col-sm-6') 
+        h3 Here is one column.
+      div(class='col-sm-6') 
+        h3 Here is the second column. 
     
