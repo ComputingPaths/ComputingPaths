@@ -12,6 +12,9 @@ app.get('/', (req, res) => {
 app.get('/sample', (req, res) => {
     res.render('sample', {} )
 })
+app.get('/majors', (req, res) => {
+    res.render('majors', {} )
+})
 
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!')
