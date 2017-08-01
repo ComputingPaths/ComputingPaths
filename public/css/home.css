@@ -1,3 +1,63 @@
 .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
   height: 600px;
+}
+
+.story {
+  background-color: lightgray;
+  width: 65%;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.story > p:first-child {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.story > p:nth-child(2) {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.story > div:nth-child(3) {
+  margin-left: -10%;
+  margin-right: -10%;
+  display: flex;
+  max-height: 350px;
+}
+
+.story > div div p:first-child {
+  font-size: 28px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.story > div div p:nth-child(2) {
+  font-size: 20px;
+  display: block;
+  margin: 0 0 0 100px;
+  font-weight: bold;
+}
+
+.story > div:nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.story > div:nth-child(4) p {
+  font-size: 24px;
+  max-width: 50%;
+}
+
+.story > div:nth-child(4) button {
+  width: 240px;
+  height: 60px;
 }
