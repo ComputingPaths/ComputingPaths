@@ -24,30 +24,28 @@ html
       crossorigin='anonymous')
     title Computing Paths
   body
-    nav(class='navbar navbar-toggleable-sm')
+    nav(class='navbar navbar-toggleable-md navbar-light')
       button(
-        class="navbar-toggler navbar-toggler-right" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation")
+        class='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false' 
+        aria-label='Toggle navigation')
           span(class='navbar-toggler-icon')
 
-      a(class='navbar-brand ml-5' href='/')
-        img(src='/img/logo.png')
-
       div(class='collapse navbar-collapse' id='navbarSupportedContent')
+        a(class='navbar-brand' href='/')
+          img(src='/img/logo.png' height='30')
         div(class='navbar-nav')
-          a(class='nav-item nav-link ml-5' href="/") Stories
-          a(class='nav-item nav-link ml-5' href="/majors") Majors
-          a(class='nav-item nav-link ml-5' href="/") Connect
-          a(class='nav-item nav-link ml-5' href="/") Projects
-          a(class='nav-item nav-link ml-5' href="/") Resources
+          a(class='nav-item nav-link' href="/") Stories
+          a(class='nav-item nav-link' href="/majors") Majors
+          a(class='nav-item nav-link' href="/") Connect
+          a(class='nav-item nav-link' href="/") Projects
+          a(class='nav-item nav-link' href="/") Resources
       
-      a(class='navbar-brand mr-5' href='http://www.ucsd.edu')
-        img(src='/img/logo_ucsd.png')
-
+      a(class='navbar-brand hidden-md-down' href='http://www.ucsd.edu')
+        img(src='/img/logo_ucsd.png' height='30')
 
     block main

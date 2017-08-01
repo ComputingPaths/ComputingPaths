@@ -1,16 +1,3 @@
 nav {
   background-color: lightgray;
 }
-
-nav img {
-  height: 50px;
-}
-
-nav .nav-link {
-  font-size: 18px;
-  color: white;
-}
-
-nav button {
-  color: white;
-}
