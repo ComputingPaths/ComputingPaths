@@ -7,6 +7,16 @@ block append style
   )
   
 block main
-  div(class='intro')
-    p Discover your path.
-    p Find out how to make computing part of your journey.
+  div(id='homeSlide' class='carousel slide' data-ride='carousel')
+    div(class='carousel-inner' role='listbox')
+      div(class='carousel-item active')
+        img(class='d-block img-fluid' src='/img/temp1.svg')
+        div(class='carousel-caption d-none d-md-block')
+          h3 Discover your path.
+          p Find out how to make computing part of your journey.
+
+      div(class='carousel-item')
+        img(class='d-block img-fluid' src='/img/temp2.svg')
+        div(class='carousel-caption d-none d-md-block')
+          h3 Discover your path.
+          p Find out how to make computing part of your journey.
