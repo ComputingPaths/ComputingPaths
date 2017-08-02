@@ -61,3 +61,23 @@
   width: 240px;
   height: 60px;
 }
+
+#sectiontitle {
+  font-size: 40px;
+}
+
+#sectionblock {
+  margin-left:250px;
+  height: 775px;
+  width: 1442px;
+}
+
+.majorview {
+  width: 400px;
+  height:400px;
+}
+
+#majorimage {
+  width: 800px;
+  height: 400px;
+}
