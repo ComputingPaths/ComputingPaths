@@ -9,10 +9,12 @@
 
 .story {
   background-color: lightgray;
-  width: 65%;
+  width: 100%;
   margin: auto;
   padding-top: 90px;
   padding-bottom: 100px;
+  padding-left: 17.5%;
+  padding-right: 16.7%;
 }
 
 .story > p:first-child {
