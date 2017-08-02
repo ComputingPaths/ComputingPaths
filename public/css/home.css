@@ -61,3 +61,44 @@
   width: 240px;
   height: 60px;
 }
+
+.org {
+  padding: 90px 0 90px 0;
+  width: 65%;
+  margin: auto;
+}
+
+.org p {
+  font-size: 28px;
+  margin: 0;
+}
+
+.org p:first-child {
+  font-weight: bold;
+}
+
+.org div {
+  margin: 50px 0 0 20px;
+  display: flex;
+}
+
+.org div:nth-child(4) {
+  margin: 50px 0 0 -50px;
+  display: flex;
+}
+
+.org div p {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.org div:last-child {
+  display: flex;
+  margin-top: 50px;
+  justify-content: flex-end;
+}
+
+.org button {
+  width:  250px;
+  height: 50px;
+}
