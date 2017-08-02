@@ -81,3 +81,46 @@
   width: 800px;
   height: 400px;
 }
+
+.resources {
+  width: 65%;
+  margin: auto;
+}
+
+.resources > p:first-child {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.resources > p:nth-child(2) {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.resources > div {
+  padding: 20px 0 20px 0
+}
+
+.resources > div p {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.resources > div p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.resources > div p:last-child {
+  font-size: 16px;
+}
+
+.resources > div:last-child {
+  margin-left: 650px;
+}
+
+.resources > div:last-child button {
+  width: 240px;
+  height: 60px;
+}
