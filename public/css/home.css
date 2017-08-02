@@ -9,10 +9,12 @@
 
 .story {
   background-color: lightgray;
-  width: 65%;
+  width: 100%;
   margin: auto;
   padding-top: 90px;
   padding-bottom: 100px;
+  padding-left: 17.5%;
+  padding-right: 16.7%;
 }
 
 .story > p:first-child {
@@ -63,7 +65,32 @@
 }
 
 .org {
-  padding: 90px 0 90px 0;
+  width: 100%;
+  padding-left: 17.5%;
+  padding-right: 16.7%;
+}
+
+#sectiontitle {
+  font-size: 40px;
+}
+
+#sectionblock {
+  margin-left:250px;
+  height: 775px;
+  width: 1442px;
+}
+
+.majorview {
+  width: 400px;
+  height:400px;
+}
+
+#majorimage {
+  width: 800px;
+  height: 400px;
+}
+
+.resources {
   width: 65%;
   margin: auto;
 }
@@ -101,4 +128,41 @@
 .org button {
   width:  250px;
   height: 50px;
+}
+.resources > p:first-child {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.resources > p:nth-child(2) {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.resources > div {
+  padding: 20px 0 20px 0
+}
+
+.resources > div p {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.resources > div p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.resources > div p:last-child {
+  font-size: 16px;
+}
+
+.resources > div:last-child {
+  margin-left: 650px;
+}
+
+.resources > div:last-child button {
+  width: 240px;
+  height: 60px;
 }
