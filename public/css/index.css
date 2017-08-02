@@ -1,3 +1,35 @@
 nav {
   background-color: lightgray;
 }
+
+footer {
+  padding: 80px;
+  background: darkgray;
+}
+
+footer > div {
+  display: flex;
+}
+
+footer img {
+  margin-bottom: 30px;
+  display: block;
+  height: 30px;
+}
+
+footer a {
+  display: block;
+  color: white;
+}
+
+footer > div div:nth-child(1) {
+  flex-grow: 1;
+}
+
+footer > div div:nth-child(2) {
+  flex-grow: 1;
+}
+
+footer > div div:nth-child(3) {
+  flex-grow: 2;
+}
