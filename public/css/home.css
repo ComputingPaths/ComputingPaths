@@ -70,24 +70,60 @@
   padding-right: 16.7%;
 }
 
-#sectiontitle {
-  font-size: 40px;
+.major {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 65%;
+  margin: auto;
 }
 
-#sectionblock {
-  margin-left:250px;
-  height: 775px;
-  width: 1442px;
+.major > p {
+  font-size: 32px;
+  margin: 0;
 }
 
-.majorview {
-  width: 400px;
-  height:400px;
+.major > p:first-child {
+  font-weight: bold;
 }
 
-#majorimage {
-  width: 800px;
-  height: 400px;
+.major > div {
+  margin-top: 30px;
+}
+
+.major > div img {
+  height: 250px;
+  width: 100%;
+}
+
+.major > div div {
+  padding: 25px;
+}
+
+.major > div div p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.major > div div p:nth-child(2) {
+  font-size: 20px;
+  margin: 0;
+}
+
+.major > div:nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.major > div:nth-child(4) p {
+  font-size: 24px;
+  margin-right: 50px;
+}
+
+.major > div:nth-child(4) a {
+  display: inline-block;
+  width: 300px;
+  height: 50px;
 }
 
 .resources {
