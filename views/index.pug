@@ -1,5 +1,6 @@
 html
   head
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     link(
       rel='stylesheet'
       href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'
@@ -27,7 +28,7 @@ html
     div(class='nav-wrapper')
       nav(class='navbar navbar-toggleable-md')
         button(
-          class='navbar-toggler'
+          class='navbar-toggler-right navbar-toggler'
           type='button'
           data-toggle='collapse'
           data-target='#navbarSupportedContent'
@@ -36,17 +37,18 @@ html
           aria-label='Toggle navigation')
             span(class='navbar-toggler-icon')
 
+        a(class='navbar-brand' href='/')
+          img(src='/img/logo.png')
+
         div(class='collapse navbar-collapse' id='navbarSupportedContent')
-          a(class='navbar-brand' href='/')
-            img(src='/img/logo.png')
           div(class='navbar-nav')
             a(class='nav-item nav-link' href="/") Stories
             a(class='nav-item nav-link' href="/majors") Majors
             a(class='nav-item nav-link' href="/") Connect
             a(class='nav-item nav-link' href="/") Projects
             a(class='nav-item nav-link' href="/") Resources
-        
-        a(class='navbar-brand hidden-md-down' href='http://www.ucsd.edu')
+
+        a(class='navbar-brand ucsd_logo' href='http://www.ucsd.edu')
           img(src='/img/logo_ucsd.png')
 
     block main
@@ -55,8 +57,6 @@ html
       div
         div
           img(src='/img/logo.png')
-          img(src='/img/logo_ucsd.png')
-        div
           a(href='/') Home
           a(href='/') Stories
           a(href='/majors') Majors
@@ -64,14 +64,14 @@ html
           a(href='/') Connect
           a(href='/') Projects
           a(href='/') Resources
-          a(href='/') About
         div
           a(href='/') Bioinformaticcs
           a(href='/') Cognitive Science
           a(href='/') Computer Engineering
           a(href='/') Computer Science Engineering
           a(href='/') Data Science
-          a(href='/') Electrical Engineerin
+          a(href='/') Electrical Engineering
           a(href='/') Interdisciplinary Computing and the Arts
           a(href='/') Mathematics - Computer Science
           a(href='/') Scientific Computation
+        img(src='/img/logo_ucsd.png')

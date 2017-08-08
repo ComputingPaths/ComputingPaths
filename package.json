@@ -8,6 +8,7 @@
     "sass": "sass --watch --sourcemap=none styles:public/css"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "express": "^4.15.3",
     "pug": "^2.0.0-rc.2"
   }

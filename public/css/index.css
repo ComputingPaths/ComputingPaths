@@ -12,23 +12,30 @@
       font-size: 14px;
       margin-right: 20px; }
     .nav-wrapper nav .navbar-nav {
-      margin-left: 42px; }
+      margin-left: 58px; }
+    .nav-wrapper nav .navbar-brand {
+      margin: 0; }
+    @media (max-width: 1050px) {
+      .nav-wrapper nav .ucsd_logo {
+        visibility: hidden; } }
 
 footer {
-  padding: 80px;
-  background: darkgray; }
+  background: #006A96; }
   footer > div {
-    display: flex; }
+    padding: 64px 15px 64px 15px;
+    background: #3D8CAE;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
     footer > div div:nth-child(1) {
       flex-grow: 1; }
     footer > div div:nth-child(2) {
-      flex-grow: 1; }
-    footer > div div:nth-child(3) {
       flex-grow: 2; }
+    footer > div a {
+      color: white;
+      display: block;
+      margin-bottom: 8px; }
   footer img {
-    margin-bottom: 30px;
-    display: block;
-    height: 30px; }
-  footer a {
-    display: block;
-    color: white; }
+    height: 24px;
+    margin-bottom: 32px; }
