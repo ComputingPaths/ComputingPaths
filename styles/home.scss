@@ -1,17 +1,34 @@
+@import 'variables';
+
 .container {
-  width: 77%; }
+  width: 77%;
+}
 
 .title {
   height: 544px;
-  padding: 179px 0 179px 0; }
-  .title h1 {
-    color: #003E5C;
+  padding: 179px 0 179px 0;
+
+  h1 {
+    color: $textblue;
     font-size: 64px;
     font-weight: bold;
-    margin-bottom: 24px; }
-  .title h2 {
-    color: #003E5C;
-    font-size: 36px; }
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    color: $textblue;
+    font-size: 36px;
+  }
+}
+
+// .carousel-item img {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .carousel {
+//   height: 600px;
+// }
 
 .story {
   background-color: lightgray;
@@ -20,195 +37,240 @@
   padding-top: 90px;
   padding-bottom: 100px;
   padding-left: 17.5%;
-  padding-right: 16.7%; }
+  padding-right: 16.7%;
+}
 
 .story > p:first-child {
   font-size: 32px;
   font-weight: bold;
-  margin: 0; }
+  margin: 0;
+}
 
 .story > p:nth-child(2) {
   font-size: 32px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+}
 
 .story > div:nth-child(3) {
   margin-left: -10%;
   margin-right: -10%;
   display: flex;
-  max-height: 350px; }
+  max-height: 350px;
+}
 
 .story > div div p:first-child {
   font-size: 28px;
   margin-left: 100px;
-  margin-top: 100px; }
+  margin-top: 100px;
+}
 
 .story > div div p:nth-child(2) {
   font-size: 20px;
   display: block;
   margin: 0 0 0 100px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .story > div:nth-child(4) {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 .story > div:nth-child(4) p {
   font-size: 24px;
-  max-width: 50%; }
+  max-width: 50%;
+}
 
 .story > div:nth-child(4) button {
   width: 240px;
-  height: 60px; }
+  height: 60px;
+}
 
 .org {
   width: 100%;
   padding-left: 17.5%;
-  padding-right: 16.7%; }
+  padding-right: 16.7%;
+}
 
 .major {
   padding-top: 100px;
   padding-bottom: 100px;
   width: 65%;
-  margin: auto; }
+  margin: auto;
+}
 
 .major > p {
   font-size: 32px;
-  margin: 0; }
+  margin: 0;
+}
 
 .major > p:first-child {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .major > div {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .major > div img {
   height: 250px;
-  width: 100%; }
+  width: 100%;
+}
 
 .major > div div {
-  padding: 25px; }
+  padding: 25px;
+}
 
 .major > div div p:nth-child(1) {
   font-size: 20px;
   font-weight: bold;
-  margin: 0; }
+  margin: 0;
+}
 
 .major > div div p:nth-child(2) {
   font-size: 20px;
-  margin: 0; }
+  margin: 0;
+}
 
 .major > div:nth-child(4) {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .major > div:nth-child(4) p {
   font-size: 24px;
-  margin-right: 50px; }
+  margin-right: 50px;
+}
 
 .major > div:nth-child(4) a {
   display: inline-block;
   width: 300px;
-  height: 50px; }
+  height: 50px;
+}
 
 .resources {
   width: 65%;
-  margin: auto; }
+  margin: auto;
+}
 
 .org p {
   font-size: 28px;
-  margin: 0; }
+  margin: 0;
+}
 
 .org p:first-child {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .org div {
   margin: 50px 0 0 20px;
-  display: flex; }
+  display: flex;
+}
 
 .org div:nth-child(4) {
   margin: 50px 0 0 -50px;
-  display: flex; }
+  display: flex;
+}
 
 .org div p {
   font-weight: bold;
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 
 .org div:last-child {
   display: flex;
   margin-top: 50px;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .org button {
-  width: 250px;
-  height: 50px; }
+  width:  250px;
+  height: 50px;
+}
 
 .projects {
-  width: 100%;
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 12%;
-  padding-right: 10%; }
+    width: 100%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 12%;
+    padding-right: 10%;
+}
 
 .projects > p:first-child {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0;
-  margin-left: 50px; }
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 50px;
+}
 
 .projects > p:nth-child(2) {
-  font-size: 32px;
-  margin-bottom: 10px;
-  margin-left: 50px; }
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 320px;
-  height: 480px;
-  margin: 10px; }
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 320px;
+    height: 480px;
+    margin: 10px;
+}
 
 .card-container {
-  display: flex; }
+    display: flex;
+}
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 .container {
-  padding: 2px 16px; }
+    padding: 2px 16px;
+}
 
 .info-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 80px 20px 80px; }
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 80px 20px 80px;
+}
 
 .resources > p:first-child {
   font-size: 32px;
   font-weight: bold;
-  margin: 0; }
+  margin: 0;
+}
 
 .resources > p:nth-child(2) {
   font-size: 32px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+}
 
 .resources > div {
-  padding: 20px 0 20px 0; }
+  padding: 20px 0 20px 0
+}
 
 .resources > div p {
   margin-top: -5px;
-  margin-bottom: -5px; }
+  margin-bottom: -5px;
+}
 
 .resources > div p:first-child {
   font-size: 24px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .resources > div p:last-child {
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 .resources > div:last-child {
-  margin-left: 650px; }
+  margin-left: 650px;
+}
 
 .resources > div:last-child button {
   width: 240px;
-  height: 60px; }
+  height: 60px;
+}
