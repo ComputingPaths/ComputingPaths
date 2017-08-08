@@ -14,8 +14,8 @@ block main
   
   div(class='story')
     div(class='host')
-      h1 Stories &amp; Advice
-      hr
+      h1(class='section-header') Stories &amp; Advice
+      hr(class='header-bar')
       div
         img(src='/img/temp1.svg')
         div
@@ -23,7 +23,7 @@ block main
           p Rachel Keirouz | Math-Computer Science
       div
         p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.
-        a(href='/') Link to rest of stories
+        a(class='link-btn' href='/') Link to rest of stories
 
   //- div(id='homeSlide' class='carousel slide' data-ride='carousel')
   //-   div(class='carousel-inner' role='listbox')
@@ -38,20 +38,31 @@ block main
   //-       div(class='carousel-caption d-none d-md-block')
   //-         h3 Discover your path.
   //-         p Find out how to make computing part of your journey.
-  
-
-      
-  div(id='sectionblock' class='major')
-    p(id='sectiontitle') The Majors
-    p Check out the computing majors.
-    div(class='majorview')
-      img(src='/img/temp1.svg' id='majorimage')
+       
+  div(class='major')
+    div(class='host')
+      h1(class='section-header') The Majors
+      hr(class='header-bar')
       div
-        p Interdisiciplinary Computing and the Arts 
-        p Intro text to major here.
-    div
-      p Donec facilisis tortor ut augue lacinia, at viverra est semper
-      a(class='btn btn-secondary') Link to all majors
+        div
+          ul
+            li(class='active') Bioinformatics
+            li Cognitive Science
+            li Computer Engineering
+            li Computer Science Engineering
+            li Data Science
+            li Electrical Engineering
+            li Interdisciplinary Computing and the Arts
+            li Mathematics - Computer Science
+            li Scientific Computation
+          a(class='link-btn' href='/') Link to all the majors
+        div
+          img(src='/img/temp1.svg' id='majorimage')   
+          div
+            div
+              p Interdisiciplinary Computing and the Arts 
+              p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
+            button 
         
         
   div(class='org')

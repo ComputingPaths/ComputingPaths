@@ -2,6 +2,33 @@
   width: 77%;
   margin: auto; }
 
+.section, .story, .major {
+  padding-top: 80px;
+  padding-bottom: 116px; }
+
+.header-bar {
+  width: 24px;
+  height: 4px;
+  background-color: #FC8900;
+  border: none;
+  margin: 0 auto 64px auto; }
+
+.section-header {
+  color: #357289;
+  font-size: 36px;
+  margin: 0 auto 16px auto;
+  text-align: center; }
+
+.link-btn {
+  background: #006A96;
+  width: 320px;
+  height: 56px;
+  font-size: 18px;
+  color: white;
+  padding-top: 13px;
+  text-align: center;
+  display: block; }
+
 .title {
   height: 544px;
   padding: 179px 0 179px 0;
@@ -15,102 +42,76 @@
     color: #357289;
     font-size: 36px; }
 
-.story {
-  padding: 80 0 116px 0; }
-  .story h1 {
-    color: #357289;
-    font-size: 36px;
-    margin: 0 auto 16px auto;
-    text-align: center; }
-  .story hr {
-    width: 24px;
-    height: 4px;
-    background-color: #FC8900;
-    border: none;
-    margin: 0 auto 64px auto; }
-  .story hr + div {
-    height: 352px;
-    display: flex; }
-    .story hr + div img {
-      width: 40%; }
-    .story hr + div div {
-      background-color: #62D9E4; }
-      .story hr + div div p {
-        color: white;
-        font-size: 24px; }
-      .story hr + div div p:first-child {
-        margin: 12% 16% 30 16%; }
-      .story hr + div div p:nth-child(2) {
-        margin: 0 16%; }
-  .story hr + div + div {
-    margin-top: 64px;
-    display: flex;
-    justify-content: space-between; }
-    .story hr + div + div p {
-      font-size: 20px;
-      width: 60%; }
-    .story hr + div + div a {
-      background: #006A96;
-      width: 320px;
-      height: 56px;
-      font-size: 18px;
+.story hr + div {
+  height: 352px;
+  display: flex; }
+  .story hr + div img {
+    width: 40%; }
+  .story hr + div div {
+    background-color: #62D9E4; }
+    .story hr + div div p {
       color: white;
-      padding-top: 13px;
-      text-align: center; }
+      font-size: 24px; }
+    .story hr + div div p:first-child {
+      margin: 12% 16% 30 16%; }
+    .story hr + div div p:nth-child(2) {
+      margin: 0 16%; }
+.story hr + div + div {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between; }
+  .story hr + div + div p {
+    font-size: 20px;
+    width: 60%; }
+
+.major {
+  background-color: #F6FCFE; }
+  .major .host > div {
+    display: flex; }
+    .major .host > div > div:nth-of-type(1) {
+      width: 45%; }
+      .major .host > div > div:nth-of-type(1) li {
+        color: #357289;
+        font-size: 20px;
+        margin-bottom: 16px;
+        font-weight: bold; }
+      .major .host > div > div:nth-of-type(1) li:hover:not(.active) {
+        color: #62D9E4; }
+      .major .host > div > div:nth-of-type(1) li.active {
+        color: #FC8900; }
+      .major .host > div > div:nth-of-type(1) .link-btn {
+        margin-top: 48px; }
+    .major .host > div > div:nth-of-type(2) {
+      width: 55%; }
+      .major .host > div > div:nth-of-type(2) img {
+        height: 320px;
+        width: 100%; }
+      .major .host > div > div:nth-of-type(2) > div {
+        display: flex;
+        justify-content: space-between; }
+        .major .host > div > div:nth-of-type(2) > div > div {
+          margin: 40px 40px 0 40px; }
+          .major .host > div > div:nth-of-type(2) > div > div p {
+            margin-bottom: 0;
+            font-size: 20px;
+            color: #357289; }
+          .major .host > div > div:nth-of-type(2) > div > div p:nth-of-type(1) {
+            font-weight: bold; }
+          .major .host > div > div:nth-of-type(2) > div > div p:nth-of-type(2) {
+            margin-top: 10px; }
+        .major .host > div > div:nth-of-type(2) > div button {
+          min-width: 112px;
+          background-color: #006A96;
+          border: none; }
+
+.resources {
+  width: 65%;
+  margin: auto; }
 
 .org {
   width: 100%;
   padding-left: 17.5%;
   padding-right: 16.7%; }
-
-.major {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  width: 65%;
-  margin: auto; }
-
-.major > p {
-  font-size: 32px;
-  margin: 0; }
-
-.major > p:first-child {
-  font-weight: bold; }
-
-.major > div {
-  margin-top: 30px; }
-
-.major > div img {
-  height: 250px;
-  width: 100%; }
-
-.major > div div {
-  padding: 25px; }
-
-.major > div div p:nth-child(1) {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0; }
-
-.major > div div p:nth-child(2) {
-  font-size: 20px;
-  margin: 0; }
-
-.major > div:nth-child(4) {
-  display: flex;
-  justify-content: space-between; }
-
-.major > div:nth-child(4) p {
-  font-size: 24px;
-  margin-right: 50px; }
-
-.major > div:nth-child(4) a {
-  display: inline-block;
-  width: 300px;
-  height: 50px; }
-
-.resources {
-  width: 65%;
-  margin: auto; }
 
 .org p {
   font-size: 28px;
