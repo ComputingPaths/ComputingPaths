@@ -66,40 +66,44 @@
 .story {
   @extend .section;
 
-  hr + div {
-    height: 352px;
-    display: flex;
+  div.host{
 
-    img {
-      width: 40%;
+    > div:nth-of-type(1) {
+      height: 352px;
+      display: flex;
+
+      img {
+        width: 40%;
+      }
+
+      div {
+        background-color: $aquablue;
+
+        p {
+          color: white;
+          font-size: 24px;
+          display: block;
+        }
+
+        p:nth-of-type(1) {
+          margin: 12% 16% 30 16%;
+        }
+
+        p:nth-of-type(2) {
+          margin: 0 16%;
+        }
+      }
     }
 
-    div {
-      background-color: $aquablue;
-
+    > div:nth-of-type(2) {
+      margin-top: 64px;
+      display: flex;
+      justify-content: space-between;
+      
       p {
-        color: white;
-        font-size: 24px;
+        font-size: 20px;
+        width: 60%;
       }
-
-      p:first-child {
-        margin: 12% 16% 30 16%;
-      }
-
-      p:nth-child(2) {
-        margin: 0 16%;
-      }
-    }
-  }
-
-  hr + div + div {
-    margin-top: 64px;
-    display: flex;
-    justify-content: space-between;
-    
-    p {
-      font-size: 20px;
-      width: 60%;
     }
   }
 }
@@ -146,14 +150,15 @@
         display: flex;
         justify-content: space-between;
 
-        > div {
+        div {
           margin: 40px 40px 0 40px;
 
           p {
-            margin-bottom: 0;
+            margin: 0;
             font-size: 20px;
             color: $textblue;
           }
+
           p:nth-of-type(1) {
             font-weight: bold;
           }

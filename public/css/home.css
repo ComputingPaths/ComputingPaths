@@ -42,25 +42,26 @@
     color: #357289;
     font-size: 36px; }
 
-.story hr + div {
+.story div.host > div:nth-of-type(1) {
   height: 352px;
   display: flex; }
-  .story hr + div img {
+  .story div.host > div:nth-of-type(1) img {
     width: 40%; }
-  .story hr + div div {
+  .story div.host > div:nth-of-type(1) div {
     background-color: #62D9E4; }
-    .story hr + div div p {
+    .story div.host > div:nth-of-type(1) div p {
       color: white;
-      font-size: 24px; }
-    .story hr + div div p:first-child {
+      font-size: 24px;
+      display: block; }
+    .story div.host > div:nth-of-type(1) div p:nth-of-type(1) {
       margin: 12% 16% 30 16%; }
-    .story hr + div div p:nth-child(2) {
+    .story div.host > div:nth-of-type(1) div p:nth-of-type(2) {
       margin: 0 16%; }
-.story hr + div + div {
+.story div.host > div:nth-of-type(2) {
   margin-top: 64px;
   display: flex;
   justify-content: space-between; }
-  .story hr + div + div p {
+  .story div.host > div:nth-of-type(2) p {
     font-size: 20px;
     width: 60%; }
 
@@ -89,15 +90,15 @@
       .major .host > div > div:nth-of-type(2) > div {
         display: flex;
         justify-content: space-between; }
-        .major .host > div > div:nth-of-type(2) > div > div {
+        .major .host > div > div:nth-of-type(2) > div div {
           margin: 40px 40px 0 40px; }
-          .major .host > div > div:nth-of-type(2) > div > div p {
-            margin-bottom: 0;
+          .major .host > div > div:nth-of-type(2) > div div p {
+            margin: 0;
             font-size: 20px;
             color: #357289; }
-          .major .host > div > div:nth-of-type(2) > div > div p:nth-of-type(1) {
+          .major .host > div > div:nth-of-type(2) > div div p:nth-of-type(1) {
             font-weight: bold; }
-          .major .host > div > div:nth-of-type(2) > div > div p:nth-of-type(2) {
+          .major .host > div > div:nth-of-type(2) > div div p:nth-of-type(2) {
             margin-top: 10px; }
         .major .host > div > div:nth-of-type(2) > div button {
           min-width: 112px;

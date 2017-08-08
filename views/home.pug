@@ -1,11 +1,11 @@
 extends index.pug
 
-block append style
+block style
   link(
     rel='stylesheet'
     href='/css/home.css'
   )
-  
+
 block main
   div(class='title')
     div(class='host')
@@ -45,8 +45,8 @@ block main
       hr(class='header-bar')
       div
         div
-          ul
-            li(class='active') Bioinformatics
+          ul(id='major-list')
+            li Bioinformatics
             li Cognitive Science
             li Computer Engineering
             li Computer Science Engineering
@@ -60,9 +60,9 @@ block main
           img(src='/img/temp1.svg' id='majorimage')   
           div
             div
-              p Interdisiciplinary Computing and the Arts 
+              p(id='major-name') Interdisiciplinary Computing and the Arts 
               p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
-            button 
+            button(id='next-major-btn')
         
         
   div(class='org')
@@ -121,3 +121,5 @@ block main
         p Some brief description about how there’s lots of cool facilities.  
     div 
       button(class='btn btn-secondary' href='/') Link to all orgs
+
+  script(src='/js/home.js')
