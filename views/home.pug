@@ -7,11 +7,24 @@ block append style
   )
   
 block main
-  div(class='container')
-    div(class='row title')
+  div(class='title')
+    div(class='host')
       h1 Discover your path.
       h2 Find out how to make computing part of <br> your journey.
-      
+  
+  div(class='story')
+    div(class='host')
+      h1 Stories &amp; Advice
+      hr
+      div
+        img(src='/img/temp1.svg')
+        div
+          p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque."
+          p Rachel Keirouz | Math-Computer Science
+      div
+        p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.
+        a(href='/') Link to rest of stories
+
   //- div(id='homeSlide' class='carousel slide' data-ride='carousel')
   //-   div(class='carousel-inner' role='listbox')
   //-     div(class='carousel-item active')
@@ -27,18 +40,6 @@ block main
   //-         p Find out how to make computing part of your journey.
   
 
-  div(class='story')
-    p(id='sectiontitle') Stories
-    p Some random text
-    div
-      img(src='/img/temp1.svg' width='500')
-      div
-        p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque."
-        p Rachel Keirouz | Major
-
-    div
-      p Donec facilisis tortor ut augue lacinia, at viverra est semper.
-      button(class='btn btn-secondary') Link to rest of Stories
       
   div(id='sectionblock' class='major')
     p(id='sectiontitle') The Majors

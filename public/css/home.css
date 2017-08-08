@@ -1,65 +1,62 @@
-.container {
-  width: 77%; }
+.host {
+  width: 77%;
+  margin: auto; }
 
 .title {
   height: 544px;
-  padding: 179px 0 179px 0; }
+  padding: 179px 0 179px 0;
+  background: #F6FCFE; }
   .title h1 {
-    color: #003E5C;
+    color: #357289;
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 24px; }
   .title h2 {
-    color: #003E5C;
+    color: #357289;
     font-size: 36px; }
 
 .story {
-  background-color: lightgray;
-  width: 100%;
-  margin: auto;
-  padding-top: 90px;
-  padding-bottom: 100px;
-  padding-left: 17.5%;
-  padding-right: 16.7%; }
-
-.story > p:first-child {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0; }
-
-.story > p:nth-child(2) {
-  font-size: 32px;
-  margin-bottom: 40px; }
-
-.story > div:nth-child(3) {
-  margin-left: -10%;
-  margin-right: -10%;
-  display: flex;
-  max-height: 350px; }
-
-.story > div div p:first-child {
-  font-size: 28px;
-  margin-left: 100px;
-  margin-top: 100px; }
-
-.story > div div p:nth-child(2) {
-  font-size: 20px;
-  display: block;
-  margin: 0 0 0 100px;
-  font-weight: bold; }
-
-.story > div:nth-child(4) {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px; }
-
-.story > div:nth-child(4) p {
-  font-size: 24px;
-  max-width: 50%; }
-
-.story > div:nth-child(4) button {
-  width: 240px;
-  height: 60px; }
+  padding: 80 0 116px 0; }
+  .story h1 {
+    color: #357289;
+    font-size: 36px;
+    margin: 0 auto 16px auto;
+    text-align: center; }
+  .story hr {
+    width: 24px;
+    height: 4px;
+    background-color: #FC8900;
+    border: none;
+    margin: 0 auto 64px auto; }
+  .story hr + div {
+    height: 352px;
+    display: flex; }
+    .story hr + div img {
+      width: 40%; }
+    .story hr + div div {
+      background-color: #62D9E4; }
+      .story hr + div div p {
+        color: white;
+        font-size: 24px; }
+      .story hr + div div p:first-child {
+        margin: 12% 16% 30 16%; }
+      .story hr + div div p:nth-child(2) {
+        margin: 0 16%; }
+  .story hr + div + div {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between; }
+    .story hr + div + div p {
+      font-size: 20px;
+      width: 60%; }
+    .story hr + div + div a {
+      background: #006A96;
+      width: 320px;
+      height: 56px;
+      font-size: 18px;
+      color: white;
+      padding-top: 13px;
+      text-align: center; }
 
 .org {
   width: 100%;
