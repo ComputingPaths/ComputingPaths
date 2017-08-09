@@ -1,38 +1,46 @@
 @import 'variables';
 
-.nav-wrapper {
+nav.navbar {
   background-color: $darkblue;
+  height: 80px;
+  padding: 0 10% 0 10%;
 
-  nav {
-    width: 80%;
-    height: 80px;
-    margin: auto;
+  .navbar-brand {
+    margin: 0;
+  }
 
-    img {
-      height: 32px;
-    }
+  img {
+    height: 32px;
+  }
 
-    .nav-link {
-      color: white;
-      font-size: 14px;
-      margin-right: 20px;
-    }
+  .navbar-nav {
+    margin-left: 38px;
+    height: 100%;
+    align-items: flex-end;
+  }
 
-    .navbar-nav {
-      margin-left: 58px;
-    }
+  .nav-item {
+    margin-left: 20px;
+  }
 
-    .navbar-brand {
-      margin: 0;
-    }
+  .nav-link {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 0;
+  }
 
-    @media (max-width: 1050px) {
-      .ucsd_logo {
-        visibility: hidden;
-      }
-    }
+  hr {
+    height: 4px;
+    background-color: $orange;
+    border: none;
+    margin: 22px 0 0 0;
+  }
+
+  .nav-item:not(.active) hr {
+    visibility: hidden;
   }
 }
+
 
 footer {
   background: $darkblue;

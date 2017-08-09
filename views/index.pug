@@ -25,31 +25,35 @@ html
       crossorigin='anonymous')
     title Computing Paths
   body
-    div(class='nav-wrapper')
-      nav(class='navbar navbar-toggleable-md')
-        button(
-          class='navbar-toggler-right navbar-toggler'
-          type='button'
-          data-toggle='collapse'
-          data-target='#navbarSupportedContent'
-          aria-controls='navbarSupportedContent'
-          aria-expanded='false' 
-          aria-label='Toggle navigation')
-            span(class='navbar-toggler-icon')
+    nav(class='navbar navbar-toggleable-md')
+      button(
+        class='navbar-toggler-right navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false' 
+        aria-label='Toggle navigation')
+          span(class='navbar-toggler-icon')
 
-        a(class='navbar-brand' href='/')
-          img(src='/img/logo.png')
+      a(class='navbar-brand' href='/')
+        img(src='/img/logo.png')
 
-        div(class='collapse navbar-collapse' id='navbarSupportedContent')
-          div(class='navbar-nav')
-            a(class='nav-item nav-link' href="/") Stories
-            a(class='nav-item nav-link' href="/majors") Majors
-            a(class='nav-item nav-link' href="/") Connect
-            a(class='nav-item nav-link' href="/") Projects
-            a(class='nav-item nav-link' href="/") Resources
+      div(class='collapse navbar-collapse' id='navbarSupportedContent')
+        ul(class='navbar-nav')
+          li(class='nav-item active')
+            a(class='nav-link' href="/") Stories <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/majors") Majors <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/") Connect <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/") Projects <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/") Resources <hr>
 
-        a(class='navbar-brand ucsd_logo' href='http://www.ucsd.edu')
-          img(src='/img/logo_ucsd.png')
+      a(class='navbar-brand ucsd_logo hidden-lg-down' href='http://www.ucsd.edu')
+        img(src='/img/logo_ucsd.png')
 
     block main
 

@@ -1,22 +1,28 @@
-.nav-wrapper {
-  background-color: #006A96; }
-  .nav-wrapper nav {
-    width: 80%;
-    height: 80px;
-    margin: auto; }
-    .nav-wrapper nav img {
-      height: 32px; }
-    .nav-wrapper nav .nav-link {
-      color: white;
-      font-size: 14px;
-      margin-right: 20px; }
-    .nav-wrapper nav .navbar-nav {
-      margin-left: 58px; }
-    .nav-wrapper nav .navbar-brand {
-      margin: 0; }
-    @media (max-width: 1050px) {
-      .nav-wrapper nav .ucsd_logo {
-        visibility: hidden; } }
+nav.navbar {
+  background-color: #006A96;
+  height: 80px;
+  padding: 0 10% 0 10%; }
+  nav.navbar .navbar-brand {
+    margin: 0; }
+  nav.navbar img {
+    height: 32px; }
+  nav.navbar .navbar-nav {
+    margin-left: 38px;
+    height: 100%;
+    align-items: flex-end; }
+  nav.navbar .nav-item {
+    margin-left: 20px; }
+  nav.navbar .nav-link {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 0; }
+  nav.navbar hr {
+    height: 4px;
+    background-color: #FC8900;
+    border: none;
+    margin: 22px 0 0 0; }
+  nav.navbar .nav-item:not(.active) hr {
+    visibility: hidden; }
 
 footer {
   background: #006A96; }
