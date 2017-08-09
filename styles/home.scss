@@ -100,7 +100,7 @@
       margin-top: 64px;
       display: flex;
       justify-content: space-between;
-      
+
       p {
         font-size: 20px;
         width: 60%;
@@ -203,19 +203,24 @@
   font-weight: bold;
 }
 
+//this is the 1st and 3rd line of orgs
 .org div {
   margin: 50px 0 0 20px;
   display: flex;
+  color: red;
 }
 
-.org div:nth-child(4) {
+//this is the second line of orgs
+.org div:nth-child(5) {
   margin: 50px 0 0 -50px;
   display: flex;
+  color: blue;
 }
 
 .org div p {
   font-weight: bold;
   margin-left: 20px;
+  margin-right: 50px;
 }
 
 .org div:last-child {
@@ -224,9 +229,9 @@
   justify-content: flex-end;
 }
 
-.org button {
-  width:  250px;
-  height: 50px;
+//this is positioning the button in center
+.org div a {
+  margin: 0px auto 0px auto;
 }
 
 .projects {
