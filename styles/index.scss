@@ -12,15 +12,6 @@ nav.navbar {
     height: 32px;
   }
 
-  @media (max-width: $md) {
-    .navbar-brand {
-      margin: 16px 0 16px 0;
-    }
-    img {
-      height: 24px;
-    }
-  }
-
   .navbar-nav {
     margin-left: 38px;
     align-items: flex-end;
@@ -61,7 +52,31 @@ nav.navbar {
     background-color: white;
   }
 
+  @media (max-width: $lg) {
+    .navbar-nav {
+      margin-left: 0;
+      align-items: flex-start;
+    }
+
+    hr {
+      height: 0;
+      margin: 0;
+    }
+
+    .nav-item {
+      margin: 0 0 40px 0;
+    }
+  }
+
   @media (max-width: $md) {
+    .navbar-brand {
+      margin: 16px 0 16px 0;
+    }
+
+    img {
+      height: 24px;
+    }
+
     .navbar-toggler-right {
       top: 23px;
       height: 18px;
