@@ -3,7 +3,6 @@
 nav.navbar {
   background-color: $darkblue;
   height: 80px;
-
   padding: 0 10% 0 10%;
 
   .navbar-brand {
@@ -44,6 +43,16 @@ nav.navbar {
 
   .nav-link:hover hr {
     visibility: visible;
+  }
+}
+
+@media (max-width: $xl) {
+  nav.navbar {
+    justify-content: space-between;
+  }
+
+  #navbarSupportedContent {
+    width: initial;
   }
 }
 
