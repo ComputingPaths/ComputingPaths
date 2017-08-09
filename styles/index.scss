@@ -97,27 +97,22 @@ nav.navbar {
 
 footer {
   background: $darkblue;
+  padding: 64px 10% 64px 10%;
+  display: flex;
+  justify-content: space-between;
 
-  > div {
-    padding: 64px 15px 64px 15px;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+  div:nth-child(1) {
+    flex-grow: 1;
+  }
 
-    div:nth-child(1) {
-      flex-grow: 1;
-    }
+  div:nth-child(2) {
+    flex-grow: 2;
+  }
 
-    div:nth-child(2) {
-      flex-grow: 2;
-    }
-
-    a {
-      color: white;
-      display: block;
-      margin-bottom: 8px;
-    }
+  a {
+    color: white;
+    display: block;
+    margin-bottom: 8px;
   }
 
   img {
