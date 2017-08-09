@@ -1,47 +1,68 @@
 extends index.pug
 
-block append style
+block style
   link(
     rel='stylesheet'
     href='/css/home.css'
   )
-  
+
 block main
-  div(id='homeSlide' class='carousel slide' data-ride='carousel')
-    div(class='carousel-inner' role='listbox')
-      div(class='carousel-item active')
-        img(class='d-block img-fluid' src='/img/temp1.svg')
-        div(class='carousel-caption d-none d-md-block')
-          h3 Discover your path.
-          p Find out how to make computing part of your journey.
-
-      div(class='carousel-item')
-        img(class='d-block img-fluid' src='/img/temp2.svg')
-        div(class='carousel-caption d-none d-md-block')
-          h3 Discover your path.
-          p Find out how to make computing part of your journey.
+  div(class='title')
+    div(class='host')
+      h1 Discover your path.
+      h2 Find out how to make computing part of <br> your journey.
   
-
   div(class='story')
-    p(id='sectiontitle') Stories
-    p Some random text
-    div
-      img(src='/img/temp1.svg' width='500')
+    div(class='host')
+      h1(class='section-header') Stories &amp; Advice
+      hr(class='header-bar')
       div
-        p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque."
-        p Rachel Keirouz | Major
+        img(src='/img/temp1.svg')
+        div
+          p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque."
+          p Rachel Keirouz | Math-Computer Science
+      div
+        p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.
+        a(class='link-btn' href='/') Link to rest of stories
 
-    div
-      p Donec facilisis tortor ut augue lacinia, at viverra est semper.
-      button(class='btn btn-secondary') Link to rest of Stories
-      
-  div(id='sectionblock' class='majors')
-    p(id='sectiontitle') The Majors
-    p Check out the computing majors.
-      div(class='majorview')
-        img(src='/img/temp1.svg' id='majorimage')
-        p Interdisiciplinary Computing and the Arts 
-        p Intro text to major here.
+  //- div(id='homeSlide' class='carousel slide' data-ride='carousel')
+  //-   div(class='carousel-inner' role='listbox')
+  //-     div(class='carousel-item active')
+  //-       img(class='d-block img-fluid' src='/img/temp1.svg')
+  //-       div(class='carousel-caption d-none d-md-block')
+  //-         h3 Discover your path.
+  //-         p Find out how to make computing part of your journey.
+
+  //-     div(class='carousel-item')
+  //-       img(class='d-block img-fluid' src='/img/temp2.svg')
+  //-       div(class='carousel-caption d-none d-md-block')
+  //-         h3 Discover your path.
+  //-         p Find out how to make computing part of your journey.
+       
+  div(class='major')
+    div(class='host')
+      h1(class='section-header') The Majors
+      hr(class='header-bar')
+      div
+        div
+          ul(id='major-list')
+            li Bioinformatics
+            li Cognitive Science
+            li Computer Engineering
+            li Computer Science Engineering
+            li Data Science
+            li Electrical Engineering
+            li Interdisciplinary Computing and the Arts
+            li Mathematics - Computer Science
+            li Scientific Computation
+          a(class='link-btn' href='/') Link to all the majors
+        div
+          img(src='/img/temp1.svg' id='majorimage')   
+          div
+            div
+              p(id='major-name') Interdisiciplinary Computing and the Arts 
+              p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
+            button(id='next-major-btn')
         
         
   div(class='org')
@@ -100,3 +121,5 @@ block main
         p Some brief description about how there’s lots of cool facilities.  
     div 
       button(class='btn btn-secondary' href='/') Link to all orgs
+
+  script(src='/js/home.js')

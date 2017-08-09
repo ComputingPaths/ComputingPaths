@@ -1,15 +1,16 @@
 html
   head
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     link(
       rel='stylesheet'
       href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'
       integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ'
       crossorigin='anonymous')
+    link(
+      rel='stylesheet'
+      href='/css/index.css'
+    )
     block style
-      link(
-        rel='stylesheet'
-        href='/css/index.css'
-      )
     script(
       src='https://code.jquery.com/jquery-3.1.1.slim.min.js'
       integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n'
@@ -24,53 +25,57 @@ html
       crossorigin='anonymous')
     title Computing Paths
   body
-    nav(class='navbar navbar-toggleable-md navbar-light')
+    nav(class='navbar navbar-toggleable-md')
       button(
-        class='navbar-toggler'
+        class='navbar-toggler navbar-toggler-right'
         type='button'
         data-toggle='collapse'
         data-target='#navbarSupportedContent'
         aria-controls='navbarSupportedContent'
         aria-expanded='false' 
         aria-label='Toggle navigation')
-          span(class='navbar-toggler-icon')
+      
+      a(class='navbar-brand' href='/')
+        img(src='/img/logo.png')
 
       div(class='collapse navbar-collapse' id='navbarSupportedContent')
-        a(class='navbar-brand' href='/')
-          img(src='/img/logo.png' height='30')
-        div(class='navbar-nav')
-          a(class='nav-item nav-link' href="/") Stories
-          a(class='nav-item nav-link' href="/majors") Majors
-          a(class='nav-item nav-link' href="/") Connect
-          a(class='nav-item nav-link' href="/") Projects
-          a(class='nav-item nav-link' href="/") Resources
-      
-      a(class='navbar-brand hidden-md-down' href='http://www.ucsd.edu')
-        img(src='/img/logo_ucsd.png' height='30')
+        ul(class='navbar-nav')
+          li(class='nav-item')
+            a(class='nav-link' href="/null") Stories <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/majors") Majors <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/null") Connect <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/null") Projects <hr>
+          li(class='nav-item')
+            a(class='nav-link' href="/null") Resources <hr>
+
+      a(class='navbar-brand hidden-lg-down' href='http://www.ucsd.edu')
+        img(src='/img/logo_ucsd.png')
 
     block main
 
     footer
       div
-        div
-          img(src='/img/logo.png')
-          img(src='/img/logo_ucsd.png')
-        div
-          a(href='/') Home
-          a(href='/') Stories
-          a(href='/majors') Majors
-          a(href='/') Compare
-          a(href='/') Connect
-          a(href='/') Projects
-          a(href='/') Resources
-          a(href='/') About
-        div
-          a(href='/') Bioinformaticcs
-          a(href='/') Cognitive Science
-          a(href='/') Computer Engineering
-          a(href='/') Computer Science Engineering
-          a(href='/') Data Science
-          a(href='/') Electrical Engineerin
-          a(href='/') Interdisciplinary Computing and the Arts
-          a(href='/') Mathematics - Computer Science
-          a(href='/') Scientific Computation
+        img(src='/img/logo.png')
+        a(href='/') Home
+        a(href='/') Stories
+        a(href='/majors') Majors
+        a(href='/') Compare
+        a(href='/') Connect
+        a(href='/') Projects
+        a(href='/') Resources
+      div
+        a(href='/') Bioinformaticcs
+        a(href='/') Cognitive Science
+        a(href='/') Computer Engineering
+        a(href='/') Computer Science Engineering
+        a(href='/') Data Science
+        a(href='/') Electrical Engineering
+        a(href='/') Interdisciplinary Computing and the Arts
+        a(href='/') Mathematics - Computer Science
+        a(href='/') Scientific Computation
+      img(src='/img/logo_ucsd.png')
+    
+    script(src='/js/index.js')
