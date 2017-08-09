@@ -3,6 +3,7 @@
 nav.navbar {
   background-color: $darkblue;
   height: 80px;
+
   padding: 0 10% 0 10%;
 
   .navbar-brand {
@@ -34,10 +35,15 @@ nav.navbar {
     background-color: $orange;
     border: none;
     margin: 22px 0 0 0;
+    visibility: hidden;
   }
 
-  .nav-item:not(.active) hr {
-    visibility: hidden;
+  .nav-link.active hr {
+    visibility: visible;    
+  }
+
+  .nav-link:hover hr {
+    visibility: visible;
   }
 }
 
