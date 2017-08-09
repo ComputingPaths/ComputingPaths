@@ -35,6 +35,7 @@
   padding-top: 13px;
   text-align: center;
   display: block;
+  border: none;
 }
 
 .title {
@@ -179,15 +180,6 @@
   }
 }
 
-
-
-
-
-.resources {
-  width: 65%;
-  margin: auto;
-}
-
 .org {
   width: 100%;
   padding-left: 17.5%;
@@ -282,40 +274,41 @@
     margin: 20px 80px 20px 80px;
 }
 
-.resources > p:first-child {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0;
-}
+.resources {
+    @extend .section;
 
-.resources > p:nth-child(2) {
-  font-size: 32px;
-  margin-bottom: 40px;
-}
+    .host  {
 
-.resources > div {
-  padding: 20px 0 20px 0
-}
+        > div:nth-of-type(1) {
 
-.resources > div p {
-  margin-top: -5px;
-  margin-bottom: -5px;
-}
+          div {
 
-.resources > div p:first-child {
-  font-size: 24px;
-  font-weight: bold;
-}
+            p:nth-of-type(1) {
+              font-size:24px;
+              font-weight:bold;
+              color: $darkblue;
+            }
 
-.resources > div p:last-child {
-  font-size: 16px;
-}
+            p:nth-of-type(2) {
+              font-size:18px;
+              color: $darkblue;
+            }
+          }
+       }
 
-.resources > div:last-child {
-  margin-left: 650px;
-}
+       > div:nth-of-type(2) {
 
-.resources > div:last-child button {
-  width: 240px;
-  height: 60px;
+            margin-top: 64px;
+
+            a {
+                margin: 0px auto 0px auto;
+            }
+
+        }
+
+    }
+
+
+
+
 }
