@@ -1,7 +1,6 @@
 .nav-wrapper {
   background-color: #006A96; }
   .nav-wrapper nav {
-    background-color: #3D8CAE;
     width: 80%;
     height: 80px;
     margin: auto; }
@@ -23,7 +22,6 @@ footer {
   background: #006A96; }
   footer > div {
     padding: 64px 15px 64px 15px;
-    background: #3D8CAE;
     width: 80%;
     margin: auto;
     display: flex;
