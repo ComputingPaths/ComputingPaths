@@ -35,6 +35,7 @@
   padding-top: 13px;
   text-align: center;
   display: block;
+  border: none;
 }
 
 .title {
@@ -215,10 +216,6 @@
   justify-content: flex-end;
 }
 
-.org button {
-  width:  250px;
-  height: 50px;
-}
 
 .projects {
     width: 100%;
@@ -310,4 +307,8 @@
 
 .resources > div:last-child {
   margin-left: 650px;
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> 7967ece5368303c5f467ad66d47355bbbfdda7ab

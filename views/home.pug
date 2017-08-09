@@ -81,7 +81,7 @@ block main
       p ORGANIZATION
       p ORGANIZATION
     div 
-      button(class='btn btn-secondary' href='/') Link to all orgs
+      a(class='link-btn' href='/') Link to all orgs
       
   div(class='projects')
     p Projects
@@ -104,9 +104,10 @@ block main
           p Organization description. More description.
     div(class='info-container')
       p Extra information about projects for ComputingPaths
-      button(class='btn btn-secondary' href='/') Projects
+      a(class='link-btn' href='/') Projects
       
   div(class='resources')
+<<<<<<< HEAD
     div(class='host')
       h1(class='section-header') Find out More
       hr(class='header-bar')
@@ -119,5 +120,21 @@ block main
           p Some brief description about how there’s lots of cool facilities.  
       div 
         button(class='btn btn-secondary' href='/') Link to all orgs
+=======
+    p Find out more 
+    p Check out all the other stuff we have to offer
+    div(class='row')
+      div(class='col-sm-4')
+        p Faculty
+        p Some brief description about how there’s lots of cool faculty. 
+      div(class='col-sm-4')
+        p Resources
+        p Some brief description about how there’s lots of useful resources.
+      div(class='col-sm-4')
+        p Facilities
+        p Some brief description about how there’s lots of cool facilities.  
+    div 
+      a(class='link-btn' href='/') Link to all orgs
+>>>>>>> 7967ece5368303c5f467ad66d47355bbbfdda7ab
 
   script(src='/js/home.js')
