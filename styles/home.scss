@@ -35,6 +35,7 @@
   padding-top: 13px;
   text-align: center;
   display: block;
+  border: none;
 }
 
 .title {
@@ -100,7 +101,7 @@
       margin-top: 64px;
       display: flex;
       justify-content: space-between;
-      
+
       p {
         font-size: 20px;
         width: 60%;
@@ -179,15 +180,6 @@
   }
 }
 
-
-
-
-
-.resources {
-  width: 65%;
-  margin: auto;
-}
-
 .org {
   width: 100%;
   padding-left: 17.5%;
@@ -203,19 +195,24 @@
   font-weight: bold;
 }
 
+//this is the 1st and 3rd line of orgs
 .org div {
   margin: 50px 0 0 20px;
   display: flex;
+  color: red;
 }
 
-.org div:nth-child(4) {
+//this is the second line of orgs
+.org div:nth-child(5) {
   margin: 50px 0 0 -50px;
   display: flex;
+  color: blue;
 }
 
 .org div p {
   font-weight: bold;
   margin-left: 20px;
+  margin-right: 50px;
 }
 
 .org div:last-child {
@@ -224,9 +221,9 @@
   justify-content: flex-end;
 }
 
-.org button {
-  width:  250px;
-  height: 50px;
+//this is positioning the button in center
+.org div a {
+  margin: 0px auto 0px auto;
 }
 
 .projects {
@@ -300,40 +297,41 @@
   }
 }
 
-.resources > p:first-child {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0;
-}
+.resources {
+    @extend .section;
 
-.resources > p:nth-child(2) {
-  font-size: 32px;
-  margin-bottom: 40px;
-}
+    .host  {
 
-.resources > div {
-  padding: 20px 0 20px 0
-}
+        > div:nth-of-type(1) {
 
-.resources > div p {
-  margin-top: -5px;
-  margin-bottom: -5px;
-}
+          div {
 
-.resources > div p:first-child {
-  font-size: 24px;
-  font-weight: bold;
-}
+            p:nth-of-type(1) {
+              font-size:24px;
+              font-weight:bold;
+              color: $darkblue;
+            }
 
-.resources > div p:last-child {
-  font-size: 16px;
-}
+            p:nth-of-type(2) {
+              font-size:18px;
+              color: $darkblue;
+            }
+          }
+       }
 
-.resources > div:last-child {
-  margin-left: 650px;
-}
+       > div:nth-of-type(2) {
 
-.resources > div:last-child button {
-  width: 240px;
-  height: 60px;
+            margin-top: 64px;
+
+            a {
+                margin: 0px auto 0px auto;
+            }
+
+        }
+
+    }
+
+
+
+
 }
