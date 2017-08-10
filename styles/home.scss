@@ -27,7 +27,7 @@
 
 .link-btn {
   background: $darkblue;
-  width: 320px;
+  min-width: 320px;
   height: 56px;
   font-size: 18px;
   color: white;
@@ -129,8 +129,11 @@
 
     p {
       font-size: 20px;
-      width: 60%;
       color: $textblue;
+    }
+
+    .link-btn {
+      margin-left: 100px;
     }
   }
 
@@ -155,7 +158,6 @@
       align-items: center;
 
       p {
-        width: 100%;
         margin-bottom: 48px;
       }
     }
