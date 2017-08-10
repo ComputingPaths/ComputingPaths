@@ -38,6 +38,34 @@
   outline: none;
 }
 
+@media (max-width: $lg) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+
+  .header-bar {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: $md) {
+  .section {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .section-header {
+    font-size: 24px;
+  }
+
+  .header-bar {
+    margin: 8px auto 32px auto;
+    width: 18px;
+    height: 3px;
+  }
+}
+
 .title {
   height: 544px;
   padding: 179px 0 179px 0;
@@ -57,52 +85,53 @@
 }
 
 .story {
-  @extend .section;
+  main {
+    height: 352px;
+    display: flex;
 
-  div.host{
+    img {
+      width: 40%;
+    }
 
-    > div:nth-of-type(1) {
-      height: 352px;
-      display: flex;
+    div {
+      background-color: $aquablue;
 
-      img {
-        width: 40%;
+      h2, h3 {
+        color: white;
+        display: block;
+        font-weight: bold;
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin: 12% 16% 30 16%;
       }
 
-      div {
-        background-color: $aquablue;
+      h3 {
+        font-size: 20px;
+        margin: 0 16%;
 
-        p {
-          color: white;
-          font-size: 24px;
-          display: block;
-        }
-
-        p:nth-of-type(1) {
-          margin: 12% 16% 30 16%;
-        }
-
-        p:nth-of-type(2) {
-          margin: 0 16%;
+        span {
+          font-weight: normal;
         }
       }
     }
+  }
 
-    > div:nth-of-type(2) {
-      margin-top: 64px;
-      display: flex;
-      justify-content: space-between;
+  footer {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
 
-      p {
-        font-size: 20px;
-        width: 60%;
-      }
+    p {
+      font-size: 20px;
+      width: 60%;
+      color: $textblue;
     }
   }
 }
 
 .major {
-  @extend .section;
   background-color: $exlightblue;
 
   .host > div {
@@ -218,7 +247,6 @@
 }
 
 .projects {
-  @extend .section;
   background-color: $exlightblue;
 
   .host > div {
@@ -289,7 +317,6 @@
 }
 
 .resources {
-    @extend .section;
 
     .host  {
 
