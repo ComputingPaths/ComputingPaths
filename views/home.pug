@@ -84,27 +84,90 @@ block main
       button(class='btn btn-secondary' href='/') Link to all orgs
       
   div(class='projects')
-    p Projects
-    p Subtitle for Projects section
-    div(class='card-container')
-      div(class='card')
-        img(src='/img/temp3.svg' alt='#' style='width:100%')
-        div(class='container')
-          h4 Some Student Organization
-          p Organization description. More description.
-      div(class='card')
-        img(src='/img/temp3.svg' alt='#' style='width:100%')
-        div(class='container')
-          h4 Some Student Organization
-          p Organization description. More description.
-      div(class='card')
-        img(src='/img/temp3.svg' alt='#' style='width:100%')
-        div(class='container')
-          h4 Some Student Organization
-          p Organization description. More description.
-    div(class='info-container')
-      p Extra information about projects for ComputingPaths
-      button(class='btn btn-secondary' href='/') Projects
+    div(class='host')
+      h1(class='section-header') Triton Projects
+      hr(class='header-bar')
+      div(class='carousel slide' data-ride='carousel')
+      
+        ol(class='carousel-indicators')
+          li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
+          li(data-target='#carouselExampleIndicators' data-slide-to='1')
+          li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        
+        div(class='carousel-inner' role='listbox')
+        
+          div(class='project-container carousel-item active')
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+                
+          div(class='project-container carousel-item')
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >               
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+                
+          div(class='project-container carousel-item')
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+            div(class='project-card')
+              img(src='/img/temp3.svg' alt='#' style='width:100%')
+              div(class='container')
+                h4 Some Student Organization
+                p Organization description. More description.
+                p Read More    >
+                
+        a(class='carousel-control-prev' href='#carouselExampleIndicators' role='button' data-slide='prev')
+          span(class='carousel-control-prev-icon' aria-hidden='true')
+          span(class='sr-only') Previous
+
+        a(class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='prev')
+          span(class='carousel-control-next-icon' aria-hidden='true')
+          span(class='sr-only') Next
+
+      div(class='project-description')
+        div(class='more-projects-link')
+          p Extra information about projects for ComputingPaths
+          a(class='link-btn' href='/') Link to Projects
       
   div(class='resources')
     p Find out more 
