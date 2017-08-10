@@ -95,25 +95,29 @@
 
     div {
       background-color: $aquablue;
+      padding: 0 96px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       h2, h3 {
         color: white;
         display: block;
         font-weight: bold;
+        margin: 0;
       }
       
       h2 {
         font-size: 24px;
-        margin: 12% 16% 30 16%;
       }
 
       h3 {
         font-size: 20px;
-        margin: 0 16%;
+        margin-top: 30px;
+      }
 
-        span {
-          font-weight: normal;
-        }
+      span {
+        font-weight: normal;
       }
     }
   }
@@ -127,6 +131,33 @@
       font-size: 20px;
       width: 60%;
       color: $textblue;
+    }
+  }
+
+  @media (max-width: $lg) {
+    main {
+      flex-direction: column;
+      height: initial;
+
+      img {
+        width: 100%;
+        height: 414px;
+      }
+
+      div {
+        height: 266px;
+      }
+    }
+
+    footer {
+      margin-top: 48px;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        width: 100%;
+        margin-bottom: 48px;
+      }
     }
   }
 }
