@@ -6,6 +6,7 @@ nav.navbar {
 
   .navbar-brand {
     margin: 20px 0 20px 0;
+    padding-left: 8px;
   }
 
   img {
@@ -13,7 +14,7 @@ nav.navbar {
   }
 
   .navbar-nav {
-    margin-left: 38px;
+    margin-left: 30px;
     align-items: flex-end;
   }
 
@@ -47,9 +48,13 @@ nav.navbar {
   .navbar-toggler-right {
     right: 10%;
     top: 28px;
-    height: 24px;
+    padding: 0;
     color: white;
-    background-color: white;
+    outline: none;
+
+    i {
+      font-size: 24px;
+    }
   }
 
   @media (max-width: $lg) {
@@ -79,7 +84,10 @@ nav.navbar {
 
     .navbar-toggler-right {
       top: 23px;
-      height: 18px;
+
+      i {
+        font-size: 18px;
+      }
     }
   }
 }
@@ -93,7 +101,6 @@ nav.navbar {
     width: initial;
   }
 }
-
 
 footer {
   background: $darkblue;
