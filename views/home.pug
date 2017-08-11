@@ -29,8 +29,8 @@ block main
     div(class='host')
       h1(class='section-header') The Majors
       hr(class='header-bar')
-      div
-        div
+      section
+        aside
           ul(id='major-list')
             li Bioinformatics
             li Cognitive Science
@@ -42,13 +42,14 @@ block main
             li Mathematics - Computer Science
             li Scientific Computation
           a(class='link-btn' href='/') Link to all the majors
-        div
-          img(src='/img/temp1.svg' id='majorimage')   
+        main
+          img(src='/img/temp1.svg')   
           div
             div
-              p(id='major-name') Interdisiciplinary Computing and the Arts 
-              p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
-            a(class='link-btn' href='/')
+              h1(id='major-name') Interdisiciplinary Computing and the Arts 
+              h2 Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
+            button(id='next-major-btn')
+              i(class='fa fa-arrow-right fa-2x')
         
         
   div(class='org section')

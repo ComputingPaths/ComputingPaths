@@ -27,6 +27,7 @@
 
 .link-btn {
   background: $darkblue;
+  width: 320px;
   min-width: 320px;
   height: 56px;
   font-size: 18px;
@@ -244,58 +245,74 @@
 .major {
   background-color: $exlightblue;
 
-  .host > div {
+  section {
     display: flex;
 
-    > div:nth-of-type(1) {
-      width: 45%;
+    aside {
+      flex-basis: 40%;
 
-      li {
-        color: $textblue;
-        font-size: 20px;
-        margin-bottom: 16px;
-        font-weight: bold;
-      }
+      ul {
+        padding: 0;
+        margin: 0;
 
-      li:hover:not(.active) {
-        color: $aquablue;
-      }
+        li {
+          color: $textblue;
+          font-size: 20px;
+          margin-bottom: 16px;
+          font-weight: bold;
+          list-style-type: none;
+        }
 
-      li.active {
-        color: $orange;
+        li:hover:not(.active) {
+          color: $aquablue;
+          list-style-type: initial;
+        }
+
+        li.active {
+          color: $orange;
+          list-style-type: initial;
+        }
       }
 
       .link-btn {
-        margin-top: 48px;
+        margin-top: 64px;
       }
     }
 
-    > div:nth-of-type(2) {
-      width: 55%;
-
+    main {
+      flex-basis: 60%;
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
       img {
         height: 320px;
         width: 100%;
       }
-
+      
       > div {
+        flex-grow: 1;
         display: flex;
-        justify-content: space-between;
 
         div {
-          margin: 40px 40px 0 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background: white;
+          padding: 0 40px;
 
-          p {
+          h1, h2 {
             margin: 0;
             font-size: 20px;
             color: $textblue;
           }
 
-          p:nth-of-type(1) {
+          h1 {
             font-weight: bold;
           }
 
-          p:nth-of-type(2) {
+          h2 {
             margin-top: 10px;
           }
         }
@@ -304,6 +321,8 @@
           min-width: 112px;
           background-color: $darkblue;
           border: none;
+          outline: none;
+          color: white;
         }
       }
     }
