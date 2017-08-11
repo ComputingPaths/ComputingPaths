@@ -37,16 +37,17 @@
       justify-content: flex-start;
 
       div {
+        margin-bottom: 32px;
         flex-basis: initial;
 
         p {
           margin-top: 10px;
         }
       }
-
-      div:nth-of-type(2) {
-        margin-top: 32px;
-      }
     }
+  }
+
+  .link-btn {
+    margin: auto;
   }
 }
