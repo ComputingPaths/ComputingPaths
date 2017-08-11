@@ -1,7 +1,7 @@
 @import 'variables';
 
 .host {
-  width: 80%;
+  width: 77%;
   margin: auto;
 }
 
@@ -51,6 +51,10 @@
 }
 
 @media (max-width: $md) {
+  .host {
+    width: 88%;
+  }
+
   .section {
     padding-top: 32px;
     padding-bottom: 48px;
@@ -75,19 +79,53 @@
 
 .title {
   height: 544px;
-  padding: 179px 0 179px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: $exlightblue;
 
-  h1 {
+  h1, h2 {
+    margin: 0;
     color: $textblue;
+  }
+
+  h1 {
     font-size: 64px;
     font-weight: bold;
-    margin-bottom: 24px;
   }
 
   h2 {
-    color: $textblue;
     font-size: 36px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: $lg) {
+  .title {
+    height: 416px;
+    
+    h1 {
+      font-size: 48px;
+    }
+  
+    h2 {
+      font-size: 32px;
+      margin-top: 12px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .title {
+    height: 320px;
+    
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
   }
 }
 
