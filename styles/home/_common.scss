@@ -38,6 +38,12 @@
   outline: none;
 }
 
+.link-btn:hover {
+  text-decoration:none;
+  color: white;
+  background-color: $aquablue;
+}
+
 @media (max-width: $lg) {
   .section {
     padding-top: 48px;
