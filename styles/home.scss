@@ -1,7 +1,7 @@
 @import 'variables';
 
 .host {
-  width: 77%;
+  width: 80%;
   margin: auto;
 }
 
@@ -30,6 +30,7 @@
   min-width: 320px;
   height: 56px;
   font-size: 18px;
+  font-weight: bold;
   color: white;
   padding-top: 13px;
   text-align: center;
@@ -63,6 +64,12 @@
     margin: 8px auto 32px auto;
     width: 18px;
     height: 3px;
+  }
+
+  .link-btn {
+    font-size: 16px;
+    padding-top: 15px;
+    width: 100%;
   }
 }
 
@@ -104,6 +111,7 @@
         color: white;
         display: block;
         font-weight: bold;
+        line-height: 30px;
         margin: 0;
       }
       
@@ -130,6 +138,7 @@
     p {
       font-size: 20px;
       color: $textblue;
+      margin: 0;
     }
 
     .link-btn {
@@ -150,15 +159,45 @@
       div {
         height: 266px;
       }
-    }
 
+    }
+    
     footer {
       margin-top: 48px;
       flex-direction: column;
       align-items: center;
+      
+      .link-btn {
+        margin: 48px auto 0 auto;
+      }
+    }
+  }
+
+  @media (max-width: $md) {
+    main {
+      div {
+        padding: 0 64px;
+        height: 223px;
+
+        h2, h3 {
+          font-size: 18px;
+        }
+
+        h3 {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    footer {
+      margin-top: 24px;
 
       p {
-        margin-bottom: 48px;
+        font-size: 16px;
+      }
+
+      .link-btn {
+        margin-top: 32px;
       }
     }
   }
