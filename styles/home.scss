@@ -484,7 +484,7 @@
       height: 500px;
       margin: 31px;
       shadow: 0px 4px;
-      background-color: #E6F1F6;
+      background-color: white;
 
       > img {
         height: 256px;
@@ -509,8 +509,24 @@
   }
 
   .more-projects-link {
-    margin: 0 auto 16px auto;
+    margin: 0px auto 16px auto;
     text-align: center;
+  }
+  
+  footer {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 20px;
+      color: $textblue;
+      margin: 0;
+    }
+
+    .link-btn {
+      margin-left: 100px;
+    }
   }
 }
 
