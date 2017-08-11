@@ -12,7 +12,7 @@ block main
       h1 Discover your path.
       h2 Find out how to make computing part of <br> your journey.
   
-  div(class='story section')
+  div(class='stories section')
     div(class='host')
       h1(class='section-header') Stories &amp; Advice
       hr(class='header-bar')
@@ -25,30 +25,37 @@ block main
         p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.
         a(class='link-btn' href='/') Link to rest of stories
        
-  div(class='major section')
+  div(class='majors section')
     div(class='host')
       h1(class='section-header') The Majors
       hr(class='header-bar')
-      div
-        div
+      section
+        aside(class='hidden-sm-down')
           ul(id='major-list')
-            li Bioinformatics
-            li Cognitive Science
-            li Computer Engineering
-            li Computer Science Engineering
-            li Data Science
-            li Electrical Engineering
-            li Interdisciplinary Computing and the Arts
-            li Mathematics - Computer Science
-            li Scientific Computation
-          a(class='link-btn' href='/') Link to all the majors
-        div
-          img(src='/img/temp1.svg' id='majorimage')   
+            div
+              li Bioinformatics
+              li Cognitive Science
+              li Computer Engineering
+              li Computer Science Engineering
+              li Data Science
+            div
+              li Electrical Engineering
+              li Interdisciplinary Computing and the Arts
+              li Mathematics - Computer Science
+              li Scientific Computation
+          a(class='link-btn hidden-md-down' href='/') Link to all the majors
+        main
+          img(src='/img/temp1.svg')   
           div
             div
-              p(id='major-name') Interdisiciplinary Computing and the Arts 
-              p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
-            a(class='link-btn' href='/')
+              h1(id='major-name') Interdisiciplinary Computing and the Arts 
+              h2 Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
+            button(id='next-major-btn')
+              i(class='fa fa-arrow-right fa-2x')
+      nav(class='hidden-md-up')
+        i(class='fa fa-arrow-left fa-2x')
+        i(class='fa fa-arrow-right fa-2x')
+      a(class='link-btn hidden-lg-up' href='/') Link to all the majors
         
         
   div(class='org section')
@@ -74,7 +81,7 @@ block main
     div(class='host')
       h1(class='section-header') Triton Projects
       hr(class='header-bar')
-      div(class='carousel slide' data-ride='carousel')
+      div(id='carouselExampleIndicators' class='carousel slide' data-ride='carousel')
       
         ol(class='carousel-indicators')
           li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
@@ -147,12 +154,12 @@ block main
           span(class='carousel-control-prev-icon' aria-hidden='true')
           span(class='sr-only') Previous
 
-        a(class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='prev')
+        a(class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='next')
           span(class='carousel-control-next-icon' aria-hidden='true')
           span(class='sr-only') Next
 
       div(class='project-description')
-        div(class='more-projects-link')
+        footer
           p Extra information about projects for ComputingPaths
           a(class='link-btn' href='/') Link to Projects
       
@@ -160,15 +167,13 @@ block main
     div(class='host')
       h1(class='section-header') Find Out More
       hr(class='header-bar')
-      div(class='row') 
-        div(class='col-sm-5')
-          p Events
+      main
+        div
+          h1 Events
           p Some brief description about how there’s lots of useful resources.
-        div(class='col-sm-2')
-        div(class='col-sm-5')
-          p Facilities
+        div
+          h1 Facilities
           p Some brief description about how there’s lots of cool facilities.  
-      div 
-        a(class='link-btn' href='/') Link to resources
+      a(class='link-btn' href='/') Link to resources
 
   script(src='/js/home.js')

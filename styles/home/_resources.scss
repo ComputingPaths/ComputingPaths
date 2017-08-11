@@ -1,0 +1,53 @@
+.resources {
+  main {
+    display: flex;
+    justify-content: space-around;
+
+    div {
+      flex-basis: 40%;
+
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: $textblue;
+        margin: 0;
+      }
+
+      p {
+        font-size: 18px;
+        color: $textblue;
+        margin: 16px 0 0 0;
+      }
+    }
+  }
+
+  .link-btn {
+    margin: 64px auto 0 auto;
+  }
+
+  @media (max-width: $lg) {
+    .link-btn {
+      margin: 48px auto 0 auto;
+    }
+  }
+
+  @media (max-width: $md) {
+    main {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      div {
+        margin-bottom: 32px;
+        flex-basis: initial;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+    
+    .link-btn {
+      margin: auto;
+    }
+  }
+}
