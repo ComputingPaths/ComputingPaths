@@ -30,18 +30,20 @@ block main
       h1(class='section-header') The Majors
       hr(class='header-bar')
       section
-        aside
+        aside(class='hidden-sm-down')
           ul(id='major-list')
-            li Bioinformatics
-            li Cognitive Science
-            li Computer Engineering
-            li Computer Science Engineering
-            li Data Science
-            li Electrical Engineering
-            li Interdisciplinary Computing and the Arts
-            li Mathematics - Computer Science
-            li Scientific Computation
-          a(class='link-btn' href='/') Link to all the majors
+            div
+              li Bioinformatics
+              li Cognitive Science
+              li Computer Engineering
+              li Computer Science Engineering
+              li Data Science
+            div
+              li Electrical Engineering
+              li Interdisciplinary Computing and the Arts
+              li Mathematics - Computer Science
+              li Scientific Computation
+          a(class='link-btn hidden-md-down' href='/') Link to all the majors
         main
           img(src='/img/temp1.svg')   
           div
@@ -50,6 +52,10 @@ block main
               h2 Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
             button(id='next-major-btn')
               i(class='fa fa-arrow-right fa-2x')
+      nav(class='hidden-md-up')
+        i(class='fa fa-arrow-left fa-2x')
+        i(class='fa fa-arrow-right fa-2x')
+      a(class='link-btn hidden-lg-up' href='/') Link to all the majors
         
         
   div(class='org section')

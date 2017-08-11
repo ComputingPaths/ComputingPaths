@@ -1,10 +1,11 @@
 $(document).ready(() => {
   //Code for the majors section
 
+  const numMajors = 9
   //Generate a random major index [0 ~ 8]
-  let i = Math.floor(Math.random() * 9)
+  let i = Math.floor(Math.random() * numMajors)
   //Get the list of majors
-  let ul = $('#major-list').children()
+  let ul = $('#major-list li')
   //Set a pointer to the currect major
   let cur = ul.eq(i)
   //Get the major name element
@@ -19,8 +20,8 @@ $(document).ready(() => {
     //Deactivate the current major
     cur.removeClass('active')
     //Move to the next major
-    cur = cur.next()
-    if (cur.length === 0) cur = ul.first()
+    i = (i + 1) % numMajors
+    cur = ul.eq(i)
     //Activate the new major
     cur.addClass('active')
     //Update major name
@@ -30,6 +31,7 @@ $(document).ready(() => {
   //Handle click event for major links
   ul.click(e => {
     cur.removeClass('active')
+    i = ul.index(e.target)
     cur = $(e.target)
     cur.addClass('active')
     name.html(cur.html())
