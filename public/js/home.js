@@ -15,25 +15,22 @@ $(document).ready(() => {
   //Update major name display
   name.html(cur.html())
 
+  let updateMajor = ()=>{
+    cur.removeClass('active')
+    cur = ul.eq(i)
+    cur.addClass('active')
+    name.html(cur.html())
+  }
+
   //Handle click event of the next major button
   $('#next-major').click(() => {
-    //Deactivate the current major
-    cur.removeClass('active')
-    //Move to the next major
     i = (i + 1) % numMajors
-    cur = ul.eq(i)
-    //Activate the new major
-    cur.addClass('active')
-    //Update major name
-    name.html(cur.html())
+    updateMajor()
   })
 
   $('#pre-major').click(() => {
-    cur.removeClass('active')
     i = (i - 1 + numMajors) % numMajors
-    cur = ul.eq(i)
-    cur.addClass('active')
-    name.html(cur.html())
+    updateMajor()
   })
 
   //Handle click event for major links
