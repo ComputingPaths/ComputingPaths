@@ -4,6 +4,7 @@
 @import 'home/stories';
 @import 'home/majors';
 @import 'home/resources';
+@import 'home/projects';
 
 .org {
   width: 100%;
@@ -52,13 +53,8 @@
 }
 
 .projects {
-  background-color: $exlightblue;
 
-  .host > div {
-      display:flex;
-  }
-
-  .projects > p:first-child {
+  /*.projects > p:first-child {
       font-size: 32px;
       font-weight: bold;
       margin: 0;
@@ -69,23 +65,19 @@
       font-size: 32px;
       margin-bottom: 10px;
       margin-left: 50px;
-  }
+  }*/
 
-  .project-container {
-
-  }
-
-  h4 {
+  /*h4 {
     font-size: 20px;
     color: #003E5C;
-  }
+}*/
 
-  div:nth-of-type(1) > p {
+  /*div:nth-of-type(1) > p {
     padding: 10px 0px 24px 0px;
     font-size: 16px;
-  }
+}*/
 
-  .project-card {
+  /*.project-card {
       transition: 0.3s;
       width: 360px;
       height: 500px;
@@ -97,42 +89,15 @@
         height: 256px;
         width: 100%;
       }
-  }
+  }*/
 
-  .project-card:hover {
+  /*.project-card:hover {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
-  }
+}*/
 
-  .container {
+  /*.container {
     padding: 40px 40px 40px 40px;
-  }
+}*/
 
-  .project-description {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 40px 24px 40px;
-    font-size: 20px;
-    color: #003E5C;
-  }
 
-  .more-projects-link {
-    margin: 0px auto 16px auto;
-    text-align: center;
-  }
-
-  footer {
-    margin-top: 64px;
-    display: flex;
-    justify-content: space-between;
-
-    p {
-      font-size: 20px;
-      color: $textblue;
-      margin: 0;
-    }
-
-    .link-btn {
-      margin-left: 100px;
-    }
-  }
 }

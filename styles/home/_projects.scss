@@ -1,0 +1,99 @@
+.projects {
+
+    background-color: $exlightblue;
+
+    > .carousel-container {
+
+        display: flex;
+
+        /*.carousel-slide {}
+        .carousel-indicators {}*/
+        > .carousel-inner {
+
+            > .project-container {
+
+                > .project-card {
+
+                    transition: 0.3s;
+                    width: 256px;
+                    height: 256px;
+                    margin: 31px;
+                    shadow: 0px 4px;
+                    background-color: white;
+
+                    img {
+                      height: 256px;
+                      width: 100%;
+                    }
+
+                    > div {
+                        padding: 40px 40px 40px 40px;
+
+                        > h4 {
+                            font-size: 20px;
+                            color: #003E5C;
+                        }
+
+                        > p {
+                            padding: 10px 0px 24px 0px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    /*.card-description {
+
+                        padding: 40px 40px 40px 40px;
+
+                        > h4 {
+                            font-size: 20px;
+                            color: #003E5C;
+                        }
+
+                        > p {
+                            padding: 10px 0px 24px 0px;
+                            font-size: 16px;
+                        }
+                    }*/
+
+                }
+
+                > .project-card:hover {
+                    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+                }
+
+            }
+
+        }
+
+        > a {
+            background-color: black;
+        }
+    }
+
+    .project-description {
+
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-left: 40px;
+        font-size: 20px;
+        color: #003E5C;
+
+        footer {
+          margin-top: 64px;
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            font-size: 20px;
+            color: $textblue;
+            margin: 0;
+          }
+
+          .link-btn {
+            margin-left: 100px;
+          }
+        }
+    }
+
+}

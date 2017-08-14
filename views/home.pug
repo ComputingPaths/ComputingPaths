@@ -81,7 +81,8 @@ block main
     div(class='host')
       h1(class='section-header') Triton Projects
       hr(class='header-bar')
-      div(id='carouselExampleIndicators' class='carousel slide' data-ride='carousel')
+      div(class='carousel-container')
+        div(id='carouselExampleIndicators' class='carousel slide' data-ride='carousel')
       
         ol(class='carousel-indicators')
           li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
@@ -93,19 +94,19 @@ block main
           div(class='project-container carousel-item active')
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
@@ -113,19 +114,19 @@ block main
           div(class='project-container carousel-item')
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >               
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
@@ -133,27 +134,25 @@ block main
           div(class='project-container carousel-item')
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
             div(class='project-card')
               img(src='/img/temp3.svg' alt='#' style='width:100%')
-              div(class='container')
+              div(class='card-description')
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
-                
         a(class='carousel-control-prev' href='#carouselExampleIndicators' role='button' data-slide='prev')
           span(class='carousel-control-prev-icon' aria-hidden='true')
           span(class='sr-only') Previous
-
         a(class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='next')
           span(class='carousel-control-next-icon' aria-hidden='true')
           span(class='sr-only') Next
