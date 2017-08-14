@@ -16,7 +16,7 @@ $(document).ready(() => {
   name.html(cur.html())
 
   //Handle click event of the next major button
-  $('#next-major-btn').click(() => {
+  $('#next-major').click(() => {
     //Deactivate the current major
     cur.removeClass('active')
     //Move to the next major
@@ -25,6 +25,14 @@ $(document).ready(() => {
     //Activate the new major
     cur.addClass('active')
     //Update major name
+    name.html(cur.html())
+  })
+
+  $('#pre-major').click(() => {
+    cur.removeClass('active')
+    i = (i - 1 + numMajors) % numMajors
+    cur = ul.eq(i)
+    cur.addClass('active')
     name.html(cur.html())
   })
 
