@@ -36,12 +36,15 @@
   display: block;
   border: none;
   outline: none;
+  box-shadow: 0 7px $textblue;
 }
 
 .link-btn:hover {
+  margin-top: auto;
   text-decoration:none;
   color: white;
-  background-color: $aquablue;
+  background-color: #35A5D3;
+  box-shadow: 0 7px #35A5D3;
 }
 
 @media (max-width: $lg) {
