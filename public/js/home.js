@@ -37,10 +37,12 @@ $(document).ready(() => {
     name.html(cur.html())
   })
 
+  // Handle click event for projects carousel left scroll
   $('#left').click(() => {
       $('#carouselExampleIndicators').carousel('prev')
   })
 
+  // Handle click event for projects carousel right scroll
   $('#right').click(() => {
       $('#carouselExampleIndicators').carousel('next')
   })
