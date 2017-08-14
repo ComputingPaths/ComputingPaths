@@ -15,25 +15,17 @@
       display:flex;
   }*/
 
-  .host {
+  .host-wide {
       width: 100%;
   }
 
-  .scrollLeft {
+  .scrollIcon {
       width: 11.5%;
       text-align: center;
 
       i {
-        margin-top: 70%;
-      }
-  }
-
-  .scrollRight {
-      width: 11.5%;
-      text-align: center;
-
-      i {
-        margin-top: 70%;
+        color: $orange;
+        margin-top: 100%;
       }
   }
 
