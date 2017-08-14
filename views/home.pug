@@ -58,38 +58,40 @@ block main
       a(class='link-btn hidden-lg-up' href='/') Link to all the majors
         
         
-  div(class='org section')
+  div(class='orgs section')
     div(class='host')
       h1(class='section-header') Connect
       hr(class='header-bar')
-      div
-        p ORGANIZATION
-        p ORGANIZATION
-        p ORGANIZATION
-      div
-        p ORGANIZATION
-        p ORGANIZATION
-        p ORGANIZATION
-      div
-        p ORGANIZATION
-        p ORGANIZATION
-        p ORGANIZATION
-      div 
-        a(class='link-btn' href='/') Link to all orgs
+      main
+        div
+          p ORGANIZATION
+          p ORGANIZATION
+          p ORGANIZATION
+        div
+          p ORGANIZATION
+          p ORGANIZATION
+          p ORGANIZATION
+        div
+          p ORGANIZATION
+          p ORGANIZATION
+          p ORGANIZATION
+      a(class='link-btn' href='/') Link to all orgs
       
   div(class='projects section')
     div(class='host')
       h1(class='section-header') Triton Projects
       hr(class='header-bar')
-      div(class='carousel-container')
+      div(class='carouselContainer')
+        div(class='scrollLeft')
+          i(class='fa fa-arrow-left fa-2x' id='left' aria-hidden='true')
         div(id='carouselExampleIndicators' class='carousel slide' data-ride='carousel')
       
-        ol(class='carousel-indicators')
-          li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
-          li(data-target='#carouselExampleIndicators' data-slide-to='1')
-          li(data-target='#carouselExampleIndicators' data-slide-to='2')
-        
-        div(class='carousel-inner' role='listbox')
+          ol(class='carousel-indicators')
+            li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
+            li(data-target='#carouselExampleIndicators' data-slide-to='1')
+            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+    
+          div(class='carousel-inner' role='listbox')
         
           div(class='project-container carousel-item active')
             div(class='project-card')
@@ -150,13 +152,8 @@ block main
                 h4 Some Student Organization
                 p Organization description. More description.
                 p Read More    >
-        a(class='carousel-control-prev' href='#carouselExampleIndicators' role='button' data-slide='prev')
-          span(class='carousel-control-prev-icon' aria-hidden='true')
-          span(class='sr-only') Previous
-        a(class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='next')
-          span(class='carousel-control-next-icon' aria-hidden='true')
-          span(class='sr-only') Next
-
+        div(class='scrollRight')
+          i(class='fa fa-arrow-right fa-2x' id='right' aria-hidden='true')
       div(class='project-description')
         footer
           p Extra information about projects for ComputingPaths

@@ -36,4 +36,13 @@ $(document).ready(() => {
     cur.addClass('active')
     name.html(cur.html())
   })
+
+  $('#left').click(() => {
+      $('#carouselExampleIndicators').carousel('prev')
+  })
+
+  $('#right').click(() => {
+      $('#carouselExampleIndicators').carousel('next')
+  })
+
 })
