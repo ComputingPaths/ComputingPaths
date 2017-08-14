@@ -35,11 +35,8 @@ $(document).ready(() => {
 
   //Handle click event for major links
   ul.click(e => {
-    cur.removeClass('active')
     i = ul.index(e.target)
-    cur = $(e.target)
-    cur.addClass('active')
-    name.html(cur.html())
+    updateMajor()
   })
 
   $('#left').click(() => {
