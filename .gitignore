@@ -4,3 +4,4 @@ package-lock.json
 .sass-cache
 public/css/*
 *.log
+dist
