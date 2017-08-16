@@ -1,4 +1,103 @@
 .projects {
-    background-color: $exlightblue;
-    
+  background-color: $exlightblue;
+
+  .host-wide {
+      width: 100%;
+  }
+
+  .scrollIcon {
+      width: 11.5%;
+      text-align: center;
+
+      i {
+        color: $orange;
+        margin-top: 173%;
+      }
+  }
+
+  #carouselExampleIndicators {
+      width: 77%;
+      margin: auto;
+  }
+
+  .carouselContainer {
+      display: flex;
+  }
+
+  .circle-indicators {
+      margin: 0;
+  }
+
+  .fa {
+      padding: 48px 20px 0 20px;
+      background-color: inherit;
+  }
+
+  .fa-circle {
+      width: 8px;
+      height: 8px;
+  }
+
+  .fa-circle.active{
+      color: $orange;
+  }
+
+  .card-description {
+      margin: 40px 40px 40px 40px;
+
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #003E5C;
+    }
+
+    p {
+      color: #003E5C;
+      padding: 10px 0px 24px 0px;
+      font-size: 16px;
+    }
+
+    p:nth-of-type(2) {
+        color: #003E5C;
+        padding: 10px 0px 24px 0px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+  }
+
+  .project-card {
+      transition: 0.3s;
+      width: 360px;
+      height: 500px;
+      margin: 31px;
+      shadow: 0px 4px;
+      background-color: white;
+
+      > img {
+        height: 256px;
+        width: 100%;
+      }
+  }
+
+  .project-card:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+  }
+
+    footer {
+      margin-top: 64px;
+      padding-left: 20px;
+      padding-right: 28px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-size: 20px;
+        color: $textblue;
+        margin: 0;
+      }
+
+      .link-btn {
+        margin-left: 100px;
+      }
+    }
 }

@@ -86,11 +86,11 @@ block main
         div(class='scrollIcon')
           i(class='fa fa-arrow-left fa-2x' id='left' aria-hidden='true')
         div(id='carouselExampleIndicators' class='carousel slide' data-ride='carousel')
-      
-          ol(class='carousel-indicators')
-            li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
-            li(data-target='#carouselExampleIndicators' data-slide-to='1')
-            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+          
+          ol(class='carousel-indicators circle-indicators')
+            i(class='fa fa-circle' aria-hidden='true' data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
+            i(class='fa fa-circle' aria-hidden='true' data-target='#carouselExampleIndicators' data-slide-to='1')
+            i(class='fa fa-circle' aria-hidden='true' data-target='#carouselExampleIndicators' data-slide-to='2')
     
           div(class='carousel-inner' role='listbox')
         
@@ -155,11 +155,11 @@ block main
                   p Read More    >
         div(class='scrollIcon')
           i(class='fa fa-arrow-right fa-2x' id='right' aria-hidden='true')
+        
     div(class='host')
-      div(class='project-description')
-        footer
-          p Extra information about projects for ComputingPaths
-          a(class='link-btn' href='/') Link to Projects
+      footer
+        p Extra information about projects for ComputingPaths
+        a(class='link-btn' href='/') Link to Projects
       
   div(class='resources section')
     div(class='host')
