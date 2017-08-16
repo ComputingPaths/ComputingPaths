@@ -1,27 +1,33 @@
-extends index.pug
+extends ../template.pug
 
 block append style 
   link(
     rel='stylesheet'
-    href ='/css/majors.css'
+    href ='/css/stories.css'
   )
     
 block main
-  div(class='title')
+  div(class='intro')
     div(class='host')
-      h1 Stories and Advice
-      h2 Let the student know that there is no one computaing path.
-      <br> This is the stories page. 
+      h1 Stories & Advice
+  
+  div(class='intro-text')
+    div(class='host')
+      h2 Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
       
   div(class='mainstory')
     div(class='video')
-      div(class='bluebox')
       div(class='host')
         img(src='/img/temp1.svg')
+    //-  div(class='bluebox')
+        img(src='/img/temp1.svg')
+      //-div(class='host')
     div(class='content')
       div(class='host')
         p Rachel Keinouz 
         p Math-Computer Science  |  Class of 2017
         div(class='text')
           div(class='description')
+            p here is description
           div(class='quote')
+            p here is a quote

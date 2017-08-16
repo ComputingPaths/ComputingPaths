@@ -2,13 +2,83 @@
 @import 'home/common';
 @import 'home/title';
 
-.mainstory {
-  div {
-    //bluebox
-    div:nth-of-child(1) {
-      background-color:$aquablue;
-      height: 512px;
-    }
+.intro {
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $exlightblue;
 
+  div {
+
+    h1 {
+      color: $textblue;
+      padding-top: 140px;
+      padding-left: 100px;
+      font-weight: bold;
+    }
   }
+}
+
+.intro-text {
+  height: 456px;
+
+  div {
+    h2 {
+      padding: 70px 450px 70px 100px;
+      color: $textblue;
+      line-height: 150%;
+    }
+  }
+
+}
+
+.mainstory {
+  height: 1069px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .video {
+    background-color:$aquablue;
+    height: 512px;
+
+    .host {
+      padding-top: 5%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .content {
+    height: 557px;
+    .host {
+      padding-top: 180px;
+      p:nth-of-type(1) {
+        color: $textblue;
+        font-size: 28px;
+        font-weight: bold;
+        }
+      p:nth-of-type(2) {
+        color:$darkblue;
+        font-size: 24px;
+        font-weight: 550;
+      }
+      .text {
+        display: flex;
+        justify-content: space-around;
+        .description p {
+          font-size: 20px;
+          font-weight: none;
+          }
+        .quote p {
+          font-size: 36px;
+          font-weight: 550;
+        }
+      }
+    }
+  }
+
+
 }
