@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'home/common';
+@import 'home/title';
+
+.mainstory {
+  div {
+    //bluebox
+    div:nth-of-child(1) {
+      background-color:$aquablue;
+      height: 512px;
+    }
+
+  }
+}
