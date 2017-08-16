@@ -25,17 +25,21 @@ exports.renderDynamic = () => {
   })
 }
 
-exports.renderStatic = () => {
-  fs.readdir('views/static', (err, files) => {
+const renderFile = (name, option = {}) => {
+  let html = pug.renderFile(`views/${name}`, option)
+  fs.writeFile(`public/${name.replace('pug', 'html')}`, html, err => {
+    if (err) throw err
+  })
+}
+exports.renderFile = renderFile
+
+exports.renderAll = () => {
+  fs.readdir('views', (err, files) => {
     if (err) throw err
 
     for (let file of files) {
-      file = file.slice(0, -4)
-
-      let html = pug.renderFile(`views/static/${file}.pug`)
-      fs.writeFile(`public/${file}.html`, html, err => {
-        if (err) throw err
-      })
+      if (file.startsWith('.')) continue
+      renderFile(file)
     }
   })
 }
