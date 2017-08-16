@@ -36,17 +36,20 @@
   display: block;
   border: none;
   outline: none;
-  box-shadow: 0 7px $textblue;
+  box-shadow: 0 4px $textblue;
 }
 
 .link-btn:hover {
-  margin-top: auto;
   text-decoration:none;
   color: white;
-  background-color: #35A5D3;
-  box-shadow: 0 7px #35A5D3;
+  box-shadow: 0 6px $textblue;
+  transform: translateY(-2px);
 }
 
+.link-btn:active {
+  box-shadow: 0 1px $textblue;
+  transform: translateY(3px);
+}
 @media (max-width: $lg) {
   .section {
     padding-top: 48px;
