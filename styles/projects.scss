@@ -1,0 +1,72 @@
+@import 'variables';
+@import 'index/common';
+@import 'index/title';
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $exlightblue;
+  height: 356px;
+  padding: 174px 640px 116px 260px; 
+
+  h1 {
+    color: $textblue;
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: bold;
+  }
+}
+
+.intro-text {
+  display:flex;
+  height: 450px;
+  
+  h2 {
+    padding: 128px 260px 160px 260px;
+    color: $textblue;
+    font-size: 36px;
+    line-height: 54px;
+    
+  }
+}
+
+.projectsection {
+  background: $exlightblue;
+  padding: 80px 165px 116px 165px;
+  
+  .projectcard {
+    width: 1110px;
+    height: 316px;
+    
+    img {
+      display: inline-block;
+      width: 475px;
+      height: 316;
+      border: 1px solid #B7BBC0;
+    }
+    
+    .card{
+      display: inline-block;
+      
+      .cardheading {
+        width: 635px;
+        height: 80px;
+        display: inline-block;
+        background: $aquablue;
+      }
+      
+      .cardinformation {
+        hr {
+          display: block;
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ccc;
+          margin: 1em 0;
+          padding: 0;
+          color: #E6F1F6;
+        }
+      }
+    }
+  }
+}
