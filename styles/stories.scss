@@ -46,8 +46,6 @@
     .host {
       position: relative;
       top: 80px;
-      width: 1108px;
-      height: 512px;
 
       img {
         width: 100%;
@@ -84,6 +82,13 @@
       }
     }
   }
+}
 
+.stories-header {
+    background-color: $exlightblue;
+
+    h1 {
+      padding-top: 80px;
+    }
 
 }
