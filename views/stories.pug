@@ -8,32 +8,30 @@ block append style
     
 block main
   div(class='page-header')
-    div(class='host')
-      h1 Stories & Advice
+    div(class='sub-host')
+      h1 Stories &amp; Advice
   
   div(class='page-description')
-    div(class='host')
+    div(class='sub-host')
       h2 Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
       
   div(class='main-story')
     div(class='video')
-      div(class='host')
+      div(class='sub-host')
         img(src='/img/temp1.svg')
     div(class='vid-info')
-      div(class='host')
-        p Rachel Keinouz 
-        p Math-Computer Science  |  Class of 2017
-        div(class='vid-text')
-          div(class='description')
-            p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
-          div(class='quote')
-            p "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
+      p Rachel Keinouz 
+      p Math-Computer Science  |  Class of 2017
+      div(class='vid-text')
+        div(class='description')
+          p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
+        div(class='quote')
+          p "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
 
   div(class='more-stories')  
     div(class='stories-header')            
-      div(class='host')
-        h1(class='section-header') More Stories
-        hr(class='header-bar')      
+      h1(class='section-header') More Stories
+      hr(class='header-bar')      
     div(class='story left')
       div(class='sub-host')
         div(class='story-photo')
@@ -69,17 +67,20 @@ block main
             
   div(class='next-steps')
     div(class='next-steps-header')            
-      div(class='host')
-        h1(class='section-header') Next Steps
-        hr(class='header-bar') 
-    div(class='next-steps-content')
+      h1(class='section-header') Next Steps
+      hr(class='header-bar') 
+    div(class='next-steps-content sub-host')
       div
         h1 Start Your Journey 
         p Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-        h3 Explore the majors
+        a(class='major-link' href='/')
+          h3 Explore the majors 
+          i(class='fa fa-arrow-right' id='right' aria-hidden='true')
       div
         h1 Find Students Like You
         p Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-        h3 Explore the orgs
+        a(class='orgs-link' href='/')
+          h3 Explore the orgs 
+          i(class='fa fa-arrow-right' id='right' aria-hidden='true')
     
   
