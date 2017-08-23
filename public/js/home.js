@@ -1,6 +1,14 @@
 $(document).ready(() => {
   //Code for the majors section
-  let majorHooks = [ '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  let majorHooks = [ 'Bioinformatics majors address the growing need for trained computational biologists in the rapidly growing field of biological data analysis.',
+    'Cognitive Science students are at the forefront of researching solutions and developing technology designed to better suit humanity. ',
+    'Computer Engineering students unite principles of mathematics and science to become architects of electronic systems.',
+    'Computer science students gain knowledge in key computing theories and languages, directly preparing them to enter high tech industry.',
+    'Data scientists use mathematics and computing to tackle the emerging need for data analysis in a wide range of industries.',
+    'Electrical Engineering students unite principles of mathematics and science to become architects of electronic systems.',
+    'Interdisciplinary Computing and the Arts students embody the new generation of artists and musicians.',
+    'Math-Computer Science students focus on the intersection between mathematics and theoretical computer science.',
+    'Scientific Computation majors bridge the gap between applied mathematics, physics, and computer science.']
 
   const numMajors = 9
   //Generate a random major index [0 ~ 8]
