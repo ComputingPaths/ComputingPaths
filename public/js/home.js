@@ -1,5 +1,6 @@
 $(document).ready(() => {
   //Code for the majors section
+  let majorHooks = [ '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
   const numMajors = 9
   //Generate a random major index [0 ~ 8]
@@ -10,6 +11,8 @@ $(document).ready(() => {
   let cur = ul.eq(i)
   //Get the major name element
   let name = $('#major-name')
+  // Get the major hook element
+  let hook = $('#major-hook')
   //Active the current major
   cur.addClass('active')
   //Update major name display
@@ -20,6 +23,7 @@ $(document).ready(() => {
     cur = ul.eq(i)
     cur.addClass('active')
     name.html(cur.html())
+    hook.html(majorHooks[i])
   }
 
   //Handle click event of the next major button
