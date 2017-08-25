@@ -1,5 +1,7 @@
 $(document).ready(() => {
   //Code for the majors section
+
+  // Array of hooks for each major
   let majorHooks = [ 'Bioinformatics majors address the growing need for trained computational biologists in the rapidly growing field of biological data analysis.',
     'Cognitive Science students are at the forefront of researching solutions and developing technology designed to better suit humanity. ',
     'Computer Engineering students unite principles of mathematics and science to become architects of electronic systems.',
@@ -23,8 +25,9 @@ $(document).ready(() => {
   let hook = $('#major-hook')
   //Active the current major
   cur.addClass('active')
-  //Update major name display
+  //Update major name display and major hook
   name.html(cur.html())
+  hook.html(majorHooks[i])
 
   let updateMajor = ()=>{
     cur.removeClass('active')
