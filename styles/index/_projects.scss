@@ -103,20 +103,49 @@
   nav {
     display: flex;
     justify-content: center;
+    margin: 48px 0;
+
+    ul {
+      i {
+        color: $textblue;
+        font-size: 10px;
+        margin: 0 10px;
+      }
+      i.active {
+        color: $orange;
+      }
+    }
+
     
     a {
       margin: 0 50px;
     }
   }
 
+  
   footer {
     display: flex;
     justify-content: space-between;
-
+    
     p {
       color: $textblue;
       font-size: 20px;
       width: 60%;
+    }
+  }
+
+  @media (max-width: $lg) {
+    nav {
+      margin: 36px 0;
+    }
+
+    footer {
+      flex-direction: column;
+
+      p {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 }

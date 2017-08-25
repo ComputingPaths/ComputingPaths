@@ -55,18 +55,39 @@ $(document).ready(() => {
   let carousel = $('.carousel')
   let projs = $('.projects article')
   let inner = $('.projects .carousel-inner')
+  let indicator = $('.projects nav ul')
   let cardPerGroup = 3
+  let pi = 0;
+
+  let updateIndicator = newIndex => {
+    indicator.children().eq(pi).removeClass('active')
+    pi = newIndex
+    indicator.children().eq(pi).addClass('active')
+  }
 
   let buildCards = () => {
     inner.empty()
+    indicator.empty()
     for (let i = 0; i < projs.length; i += cardPerGroup) {
       let group = $('<div class="carousel-item"></div>')
       if (i === 0) group.addClass('active')
       for (let j = 0; j < cardPerGroup; j++) {
-        group.append(projs[(i + j) % projs.length])
+        if (i + j >= projs.length) {
+          group.append(projs.eq((i + j) % projs.length).clone())
+        }
+        else {
+          group.append(projs[i + j])
+        }
       }
       inner.append(group)
+      $('<i class="fa fa-circle"></i>').appendTo(indicator)
     }
+    
+    updateIndicator(0)
+    indicator.children().click(e => {
+      updateIndicator(indicator.children().index(e.target))
+      carousel.carousel(pi)
+    })
   }
 
   let mql = window.matchMedia('(max-width: 992px)')
@@ -94,10 +115,11 @@ $(document).ready(() => {
   }
   if (mql.matches) cardPerGroup = 1
   buildCards()
-    // Handle click event for projects carousel left scroll
+  // Handle click event for projects carousel left scroll
   $('.prev-proj').click(() => {
     try {
       carousel.carousel('prev')
+      updateIndicator((pi - 1 + indicator.children().length) % indicator.children().length) 
     }
     catch (err) {
     }
@@ -107,6 +129,7 @@ $(document).ready(() => {
   $('.next-proj').click(() => {
     try {
       carousel.carousel('next')
+      updateIndicator((pi + 1) % indicator.children().length) 
     }
     catch (err) {
     }
