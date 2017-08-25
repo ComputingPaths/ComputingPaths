@@ -1,103 +1,122 @@
 .projects {
   background-color: $exlightblue;
 
-  .host-wide {
-      width: 100%;
+  i {
+    color: $orange;
   }
 
-  .scrollIcon {
-      width: 11.5%;
-      text-align: center;
+  main {
+    display: flex;
+    align-items: center;
 
-      i {
-        color: $orange;
-        margin-top: 220px;
-      }
-  }
+    a {
+      position: relative;
+      width: 0;
+    }
+      
+    a:nth-of-type(1) {
+      right: 90px;
+    }
 
-  #carouselExampleIndicators {
-      width: 77%;
-      margin: auto;
-  }
+    a:nth-of-type(2) {
+      left: 50px;
+    }
 
-  .carouselContainer {
+    .carousel-item.active {
       display: flex;
-  }
-
-  .circle-indicators {
-      margin: 0;
-  }
-
-  .fa {
-      padding: 48px 20px 0 20px;
-      background-color: inherit;
-  }
-
-  .fa-circle {
-      width: 8px;
-      height: 8px;
-  }
-
-  .fa-circle.active{
-      color: $orange;
-  }
-
-  .card-description {
-      margin: 40px 40px 40px 40px;
-
-    h4 {
-      font-size: 20px;
-      font-weight: bold;
-      color: #003E5C;
     }
 
-    p {
-      color: #003E5C;
-      padding: 10px 0px 24px 0px;
-      font-size: 16px;
-    }
-
-    p:nth-of-type(2) {
-        color: #003E5C;
-        padding: 10px 0px 24px 0px;
-        font-size: 16px;
-        font-weight: bold;
-    }
-  }
-
-  .project-card {
-      transition: 0.3s;
-      width: 360px;
-      height: 500px;
-      margin: 31px;
-      shadow: 0px 4px;
-      background-color: white;
-
-      > img {
-        height: 256px;
-        width: 100%;
-      }
-  }
-
-  .project-card:hover {
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
-  }
-
-    footer {
-      margin-top: 64px;
-      padding-left: 20px;
-      padding-right: 28px;
-      display: flex;
+    .carousel-item {
       justify-content: space-between;
 
-      p {
-        font-size: 20px;
-        color: $textblue;
-        margin: 0;
+      article {
+        width: 30%;
+
+        img {
+          height: 256px;
+          width: 100%;
+        }
+
+        @media (max-width: $xl) {
+          img {
+            height: 205px;
+          }
+        }
+
+        div {
+          //height: 254px;
+          padding: 40px;
+
+          h1, h2, h3 {
+            color: $textblue;
+            margin: 0;
+          }
+
+          h1 {
+            font-size: 20px;
+            font-weight: bold;
+          }
+
+          h2 {
+            font-size: 16px;
+            margin-top: 10px;
+          }
+
+          h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 24px;
+          }
+        }
       }
 
-      .link-btn {
-        margin-left: 100px;
+      @media (max-width: $lg) {
+        article {
+          width: 45%;
+
+          img {
+            height: 233px;
+          }
+        }
+      }
+
+      @media (max-width: $md) {
+        article {
+          width: 100%;
+
+          img {
+            height: 360px;
+          }
+
+          div {
+            padding: 32px;
+
+            h2 {
+              margin-top: 10px;
+            }
+          }
+        }
       }
     }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    
+    a {
+      margin: 0 50px;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: $textblue;
+      font-size: 20px;
+      width: 60%;
+    }
+  }
 }

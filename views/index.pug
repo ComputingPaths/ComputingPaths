@@ -78,87 +78,33 @@ block main
       a(class='link-btn' href='/') Link to all orgs
       
   div(class='projects section')
-    div(class='host-wide')
+    div(class='host')
       h1(class='section-header') Triton Projects
       hr(class='header-bar')
-      div(class='carouselContainer')
-        div(class='scrollIcon')
-          i(class='fa fa-arrow-left fa-2x' id='left' aria-hidden='true')
-        div(id='carouselExampleIndicators' class='carousel slide' data-ride='carousel')
-          
-          ol(class='carousel-indicators circle-indicators')
-            i(class='fa fa-circle' aria-hidden='true' data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
-            i(class='fa fa-circle' aria-hidden='true' data-target='#carouselExampleIndicators' data-slide-to='1')
-            i(class='fa fa-circle' aria-hidden='true' data-target='#carouselExampleIndicators' data-slide-to='2')
-    
-          div(class='carousel-inner' role='listbox')
-        
-            div(class='project-container carousel-item active')
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-                
-            div(class='project-container carousel-item')
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >               
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-                
-            div(class='project-container carousel-item')
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-              div(class='project-card')
-                img(src='/img/temp3.svg' alt='#' style='width:100%')
-                div(class='card-description')
-                  h4 Some Student Organization
-                  p Organization description. More description.
-                  p Read More    >
-        div(class='scrollIcon')
-          i(class='fa fa-arrow-right fa-2x' id='right' aria-hidden='true')
-        
-    div(class='host')
+      main
+        a(class='prev-proj hidden-sm-down')
+          i(class='fa fa-arrow-left fa-3x')
+        div(id="carouselExampleControls" class="carousel slide")
+          div(class="carousel-inner" role="listbox")
+            - for (let i = 0; i < 12; i++)
+              article 
+                img(src='/img/temp1.svg')
+                div
+                  h1 Some Student Project
+                  h2 Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed.
+                  h3 Read more 
+                    i(class='fa fa-arrow-right')
+        a(class='next-proj hidden-sm-down')
+          i(class='fa fa-arrow-right fa-3x')
+      nav(class='hidden-md-up')
+        a(class='prev-proj')
+          i(class='fa fa-arrow-left fa-2x')
+        a(class='next-proj')
+          i(class='fa fa-arrow-right fa-2x')
       footer
-        p Extra information about projects for ComputingPaths
-        a(class='link-btn' href='/') Link to Projects
+        p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.
+        a(class='link-btn' href='/projects.html') Link to projects
+      
       
   div(class='resources section')
     div(class='host')
@@ -173,4 +119,4 @@ block main
           p Some brief description about how there’s lots of cool facilities.  
       a(class='link-btn' href='/') Link to resources
 
-  script(src='/js/home.js')
+  script(src='/js/index.js')
