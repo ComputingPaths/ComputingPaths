@@ -86,7 +86,7 @@ block main
           i(class='fa fa-arrow-left fa-3x')
         div(id="carouselExampleControls" class="carousel slide")
           div(class="carousel-inner" role="listbox")
-            - for (let i = 0; i < 12; i++)
+            - for (let i = 0; i < 10; i++)
               article 
                 img(src='/img/temp1.svg')
                 div
@@ -96,10 +96,11 @@ block main
                     i(class='fa fa-arrow-right')
         a(class='next-proj hidden-sm-down')
           i(class='fa fa-arrow-right fa-3x')
-      nav(class='hidden-md-up')
-        a(class='prev-proj')
+      nav
+        a(class='prev-proj hidden-md-up')
           i(class='fa fa-arrow-left fa-2x')
-        a(class='next-proj')
+        ul(class='hidden-sm-down')
+        a(class='next-proj hidden-md-up')
           i(class='fa fa-arrow-right fa-2x')
       footer
         p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.
