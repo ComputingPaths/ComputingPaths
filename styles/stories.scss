@@ -2,10 +2,11 @@
 @import 'index/common';
 @import 'index/title';
 
-.sub-host {
+.sub-host1, .sub-host2, .sub-host3 {
   padding-left: 18%;
   padding-right: 18%;
 }
+
 
 .img-circle {
     border-radius: 50%;
@@ -24,7 +25,6 @@
       color: $textblue;
       padding-top: 174px;
       padding-bottom: 116px;
-      font-weight: bold;
       font-size: 56px;
     }
   }
@@ -36,7 +36,6 @@
   div {
     padding-top: 12%;
     padding-bottom: 29%;
-    padding-right: 31%;
 
     h2 {
       color: $textblue;
@@ -58,7 +57,7 @@
     background-color:$aquablue;
     height: 517px;
 
-    .sub-host {
+    .sub-host2 {
       position: relative;
       top: 80px;
 
@@ -71,30 +70,27 @@
 
   .vid-info {
     height: 557px;
-    padding: 160px 11% 21% 11%;
+    padding: 160px 11% 0 11%;
 
     p:nth-of-type(1) {
       color: $textblue;
       font-size: 28px;
-      font-weight: bold;
     }
 
     p:nth-of-type(2) {
       color:$darkblue;
       font-size: 24px;
-      font-weight: 550;
     }
 
     .vid-text {
       display: flex;
-      justify-content: space-around;
-      padding-bottom: 116px;
+      //justify-content: space-around;
 
       .description {
         p {
           height: 180px;
+          //width: 540px;
           font-size: 20px;
-          font-weight: none;
           letter-spacing: 0.4px;
           line-height: 30px;
         }
@@ -103,9 +99,8 @@
       .quote {
         p {
           height: 180px;
-          padding-left: 95px;
+          padding-left: 18%;
           font-size: 24px;
-          font-weight: 550;
           letter-spacing: 0.48px;
           line-height: 36px;
         }
@@ -134,7 +129,7 @@
   .story {
     height: 399px;
 
-    .sub-host{
+    .sub-host3{
       padding-bottom: 80px;
       display: flex;
 
@@ -149,7 +144,6 @@
         p {
           font-size: 24px;
           color: $textblue;
-          font-weight: 550;
           line-spacing: 0.48px;
           line-height: 36px;
         }
@@ -158,7 +152,6 @@
           padding-top: 32px;
           font-size: 20px;
           color: $textblue;
-          font-weight: bold;
         }
 
         h2  {
@@ -196,7 +189,6 @@
 .next-steps-content {
   padding-bottom: 116px;
   display: flex;
-  //justify-content: space-around;
 
   div {
     color: $textblue;
@@ -204,14 +196,12 @@
     width: 380px;
 
     h1 {
-      font-weight: bold;
       font-size: 24px;
     }
 
     p {
       padding-top: 16px;
       padding-bottom: 24px;
-      font-weight: 18px;
       line-height:27px;
     }
 
@@ -219,7 +209,6 @@
       display: flex;
 
       h3 {
-        font-weight: bold;
         font-size: 18px;
         color: $textblue;
         margin-right: 10px;
@@ -238,22 +227,27 @@
 }
 
 @media(max-width: $lg) {
-  .subhost {
+  .sub-host1, .sub-host2 {
     padding-left: 16%;
     padding-right: 16%;
   }
+
+  .sub-host3 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
 
   .page-description {
     height: 612px;
 
     div {
+      padding-top: 11%;
+      padding-bottom: 11%;
 
       h2 {
-        height: 324px;
-        width: 610px;
-        padding-top: 11%;
-        padding-right: 30%;
-        padding-bottom: 14%;
+        //height: 324px;
+        //width: 610px;
 
       }
     }
@@ -262,6 +256,7 @@
 
   .main-story {
     height: 1063px;
+
 
     .video {
       height: 433px;
@@ -277,9 +272,7 @@
     .story {
       height: 354px;
 
-      .sub-host {
-        padding-left: 95px;
-        padding-right: 99px;
+      .sub-host3 {
 
         .story-photo {
           height: 210px;
@@ -304,10 +297,40 @@
     }
   }
 
-
 }
 
 @media (max-width: $md) {
+  .sub-host1 {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .sub-host2, .sub-host3 {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+
+  .page-header {
+    height: 288px;
+
+    div {
+
+      h1 {
+        padding-top: 166px;
+        padding-bottom: 80px;
+      }
+    }
+  }
+
+  .page-description {
+    height: 434px;
+
+    div {
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+  }
+
 
 }
 
