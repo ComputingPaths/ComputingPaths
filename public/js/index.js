@@ -23,8 +23,9 @@ $(document).ready(() => {
   let hook = $('#major-hook')
   //Active the current major
   cur.addClass('active')
-  //Update major name display
+  //Update major name and hook display
   name.html(cur.html())
+  hook.html(majorHooks[mi])
 
   let updateMajor = () => {
     cur.removeClass('active')
@@ -55,7 +56,7 @@ $(document).ready(() => {
   let projs = $('.projects article')
   let inner = $('.projects .carousel-inner')
   let cardPerGroup = 3
-  
+
   let buildCards = () => {
     inner.empty()
     for (let i = 0; i < projs.length; i += cardPerGroup) {
@@ -67,7 +68,7 @@ $(document).ready(() => {
       inner.append(group)
     }
   }
-  
+
   let mql = window.matchMedia('(max-width: 992px)')
   if (mql.matches) cardPerGroup = 2
   mql.onchange = e => {
