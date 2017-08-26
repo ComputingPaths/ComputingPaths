@@ -5,16 +5,18 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "npm run sass && concurrently --kill-others-on-fail \"node dev.js\" \"npm run sass-watch\"",
+    "dev": "npm run sass && concurrently --kill-others-on-fail \"node dev.js\" \"npm run sass-watch\" \"npm run babel\"",
     "sass": "node-sass --output-style compressed -o public/css styles",
-    "sass-watch": "node-sass -w -r --output-style compressed -o public/css styles"
+    "sass-watch": "node-sass -w -r --output-style compressed -o public/css styles",
+    "babel": "babel scripts -w --compact=true -d public/js"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "concurrently": "^3.5.0",
     "express": "^4.15.3",
     "firebase-admin": "^5.2.1",
     "node-sass": "^4.5.3",
-    "pug": "^2.0.0-rc.3",
-    "xml2js": "^0.4.18"
+    "pug": "^2.0.0-rc.3"
   }
 }
