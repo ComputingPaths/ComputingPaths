@@ -4,3 +4,81 @@
   font-family: 'Roboto', sans-serif;
   color: $textblue;
 }
+
+// page header
+.page-header {
+  height: 356px;
+  background: $exlightblue;
+  padding: 174px 0 116px 0;
+
+  hr {
+    width: 220px;
+    height: 8px;
+    display: inline-block;
+    background-color: $orange;
+    font-weight: bold;
+  }
+  
+  i {
+    margin: 0;
+    color: $orange;
+    font-size: 56px;
+  }
+
+  h1 {
+    display: inline-block;
+    margin: 0 0 0 16px;
+    font-size: 56px;
+  }
+}
+
+@media(max-width: $xl) {
+  .page-header hr {
+    width: 135px;
+  }
+}
+
+@media(max-width: $lg) {
+  .page-header {
+    height: 288px;
+    padding: 166px 0 80px 0;
+
+    hr {
+      width: 163px;
+      height: 6px;
+      margin-bottom: 11px;
+    }
+
+    i {
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-left: 12px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .page-header {
+    height: 192px;
+    padding: 111px 0 48px 0;
+
+    hr {
+      width: 58px;
+      height: 4px;
+      margin-bottom: 8px;
+    }
+
+    i {
+      font-size: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-left: 6px;
+    }
+  }
+}
+// end page header

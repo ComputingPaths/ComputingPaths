@@ -1,6 +1,7 @@
-@import 'variables';
+@import 'common';
 @import 'index/common';
 @import 'index/title';
+@import 'stories/header';
 
 .sub-host1, .sub-host2, .sub-host3 {
   padding-left: 18%;
@@ -12,23 +13,7 @@
     border-radius: 50%;
 }
 
-.page-header {
-  height: 356px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: $exlightblue;
 
-  div {
-
-    h1 {
-      color: $textblue;
-      padding-top: 174px;
-      padding-bottom: 116px;
-      font-size: 56px;
-    }
-  }
-}
 
 .page-description {
   height: 558px;
@@ -226,6 +211,7 @@
   }
 }
 
+
 @media(max-width: $lg) {
   .sub-host1, .sub-host2 {
     padding-left: 16%;
@@ -308,18 +294,6 @@
   .sub-host2, .sub-host3 {
     padding-left: 14%;
     padding-right: 14%;
-  }
-
-  .page-header {
-    height: 288px;
-
-    div {
-
-      h1 {
-        padding-top: 166px;
-        padding-bottom: 80px;
-      }
-    }
   }
 
   .page-description {

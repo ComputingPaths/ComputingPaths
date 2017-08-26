@@ -1,6 +1,6 @@
 extends ../template.pug
 
-block append style 
+block style 
   link(
     rel='stylesheet'
     href ='/css/stories.css'
@@ -8,8 +8,9 @@ block append style
     
 block main
   div(class='page-header')
-    div(class='sub-host1')
-      h1(class='text-bold') Stories &amp; Advice
+    hr
+    i(class='fa fa-circle-o')
+    h1 Stories &amp; Advice
   
   div(class='page-description')
     div(class='sub-host1')
