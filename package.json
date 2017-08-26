@@ -2,7 +2,6 @@
   "name": "computing-paths",
   "version": "1.0.0",
   "description": "Development version of computingpaths.ucsd.edu",
-  "main": "index.js",
   "private": true,
   "scripts": {
     "dev": "npm run clean && npm run sass && concurrently --kill-others-on-fail \"node dev.js\" \"npm run sass:watch\" \"npm run babel:watch\"",

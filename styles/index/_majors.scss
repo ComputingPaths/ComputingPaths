@@ -1,6 +1,4 @@
 .majors {
-  background-color: $exlightblue;
-
   section {
     display: flex;
     justify-content: space-between;
@@ -34,7 +32,6 @@
       .link-btn {
         margin-top: 64px;
       }
-
     }
 
     main {
@@ -48,16 +45,16 @@
         width: 100%;
       }
 
-      > div {
+      div {
         flex-grow: 1;
         display: flex;
 
-        div {
+        article {
           display: flex;
           flex-direction: column;
           justify-content: center;
           background: white;
-          padding: 0 40px;
+          padding: 40px;
 
           h1, h2 {
             margin: 0;
@@ -71,6 +68,11 @@
 
           h2 {
             margin-top: 10px;
+            display: none;
+          }
+
+          h2.active {
+            display: initial;
           }
         }
 
@@ -110,10 +112,6 @@
         img {
           height: 337px;
         }
-
-        > div div {
-          padding: 40px;
-        }
       }
     }
   }
@@ -130,7 +128,7 @@
         padding: 32px;
       }
 
-      > div button {
+      div button {
         min-width: 96px;
       }
     }

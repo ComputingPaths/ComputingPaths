@@ -31,27 +31,27 @@ block main
       hr(class='header-bar')
       section
         aside(class='hidden-sm-down')
-          ul(id='major-list')
+          ul
             div
-              - for (let i = 0; i < majorNames.length / 2; i++)
+              - for (let i = 0; i < Math.ceil(majorNames.length / 2); i++)
                 li #{majorNames[i]}
             div
-              - for (let i = majorNames.length / 2; i < majorNames.length; i++)
+              - for (let i = Math.ceil(majorNames.length / 2); i < majorNames.length; i++)
                 li #{majorNames[i]}
-
-          a(class='link-btn hidden-md-down' href='/') Link to all the majors
+          a(class='link-btn hidden-md-down' href='/majors.html') Link to all the majors
         main
           img(src='/img/temp1.svg')   
           div
-            div
-              h1(id='major-name') Interdisiciplinary Computing and the Arts 
-              h2(id='major-hook') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum.
+            article
+              h1
+              each hook in majorHooks
+                h2 #{hook}
             button
               i(class='fa fa-arrow-right fa-2x')
       nav(class='hidden-md-up')
-        i(id='pre-major' class='fa fa-arrow-left fa-2x')
+        i(id='prev-major' class='fa fa-arrow-left fa-2x')
         i(id='next-major' class='fa fa-arrow-right fa-2x')
-      a(class='link-btn hidden-lg-up' href='/') Link to all the majors
+      a(class='link-btn hidden-lg-up' href='/majors.html') Link to all the majors
         
         
   div(class='orgs section')

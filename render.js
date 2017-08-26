@@ -19,14 +19,14 @@ function init(callback) {
 }
 
 function renderIndex() {
-  renderFile('index.pug', { majorNames: cache['major-names'] })
+  renderFile('index.pug', { majorNames: cache['major-names'], majorHooks: cache['major-hooks']})
 }
 
 function renderFile(name, option = {}) {
   let html = pug.renderFile(`views/${name}`, option)
   fs.writeFile(`public/${name.replace('pug', 'html')}`, html, err => {
     if (err) throw err
-    })
+  })
 }
   
 function renderAll() {

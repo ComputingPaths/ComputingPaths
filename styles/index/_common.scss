@@ -13,6 +13,10 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
 /* End of general styling for text */
 
 .host {
@@ -25,19 +29,18 @@
   padding-bottom: 116px;
 }
 
+.section-header {
+  color: $textblue;
+  font-size: 36px;
+  text-align: center;
+}
+
 .header-bar {
   width: 24px;
   height: 4px;
   background-color: $orange;
   border: none;
   margin: 16px auto 64px auto;
-}
-
-.section-header {
-  color: $textblue;
-  font-size: 36px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .link-btn {
