@@ -33,18 +33,12 @@ block main
         aside(class='hidden-sm-down')
           ul(id='major-list')
             div
-              - for (let i = 0; i < 5; i++)
+              - for (let i = 0; i < majorNames.length / 2; i++)
                 li #{majorNames[i]}
-              //- li Bioinformatics
-              //- li Cognitive Science
-              //- li Computer Engineering
-              //- li Computer Science
-              //- li Data Science
             div
-              li Electrical Engineering
-              li Interdisciplinary Computing and the Arts
-              li Mathematics - Computer Science
-              li Scientific Computation
+              - for (let i = majorNames.length / 2; i < majorNames.length; i++)
+                li #{majorNames[i]}
+
           a(class='link-btn hidden-md-down' href='/') Link to all the majors
         main
           img(src='/img/temp1.svg')   

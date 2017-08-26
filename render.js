@@ -3,35 +3,40 @@ const pug = require('pug')
 const admin = require('firebase-admin')
 const serviceAccount = require('./firebase-key.json')
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://computing-paths.firebaseio.com'
-})
-let database = admin.database()
-let root = database.ref('/')
-root.on('value', snapshot => {
-  //console.log(snapshot.val())
-  renderAll(snapshot.val())
-})
+let cache = {}
+function init(callback) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: 'https://computing-paths.firebaseio.com'
+  })
+  let database = admin.database()
+  let root = database.ref('/')
+  root.on('value', snapshot => {
+    cache = snapshot.val()
+    renderAll()
+  })
+  if (callback) callback()
+}
 
-function renderIndex(db) {
-  console.log(db)
-  renderFile('index', { majorNames: db['major-names'] })
+function renderIndex() {
+  renderFile('index.pug', { majorNames: cache['major-names'] })
 }
 
 function renderFile(name, option = {}) {
-  let html = pug.renderFile(`views/${name}.pug`, option)
-  fs.writeFile(`public/${name}.html`, html, err => {
+  let html = pug.renderFile(`views/${name}`, option)
+  fs.writeFile(`public/${name.replace('pug', 'html')}`, html, err => {
     if (err) throw err
-  })
+    })
 }
-exports.renderFile = renderFile
+  
+function renderAll() {
+  renderIndex()
+  renderFile('majors.pug')
+  renderFile('projects.pug')
+  renderFile('stories.pug')
+  console.log('All files re-rendered')
+}
 
-function renderAll(db) {
-  renderIndex(db)
-  renderFile('majors')
-  renderFile('projects')
-  renderFile('stories')
-  console.log('All views are re-rendered')
-}
+  
+exports.init = init
 exports.renderAll = renderAll
