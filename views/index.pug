@@ -33,11 +33,13 @@ block main
         aside(class='hidden-sm-down')
           ul(id='major-list')
             div
-              li Bioinformatics
-              li Cognitive Science
-              li Computer Engineering
-              li Computer Science
-              li Data Science
+              - for (let i = 0; i < 5; i++)
+                li #{majorNames[i]}
+              //- li Bioinformatics
+              //- li Cognitive Science
+              //- li Computer Engineering
+              //- li Computer Science
+              //- li Data Science
             div
               li Electrical Engineering
               li Interdisciplinary Computing and the Arts

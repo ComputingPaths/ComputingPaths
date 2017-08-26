@@ -1,45 +1,37 @@
 const fs = require('fs')
-const xml = require('xml2js')
 const pug = require('pug')
+const admin = require('firebase-admin')
+const serviceAccount = require('./firebase-key.json')
 
-exports.renderDynamic = () => {
-  fs.readdir('views/dynamic', (err, files) => {
-    if (err) throw err
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://computing-paths.firebaseio.com'
+})
+let database = admin.database()
+let root = database.ref('/')
+root.on('value', snapshot => {
+  //console.log(snapshot.val())
+  renderAll(snapshot.val())
+})
 
-    for (let file of files) {
-      file = file.slice(0, -4)
-
-      fs.readFile(`contents/${file}.xml`, 'utf8', (err, data) => {
-        if (err) throw err
-
-        xml.parseString(data, (err, obj) => {
-          if (err) throw err
-
-          let html = pug.renderFile(`views/dynamic/${file}.pug`, obj)
-          fs.writeFile(`public/${file}.html`, html, err => {
-            if (err) throw err
-          })
-        })
-      })
-    }
-  })
+function renderIndex(db) {
+  console.log(db)
+  renderFile('index', { majorNames: db['major-names'] })
 }
 
-const renderFile = (name, option = {}) => {
-  let html = pug.renderFile(`views/${name}`, option)
-  fs.writeFile(`public/${name.replace('pug', 'html')}`, html, err => {
+function renderFile(name, option = {}) {
+  let html = pug.renderFile(`views/${name}.pug`, option)
+  fs.writeFile(`public/${name}.html`, html, err => {
     if (err) throw err
   })
 }
 exports.renderFile = renderFile
 
-exports.renderAll = () => {
-  fs.readdir('views', (err, files) => {
-    if (err) throw err
-
-    for (let file of files) {
-      if (file.startsWith('.')) continue
-      renderFile(file)
-    }
-  })
+function renderAll(db) {
+  renderIndex(db)
+  renderFile('majors')
+  renderFile('projects')
+  renderFile('stories')
+  console.log('All views are re-rendered')
 }
+exports.renderAll = renderAll
