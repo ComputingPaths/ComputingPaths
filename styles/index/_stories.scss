@@ -32,26 +32,16 @@
       }
 
       span {
+        color: white;
         font-weight: normal;
       }
     }
   }
 
-  footer {
-    margin-top: 64px;
-    display: flex;
-    justify-content: space-between;
-
-    p {
-      font-size: 20px;
-      color: $textblue;
-      margin: 0;
-    }
-
-    .link-btn {
-      margin-left: 100px;
-    }
+  .link-btn {
+    margin: 64px auto 0 auto;
   }
+  
 
   @media (max-width: $lg) {
     main {
@@ -69,14 +59,8 @@
 
     }
 
-    footer {
-      margin-top: 48px;
-      flex-direction: column;
-      align-items: center;
-
-      .link-btn {
-        margin: 48px auto 0 auto;
-      }
+    .link-btn {
+      margin: 48px auto 0 auto;
     }
   }
 
@@ -96,16 +80,8 @@
       }
     }
 
-    footer {
-      margin-top: 24px;
-
-      p {
-        font-size: 16px;
-      }
-
-      .link-btn {
-        margin-top: 32px;
-      }
+    .link-btn {
+      margin-top: 32px;
     }
   }
 }
