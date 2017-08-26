@@ -1,7 +1,11 @@
 @import 'common';
 @import 'index/common';
 @import 'index/title';
-@import 'stories/header';
+
+.page-description {
+  padding: 116px 0;
+  font-size: 28px;
+}
 
 .sub-host1, .sub-host2, .sub-host3 {
   padding-left: 18%;
@@ -15,22 +19,7 @@
 
 
 
-.page-description {
-  height: 558px;
 
-  div {
-    padding-top: 12%;
-    padding-bottom: 29%;
-
-    h2 {
-      color: $textblue;
-      line-height: 54px;
-      font-size: 36px;
-      letter-spacing: 0.72px;
-    }
-  }
-
-}
 
 .main-story {
   height: 1069px;
