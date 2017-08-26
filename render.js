@@ -19,6 +19,7 @@ class Processor {
       for (let key in cache) {
         this.locals[camelCase(key)] = cache[key]
       }
+      this.mergeLocals(require('./content'))
       this.renderAll()
     })
     if (callback) callback()
@@ -40,6 +41,11 @@ class Processor {
       }
     })
     console.log('all files are re-rendered')
+  }
+
+  mergeLocals(vars) {
+    if (!this.locals || !vars) return
+    Object.assign(this.locals, vars)
   }
 }
 

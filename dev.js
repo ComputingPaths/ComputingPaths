@@ -14,6 +14,14 @@ const processor = new Processor(() => {
   fs.watch('template.pug', (event, filename) => {
     processor.renderAll()
   })
+
+  fs.watch('content.json', (event, filename) => {
+    fs.readFile('content.json', 'utf8', (err, text) => {
+      if (err) throw err
+      processor.mergeLocals(JSON.parse(text))
+      processor.renderAll()
+    })
+  }) 
 })
 
 const app = express()
