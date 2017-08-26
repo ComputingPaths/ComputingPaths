@@ -34,7 +34,7 @@ function renderAll() {
   renderFile('majors.pug')
   renderFile('projects.pug')
   renderFile('stories.pug')
-  console.log('All files re-rendered')
+  console.log('All files are re-rendered')
 }
 
   

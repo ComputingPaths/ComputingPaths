@@ -5,11 +5,15 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "sass": "sass --watch --sourcemap=none --style compressed styles:public/css"
+    "dev": "npm run sass && concurrently --kill-others-on-fail \"node dev.js\" \"npm run sass-watch\"",
+    "sass": "node-sass --output-style compressed -o public/css styles",
+    "sass-watch": "node-sass -w -r --output-style compressed -o public/css styles"
   },
   "dependencies": {
+    "concurrently": "^3.5.0",
     "express": "^4.15.3",
     "firebase-admin": "^5.2.1",
+    "node-sass": "^4.5.3",
     "pug": "^2.0.0-rc.3",
     "xml2js": "^0.4.18"
   }
