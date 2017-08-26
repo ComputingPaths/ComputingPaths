@@ -1,13 +1,18 @@
 const express = require('express')
-const render = require('./render')
 const fs = require('fs')
 const path = require('path')
+const { Processor } = require('./render')
 
-render.init(() => {
-  fs.watch('.', { recursive: true }, (event, filename) => {
+const processor = new Processor(() => {
+  fs.watch('views', { recursive: true }, (event, filename) => {
     if (path.extname(filename) === '.pug') {
-      render.renderAll()
+      processor.renderFile(filename)
+      console.log(`${filename} re-rendered`)
     }
+  })
+
+  fs.watch('template.pug', (event, filename) => {
+    processor.renderAll()
   })
 })
 
