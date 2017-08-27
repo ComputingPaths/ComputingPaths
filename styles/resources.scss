@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'index/common';
+@import 'index/title';
+
+.intro{
+	h1{
+		color: $textblue;
+	}
+}
