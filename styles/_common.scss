@@ -157,6 +157,37 @@
 }
 // end page header
 
+// page intro
+.page-intro {
+  padding: 116px 0;
+
+  p {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+}
+
+@media(max-width: $lg) {
+  .page-intro {
+    padding: 96px 0;
+
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+@media(max-width: $md) {
+  .page-intro {
+    padding: 64px 0;
+  
+    p {
+      font-size: 20px;
+    }
+  }
+}
+// end page intro
+
 // section headers
 .section-header {
   h1 {
