@@ -1,32 +1,12 @@
 extends ../template.pug
 
-block append style 
-  link(
-    rel='stylesheet'
-    href ='/css/majors.css'
-  )
-        
-  //- rel='stylesheet'
-      href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'
-      integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ'
-      crossorigin='anonymous')
-    block style
-      link(
-        rel='stylesheet'
-        href='/css/index.css'
-      )
-  //-body
-    
-    //-ul(class = 'col-sm-12')
-      li(class = 'col-sm-6')
-        h3 Here is the majors page! 
-      li(class = 'col-sm-6')
-        h3 Here is the second column! //
+block style 
+  link(rel='stylesheet' href ='/css/majors.css')
+
 block main
-  footer(class='container')
-    div(class='row')
-      div(class='col-sm-6') 
-        h3 Here is one column.
-      div(class='col-sm-6') 
-        h3 Here is the second column. 
+  div(class='page-header')
+    svg
+      rect
+      circle
+    h1 The Majors
     

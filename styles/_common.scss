@@ -51,52 +51,78 @@
 // page header
 .page-header {
   background: $exlightblue;
-  padding: 174px 0 80px 0;
+  padding: 210px 0 80px 0;
 
-  hr {
-    width: 220px;
-    height: 8px;
-    display: inline-block;
-    background-color: $orange;
-    font-weight: bold;
-  }
+  svg {
+    width: 220px + 32px;
+    height: 32px;
 
-  i {
-    margin: 0;
-    color: $orange;
-    font-size: 56px;
+    rect {
+      fill: $orange;
+      width: 220px;
+      height: 8px;
+      y: 12px;
+    }
+
+    circle {
+      r: 12px;
+      cy: 16px;
+      cx: 220px + 16px;
+      stroke: $orange;
+      stroke-width: 8px;
+      fill: transparent;
+    }
   }
 
   h1 {
     display: inline-block;
     margin: 0 0 0 16px;
     font-size: 56px;
+    font-weight: bold;
   }
 }
 
 @media(max-width: $xl) {
-  .page-header hr {
-    width: 135px;
+  .page-header {
+    svg {
+      width: 139px + 32px;
+
+      rect {
+        width: 139px;
+      }
+
+      circle {
+        cx: 139px + 16px;
+      }
+    }
   }
 }
 
 @media(max-width: $lg) {
   .page-header {
-    padding: 166px 0 80px 0;
-
-    hr {
-      width: 163px;
-      height: 6px;
-      margin-bottom: 11px;
-    }
-
-    i {
-      font-size: 40px;
-    }
+    padding: 182px 0 64px 0;
 
     h1 {
-      font-size: 56px;
+      font-size: 36px;
       margin-left: 12px;
+    }
+
+    svg {
+      width: 163px + 24px;
+      height: 24px;
+
+      rect {
+        width: 163px;
+        height: 6px;
+        y: 9px;
+      }
+  
+      circle {
+        r: 9px;
+        cy: 12px;
+        cx: 163px + 12px;
+        stroke-width: 6px;
+      }
     }
   }
 }
@@ -105,19 +131,27 @@
   .page-header {
     padding: 111px 0 48px 0;
 
-    hr {
-      width: 58px;
-      height: 4px;
-      margin-bottom: 8px;
-    }
-
-    i {
-      font-size: 30px;
-    }
-
     h1 {
-      font-size: 36px;
+      font-size: 28px;
       margin-left: 6px;
+    }
+
+    svg {
+      width: 58px + 18px;
+      height: 18px;
+
+      rect {
+        width: 58px;
+        height: 5px;
+        y: 6.5px;
+      }
+  
+      circle {
+        r: 6.75px;
+        cy: 9px;
+        cx: 58px + 9px;
+        stroke-width: 4.5px;
+      }
     }
   }
 }
