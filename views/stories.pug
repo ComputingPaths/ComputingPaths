@@ -39,9 +39,9 @@ block main
           if (i % 2 === 0)
             img(class='col-3 offset-1' src=stories[i].image)
           div(class='col-6 offset-1')
-            h1 #{stories[i].quote}
-            h2 #{stories[i].name}
-            h3 #{stories[i].major} | Class of #{stories[i].class}
+            h1(class='size-24 bold') "#{stories[i].quote}"
+            h2(class='size-24 bold') #{stories[i].name}
+            h3(class='light size-21 nor') #{stories[i].major} | Class of #{stories[i].class}
           if (i % 2 !== 0)
             img(class='col-3 offset-1' src=stories[i].image)
  
@@ -52,12 +52,12 @@ block main
     div(class='container')
       div(class='row')
         div(class='col-4 offset-1')
-          h1 Start Your Journey 
-          p Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-          a(href='/') Explore the majors 
+          h1(class='bold size-24') Start Your Journey 
+          p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+          a(class='size-21 bold dark' href='/') Explore the majors 
             i(class='fa fa-arrow-right')
         div(class='col-4 offset-2')
-          h1(class='text-bold') Find Students Like You
-          p(class='text-reg') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-          a(href='/') Explore the orgs 
+          h1(class='bold size-24') Find Students Like You
+          p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+          a(class='size-21 bold dark' href='/') Explore the orgs 
             i(class='fa fa-arrow-right')
