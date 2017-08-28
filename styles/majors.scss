@@ -26,3 +26,42 @@
     padding-top: 22px;
   }
 }
+
+main {
+  padding-top: 80px;
+  background: $exlightblue;
+
+  .major-list-wrapper {
+    a {
+      display: block;
+      background: white;
+      padding: 20px 0 20px 24px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    ul {
+      padding: 20px 0 4px 40px;
+      background: white;
+      margin-top: 2px;
+
+      li {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        list-style-type: none;
+      }
+
+      li:hover:not(.active) {
+        color: $darkblue;
+        list-style-type: initial;
+      }
+
+      li.active {
+        color: $orange;
+        list-style-type: initial;
+      }
+    }
+  }
+}

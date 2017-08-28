@@ -3,6 +3,9 @@ extends ../template.pug
 block style 
   link(rel='stylesheet' href ='/css/majors.css')
 
+block script
+  script(src='/js/majors.js')
+
 block main
   div(class='page-header')
     svg
@@ -15,3 +18,13 @@ block main
       p(class='col-10 offset-1') This is the majors page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
   
   p(class='major-banner') Explore these majors
+
+  main
+    div(class='container')
+      div(class='row')
+        div(class='col-3 major-list-wrapper')
+          a(data-toggle="collapse" data-target='#major-list') Majors
+          ul(class='collapse show' id='major-list')
+            each m in majorNames
+              li #{m}
+
