@@ -63,7 +63,6 @@
       .description {
         p {
           height: 180px;
-          //width: 540px;
           font-size: 20px;
           letter-spacing: 0.4px;
           line-height: 30px;
@@ -110,6 +109,10 @@
       .story-photo {
         height: 255px;
         width: 255px;
+
+        img {
+          height: 100%;
+        }
       }
 
       .story-content {
@@ -177,6 +180,7 @@
       padding-top: 16px;
       padding-bottom: 24px;
       line-height:27px;
+      font-size: 18px;
     }
 
     a {
@@ -215,18 +219,6 @@
 
   .page-description {
     height: 612px;
-
-    div {
-      padding-top: 11%;
-      padding-bottom: 11%;
-
-      h2 {
-        //height: 324px;
-        //width: 610px;
-
-      }
-    }
-
   }
 
   .main-story {
@@ -240,6 +232,14 @@
     .vid-info {
       height: 630px;
       padding: 160px 8% 0 8%;
+
+      p:nth-of-type(1) {
+        font-size: 20px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -281,22 +281,248 @@
   }
 
   .sub-host2, .sub-host3 {
-    padding-left: 14%;
-    padding-right: 14%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 
   .page-description {
     height: 434px;
+    padding: 96px 0;
+    font-size: 28px;
+  }
 
-    div {
-      padding-top: 2%;
-      padding-bottom: 2%;
+  .main-story {
+    height: 913px;
+
+    .video {
+      height: 388px;
+
+      .sub-host2 {
+        position: relative;
+        top: 48px;
+      }
+    }
+
+    .vid-info {
+      height: 525px;
+      padding: 96px 7% 0 7%;
+
+      p:nth-of-type(1) {
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      .vid-text {
+        flex-direction: column;
+
+        .description {
+          order: 2;
+
+          p {
+            font-size: 18px;
+
+          }
+        }
+
+        .quote {
+          order: 1;
+
+          p{
+            font-size: 20px;
+            padding-left: 60px;
+            padding-right: 60px;
+          }
+        }
+      }
     }
   }
 
+  .more-stories {
+    .story {
+      height: 277px;
 
+      .sub-host3 {
+
+        .story-photo {
+          height: 150px;
+          width: 150px;
+        }
+        .story-content {
+
+            p {
+              font-size: 20px;
+            }
+
+            h1 {
+              padding-top: 0;
+              font-size: 20px;
+            }
+
+            h2 {
+              font-size: 18px;
+            }
+        }
+      }
+    }
+
+  }
+
+  .left {
+    .story-content {
+      padding-left: 59px;
+    }
+  }
+
+  .right {
+    .story-content {
+      padding-right: 60px;
+    }
+  }
 }
 
 @media (max-width: $sm) {
+  .sub-host1 .sub-host3{
+    padding-left: 14%;
+    padding-right: 14%;
+  }
 
+  .sub-host2, {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .page-description {
+    height: 308px;
+    font-size: 20px;
+    padding: 64px 0;
+  }
+
+  .main-story {
+    height: 727px;
+
+    .video {
+      height: 287px;
+
+      .sub-host2 {
+        position: relative;
+        top: 48px;
+      }
+    }
+
+    .vid-info {
+      height: 441px;
+      padding: 68px 5% 0 5%;
+
+      p:nth-of-type(1) {
+        font-size: 20px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 18px;
+      }
+
+      .vid-text {
+
+        .description p {
+          font-size: 16px;
+        }
+
+        .quote p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .stories-header {
+    h1 {
+      padding-top: 32px;
+    }
+  }
+
+  .more-stories {
+    .story {
+      height: 453px;
+
+      .sub-host3 {
+        flex-direction: column;
+
+        .story-photo {
+          order: 1;
+          margin: 0 auto;
+        }
+
+        .story-content {
+          order: 2;
+          padding-top: 32px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 18px;
+            padding-top: 16px;
+            order: 3;
+          }
+
+          h1 {
+            padding-top: 0;
+            order: 1;
+            text-align: center;
+          }
+
+          h2 {
+            padding-top: 0;
+            order: 2;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .left {
+    .story-content {
+      padding-left: 0;
+    }
+  }
+
+  .right {
+    .story-content {
+      padding-right: 0;
+    }
+  }
+
+  .next-steps-content {
+    padding-bottom: 48px;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      a {
+
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      margin-top: 32px;
+      margin-left: 0;
+    }
+  }
 }
