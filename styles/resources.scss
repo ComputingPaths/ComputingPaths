@@ -2,8 +2,65 @@
 @import 'index/common';
 @import 'index/title';
 
-.intro{
-	h1{
-		color: $textblue;
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $exlightblue;
+  height: 356px;
+  padding: 174px 640px 116px 260px; 
+
+  h1 {
+    color: $textblue;
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: bold;
+  }
+}
+
+.res-banner{
+
+	background: linear-gradient(blue 70%, white 30%);
+	background-size: 100% 100%;
+
+	.res-banner-title{	
+
+		text-align: center;
+		padding-bottom: 50px;
+
+		img{
+			padding-top: 50px;
+			display: block;
+			margin: auto;
+		  width: 1000px;
+		  height: 500px;	
+
+		}
+
+		h1{
+			/*text-align: left;*/
+			font-size: 40px;
+		}
 	}
+}
+
+	.res-browse{
+
+		text-align: center;
+		background-color: blue;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		h1{
+			color: white;
+			font-size: 40px;
+
+		}
+	}
+
+
+section{
+
+
+
 }
