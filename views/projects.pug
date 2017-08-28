@@ -6,35 +6,95 @@ block style
     href='/css/projects.css'
   )
   
+block script
+  script(src='/js/projects.js')
+  
 block main
-  div(class='intro')
+  div(class='page-header')
+    hr
+    i(class='fa fa-circle-o')
     h1 Triton Projects
       
   div(class='intro-text')
-    h2  This is the projects page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+    p(class='size-28')  This is the projects page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.This is the projects page. 
     
   div(class='intro-prompt')
     h3 Explore what these Tritons have created
-      
+    
   section
-    a(data-toggle='modal' data-target='#modal1')
-      div(class='projectcard')
-        img(src='/img/temp3.svg' alt='+')
-        div(class='cardinfo')
-          p(class='project-name') MyWebApp
-          p(class='project-creator') CSES
-          div(class='tags')
-            div(class='colorbackground') Web Application
-          i(class='fa fa-expand')
-            
-    div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
-      div(class='modal-dialog' role='document')
-        div(class='modal-content')
-          div(class='modal-header')
-            h5(class='modal-title' id='exampleModalLongTitle') MyWebApp
-            button(type='button' class='close' data-dismiss='modal' aria-label='Close')
-              span(aria-hidden='true') &times;
-          div(class='modal-body')
-            p Hi
+    nav(class='nav flex-column')
+      a(class='nav-link active' href='#') Mobile App
+      a(class='nav-link' href='#') Web App
+      a(class='nav-link' href='#') Arduino
+      a(class='nav-link' href='#') Project
+      a(class='nav-link' href='#') Data Mining
+      a(class='nav-link' href='#') Research
+      a(class='nav-link' href='#') Games
+      
+    div(class='card-list')
+      a(data-toggle='modal' data-target='#modal1')
+        div(class='projectcard')
+          img(src='/img/temp3.svg' alt='+')
+          div(class='cardinfo')
+            p(class='project-name') MyWebApp
+            p(class='project-creator') CSES
+            div(class='tags')
+              div(class='colorbackground') Web Application
+            i(class='fa fa-expand')
+
+      a(data-toggle='modal' data-target='#modal1')
+        div(class='projectcard')
+          img(src='/img/temp3.svg' alt='+')
+          div(class='cardinfo')
+            p(class='project-name') studyspace
+            p(class='project-creator') CSES
+            div(class='tags')
+              div(class='colorbackground') Web Application
+            i(class='fa fa-expand')
+
+      div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
+        div(class='modal-dialog' role='document')
+        
+          div(class='modal-content')
           
+            div(class='modal-header')
+              h5(id='exampleModalLongTitle') studyspace
+              button(type='button' class='close' data-dismiss='modal' aria-label='Close')
+                i(class='fa fa-times' aria-hidden='true')
+                
+            div(class='modal-slideshow')
+              a(class='carousel-control-prev' href='#carouselExampleIndicators' data-sl)
+                i(class='fa fa-arrow-left fa-3x')
+                
+              div(id="carouselExampleControls" class="carousel slide" data-ride='carousel')
+                ol(class='carousel-indicators')
+                  li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
+                    i(class='fa fa-circle' aria-hidden='true')
+                  li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                div(class="carousel-inner" role="listbox")
+                  div(class='carousel-item active')
+                    img(src='/img/temp1.svg')
+                  div(class='carousel-item')
+                    img(src='/img/temp1.svg')
+              a(class='carousel-control-next' href='#carouselExampleIndicators' data-sl)
+                i(class='fa fa-arrow-right fa-3x')
+                
+            div(class='modal-body')
+              div(class='project-description')
+                p.description-title Description
+                p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem. As their solution, the Studyspace team developed a website that connects students with peers and instructors instantly via video and text chat. Through the application, classmates can collaborate in course-specific channels to tackle challenging topics, ask questions, and prepare for exams. The website provides a multifaceted digital workspace that can host a range of activities, like TA office hours, group study sessions, and even a lounge area where students can share music and chat. The project boasts a mix of techniques and backend software implementations, including Express.js, Firebase, MongoDB, and PeerJS. Studyspace also incorporates creative frontend and visual design features like alternate app color schemes and day/night modes that ensure the site is easy on the eyes for long periods of time. The CSE 110 (Software Engineering) course focuses on an introduction to software development and engineering methods, including specification, design, implementation, testing, and process, as well as an emphasis on team development, agile methods, and use of tools as IDE's, version control, and test harnesses. You can learn more about the course here.
+
+              div(class='project-details')
+                
+                div(class='detail-item')
+                  p.description-title ORGANIZATION / CLASS CODE
+                  
+                div(class='detail-item')
+                  p.description-title PROJECT MEMBERS
+                  
+                div(class='detail-item')
+                  p.description-title PROJECT TYPE
+                  
+                div(class='detail-item')
+                  p.description-title MORE INFORMATION
             
