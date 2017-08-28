@@ -1,209 +1,93 @@
 @import 'common';
-@import 'index/common';
-@import 'index/title';
 
 .page-description {
   padding: 116px 0;
-  font-size: 28px;
+  p {
+    margin: 0;
+  }
 }
 
-.sub-host1, .sub-host2, .sub-host3 {
-  padding-left: 18%;
-  padding-right: 18%;
+.story-video {
+  height: 517px;
+  background: #32D0DE;
+
+  img {
+    position: relative;
+    top: 80px;
+    height: 100%;
+  }
 }
-
-
-.img-circle {
-    border-radius: 50%;
-}
-
-
-
-
 
 .main-story {
-  height: 1069px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 160px 0 116px 0;
 
-  .video {
-    background-color:$aquablue;
-    height: 517px;
-
-    .sub-host2 {
-      position: relative;
-      top: 80px;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
+  h2 {
+    margin-bottom: 32px;
   }
-
-  .vid-info {
-    height: 557px;
-    padding: 160px 11% 0 11%;
-
-    p:nth-of-type(1) {
-      color: $textblue;
-      font-size: 28px;
-    }
-
-    p:nth-of-type(2) {
-      color:$darkblue;
-      font-size: 24px;
-    }
-
-    .vid-text {
-      display: flex;
-      //justify-content: space-around;
-
-      .description {
-        p {
-          height: 180px;
-          font-size: 20px;
-          letter-spacing: 0.4px;
-          line-height: 30px;
-        }
-      }
-
-      .quote {
-        p {
-          height: 180px;
-          padding-left: 18%;
-          font-size: 24px;
-          letter-spacing: 0.48px;
-          line-height: 36px;
-        }
-      }
-
-    }
-
-  }
-
 }
-
 
 .more-stories {
   background-color: $exlightblue;
-  margin-top: none;
+  padding-top: 80px;
 
-  .stories-header {
-      background-color: $exlightblue;
+  .row {
+    padding: 64px 0 80px 0;
 
+    img {
+      width: 255px;
+      height: 255px;
+      border-radius: 50%;
+    }
+
+    div {
+      padding: 32px 0;
       h1 {
-        padding-top: 80px;
+        font-size: 24px;
+        margin-bottom: 32px;
       }
-
-  }
-
-  .story {
-    height: 399px;
-
-    .sub-host3{
-      padding-bottom: 80px;
-      display: flex;
-
-      .story-photo {
-        height: 255px;
-        width: 255px;
-
-        img {
-          height: 100%;
-        }
+  
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
       }
-
-      .story-content {
-        padding-top:32px;
-
-        p {
-          font-size: 24px;
-          color: $textblue;
-          line-spacing: 0.48px;
-          line-height: 36px;
-        }
-
-        h1 {
-          padding-top: 32px;
-          font-size: 20px;
-          color: $textblue;
-        }
-
-        h2  {
-          padding-top: 6px;
-          font-size: 18px;
-          color: $darkblue;
-
-        }
-
+  
+      h3 {
+        font-size: 21px;
+        color: $darkblue;
       }
     }
   }
 }
 
-.left {
-  .story-content {
-    padding-left: 94px;
-  }
-}
+.next-steps {
+  padding: 80px 0 116px 0;
 
-.right {
-  .story-content {
-    padding-right: 94px;
-  }
-}
-
-.next-steps-header {
-
-  h1 {
-    padding-top: 80px;
-  }
-
-}
-
-.next-steps-content {
-  padding-bottom: 116px;
-  display: flex;
-
-  div {
-    color: $textblue;
-    //flex-basis: 40%;
-    width: 380px;
+  .row {
+    padding-top: 65px;
 
     h1 {
       font-size: 24px;
+      padding-bottom: 24px;
+      font-weight: bold;
     }
 
     p {
-      padding-top: 16px;
-      padding-bottom: 24px;
-      line-height:27px;
       font-size: 18px;
+      color: $darkblue;
+      padding-bottom: 24px;
     }
 
     a {
-      display: flex;
-
-      h3 {
-        font-size: 18px;
-        color: $textblue;
-        margin-right: 10px;
-      }
-
-      i{
+      color: $textblue;
+      font-weight: bold;
+      font-size: 21px;
+      
+      i {
         color: $orange;
       }
     }
   }
-
-  div:nth-child(2) {
-    //align-self: flex-end;
-    margin-left: auto;
-  }
 }
-
 
 @media(max-width: $lg) {
   .sub-host1, .sub-host2 {
