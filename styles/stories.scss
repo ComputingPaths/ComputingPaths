@@ -218,7 +218,11 @@
 
 
   .page-description {
-    height: 612px;
+    height: 500px;
+
+    p {
+      vertical-align: middle;
+    }
   }
 
   .main-story {
@@ -334,8 +338,9 @@
 
           p{
             font-size: 20px;
-            padding-left: 60px;
-            padding-right: 60px;
+            padding-left: 5%;
+            padding-right: 5%;
+            vertical-align: middle;
           }
         }
       }
@@ -344,28 +349,45 @@
 
   .more-stories {
     .story {
-      height: 277px;
+      height: 453px;
+      padding-top: 40px;
 
       .sub-host3 {
+        flex-direction: column;
 
         .story-photo {
           height: 150px;
           width: 150px;
+          order: 1;
+          margin: 0 auto;
         }
         .story-content {
+          order: 2;
+          padding-top: 32px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
 
-            p {
-              font-size: 20px;
-            }
+          p {
+            font-size: 20px;
+            padding-top: 16px;
+            order: 3;
+            text-align: center;
+          }
 
-            h1 {
-              padding-top: 0;
-              font-size: 20px;
-            }
+          h1 {
+            padding-top: 0;
+            font-size: 20px;
+            padding-top: 0;
+            order: 1;
+            text-align: center;
+          }
 
-            h2 {
-              font-size: 18px;
-            }
+          h2 {
+            font-size: 18px;
+            order: 2;
+            text-align: center;
+          }
         }
       }
     }
@@ -374,13 +396,41 @@
 
   .left {
     .story-content {
-      padding-left: 59px;
+      padding-left: 0px;
     }
   }
 
   .right {
     .story-content {
-      padding-right: 60px;
+      padding-right: 0px;
+    }
+  }
+
+  .next-steps-content {
+    padding-bottom: 48px;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      a {
+
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      margin-top: 32px;
+      margin-left: 0;
     }
   }
 }
@@ -403,7 +453,7 @@
   }
 
   .main-story {
-    height: 727px;
+    height: 787px;
 
     .video {
       height: 287px;
@@ -415,7 +465,7 @@
     }
 
     .vid-info {
-      height: 441px;
+      height: 501px;
       padding: 68px 5% 0 5%;
 
       p:nth-of-type(1) {
@@ -450,79 +500,20 @@
       height: 453px;
 
       .sub-host3 {
-        flex-direction: column;
-
-        .story-photo {
-          order: 1;
-          margin: 0 auto;
-        }
 
         .story-content {
-          order: 2;
           padding-top: 32px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
 
           p {
             font-size: 18px;
-            padding-top: 16px;
-            order: 3;
-          }
-
-          h1 {
-            padding-top: 0;
-            order: 1;
-            text-align: center;
           }
 
           h2 {
             padding-top: 0;
-            order: 2;
-            text-align: center;
           }
         }
       }
     }
   }
 
-  .left {
-    .story-content {
-      padding-left: 0;
-    }
-  }
-
-  .right {
-    .story-content {
-      padding-right: 0;
-    }
-  }
-
-  .next-steps-content {
-    padding-bottom: 48px;
-    flex-direction: column;
-    align-items: center;
-
-    div {
-      h1 {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 16px;
-      }
-
-      a {
-
-        h3 {
-          font-size: 16px;
-        }
-      }
-    }
-
-    div:nth-child(2) {
-      margin-top: 32px;
-      margin-left: 0;
-    }
-  }
 }
