@@ -1,6 +1,6 @@
 extends ../template.pug
 
-block append style 
+block style 
   link(
     rel='stylesheet'
     href ='/css/stories.css'
@@ -8,79 +8,56 @@ block append style
     
 block main
   div(class='page-header')
-    div(class='sub-host1')
-      h1(class='text-bold') Stories &amp; Advice
+    hr
+    i(class='fa fa-circle-o')
+    h1 Stories &amp; Advice
   
-  div(class='page-description')
-    div(class='sub-host1')
-      h2(class='text-reg') Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+  div(class='container page-description')
+    div(class='row')
+      div(class='offset-1 col-10 size-28')
+        p Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
       
-  div(class='main-story')
-    div(class='video')
-      div(class='sub-host2')
-        img(src='/img/temp1.svg')
-    div(class='vid-info')
-      p(class='text-bold') Rachel Keinouz 
-      p(class='text-med') Math-Computer Science  |  Class of 2017
-      div(class='vid-text')
-        div(class='description text-reg')
-          p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
-        div(class='quote text-med')
-          p "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
+  div(class='story-video')
+    div(class='container')
+      img(class='col-10 offset-1' src='/img/temp1.svg')
+
+  div(class='main-story container')
+    div(class='row') 
+      h1(class='col-12 size-28 bold') Rachel Keinouz 
+      h2(class='col-12 size-28 light med') Math-Computer Science  |  Class of 2017
+    div(class='row')
+      p(class='col-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
+      p(class='col-6 size-24') "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
 
   div(class='more-stories')  
-    div(class='stories-header')            
-      h1(class='section-header text-bold') More Stories
-      hr(class='header-bar')      
-    div(class='story left')
-      div(class='sub-host3')
-        div(class='story-photo')
-          img(class='img-circle' src='/img/temp4.svg')
-        div(class='story-content')
-          p(class='text-med') "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.”
-          h1(class='text-bold') Chyeim Jackson-Burgess
-          h2(class='text-reg') Computer Science Engineering  |  Class of 2017
-    div(class='story right')
-      div(class='sub-host3')
-        div(class='story-content')
-          p(class='text-med') "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.”
-          h1(class='text-bold') Chyeim Jackson-Burgess
-          h2(class='text-reg') Computer Science Engineering  |  Class of 2017 
-        div(class='story-photo')
-          img(class='img-circle' src='/img/temp4.svg')
-    div(class='story left')
-      div(class='sub-host3')
-        div(class='story-photo')
-          img(class='img-circle' src='/img/temp4.svg')
-        div(class='story-content')
-          p(class='text-med') "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.”
-          h1(class='text-bold') Chyeim Jackson-Burgess
-          h2(class='text-reg') Computer Science Engineering  |  Class of 2017
-    div(class='story right')
-      div(class='sub-host3')
-        div(class='story-content')
-          p(class='text-med') "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.”
-          h1(class='text-bold') Chyeim Jackson-Burgess
-          h2(class='text-reg') Computer Science Engineering  |  Class of 2017 
-        div(class='story-photo')
-          img(class='img-circle' src='/img/temp4.svg')
-            
+    div(class='section-header')            
+      h1 More Stories
+      hr
+    div(class='container')
+      - for(let i = 0; i < stories.length; i++)
+        div(class='row')
+          if (i % 2 === 0)
+            img(class='col-3 offset-1' src=stories[i].image)
+          div(class='col-6 offset-1')
+            h1 #{stories[i].quote}
+            h2 #{stories[i].name}
+            h3 #{stories[i].major} | Class of #{stories[i].class}
+          if (i % 2 !== 0)
+            img(class='col-3 offset-1' src=stories[i].image)
+ 
   div(class='next-steps')
-    div(class='next-steps-header')            
-      h1(class='section-header') Next Steps
-      hr(class='header-bar') 
-    div(class='next-steps-content sub-host3')
-      div
-        h1(class='text-bold') Start Your Journey 
-        p(class='text-reg') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-        a(class='major-link' href='/')
-          h3(class='text-bold') Explore the majors 
-          i(class='fa fa-arrow-right' id='right' aria-hidden='true')
-      div
-        h1(class='text-bold') Find Students Like You
-        p(class='text-reg') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-        a(class='orgs-link' href='/')
-          h3(class='text-bold') Explore the orgs 
-          i(class='fa fa-arrow-right' id='right' aria-hidden='true')
-    
-  
+    div(class='section-header')            
+      h1 Next Steps
+      hr
+    div(class='container')
+      div(class='row')
+        div(class='col-4 offset-1')
+          h1 Start Your Journey 
+          p Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+          a(href='/') Explore the majors 
+            i(class='fa fa-arrow-right')
+        div(class='col-4 offset-2')
+          h1(class='text-bold') Find Students Like You
+          p(class='text-reg') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+          a(href='/') Explore the orgs 
+            i(class='fa fa-arrow-right')

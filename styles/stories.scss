@@ -1,228 +1,91 @@
-@import 'variables';
-@import 'index/common';
-@import 'index/title';
-
-.sub-host1, .sub-host2, .sub-host3 {
-  padding-left: 18%;
-  padding-right: 18%;
-}
-
-
-.img-circle {
-    border-radius: 50%;
-}
-
-.page-header {
-  height: 356px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: $exlightblue;
-
-  div {
-
-    h1 {
-      color: $textblue;
-      padding-top: 174px;
-      padding-bottom: 116px;
-      font-size: 56px;
-    }
-  }
-}
+@import 'common';
 
 .page-description {
-  height: 558px;
-
-  div {
-    padding-top: 12%;
-    padding-bottom: 29%;
-
-    h2 {
-      color: $textblue;
-      line-height: 54px;
-      font-size: 36px;
-      letter-spacing: 0.72px;
-    }
+  padding: 116px 0;
+  p {
+    margin: 0;
   }
+}
 
+.story-video {
+  height: 517px;
+  background: #32D0DE;
+
+  img {
+    position: relative;
+    top: 80px;
+    height: 100%;
+  }
 }
 
 .main-story {
-  height: 1069px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 160px 0 116px 0;
 
-  .video {
-    background-color:$aquablue;
-    height: 517px;
-
-    .sub-host2 {
-      position: relative;
-      top: 80px;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
+  h2 {
+    margin-bottom: 32px;
   }
-
-  .vid-info {
-    height: 557px;
-    padding: 160px 11% 0 11%;
-
-    p:nth-of-type(1) {
-      color: $textblue;
-      font-size: 28px;
-    }
-
-    p:nth-of-type(2) {
-      color:$darkblue;
-      font-size: 24px;
-    }
-
-    .vid-text {
-      display: flex;
-      //justify-content: space-around;
-
-      .description {
-        p {
-          height: 180px;
-          //width: 540px;
-          font-size: 20px;
-          letter-spacing: 0.4px;
-          line-height: 30px;
-        }
-      }
-
-      .quote {
-        p {
-          height: 180px;
-          padding-left: 18%;
-          font-size: 24px;
-          letter-spacing: 0.48px;
-          line-height: 36px;
-        }
-      }
-
-    }
-
-  }
-
 }
-
 
 .more-stories {
   background-color: $exlightblue;
-  margin-top: none;
+  padding-top: 80px;
 
-  .stories-header {
-      background-color: $exlightblue;
+  .row {
+    padding: 64px 0 80px 0;
 
+    img {
+      width: 255px;
+      height: 255px;
+      border-radius: 50%;
+    }
+
+    div {
+      padding: 32px 0;
       h1 {
-        padding-top: 80px;
+        font-size: 24px;
+        margin-bottom: 32px;
       }
-
-  }
-
-  .story {
-    height: 399px;
-
-    .sub-host3{
-      padding-bottom: 80px;
-      display: flex;
-
-      .story-photo {
-        height: 255px;
-        width: 255px;
+  
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
       }
-
-      .story-content {
-        padding-top:32px;
-
-        p {
-          font-size: 24px;
-          color: $textblue;
-          line-spacing: 0.48px;
-          line-height: 36px;
-        }
-
-        h1 {
-          padding-top: 32px;
-          font-size: 20px;
-          color: $textblue;
-        }
-
-        h2  {
-          padding-top: 6px;
-          font-size: 18px;
-          color: $darkblue;
-
-        }
-
+  
+      h3 {
+        font-size: 21px;
+        color: $darkblue;
       }
     }
   }
 }
 
-.left {
-  .story-content {
-    padding-left: 94px;
-  }
-}
+.next-steps {
+  padding: 80px 0 116px 0;
 
-.right {
-  .story-content {
-    padding-right: 94px;
-  }
-}
-
-.next-steps-header {
-
-  h1 {
-    padding-top: 80px;
-  }
-
-}
-
-.next-steps-content {
-  padding-bottom: 116px;
-  display: flex;
-
-  div {
-    color: $textblue;
-    //flex-basis: 40%;
-    width: 380px;
+  .row {
+    padding-top: 65px;
 
     h1 {
       font-size: 24px;
+      padding-bottom: 24px;
+      font-weight: bold;
     }
 
     p {
-      padding-top: 16px;
+      font-size: 18px;
+      color: $darkblue;
       padding-bottom: 24px;
-      line-height:27px;
     }
 
     a {
-      display: flex;
-
-      h3 {
-        font-size: 18px;
-        color: $textblue;
-        margin-right: 10px;
-      }
-
-      i{
+      color: $textblue;
+      font-weight: bold;
+      font-size: 21px;
+      
+      i {
         color: $orange;
       }
     }
-  }
-
-  div:nth-child(2) {
-    //align-self: flex-end;
-    margin-left: auto;
   }
 }
 
@@ -239,19 +102,11 @@
 
 
   .page-description {
-    height: 612px;
+    height: 500px;
 
-    div {
-      padding-top: 11%;
-      padding-bottom: 11%;
-
-      h2 {
-        //height: 324px;
-        //width: 610px;
-
-      }
+    p {
+      vertical-align: middle;
     }
-
   }
 
   .main-story {
@@ -265,6 +120,14 @@
     .vid-info {
       height: 630px;
       padding: 160px 8% 0 8%;
+
+      p:nth-of-type(1) {
+        font-size: 20px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -306,34 +169,235 @@
   }
 
   .sub-host2, .sub-host3 {
-    padding-left: 14%;
-    padding-right: 14%;
-  }
-
-  .page-header {
-    height: 288px;
-
-    div {
-
-      h1 {
-        padding-top: 166px;
-        padding-bottom: 80px;
-      }
-    }
+    padding-left: 7%;
+    padding-right: 7%;
   }
 
   .page-description {
     height: 434px;
+    padding: 96px 0;
+    font-size: 28px;
+  }
 
-    div {
-      padding-top: 2%;
-      padding-bottom: 2%;
+  .main-story {
+    height: 913px;
+
+    .video {
+      height: 388px;
+
+      .sub-host2 {
+        position: relative;
+        top: 48px;
+      }
+    }
+
+    .vid-info {
+      height: 525px;
+      padding: 96px 7% 0 7%;
+
+      p:nth-of-type(1) {
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      .vid-text {
+        flex-direction: column;
+
+        .description {
+          order: 2;
+
+          p {
+            font-size: 18px;
+
+          }
+        }
+
+        .quote {
+          order: 1;
+
+          p{
+            font-size: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            vertical-align: middle;
+          }
+        }
+      }
     }
   }
 
+  .more-stories {
+    .story {
+      height: 453px;
+      padding-top: 40px;
 
+      .sub-host3 {
+        flex-direction: column;
+
+        .story-photo {
+          height: 150px;
+          width: 150px;
+          order: 1;
+          margin: 0 auto;
+        }
+        .story-content {
+          order: 2;
+          padding-top: 32px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 20px;
+            padding-top: 16px;
+            order: 3;
+            text-align: center;
+          }
+
+          h1 {
+            padding-top: 0;
+            font-size: 20px;
+            padding-top: 0;
+            order: 1;
+            text-align: center;
+          }
+
+          h2 {
+            font-size: 18px;
+            order: 2;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+  }
+
+  .left {
+    .story-content {
+      padding-left: 0px;
+    }
+  }
+
+  .right {
+    .story-content {
+      padding-right: 0px;
+    }
+  }
+
+  .next-steps-content {
+    padding-bottom: 48px;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      a {
+
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      margin-top: 32px;
+      margin-left: 0;
+    }
+  }
 }
 
 @media (max-width: $sm) {
+  .sub-host1 .sub-host3{
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+
+  .sub-host2, {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .page-description {
+    height: 308px;
+    font-size: 20px;
+    padding: 64px 0;
+  }
+
+  .main-story {
+    height: 787px;
+
+    .video {
+      height: 287px;
+
+      .sub-host2 {
+        position: relative;
+        top: 48px;
+      }
+    }
+
+    .vid-info {
+      height: 501px;
+      padding: 68px 5% 0 5%;
+
+      p:nth-of-type(1) {
+        font-size: 20px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 18px;
+      }
+
+      .vid-text {
+
+        .description p {
+          font-size: 16px;
+        }
+
+        .quote p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .stories-header {
+    h1 {
+      padding-top: 32px;
+    }
+  }
+
+  .more-stories {
+    .story {
+      height: 453px;
+
+      .sub-host3 {
+
+        .story-content {
+          padding-top: 32px;
+
+          p {
+            font-size: 18px;
+          }
+
+          h2 {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
 
 }

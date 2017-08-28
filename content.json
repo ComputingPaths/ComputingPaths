@@ -1,0 +1,34 @@
+{
+  "stories": [
+    {
+      "name": "Chyeim Jackson-Burgess",
+      "major": "Computer Science Engineering",
+      "class": "2017",
+      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
+      "image": "/img/temp1.svg"
+    },
+    {
+      "name": "Chyeim Jackson-Burgess",
+      "major": "Computer Science Engineering",
+      "class": "2017",
+      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
+      "image": "/img/temp1.svg"
+    },
+    {
+      "name": "Chyeim Jackson-Burgess",
+      "major": "Computer Science Engineering",
+      "class": "2017",
+      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
+      "image": "/img/temp1.svg"
+    },
+    {
+      "name": "Chyeim Jackson-Burgess",
+      "major": "Computer Science Engineering",
+      "class": "2017",
+      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
+      "image": "/img/temp1.svg"
+    }
+  ],
+  "events": "From hackathons to career fairs, computing students have access to a diverse range of exciting events. Search for events to begin your journey on a computing path.",
+  "facilities": "UC San Diego enjoys state-of-the art facilities and resources that enrich the computing experience. Discover innovative spaces, tools, and support offered to computing students."
+}
