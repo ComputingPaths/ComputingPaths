@@ -1,6 +1,6 @@
 extends ../template.pug
 
-block append style 
+block style 
   link(
     rel='stylesheet'
     href ='/css/stories.css'
@@ -8,16 +8,17 @@ block append style
     
 block main
   div(class='page-header')
-    div(class='sub-host')
-      h1(class='text-bold') Stories &amp; Advice
+    hr
+    i(class='fa fa-circle-o')
+    h1 Stories &amp; Advice
   
-  div(class='page-description')
-    div(class='sub-host')
-      h2(class='text-reg') Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+  section(class='container')
+    div(class='offset-1 col-10 page-description')
+      p Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
       
   div(class='main-story')
     div(class='video')
-      div(class='sub-host')
+      div(class='sub-host2')
         img(src='/img/temp1.svg')
     div(class='vid-info')
       p(class='text-bold') Rachel Keinouz 
@@ -33,7 +34,7 @@ block main
       h1(class='section-header text-bold') More Stories
       hr(class='header-bar')      
     div(class='story left')
-      div(class='sub-host')
+      div(class='sub-host3')
         div(class='story-photo')
           img(class='img-circle' src='/img/temp4.svg')
         div(class='story-content')
@@ -41,7 +42,7 @@ block main
           h1(class='text-bold') Chyeim Jackson-Burgess
           h2(class='text-reg') Computer Science Engineering  |  Class of 2017
     div(class='story right')
-      div(class='sub-host')
+      div(class='sub-host3')
         div(class='story-content')
           p(class='text-med') "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.”
           h1(class='text-bold') Chyeim Jackson-Burgess
@@ -49,7 +50,7 @@ block main
         div(class='story-photo')
           img(class='img-circle' src='/img/temp4.svg')
     div(class='story left')
-      div(class='sub-host')
+      div(class='sub-host3')
         div(class='story-photo')
           img(class='img-circle' src='/img/temp4.svg')
         div(class='story-content')
@@ -57,7 +58,7 @@ block main
           h1(class='text-bold') Chyeim Jackson-Burgess
           h2(class='text-reg') Computer Science Engineering  |  Class of 2017
     div(class='story right')
-      div(class='sub-host')
+      div(class='sub-host3')
         div(class='story-content')
           p(class='text-med') "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.”
           h1(class='text-bold') Chyeim Jackson-Burgess
@@ -69,7 +70,7 @@ block main
     div(class='next-steps-header')            
       h1(class='section-header') Next Steps
       hr(class='header-bar') 
-    div(class='next-steps-content sub-host')
+    div(class='next-steps-content sub-host3')
       div
         h1(class='text-bold') Start Your Journey 
         p(class='text-reg') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.

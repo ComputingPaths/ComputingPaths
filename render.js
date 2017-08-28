@@ -1,45 +1,52 @@
 const fs = require('fs')
-const xml = require('xml2js')
 const pug = require('pug')
+const admin = require('firebase-admin')
+const camelCase = require('camelcase')
+const path = require('path')
+const serviceAccount = require('./firebase-key.json')
 
-exports.renderDynamic = () => {
-  fs.readdir('views/dynamic', (err, files) => {
-    if (err) throw err
+class Processor {
+  constructor(callback) {
+    admin.initializeApp({
+      credential: admin.credential.cert(serviceAccount),
+      databaseURL: 'https://computing-paths.firebaseio.com'
+    })
+    let database = admin.database()
+    let root = database.ref('/')
+    root.on('value', snapshot => {
+      let cache = snapshot.val()
+      this.locals = {}
+      for (let key in cache) {
+        this.locals[camelCase(key)] = cache[key]
+      }
+      this.mergeLocals(require('./content'))
+      this.renderAll()
+    })
+    if (callback) callback()
+  }
 
-    for (let file of files) {
-      file = file.slice(0, -4)
+  renderFile(name) {
+    let html = pug.renderFile(`views/${name}`, this.locals)
+    fs.writeFile(`public/${name.replace('pug', 'html')}`, html, err => {
+      if (err) throw err
+    })
+  }
 
-      fs.readFile(`contents/${file}.xml`, 'utf8', (err, data) => {
-        if (err) throw err
+  renderAll() {
+    fs.readdir('views', (err, files) => {
+      if (err) throw err
+      for (let file of files) {
+        if (path.extname(file) !== '.pug') continue
+        this.renderFile(file)
+      }
+    })
+    console.log('all files are re-rendered')
+  }
 
-        xml.parseString(data, (err, obj) => {
-          if (err) throw err
-
-          let html = pug.renderFile(`views/dynamic/${file}.pug`, obj)
-          fs.writeFile(`public/${file}.html`, html, err => {
-            if (err) throw err
-          })
-        })
-      })
-    }
-  })
+  mergeLocals(vars) {
+    if (!this.locals || !vars) return
+    Object.assign(this.locals, vars)
+  }
 }
 
-const renderFile = (name, option = {}) => {
-  let html = pug.renderFile(`views/${name}`, option)
-  fs.writeFile(`public/${name.replace('pug', 'html')}`, html, err => {
-    if (err) throw err
-  })
-}
-exports.renderFile = renderFile
-
-exports.renderAll = () => {
-  fs.readdir('views', (err, files) => {
-    if (err) throw err
-
-    for (let file of files) {
-      if (file.startsWith('.')) continue
-      renderFile(file)
-    }
-  })
-}
+exports.Processor = Processor
