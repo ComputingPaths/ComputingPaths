@@ -10,34 +10,84 @@ block main
 		h1 Facilities and Resources
 
 	div(class="res-banner")
-		div(class="res-banner-title")
 
-			a(class="prev-proj hidden-sm-down")
-				i(class='fa fa-arrow-left fa-3x')
-			div(id="carouuselExampleControls" class="carousel slide" data-ride="carousel")
-				
-				div(class="carousel-inner" role="listbox")
-					div(class="carousel-item active")
-						img(src='/img/temp3.svg')
-						h1 Name of Resource1
-
-					div(class="carousel-item")
-						img(src='/img/temp3.svg')
-						h1 Name of Resource2
-
-					div(class="carousel-item")
-						img(src='/img/temp3.svg')
-						h1 Name of Resource3
+		div(id="carouuselExampleControls" class="carousel slide" data-ride="carousel")
+			
+			div(class="carousel-inner" role="listbox")
+				div(class="carousel-item active")
+					img(src='/img/temp3.svg')
 
 
-			a(class="left carousel-control" href="#myCarousel" data-slide="prev")
-				i(class='fa fa-arrow-right fa-3x')
+				div(class="carousel-item")
+					img(src='/img/temp3.svg')
+
+
+				div(class="carousel-item")
+					img(src='/img/temp3.svg')
+
+
+		a(class="prev-proj hidden-sm-down")
+			i(class='fa fa-arrow-left fa-3x res-banner-button-l')
+
+
+		a(class="left carousel-control" href="#myCarousel" data-slide="prev")
+			i(class='fa fa-arrow-right fa-3x res-banner-button-r')
+
+
 
 
 	div(class="res-browse")
 		h1 Browse our expansive list of resources
 
+
+	div(class="res-sidebar")
+		h3 Academic Suport
+		h3 Buildings
+		h3 Events	
+		h3 Showcases
+		h3 Equipment
+		h3 Workspaces
+
 	section
-		div(class='resource-card')
-			img(src='/img/temp3.svg')
-			
+
+		div(class="test")
+			div(class='res-card')
+				img(src='/img/temp3.svg' alt='+')
+				div(class='cardinfo')
+					div(class='cardheading')
+						h3 Calculus Lab
+		
+						div(class='tags')
+							div(class='colorbackground') Workspaces
+							div(class='colorbackground') Academic Support
+
+		div(class="test")
+			div(class='res-card')
+				img(src='/img/temp3.svg' alt='+')
+				div(class='cardinfo')
+					div(class='cardheading')
+						h3 OASIS TRIO SSSP & Summer Experience
+	
+					div(class='tags')
+						div(class='colorbackground') Academic Support
+						div(class='colorbackground') Events
+
+		div(class="test")
+			div(class='res-card')
+				img(src='/img/temp3.svg' alt='+')
+				div(class='cardinfo')
+					div(class='cardheading')
+						h3 Resource Test
+	
+					div(class='tags')
+						div(class='colorbackground') Workspaces
+						div(class='colorbackground') Buildings
+
+
+
+
+
+
+
+
+

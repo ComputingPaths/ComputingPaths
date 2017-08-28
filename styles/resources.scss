@@ -23,44 +23,151 @@
 	background: linear-gradient(blue 70%, white 30%);
 	background-size: 100% 100%;
 
-	.res-banner-title{	
 
-		text-align: center;
-		padding-bottom: 50px;
+
+		/*text-align: center;*/
+		/*padding-bottom: 50px;*/
+		/*display: inline-block;*/
 
 		img{
-			padding-top: 50px;
-			display: block;
-			margin: auto;
+			/*padding-top: 50px;*/
+
+			margin: 0 auto;
 		  width: 1000px;
 		  height: 500px;	
 
 		}
 
-		h1{
-			/*text-align: left;*/
+		.res-banner-title{
+			/*text-align: center;*/
 			font-size: 40px;
+			display: block;
+			float: right;
 		}
+
+/*		.res-banner-title{
+			display: block;
+			float: left;
+			text-align: center;
+			padding-bottom: 50px;
+		}*/
+	
+	.res-banner-button-r{
+		float: right;
+		padding-right: 15%;
+	}
+
+	.res-banner-button-l{
+		padding-left: 15%;
 	}
 }
 
-	.res-browse{
+.res-browse{
 
-		text-align: center;
-		background-color: blue;
-		padding-top: 50px;
-		padding-bottom: 50px;
+	text-align: center;
+	background-color: blue;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
-		h1{
-			color: white;
-			font-size: 40px;
+	h1{
+		color: white;
+		font-size: 40px;
 
-		}
 	}
+}
 
 
-section{
 
 
 
+section {
+  background: $exlightblue;
+  padding: 80px 165px 52px 400px;
+  display: block;
+  justify-content: center;
+  justify-content: space-between;
+  
+  .test {
+    
+    .res-card {
+      height: 316px;
+      display: flex;
+      cursor:pointer;
+      margin-bottom: 64px;
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+
+      img {
+        width: 475px;
+        height: 316px;
+      }
+
+      .cardinfo{
+        background: $darkblue;
+        height: 316px;
+        //width: 900px;
+        width: 65%;
+
+        .cardheading {
+          height: 80px;
+          background: $darkblue;
+
+          h3 {
+            font-size: 24px;
+            padding: 24px 1px 28px 48px;
+            color: white;
+
+            > p {
+              display: inline;
+              font-weight: normal;
+            }
+          }
+        }
+
+        .res-card-description {
+          height: 184px;
+
+          > p {
+            padding: 32px 48px 39px 48px;
+            font-size: 18px;
+            color: $textblue;
+          }
+        }
+
+        hr {
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ccc;
+          margin: 0 0;
+          padding: 0;
+          color: #E6F1F6;
+        }
+
+        .tags {
+
+          margin: 14px 48px 14px 48px;
+          display: flex;
+
+          
+          .colorbackground {
+            background: #FF8585;
+            border-radius: 50px;
+            text-align: center;
+            width: 154px;
+            padding-right: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.res-sidebar{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 15px;
+
+	padding: 50px;
 }
