@@ -12,24 +12,29 @@ block main
       
   div(class='intro-text')
     h2  This is the projects page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+    
+  div(class='intro-prompt')
+    h3 Explore what these Tritons have created
       
   section
-    a(href='#openModal')
+    a(data-toggle='modal' data-target='#modal1')
       div(class='projectcard')
         img(src='/img/temp3.svg' alt='+')
         div(class='cardinfo')
-          div(class='cardheading')
-            h3 MyWebApp
-              p &emsp;|&emsp;CSES
-          div(class='projectdescription')
-            p Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. 
-          hr
+          p(class='project-name') MyWebApp
+          p(class='project-creator') CSES
           div(class='tags')
             div(class='colorbackground') Web Application
-            div(class='colorbackground') Hardware
+          i(class='fa fa-expand')
             
-    div(id='openModal' class='modal')
-      div
-        a(href='#close' title='Close' class='close') X
-        p sample text
-        img(src='/img/temp3.svg' alt='+')          
+    div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
+      div(class='modal-dialog' role='document')
+        div(class='modal-content')
+          div(class='modal-header')
+            h5(class='modal-title' id='exampleModalLongTitle') MyWebApp
+            button(type='button' class='close' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          div(class='modal-body')
+            p Hi
+          
+            
