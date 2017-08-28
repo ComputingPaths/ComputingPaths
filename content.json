@@ -86,11 +86,30 @@
     }
   ],
   "degrees": {
-    "bs": "Bachelor of Science"
+    "bs": "Bachelor of Science",
+    "ba": "Bachelor of Arts"
   },
   "departments": [
     "Biological Sciences",
     "Computer Science",
-    "Bioengineering"
-  ]
+    "Bioengineering",
+    "Cognitive Sciences",
+    "Computer Science",
+    "Electrical Engineering",
+    "Mathematics",
+    "Physics",
+    "Visual Arts",
+    "Music"
+  ],
+  "description": {
+    "BIO": "bio",
+    "COGS": "cogs",
+    "CS": "cs",
+    "ECE": "ECE",
+    "MCS": "math",
+    "SCI": "scientific",
+    "ICAM": "ICAM",
+    "SPECD": "Speculative",
+    "DSE": "Data Science"
+  }
 }
