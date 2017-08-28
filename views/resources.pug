@@ -6,34 +6,44 @@ block style
 		href='/css/resources.css'
 	)
 block main
-	div(class='intro')
+	div(class="page-header")
 		h1 Facilities and Resources
 
 	div(class="res-banner")
 
-		div(id="carouuselExampleControls" class="carousel slide" data-ride="carousel")
-			
-			div(class="carousel-inner" role="listbox")
-				div(class="carousel-item active")
-					img(src='/img/temp3.svg')
+		div(class="container")
+
+			div(class="row")
+
+				div(class="col-md-1 res-control-container")
+					a(class="carousel-control" href="#")
+						i(class='fa fa-arrow-left fa-3x')
+
+				div(id="carouuselExampleControls" class="carousel slide col-md-10" data-ride="carousel")
+					
+					div(class="carousel-inner" role="listbox")
+						div(class="carousel-item active")
+							img(src='/img/temp3.svg')
 
 
-				div(class="carousel-item")
-					img(src='/img/temp3.svg')
+						div(class="carousel-item")
+							img(src='/img/temp3.svg')
 
 
-				div(class="carousel-item")
-					img(src='/img/temp3.svg')
+						div(class="carousel-item")
+							img(src='/img/temp3.svg')
 
+				div(class="col-md-1 res-control-container")
+					a(class="carousel-control float-right" href="#")
+						i(class='fa fa-arrow-right fa-3x')
 
-		a(class="prev-proj hidden-sm-down")
-			i(class='fa fa-arrow-left fa-3x res-banner-button-l')
+			div(class="row")
 
+				div(class="col-xs-8 col-md-6 offset-md-1 res-carousel-caption")
+					a(href="#")
+						h2 Resource Name
 
-		a(class="left carousel-control" href="#myCarousel" data-slide="prev")
-			i(class='fa fa-arrow-right fa-3x res-banner-button-r')
-
-
+				div(class="col-xs-4 col-md-4")
 
 
 	div(class="res-browse")

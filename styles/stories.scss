@@ -41,19 +41,9 @@
 
     div {
       padding: 32px 0;
+
       h1 {
-        font-size: 24px;
         margin-bottom: 32px;
-      }
-  
-      h2 {
-        font-size: 24px;
-        font-weight: bold;
-      }
-  
-      h3 {
-        font-size: 21px;
-        color: $darkblue;
       }
     }
   }
@@ -66,25 +56,15 @@
     padding-top: 65px;
 
     h1 {
-      font-size: 24px;
-      padding-bottom: 24px;
-      font-weight: bold;
+      margin-bottom: 24px;
     }
 
     p {
-      font-size: 18px;
-      color: $darkblue;
-      padding-bottom: 24px;
+      margin-bottom: 24px;
     }
 
-    a {
-      color: $textblue;
-      font-weight: bold;
-      font-size: 21px;
-      
-      i {
-        color: $orange;
-      }
+    a i {   
+      color: $orange;
     }
   }
 }
