@@ -1,9 +1,52 @@
 @import 'variables';
 
+// text styles
 * {
   font-family: 'Roboto', sans-serif;
   color: $textblue;
 }
+
+.light {
+  color: $darkblue;
+}
+
+.dark {
+  color: $textblue;
+}
+
+.nor {
+  font-weight: normal;
+}
+
+.med {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.size-18 {
+  font-size: 18px;
+}
+
+.size-28 {
+  font-size: 28px;
+}
+
+.size-20 {
+  font-size: 20px;
+}
+
+.size-21 {
+  font-size: 21px;
+}
+
+
+.size-24 {
+  font-size: 24px;
+}
+// end text styles
 
 // page header
 .page-header {
@@ -79,3 +122,21 @@
   }
 }
 // end page header
+
+// section headers
+.section-header {
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  hr {
+    width: 24px;
+    height: 4px;
+    background-color: $orange;
+    border: none;
+    margin: 16px auto 0 auto;
+  }
+}
+// end section header
+
