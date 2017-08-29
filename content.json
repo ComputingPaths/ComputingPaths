@@ -1,4 +1,48 @@
 {
+  "majorHooks": [
+    "Bioinformatics majors address the growing need for trained computational biologists in the rapidly growing field of biological data analysis.",
+    "Cognitive Science students are at the forefront of researching solutions and developing technology designed to better suit humanity.",
+    "Computer science students gain knowledge in key computing theories and languages, directly preparing them to enter high tech industry.",
+    "Electrical and Computer Engineering students unite principles of mathematics and science to become architects of electronic systems.",
+    "Math-Computer Science students focus on the intersection between mathematics and theoretical computer science.",
+    "Scientific Computation majors bridge the gap between applied mathematics, physics, and computer science.",
+    "Interdisciplinary Computing and the Arts students embody the new generation of artists and musicians.",
+    "Speculative Design is a 21st century mix of art, science, and emerging technology focused on aesthetic and entrepreneurial and activist intervention.",
+    "Data scientists use mathematics and computing to tackle the emerging need for data analysis in a wide range of industries."
+  ],
+  "majorNames": [
+    "Bioinformatics",
+    "Cognitive Science",
+    "Computer Science",
+    "Electrical & Computer Engineering",
+    "Math – Computer Science",
+    "Scientific Computation",
+    "Interdisciplinary Computing and the Arts",
+    "Speculative Design",
+    "Data Science"
+  ],
+  "pages": [
+    {
+      "link": "/stories.html",
+      "name": "Stories"
+    },
+    {
+      "link": "/majors.html",
+      "name": "Majors"
+    },
+    {
+      "link": "/connect.html",
+      "name": "Connect"
+    },
+    {
+      "link": "/projects.html",
+      "name": "Projects"
+    },
+    {
+      "link": "/resources.html",
+      "name": "Resources"
+    }
+  ],
   "stories": [
     {
       "name": "Chyeim Jackson-Burgess",
@@ -30,5 +74,114 @@
     }
   ],
   "events": "From hackathons to career fairs, computing students have access to a diverse range of exciting events. Search for events to begin your journey on a computing path.",
-  "facilities": "UC San Diego enjoys state-of-the art facilities and resources that enrich the computing experience. Discover innovative spaces, tools, and support offered to computing students."
+  "facilities": "UC San Diego enjoys state-of-the art facilities and resources that enrich the computing experience. Discover innovative spaces, tools, and support offered to computing students.",
+  "majors": [
+    {
+      "name": "Bioinformatics",
+      "cap": "true",
+      "degree": "bs",
+      "departments": [0, 1, 3],
+      "hook": "Bioinformatics majors address the growing need for trained computational biologists in the rapidly growing field of biological data analysis.",
+      "description": "bio",
+      "website": "http://bioinformatics.ucsd.edu/"
+    },
+    {
+      "name": "Cognitive Science",
+      "cap": "false",
+      "degree": "bs",
+      "departments": [2],
+      "hook": "Cognitive Science students are at the forefront of researching solutions and developing technology designed to better suit humanity.",
+      "decription": "cogs",
+      "website": "http://www.cogsci.ucsd.edu/"
+    },
+    {
+      "name": "Computer Science",
+      "cap": "true",
+      "degree": "bs",
+      "departments": [3],
+      "hook": "Computer science students gain knowledge in key computing theories and languages, directly preparing them to enter high tech industry.",
+      "description": "cs",
+      "website": "https://cse.ucsd.edu/"
+    },
+    {
+      "name": "Electrical & Computer Engineering",
+      "cap": "true",
+      "degree": "bs",
+      "departments": [3, 4],
+      "hook": "Electrical and Computer Engineering students unite principles of mathematics and science to become architects of electronic systems.",
+      "description": "ece",
+      "website": "http://www.ece.ucsd.edu/"
+    },
+    {
+      "name": "Math-Computer Science",
+      "cap": "true",
+      "degree": "bs",
+      "departments": [5],
+      "hook": "Math-Computer Science students focus on the intersection between mathematics and theoretical computer science.",
+      "description": "mcs",
+      "website": "https://math.ucsd.edu/"
+    },
+    {
+      "name": "Scientific Computation",
+      "cap": "true",
+      "degree": "bs",
+      "departments": [3, 5, 6],
+      "hook": "Scientific Computation majors bridge the gap between applied mathematics, physics, and computer science.",
+      "description": "sci",
+      "website": "Math: https://math.ucsd.edu/ | Physics: https://physics.ucsd.edu/"
+    },
+    {
+      "name": "Interdisciplinary Computing and the Arts",
+      "cap": "false",
+      "degree": "ba",
+      "departments": [7,8],
+      "hook": "Interdisciplinary Computing and the Arts students embody the new generation of artists and musicians.",
+      "description": "icam",
+      "website": "Music: http://musicweb.ucsd.edu/ugrad/ugrad-pages.php?i=103 | VisArts: http://visarts.ucsd.edu/icam-interdisciplinary-computing-and-arts-minor"
+    },
+    {
+      "name": "Speculative Design",
+      "cap": "false",
+      "degree": "ba",
+      "departments": [8],
+      "hook": "Speculative Design is a 21st century mix of art, science, and emerging technology focused on aesthetic and entrepreneurial and activist intervention.",
+      "description": "specd",
+      "website": "http://visarts.ucsd.edu/majors-0"
+    },
+    {
+      "name": "Data Science",
+      "cap": "false",
+      "degree": "bs",
+      "departments": [3],
+      "hook": "Data scientists use mathematics and computing to tackle the emerging need for data analysis in a wide range of industries.",
+      "description": "dse",
+      "website": "http://jacobsschool.ucsd.edu/mas/dse/"
+    }
+  ],
+  "degrees": {
+    "bs": "Bachelor of Science",
+    "ba": "Bachelor of Arts"
+  },
+  "departments": [
+    "Biological Sciences",
+    "Bioengineering",
+    "Cognitive Sciences",
+    "Computer Science",
+    "Electrical Engineering",
+    "Mathematics",
+    "Physics",
+    "Visual Arts",
+    "Music"
+  ],
+  "description": {
+    "bio": "[Placeholder - need condensed overall description]",
+    "cogs": "The cognitive science major is a diverse field that blends together the understanding of the brain, human behavior, and computation. Students can choose between five different specializations that span widely different disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts. Students can explore a variety of disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts, determined by their chosen specialization. Graduates of this program often go on to graduate school or work in research, UX and product design, and data analysis.",
+    "cs": "The Computer Science major allows students to initially explore computer science through algorithmic problem solving and programming in various languages, including Java and C. Students then progress to topics involving a deeper understanding of computer systems including advanced data structures and computer architecture. Additional elective courses provide depth into systems and networks, database analysis, security and cryptography topics, machine learning, computer vision, and graphics. Many graduates of this program go on to graduate school or choose careers that involve machine automation, UI/UX design, data analytics, application development, artificial intelligence, networking, and security.",
+    "ece": "[Placeholder - there are two majors in this category: CE and EE]",
+    "mcs": "The Math-Computer Science (B.S) major is a specialized branch of mathematics, providing a focus on computer science. While not covering the same scope as a pure Computer Science major, Math CS prepares students to potentially work in a computing setting. Students are given flexibility in their course subjects, allowing the opportunity to have a greater focus on mathematics or to take a more even distribution of courses in mathematics and computer science. Students study subjects including abstract algebra, statistics and probability, combinatorics, algorithm analysis, programming, and data structures.",
+    "sci": "[Placeholder - there are two departments in this category: math and physics]",
+    "icam": "The Interdisciplinary Computing and the Arts major (ICAM) is an exciting blend of computer science, art, and technology that explores today’s cutting-edge media. Access to a wide range of disciplines means that students are free to tailor the program to their artistic interests, and can take classes in fields like virtual reality, design communication, film production, and physical electronics programming. ICAM students gain technical, theoretical, and historical backgrounds that prepare them to anticipate and work with emerging trends in art, music, and technology. They can choose from either music technology or visual arts focuses, which influence their upper-level coursework, but often draw from both fields during their journey through the major.",
+    "specd": "The Speculative Design (B.A.) major mixes art, science, and emerging technology, with a focus on aesthetics, entrepreneurship, and activist intervention. Combining laboratory and field research in a creative studio setting, Speculative Design works from nano to urban scales to stimulate new ideas and innovative solutions. Rather than focusing on existing methodologies, this program prepares students to solve problems that will emerge in an uncertain future. Students may choose from four areas of emphasis: Public Culture and Urban Ecology, Design Computing, Design Research, and Media Design. ",
+    "dse": "Data science majors use mathematical models and computational methods to craft powerful data analysis and meet the emerging needs of data-driven industries, from manufacturing companies to government organizations. The core knowledge base of the data scientist lies at the intersection of computing and mathematics, coupled with the skills to abstract, build, and test predictive and descriptive models. Students in the program can expect coursework in mathematics, computer science, and statistics, as well as foundational lower division coursework in natural and physical sciences."
+  }
 }
