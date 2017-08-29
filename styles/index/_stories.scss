@@ -1,7 +1,6 @@
 .stories {
   main {
     height: 352px;
-    margin-top: 64px;
     background: $aquablue;
 
     img {
@@ -43,7 +42,6 @@
   @media (max-width: $lg) {
     main {
       height: auto;
-      margin-top: 48px;
     }
 
     .link-btn {
@@ -53,7 +51,6 @@
 
   @media (max-width: $md) {
     main {
-      margin-top: 32px;
 
       div {
         padding: 64px;

@@ -25,18 +25,8 @@
   padding-bottom: 116px;
 }
 
-.section-header {
-  color: $textblue;
-  font-size: 36px;
-  text-align: center;
-}
-
-.header-bar {
-  width: 24px;
-  height: 4px;
-  background-color: $orange;
-  border: none;
-  margin: 16px auto 64px auto;
+.section-header hr {
+  margin-bottom: 64px;
 }
 
 .link-btn {
@@ -72,7 +62,7 @@
     padding-bottom: 80px;
   }
 
-  .header-bar {
+  .section-header hr {
     margin-bottom: 48px;
   }
 
@@ -91,19 +81,14 @@
     padding-bottom: 48px;
   }
 
-  .section-header {
-    font-size: 24px;
-  }
-
-  .header-bar {
-    margin: 8px auto 32px auto;
-    width: 18px;
-    height: 3px;
+  .section-header hr {
+    margin-bottom: 32px;;
   }
 
   .link-btn {
     font-size: 16px;
     padding-top: 15px;
     width: 100%;
+    margin-top: 24px;
   }
 }

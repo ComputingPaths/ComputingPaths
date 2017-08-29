@@ -29,25 +29,27 @@ block main
       h1 The Majors
       hr
     div(class='container')
-      section(class='row')
-        aside(class='hidden-sm-down col-5 row')
-          ul
-            div(class='col-12')
-              - for (let i = 0; i < Math.ceil(majorNames.length / 2); i++)
-                li #{majorNames[i]}
-            div(class='col-12')
-              - for (let i = Math.ceil(majorNames.length / 2); i < majorNames.length; i++)
-                li #{majorNames[i]}
-          a(class='link-btn hidden-md-down col-9' href=pages[1].link) Link to all the majors
-        main(class='col-7')
-          img(src='/img/temp1.svg')   
+      div(class='row')
+        aside(class='hidden-sm-down col-lg-5')
+          ul(class='row')
+            div(class='col-sm-6 col-lg-12')
+              - for (let i = 0; i < Math.ceil(majors.length / 2); i++)
+                li #{majors[i].name}
+            div(class='col-sm-6 col-lg-12')
+              - for (let i = Math.ceil(majors.length / 2); i < majors.length; i++)
+                li #{majors[i].name}
+          a(class='link-btn hidden-md-down' href=pages[1].link) Link to all the majors
+        main(class='col-lg-7')
+          img(src='/img/temp1.svg' class='img-fluid')   
           div
             article
               h1
-              each hook in majorHooks
-                h2 #{hook}
+              each m in majors
+                h2 #{m.hook}
             button
-              i(class='fa fa-arrow-right fa-2x')
+              each m in majors
+                a(href=`/majors.html#${m.short}`)
+                  i(class='fa fa-arrow-right fa-2x align-middle')
       nav(class='hidden-md-up')
         i(id='prev-major' class='fa fa-arrow-left fa-2x')
         i(id='next-major' class='fa fa-arrow-right fa-2x')

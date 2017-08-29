@@ -3,16 +3,19 @@ function majorsSection() {
   let ul = $('.majors aside li')
   let hooks = $('.majors main h2')
   let name = $('.majors main h1')
+  let links = $('.majors button a')
   //Generate a random major index
   let mi = Math.floor(Math.random() * ul.length)
   
   let updateMajor = (newIndex) => {
     ul.eq(mi).removeClass('active')
     hooks.eq(mi).removeClass('active')
+    links.eq(mi).removeClass('active')
     mi = newIndex
     ul.eq(mi).addClass('active')
     name.html(ul.eq(mi).html())
     hooks.eq(mi).addClass('active')
+    links.eq(mi).addClass('active')
   }
   updateMajor(mi)
   

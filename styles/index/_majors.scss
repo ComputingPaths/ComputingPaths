@@ -1,140 +1,78 @@
 .majors {
-  section {
-    // display: flex;
-    // justify-content: space-between;
+  aside {
+    ul {
+      padding: 0;
 
-    aside {
-      //flex-basis: 40%;
-      //padding: 0;
-
-      ul {
-        padding: 0;
-        //margin: 0;
-        div {
-          //padding: 0;
-        }
-
-        li {
-          color: $textblue;
-          font-size: 20px;
-          margin-bottom: 16px;
-          font-weight: bold;
-          list-style-type: none;
-        }
-
-        li:hover:not(.active) {
-          color: $aquablue;
-          list-style-type: initial;
-        }
-
-        li.active {
-          color: $orange;
-          list-style-type: initial;
-        }
+      li {
+        color: $textblue;
+        font-size: 20px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        list-style-type: none;
       }
 
-      .link-btn {
-        margin-top: 64px;
+      li:hover:not(.active) {
+        color: $aquablue;
+        list-style-type: initial;
+      }
+
+      li.active {
+        color: $orange;
+        list-style-type: initial;
       }
     }
+  }
 
-    main {
-      //flex-basis: 55%;
+  main {
+    div {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
 
-      img {
-        height: 320px;
-        width: 100%;
-      }
+      article {
+        width: 80%;
+        background: white;
+        padding: 40px;
 
-      div {
-        flex-grow: 1;
-        display: flex;
-
-        article {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          background: white;
-          padding: 40px;
-
-          h1, h2 {
-            margin: 0;
-            font-size: 20px;
-            color: $textblue;
-          }
-
-          h1 {
-            font-weight: bold;
-          }
-
-          h2 {
-            margin-top: 10px;
-            display: none;
-          }
-
-          h2.active {
-            display: initial;
-          }
+        h1 {
+          font-size: 20px;
+          font-weight: bold;
         }
 
-        button {
-          min-width: 112px;
-          background-color: $darkblue;
-          border: none;
-          outline: none;
+        h2 {
+          font-size: 20px;
+          font-weight: normal;
+          display: none;
+        }
+
+        h2.active {
+          display: initial;
+        }
+      }
+
+      button {
+        width: 20%;
+        background-color: $darkblue;
+        border: none;
+        outline: none;
+
+        a {
+          display: none;
+        }
+
+        a.active {
+          display: initial;
+        }
+        
+        i {
           color: white;
         }
       }
     }
   }
 
-  @media (max-width: $lg) {
-    section {
-      flex-direction: column;
-      justify-content: flex-start;
-
-      aside {
-        flex-basis: initial;
-
-        ul {
-          display: flex;
-          justify-content: space-between;
-
-          div {
-            flex-basis: 47.5%
-          }
-        }
-      }
-
-      main {
-        margin-top: 32px;
-        flex-basis: initial;
-
-        img {
-          height: 337px;
-        }
-      }
-    }
-  }
-
   @media (max-width: $md) {
-    section main {
-      margin: 0;
-
-      img {
-        height: 249px;
-      }
-
-      p {
-        padding: 32px;
-      }
-
-      div button {
-        min-width: 96px;
-      }
+    p {
+      padding: 32px;
     }
 
     nav {
@@ -145,10 +83,6 @@
         color: $orange;
         margin: 0 75px;
       }
-    }
-
-    .link-btn {
-      margin-top: 24px;
     }
   }
 }
