@@ -1,4 +1,9 @@
 .stories {
+  .img {
+    background: url("/img/story.png") center no-repeat;
+    background-size: cover;
+  }
+
   .text {
     background: $aquablue;
 
@@ -24,6 +29,12 @@
           font-weight: normal;
         }
       }
+    }
+  }
+
+  @media (max-width: $lg) {
+    .img {
+      height: 414px;
     }
   }
 
