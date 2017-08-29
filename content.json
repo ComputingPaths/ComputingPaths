@@ -211,6 +211,14 @@
 			"link": "testlink2",
 			"tags":["eq","sc"]
 		
+		},{
+		
+			"name": "name 3",
+			"description": "description 3",
+			"mapImage":"map3img.com",
+			"mapLink":"map3link",
+			"link": "testlink3",
+			"tags":["eq","sc", "ev"]
 		}
 	],
 	"resourceTags":{
