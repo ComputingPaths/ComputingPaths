@@ -1,26 +1,24 @@
 .stories {
-  .row {
-    > div {
-      background: $aquablue;
+  .text {
+    background: $aquablue;
 
-      div {
-        padding: 96px;
+    div {
+      padding: 96px;
 
-        h2, h3 {
-          color: white;
-          font-weight: bold;
-          line-height: 30px;
-        }
-
-        h2 {
-          font-size: 24px;
-        }
+      h2, h3 {
+        color: white;
+        font-weight: bold;
+      }
+      
+      h2 {
+        line-height: 30px;
+        font-size: 24px;
+      }
+      
+      h3 {
+        font-size: 20px;
+        margin: 30px 0 0 0;
         
-        h3 {
-          font-size: 20px;
-          margin: 0;
-        }
-  
         span {
           color: white;
           font-weight: normal;
@@ -30,15 +28,11 @@
   }
 
   @media (max-width: $md) {
-    .row {
-      > div {
-        div {
-          padding: 64px;
-        }
+    .text div {
+      padding: 64px;
 
-        h2, h3 {
-          font-size: 18px;
-        }
+      h2, h3 {
+        font-size: 18px;
       }
     }
   }
