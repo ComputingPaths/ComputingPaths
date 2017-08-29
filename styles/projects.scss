@@ -2,20 +2,8 @@
 @import 'styles/common';
 @import 'index/title';
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: $exlightblue;
-  height: 356px;
-  padding: 174px 18% 80px 18%; 
-
-  h1 {
-    color: $textblue;
-    font-size: 56px;
-    line-height: 66px;
-    font-weight: bold;
-  }
+p {
+  margin-bottom: 0px;
 }
 
 .intro-text {
@@ -29,6 +17,7 @@
     font-size: 28px;
     line-height: 54px;
     letter-spacing: 0.72px;
+    cursor: default;
   }
 }
 
@@ -39,106 +28,115 @@
   justify-content: center;
   
   h3 {
-    //padding: 41px 383px 41px 383px;
     padding-top: 41px;
     font-size: 36px;
     letter-spacing: 0.72px;
     color: white;
+    cursor: default;
   }
 }
 
 section {
   background: $exlightblue;
-  padding: 80px 165px 52px 165px;
-  display: inline-flex;
-  justify-content: space-between;
+  padding-top: 80px;
   
-  nav{
-    background: white;
-    width: 225px;
-    height: 235px;
-    flex-basis: 40%;
+  .project-type-wrapper {
     
-    a{
-      font-size: 16px;
-      color: darkorange;
-      letter-spacing: 0.32px;
-      width: 225px;
+    > a {
+      display: block;
+      background: white;
+      padding: 20px 0 20px 24px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 18px;
     }
-  } 
-  
-  .card-list{
-    display: block;
-    justify-content: flex-end;
-    flex-direction: column;
-    
-    a {
-      width: auto;
-      height: auto;
 
-      .projectcard {
-        display: inline-flex;
-        cursor: pointer;
-        margin-bottom: 32px;
-        box-shadow: 0 4px 10px 0 $textblue;
+    ul {
+      padding: 20px 0 4px 40px;
+      background: white;
+      margin-top: 2px;
 
-        img {
-          width: 350px;
-          height: 233px;
+      li {
+        list-style-type: none;
+        margin-bottom: 16px;
+
+        a {
+          font-weight: bold;
+          font-size: 16px;
         }
+      }
 
-        .cardinfo{
-          background: $darkblue;
-          height: 233px;
-          width: 505px;
-          position: relative;
+      li:hover:not(.active) {
+        list-style-type: initial;
+        a {
+          color: $darkblue;
+        }
+      }
 
-          p.project-name {
-            margin: 32px auto 8px 40px;
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 0.56px;
-            color: white;
-          }
-
-          p.project-creator {
-            font-size: 20px;
-            letter-spacing: 0.4px;
-            margin: 0px auto 20px 40px;
-            color: white;
-          }
-
-          .tags {
-            margin: 14px 40px 14px 40px;
-            display: flex;
-
-            .colorbackground {
-              background: #FF8585;
-              border-radius: 50px;
-              text-align: center;
-              width: 154px;
-
-              font-size: 16px;
-              font-weight: bold;
-              color: white;
-            }
-          }
-
-          i {
-            font-size: 20px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: 0px 24px 24px 0px;
-            color: white;
-          }
+      li.active {
+        list-style-type: initial;
+        color: $orange;
+        
+        a {
+          color: $orange;
         }
       }
     }
+  } 
+  
+  a {
+    width: auto;
+    height: auto;
 
-    a:hover {
-      text-decoration: none;
+    .projectcard {
+      display: inline-flex;
+      cursor: pointer;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 10px 0 $textblue;
+
+      img {
+        width: 350px;
+        height: 233px;
+      }
+
+      .cardinfo{
+        background: $darkblue;
+        height: 233px;
+        width: 505px;
+        position: relative;
+        padding: 32px 0px 0px 40px;
+
+        p.project-name {
+          font-size: 28px;
+          font-weight: bold;
+          letter-spacing: 0.56px;
+          color: white;
+          line-height: 33px;
+          margin-bottom: 8px;
+        }
+
+        p.project-creator {
+          font-size: 20px;
+          letter-spacing: 0.4px;
+          color: white;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+
+        i {
+          font-size: 20px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin: 0px 24px 24px 0px;
+          color: white;
+        }
+      }
     }
+  }
+
+  a:hover {
+    text-decoration: none;
   }
   
   .modal-dialog {
@@ -170,6 +168,7 @@ section {
       .modal-slideshow {
         display: inline-flex;
         justify-content: center;
+        margin-bottom: 40px;
 
         a {
           position: relative;
@@ -240,7 +239,7 @@ section {
       
       .modal-body {
         display: inline-flex;
-        //justify-content: space-between;
+        justify-content: space-between;
         
         .project-description {
           margin-left: 64px;
@@ -250,11 +249,13 @@ section {
         .project-details {
           margin-right: 103px;
         }
+        
         p.description-title {
           font-weight: bold;
           font-size: 13px;
           color: #006A96;
           letter-spacing: 0.26px;
+          bottom-margin: 12px;
         }
 
         p.description {
@@ -262,9 +263,32 @@ section {
           font-size: 16px;
           color: #003E5C;
           letter-spacing: 0.32px;
-          line-height: 24px;
+        }
+        
+        a {
+          color: $textblue;
+          font-weight: bold;
+          
+          i {
+            color: $orange;
+          }
         }
       }
     }
   }
+  
+  .tags {
+    display: flex;
+
+    .colorbackground {
+      background: #FF8585;
+      border-radius: 50px;
+      text-align: center;
+      width: 154px;
+
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
+  } 
 }
