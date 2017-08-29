@@ -1,46 +1,21 @@
 .resources {
-  main {
-    display: flex;
-    justify-content: space-around;
-
-    div {
-      width: 40%;
-
-      h1 {
-        font-size: 24px;
-        font-weight: bold;
-      }
-
-      p {
-        font-size: 18px;
-        margin: 16px 0 0 0;
-      }
-    }
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
   }
 
-  .link-btn {
-    margin: 64px auto 0 auto;
-  }
-
-  @media (max-width: $lg) {
-    .link-btn {
-      margin: 48px auto 0 auto;
-    }
+  p {
+    font-size: 18px;
+    margin-bottom: 0;
   }
 
   @media (max-width: $md) {
-    main {
-      flex-direction: column;
-      justify-content: flex-start;
+    p {
+      margin-bottom: 32px;
+    }
 
-      div {
-        margin-bottom: 32px;
-        width: 100%;
-
-        p {
-          margin-top: 10px;
-        }
-      }
+    .link-btn {
+      margin-top: 0;
     }
   }
 }

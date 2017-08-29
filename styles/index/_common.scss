@@ -43,6 +43,7 @@
   border: none;
   outline: none;
   box-shadow: 0 4px $textblue;
+  margin: 64px auto 0 auto;
 }
 
 .link-btn:hover {
@@ -67,7 +68,7 @@
   }
 
   .link-btn {
-    margin: 48px auto 0 auto;
+    margin-top: 48px;
   }
 }
 
@@ -89,6 +90,6 @@
     font-size: 16px;
     padding-top: 15px;
     width: 100%;
-    margin-top: 24px;
+    margin-top: 32px;
   }
 }

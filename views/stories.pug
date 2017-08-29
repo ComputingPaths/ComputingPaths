@@ -1,68 +1,68 @@
 extends ../template.pug
 
 block style 
-  link(
-    rel='stylesheet'
-    href ='/css/stories.css'
-  )
-    
+	link(
+		rel='stylesheet'
+		href ='/css/stories.css'
+	)
+		
 block main
-  div(class='page-header')
-    svg
-      rect
-      circle
-    h1 Stories &amp; Advice
-  
-  div(class='container page-intro')
-    div(class='row')
-      div(class='offset-1 col-10')
-        p Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
-      
-  div(class='story-video')
-    div(class='container')
-      img(class='col-10 offset-1' src='/img/temp1.svg')
+	div(class='page-header')
+		svg
+			rect
+			circle
+		h1 Stories &amp; Advice
+	
+	div(class='container page-intro')
+		div(class='row')
+			div(class='offset-1 col-10')
+				p Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+			
+	div(class='story-video')
+		div(class='container')
+			img(class='col-10 offset-1' src='/img/temp1.svg')
 
-  div(class='main-story container')
-    div(class='row') 
-      h1(class='col-12 size-28 bold') Rachel Keinouz 
-      h2(class='col-12 size-28 light med') Math-Computer Science  |  Class of 2017
-    div(class='row')
-      p(class='col-12 col-md-6 push-md-6 size-24') "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
-      p(class='col-12 col-md-6 pull-md-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
-      
-  div(class='more-stories')  
-    div(class='section-header')            
-      h1 More Stories
-      hr
-    div(class='container')
-      - for(let i = 0; i < stories.length; i++)
-        div(class='row')
-          if (i % 2 === 0)
-            div(class='hidden-sm-down col-sm-3 offset-1')
-              img(src=stories[i].image)
-          div(class='hidden-md-up col-6 offset-3')
-            img(src=stories[i].image)
-          div(class='story-content col-12 col-md-5 offset-md-2')
-            h2(class='size-24 bold') #{stories[i].name}
-            h3(class='light size-21 nor') #{stories[i].major} | Class of #{stories[i].class}
-            h1(class='size-24 med') "#{stories[i].quote}"
-          if (i % 2 !== 0)
-            div(class='hidden-sm-down col-sm-3')
-              img( src=stories[i].image)
+	div(class='main-story container')
+		div(class='row') 
+			h1(class='col-12 size-28 bold') Rachel Keinouz 
+			h2(class='col-12 size-24 light med') Math-Computer Science  |  Class of 2017
+		div(class='row')
+			p(class='col-12 col-md-6 push-md-6 size-24') "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
+			p(class='col-12 col-md-6 pull-md-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
+			
+	div(class='more-stories')  
+		div(class='section-header')            
+			h1 More Stories
+			hr
+		div(class='container')
+			- for(let i = 0; i < stories.length; i++)
+				div(class='row')
+					if (i % 2 === 0)
+						div(class='hidden-sm-down col-sm-3 offset-md-1')
+							img(src=stories[i].image)
+					div(class='hidden-md-up col-12' id='center-img')
+						img(class='mx-auto' src=stories[i].image)
+					div(class='story-content col-12 col-md-5 offset-md-1')
+						h2(class='size-20 bold') #{stories[i].name}
+						h3(class='light size-18 nor') #{stories[i].major} | Class of #{stories[i].class}
+						h1(class='size-24 med') "#{stories[i].quote}"
+					if (i % 2 !== 0)
+						div(class='hidden-sm-down col-sm-3 offset-md-1')
+							img( src=stories[i].image)
  
-  div(class='next-steps')
-    div(class='section-header')            
-      h1 Next Steps
-      hr
-    div(class='container')
-      div(class='row')
-        div(class='col-12 col-md-5 mb-4 mb-md-0')
-          h1(class='bold size-24') Start Your Journey 
-          p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-          a(class='size-21 bold dark' href='/') Explore the majors 
-            i(class='fa fa-arrow-right')
-        div(class='col-12 col-md-5 offset-md-2')
-          h1(class='bold size-24') Find Students Like You
-          p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
-          a(class='size-21 bold dark' href='/') Explore the orgs 
-            i(class='fa fa-arrow-right')
+	div(class='next-steps')
+		div(class='section-header')            
+			h1 Next Steps
+			hr
+		div(class='container')
+			div(class='row')
+				div(class='col-12 col-md-5 mb-4 mb-md-0')
+					h1(class='bold size-24') Start Your Journey 
+					p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+					a(class='size-21 bold dark' href='/') Explore the majors 
+						i(class='fa fa-arrow-right')
+				div(class='col-12 col-md-5 offset-md-2')
+					h1(class='bold size-24') Find Students Like You
+					p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+					a(class='size-21 bold dark' href='/') Explore the orgs 
+						i(class='fa fa-arrow-right')
