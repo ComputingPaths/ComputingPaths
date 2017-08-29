@@ -25,20 +25,21 @@ block main
     a(class='link-btn' href=pages[0].link) Read their stories
       
   div(class='majors section')
-    div(class='host')
-      h1(class='section-header') The Majors
-      hr(class='header-bar')
-      section
-        aside(class='hidden-sm-down')
+    div(class='section-header')
+      h1 The Majors
+      hr
+    div(class='container')
+      section(class='row')
+        aside(class='hidden-sm-down col-5 row')
           ul
-            div
+            div(class='col-12')
               - for (let i = 0; i < Math.ceil(majorNames.length / 2); i++)
                 li #{majorNames[i]}
-            div
+            div(class='col-12')
               - for (let i = Math.ceil(majorNames.length / 2); i < majorNames.length; i++)
                 li #{majorNames[i]}
-          a(class='link-btn hidden-md-down' href=pages[1].link) Link to all the majors
-        main
+          a(class='link-btn hidden-md-down col-9' href=pages[1].link) Link to all the majors
+        main(class='col-7')
           img(src='/img/temp1.svg')   
           div
             article
