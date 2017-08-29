@@ -1,68 +1,45 @@
 .stories {
-  main {
-    height: 352px;
-    background: $aquablue;
+  .row {
+    > div {
+      background: $aquablue;
 
-    img {
-      padding: 0;
-      width: 100%;
-      height: auto;
-    }
+      div {
+        padding: 96px;
 
-    div {
-      padding: 96px;
+        h2, h3 {
+          color: white;
+          font-weight: bold;
+          line-height: 30px;
+        }
 
-      h2, h3 {
-        color: white;
-        font-weight: bold;
-        line-height: 30px;
-      }
-      
-      h2 {
-        font-size: 24px;
-      }
-      
-      h3 {
-        font-size: 20px;
-        margin: 0;
-      }
-
-      span {
-        color: white;
-        font-weight: normal;
-      }
-    }
-  }
-
-  .link-btn {
-    margin: 64px auto 0 auto;
-  }
+        h2 {
+          font-size: 24px;
+        }
+        
+        h3 {
+          font-size: 20px;
+          margin: 0;
+        }
   
-
-  @media (max-width: $lg) {
-    main {
-      height: auto;
-    }
-
-    .link-btn {
-      margin-top: 48px;
+        span {
+          color: white;
+          font-weight: normal;
+        }
+      }
     }
   }
 
   @media (max-width: $md) {
-    main {
-
-      div {
-        padding: 64px;
+    .row {
+      > div {
+        div {
+          padding: 64px;
+        }
 
         h2, h3 {
           font-size: 18px;
         }
       }
-    }
-
-    .link-btn {
-      margin-top: 32px;
     }
   }
 }
