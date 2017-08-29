@@ -26,9 +26,9 @@ block main
       h1(class='col-12 size-28 bold') Rachel Keinouz 
       h2(class='col-12 size-28 light med') Math-Computer Science  |  Class of 2017
     div(class='row')
-      p(class='col-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
-      p(class='col-6 size-24') "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
-
+      p(class='col-12 col-md-6 push-md-6 size-24') "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
+      p(class='col-12 col-md-6 pull-md-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
+      
   div(class='more-stories')  
     div(class='section-header')            
       h1 More Stories
@@ -37,13 +37,13 @@ block main
       - for(let i = 0; i < stories.length; i++)
         div(class='row')
           if (i % 2 === 0)
-            img(class='col-3 offset-1' src=stories[i].image)
-          div(class='col-6 offset-1')
-            h1(class='size-24 bold') "#{stories[i].quote}"
+            img(class='col-12 col-md-3 offset-1' src=stories[i].image)
+          div(class='col-12 col-md-6 offset-1')
             h2(class='size-24 bold') #{stories[i].name}
             h3(class='light size-21 nor') #{stories[i].major} | Class of #{stories[i].class}
+            h1(class='size-24 med') "#{stories[i].quote}"
           if (i % 2 !== 0)
-            img(class='col-3 offset-1' src=stories[i].image)
+            img(class='col 12 col-md-3 offset-1' src=stories[i].image)
  
   div(class='next-steps')
     div(class='section-header')            
@@ -51,12 +51,12 @@ block main
       hr
     div(class='container')
       div(class='row')
-        div(class='col-4 offset-1')
+        div(class='col-12 col-md-5 mb-3 mb-md-0')
           h1(class='bold size-24') Start Your Journey 
           p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
           a(class='size-21 bold dark' href='/') Explore the majors 
             i(class='fa fa-arrow-right')
-        div(class='col-4 offset-2')
+        div(class='col-12 col-md-5 offset-md-2')
           h1(class='bold size-24') Find Students Like You
           p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
           a(class='size-21 bold dark' href='/') Explore the orgs 
