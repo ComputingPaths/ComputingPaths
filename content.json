@@ -191,6 +191,38 @@
     "sci": "[Placeholder - there are two departments in this category: math and physics]",
     "ica": "The Interdisciplinary Computing and the Arts major (ICAM) is an exciting blend of computer science, art, and technology that explores today’s cutting-edge media. Access to a wide range of disciplines means that students are free to tailor the program to their artistic interests, and can take classes in fields like virtual reality, design communication, film production, and physical electronics programming. ICAM students gain technical, theoretical, and historical backgrounds that prepare them to anticipate and work with emerging trends in art, music, and technology. They can choose from either music technology or visual arts focuses, which influence their upper-level coursework, but often draw from both fields during their journey through the major.",
     "spc": "The Speculative Design (B.A.) major mixes art, science, and emerging technology, with a focus on aesthetics, entrepreneurship, and activist intervention. Combining laboratory and field research in a creative studio setting, Speculative Design works from nano to urban scales to stimulate new ideas and innovative solutions. Rather than focusing on existing methodologies, this program prepares students to solve problems that will emerge in an uncertain future. Students may choose from four areas of emphasis: Public Culture and Urban Ecology, Design Computing, Design Research, and Media Design. ",
-    "dat": "Data science majors use mathematical models and computational methods to craft powerful data analysis and meet the emerging needs of data-driven industries, from manufacturing companies to government organizations. The core knowledge base of the data scientist lies at the intersection of computing and mathematics, coupled with the skills to abstract, build, and test predictive and descriptive models. Students in the program can expect coursework in mathematics, computer science, and statistics, as well as foundational lower division coursework in natural and physical sciences."
-  }
+    "dat": "Data science majors use mathematical models and computational methods to craft powerful data analysis and meet the emerging needs of data-driven industries, from manufacturing companies to government organizations. The core knowledge base of the data scientist lies at the intersection of computing and mathematics, coupled with the skills to abstract, build, eqnd test predictive and descriptive models. Students in the program can expect coursework in mathematics, computer science, and statistics, as well as foundational lower division coursework in natural and physical sciences."
+  },
+	
+	
+	"resourceCards": [
+		{
+			"name": "name 1",
+			"description": "description 1",
+			"mapImage":"map1img.com",
+			"mapLink":"map1link",
+			"link": "testlink1",
+			"tags":["as","bs", "ws", "sc"]
+	
+		},{
+		
+			"name": "name 2",
+			"description": "description 2",
+			"mapImage":"map2img.com",
+			"mapLink":"map2link",
+			"link": "testlink2",
+			"tags":["eq","sc"]
+		
+		}
+	],
+	"resourceTags":{
+		"as": "Academic Support",
+		"bs": "Buildings",
+		"ev": "Events",
+		"sc": "Showcases",
+		"eq": "Equipment",
+		"ws": "Workspaces"
+	}
+	
+	
 }

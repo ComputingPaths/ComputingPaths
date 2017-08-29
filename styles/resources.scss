@@ -106,15 +106,17 @@
 
 
 
-section {
-	background: $exlightblue;
-	padding: 80px 165px 52px 400px;
-	display: block;
-	justify-content: center;
-	justify-content: space-between;
+
 	
 
 	.card{
+	background: $exlightblue;
+	/*padding: 80px 165px 52px 400px;*/
+	display: block;
+	justify-content: center;
+	justify-content: space-between;
+		
+
 		/*space between each cared*/
 		margin-bottom: 50px;
 		a{
@@ -183,16 +185,40 @@ section {
 
 						.colorbackground {
 							display: inline-block;
-							background: #FF8585;
+							/*background: #FF8585;*/
 							border-radius: 50px;
 							text-align: center;
 							width: 154px;
 							font-size: 16px;
 							font-weight: bold;
 							color: white;
+						}
+						.default-tag{
+							background: red;
+						}
+						
+						.as-tag{
+							background: red;
+						}
+						.as-tag.active {
+							background: red;
+						}
+						.bs-tag{
+							background: red;
+						}
+						.ev-tag{
 
 						}
+						.sc-tag{
 
+						}
+						.eq-tag{
+
+						}
+						.ws-tag{	
+							background: red;
+						}
+	
 						.tag-spacer{
 							display: inline-block;
 							padding-right: 25px;
@@ -203,13 +229,13 @@ section {
 			}
 		}
 	}
-}
+
 
 .res-sidebar{
-	position: -webkit-sticky;
+/*	position: -webkit-sticky;
 	position: sticky;
 	top: 50px;
 	float: left;
 
-	padding: 50px;
+	padding: 50px;*/
 }
