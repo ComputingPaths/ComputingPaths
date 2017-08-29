@@ -57,7 +57,7 @@
   transform: translateY(-2px);
 }
 
-.link-btn:active {
+a.link-btn:active {
   box-shadow: 0 1px $textblue;
   transform: translateY(3px);
 }
@@ -71,7 +71,7 @@
     margin-bottom: 48px;
   }
 
-  .link-btn {
+  a.link-btn {
     margin-top: 48px;
   }
 }
@@ -90,7 +90,7 @@
     margin-bottom: 32px;;
   }
 
-  .link-btn {
+  a.link-btn {
     font-size: 16px;
     padding-top: 15px;
     width: 100%;
