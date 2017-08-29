@@ -6,6 +6,15 @@
   color: $textblue;
 }
 
+a:link, a:visited { 
+    color: $textblue;
+    text-decoration: none;
+}
+
+a:link:active, a:visited:active { 
+    color: $darkblue;
+}
+
 .light {
   color: $darkblue;
 }

@@ -21,11 +21,8 @@
 
 	background: linear-gradient($aquablue 67%, white 33%);
 	background-size: 100% 100%;
-
-	/* CHANGE FOR RESPONSIVENESS */
 	padding-top: 80px;
 	padding-bottom: 80px;
-	/* CHANGE FOR RESPONSIVENESS */
 
 	img, .res-control-container { 
 		height: 518px;
@@ -69,6 +66,10 @@
 	@media (max-width: $xl) {
 		background: linear-gradient($aquablue 62%, white 38%);
 
+		.carousel-inner {
+			height: 482px;
+		}
+
 		img, .res-control-container {
 			height: 433px;
 		}
@@ -87,11 +88,17 @@
 			height: 321px;
 		}
 
+		.carousel-inner {
+			height: 361px;
+		}
+
 		.res-control-container {
 			padding-top: 269px;
 		}
 
 		.carousel-caption {
+			height: 28px;
+			bottom: -40px;
 
 			h2 {
 				font-size: 24px;
@@ -115,7 +122,14 @@
 			height: 287px;
 		}
 
+		.carousel-inner {
+			height: 319px;
+		}
+
 		.carousel-caption {
+			height: 24px;
+			bottom: -32px;
+
 			h2 {
 				font-size: 20px;
 			}
