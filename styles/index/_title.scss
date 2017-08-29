@@ -1,5 +1,6 @@
 .title {
   background: $exlightblue;
+  margin-top:80px;
   padding: 179px 0;
 
   h1, h2 {
@@ -34,6 +35,7 @@
 
 @media (max-width: $md) {
   .title {
+    margin-top: 64px;
     padding: 112.5px 0;
     
     h1 {
