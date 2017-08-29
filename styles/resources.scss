@@ -84,76 +84,91 @@ section {
 	justify-content: center;
 	justify-content: space-between;
 	
-	a{
-		
-		.res-card {
-			height: 316px;
-			display: flex;
-			cursor:pointer;
-			margin-bottom: 64px;
-			box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
 
-			img {
-				width: 475px;
+	.card{
+		/*space between each cared*/
+		margin-bottom: 50px;
+		a{
+		
+			/*the map image*/
+			img{
+				float: left;
+				width:316px;
 				height: 316px;
 			}
-
-			.cardinfo{
-				background: $darkblue;
+			/*the rest of the card*/
+			.res-card {
 				height: 316px;
-				//width: 900px;
-				width: 65%;
+				display: flex;
+				cursor:pointer;
+				/*margin-bottom: 64px;*/
+				box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
 
-				.card-head{
-					height: 80px;
+				img {
+					width: 475px;
+					height: 316px;
+				}
+
+				.cardinfo{
 					background: $darkblue;
+					height: 316px;
+					width: 100%;
+					.card-head{
+						height: 80px;
+						background: $darkblue;
 
-					h3 {
-						font-size: 24px;
-						padding: 24px 1px 28px 48px;
-						color: white;
+						h3 {
+							font-size: 24px;
+							padding: 24px 1px 28px 48px;
+							color: white;
 
-						> p {
-							display: inline;
-							font-weight: normal;
+							> p {
+								display: inline;
+								font-weight: normal;
+							}
 						}
 					}
-				}
 
-				.res-card-description {
-					height: 184px;
-					background: white;
-					> p {
-						padding: 32px 48px 39px 48px;
-						font-size: 18px;
-						color: $textblue;
+					.res-card-description {
+						height: 184px;
+						background: white;
+						> p {
+							padding: 32px 48px 39px 48px;
+							font-size: 18px;
+							color: $textblue;
+						}
 					}
-				}
 
-				hr {
-					height: 1px;
-					border: 0;
-					border-top: 1px solid #ccc;
-					margin: 0 0;
-					padding: 0;
-					color: #E6F1F6;
-				}
+					hr {
+						height: 1px;
+						border: 0;
+						border-top: 1px solid #ccc;
+						margin: 0 0;
+						padding: 0;
+						color: #E6F1F6;
+					}
 
-				.tags {
+					.tags {
 
-					margin: 14px 48px 14px 48px;
-					display: flex;
+						margin: 14px 48px 14px 48px;
 
-					
-					.colorbackground {
-						background: #FF8585;
-						border-radius: 50px;
-						text-align: center;
-						width: 154px;
-						padding-right: 20px;
-						font-size: 16px;
-						font-weight: bold;
-						color: white;
+						.colorbackground {
+							display: inline-block;
+							background: #FF8585;
+							border-radius: 50px;
+							text-align: center;
+							width: 154px;
+							font-size: 16px;
+							font-weight: bold;
+							color: white;
+
+						}
+
+						.tag-spacer{
+							display: inline-block;
+							padding-right: 25px;
+							padding-bottom: 25px;
+						}
 					}
 				}
 			}
