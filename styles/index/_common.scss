@@ -29,7 +29,7 @@
   margin-bottom: 64px;
 }
 
-.link-btn {
+a.link-btn {
   background: $darkblue;
   width: 320px;
   min-width: 320px;
@@ -46,14 +46,14 @@
   margin: 64px auto 0 auto;
 }
 
-.link-btn:hover {
+a.link-btn:hover {
   text-decoration:none;
   color: white;
   box-shadow: 0 6px $textblue;
   transform: translateY(-2px);
 }
 
-.link-btn:active {
+a.link-btn:active {
   box-shadow: 0 1px $textblue;
   transform: translateY(3px);
 }
@@ -67,7 +67,7 @@
     margin-bottom: 48px;
   }
 
-  .link-btn {
+  a.link-btn {
     margin-top: 48px;
   }
 }
@@ -86,7 +86,7 @@
     margin-bottom: 32px;;
   }
 
-  .link-btn {
+  a.link-btn {
     font-size: 16px;
     padding-top: 15px;
     width: 100%;
