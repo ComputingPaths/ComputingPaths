@@ -29,26 +29,30 @@
   margin-bottom: 64px;
 }
 
+.link-btn:link, .link-btn:visited { 
+  color: white;
+}
+
+.link-btn:link:active, .link-btn:visited:active { 
+  color: white;
+}
+
 .link-btn {
   background: $darkblue;
   width: 320px;
   min-width: 320px;
   height: 56px;
   font-size: 18px;
-  font-weight: bold;
-  color: white;
+  font-weight: 500;
   padding-top: 13px;
   text-align: center;
   display: block;
   border: none;
-  outline: none;
   box-shadow: 0 4px $textblue;
   margin: 64px auto 0 auto;
 }
 
 .link-btn:hover {
-  text-decoration:none;
-  color: white;
   box-shadow: 0 6px $textblue;
   transform: translateY(-2px);
 }
