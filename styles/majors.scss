@@ -32,7 +32,7 @@ main {
   background: $exlightblue;
 
   .major-list-wrapper {
-    a {
+    > a {
       display: block;
       background: white;
       padding: 20px 0 20px 24px;
@@ -47,20 +47,83 @@ main {
       margin-top: 2px;
 
       li {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 16px;
         list-style-type: none;
+        margin-bottom: 16px;
+
+        a {
+          font-weight: bold;
+          font-size: 16px;
+          color: $textblue;
+        }
       }
 
       li:hover:not(.active) {
-        color: $darkblue;
         list-style-type: initial;
+        a {
+          color: $darkblue;
+        }
       }
 
       li.active {
-        color: $orange;
         list-style-type: initial;
+        color: $orange;
+        
+        a {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .major-card {
+    > h1 {
+      padding: 20px 0;
+      font-size: 28px;
+      background: $darkblue;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .row {
+      padding: 40px 64px;
+
+      p {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 13px;
+        color: $lightblue;
+        font-weight: bold;
+      }
+
+      h4, a {
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 32px;
+        color: $textblue;
+        display: block;
+      }
+
+      i {
+        color: $orange;
+        margin-left: 6px;
+      }
+
+      ul {
+        margin-bottom: 32px;
+        padding: 0;
+
+        h4, a {
+          margin-bottom: 6px;
+        }
       }
     }
   }

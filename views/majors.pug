@@ -22,9 +22,34 @@ block main
   main
     div(class='container')
       div(class='row')
-        div(class='col-3 major-list-wrapper')
+        div(class='col-3 major-list-wrapper sticky-top')
           a(data-toggle="collapse" data-target='#major-list') Majors
           ul(class='collapse show' id='major-list')
-            each m in majorNames
-              li #{m}
+            each m in majors
+              li 
+                a(href=`#${m.short}`) #{m.name}
+        - for (let i = 0; i < majors.length; i++)
+          div(class='col-9 major-card' class=i === 0 ? '' : 'offset-3')
+            a(name=majors[i].short)
+            h1 #{majors[i].name}
+            img(class='img-fluid' src=majors[i].image)
+            div(class='row')
+              div(class='col-7')
+                h5 DESCRIPTION
+                p #{majorDescriptions[majors[i].short]}
+              div(class='col-4 offset-1')
+                h5 MAJOR CAP
+                h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
+                h5 DEGREE TYPE
+                h4 #{degrees[majors[i].degree]}
+                h5 DEPARTMENTS
+                ul
+                  each d in majors[i].departments
+                    h4 #{departments[d]}
+                      i(class='fa fa-arrow-right')
+                h5 MORE INFORMATION
+                ul
+                  each w in majors[i].websites
+                    a(href=w) Major Website 
+                      i(class='fa fa-arrow-right')
 
