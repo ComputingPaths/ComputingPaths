@@ -25,21 +25,11 @@
   padding-bottom: 116px;
 }
 
-.section-header {
-  color: $textblue;
-  font-size: 36px;
-  text-align: center;
+.section-header hr {
+  margin-bottom: 64px;
 }
 
-.header-bar {
-  width: 24px;
-  height: 4px;
-  background-color: $orange;
-  border: none;
-  margin: 16px auto 64px auto;
-}
-
-.link-btn {
+a.link-btn {
   background: $darkblue;
   width: 320px;
   min-width: 320px;
@@ -53,16 +43,17 @@
   border: none;
   outline: none;
   box-shadow: 0 4px $textblue;
+  margin: 64px auto 0 auto;
 }
 
-.link-btn:hover {
+a.link-btn:hover {
   text-decoration:none;
   color: white;
   box-shadow: 0 6px $textblue;
   transform: translateY(-2px);
 }
 
-.link-btn:active {
+a.link-btn:active {
   box-shadow: 0 1px $textblue;
   transform: translateY(3px);
 }
@@ -72,12 +63,12 @@
     padding-bottom: 80px;
   }
 
-  .header-bar {
+  .section-header hr {
     margin-bottom: 48px;
   }
 
-  .link-btn {
-    margin: 48px auto 0 auto;
+  a.link-btn {
+    margin-top: 48px;
   }
 }
 
@@ -91,19 +82,14 @@
     padding-bottom: 48px;
   }
 
-  .section-header {
-    font-size: 24px;
+  .section-header hr {
+    margin-bottom: 32px;;
   }
 
-  .header-bar {
-    margin: 8px auto 32px auto;
-    width: 18px;
-    height: 3px;
-  }
-
-  .link-btn {
+  a.link-btn {
     font-size: 16px;
     padding-top: 15px;
     width: 100%;
+    margin-top: 32px;
   }
 }

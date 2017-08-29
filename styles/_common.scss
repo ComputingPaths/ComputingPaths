@@ -4,6 +4,16 @@
 * {
   font-family: 'Roboto', sans-serif;
   color: $textblue;
+  letter-spacing: 0.02em;
+}
+
+a:link, a:visited { 
+    color: $textblue;
+    text-decoration: none;
+}
+
+a:link:active, a:visited:active { 
+    color: $darkblue;
 }
 
 .light {
@@ -41,7 +51,6 @@
 .size-21 {
   font-size: 21px;
 }
-
 
 .size-24 {
   font-size: 24px;

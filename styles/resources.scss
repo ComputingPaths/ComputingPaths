@@ -1,6 +1,4 @@
-@import 'variables';
-@import 'index/common';
-@import 'index/title';
+@import 'common';
 
 .intro {
 	display: flex;
@@ -18,69 +16,130 @@
 	}
 }
 
-.res-banner{
+.res-banner {
 
 
 	background: linear-gradient($aquablue 67%, white 33%);
 	background-size: 100% 100%;
+	padding-top: 80px;
+	padding-bottom: 80px;
 
-  /* CHANGE FOR RESPONSIVENESS */
-  padding-top: 80px;
-  padding-bottom: 80px;
-  /* CHANGE FOR RESPONSIVENESS */
-
-	img{ 
-	  width: 100%;
-	  height: 518px;
+	img, .res-control-container { 
+		height: 518px;
 	}
 
-	.res-banner-title{
-			/*text-align: center;*/
-			/*padding-bottom: 50px;*/
-			/*display: inline-block;*/
+	img {
+		width: 100%;
+	}
 
-			img{
-				/*padding-top: 50px;*/
+	.carousel-inner {
+		height: 567px;
+	}
 
-				margin: 0 auto;
-				width: 1000px;
-				height: 500px;	
+	.res-control-container {
+		padding-top: 448px;
+	}
 
-			}
+	/* CHANGE FOR RESPONSIVENESS */
+	.carousel-caption {
+		left: 0;
+		right: auto;
+		padding-bottom: 0;
+		padding-top: 0;
+		height: 33px;
+		bottom: -49px;
 
-	/*		.res-banner-title{
-				display: block;
-				float: left;
-				text-align: center;
-				padding-bottom: 50px;
-			}*/
-		
-		.res-banner-button-r{
-			font-size: 40px;
-			display: block;
-			float: right;
+		h2 {
+			font-size: 28px;
+		}
+	}
+	/* CHANGE FOR RESPONSIVENESS */
+
+	.carousel-control {
+
+		.fa-arrow-right, .fa-arrow-left {
+			color: $orange;
+			font-size: 2.5em;
+		}
+	}
+
+	@media (max-width: $xl) {
+		background: linear-gradient($aquablue 62%, white 38%);
+
+		.carousel-inner {
+			height: 482px;
 		}
 
-	  .res-control-container {
-	    margin-top: 448px;
-	  }
+		img, .res-control-container {
+			height: 433px;
+		}
 
-	  /* CHANGE FOR RESPONSIVENESS */
-	  .res-carousel-caption {
-	    padding-top: 16px;
-	  }
-	  /* CHANGE FOR RESPONSIVENESS */
+		.res-control-container {
+			padding-top: 360px;
+		}
+	}
 
-	  .carousel-control {
+	@media (max-width: $lg) {
+		background: linear-gradient($aquablue 63%, white 37%);
+		padding-top: 48px;
+		padding-bottom: 48px;
 
-	    .fa-arrow-right {
-	      color: $orange;
-	    }
+		img, .res-control-container {
+			height: 321px;
+		}
 
-	    .fa-arrow-left {
-	      color: $orange;
-	    }
-	  }
+		.carousel-inner {
+			height: 361px;
+		}
+
+		.res-control-container {
+			padding-top: 269px;
+		}
+
+		.carousel-caption {
+			height: 28px;
+			bottom: -40px;
+
+			h2 {
+				font-size: 24px;
+			}
+		}
+
+		.carousel-control {
+
+			.fa-arrow-right, .fa-arrow-left {
+				font-size: 2em;
+			}
+		}
+	}
+
+	@media (max-width: $md) {
+		background: linear-gradient($aquablue 68%, white 32%);
+		padding-top: 32px;
+		padding-bottom: 32px;
+
+		img {
+			height: 287px;
+		}
+
+		.carousel-inner {
+			height: 319px;
+		}
+
+		.carousel-caption {
+			height: 24px;
+			bottom: -32px;
+
+			h2 {
+				font-size: 20px;
+			}
+		}
+	}
+
+	@media (max-width: $sm) {
+		img {
+			height: auto;
+		}
 	}
 }
 
