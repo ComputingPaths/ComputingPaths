@@ -24,7 +24,7 @@ block main
     
   section
     div(class='container')
-      div(class='row')
+      div(class='row align-items-start')
         div(class='sticky-top project-type-wrapper col-3 sticky-top')
           a(data-toggle='collapse' data-target='#project-types') Project Types
           ul(class='collapse show' id='project-types')
@@ -33,7 +33,7 @@ block main
                 a(href='#' style=`color: ${p.color};`) #{p.type}
         
         - for(let i = 0; i < projects.length; i++)
-          a(class='col-9' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
+          a(class='col-lg-9 col-md-12' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
             div(class='projectcard')
               img(src='/img/temp3.svg' alt='+')
               div(class='cardinfo')

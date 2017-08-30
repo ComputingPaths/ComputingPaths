@@ -292,7 +292,7 @@ section {
   } 
 }
 
-@media(max-width: $lg) {
+@media(max-width: $xl) {
 
   section {
     .project-type-wrapper {
@@ -477,5 +477,505 @@ section {
         color: white;
       }
     }
+  }
+}
+
+@media(max-width: $lg) {
+  
+  .intro-text {
+    margin: 96px 18% 128px 18%;
+
+    > p {
+      line-height: 42px;
+      letter-spacing: 0.56px;
+    }
+  }
+
+  .intro-prompt {
+    height: 96px;
+
+    h3 {
+      padding-top: 30px;
+      font-size: 28px;
+      letter-spacing: 0.56px;
+      line-height: 33px;
+    }
+  }
+  
+  section {
+    padding-top: 80px;
+
+    .project-type-wrapper {
+      visibility: hidden;
+      
+      > a {
+        display: block;
+        background: white;
+        padding: 20px 0 20px 24px;
+        width: 100%;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      ul {
+        padding: 20px 0 4px 40px;
+        background: white;
+        margin-top: 2px;
+
+        li {
+          list-style-type: none;
+          margin-bottom: 16px;
+
+          a {
+            font-weight: bold;
+            font-size: 16px;
+          }
+        }
+
+        li:hover:not(.active) {
+          list-style-type: initial;
+          a {
+            color: $darkblue;
+          }
+        }
+
+        li.active {
+          list-style-type: initial;
+          color: $orange;
+
+          a {
+            color: $orange;
+          }
+        }
+      }
+    } 
+
+    a {
+
+      .projectcard {
+        display: block;
+        box-shadow: 0 4px 10px 0 $textblue;
+
+        img {
+          width: 690px;
+          height: 460px;
+        }
+
+        .cardinfo{
+          height: 216px;
+          width: 690px;
+        }
+      }
+    }
+
+    .modal-dialog {
+      max-width: 920px;
+      margin: 5% auto;
+
+      .modal-content {
+        width: 920px;
+        height: auto;
+
+        .modal-header {
+          background: $darkblue;
+          height: 80px;
+          padding: 0;
+
+          h5 {
+            display: flex;
+            color: white;
+            letter-spacing: 0.48px;
+            font-size: 28px;
+          }
+
+          i{
+            color: white;
+            margin-right: 28.2;
+          }
+        }
+
+        .modal-slideshow {
+          display: inline-flex;
+          justify-content: center;
+          margin-bottom: 40px;
+
+          a {
+            position: relative;
+            width: 0;
+            background: $textblue;
+          }
+
+          a:nth-of-type(1) {
+            right: 50px;
+          }
+
+          a:nth-of-type(2) {
+            left: 50px;
+          }
+
+          .carousel-item.active {
+            display: flex;
+          }
+
+          .carousel-item {
+            justify-content: space-between;
+
+            img {
+              height: 487px;
+              width: 730px;
+            }
+
+            @media (max-width: $xl) {
+
+            }
+
+            div {
+              padding: 40px;
+
+              h1, h2, h3 {
+                color: $textblue;
+                margin: 0;
+              }
+
+              h1 {
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              h2 {
+                font-size: 16px;
+                margin-top: 10px;
+              }
+
+              h3 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 24px;
+              }
+            }
+
+            @media (max-width: $lg) {
+              article {
+                width: 45%;
+
+                img {
+                  height: 233px;
+                }
+              }
+            }
+          }
+        }
+
+        .modal-body {
+          display: inline-flex;
+          justify-content: space-between;
+
+          .project-description {
+            margin-left: 64px;
+            width: 506px;
+          }
+
+          .project-details {
+            margin-right: 103px;
+          }
+
+          p.description-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #006A96;
+            letter-spacing: 0.26px;
+            bottom-margin: 12px;
+          }
+
+          p.description {
+            font-family: Roboto-Regular;
+            font-size: 16px;
+            color: #003E5C;
+            letter-spacing: 0.32px;
+          }
+
+          a {
+            color: $textblue;
+            font-weight: bold;
+
+            i {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .tags {
+      display: flex;
+
+      .colorbackground {
+        background: #FF8585;
+        border-radius: 50px;
+        text-align: center;
+        width: 154px;
+
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+      }
+    } 
+  }
+}
+
+@media(max-width: $md) {
+
+  .intro-text {
+    margin: 67px 18% 78px 18%;
+
+    > p {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      height: 120px;
+    }
+  }
+
+  .intro-prompt {
+    height: 72px;
+
+    h3 {
+      padding-top: 22px;
+      font-size: 20px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  section {
+    padding-top: 80px;
+
+    .project-type-wrapper {
+      visibility: hidden;
+      
+      > a {
+        display: block;
+        background: white;
+        padding: 20px 0 20px 24px;
+        width: 100%;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      ul {
+        padding: 20px 0 4px 40px;
+        background: white;
+        margin-top: 2px;
+
+        li {
+          list-style-type: none;
+          margin-bottom: 16px;
+
+          a {
+            font-weight: bold;
+            font-size: 16px;
+          }
+        }
+
+        li:hover:not(.active) {
+          list-style-type: initial;
+          a {
+            color: $darkblue;
+          }
+        }
+
+        li.active {
+          list-style-type: initial;
+          color: $orange;
+
+          a {
+            color: $orange;
+          }
+        }
+      }
+    } 
+
+    a {
+
+      .projectcard {
+        display: block;
+        box-shadow: 0 4px 10px 0 $textblue;
+
+        img {
+          width: 510px;
+          height: 340px;
+        }
+
+        .cardinfo{
+          height: 216px;
+          width: 510px;
+          
+          p.project-name {
+            font-size: 24px;
+            letter-spacing: 0.48px;
+            line-height: 28px;
+          }
+
+          p.project-creator {
+            font-size: 18px;
+            letter-spacing: 0.36px;
+            line-height: 21px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+
+    .modal-dialog {
+      max-width: 920px;
+      margin: 5% auto;
+
+      .modal-content {
+        width: 920px;
+        height: auto;
+
+        .modal-header {
+          background: $darkblue;
+          height: 80px;
+          padding: 0;
+
+          h5 {
+            display: flex;
+            color: white;
+            letter-spacing: 0.48px;
+            font-size: 28px;
+          }
+
+          i{
+            color: white;
+            margin-right: 28.2;
+          }
+        }
+
+        .modal-slideshow {
+          display: inline-flex;
+          justify-content: center;
+          margin-bottom: 40px;
+
+          a {
+            position: relative;
+            width: 0;
+            background: $textblue;
+          }
+
+          a:nth-of-type(1) {
+            right: 50px;
+          }
+
+          a:nth-of-type(2) {
+            left: 50px;
+          }
+
+          .carousel-item.active {
+            display: flex;
+          }
+
+          .carousel-item {
+            justify-content: space-between;
+
+            img {
+              height: 487px;
+              width: 730px;
+            }
+
+            @media (max-width: $xl) {
+
+            }
+
+            div {
+              padding: 40px;
+
+              h1, h2, h3 {
+                color: $textblue;
+                margin: 0;
+              }
+
+              h1 {
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              h2 {
+                font-size: 16px;
+                margin-top: 10px;
+              }
+
+              h3 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 24px;
+              }
+            }
+
+            @media (max-width: $lg) {
+              article {
+                width: 45%;
+
+                img {
+                  height: 233px;
+                }
+              }
+            }
+          }
+        }
+
+        .modal-body {
+          display: inline-flex;
+          justify-content: space-between;
+
+          .project-description {
+            margin-left: 64px;
+            width: 506px;
+          }
+
+          .project-details {
+            margin-right: 103px;
+          }
+
+          p.description-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #006A96;
+            letter-spacing: 0.26px;
+            bottom-margin: 12px;
+          }
+
+          p.description {
+            font-family: Roboto-Regular;
+            font-size: 16px;
+            color: #003E5C;
+            letter-spacing: 0.32px;
+          }
+
+          a {
+            color: $textblue;
+            font-weight: bold;
+
+            i {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .tags {
+      display: flex;
+
+      .colorbackground {
+        background: #FF8585;
+        border-radius: 50px;
+        text-align: center;
+        width: 154px;
+
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+      }
+    } 
   }
 }
