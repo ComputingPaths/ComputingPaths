@@ -76,8 +76,7 @@ block main
         div(class='col-lg-9')
           - for(let i = 0; i < resources.length; i++)
             div(class='res-card row no-gutters filtered')
-              div(class='col-4 map')
-                a(class='' href='maps.ucsd.edu')
+              a(href='maps.ucsd.edu' class="col-4 map")
                   //-img(class='img-fluid' src='/img/temp1.svg')
               div(class='col-8 header')
                 a(class='flip-on-click' data-toggle='collapse' href=`#res-txt-${i}`) #{resources[i].name}
