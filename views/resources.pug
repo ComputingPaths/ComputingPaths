@@ -60,7 +60,7 @@ block main
 
   div(class='cards')
     div(class='container')
-      div(class='row')
+      div(class='row align-items-start')
         div(class='nice-sidebar col-lg-3')
           a(data-toggle='collapse' data-target='#tags') Resource Types
             i(class='fa fa-chevron-down')
@@ -69,22 +69,22 @@ block main
               each t in resourceTags
                 li(class='col-4 col-lg-12') #{t}
 
-    
-        -for(let i=0; i< 3;i++)
-          div(class="col-lg-9" class=i === 0 ? '' : 'offset-3' id="accordion" role="tablist" aria-multiselectable="true")
-
-            div(class="card")
-              div(role="tab" id="heading-"+i)
+        div(class='col-lg-9')
+          - for(let i = 0; i < resources.length; i++)
+            //-div(id="accordion" role="tablist" aria-multiselectable="true")
+            div(class='card')
+              //-div(role="tab" id="heading-"+i)
                 //-link to map
-                a(href="maps.ucsd.edu")
-                  img(src="/img/temp3.svg" alt="+")
+              a(class='map' href='maps.ucsd.edu')
+                img(src='/img/temp1.svg')
+              div(class='d-inline')
                 a(data-toggle="collapse" data-parent="#accordion" href="#collapse-"+i aria-expanded="false" aria-controls="collapse-"+i)
                   div(class="res-card")
                     div(class="cardinfo")
                       div(class="card-head")
-                        h3 #{resourceCards[i].name}
+                        h3 #{resources[i].name}
                         div(class="tags")
-                          each val in resourceCards[i].tags
+                          each val in resources[i].tags
                             div(class="colorbackground") #{resourceTags[val]}
                             div(class="tag-spacer")
             div(id="collapse-"+i class="collapse" role="tabpanel" aria-labelledby="heading-"+i)

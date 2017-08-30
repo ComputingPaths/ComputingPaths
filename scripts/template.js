@@ -1,9 +1,10 @@
+let colors = ['EDABFF', 'ABDBFF', 'FF8585', 'ADFFC8', 'FFD5AD', 'C2ADFF']
+let grey = 'C6D1D7';
+
 function initNideSidebar() {
   let li = $('.nice-sidebar li')
   if (!li.length) return
 
-  let colors = ['EDABFF', 'ABDBFF', 'FF8585', 'ADFFC8', 'FFD5AD', 'C2ADFF']
-  let grey = 'C6D1D7';
   let colorMap = new Map()
   li.each((i, e) => {
     e = $(e)
@@ -25,6 +26,11 @@ function initNideSidebar() {
   })
 }
 
+function initTags() {
+  let tags = $('.tag')
+  if (!tags.length) return
+}
+
 $(document).ready(() => {
   $('.navbar-nav')
     .children()
@@ -33,4 +39,5 @@ $(document).ready(() => {
     .addClass('active')
 
   initNideSidebar()
+  initTags()
 })

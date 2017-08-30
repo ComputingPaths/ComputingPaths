@@ -235,7 +235,7 @@
     "spc": "The Speculative Design (B.A.) major mixes art, science, and emerging technology, with a focus on aesthetics, entrepreneurship, and activist intervention. Combining laboratory and field research in a creative studio setting, Speculative Design works from nano to urban scales to stimulate new ideas and innovative solutions. Rather than focusing on existing methodologies, this program prepares students to solve problems that will emerge in an uncertain future. Students may choose from four areas of emphasis: Public Culture and Urban Ecology, Design Computing, Design Research, and Media Design. ",
     "dat": "Data science majors use mathematical models and computational methods to craft powerful data analysis and meet the emerging needs of data-driven industries, from manufacturing companies to government organizations. The core knowledge base of the data scientist lies at the intersection of computing and mathematics, coupled with the skills to abstract, build, and test predictive and descriptive models. Students in the program can expect coursework in mathematics, computer science, and statistics, as well as foundational lower division coursework in natural and physical sciences."
   },
-  "resourceCards": [
+  "resources": [
     {
       "name": "name 1",
       "description": "description 1",
