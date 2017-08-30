@@ -7,7 +7,7 @@ class Processor {
   renderFile(name) {
     this.loadDB(locals => {
       let html = pug.renderFile(`views/${name}`, locals)
-      fs.writeFile(`public/${name.replace('pug', 'html')}`, html, err => {
+      fs.writeFile(`dist/${name.replace('pug', 'html')}`, html, err => {
         if (err) throw err
       })
     })
@@ -33,3 +33,8 @@ class Processor {
 }
 
 exports.Processor = Processor
+
+if (!module.parent) {
+  let p = new Processor()
+  p.renderAll()
+}

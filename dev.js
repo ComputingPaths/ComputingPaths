@@ -23,5 +23,5 @@ fs.watch('content.json', (event, filename) => {
 })
 
 const app = express()
-app.use(express.static('public'))
+app.use(express.static('dist'))
 app.listen(3000)

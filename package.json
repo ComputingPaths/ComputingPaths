@@ -4,11 +4,19 @@
   "description": "Development version of computingpaths.ucsd.edu",
   "private": true,
   "scripts": {
-    "dev": "npm run clean && npm run sass && concurrently --kill-others-on-fail \"node dev.js\" \"npm run sass:watch\" \"npm run babel:watch\"",
-    "sass": "node-sass --output-style compressed -o public/css styles",
-    "sass:watch": "node-sass -w -r --output-style compressed -o public/css styles",
-    "babel:watch": "babel scripts -w --compact=true -d public/js",
-    "clean": "rimraf public/css public/js public/*.html"
+    "dev": "concurrently --kill-others-on-fail \"npm run pug:watch\" \"npm run sass:watch\" \"npm run babel:watch\"",
+    "predev": "npm run build",
+    "build": "npm run clean && npm run cp && npm run pug && npm run sass && npm run babel",
+    "publish": "scp -r dist/* cpaths@cpaths-dev.ucsd.edu:/var/www/cpaths/htdocs",
+    "prepublish": "npm run build",
+    "pug": "node processor.js",
+    "pug:watch": "node dev.js",
+    "sass": "node-sass --output-style compressed -o dist/css styles",
+    "sass:watch": "npm run sass -- -w -r",
+    "babel": "babel scripts --compact=true -d dist/js",
+    "babel:watch": "npm run babel -- -w",
+    "clean": "rimraf dist && mkdir dist",
+    "cp": "cp -r images dist/img"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
