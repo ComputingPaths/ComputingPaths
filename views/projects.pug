@@ -25,12 +25,13 @@ block main
   section
     div(class='container')
       div(class='row')
-        div(class='sticky-top project-type-wrapper col-3 sticky-top')
-          a(data-toggle='collapse' data-target='#project-types') Project Types
-          ul(class='collapse show' id='project-types')
-            each p in projectTags
-              li                 
-                a(href='#' style=`color: ${p.color};`) #{p.type}
+        div(class='nice-sidebar col-lg-3')
+          a(data-toggle='collapse' data-target='#tags') Project Types
+            i(class='fa fa-chevron-down')
+          ul(id='tags' class='collapse show')
+            div(class='row no-gutters')
+              each t in projectTags
+                li(class='col-4 col-lg-12') #{t.type}
         
         - for(let i = 0; i < projects.length; i++)
           a(class='col-9' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
