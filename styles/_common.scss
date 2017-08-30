@@ -2,230 +2,232 @@
 
 // text styles
 * {
-  font-family: 'Roboto', sans-serif;
-  color: $textblue;
-  letter-spacing: 0.02em;
+	font-family: 'Roboto', sans-serif;
+	color: $textblue;
+	letter-spacing: 0.02em;
 }
 
 a:link, a:visited { 
-    color: $textblue;
-    text-decoration: none;
+	color: $textblue;
+	text-decoration: none;
 }
 
 a:link:active, a:visited:active { 
-    color: $darkblue;
+	color: $darkblue;
 }
 
 .light {
-  color: $darkblue;
+	color: $darkblue;
 }
 
 .dark {
-  color: $textblue;
+	color: $textblue;
 }
 
 .nor {
-  font-weight: normal;
+	font-weight: normal;
 }
 
 .med {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .bold {
-  font-weight: 700;
+	font-weight: 600;
 }
 
 .size-18 {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .size-28 {
-  font-size: 28px;
+	font-size: 28px;
 }
 
 .size-20 {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .size-21 {
-  font-size: 21px;
+	font-size: 21px;
 }
 
 .size-24 {
-  font-size: 24px;
+	font-size: 24px;
 }
 // end text styles
 
 // page header
 .page-header {
-  background: $exlightblue;
-  padding: 210px 0 80px 0;
+	background: $exlightblue;
+	margin-top: 80px;
+	padding: 210px 0 80px 0;
 
-  svg {
-    width: 220px + 32px;
-    height: 32px;
+	svg {
+		width: 220px + 32px;
+		height: 32px;
 
-    rect {
-      fill: $orange;
-      width: 221px;
-      height: 8px;
-      y: 12px;
-    }
+		rect {
+			fill: $orange;
+			width: 221px;
+			height: 8px;
+			y: 12px;
+		}
 
-    circle {
-      r: 12px;
-      cy: 16px;
-      cx: 220px + 16px;
-      stroke: $orange;
-      stroke-width: 8px;
-      fill: transparent;
-    }
-  }
+		circle {
+			r: 12px;
+			cy: 16px;
+			cx: 220px + 16px;
+			stroke: $orange;
+			stroke-width: 8px;
+			fill: transparent;
+		}
+	}
 
-  h1 {
-    display: inline-block;
-    margin: 0 0 0 16px;
-    font-size: 56px;
-    font-weight: bold;
-  }
+	h1 {
+		display: inline-block;
+		margin: 0 0 0 16px;
+		font-size: 56px;
+		font-weight: bold;
+	}
 }
 
 @media(max-width: $xl) {
-  .page-header {
-    svg {
-      width: 139px + 32px;
+	.page-header {
+		svg {
+			width: 139px + 32px;
 
-      rect {
-        width: 140px;
-      }
+			rect {
+				width: 140px;
+			}
 
-      circle {
-        cx: 139px + 16px;
-      }
-    }
-  }
+			circle {
+				cx: 139px + 16px;
+			}
+		}
+	}
 }
 
 @media(max-width: $lg) {
-  .page-header {
-    padding: 182px 0 64px 0;
+	.page-header {
+		padding: 182px 0 64px 0;
 
-    h1 {
-      font-size: 36px;
-      margin-left: 12px;
-    }
+		h1 {
+			font-size: 36px;
+			margin-left: 12px;
+		}
 
-    svg {
-      width: 163px + 24px;
-      height: 24px;
+		svg {
+			width: 163px + 24px;
+			height: 24px;
 
-      rect {
-        width: 164px;
-        height: 6px;
-        y: 9px;
-      }
-  
-      circle {
-        r: 9px;
-        cy: 12px;
-        cx: 163px + 12px;
-        stroke-width: 6px;
-      }
-    }
-  }
+			rect {
+				width: 164px;
+				height: 6px;
+				y: 9px;
+			}
+	
+			circle {
+				r: 9px;
+				cy: 12px;
+				cx: 163px + 12px;
+				stroke-width: 6px;
+			}
+		}
+	}
 }
 
 @media (max-width: $md) {
-  .page-header {
-    padding: 111px 0 48px 0;
+	.page-header {
+		margin-top: 64px;
+		padding: 111px 0 48px 0;
 
-    h1 {
-      font-size: 28px;
-      margin-left: 6px;
-    }
+		h1 {
+			font-size: 28px;
+			margin-left: 6px;
+		}
 
-    svg {
-      width: 58px + 18px;
-      height: 18px;
+		svg {
+			width: 58px + 18px;
+			height: 18px;
 
-      rect {
-        width: 59px;
-        height: 5px;
-        y: 6.5px;
-      }
-  
-      circle {
-        r: 6.75px;
-        cy: 9px;
-        cx: 58px + 9px;
-        stroke-width: 4.5px;
-      }
-    }
-  }
+			rect {
+				width: 59px;
+				height: 5px;
+				y: 6.5px;
+			}
+	
+			circle {
+				r: 6.75px;
+				cy: 9px;
+				cx: 58px + 9px;
+				stroke-width: 4.5px;
+			}
+		}
+	}
 }
 // end page header
 
 // page intro
 .page-intro {
-  padding: 116px 0;
+	padding: 116px 0;
 
-  p {
-    margin-bottom: 0;
-    font-size: 28px;
-  }
+	p {
+		margin-bottom: 0;
+		font-size: 28px;
+	}
 }
 
 @media(max-width: $lg) {
-  .page-intro {
-    padding: 96px 0;
+	.page-intro {
+		padding: 96px 0;
 
-    p {
-      font-size: 24px;
-    }
-  }
+		p {
+			font-size: 24px;
+		}
+	}
 }
 
 @media(max-width: $md) {
-  .page-intro {
-    padding: 64px 0;
-  
-    p {
-      font-size: 20px;
-    }
-  }
+	.page-intro {
+		padding: 64px 0;
+	
+		p {
+			font-size: 20px;
+		}
+	}
 }
 // end page intro
 
 // section headers
 .section-header {
-  h1 {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-  }
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		text-align: center;
+	}
 
-  hr {
-    width: 24px;
-    height: 4px;
-    background-color: $orange;
-    border: none;
-    margin: 16px auto 0 auto;
-  }
+	hr {
+		width: 24px;
+		height: 4px;
+		background-color: $orange;
+		border: none;
+		margin: 16px auto 0 auto;
+	}
 }
 
 @media (max-width: $md) {
-  .section-header {
-    h1 {
-      font-size: 24px;
-    }
+	.section-header {
+		h1 {
+			font-size: 24px;
+		}
 
-    hr {
-      width: 18px;
-      height: 3px;
-      margin-top: 8px;
-    }
-  }
+		hr {
+			width: 18px;
+			height: 3px;
+			margin-top: 8px;
+		}
+	}
 }
 // end section header
 
