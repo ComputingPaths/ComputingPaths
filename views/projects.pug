@@ -32,9 +32,9 @@ block main
             div(class='row no-gutters')
               each t in projectTags
                 li(class='col-4 col-lg-12') #{t.type}
-        
+                
         - for(let i = 0; i < projects.length; i++)
-          a(class='col-9' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
+          a(class='col-lg-9 col-md-12' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
             div(class='projectcard')
               img(src='/img/temp3.svg' alt='+')
               div(class='cardinfo')

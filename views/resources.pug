@@ -4,6 +4,7 @@ block style
   link(rel='stylesheet' href='/css/resources.css')
 
 block main
+
   div(class='page-header')
     svg
       rect
@@ -75,9 +76,14 @@ block main
             div(class='card')
               //-div(role="tab" id="heading-"+i)
                 //-link to map
+<<<<<<< HEAD
               a(class='map' href='maps.ucsd.edu')
                 img(src='/img/temp1.svg')
               div(class='d-inline')
+=======
+                a(href="maps.ucsd.edu")
+                  img(src="/img/temp3.svg" class="map" alt="+")
+>>>>>>> 8dff85b6060f6b7b1878804b5e0a144ca7b7dd5a
                 a(data-toggle="collapse" data-parent="#accordion" href="#collapse-"+i aria-expanded="false" aria-controls="collapse-"+i)
                   div(class="res-card")
                     div(class="cardinfo")
