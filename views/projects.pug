@@ -24,75 +24,24 @@ block main
     
   section
     div(class='container')
-      div(class='row justify-content-between')
+      div(class='row')
         div(class='sticky-top project-type-wrapper col-3 sticky-top')
           a(data-toggle='collapse' data-target='#project-types') Project Types
           ul(class='collapse show' id='project-types')
             each p in projectTags
               li                 
-                a(href='#' style='color: {p.color}') #{p.type}
-
-        a(class='col-9' data-toggle='modal' data-target='#modal1')
-          div(class='projectcard')
-            img(src='/img/temp3.svg' alt='+')
-            div(class='cardinfo')
-              p(class='project-name') MyWebApp
-              p(class='project-creator') CSES
-              div(class='tags')
-                div(class='colorbackground') Web Application
-              i(class='fa fa-expand')
-
-        a(class='col-9 offset-3' data-toggle='modal' data-target='#modal1')
-          div(class='projectcard')
-            img(src='/img/temp3.svg' alt='+')
-            div(class='cardinfo')
-              p(class='project-name') studyspace
-              p(class='project-creator') CSES
-              div(class='tags')
-                div(class='colorbackground') Web Application
-              i(class='fa fa-expand')
-
-        a(class='col-9 offset-3' data-toggle='modal' data-target='#modal1')
-          div(class='projectcard')
-            img(src='/img/temp3.svg' alt='+')
-            div(class='cardinfo')
-              p(class='project-name') MyWebApp
-              p(class='project-creator') CSES
-              div(class='tags')
-                div(class='colorbackground') Web Application
-              i(class='fa fa-expand')
-
-        a(class='col-9 offset-3' data-toggle='modal' data-target='#modal1')
-          div(class='projectcard')
-            img(src='/img/temp3.svg' alt='+')
-            div(class='cardinfo')
-              p(class='project-name') studyspace
-              p(class='project-creator') CSES
-              div(class='tags')
-                div(class='colorbackground') Web Application
-              i(class='fa fa-expand')
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                a(href='#' style=`color: ${p.color};`) #{p.type}
+        
+        - for(let i = 0; i < projects.length; i++)
+          a(class='col-9' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
+            div(class='projectcard')
+              img(src='/img/temp3.svg' alt='+')
+              div(class='cardinfo')
+                p(class='project-name') #{projects[i].projectName}
+                p(class='project-creator') #{projects[i].organization}
+                div(class='tags')
+                  div(class='colorbackground') #{projects[i].projectTag}
+                i(class='fa fa-expand')
     
     div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
       div(class='modal-dialog' role='document')
@@ -124,7 +73,7 @@ block main
           div(class='row modal-body')
             div(class='project-description col-6')
               p.description-title Description
-              p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem. As their solution, the Studyspace team developed a website that connects students with peers and instructors instantly via video and text chat. Through the application, classmates can collaborate in course-specific channels to tackle challenging topics, ask questions, and prepare for exams. The website provides a multifaceted digital workspace that can host a range of activities, like TA office hours, group study sessions, and even a lounge area where students can share music and chat. The project boasts a mix of techniques and backend software implementations, including Express.js, Firebase, MongoDB, and PeerJS. Studyspace also incorporates creative frontend and visual design features like alternate app color schemes and day/night modes that ensure the site is easy on the eyes for long periods of time. The CSE 110 (Software Engineering) course focuses on an introduction to software development and engineering methods, including specification, design, implementation, testing, and process, as well as an emphasis on team development, agile methods, and use of tools as IDE's, version control, and test harnesses. You can learn more about the course here.
+              p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software 
 
             div(class='project-details')
 
