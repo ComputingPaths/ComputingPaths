@@ -13,8 +13,11 @@ function initNideSidebar() {
     e.css('color', colorMap[e.html()])
   })
 
+  let filtered = $('.filtered')
+  let removed = []
   li.click(e => {
     e = $(e.target)
+
     if (e.hasClass('active')) {
       e.removeClass('active')
       e.css('color', grey)
@@ -23,10 +26,24 @@ function initNideSidebar() {
       e.addClass('active')
       e.css('color', colorMap[e.html()])
     }
+
+    filtered.each((fi, fe) => {
+      if ($(fe).find('.tag').is((ti, te) => li.filter('.active').is((ai, ae) => te.innerHTML === ae.innerHTML))) {
+        if (removed[fi]) {
+          $(fe).css('display', removed[fi])
+          removed[fi] = undefined
+        }
+      }
+      else {
+        if (!removed[fi]) {
+          removed[fi] = $(fe).css('display')
+          $(fe).css('display', 'none')
+        }
+      }
+    })
   })
 
   let tags = $('.tag')
-  if (!tags.length) return
   tags.each((i, e) => {
     $(e).css('background-color', colorMap[e.innerHTML])
   })
