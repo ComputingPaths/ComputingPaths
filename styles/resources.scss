@@ -183,16 +183,40 @@
 			/*the map image*/
 			img{
 				float: left;
-				width:316px;
-				height: 316px;
+				width:256px;
+				height: 256px;
+				object-fit: cover;
 			}
 
       @media (max-width: $lg) {
-        img {
+        .map {
           width: 240px;
           height: 240px;
+          object-fit: cover;
         }
       }
+      @media (max-width: $xl) {
+        .map {
+          width: 255px;
+          height: 255px;
+          object-fit: cover;
+        }
+      }
+      @media (max-width: $md) {
+        .map {
+          width: 690px;
+          height: 345px;
+          object-fit: cover;
+        }
+      }
+      @media (max-width: $sm) {
+        .map {
+          width: 510px;
+          height: 255px;
+          object-fit: cover;
+        }
+      }
+
 
 			/*the rest of the card*/
 			.res-card {
