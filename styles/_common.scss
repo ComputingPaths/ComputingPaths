@@ -259,3 +259,52 @@ a:link:active, a:visited:active {
   }
 }
 // end page banner
+
+// nice side bar
+.nice-sidebar {
+	position: sticky;
+	top: 160px;
+
+	a {
+		font-size: 18px;
+		font-weight: bold;
+		padding: 20px 24px;
+		display: flex;
+		background: white;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	ul {
+		background: white;
+		margin-top: 2px;
+		padding: 20px 0 4px 40px;
+		font-size: 16px;
+		font-weight: bold;
+		box-shadow: 0 4px #E6F1F6;
+		
+		li {
+			list-style-type: circle;
+			margin-bottom: 16px;
+			cursor: pointer;
+		}
+
+		li.active {
+			list-style-type: disc;
+		}
+	}
+}
+
+@media (max-width: $lg) {
+	.nice-sidebar {
+		top: 80px;
+	}
+}
+
+@media (max-width: $md) {
+	.nice-sidebar {
+		top: 64px;
+	}
+}
+// end nice side bar
