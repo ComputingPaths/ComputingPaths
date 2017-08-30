@@ -32,6 +32,12 @@ function initNideSidebar() {
   })
 }
 
+function flipOnClick() {
+  $('.flip-on-click').click(e => {
+    $(e.target).find('i').toggleClass('fa-flip-vertical')
+  })
+}
+
 $(document).ready(() => {
   $('.navbar-nav')
     .children()
@@ -40,4 +46,5 @@ $(document).ready(() => {
     .addClass('active')
 
   initNideSidebar()
+  flipOnClick()
 })

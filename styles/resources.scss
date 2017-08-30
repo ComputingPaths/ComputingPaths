@@ -161,7 +161,8 @@
 	
 	.res-card {
 		margin-bottom: 32px;
-		
+		box-shadow: 0 4px $shadow;
+
 		.header {
 			min-height: 255px;
 			padding: 32px 40px;
@@ -172,7 +173,14 @@
 				font-size: 28px;
 				font-weight: bold;
 				margin-bottom: 20px;
-				display: block;
+				display: flex;
+				cursor: pointer;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			i {
+				color: white;
 			}
 		}
 		

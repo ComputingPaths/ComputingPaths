@@ -3,6 +3,9 @@ extends ../template.pug
 block style
   link(rel='stylesheet' href='/css/resources.css')
 
+block script
+  script(src='/js/resources.js')
+
 block main
 
   div(class='page-header')
@@ -63,7 +66,7 @@ block main
     div(class='container')
       div(class='row align-items-start')
         div(class='nice-sidebar col-lg-3')
-          a(data-toggle='collapse' data-target='#tags') Resource Types
+          a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Resource Types
             i(class='fa fa-chevron-down')
           ul(id='tags' class='collapse show')
             div(class='row no-gutters')
@@ -77,7 +80,8 @@ block main
                 a(class='' href='maps.ucsd.edu')
                   //-img(class='img-fluid' src='/img/temp1.svg')
               div(class='col-8 header')
-                a(data-toggle='collapse' data-target=`#res-txt-${i}`) #{resources[i].name}
+                a(class='flip-on-click' data-toggle='collapse' href=`#res-txt-${i}`) #{resources[i].name}
+                  i(class='fa fa-chevron-down')
                 div 
                   each t in resources[i].tags
                     span(class='tag') #{resourceTags[t]}
