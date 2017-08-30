@@ -6,7 +6,7 @@
 	justify-content: center;
 	background: $exlightblue;
 	height: 356px;
-	padding: 174px 640px 116px 260px; 
+	padding: 174px 640px 116px 260px;
 
 	h1 {
 		color: $textblue;
@@ -24,7 +24,7 @@
 	padding-top: 80px;
 	padding-bottom: 80px;
 
-	img, .res-control-container { 
+	img, .res-control-container {
 		height: 518px;
 	}
 
@@ -144,21 +144,7 @@
 }
 
 .res-banner-title{
-	
-}
 
-.res-browse{
-
-	text-align: center;
-	background-color: $aquablue;
-	padding-top: 50px;
-	padding-bottom: 50px;
-
-	h1{
-		color: white;
-		font-size: 40px;
-
-	}
 }
 
 
@@ -166,26 +152,38 @@
 
 
 
-	
 
-	.card{
+
+	
+.cards {
 	background: $exlightblue;
+	padding-top: 80px;
+
+ 	.card{
 	/*padding: 80px 165px 52px 400px;*/
 	display: block;
 	justify-content: center;
 	justify-content: space-between;
-		
+
 
 		/*space between each cared*/
 		margin-bottom: 50px;
 		a{
-		
+
 			/*the map image*/
 			img{
 				float: left;
 				width:316px;
 				height: 316px;
 			}
+
+      @media (max-width: $lg) {
+        img {
+          width: 240px;
+          height: 240px;
+        }
+      }
+
 			/*the rest of the card*/
 			.res-card {
 				height: 316px;
@@ -255,7 +253,7 @@
 						.default-tag{
 							background: red;
 						}
-						
+
 						.as-tag{
 							background: red;
 						}
@@ -274,10 +272,10 @@
 						.eq-tag{
 
 						}
-						.ws-tag{	
+						.ws-tag{
 							background: red;
 						}
-	
+
 						.tag-spacer{
 							display: inline-block;
 							padding-right: 25px;
@@ -288,7 +286,7 @@
 			}
 		}
 	}
-
+}
 
 .res-sidebar{
 /*	position: -webkit-sticky;
