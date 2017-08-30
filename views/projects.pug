@@ -1,100 +1,100 @@
 extends ../template.pug
 
 block style
-  link(
-    rel='stylesheet'
-    href='/css/projects.css'
-  )
-  
+	link(
+		rel='stylesheet'
+		href='/css/projects.css'
+	)
+	
 block script
-  script(src='/js/projects.js')
-  
+	script(src='/js/projects.js')
+	
 block main
-  div(class='page-header')
-    svg
-      rect
-      circle
-    h1 Triton Projects
-      
-  div(class='intro-text')
-    p(class='size-28')  This is the projects page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.This is the projects page. 
-    
-  div(class='intro-prompt')
-    h3 Explore what these Tritons have created
-    
-  section
-    div(class='container')
-      div(class='row')
-        div(class='sticky-top project-type-wrapper col-3 sticky-top')
-          a(data-toggle='collapse' data-target='#project-types') Project Types
-          ul(class='collapse show' id='project-types')
-            each p in projectTags
-              li                 
-                a(href='#' style=`color: ${p.color};`) #{p.type}
-        
-        - for(let i = 0; i < projects.length; i++)
-          a(class='col-9' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
-            div(class='projectcard')
-              img(src='/img/temp3.svg' alt='+')
-              div(class='cardinfo')
-                p(class='project-name') #{projects[i].projectName}
-                p(class='project-creator') #{projects[i].organization}
-                div(class='tags')
-                  div(class='colorbackground') #{projects[i].projectTag}
-                i(class='fa fa-expand')
-    
-    div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
-      div(class='modal-dialog' role='document')
+	div(class='page-header')
+		svg
+			rect
+			circle
+		h1 Triton Projects
+			
+	div(class='intro-text')
+		p(class='size-28')  This is the projects page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.This is the projects page. 
+		
+	div(class='intro-prompt')
+		h3 Explore what these Tritons have created
+		
+	section
+		div(class='container')
+			div(class='row')
+				div(class='sticky-top project-type-wrapper col-3 sticky-top')
+					a(data-toggle='collapse' data-target='#project-types') Project Types
+					ul(class='collapse show' id='project-types')
+						each p in projectTags
+							li                 
+								a(href='#' style=`color: ${p.color};`) #{p.type}
+				
+				- for(let i = 0; i < projects.length; i++)
+					a(class='col-9' class = i === 0 ? '' : 'offset-lg-3' data-toggle='modal' data-target='#modal1')
+						div(class='projectcard')
+							img(src='/img/temp3.svg' alt='+')
+							div(class='cardinfo')
+								p(class='project-name') #{projects[i].projectName}
+								p(class='project-creator') #{projects[i].organization}
+								div(class='tags')
+									div(class='colorbackground') #{projects[i].projectTag}
+								i(class='fa fa-expand')
+		
+		div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
+			div(class='modal-dialog' role='document')
 
-        div(class='modal-content')
+				div(class='modal-content')
 
-          div(class='modal-header')
-            h5(id='exampleModalLongTitle') studyspace
-            button(type='button' class='close' data-dismiss='modal' aria-label='Close')
-              i(class='fa fa-times' aria-hidden='true')
+					div(class='modal-header')
+						h5(id='exampleModalLongTitle') studyspace
+						button(type='button' class='close' data-dismiss='modal' aria-label='Close')
+							i(class='fa fa-times' aria-hidden='true')
 
-          div(class='modal-slideshow')
-            a(class='carousel-control-prev' href='#carouselExampleIndicators' data-sl)
-              i(class='fa fa-arrow-left fa-3x')
+					div(class='modal-slideshow')
+						a(class='carousel-control-prev' href='#carouselExampleIndicators' data-sl)
+							i(class='fa fa-arrow-left fa-3x')
 
-            div(id="carouselExampleControls" class="carousel slide" data-ride='carousel')
-              ol(class='carousel-indicators')
-                li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
-                  i(class='fa fa-circle' aria-hidden='true')
-                li(data-target='#carouselExampleIndicators' data-slide-to='1')
-              div(class="carousel-inner" role="listbox")
-                div(class='carousel-item active')
-                  img(src='/img/temp1.svg')
-                div(class='carousel-item')
-                  img(src='/img/temp1.svg')
-            a(class='carousel-control-next' href='#carouselExampleIndicators' data-sl)
-              i(class='fa fa-arrow-right fa-3x')
+						div(id="carouselExampleControls" class="carousel slide" data-ride='carousel')
+							ol(class='carousel-indicators')
+								li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
+									i(class='fa fa-circle' aria-hidden='true')
+								li(data-target='#carouselExampleIndicators' data-slide-to='1')
+							div(class="carousel-inner" role="listbox")
+								div(class='carousel-item active')
+									img(src='/img/temp1.svg')
+								div(class='carousel-item')
+									img(src='/img/temp1.svg')
+						a(class='carousel-control-next' href='#carouselExampleIndicators' data-sl)
+							i(class='fa fa-arrow-right fa-3x')
 
-          div(class='row modal-body')
-            div(class='project-description col-6')
-              p.description-title Description
-              p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software 
+					div(class='row modal-body')
+						div(class='project-description col-6')
+							p.description-title DESCRIPTION
+							p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software 
 
-            div(class='project-details')
+						div(class='project-details')
 
-              div(class='detail-item')
-                p.description-title ORGANIZATION / CLASS CODE
-                p.description CSE 110
+							div(class='detail-item')
+								p.description-title ORGANIZATION / CLASS CODE
+								p.description CSE 110
 
-              div(class='detail-item')
-                p.description-title PROJECT MEMBERS
-                p.description Eric Zhang, ’19
-                p.description Andy Hwang, ’19
-                p.description Andy Hwang, ’19
-                p.description Andy Hwang, ’19
-                p.description Andy Hwang, ’19
+							div(class='detail-item')
+								p.description-title PROJECT MEMBERS
+								p.description Eric Zhang, ’19
+								p.description Andy Hwang, ’19
+								p.description Andy Hwang, ’19
+								p.description Andy Hwang, ’19
+								p.description Andy Hwang, ’19
 
-              div(class='detail-item')
-                p.description-title PROJECT TYPE
-                div(class='tags')
-                  div(class='colorbackground') Web Application
+							div(class='detail-item')
+								p.description-title PROJECT TYPE
+								div(class='tags')
+									div(class='colorbackground') Web Application
 
-              div(class='detail-item')
-                p.description-title MORE INFORMATION
-                a(href='/') Find out more    
-                  i(class='fa fa-arrow-right' aria-hidden='true')
+							div(class='detail-item')
+								p.description-title MORE INFORMATION
+								a(href='/') Find out more    
+									i(class='fa fa-arrow-right' aria-hidden='true')

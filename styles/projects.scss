@@ -149,25 +149,33 @@ section {
       .modal-header {
         background: $darkblue;
         height: 80px;
-        padding: 0;
+        padding: 0 24px 0 24px;
+        border-bottom: none;
         
         h5 {
-          display: flex;
           color: white;
           letter-spacing: 0.48px;
           font-size: 28px;
+          margin-bottom: 0;
+          margin-left: auto;
+          margin-right: auto;
         }
         
-        i{
-          color: white;
-          margin-right: 28.2;
+        .close {
+          opacity: 1;
+          margin-left: -1em;
+
+          .fa {
+            color: white;
+          }
         }
       }
       
       .modal-slideshow {
         display: inline-flex;
         justify-content: center;
-        margin-bottom: 40px;
+        background-color: $textblue;
+        height: 487px;
 
         a {
           position: relative;
