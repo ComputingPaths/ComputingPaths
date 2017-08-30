@@ -147,19 +147,6 @@
 
 }
 
-.res-browse{
-
-	text-align: center;
-	background-color: $aquablue;
-	padding-top: 50px;
-	padding-bottom: 50px;
-
-	h1{
-		color: white;
-		font-size: 40px;
-
-	}
-}
 
 
 
@@ -167,9 +154,12 @@
 
 
 
-
-	.card{
+	
+.cards {
 	background: $exlightblue;
+	padding-top: 80px;
+
+ 	.card{
 	/*padding: 80px 165px 52px 400px;*/
 	display: block;
 	justify-content: center;
@@ -296,7 +286,7 @@
 			}
 		}
 	}
-
+}
 
 .res-sidebar{
 /*	position: -webkit-sticky;
