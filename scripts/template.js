@@ -24,11 +24,12 @@ function initNideSidebar() {
       e.css('color', colorMap[e.html()])
     }
   })
-}
 
-function initTags() {
   let tags = $('.tag')
   if (!tags.length) return
+  tags.each((i, e) => {
+    $(e).css('background-color', colorMap[e.innerHTML])
+  })
 }
 
 $(document).ready(() => {
@@ -39,5 +40,4 @@ $(document).ready(() => {
     .addClass('active')
 
   initNideSidebar()
-  initTags()
 })

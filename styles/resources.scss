@@ -158,172 +158,50 @@
 .cards {
 	background: $exlightblue;
 	padding-top: 80px;
+	
+	.res-card {
+		margin-bottom: 32px;
+		
+		.header {
+			min-height: 255px;
+			padding: 32px 40px;
+			background: $darkblue;
 
- 	.card {
-	/*padding: 80px 165px 52px 400px;*/
-	// display: block;
-	// justify-content: center;
-	// justify-content: space-between;
-
-
-		/*space between each cared*/
-		//margin-bottom: 50px;
+			a {
+				color: white;
+				font-size: 28px;
+				font-weight: bold;
+				margin-bottom: 20px;
+				display: block;
+			}
+		}
 		
 		.map {
-			/*the map image*/
-			display: inline-block;
-			img{
-<<<<<<< HEAD
-				//float: left;
-				width: 255px;
-				height: 255px;
-=======
-				float: left;
-				width:256px;
-				height: 256px;
-				object-fit: cover;
->>>>>>> 8dff85b6060f6b7b1878804b5e0a144ca7b7dd5a
-			}
+			display: block;
+			background: url('/img/temp1.svg') center no-repeat;
+			background-size: cover;
+		}
+	}
 
-      @media (max-width: $lg) {
-        .map {
-          width: 240px;
-          height: 240px;
-          object-fit: cover;
-        }
-      }
-      @media (max-width: $xl) {
-        .map {
-          width: 255px;
-          height: 255px;
-          object-fit: cover;
-        }
-      }
-      @media (max-width: $md) {
-        .map {
-          width: 690px;
-          height: 345px;
-          object-fit: cover;
-        }
-      }
-      @media (max-width: $sm) {
-        .map {
-          width: 510px;
-          height: 255px;
-          object-fit: cover;
-        }
-      }
+	.text {
+		padding: 40px 64px;
+		background: white;
 
+		h1 {
+			font-size: 13px;
+			font-weight: bold;
+		}
 
-			/*the rest of the card*/
-			.res-card {
-				height: 316px;
-				display: flex;
-				cursor:pointer;
-				/*margin-bottom: 64px;*/
-				box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+		p {
+			margin-bottom: 24px;
+		}
 
-				img {
-					width: 475px;
-					height: 316px;
-				}
+		a {
+			font-weight: bold;
 
-				.cardinfo{
-					background: $darkblue;
-					height: 316px;
-					width: 100%;
-					.card-head{
-						height: 80px;
-						background: $darkblue;
-
-						h3 {
-							font-size: 24px;
-							padding: 24px 1px 28px 48px;
-							color: white;
-
-							> p {
-								display: inline;
-								font-weight: normal;
-							}
-						}
-					}
-
-					.res-card-description {
-						height: 184px;
-						background: white;
-						> p {
-							padding: 32px 48px 39px 48px;
-							font-size: 18px;
-							color: $textblue;
-						}
-					}
-
-					hr {
-						height: 1px;
-						border: 0;
-						border-top: 1px solid #ccc;
-						margin: 0 0;
-						padding: 0;
-						color: #E6F1F6;
-					}
-
-					.tags {
-
-						margin: 14px 48px 14px 48px;
-
-						.colorbackground {
-							display: inline-block;
-							/*background: #FF8585;*/
-							border-radius: 50px;
-							text-align: center;
-							width: 154px;
-							font-size: 16px;
-							font-weight: bold;
-							color: white;
-						}
-						.default-tag{
-							background: red;
-						}
-
-						.as-tag{
-							background: red;
-						}
-						.as-tag.active {
-							background: red;
-						}
-						.bs-tag{
-							background: red;
-						}
-						.ev-tag{
-
-						}
-						.sc-tag{
-
-						}
-						.eq-tag{
-
-						}
-						.ws-tag{
-							background: red;
-						}
-
-						.tag-spacer{
-							display: inline-block;
-							padding-right: 25px;
-							padding-bottom: 25px;
-						}
-					}
-				}
+			i {
+				color: $orange;
 			}
 		}
 	}
-}
-
-.res-sidebar{
-/*	position: -webkit-sticky;
-	position: sticky;
-	top: 50px;
-	float: left;
-
-	padding: 50px;*/
 }

@@ -312,6 +312,12 @@ a:link:active, a:visited:active {
 // tags
 .tag {
 	padding: 4px 16px;
-	border-radius: 50%;
+	border-radius: 50px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	display: inline-block;
+	margin: 0 12px 12px 0;
+	line-height: 19px;
 }
 // end tags
