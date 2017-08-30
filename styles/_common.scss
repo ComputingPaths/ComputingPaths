@@ -263,7 +263,7 @@ a:link:active, a:visited:active {
 // nice side bar
 .nice-sidebar {
 	position: sticky;
-	top: 160px;
+	top: 80px;
 
 	a {
 		font-size: 18px;
@@ -274,6 +274,7 @@ a:link:active, a:visited:active {
 		justify-content: space-between;
 		align-items: center;
 		cursor: pointer;
+		line-height: 21px;
 	}
 
 	ul {

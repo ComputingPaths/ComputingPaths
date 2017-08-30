@@ -1,26 +1,4 @@
 {
-  "majorHooks": [
-    "Bioinformatics majors address the growing need for trained computational biologists in the rapidly growing field of biological data analysis.",
-    "Cognitive Science students are at the forefront of researching solutions and developing technology designed to better suit humanity.",
-    "Computer science students gain knowledge in key computing theories and languages, directly preparing them to enter high tech industry.",
-    "Electrical and Computer Engineering students unite principles of mathematics and science to become architects of electronic systems.",
-    "Math-Computer Science students focus on the intersection between mathematics and theoretical computer science.",
-    "Scientific Computation majors bridge the gap between applied mathematics, physics, and computer science.",
-    "Interdisciplinary Computing and the Arts students embody the new generation of artists and musicians.",
-    "Speculative Design is a 21st century mix of art, science, and emerging technology focused on aesthetic and entrepreneurial and activist intervention.",
-    "Data scientists use mathematics and computing to tackle the emerging need for data analysis in a wide range of industries."
-  ],
-  "majorNames": [
-    "Bioinformatics",
-    "Cognitive Science",
-    "Computer Science",
-    "Electrical & Computer Engineering",
-    "Math – Computer Science",
-    "Scientific Computation",
-    "Interdisciplinary Computing and the Arts",
-    "Speculative Design",
-    "Data Science"
-  ],
   "pages": [
     {
       "link": "/stories.html",
@@ -283,69 +261,44 @@
   },
   "projects": [
     {
-      "projectName": "me-mo",
+      "name": "me-mo",
       "organization": "Personal Project",
       "description": "For the course COGS 120 (Interaction Design) with Professor Philip Guo, students develop a quarter-long project where they design and develop a mobile application within a given premise. In response to the topic Visualizing and Interacting with Histories, Tori Duong (‘18), Melissa Ngu (‘17), and Ed Ngai (‘17) wondered how they might help people represent and interact with histories in a visual way. Their solution was “me-mo”, a personal traveling app that helps users keep track of places they’ve been to or want to visit in the future. The team of three approached the project by first studying the needs of users and using storyboards to illustrate the different personas and scenarios in which their app would be used. Working with criticism and review from their classmates, the team went on to rapid prototyping and developing low-fidelity wireframes which were then tested on users. Their final project incorporates a wide array of techniques and insight gained from the COGS 120 course. The COGS 120 (Interaction Design) course is structured through weekly skill-building assignments and regular small design studio sessions designed to foster constructive conversations around each team’s progress throughout the quarter. ",
-      "projectMembers": [
+      "members": [
         "Tori Duong",
         "Melissa Ngu",
         "Ed Ngai"
       ],
-      "projectLink": "http://toriduong.com/me-mo.html",
-      "projectTag": "Mobile App"
+      "link": "http://toriduong.com/me-mo.html",
+      "tags": ["ma"]
     },
     {
-      "projectName": "Studyspace.me",
+      "name": "Studyspace.me",
       "organization": "CSE 110",
       "description": "For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem.",
-      "projectMembers": [
+      "members": [
         "Eric Zhang, Isaac Wang, Andy Hwang, Gates Zeng, Michael Youssef, Saurabh Kulkarni, Anish Sinha, Luke Thomas, Zaki Siddiqui, Kent Vuong"
       ],
-      "projectLink": "https://www.studyspace.me/",
-      "projectTag": "Web App"
+      "link": "https://www.studyspace.me/",
+      "tags": ["wa"]
     },
     {
-      "projectName": "KAi Human Robot Arm",
+      "name": "KAi Human Robot Arm",
       "organization": "Divergent Engineering",
       "description": "The team has programmed KAi to be autonomous with certain preset hand signs, such as the peace sign. KAi is even able to play a game of rock-paper-scissors with the user motioning out the game’s commonly used hand signs. Using the newly developed muscle sensors, which allows user muscle movement to be recorded by the Arduino,  the team plans to implement a glove-like mechanism to control the fingers.",
-      "projectMembers": ["Alex Phan"],
-      "projectLink": "http://divergentengineering.weebly.com/kai-human-robot.html",
-      "projectTag": "Arduino"
-    },
-    {
-      "projectName": "",
-      "organization": "",
-      "description": "",
-      "projectMembers": [],
-      "projectLink": "",
-      "projectTag": ""
+      "members": [
+        "Alex Phan"
+      ],
+      "link": "http://divergentengineering.weebly.com/kai-human-robot.html",
+      "tags": ["ar"]
     }
   ],
-  "projectTags": [
-    {
-      "type": "Mobile App",
-      "color": "EDABFF"
-      
-    },
-    {
-      "type": "Web App",
-      "color": "ABDBFF"
-    },
-    {
-      "type": "Arduino",
-      "color": "FF8585"
-    },
-    {
-      "type": "Datamining",
-      "color": "ADFFC8"
-    },
-    {
-      "type": "Research",
-      "color": "FFD5AD"
-    },
-    {
-      "type": "Games",
-      "color": "C2ADFF"
-    }
-  ]
+  "projectTags": {
+    "ma": "Mobile App",
+    "wa": "Web App",
+    "ar": "Arduino",
+    "da": "Datamining",
+    "re": "Research",
+    "ga": "Games"
+  }
 }

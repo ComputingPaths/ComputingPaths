@@ -63,7 +63,7 @@ html
         each page in pages
           a(href=page.link) #{page.name}
       div
-        each m in majorNames
-          a(href='/') #{m}
+        each m in majors
+          a(href='/') #{m.name}
       img(src='/img/logo_ucsd.png')
     
