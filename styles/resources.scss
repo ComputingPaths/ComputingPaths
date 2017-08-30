@@ -184,44 +184,40 @@
 			}
 		}
 		
+		.map{
+			width: 255px;
+			height:255px;			
+			display: block;
+			background: url('/img/temp1.svg') center no-repeat;
+			background-size: cover;
+		}	
+
 		@media (max-width: $xl) {
 			.map {
-				display: block;
 				width: 255px;
 				height:255px;
-				background: url('/img/temp1.svg') center no-repeat;
-				background-size: cover;
 			}
 		}
 
 
 		@media (max-width: $lg) {
 			.map {
-				display: block;
 				width: 240px;
 				height:240px;
-				background: url('/img/temp1.svg') center no-repeat;
-				background-size: cover;
 			}
 		}
 
 		@media (max-width: $md) {
 			.map {
-				display: block;
 				width: 690px;
 				height:345px;
-				background: url('/img/temp1.svg') center no-repeat;
-				background-size: cover;
 			}
 		}
 
 		@media (max-width: $xs) {
 			.map {
-				display: block;
 				width: 510px;
 				height:255px;
-				background: url('/img/temp1.svg') center no-repeat;
-				background-size: cover;
 			}
 		}
 
