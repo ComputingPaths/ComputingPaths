@@ -27,12 +27,13 @@ block main
 		div(class='container')
 			div(class='row align-items-start')
 				div(class='nice-sidebar col-lg-3')
+					div(class='margin')
 					a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Project Types
 						i(class='fa fa-chevron-down')
 					ul(id='tags' class='collapse show')
 						div(class='row no-gutters')
 							each t in projectTags
-								li(class='col-4 col-lg-12') #{t}
+								li(class='col-6 col-md-4 col-lg-12') #{t}
 				div(class='col-lg-9')
 					- for(let i = 0; i < projects.length; i++)
 						a(class='filtered' data-toggle='modal' data-target='#proj-modal' data-projectName=`${projects[i].name}`)
