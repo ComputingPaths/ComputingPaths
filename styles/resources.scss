@@ -75,34 +75,6 @@
 	}
 }
 
-@media (max-width: $lg) {
-	.res-banner {
-		background: linear-gradient($aquablue 63%, white 37%);
-		padding-top: 48px;
-		
-		.carousel {
-			.carousel-item {
-				.img {
-					height: 321px;
-					margin-bottom: 12px;
-				}
-				
-				.caption {
-					font-size: 24px;
-					line-height: 28px;
-				}
-			}
-
-			.indicator {
-				height: 48px;
-			}
-		}
-
-		.carousel-control {
-			padding-bottom: 110px;
-		}
-	}
-}
 
 @media (max-width: $md) {
 	.res-banner {
@@ -155,49 +127,11 @@
 			}
 		}
 		
-
-			img {
-				height:255px;		
-				width:100%;
-				object-fit: cover;
-			}	
-		
-
-/*
-		@media (max-width: $xl) {
-			.map {
-				img{
-					width: 100%;
-				}
-			}
-		}
-
-
-		@media (max-width: $lg) {
-			.map {
-				img{
-					width: 100%;
-				}
-			}
-		}
-
-		@media (max-width: $md) {
-			.map {
-					img{
-						width: 100%;
-				}
-			}
-		}
-
-		@media (max-width: $xs) {
-			.map {
-				img{
-					width: 100%;
-				}
-			}
-		}
-*/
-
+		img {
+			height:255px;		
+			width:100%;
+			object-fit: cover;
+		}	
 	}
 
 	.text {
@@ -226,5 +160,38 @@
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: $lg) {
+	.res-banner {
+		background: linear-gradient($aquablue 63%, white 37%);
+		padding-top: 48px;
+		
+		.carousel {
+			.carousel-item {
+				.img {
+					height: 321px;
+					margin-bottom: 12px;
+				}
+				
+				.caption {
+					font-size: 24px;
+					line-height: 28px;
+				}
+			}
+
+			.indicator {
+				height: 48px;
+			}
+		}
+
+		.carousel-control {
+			padding-bottom: 110px;
+		}
+	}
+
+	.cards {
+		padding-top: 33;
 	}
 }
