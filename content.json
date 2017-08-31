@@ -223,7 +223,7 @@
     {
       "name": "name 2",
       "description": "description 2",
-      "mapImage": "/img/temp1.svg",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map2link",
       "link": "testlink2",
       "image": "/img/temp1.svg",
@@ -254,6 +254,17 @@
     "eq": "Equipment",
     "ws": "Workspaces"
   },
+	"resourceBanner":[
+		{
+			"name": "banner resource 1",
+			"image":"/img/temp1.svg",
+			"link": "testbannerimage1.com"
+		},{
+			"name": "banner resource 2",
+			"image":"/img/temp1.svg",
+			"link": "testbannerimage2.com"
+		}
+	],
   "projects": [
     {
       "name": "me-mo",
