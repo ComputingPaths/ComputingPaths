@@ -23,32 +23,24 @@
   ],
   "stories": [
     {
-      "name": "Chyeim Jackson-Burgess",
-      "major": "Computer Science Engineering",
-      "class": "2017",
-      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
+      "name": "Jasmine Wang",
+      "major": "Cognitive Science",
+      "class": "2016",
+      "quote": "In CogSci, we learn about the brain, the language, the connection between neurons. Then, I find out we can learn about the computation. We can think about Artificial Intelligence (AI). If you’re even slightly interested, take a leap of faith, take a couple elective classes, I bet you’ll fall in love with it.",
       "image": "/img/JasmineWang.jpg"
     },
     {
-      "name": "Chyeim Jackson-Burgess",
+      "name": "Sarah Guthals, Professor, Co-founder of ThoughtSTEM",
       "major": "Computer Science Engineering",
-      "class": "2017",
-      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
+      "class": "2014",
+      "quote": "What I wanted was problem solving. A friend of mine told me to try a computer science class. So I took my first class, CSE 8A with Professor Beth Simon and I absolutely fell in love. I had no clue what I was doing. I would sit in the labs completely lost, but I loved it because there was always a process to follow. There was always a way of figuring it out.",
       "image": "/img/SarahGuthals.jpg"
     },
     {
-      "name": "Chyeim Jackson-Burgess",
-      "major": "Computer Science Engineering",
-      "class": "2017",
-      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
+      "name": "Tom Erbe, Professor",
+      "major": "Interdisciplinary Computing and the Arts - Music",
+      "quote": "You might not know exactly where you’re going, but keep your interests in the forefront and things will open up. When I went to school, you couldn’t integrate art and technology in any meaningful way… but I found a position where I could do this. You find these opportunities and you weigh what’s important.",
       "image": "/img/TomErbe.jpg"
-    },
-    {
-      "name": "Chyeim Jackson-Burgess",
-      "major": "Computer Science Engineering",
-      "class": "2017",
-      "quote": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa.",
-      "image": "/img/temp1.svg"
     }
   ],
   "majors": [
