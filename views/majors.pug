@@ -15,20 +15,24 @@ block main
   
   div(class='container page-intro')
     div(class='row')
-      p(class='col-12 col-sm-10 offset-sm-1') This is the majors page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+      p(class='col-sm-10 offset-sm-1') This is the majors page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
   
-  div(class='page-blurb container-fluid') 
+  div(class='page-blurb') 
     h1 Explore these majors
 
   main
     div(class='container')
-      div(class='row')
-        div(class='col-lg-3 major-list-wrapper sticky-top')
-          a(data-toggle="collapse" data-target='#major-list') Majors
+      div(class='row align-items-start')
+        div(class='col-lg-3 major-sidebar')
+          div(class='margin')
+          a(class='flip-on-click' data-toggle='collapse' data-target='#major-list') Majors
+            i(class='fa fa-chevron-down')
           ul(class='collapse show' id='major-list')
-            each m in majors
-              li 
-                a(href=`#${m.short}`) #{m.name}
+            div(class='row')
+              each m in majors
+                li(class='col-6 col-md-4 col-lg-12 no-select') 
+                  a(href=`#${m.short}`) #{m.name}
+
         - for (let i = 0; i < majors.length; i++)
           div(class='col-lg-9 major-card' class=i === 0 ? '' : 'offset-lg-3')
             a(name=majors[i].short)
@@ -53,4 +57,3 @@ block main
                   each w in majors[i].websites
                     a(href=w) Major Website 
                       i(class='fa fa-arrow-right')
-

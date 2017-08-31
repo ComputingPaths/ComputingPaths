@@ -9,7 +9,7 @@ $(document).ready(() => {
   }
   updateMajor(0)
 
-  li.children().click(e => {
-    updateMajor(li.children().index(e.target))
+  li.click(function () {
+    updateMajor(li.index(this))
   })
 })

@@ -15,8 +15,7 @@ block main
 	
 	div(class='container page-intro')
 		div(class='row')
-			div(class='col-12 col-sm-10 offset-sm-1')
-				p Every path through UCSD is unique, and there’s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice.
+			p(class='col-sm-10 offset-sm-1') Every path through UCSD is unique, and there’s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice.
 			
 	div(class='story-video')
 		div(class='container')
@@ -39,8 +38,18 @@ block main
 			h1 More Stories
 			hr
 		div(class='container')
-			- for(let i = 0; i < stories.length; i++)
-				div(class='row')
+		- for(let i = 0; i < stories.length; i++)
+			- var theirRole = 'Class of ' + stories[i].class
+			if (stories[i].role !== undefined)
+				- theirRole = stories[i].role
+			div(class='row')
+				if (stories[i].image === null)
+					div(class='story-content col-lg-10 col-12 offset-lg-1')
+						h2(class='size-20 bold') #{stories[i].name}
+						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+						h1(class='size-20 nor') "#{stories[i].quote}"
+				else
+						
 					if (i % 2 === 0)
 						div(class='hidden-md-down col-sm-3 offset-lg-1')
 							img(src=stories[i].image)
@@ -48,7 +57,7 @@ block main
 						img(class='mx-auto' src=stories[i].image)
 					div(class='story-content col-12 col-lg-6 offset-lg-1')
 						h2(class='size-20 bold') #{stories[i].name}
-						h3(class='light size-18 nor') #{stories[i].major} | Class of #{stories[i].class}
+						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
 						h1(class='size-24 med') "#{stories[i].quote}"
 					if (i % 2 !== 0)
 						div(class='hidden-md-down col-sm-3 offset-md-1')
@@ -63,10 +72,10 @@ block main
 				div(class='col-12 col-md-5 mb-4 mb-md-0')
 					h2(class='bold') Start Your Journey 
 					p(class='size-18') There’s no single computing path–UC San Diego offers a diverse range of computing-related majors, from art and music to engineering and science.
-					a(class='size-21 bold dark' href='/') Explore the majors 
+					a(class='size-21 bold dark' href='/majors.html') Explore the majors 
 						i(class='fa fa-arrow-right')
 				div(class='col-12 col-md-5 offset-md-2')
 					h2(class='bold') Find Students Like You
 					p(class='size-18') Computing students are pioneers and inventors. Explore the orgs where they’re pushing boundaries and making connections.
-					a(class='size-21 bold dark' href='/') Explore the orgs 
+					a(class='size-21 bold dark' href='/connect.html') Explore the orgs 
 						i(class='fa fa-arrow-right')

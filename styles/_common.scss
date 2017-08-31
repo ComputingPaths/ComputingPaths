@@ -7,12 +7,12 @@
 	letter-spacing: 0.02em;
 }
 
-a:link, a:visited { 
+a:link, a:visited {
 	color: $textblue;
 	text-decoration: none;
 }
 
-a:link:active, a:visited:active { 
+a:link:active, a:visited:active {
 	color: $darkblue;
 }
 
@@ -54,6 +54,12 @@ a:link:active, a:visited:active {
 
 .size-24 {
 	font-size: 24px;
+}
+
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 @media (max-width: $md) {
@@ -135,7 +141,7 @@ a:link:active, a:visited:active {
 				height: 6px;
 				y: 9px;
 			}
-	
+
 			circle {
 				r: 9px;
 				cy: 12px;
@@ -166,7 +172,7 @@ a:link:active, a:visited:active {
 				height: 5px;
 				y: 6.5px;
 			}
-	
+
 			circle {
 				r: 6.75px;
 				cy: 9px;
@@ -192,6 +198,7 @@ a:link:active, a:visited:active {
 .page-intro {
 	padding-top: 116px;
 	padding-bottom: 116px;
+	line-height: 42px;
 
 	p {
 		margin-bottom: 0;
@@ -206,6 +213,7 @@ a:link:active, a:visited:active {
 
 		p {
 			font-size: 24px;
+			line-height: 36px;
 		}
 	}
 }
@@ -214,9 +222,10 @@ a:link:active, a:visited:active {
 	.page-intro {
 		padding-top: 64px;
 		padding-bottom: 64px;
-	
+
 		p {
 			font-size: 20px;
+			line-height: 30px;
 		}
 	}
 }
@@ -299,13 +308,14 @@ a:link:active, a:visited:active {
 .nice-sidebar {
 	z-index: 1000;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 160px;
 
 	.margin {
 		background: $exlightblue;
 	}
 
-	a {
+	> a {
 		font-size: 18px;
 		font-weight: bold;
 		padding: 19px 24px;
@@ -330,13 +340,15 @@ a:link:active, a:visited:active {
 
 		div {
 			margin: 20px 0 2px 40px;
-			
+
 			li {
 				list-style-type: circle;
 				margin-bottom: 16px;
 				cursor: pointer;
+				padding-left: 0;
+				padding-right: 20px;
 			}
-	
+
 			li.active {
 				list-style-type: disc;
 			}
