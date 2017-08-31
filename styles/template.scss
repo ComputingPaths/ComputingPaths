@@ -1,6 +1,7 @@
 @import 'variables';
 
 nav.navbar {
+	z-index: 9001;
   background-color: $darkblue;
   padding: 0 10% 0 10%;
 
