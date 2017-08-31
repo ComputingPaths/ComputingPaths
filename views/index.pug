@@ -11,7 +11,7 @@ block main
     div(class='container')
       div(class='row')
         h1(class='col-12') Discover your path.
-        h2(class='col-12') Find out how to make computing part of <br> your journey.
+        h2(class='col-12 col-lg-9') Find out how to make computing part of your journey.
   
   div(class='stories section')
     div(class='section-header')
@@ -59,7 +59,7 @@ block main
         
         
   div(class='orgs section')
-    div(class='host')
+    div(class='container')
       h1(class='section-header') Connect
       hr(class='header-bar')
       main
@@ -78,24 +78,24 @@ block main
       a(class='link-btn' href='/') Get involved
       
   div(class='projects section')
-    div(class='host')
+    div(class='container')
       h1(class='section-header') Triton Projects
       hr(class='header-bar')
-      main
-        a(class='prev-proj hidden-sm-down')
-          i(class='fa fa-arrow-left fa-3x')
-        div(id="carouselExampleControls" class="carousel slide")
+      main(class='row')
+        a(class='prev-proj col-md-1 hidden-sm-down')
+          i(class='fa fa-arrow-left')
+        div(id="carouselExampleControls" class="carousel col-md-10 slide")
           div(class="carousel-inner" role="listbox")
             - for (let i = 0; i < 10; i++)
-              article 
+              article
                 img(src='/img/temp1.svg')
                 div
                   h1 Some Student Project
                   h2 Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed.
                   h3 Read more 
                     i(class='fa fa-arrow-right')
-        a(class='next-proj hidden-sm-down')
-          i(class='fa fa-arrow-right fa-3x')
+        a(class='next-proj col-md-1 hidden-sm-down')
+          i(class='fa fa-arrow-right')
       nav
         a(class='prev-proj hidden-md-up')
           i(class='fa fa-arrow-left fa-2x')
@@ -103,20 +103,19 @@ block main
         a(class='next-proj hidden-md-up')
           i(class='fa fa-arrow-right fa-2x')
       footer
-        p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.
         a(class='link-btn' href='/projects.html') Link to projects
       
   div(class='resources section')
     div(class='section-header')
-      h1 Start Exploring
+      h1(class='bold') Start Exploring
       hr
     div(class='container')
       div(class='row')
         div(class='col-md-4 offset-md-1')
-          h1 Events
+          h2(class='bold') Events
           p From hackathons to career fairs, computing students have access to a diverse range of exciting events. Search for events to begin your journey on a computing path.
         div(class='col-md-4 offset-md-2')
-          h1 Facilities
+          h2(class='bold') Facilities
           p UC San Diego enjoys state-of-the art facilities and resources that enrich the computing experience. Discover innovative spaces, tools, and support offered to computing students.
       a(class='link-btn' href=pages[4].link) See the resources
 

@@ -16,19 +16,20 @@ block main
 	div(class='container page-intro')
 		div(class='row')
 			div(class='offset-1 col-10')
-				p Let the student know that there is no one computing path. This is the stories page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+				p Every path through UCSD is unique, and there’s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice.
 			
 	div(class='story-video')
 		div(class='container')
-			iframe(class='col-10 offset-1' src='https://www.youtube.com/embed/AQn31PZg8F8?rel=0&modestbranding=1' frameborder='0' allowfullscreen)
+			div(class='row')
+				iframe(class='col-12 col-lg-10 offset-lg-1' width='560' height='315' src='https://www.youtube.com/embed/AQn31PZg8F8?rel=0&modestbranding=1' frameborder='0' allowfullscreen)
 
 	div(class='main-story container')
 		div(class='row') 
 			h1(class='col-12 size-28 bold') Rachel Keinouz 
 			h2(class='col-12 size-24 light med') Math-Computer Science  |  Class of 2017
 		div(class='row')
-			p(class='col-12 col-md-6 push-md-6 size-24') "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit.”
-			p(class='col-12 col-md-6 pull-md-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
+			p(class='col-12 offset-lg-1 col-lg-5 push-lg-6 size-24 story-quote med') “There were so many times that I felt lost and I didn’t really know what I wanted to do or what my next step should be. And it involved a lot of reaching out to mentors to figure out what the best next step should be. I think what I learned is that you don’t have to have everything figured out and there’s never really a moment that you do have everything figured out, but as long as you are focused on what you can do next… then you’re going to be fine. It’s all going to work out one way or another.”
+			p(class='col-12 col-lg-6 pull-lg-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
 	
 	div(class='more-stories')  
 		div(class='section-header')            
@@ -38,16 +39,16 @@ block main
 			- for(let i = 0; i < stories.length; i++)
 				div(class='row')
 					if (i % 2 === 0)
-						div(class='hidden-sm-down col-sm-3 offset-md-1')
+						div(class='hidden-md-down col-sm-3 offset-lg-1')
 							img(src=stories[i].image)
-					div(class='hidden-md-up col-12' id='center-img')
+					div(class='hidden-lg-up col-12' id='center-img')
 						img(class='mx-auto' src=stories[i].image)
-					div(class='story-content col-12 col-md-5 offset-md-1')
+					div(class='story-content col-12 col-lg-6 offset-lg-1')
 						h2(class='size-20 bold') #{stories[i].name}
 						h3(class='light size-18 nor') #{stories[i].major} | Class of #{stories[i].class}
 						h1(class='size-24 med') "#{stories[i].quote}"
 					if (i % 2 !== 0)
-						div(class='hidden-sm-down col-sm-3 offset-md-1')
+						div(class='hidden-md-down col-sm-3 offset-md-1')
 							img( src=stories[i].image)
  
 	div(class='next-steps')
@@ -57,12 +58,12 @@ block main
 		div(class='container')
 			div(class='row')
 				div(class='col-12 col-md-5 mb-4 mb-md-0')
-					h1(class='bold size-24') Start Your Journey 
-					p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+					h2(class='bold') Start Your Journey 
+					p(class='size-18') There’s no single computing path–UC San Diego offers a diverse range of computing-related majors, from art and music to engineering and science.
 					a(class='size-21 bold dark' href='/') Explore the majors 
 						i(class='fa fa-arrow-right')
 				div(class='col-12 col-md-5 offset-md-2')
-					h1(class='bold size-24') Find Students Like You
-					p(class='size-18') Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.
+					h2(class='bold') Find Students Like You
+					p(class='size-18') Computing students are pioneers and inventors. Explore the orgs where they’re pushing boundaries and making connections.
 					a(class='size-21 bold dark' href='/') Explore the orgs 
 						i(class='fa fa-arrow-right')

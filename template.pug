@@ -16,9 +16,7 @@ html
     block style
 
     script(
-      src='https://code.jquery.com/jquery-3.1.1.slim.min.js'
-      integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n'
-      crossorigin='anonymous')
+      src='https://code.jquery.com/jquery-3.2.1.min.js')
     script(
       src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'
       integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb'
@@ -57,13 +55,19 @@ html
     block main
 
     footer(class='unique')
-      div
-        img(src='/img/logo.png')
-        a(href='/') Home
-        each page in pages
-          a(href=page.link) #{page.name}
-      div
-        each m in majors
-          a(href='/') #{m.name}
-      img(src='/img/logo_ucsd.png')
-    
+      div(class='container-fluid')
+        div(class='row')
+          div(class='col-12 col-sm-6')
+            img(class='brand-cp' src='/img/logo.png')
+          div(class='col-12 col-sm-6')
+            img(class='brand-ucsd' src='/img/logo_ucsd.png')
+
+        div(class='row')
+          div(class='col-12 col-md-4')
+            a(href='/') Home
+              each page in pages
+                a(href=page.link) #{page.name}
+          div(class='col-md-8 hidden-sm-down')
+            each m in majors
+              a(href='/') #{m.name}
+        

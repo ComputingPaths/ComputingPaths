@@ -168,7 +168,8 @@
 			padding: 32px 40px;
 			background: $darkblue;
 
-			a {
+			h3 {
+				display: inline-block;
 				color: white;
 				font-size: 28px;
 				font-weight: bold;
@@ -185,45 +186,50 @@
 		}
 		
 		.map{
-			width: 255px;
-			height:255px;			
-			display: block;
-			background: url('/img/temp1.svg') center no-repeat;
-			background-size: cover;
-		}	
+			img{
+				width: 300px;
+				height:255px;			
+				display: block;
+				width:100%;
+				/*background: url('/img/temp1.svg') center no-repeat;*/
+				/*background-size: cover;*/
+			}	
+		}
 
+/*
 		@media (max-width: $xl) {
 			.map {
-				width: 255px;
-				height:255px;
+				img{
+					width: 100%;
+				}
 			}
 		}
 
 
 		@media (max-width: $lg) {
 			.map {
-				width: 240px;
-				height:240px;
+				img{
+					width: 100%;
+				}
 			}
 		}
 
 		@media (max-width: $md) {
 			.map {
-				width: 690px;
-				height:345px;
+					img{
+						width: 100%;
+				}
 			}
 		}
 
 		@media (max-width: $xs) {
 			.map {
-				width: 510px;
-				height:255px;
+				img{
+					width: 100%;
+				}
 			}
 		}
-
-
-
-
+*/
 
 	}
 

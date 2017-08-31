@@ -3,12 +3,12 @@ extends ../template.pug
 block style
   link(
     rel='stylesheet'
-    href='/css/projects.css'
+      href='/css/projects.css'
   )
-  
+	
 block script
   script(src='/js/projects.js')
-  
+	
 block main
   div(class='page-header')
     svg
@@ -17,7 +17,7 @@ block main
     h1 Triton Projects
       
   div(class='intro-text')
-    p(class='size-28')  This is the projects page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.This is the projects page. 
+    p(class='size-28')  Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.
     
   div(class='intro-prompt')
     h3 Explore what these Tritons have created
@@ -34,7 +34,7 @@ block main
                 li(class='col-4 col-lg-12') #{t}
         div(class='col-lg-9')
           - for(let i = 0; i < projects.length; i++)
-            a(class='filtered' data-toggle='modal' data-target='#modal1')
+            a(class='filtered' data-toggle='modal' data-target='#proj-modal' id='potato')
               div(class='projectcard')
                 img(src='/img/temp3.svg' alt='+')
                 div(class='cardinfo')
@@ -44,59 +44,61 @@ block main
                     each t in projects[i].tags
                       span(class='tag') #{projectTags[t]}
                   i(class='fa fa-expand')
-    
-    div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
+		
+    div(class='modal fade' id='proj-modal' tabindex='-1' role='dialog' aria-hidden='true')
       div(class='modal-dialog' role='document')
 
         div(class='modal-content')
 
           div(class='modal-header')
-            h5(id='exampleModalLongTitle') studyspace
-            button(type='button' class='close' data-dismiss='modal' aria-label='Close')
-              i(class='fa fa-times' aria-hidden='true')
+            h3(id='title' class='project-title bold') studyspace
+            button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") &times;
 
-          div(class='modal-slideshow')
-            a(class='carousel-control-prev' href='#carouselExampleIndicators' data-sl)
-              i(class='fa fa-arrow-left fa-3x')
+          div(class='modal-body')
 
-            div(id="carouselExampleControls" class="carousel slide" data-ride='carousel')
-              ol(class='carousel-indicators')
-                li(data-target='#carouselExampleIndicators' data-slide-to='0' class='active')
-                  i(class='fa fa-circle' aria-hidden='true')
-                li(data-target='#carouselExampleIndicators' data-slide-to='1')
-              div(class="carousel-inner" role="listbox")
-                div(class='carousel-item active')
-                  img(src='/img/temp1.svg')
-                div(class='carousel-item')
-                  img(src='/img/temp1.svg')
-            a(class='carousel-control-next' href='#carouselExampleIndicators' data-sl)
-              i(class='fa fa-arrow-right fa-3x')
+            div(class='container-fluid')
 
-          div(class='row modal-body')
-            div(class='project-description col-6')
-              p.description-title Description
-              p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software 
+              div(class='row slideshow')
+                div(id='proj-carousel' class='carousel slide offset-lg-1 col-lg-10 col-12' data-ride='carousel')
 
-            div(class='project-details')
+                  ol(class='carousel-indicators')
+                    li(data-target='#proj-carousel' data-slide-to='0' class='active')
+                    li(data-target='#proj-carousel' data-slide-to='1')
 
-              div(class='detail-item')
-                p.description-title ORGANIZATION / CLASS CODE
-                p.description CSE 110
+                  div(class="carousel-inner" role="listbox")
+                    div(class='carousel-item active')
+                      img(src='/img/temp1.svg')
+                    div(class='carousel-item')
+                      img(src='/img/temp1.svg')
 
-              div(class='detail-item')
-                p.description-title PROJECT MEMBERS
-                p.description Eric Zhang, ’19
-                p.description Andy Hwang, ’19
-                p.description Andy Hwang, ’19
-                p.description Andy Hwang, ’19
-                p.description Andy Hwang, ’19
+              div(class='row proj-info')
 
-              div(class='detail-item')
-                p.description-title PROJECT TYPE
-                div(class='tags')
-                  div(class='colorbackground') Web Application
+                div(class='project-description col-lg-7')
+                  p.description-title DESCRIPTION
+                  p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem.
 
-              div(class='detail-item')
-                p.description-title MORE INFORMATION
-                a(href='/') Find out more    
-                  i(class='fa fa-arrow-right' aria-hidden='true')
+
+                div(class='project-details offset-lg-1 col-lg-4')
+
+                  div(class='detail-item')
+                    p.description-title ORGANIZATION / CLASS CODE
+                    p.description CSE 110
+
+                  div(class='detail-item')
+                    p.description-title PROJECT MEMBERS
+                    p.description Eric Zhang, ’19
+                    p.description Andy Hwang, ’19
+                    p.description Andy Hwang, ’19
+                    p.description Andy Hwang, ’19
+                    p.description Andy Hwang, ’19
+
+                  div(class='detail-item')
+                    p.description-title PROJECT TYPE
+                    div(class='tags')
+                        div(class='colorbackground') Web Application
+
+                  div(class='detail-item')
+                    p.description-title MORE INFORMATION
+                    a(class='link' href='#') Find out more    
+                      i(class='fa fa-arrow-right')
