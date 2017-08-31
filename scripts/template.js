@@ -1,4 +1,5 @@
-let colors = ['EDABFF', 'ABDBFF', 'FF8585', '50E3C2', 'FFD5AD', 'C2ADFF']
+let colors = ['EDABFF', 'ABDBFF', 'FF8585', 'LightGreen', 'FFD5AD', 'C2ADFF']
+//50E3C2
 let grey = 'C6D1D7';
 
 function initNideSidebar() {
