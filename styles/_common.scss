@@ -176,6 +176,16 @@ a:link:active, a:visited:active {
 		}
 	}
 }
+
+@media (max-width: $sm) {
+	.page-header {
+		padding-left: 15px;
+
+		h1 {
+			margin-left: 0;
+		}
+	}
+}
 // end page header
 
 // page intro
