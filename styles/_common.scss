@@ -262,6 +262,8 @@ a:link:active, a:visited:active {
 
 // nice side bar
 .nice-sidebar {
+	
+	z-index: 9000;
 	position: sticky;
 	top: 80px;
 
@@ -276,15 +278,16 @@ a:link:active, a:visited:active {
 		align-items: center;
 		cursor: pointer;
 		line-height: 21px;
+		border: solid 1px $shadow;
 	}
 
 	ul {
 		background: white;
-		margin-top: 2px;
 		padding: 20px 0 4px 40px;
 		font-size: 16px;
 		font-weight: bold;
 		box-shadow: 0 4px $shadow;
+		border: solid 1px $shadow;
 		
 		li {
 			list-style-type: circle;
