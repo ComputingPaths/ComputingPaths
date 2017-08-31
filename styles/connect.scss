@@ -25,6 +25,7 @@
 			background: $darkblue;
 
 			h3 {
+        background: none;
 				display: inline-block;
 				color: white;
 				font-size: 28px;
@@ -42,7 +43,6 @@
 		}
 
 		.map{
-      background: gold;
 			img{
 				width: 300px;
 				height:255px;
