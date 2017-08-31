@@ -282,7 +282,6 @@ section {
 }
 
 .modal {
-  z-index: 100000;
 }
 
 .modal-dialog {
@@ -291,6 +290,8 @@ section {
 
 .modal-content {
 	overflow: hidden;
+    z-index: 10000;
+    position: initial;
 }
 
 .modal-header {
