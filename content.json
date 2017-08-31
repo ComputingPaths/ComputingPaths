@@ -65,7 +65,7 @@
       "websites": [
         "http://bioinformatics.ucsd.edu/"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/Bioinformatics.jpg",
       "short": "bio"
     },
     {
@@ -79,7 +79,7 @@
       "websites": [
         "http://www.cogsci.ucsd.edu/"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/CognitiveScience.jpg",
       "short": "cog"
     },
     {
@@ -93,7 +93,7 @@
       "websites": [
         "https://cse.ucsd.edu/"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/ComputerScience.jpg",
       "short": "cse"
     },
     {
@@ -108,7 +108,7 @@
       "websites": [
         "http://www.ece.ucsd.edu/"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/ElectricalEngineering.jpg",
       "short": "ece"
     },
     {
@@ -122,7 +122,7 @@
       "websites": [
         "https://math.ucsd.edu/"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/Math-CS.jpg",
       "short": "mcs"
     },
     {
@@ -155,7 +155,7 @@
         "http://musicweb.ucsd.edu/ugrad/ugrad-pages.php?i=103",
         "http://visarts.ucsd.edu/icam-interdisciplinary-computing-and-arts-minor"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/ICAM.jpg",
       "short": "ica"
     },
     {
@@ -169,7 +169,7 @@
       "websites": [
         "http://visarts.ucsd.edu/majors-0"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/SpecDesign.jpg",
       "short": "spc"
     },
     {
@@ -183,7 +183,7 @@
       "websites": [
         "http://jacobsschool.ucsd.edu/mas/dse/"
       ],
-      "image": "/img/temp1.svg",
+      "image": "/img/DataScience.jpg",
       "short": "dat"
     }
   ],
@@ -217,7 +217,7 @@
     {
       "name": "name 1",
       "description": "description 1",
-      "mapImage": "map1img.com",
+      "mapImage": "/img/APM Snap.jpg",
       "mapLink": "map1link",
       "link": "testlink1",
       "tags": [

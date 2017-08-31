@@ -34,7 +34,7 @@ block main
                 li(class='col-4 col-lg-12') #{t}
         div(class='col-lg-9')
           - for(let i = 0; i < projects.length; i++)
-            a(class='filtered' data-toggle='modal' data-target='#modal' id='potato')
+            a(class='filtered' data-toggle='modal' data-target='#proj-modal' id='potato')
               div(class='projectcard')
                 img(src='/img/temp3.svg' alt='+')
                 div(class='cardinfo')
@@ -45,7 +45,7 @@ block main
                       span(class='tag') #{projectTags[t]}
                   i(class='fa fa-expand')
 		
-	div(class='modal fade' id='proj-modal' tabindex='-1' role='dialog' aria-hidden='true')
+    div(class='modal fade' id='proj-modal' tabindex='-1' role='dialog' aria-hidden='true')
       div(class='modal-dialog' role='document')
 
         div(class='modal-content')
