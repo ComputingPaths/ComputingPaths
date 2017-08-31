@@ -81,6 +81,7 @@
 			width: 255px;
 			height: 255px;
 			border-radius: 50%;
+			border: outset 8px $darkblue;
 		}
 
 		.story-content {
@@ -100,7 +101,8 @@
 			h1 {
 				margin-bottom: 32px;
 				order: 1;
-				line-height: 32px;
+				line-height: 1.5;
+				font-weight: 400;
 			}
 		}
 	}
@@ -135,6 +137,7 @@
 			img {
 				width: 210px;
 				height: 210px;
+				border-width: 7px;
 			}
 		}
 	}
@@ -190,7 +193,6 @@
 
 				h1 {
 					order: 3;
-					line-height: 27px;
 					font-size: 20px;
 				}
 			}
@@ -228,10 +230,19 @@
 		}
 	}
 
-	.story-content {
+	.more-stories {
+		.row {
+			img {
+				width: 150px;
+				height: 150px;
+				border-width: 6px;
+			}
 
-		h1 {
-			font-size: 18px;
+			.story-content {
+				h1 {
+					font-size: 18px;
+				}
+			}
 		}
 	}
 
