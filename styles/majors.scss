@@ -1,13 +1,21 @@
 @import 'common';
 
+.pos {
+  position: relative;
+  bottom: 80px;
+}
+
 main {
   padding-top: 80px;
+  padding-bottom: 52px;
   background: $exlightblue;
 
   .major-sidebar {
     @extend .nice-sidebar;
 
     ul {
+      margin-bottom: 64px;
+
       div {
         li {
           list-style-type: none;
@@ -34,54 +42,14 @@ main {
     }
   }
 
-  .major-list-wrapper {
-    > a {
-      display: block;
-      background: white;
-      padding: 20px 0 20px 24px;
-      width: 100%;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    ul {
-      padding: 20px 0 4px 40px;
-      background: white;
-      margin-top: 2px;
-
-      li {
-        list-style-type: none;
-        margin-bottom: 16px;
-
-        a {
-          font-weight: bold;
-          font-size: 16px;
-          color: $textblue;
-        }
-      }
-
-      li:hover:not(.active) {
-        list-style-type: initial;
-        a {
-          color: $darkblue;
-        }
-      }
-
-      li.active {
-        list-style-type: initial;
-        color: $orange;
-        
-        a {
-          color: $orange;
-        }
-      }
-    }
-  }
-
   .major-card {
+    margin-bottom: 64px;
+    box-shadow: 0 4px $shadow;
+
     > h1 {
       padding: 20px 0;
       font-size: 28px;
+      line-height: 33px;
       background: $darkblue;
       color: white;
       font-weight: bold;
@@ -91,24 +59,30 @@ main {
 
     img {
       width: 100%;
-      height: auto;
+      height: 398px;
+      object-fit: cover;
     }
 
     .row {
+      background: white;
       padding: 40px 64px;
 
       p {
+        margin-top: 3px;
         font-size: 16px;
       }
 
       h5 {
         font-size: 13px;
+        line-height: 15px;
         color: $lightblue;
         font-weight: bold;
+        margin-bottom: 12px;
       }
 
       h4, a {
         font-size: 20px;
+        line-height: 26px;
         font-weight: normal;
         margin-bottom: 32px;
         color: $textblue;
@@ -128,6 +102,10 @@ main {
           margin-bottom: 6px;
         }
       }
+    }
+
+    .pos {
+      bottom: 96px;
     }
   }
 }

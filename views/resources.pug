@@ -22,12 +22,12 @@ block main
 
         div(id='res-carousel' class='carousel slide col-md-10' data-ride='carousel')
           div(class='carousel-inner')
-            - for (let i = 0; i < resources.length; i++)
+            - for (let i = 0; i < resourceBanner.length; i++)
               div(class='carousel-item' class=i === 0 ? 'active' : '')
-                a(class='img' src=resources[i].image href=resources[i].link)
-                a(class='caption' href=resources[i].link) #{resources[i].name}
+                a(class='img' src=resourceBanner[i].image href=resourceBanner[i].link)
+                a(class='caption' href=resourceBanner[i].link) #{resourceBanner[i].name}
           div(class='indicator')
-            - for (let i = 0; i < resources.length; i++)
+            - for (let i = 0; i < resourceBanner.length; i++)
               svg
                 circle
 
@@ -48,7 +48,7 @@ block main
           ul(id='tags' class='collapse show')
             div(class='row')
               each t in resourceTags
-                li(class='col-6 col-md-4 col-lg-12') #{t}
+                li(class='col-6 col-md-4 col-lg-12 no-select') #{t}
 
         div(class='col-lg-9')
           - for(let i = 0; i < resources.length; i++)
