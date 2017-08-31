@@ -3,6 +3,7 @@
 nav.navbar {
   background-color: $darkblue;
   padding: 0 10% 0 10%;
+  z-index: 1001;
 
   .navbar-brand {
     margin: 20px 0 20px 0;
