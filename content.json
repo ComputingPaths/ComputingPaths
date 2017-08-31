@@ -217,7 +217,7 @@
     {
       "name": "name 1",
       "description": "description 1",
-      "mapImage": "map1img.com",
+      "mapImage": "/img/APM Snap.jpg",
       "mapLink": "map1link",
       "link": "testlink1",
       "tags": [
