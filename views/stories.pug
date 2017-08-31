@@ -36,8 +36,18 @@ block main
 			h1 More Stories
 			hr
 		div(class='container')
-			- for(let i = 0; i < stories.length; i++)
-				div(class='row')
+		- for(let i = 0; i < stories.length; i++)
+			- var theirRole = 'Class of ' + stories[i].class
+			if (stories[i].role !== undefined)
+				- theirRole = stories[i].role
+			div(class='row')
+				if (stories[i].image === null)
+					div(class='story-content col-lg-10 col-12 offset-lg-1')
+						h2(class='size-20 bold') #{stories[i].name}
+						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+						h1(class='size-20 nor') "#{stories[i].quote}"
+				else
+						
 					if (i % 2 === 0)
 						div(class='hidden-md-down col-sm-3 offset-lg-1')
 							img(src=stories[i].image)
@@ -45,7 +55,7 @@ block main
 						img(class='mx-auto' src=stories[i].image)
 					div(class='story-content col-12 col-lg-6 offset-lg-1')
 						h2(class='size-20 bold') #{stories[i].name}
-						h3(class='light size-18 nor') #{stories[i].major} | Class of #{stories[i].class}
+						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
 						h1(class='size-24 med') "#{stories[i].quote}"
 					if (i % 2 !== 0)
 						div(class='hidden-md-down col-sm-3 offset-md-1')
