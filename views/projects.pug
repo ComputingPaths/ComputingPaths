@@ -34,7 +34,7 @@ block main
                 li(class='col-4 col-lg-12') #{t}
         div(class='col-lg-9')
           - for(let i = 0; i < projects.length; i++)
-            a(class='filtered' data-toggle='modal' data-target='#modal1')
+            a(class='filtered' data-toggle='modal' data-target='#modal' data-projectname='potato')
               div(class='projectcard')
                 img(src='/img/temp3.svg' alt='+')
                 div(class='cardinfo')
@@ -45,13 +45,13 @@ block main
                       span(class='tag') #{projectTags[t]}
                   i(class='fa fa-expand')
     
-    div(class='modal fade' id='modal1' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
+    div(class='modal fade' id='modal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
       div(class='modal-dialog' role='document')
 
-        div(class='modal-content')
+        div(class='modal-content' name='projectname' id='projectid' )
 
           div(class='modal-header')
-            h5(id='exampleModalLongTitle') studyspace
+            h5(id='exampleModalLongTitle') #{projectid}
             button(type='button' class='close' data-dismiss='modal' aria-label='Close')
               i(class='fa fa-times' aria-hidden='true')
 
@@ -73,6 +73,7 @@ block main
               i(class='fa fa-arrow-right fa-3x')
 
           div(class='row modal-body')
+            input(type="text" name="projectinput" id='projectid' value='')
             div(class='project-description col-6')
               p.description-title Description
               p.description For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software 
