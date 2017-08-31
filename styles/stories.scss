@@ -12,10 +12,43 @@
   background: #32D0DE;
 
   iframe {
+    z-index: 2;
     position: relative;
     top: 80px;
     height: 100%;
     width: 920px;
+  }
+}
+
+@media(max-width: $lg) {
+  .story-video {
+    height: 433px;
+
+    iframe {
+      width: 770px;
+    }
+  }
+}
+
+@media(max-width: $md) {
+  .story-video {
+    height: 338px;
+
+    iframe {
+      top: 48px;
+      width: 690px;
+    }
+  }
+}
+
+@media(max-width: $sm) {
+  .story-video {
+    height: 287px;
+
+    iframe {
+      top: 32px;
+      width: 510px;
+    }
   }
 }
 
