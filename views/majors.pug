@@ -30,7 +30,7 @@ block main
           ul(class='collapse show' id='major-list')
             div(class='row')
               each m in majors
-                li(class='col-6 col-md-4 col-lg-12') 
+                li(class='col-6 col-md-4 col-lg-12 no-select') 
                   a(href=`#${m.short}`) #{m.name}
 
         - for (let i = 0; i < majors.length; i++)
@@ -57,4 +57,3 @@ block main
                   each w in majors[i].websites
                     a(href=w) Major Website 
                       i(class='fa fa-arrow-right')
-
