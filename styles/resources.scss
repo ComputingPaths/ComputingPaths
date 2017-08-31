@@ -164,7 +164,7 @@
 		box-shadow: 0 4px $shadow;
 
 		.header {
-			min-height: 255px;
+			/*min-height: 255px;*/
 			padding: 32px 40px;
 			background: $darkblue;
 
@@ -184,11 +184,47 @@
 			}
 		}
 		
-		.map {
+		.map{
+			width: 255px;
+			height:255px;			
 			display: block;
 			background: url('/img/temp1.svg') center no-repeat;
 			background-size: cover;
+		}	
+
+		@media (max-width: $xl) {
+			.map {
+				width: 255px;
+				height:255px;
+			}
 		}
+
+
+		@media (max-width: $lg) {
+			.map {
+				width: 240px;
+				height:240px;
+			}
+		}
+
+		@media (max-width: $md) {
+			.map {
+				width: 690px;
+				height:345px;
+			}
+		}
+
+		@media (max-width: $xs) {
+			.map {
+				width: 510px;
+				height:255px;
+			}
+		}
+
+
+
+
+
 	}
 
 	.text {
