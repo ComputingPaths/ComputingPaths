@@ -57,3 +57,7 @@ block main
                   each w in majors[i].websites
                     a(href=w) Major Website 
                       i(class='fa fa-arrow-right')
+            if(majorExpand[majors[i].short])
+              div(class='row') 
+                div(class='col-7')
+                  h5 SPEC
