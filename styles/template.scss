@@ -110,16 +110,6 @@ nav.navbar {
 footer.unique {
   background: $darkblue;
   padding: 64px 10% 64px 10%;
-  display: flex;
-  justify-content: space-between;
-
-  div:nth-child(1) {
-    flex-grow: 1;
-  }
-
-  div:nth-child(2) {
-    flex-grow: 2;
-  }
 
   a {
     color: white;
@@ -130,5 +120,16 @@ footer.unique {
   img {
     height: 24px;
     margin-bottom: 32px;
+  }
+
+  .brand-ucsd {
+    float: right;
+  }
+
+  @media (max-width: $sm) {
+
+    .brand-ucsd {
+      float: none;
+    }
   }
 }

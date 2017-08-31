@@ -57,13 +57,19 @@ html
     block main
 
     footer(class='unique')
-      div
-        img(src='/img/logo.png')
-        a(href='/') Home
-        each page in pages
-          a(href=page.link) #{page.name}
-      div
-        each m in majors
-          a(href='/') #{m.name}
-      img(src='/img/logo_ucsd.png')
-    
+      div(class='container-fluid')
+        div(class='row')
+          div(class='col-12 col-sm-6')
+            img(class='brand-cp' src='/img/logo.png')
+          div(class='col-12 col-sm-6')
+            img(class='brand-ucsd' src='/img/logo_ucsd.png')
+
+        div(class='row')
+          div(class='col-12 col-md-4')
+            a(href='/') Home
+              each page in pages
+                a(href=page.link) #{page.name}
+          div(class='col-md-8 hidden-sm-down')
+            each m in majors
+              a(href='/') #{m.name}
+        
