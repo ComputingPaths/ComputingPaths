@@ -34,19 +34,17 @@ block main
                 
         div(class='col-lg-9')
           - for(let i = 0; i < orgs.length; i++)
-            - var mapImgPath = resources[i].mapImage
             div(class='res-card row no-gutters filtered')
-              div(class="col-xs-12 col-md-4 map")
-                img(src=orgs[i].orgImage style="object-fit: cover")
-              a(class='flip-on-click col-xs-12 col-md-8 header'  data-toggle='collapse' href=`#res-txt-${i}`)
-                  
+              div(class='col-lg-4')
+                img(src=orgs[i].orgImage)
+              a(class='flip-on-click col-lg-8 header' data-toggle='collapse' href=`#res-txt-${i}`)  
                 h3 #{orgs[i].name}
                   i(class='fa fa-chevron-down')
-                    
                 each t in orgs[i].tags
                   h5(class='tag') #{orgTags[t]}
               div(id=`res-txt-${i}` class='collapse text col-12') 
-                h1 DESCRIPTION
-                p #{orgs[i].description}
-                a Find out more 
-                  i(class='fa fa-arrow-right')
+                div
+                  h1 DESCRIPTION
+                  p #{orgs[i].description}
+                  a Find out more 
+                    i(class='fa fa-arrow-right')
