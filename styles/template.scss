@@ -89,11 +89,21 @@ nav.navbar {
       height: 24px;
     }
 
+    .nav-item {
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+
+      .nav-link {
+        font-size: 18px;
+      }
+    }
+
     .navbar-toggler-right {
       top: 23px;
 
       i {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
