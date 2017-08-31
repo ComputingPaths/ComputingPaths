@@ -212,6 +212,7 @@
       "mapImage": "/img/APM Snap.jpg",
       "mapLink": "map1link",
       "link": "testlink1",
+      "image": "/img/temp1.svg",
       "tags": [
         "as",
         "bs",
@@ -225,6 +226,7 @@
       "mapImage": "map2img.com",
       "mapLink": "map2link",
       "link": "testlink2",
+      "image": "/img/temp1.svg",
       "tags": [
         "eq",
         "sc"
@@ -236,6 +238,7 @@
       "mapImage": "map3img.com",
       "mapLink": "map3link",
       "link": "testlink3",
+      "image": "/img/temp1.svg",
       "tags": [
         "eq",
         "sc",
