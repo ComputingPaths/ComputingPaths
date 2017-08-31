@@ -35,140 +35,84 @@ p {
 }
 
 section {
-	background: $exlightblue;
-	padding-top: 80px;
-	
-	.project-type-wrapper {
-		
-		> a {
-			display: block;
-			background: white;
-			padding: 20px 0 20px 24px;
-			width: 100%;
-			font-weight: bold;
-			font-size: 18px;
-		}
+  background: $exlightblue;
+  padding-top: 80px;
+  
+  a {
+    width: auto;
+    height: auto;
 
-		ul {
-			padding: 20px 0 4px 40px;
-			background: white;
-			margin-top: 2px;
+    .projectcard {
+      display: inline-flex;
+      cursor: pointer;
+      margin-bottom: 32px;
 
-			li {
-				list-style-type: none;
-				margin-bottom: 16px;
+      img {
+        width: 350px;
+        height: 233px;
+        box-shadow: 0 5px 0px $shadow;
+      }
 
-				a {
-					font-weight: bold;
-					font-size: 16px;
-				}
-			}
+      .cardinfo{
+        background: $darkblue;
+        height: 233px;
+        width: 505px;
+        position: relative;
+        padding: 32px 0px 0px 40px;
+        box-shadow: 0 5px 0px $textblue;
 
-			li:hover:not(.active) {
-				list-style-type: initial;
-				a {
-					color: $darkblue;
-				}
-			}
+        p.project-name {
+          font-size: 28px;
+          font-weight: bold;
+          letter-spacing: 0.56px;
+          color: white;
+          line-height: 33px;
+          margin-bottom: 8px;
+        }
 
-			li.active {
-				list-style-type: initial;
-				color: $orange;
-				
-				a {
-					color: $orange;
-				}
-			}
-		}
-	} 
-	
-	a {
-		width: auto;
-		height: auto;
+        p.project-creator {
+          font-size: 20px;
+          letter-spacing: 0.4px;
+          color: white;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
 
-		.projectcard {
-			display: inline-flex;
-			cursor: pointer;
-			margin-bottom: 32px;
-			box-shadow: 0 4px 10px 0 $textblue;
+        i {
+          font-size: 20px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin: 0px 24px 24px 0px;
+          color: white;
+        }
+      }
+    }
+  }
 
-			img {
-				width: 350px;
-				height: 233px;
-			}
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .tags {
+    display: flex;
 
-			.cardinfo{
-				background: $darkblue;
-				height: 233px;
-				width: 505px;
-				position: relative;
-				padding: 32px 0px 0px 40px;
+    .colorbackground {
+      background: #FF8585;
+      border-radius: 50px;
+      text-align: center;
+      width: 154px;
 
-				p.project-name {
-					font-size: 28px;
-					font-weight: bold;
-					letter-spacing: 0.56px;
-					color: white;
-					line-height: 33px;
-					margin-bottom: 8px;
-				}
-
-				p.project-creator {
-					font-size: 20px;
-					letter-spacing: 0.4px;
-					color: white;
-					line-height: 24px;
-					margin-bottom: 20px;
-				}
-
-				i {
-					font-size: 20px;
-					position: absolute;
-					bottom: 0;
-					right: 0;
-					margin: 0px 24px 24px 0px;
-					color: white;
-				}
-			}
-		}
-	}
-	
-	.tags {
-		display: flex;
-
-		.colorbackground {
-			background: #FF8585;
-			border-radius: 50px;
-			text-align: center;
-			width: 154px;
-
-			font-size: 16px;
-			font-weight: bold;
-			color: white;
-		}
-	} 
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
+  } 
 }
 
 @media(max-width: $xl) {
 
   section {
-    .project-type-wrapper {
-
-      > a {
-        padding: 20px 0 20px 24px;
-        font-size: 16px;
-      }
-
-      ul {
-        padding: 20px 0 4px 24px;
-        
-        li {
-          a {
-            font-size: 16px;
-          }
-        }
-      }
-    } 
 
     a {
       .projectcard {
@@ -182,21 +126,6 @@ section {
           height: 213px;
           width: 370px;
         }
-      }
-    }
-
-    .tags {
-      display: flex;
-
-      .colorbackground {
-        background: #FF8585;
-        border-radius: 50px;
-        text-align: center;
-        width: 154px;
-
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
       }
     }
   }
@@ -227,56 +156,10 @@ section {
   section {
     padding-top: 80px;
 
-    .project-type-wrapper {
-      visibility: hidden;
-      
-      > a {
-        display: block;
-        background: white;
-        padding: 20px 0 20px 24px;
-        width: 100%;
-        font-weight: bold;
-        font-size: 18px;
-      }
-
-      ul {
-        padding: 20px 0 4px 40px;
-        background: white;
-        margin-top: 2px;
-
-        li {
-          list-style-type: none;
-          margin-bottom: 16px;
-
-          a {
-            font-weight: bold;
-            font-size: 16px;
-          }
-        }
-
-        li:hover:not(.active) {
-          list-style-type: initial;
-          a {
-            color: $darkblue;
-          }
-        }
-
-        li.active {
-          list-style-type: initial;
-          color: $orange;
-
-          a {
-            color: $orange;
-          }
-        }
-      }
-    } 
-
     a {
 
       .projectcard {
         display: block;
-        box-shadow: 0 4px 10px 0 $textblue;
 
         img {
           width: 690px;
@@ -287,21 +170,6 @@ section {
           height: 216px;
           width: 690px;
         }
-      }
-    }
-
-    .tags {
-      display: flex;
-
-      .colorbackground {
-        background: #FF8585;
-        border-radius: 50px;
-        text-align: center;
-        width: 154px;
-
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
       }
     } 
   }
@@ -333,56 +201,10 @@ section {
   section {
     padding-top: 80px;
 
-    .project-type-wrapper {
-      visibility: hidden;
-      
-      > a {
-        display: block;
-        background: white;
-        padding: 20px 0 20px 24px;
-        width: 100%;
-        font-weight: bold;
-        font-size: 18px;
-      }
-
-      ul {
-        padding: 20px 0 4px 40px;
-        background: white;
-        margin-top: 2px;
-
-        li {
-          list-style-type: none;
-          margin-bottom: 16px;
-
-          a {
-            font-weight: bold;
-            font-size: 16px;
-          }
-        }
-
-        li:hover:not(.active) {
-          list-style-type: initial;
-          a {
-            color: $darkblue;
-          }
-        }
-
-        li.active {
-          list-style-type: initial;
-          color: $orange;
-
-          a {
-            color: $orange;
-          }
-        }
-      }
-    } 
-
     a {
 
       .projectcard {
         display: block;
-        box-shadow: 0 4px 10px 0 $textblue;
 
         img {
           width: 510px;
@@ -408,22 +230,59 @@ section {
         }
       }
     }
-
-    .tags {
-      display: flex;
-
-      .colorbackground {
-        background: #FF8585;
-        border-radius: 50px;
-        text-align: center;
-        width: 154px;
-
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-      }
-    } 
   }
+}
+
+@media(max-width: $sm) {
+
+  .intro-text {
+
+    > p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.36px;
+    }
+  }
+
+  .intro-prompt {
+
+    h3 {
+      font-size: 18px;
+      letter-spacing: 0.36px;
+    }
+  }
+
+  section {
+    padding-top: 60px;
+
+    a {
+      .projectcard {
+
+        img {
+          width: 360px;
+          height: 240px;
+        }
+
+        .cardinfo{
+          height: 170px;
+          width: 360px;
+          
+          p.project-name {
+            font-size: 24px;
+            letter-spacing: 0.48px;
+            line-height: 28px;
+          }
+
+          p.project-creator {
+            font-size: 18px;
+            letter-spacing: 0.36px;
+            line-height: 21px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  } 
 }
 
 .modal-dialog {
