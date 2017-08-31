@@ -39,7 +39,7 @@ block main
           - for(let i = 0; i < projects.length; i++)
             a(class='filtered' data-toggle='modal' data-target='#proj-modal' data-projectName=`${projects[i].name}`)
               div(class='projectcard')
-                img(src='/img/temp3.svg' alt='+')
+                img(src=`/img/projectImages/${projects[i].imageFolder}/1.jpg` alt='+')
                 div(class='cardinfo')
                   p(class='project-name') #{projects[i].name}
                   p(class='project-creator') #{projects[i].organization}
