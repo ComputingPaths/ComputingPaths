@@ -30,6 +30,10 @@ nav.navbar {
     padding-bottom: 0;
   }
 
+  .nav-link:active {
+    color: $orange;
+  }
+
   hr {
     height: 4px;
     background-color: $orange;
