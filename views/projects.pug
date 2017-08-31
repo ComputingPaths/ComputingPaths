@@ -1,104 +1,105 @@
 extends ../template.pug
 
 block style
-	link(
-		rel='stylesheet'
-			href='/css/projects.css'
-	)
+  link(
+    rel='stylesheet'
+      href='/css/projects.css'
+  )
 	
 block script
-	script(src='/js/projects.js')
+  script(src='/js/projects.js')
 	
 block main
-	div(class='page-header')
-		svg(class='hidden-xs-down')
-			rect
-			circle
-		h1 Triton Projects
-			
-	div(class='container page-intro')
-		div(class='row')
-			p(class='col-sm-10 offset-sm-1')  Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.
-		
-	div(class='page-blurb container-fluid')
-		h1 Explore what these Tritons have created
-		
-	section
-		div(class='container')
-			div(class='row align-items-start')
-				div(class='nice-sidebar col-lg-3')
-					div(class='margin')
-					a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Project Types
-						i(class='fa fa-chevron-down')
-					ul(id='tags' class='collapse show')
-						div(class='row')
-							each t in projectTags
-								li(class='col-6 col-md-4 col-lg-12') #{t}
-				div(class='col-lg-9')
-					- for(let i = 0; i < projects.length; i++)
-						a(class='filtered' data-toggle='modal' data-target='#proj-modal' data-projectName=`${projects[i].name}`)
-							div(class='projectcard')
-								img(src='/img/temp3.svg' alt='+')
-								div(class='cardinfo')
-									p(class='project-name') #{projects[i].name}
-									p(class='project-creator') #{projects[i].organization}
-									div(class='tags')
-										each t in projects[i].tags
-											span(class='tag') #{projectTags[t]}
-									i(class='fa fa-expand')
-		
-						div(class='modal fade' id='proj-modal' tabindex='-1' role='dialog' aria-hidden='true')
-							div(class='modal-dialog' role='document')
+  div(class='page-header')
+    svg(class='hidden-xs-down')
+      rect
+      circle
+    h1 Triton Projects
 
-								div(class='modal-content')
+  div(class='container page-intro')
+    div(class='row')
+      p(class='col-sm-10 offset-sm-1')  Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.
 
-									div(class='modal-header')
-										h3(id='title' class='project-title bold') #{projects[i].name}
-										button(type="button" class="close" data-dismiss="modal" aria-label="Close")
-											span(aria-hidden="true") &times;
+  div(class='page-blurb container-fluid')
+    h1 Explore what these Tritons have created
 
-									div(class='modal-body')
+  section
+    div(class='container')
+      div(class='row align-items-start')
+        div(class='nice-sidebar col-lg-3')
+          div(class='margin')
+          a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Project Types
+            i(class='fa fa-chevron-down')
+          ul(id='tags' class='collapse show')
+            div(class='row')
+              each t in projectTags
+                li(class='col-6 col-md-4 col-lg-12') #{t}
+                
+        div(class='col-lg-9')
+          - for(let i = 0; i < projects.length; i++)
+            a(class='filtered' data-toggle='modal' data-target='#proj-modal' data-projectName=`${projects[i].name}`)
+              div(class='projectcard')
+                img(src='/img/temp3.svg' alt='+')
+                div(class='cardinfo')
+                  p(class='project-name') #{projects[i].name}
+                  p(class='project-creator') #{projects[i].organization}
+                  div(class='tags')
+                    each t in projects[i].tags
+                      span(class='tag') #{projectTags[t]}
+                  i(class='fa fa-expand')
 
-										div(class='container-fluid')
+            div(class='modal fade' id='proj-modal' tabindex='-1' role='dialog' aria-hidden='true')
+              div(class='modal-dialog' role='document')
 
-											div(class='row slideshow')
-												div(id='proj-carousel' class='carousel slide offset-lg-1 col-lg-10 col-12' data-ride='carousel')
+                div(class='modal-content')
 
-													ol(class='carousel-indicators')
-														li(data-target='#proj-carousel' data-slide-to='0' class='active')
-														li(data-target='#proj-carousel' data-slide-to='1')
+                  div(class='modal-header')
+                    h3(id='title' class='project-title bold') #{projects[i].name}
+                    button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                      span(aria-hidden="true") &times;
 
-													div(class="carousel-inner" role="listbox")
-														div(class='carousel-item active')
-															img(src='/img/temp1.svg')
-														div(class='carousel-item')
-															img(src='/img/temp1.svg')
+                  div(class='modal-body')
 
-											div(class='row proj-info')
+                    div(class='container-fluid')
 
-												div(class='project-description col-lg-7')
-													p.description-title DESCRIPTION
-													pre
-														p.description #{projects[i].description}
+                      div(class='row slideshow')
+                        div(id='proj-carousel' class='carousel slide offset-lg-1 col-lg-10 col-12' data-ride='carousel')
+
+                          ol(class='carousel-indicators')
+                            li(data-target='#proj-carousel' data-slide-to='0' class='active')
+                            li(data-target='#proj-carousel' data-slide-to='1')
+
+                          div(class="carousel-inner" role="listbox")
+                            div(class='carousel-item active')
+                              img(src='/img/temp1.svg')
+                            div(class='carousel-item')
+                              img(src='/img/temp1.svg')
+
+                      div(class='row proj-info')
+
+                        div(class='project-description col-lg-7')
+                          p.description-title DESCRIPTION
+                          pre
+                            p.description #{projects[i].description}
 
 
-												div(class='project-details offset-lg-1 col-lg-4')
+                        div(class='project-details offset-lg-1 col-lg-4')
 
-													div(class='detail-item')
-														p.description-title ORGANIZATION / CLASS CODE
-														p.description #{projects[i].organization}
+                          div(class='detail-item')
+                            p.description-title ORGANIZATION / CLASS CODE
+                            p.description #{projects[i].organization}
 
-													div(class='detail-item')
-														p.description-title PROJECT MEMBERS
-														- for(let j = 0; j < projects.length; j++)
-															p.description #{projects[i].members[j]}
+                          div(class='detail-item')
+                            p.description-title PROJECT MEMBERS
+                            - for(let j = 0; j < projects.length; j++)
+                              p.description #{projects[i].members[j]}
 
-													div(class='detail-item')
-														p.description-title PROJECT TYPE
-                                                        each t in projects[i].tags
-                                                          span(class='tag') #{projectTags[t]}
+                          div(class='detail-item')
+                              p.description-title PROJECT TYPE
+                              each t in projects[i].tags
+                                span(class='tag') #{projectTags[t]}
 
-													div(class='detail-item')
-														p.description-title MORE INFORMATION
-														a(class='link' href=`${projects[i].link}`) Find out more    
-															i(class='fa fa-arrow-right')
+                          div(class='detail-item')
+                            p.description-title MORE INFORMATION
+                            a(class='link' href=`${projects[i].link}`) Find out more    
+                              i(class='fa fa-arrow-right')
