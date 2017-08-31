@@ -11,6 +11,72 @@
   margin-bottom: 0;
 }
 
+.cards {
+	background: $exlightblue;
+	padding: 80px 0 84px 0;
+
+	.res-card {
+		margin-bottom: 32px;
+		box-shadow: 0 4px $shadow;
+
+		.header {
+			/*min-height: 255px;*/
+			padding: 32px 40px;
+			background: $darkblue;
+
+			h3 {
+				display: inline-block;
+				color: white;
+				font-size: 28px;
+				font-weight: bold;
+				margin-bottom: 20px;
+				display: flex;
+				cursor: pointer;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			i {
+				color: white;
+			}
+		}
+
+		.map{
+      background: gold;
+			img{
+				width: 300px;
+				height:255px;
+				display: block;
+				width:100%;
+				/*background: url('/img/temp1.svg') center no-repeat;*/
+				/*background-size: cover;*/
+			}
+		}
+  }
+
+	.text {
+		padding: 40px 64px;
+		background: white;
+
+		h1 {
+			font-size: 13px;
+			font-weight: bold;
+		}
+
+		p {
+			margin-bottom: 24px;
+		}
+
+		a {
+			font-weight: bold;
+
+			i {
+				color: $orange;
+			}
+		}
+	}
+}
+
 @media (max-width: $lg) {
   .orgs-banner {
     height: 96px;

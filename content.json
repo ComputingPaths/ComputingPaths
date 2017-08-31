@@ -292,5 +292,43 @@
     "da": "Datamining",
     "re": "Research",
     "ga": "Games"
+  },
+  "orgs": [
+    {
+      "name": "org1",
+      "description": "description1",
+      "orgImage": "img/temp1.svg",
+      "link": "testlink1",
+      "tags": ["ad"]
+    },
+    {
+      "name": "org2",
+      "description": "description2",
+      "orgImage": "img/temp1.svg",
+      "link": "testlink2",
+      "tags": [
+        "ad",
+        "cs",
+        "en",
+        "ms"
+      ]
+    },
+    {
+      "name": "org3",
+      "description": "description3",
+      "orgImage": "img/temp1.svg",
+      "link": "testlink3",
+      "tags": [
+        "en",
+        "ad",
+        "ms"
+      ]
+    }
+  ],
+  "orgTags": {
+    "ad": "Arts & Design",
+    "cs": "Computer Science",
+    "en": "Engineering",
+    "ms": "Math & Science"
   }
 }
