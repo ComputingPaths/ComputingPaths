@@ -51,19 +51,17 @@ block main
 
         div(class='col-lg-9')
           - for(let i = 0; i < resources.length; i++)
-            - var mapImgPath = resources[i].mapImage
             div(class='res-card row no-gutters filtered')
               a(href=resources[i].mapLink class="col-xs-12 col-md-4 map") 
-                img(src=resources[i].mapImage style="object-fit: cover")
-              a(class='flip-on-click col-xs-12 col-md-8 header'  data-toggle='collapse' href=`#res-txt-${i}`)
-                  
+                img(src=resources[i].mapImage style="")
+              a(class='flip-on-click col-xs-12 col-md-8 header' data-toggle='collapse' href=`#res-txt-${i}`)
                 h3 #{resources[i].name}
                   i(class='fa fa-chevron-down')
-                
                 each t in resources[i].tags
                   h5(class='tag') #{resourceTags[t]}
-              div(id=`res-txt-${i}` class='collapse text col-12') 
-                h1 DESCRIPTION
-                p #{resources[i].description}
-                a Find out more 
-                  i(class='fa fa-arrow-right')
+              div(id=`res-txt-${i}` class='collapse text col-12')
+                div
+                  h1 DESCRIPTION
+                  p #{resources[i].description}
+                  a Find out more 
+                    i(class='fa fa-arrow-right')

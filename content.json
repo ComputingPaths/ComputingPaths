@@ -209,7 +209,7 @@
     {
       "name": "name 1",
       "description": "description 1",
-      "mapImage": "/img/APM Snap.jpg",
+      "mapImage": "/img/temp1.svg",
       "mapLink": "map1link",
       "link": "testlink1",
       "image": "/img/temp1.svg",
@@ -223,7 +223,7 @@
     {
       "name": "name 2",
       "description": "description 2",
-      "mapImage": "map2img.com",
+      "mapImage": "/img/temp1.svg",
       "mapLink": "map2link",
       "link": "testlink2",
       "image": "/img/temp1.svg",
@@ -235,7 +235,7 @@
     {
       "name": "name 3",
       "description": "description 3",
-      "mapImage": "map3img.com",
+      "mapImage": "/img/temp1.svg",
       "mapLink": "map3link",
       "link": "testlink3",
       "image": "/img/temp1.svg",
