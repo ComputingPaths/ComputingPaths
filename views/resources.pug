@@ -78,13 +78,14 @@ block main
 						- var mapImgPath = resources[i].mapImage
 						div(class='res-card row no-gutters filtered')
 							a(href=resources[i].mapLink class="col-xs-12 col-md-4 map") 
-								img(src=resources[i].mapImage style="object-fit: cover;")
-							div(class='col-xs-12 col-md-8 header')
-								a(class='flip-on-click' data-toggle='collapse' href=`#res-txt-${i}`) #{resources[i].name}
+								img(src=resources[i].mapImage style="object-fit: cover")
+							a(class='flip-on-click col-xs-12 col-md-8 header'  data-toggle='collapse' href=`#res-txt-${i}`)
+									
+								h3 #{resources[i].name}
 									i(class='fa fa-chevron-down')
-								div 
-									each t in resources[i].tags
-										span(class='tag') #{resourceTags[t]}
+								
+								each t in resources[i].tags
+									h5(class='tag') #{resourceTags[t]}
 							div(id=`res-txt-${i}` class='collapse text col-12') 
 								h1 DESCRIPTION
 								p #{resources[i].description}
