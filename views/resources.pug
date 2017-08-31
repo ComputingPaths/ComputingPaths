@@ -42,19 +42,20 @@ block main
     div(class='container')
       div(class='row align-items-start')
         div(class='nice-sidebar col-lg-3')
+          div(class='margin')
           a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Resource Types
             i(class='fa fa-chevron-down')
           ul(id='tags' class='collapse show')
             div(class='row no-gutters')
               each t in resourceTags
-                li(class='col-4 col-lg-12') #{t}
+                li(class='col-6 col-md-4 col-lg-12') #{t}
 
         div(class='col-lg-9')
           - for(let i = 0; i < resources.length; i++)
             div(class='res-card row no-gutters filtered')
-              a(href=resources[i].mapLink class="col-xs-12 col-md-4 map") 
+              a(href=resources[i].mapLink class="col-lg-4 map") 
                 img(src=resources[i].mapImage style="")
-              a(class='flip-on-click col-xs-12 col-md-8 header' data-toggle='collapse' href=`#res-txt-${i}`)
+              a(class='flip-on-click col-lg-8 header' data-toggle='collapse' href=`#res-txt-${i}`)
                 h3 #{resources[i].name}
                   i(class='fa fa-chevron-down')
                 each t in resources[i].tags

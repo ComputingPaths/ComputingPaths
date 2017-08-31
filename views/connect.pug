@@ -8,28 +8,29 @@ block script
 
 block main
   div(class='page-header')
-    svg
+    svg(class='hidden-xs-down')
       rect
       circle
     h1 Student Organizations
     
   div(class='container page-intro')
     div(class='row')
-      p(class='col-10 offset-1') Student organizations allow for extracurricular experience, utilizing and extending skills imparted in computing courses. These groups demonstrate creative computing efforts by channeling the collaborative spirit of UC San Diego.
+      p(class='col-12 col-sm-10 offset-sm-1') Student organizations allow for extracurricular experience, utilizing and extending skills imparted in computing courses. These groups demonstrate creative computing efforts by channeling the collaborative spirit of UC San Diego.
       
-  div(class='page-blurb')
+  div(class='page-blurb container-fluid')
     h1 Explore these orgs
   
   div(class='cards')
     div(class='container')
       div(class='row align-items-start')
         div(class='nice-sidebar col-lg-3')
+          div(class='margin')
           a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Tags
             i(class='fa fa-chevron-down')
           ul(id='tags' class='collapse show')
             div(class='row no-gutters')
               each t in orgTags
-                li(class='col-4 col-lg-12') #{t}
+                li(class='col-6 col-md-4 col-lg-12') #{t}
                 
         div(class='col-lg-9')
           - for(let i = 0; i < orgs.length; i++)

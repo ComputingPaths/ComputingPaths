@@ -6,283 +6,201 @@ p {
 	margin-bottom: 0px;
 }
 
-.intro-text {
-	justify-content: center;
-	margin: 116px 18% 160px 18%;
-	
-	> p {
-		color: $textblue;
-		font-size: 28px;
-		cursor: default;
-		height: 162px;
-	}
-}
-
-.intro-prompt {
-	height: 128px;
-	background: $aquablue;
-	display: flex;
-	justify-content: center;
-	
-	h3 {
-		padding-top: 41px;
-		font-size: 36px;
-		letter-spacing: 0.72px;
-		color: white;
-		cursor: default;
-	}
-}
-
 section {
-  background: $exlightblue;
-  padding-top: 80px;
-  
-  a {
-    width: auto;
-    height: auto;
+	background: $exlightblue;
+	padding-top: 80px;
+	
+	a {
+		width: auto;
+		height: auto;
 
-    .projectcard {
-      display: inline-flex;
-      cursor: pointer;
-      margin-bottom: 32px;
+		.projectcard {
+			display: inline-flex;
+			cursor: pointer;
+			margin-bottom: 32px;
 
-      img {
-        width: 350px;
-        height: 233px;
-        box-shadow: 0 5px 0px $shadow;
-      }
+			img {
+				width: 350px;
+				height: 233px;
+				box-shadow: 0 5px 0px $shadow;
+			}
 
-      .cardinfo{
-        background: $darkblue;
-        height: 233px;
-        width: 505px;
-        position: relative;
-        padding: 32px 0px 0px 40px;
-        box-shadow: 0 5px 0px $textblue;
+			.cardinfo{
+				background: $darkblue;
+				height: 233px;
+				width: 505px;
+				position: relative;
+				padding: 32px 0px 0px 40px;
+				box-shadow: 0 5px 0px $textblue;
 
-        p.project-name {
-          font-size: 28px;
-          font-weight: bold;
-          letter-spacing: 0.56px;
-          color: white;
-          line-height: 33px;
-          margin-bottom: 8px;
-        }
+				p.project-name {
+					font-size: 28px;
+					font-weight: bold;
+					letter-spacing: 0.56px;
+					color: white;
+					line-height: 33px;
+					margin-bottom: 8px;
+				}
 
-        p.project-creator {
-          font-size: 20px;
-          letter-spacing: 0.4px;
-          color: white;
-          line-height: 24px;
-          margin-bottom: 20px;
-        }
+				p.project-creator {
+					font-size: 20px;
+					letter-spacing: 0.4px;
+					color: white;
+					line-height: 24px;
+					margin-bottom: 20px;
+				}
 
-        i {
-          font-size: 20px;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          margin: 0px 24px 24px 0px;
-          color: white;
-        }
-      }
-    }
-  }
+				i {
+					font-size: 20px;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					margin: 0px 24px 24px 0px;
+					color: white;
+				}
+			}
+		}
+	}
 
-  a:hover {
-    text-decoration: none;
-  }
-  
-  .tags {
-    display: flex;
+	a:hover {
+		text-decoration: none;
+	}
+	
+	.tags {
+		display: flex;
 
-    .colorbackground {
-      background: #FF8585;
-      border-radius: 50px;
-      text-align: center;
-      width: 154px;
+		.colorbackground {
+			background: #FF8585;
+			border-radius: 50px;
+			text-align: center;
+			width: 154px;
 
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-    }
-  } 
+			font-size: 16px;
+			font-weight: bold;
+			color: white;
+		}
+	} 
 }
 
 @media(max-width: $xl) {
 
-  section {
+	section {
 
-    a {
-      .projectcard {
-        
-        img {
-          width: 320px;
-          height: 213px;
-        }
+		a {
+			.projectcard {
+				
+				img {
+					width: 320px;
+					height: 213px;
+				}
 
-        .cardinfo{
-          height: 213px;
-          width: 370px;
-        }
-      }
-    }
-  }
+				.cardinfo{
+					height: 213px;
+					width: 370px;
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: $lg) {
-  
-  .intro-text {
-    margin: 96px 18% 128px 18%;
 
-    > p {
-      letter-spacing: 0.56px;
-    }
-  }
+	section {
+		padding-top: 80px;
 
-  .intro-prompt {
-    height: 96px;
+		a {
 
-    h3 {
-      padding-top: 30px;
-      font-size: 28px;
-      letter-spacing: 0.56px;
-      line-height: 33px;
-    }
-  }
-  
-  section {
-    padding-top: 80px;
+			.projectcard {
+				display: block;
 
-    a {
+				img {
+					width: 690px;
+					height: 460px;
+				}
 
-      .projectcard {
-        display: block;
-
-        img {
-          width: 690px;
-          height: 460px;
-        }
-
-        .cardinfo{
-          height: 216px;
-          width: 690px;
-        }
-      }
-    } 
-  }
+				.cardinfo{
+					height: 216px;
+					width: 690px;
+				}
+			}
+		} 
+	}
 }
 
 @media(max-width: $md) {
 
-  .intro-text {
-    margin: 67px 18% 78px 18%;
+	section {
+		padding-top: 80px;
 
-    > p {
-      font-size: 20px;
-      letter-spacing: 0.4px;
-      height: 120px;
-    }
-  }
+		a {
 
-  .intro-prompt {
-    height: 72px;
+			.projectcard {
+				display: block;
 
-    h3 {
-      padding-top: 22px;
-      font-size: 20px;
-      letter-spacing: 0.4px;
-    }
-  }
+				img {
+					width: 510px;
+					height: 340px;
+				}
 
-  section {
-    padding-top: 80px;
+				.cardinfo{
+					height: 216px;
+					width: 510px;
+					
+					p.project-name {
+						font-size: 24px;
+						letter-spacing: 0.48px;
+						line-height: 28px;
+					}
 
-    a {
-
-      .projectcard {
-        display: block;
-
-        img {
-          width: 510px;
-          height: 340px;
-        }
-
-        .cardinfo{
-          height: 216px;
-          width: 510px;
-          
-          p.project-name {
-            font-size: 24px;
-            letter-spacing: 0.48px;
-            line-height: 28px;
-          }
-
-          p.project-creator {
-            font-size: 18px;
-            letter-spacing: 0.36px;
-            line-height: 21px;
-            margin-bottom: 16px;
-          }
-        }
-      }
-    }
-  }
+					p.project-creator {
+						font-size: 18px;
+						letter-spacing: 0.36px;
+						line-height: 21px;
+						margin-bottom: 16px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: $sm) {
 
-  .intro-text {
+	section {
+		padding-top: 60px;
 
-    > p {
-      font-size: 18px;
-      letter-spacing: 0.36px;
-    }
-  }
+		a {
+			.projectcard {
 
-  .intro-prompt {
+				img {
+					width: 360px;
+					height: 240px;
+				}
 
-    h3 {
-      font-size: 18px;
-      letter-spacing: 0.36px;
-    }
-  }
+				.cardinfo{
+					height: 170px;
+					width: 360px;
+					
+					p.project-name {
+						font-size: 24px;
+						letter-spacing: 0.48px;
+						line-height: 28px;
+					}
 
-  section {
-    padding-top: 60px;
-
-    a {
-      .projectcard {
-
-        img {
-          width: 360px;
-          height: 240px;
-        }
-
-        .cardinfo{
-          height: 170px;
-          width: 360px;
-          
-          p.project-name {
-            font-size: 24px;
-            letter-spacing: 0.48px;
-            line-height: 28px;
-          }
-
-          p.project-creator {
-            font-size: 18px;
-            letter-spacing: 0.36px;
-            line-height: 21px;
-            margin-bottom: 16px;
-          }
-        }
-      }
-    }
-  } 
+					p.project-creator {
+						font-size: 18px;
+						letter-spacing: 0.36px;
+						line-height: 21px;
+						margin-bottom: 16px;
+					}
+				}
+			}
+		}
+	} 
 }
 
 .modal {
-  z-index: 100000;
+	z-index: 100000;
 }
 
 .modal-dialog {
@@ -366,7 +284,10 @@ section {
 
 .project-description {
 	margin-bottom: 0;
-
+  
+    pre {
+      white-space: pre-wrap;
+    }
 	.description {
 		font-size: 16px;
 		margin-bottom: 16px;

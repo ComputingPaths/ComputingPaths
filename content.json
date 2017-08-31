@@ -259,7 +259,7 @@
     {
       "name": "me-mo",
       "organization": "Personal Project",
-      "description": "For the course COGS 120 (Interaction Design) with Professor Philip Guo, students develop a quarter-long project where they design and develop a mobile application within a given premise. In response to the topic Visualizing and Interacting with Histories, Tori Duong (‘18), Melissa Ngu (‘17), and Ed Ngai (‘17) wondered how they might help people represent and interact with histories in a visual way. Their solution was “me-mo”, a personal traveling app that helps users keep track of places they’ve been to or want to visit in the future. The team of three approached the project by first studying the needs of users and using storyboards to illustrate the different personas and scenarios in which their app would be used. Working with criticism and review from their classmates, the team went on to rapid prototyping and developing low-fidelity wireframes which were then tested on users. Their final project incorporates a wide array of techniques and insight gained from the COGS 120 course. The COGS 120 (Interaction Design) course is structured through weekly skill-building assignments and regular small design studio sessions designed to foster constructive conversations around each team’s progress throughout the quarter. ",
+      "description": "Cognitive Science students develop a mobile personal travelling app to document their travels. \n\nFor the course COGS 120 (Interaction Design) with Professor Philip Guo, students develop a quarter-long project where they design and develop a mobile application within a given premise. In response to the topic Visualizing and Interacting with Histories, Tori Duong (‘18), Melissa Ngu (‘17), and Ed Ngai (‘17) wondered how they might help people represent and interact with histories in a visual way. Their solution was “me-mo”, a personal traveling app that helps users keep track of places they’ve been to or want to visit in the future. The team of three approached the project by first studying the needs of users and using storyboards to illustrate the different personas and scenarios in which their app would be used. Working with criticism and review from their classmates, the team went on to rapid prototyping and developing low-fidelity wireframes which were then tested on users. Their final project incorporates a wide array of techniques and insight gained from the COGS 120 course. \n\nThe COGS 120 (Interaction Design) course is structured through weekly skill-building assignments and regular small design studio sessions designed to foster constructive conversations around each team’s progress throughout the quarter. ",
       "members": [
         "Tori Duong",
         "Melissa Ngu",
@@ -271,9 +271,18 @@
     {
       "name": "Studyspace.me",
       "organization": "CSE 110",
-      "description": "For the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem.",
+      "description": "Computer Science students develop a casual social platform for studying, collaboration, and meetings. \n\nFor the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem.\n\nAs their solution, the Studyspace team developed a website that connects students with peers and instructors instantly via video and text chat. Through the application, classmates can collaborate in course-specific channels to tackle challenging topics, ask questions, and prepare for exams. The website provides a multifaceted digital workspace that can host a range of activities, like TA office hours, group study sessions, and even a lounge area where students can share music and chat.\n\nThe project boasts a mix of techniques and backend software implementations, including Express.js, Firebase, MongoDB, and PeerJS. Studyspace also incorporates creative frontend and visual design features like alternate app color schemes and day/night modes that ensure the site is easy on the eyes for long periods of time. \n\nThe CSE 110 (Software Engineering) course focuses on an introduction to software development and engineering methods, including specification, design, implementation, testing, and process, as well as an emphasis on team development, agile methods, and use of tools as IDE's, version control, and test harnesses.",
       "members": [
-        "Eric Zhang, Isaac Wang, Andy Hwang, Gates Zeng, Michael Youssef, Saurabh Kulkarni, Anish Sinha, Luke Thomas, Zaki Siddiqui, Kent Vuong"
+        "Eric Zhang", 
+        "Isaac Wang",
+        "Andy Hwang", 
+        "Gates Zeng",
+        "Michael Youssef",
+        "Saurabh Kulkarni",
+        "Anish Sinha",
+        "Luke Thomas", 
+        "Zaki Siddiqui", 
+        "Kent Vuong"
       ],
       "link": "https://www.studyspace.me/",
       "tags": ["wa"]
@@ -281,12 +290,68 @@
     {
       "name": "KAi Human Robot Arm",
       "organization": "Divergent Engineering",
-      "description": "The team has programmed KAi to be autonomous with certain preset hand signs, such as the peace sign. KAi is even able to play a game of rock-paper-scissors with the user motioning out the game’s commonly used hand signs. Using the newly developed muscle sensors, which allows user muscle movement to be recorded by the Arduino,  the team plans to implement a glove-like mechanism to control the fingers.",
+      "description": "Engineering students craft a humanoid robot hand with the help of an Arduino microcontroller. \n\nKAi is a human robot based on the open source humanoid robot, “Inmoov”. The Divergent Engineering team successfully built an operational arm with five human-like fingers controlled using five flex sensors. The arm is controlled by an Arduino Uno wired to several potentiometers that recreate the motion of human hands with animatronic “joints”.\n\nThe team has programmed KAi to be autonomous with certain preset hand signs, such as the peace sign. KAi is even able to play a game of rock-paper-scissors with the user motioning out the game’s commonly used hand signs. Using the newly developed muscle sensors, which allows user muscle movement to be recorded by the Arduino,  the team plans to implement a glove-like mechanism to control the fingers.",
       "members": [
         "Alex Phan"
       ],
       "link": "http://divergentengineering.weebly.com/kai-human-robot.html",
       "tags": ["ar"]
+    },
+    {
+      "name": "California Micromouse Competition",
+      "organization": "IEEE",
+      "description": "CAMM is a collegiate engineering competition where teams compete to create the best maze-solving robots. \n\nThe Micromouse competition has been around since its introduction by IEEE in 1977, and since 2006 we have been working on our own Micromouse projects here in UC San Diego to compete with other schools. The competition featured a 16x16 grid maze and was led by a wall-following robot-mouse, with objective to solve the maze as fast as possible without outside assistant or human control. To meet with popular demand, since 2011 we have hosted our own competition called the California Micromouse Competition (CAMM) at UC San Diego. Every year, IEEE at UC San Diego receives more than 200 applications and are able to sponsor 40 UC San Diego students to participate in the Micromouse Project, and we also have multiple schools from the west coast attending our competition.\n\nIn 2016, more than half of the awards at CAMM Competition was won by UCSD teams. They are: 2nd Place (Kevin Tain), Most Cells Traversed (Will Bui, Austin Hermida, Jocelyn Tran, Achint Singh, Andy Zhang), Design Award (Javier Urquizu, Eddie Calva, Christopher Lew, Nahoon Hwang), and Judge’s Favorite (Fengjunyan Li, Austin Xiao, Haoran Wang, Zhouhang Shao, Haocheng Liang). This project is an opportunity for students to learn and apply various hands-on skills critical for electrical engineers and computer scientists, including EagleCAD, digital signal processing, and microcontroller programming. Other than the technical skills, it is equally important for students to develop collaboration and research skills to help them along the way working in a competitive environment.",
+      "members": [
+      ],
+      "link": "http://micromouseusa.com/",
+      "tags": ["ar"]
+    },
+    {
+      "name": "Endless",
+      "organization": "Personal Project",
+      "description": "Endless is a looping, psychological videogame developed in the Computer Programming for the Arts course.\n\nEndless is a looping, psychological videogame developed for the course VIS 141A (Computer Programming for the Arts I) by Interdisciplinary Computing & the Arts student Oliver Engel (‘18). Using the Unity 3D engine, a series of basic puzzles are presented to the player, who is given a time limit to complete each. Upon completing the series of puzzles, the player is thrown back to the first puzzle, and finds that the controls and perspective have been altered, causing the puzzle to increase in difficulty. Each successive loop continues to distort the player’s experience, activating swirling walls of music and overwhelming sensory information as the game progresses. The game acts as a test of endurance in the face of information saturation and only rewards the user with a high score, depending on the amount of loops completed.\n\nThe game was completed with techniques and skills taught in the project-based VIS 141A course under Professor Brett Stalbaum, which allows students to gain API fluency through planning and coding software or software mediated art projects. In particular, this game was programmed with the C++ language and designed in Unity 3D.",
+      "members": [
+        "Oliver Engel"
+      ],
+      "link": "",
+      "tags": ["ga"]
+    },
+    {
+      "name": "Potholes in San Diego",
+      "organization": "",
+      "description": "Working with immense amounts of data, a team of cognitive science students tackle the growing pothole problem in San Diego.\n\n“People have become so desensitized to potholes that their frustration with them has become an everyday routine. For the safety of people and their cars, we asked, what approaches can be taken towards increasing the efficiency of pothole repair? And where should San Diego be allocating their pothole workers and resources?”\n\nThose were the questions asked by a team of students taking the COGS 108 (Data Science in Practice) course. Working with immense amounts of public data, the team first generated visual heat maps of San Diego potholes with the help of the ArcGIS program. They then compared pothole data with a range of other conditions, including the presence of bus stops, parking meters, and population. Using statistical algorithms, computer programming languages, and industry-standard software, the team was able to analyze the complex relations between all of the factors and develop recommendations for how the city of San Diego might begin to solve their issues with potholes. The project demonstrates the practicality of a computing-based approach in data science.",
+      "members": [
+        "Lee Anne Mercado",
+        "Maggie Chan",
+        "Tim Lee",
+        "Vinh Doan",
+        "Young Jin Yun"
+      ],
+      "link": "https://github.com/tjl014/Projects/blob/master/Potholes%20in%20San%20Diego.ipynb",
+      "tags": ["da"]
+    },
+    {
+      "name": "Arduino Pong",
+      "organization": "2017 H.A.R.D. Hack",
+      "description": "The Arduino Pong project, created during the 2017 H.A.R.D. Hack at UCSD,  is a modern take on the classic game, Pong.\n\nThe game is designed to be a single player Pong game where the user faces the upper edge of the screen, a randomly generated horizontal wall, and a pong ball with gradually increasing speed. The user must maneuver a small platform, the paddle, to prevent the moving pong ball from passing the lower edge of the screen.\n\nThe screen is split in half where the left side of the display is the actual game, while the right side is a score tracker. The score can be arbitrarily set to determine a winner, for example, the team normally tests the game with a set score of 15.\n\nThe project was built using an Arduino Uno with 1 output and 1 input. For the output, the team daisy chained four 8x8 LED matrices to create a 64x64 grid of red LEDs to create the display screen for the player. For the input, the player uses a traditional joystick, which controls the paddle.",
+      "members": [
+        "Austin Hermida",  
+        "Eric Ho",
+        "Jeffry Jaman"
+      ],
+      "link": "https://www.youtube.com/watch?v=3nQwyJF6FP8&feature=youtu.be",
+      "tags": ["ar"]
+    },
+    {
+      "name": "",
+      "organization": "",
+      "description": "",
+      "members": [
+        "",  
+        ""
+      ],
+      "link": "",
+      "tags": [""]
     }
   ],
   "projectTags": {
