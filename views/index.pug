@@ -42,7 +42,8 @@ block main
                 li #{majors[i].name}
           a(class='link-btn hidden-md-down' href=pages[1].link) Link to all the majors
         main(class='col-lg-7')
-          img(src='/img/temp1.svg' class='img-fluid')   
+          each m in majors
+            img(src=m.image class='img-fluid')   
           div
             article
               h1
@@ -118,5 +119,3 @@ block main
           h2(class='bold') Facilities
           p UC San Diego enjoys state-of-the art facilities and resources that enrich the computing experience. Discover innovative spaces, tools, and support offered to computing students.
       a(class='link-btn' href=pages[4].link) See the resources
-
-
