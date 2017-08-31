@@ -63,7 +63,7 @@ main {
       object-fit: cover;
     }
 
-    .row {
+    .text {
       background: white;
       padding: 40px 64px;
 
@@ -106,6 +106,78 @@ main {
 
     .pos {
       bottom: 96px;
+    }
+  }
+}
+
+@media (max-width: $xl) {
+  main {
+    .major-card {
+      img {
+        height: 308px;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  main {
+    padding-top: 33px;
+    padding-bottom: 32px;
+
+    .major-sidebar ul {
+      margin-bottom: 30px;
+    }
+
+    .major-card {
+      margin-bottom: 48px; 
+
+      .text {
+        padding: 40px 48px;
+      }
+
+      img {
+        height: 345px;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  main {
+    padding-top: 0;
+    padding-bottom: 12px;
+
+    .major-card {
+      margin-bottom: 32px; 
+
+      .text {
+        padding: 32px 40px;
+
+        h5 {
+          font-size: 12px;
+          line-height: 14px;
+          margin-bottom: 10px;
+        }
+
+        h4, a {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 24px;
+        }
+
+        ul {
+          margin-bottom: 24px;
+
+          h4, a {
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      img {
+        height: 255px;
+      }
     }
   }
 }
