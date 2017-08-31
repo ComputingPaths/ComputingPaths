@@ -9,6 +9,11 @@
     display: flex;
     align-items: center;
 
+    .prev-proj, .next-proj {
+      font-size: 3em;
+    }
+
+    /*
     a {
       position: relative;
       width: 0;
@@ -20,6 +25,13 @@
 
     a:nth-of-type(2) {
       left: 50px;
+    }
+    */
+
+    @media (max-width: $md) {
+      .prev-proj, .next-proj {
+        font-size: 2em;
+      }
     }
 
     .carousel-item.active {
@@ -107,6 +119,8 @@
     margin: 48px 0;
 
     ul {
+      padding: 0;
+
       i {
         color: $textblue;
         font-size: 10px;

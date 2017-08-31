@@ -55,6 +55,13 @@ a:link:active, a:visited:active {
 .size-24 {
 	font-size: 24px;
 }
+
+@media (max-width: $md) {
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.5;
+	}
+}
+
 // end text styles
 
 // page header
@@ -89,6 +96,7 @@ a:link:active, a:visited:active {
 		margin: 0 0 0 16px;
 		font-size: 56px;
 		font-weight: bold;
+		line-height: 66px;
 	}
 }
 
@@ -115,6 +123,7 @@ a:link:active, a:visited:active {
 		h1 {
 			font-size: 36px;
 			margin-left: 12px;
+			line-height: 42px;
 		}
 
 		svg {
@@ -144,6 +153,7 @@ a:link:active, a:visited:active {
 
 		h1 {
 			font-size: 28px;
+			line-height: 33px;
 			margin-left: 6px;
 		}
 
@@ -170,7 +180,8 @@ a:link:active, a:visited:active {
 
 // page intro
 .page-intro {
-	padding: 116px 0;
+	padding-top: 116px;
+	padding-bottom: 116px;
 
 	p {
 		margin-bottom: 0;
@@ -180,7 +191,8 @@ a:link:active, a:visited:active {
 
 @media(max-width: $lg) {
 	.page-intro {
-		padding: 96px 0;
+		padding-top: 96px;
+		padding-bottom: 96px;
 
 		p {
 			font-size: 24px;
@@ -190,7 +202,8 @@ a:link:active, a:visited:active {
 
 @media(max-width: $md) {
 	.page-intro {
-		padding: 64px 0;
+		padding-top: 64px;
+		padding-bottom: 64px;
 	
 		p {
 			font-size: 20px;
@@ -232,38 +245,50 @@ a:link:active, a:visited:active {
 // end section header
 
 // page banner
-.page-banner {
-  height: 128px;
-  background: $aquablue;
-  font-size: 36px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 41px;
-  margin-bottom: 0;
+.page-blurb {
+	background: $aquablue;
+	padding-top: 41px;
+	padding-bottom: 45px;
+
+	h1 {
+		color: white;
+		line-height: 42px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 36px;
+		margin-bottom: 0;
+	}
 }
 
 @media (max-width: $lg) {
-  .page-banner {
-    height: 96px;
-    font-size: 28px;
-    padding-top: 30px;
-  }
+	.page-blurb {
+		padding-top: 30px;
+		padding-bottom: 33px;
+
+		h1 {
+			font-size: 28px;
+			line-height: 33px;
+		}
+	}
 }
 
 @media (max-width: $md) {
-  .page-banner {
-    height: 72px;
-    font-size: 20px;
-    padding-top: 22px;
-  }
+	.page-blurb {
+		padding-top: 22px;
+		padding-bottom: 26px;
+
+		h1 {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
 }
 // end page banner
 
 // nice side bar
 .nice-sidebar {
 	
-	z-index: 9000;
+	z-index: 1000;
 	position: sticky;
 	top: 80px;
 
@@ -283,20 +308,24 @@ a:link:active, a:visited:active {
 
 	ul {
 		background: white;
-		padding: 20px 0 4px 40px;
+		padding: 0;
 		font-size: 16px;
 		font-weight: bold;
 		box-shadow: 0 4px $shadow;
 		border: solid 1px $shadow;
-		
-		li {
-			list-style-type: circle;
-			margin-bottom: 16px;
-			cursor: pointer;
-		}
 
-		li.active {
-			list-style-type: disc;
+		div {
+			margin: 20px 0 0 40px;
+			
+			li {
+				list-style-type: circle;
+				margin-bottom: 16px;
+				cursor: pointer;
+			}
+	
+			li.active {
+				list-style-type: disc;
+			}
 		}
 	}
 }

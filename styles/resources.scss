@@ -1,160 +1,130 @@
 @import 'common';
 
-.intro {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background: $exlightblue;
-	height: 356px;
-	padding: 174px 640px 116px 260px;
+.res-banner {
+	background: linear-gradient($aquablue 67%, white 33%);
+	padding-top: 80px;
 
-	h1 {
-		color: $textblue;
-		font-size: 56px;
-		line-height: 66px;
-		font-weight: bold;
+	.carousel {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		.carousel-item {
+			flex-direction: column;
+	
+			.img {
+				height: 518px;
+				background-image: url('/img/temp1.svg');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				margin-bottom: 16px;
+			}
+		
+			.caption {
+				font-size: 28px;
+				font-weight: bold;
+				margin: 0;
+				line-height: 33px;
+			}
+		}
+
+		.indicator {
+			display: inline-block;
+			height: 80px;
+			bottom: 30px;
+			background: white;
+			position: relative;
+			padding-top: 10px;
+			
+			svg {
+				margin: 0 8px;
+				width: 8px;
+				height: 8px;
+	
+				circle {
+					r: 4px;
+					cy: 4px;
+					cx: 4px;
+					fill: $textblue;
+				}
+	
+				circle.active {
+					fill: $orange;
+				}
+			}
+		}
+	}
+	
+	.carousel-control {
+		padding-bottom: 170px;
+
+		i {
+			color: $orange;
+		}
 	}
 }
 
-.res-banner {
-
-
-	background: linear-gradient($aquablue 67%, white 33%);
-	background-size: 100% 100%;
-	padding-top: 80px;
-	padding-bottom: 80px;
-
-	img, .res-control-container {
-		height: 518px;
-	}
-
-	img {
-		width: 100%;
-	}
-
-	.carousel-inner {
-		height: 567px;
-	}
-
-	.res-control-container {
-		padding-top: 448px;
-	}
-
-	/* CHANGE FOR RESPONSIVENESS */
-	.carousel-caption {
-		left: 0;
-		right: auto;
-		padding-bottom: 0;
-		padding-top: 0;
-		height: 33px;
-		bottom: -49px;
-
-		h2 {
-			font-size: 28px;
-		}
-	}
-	/* CHANGE FOR RESPONSIVENESS */
-
-	.carousel-control {
-
-		.fa-arrow-right, .fa-arrow-left {
-			color: $orange;
-			font-size: 2.5em;
-		}
-	}
-
-	@media (max-width: $xl) {
+@media (max-width: $xl) {
+	.res-banner {
 		background: linear-gradient($aquablue 62%, white 38%);
-
-		.carousel-inner {
-			height: 482px;
-		}
-
-		img, .res-control-container {
+	
+		.carousel .carousel-item .img{
 			height: 433px;
 		}
-
-		.res-control-container {
-			padding-top: 360px;
-		}
 	}
+}
 
-	@media (max-width: $lg) {
+@media (max-width: $lg) {
+	.res-banner {
 		background: linear-gradient($aquablue 63%, white 37%);
 		padding-top: 48px;
-		padding-bottom: 48px;
+		
+		.carousel {
+			.carousel-item {
+				.img {
+					height: 321px;
+					margin-bottom: 12px;
+				}
+				
+				.caption {
+					font-size: 24px;
+					line-height: 28px;
+				}
+			}
 
-		img, .res-control-container {
-			height: 321px;
-		}
-
-		.carousel-inner {
-			height: 361px;
-		}
-
-		.res-control-container {
-			padding-top: 269px;
-		}
-
-		.carousel-caption {
-			height: 28px;
-			bottom: -40px;
-
-			h2 {
-				font-size: 24px;
+			.indicator {
+				height: 48px;
 			}
 		}
 
 		.carousel-control {
-
-			.fa-arrow-right, .fa-arrow-left {
-				font-size: 2em;
-			}
+			padding-bottom: 110px;
 		}
 	}
+}
 
-	@media (max-width: $md) {
+@media (max-width: $md) {
+	.res-banner {
 		background: linear-gradient($aquablue 68%, white 32%);
 		padding-top: 32px;
-		padding-bottom: 32px;
 
-		img {
-			height: 287px;
-		}
+		.carousel {
+			.carousel-item {
+				.img {
+					height: 287px;
+					margin-bottom: 8px;
+				}
 
-		.carousel-inner {
-			height: 319px;
-		}
-
-		.carousel-caption {
-			height: 24px;
-			bottom: -32px;
-
-			h2 {
-				font-size: 20px;
+				.caption {
+					font-size: 20px;
+					line-height: 24px;
+				}
 			}
 		}
 	}
-
-	@media (max-width: $sm) {
-		img {
-			height: auto;
-		}
-	}
 }
 
-.res-banner-title{
-
-}
-
-
-
-
-
-
-
-
-	
 .cards {
 	background: $exlightblue;
 	padding: 80px 0 84px 0;
@@ -164,36 +134,34 @@
 		box-shadow: 0 4px $shadow;
 
 		.header {
-			/*min-height: 255px;*/
+			//min-height: 255px;
 			padding: 32px 40px;
 			background: $darkblue;
 
-			a {
+			h3 {
 				color: white;
 				font-size: 28px;
+				line-height: 33px;
 				font-weight: bold;
 				margin-bottom: 20px;
 				display: flex;
 				cursor: pointer;
 				justify-content: space-between;
 				align-items: center;
-			}
 
-			i {
-				color: white;
+				i {
+					color: white;
+				}
 			}
 		}
 		
-		.map{
-			img{
-				width: 300px;
-				height:255px;			
-				display: block;
+
+			img {
+				height:255px;		
 				width:100%;
-				/*background: url('/img/temp1.svg') center no-repeat;*/
-				/*background-size: cover;*/
+				object-fit: cover;
 			}	
-		}
+		
 
 /*
 		@media (max-width: $xl) {
@@ -233,23 +201,29 @@
 	}
 
 	.text {
-		padding: 40px 64px;
 		background: white;
 
-		h1 {
-			font-size: 13px;
-			font-weight: bold;
-		}
+		div {
+			margin: 40px 64px;
 
-		p {
-			margin-bottom: 24px;
-		}
-
-		a {
-			font-weight: bold;
-
-			i {
-				color: $orange;
+			h1 {
+				font-size: 13px;
+				line-height: 15px;
+				font-weight: bold;
+			}
+	
+			p {
+				margin-bottom: 24px;
+				line-height: 24px;
+			}
+	
+			a {
+				font-weight: bold;
+				line-height: 19px;
+	
+				i {
+					color: $orange;
+				}
 			}
 		}
 	}

@@ -1,8 +1,10 @@
 @import 'variables';
 
 nav.navbar {
+	z-index: 9001;
   background-color: $darkblue;
   padding: 0 10% 0 10%;
+  z-index: 1001;
 
   .navbar-brand {
     margin: 20px 0 20px 0;
@@ -28,6 +30,10 @@ nav.navbar {
     font-size: 14px;
     letter-spacing: 0.04em;
     padding-bottom: 0;
+  }
+
+  .nav-link:active {
+    color: $orange;
   }
 
   hr {
@@ -106,16 +112,6 @@ nav.navbar {
 footer.unique {
   background: $darkblue;
   padding: 64px 10% 64px 10%;
-  display: flex;
-  justify-content: space-between;
-
-  div:nth-child(1) {
-    flex-grow: 1;
-  }
-
-  div:nth-child(2) {
-    flex-grow: 2;
-  }
 
   a {
     color: white;
@@ -126,5 +122,16 @@ footer.unique {
   img {
     height: 24px;
     margin-bottom: 32px;
+  }
+
+  .brand-ucsd {
+    float: right;
+  }
+
+  @media (max-width: $sm) {
+
+    .brand-ucsd {
+      float: none;
+    }
   }
 }

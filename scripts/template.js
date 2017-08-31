@@ -1,4 +1,4 @@
-let colors = ['EDABFF', 'ABDBFF', 'FF8585', 'ADFFC8', 'FFD5AD', 'C2ADFF']
+let colors = ['EDABFF', 'ABDBFF', 'FF8585', '50E3C2', 'FFD5AD', 'C2ADFF']
 let grey = 'C6D1D7';
 
 function initNideSidebar() {
@@ -15,43 +15,53 @@ function initNideSidebar() {
 
   let filtered = $('.filtered')
   let removed = []
+  let tags = $('.tag')
   li.click(e => {
     e = $(e.target)
 
     if (e.hasClass('active')) {
       e.removeClass('active')
       e.css('color', grey)
+      tags.filter((ti, te) => te.innerHTML === e.html()).css('background-color', grey)
     }
     else {
       e.addClass('active')
       e.css('color', colorMap[e.html()])
+      tags.filter((ti, te) => te.innerHTML === e.html()).css('background-color', colorMap[e.html()])
     }
 
     filtered.each((fi, fe) => {
       if ($(fe).find('.tag').is((ti, te) => li.filter('.active').is((ai, ae) => te.innerHTML === ae.innerHTML))) {
         if (removed[fi]) {
+
           $(fe).css('display', removed[fi])
+          $(fe).hide().fadeIn(500);
           removed[fi] = undefined
         }
       }
       else {
         if (!removed[fi]) {
+          //fe element to hide, fi its index
           removed[fi] = $(fe).css('display')
-          $(fe).css('display', 'none')
+          //don't show card
+          //$()makes dom into jqery obj
+          $(fe).fadeOut(500, function () {
+            $(fe).css('display', 'none');
+          });
+
         }
       }
     })
   })
 
-  let tags = $('.tag')
   tags.each((i, e) => {
     $(e).css('background-color', colorMap[e.innerHTML])
   })
 }
 
 function flipOnClick() {
-  $('.flip-on-click').click(e => {
-    $(e.target).find('i').toggleClass('fa-flip-vertical')
+  $('.flip-on-click').click(function () {
+    $(this).find('i').toggleClass('fa-flip-vertical')
   })
 }
 
