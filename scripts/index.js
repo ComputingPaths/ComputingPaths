@@ -4,30 +4,33 @@ function majorsSection() {
   let hooks = $('.majors main h2')
   let name = $('.majors main h1')
   let links = $('.majors button a')
+  let image = $('.majors main img')
   //Generate a random major index
   let mi = Math.floor(Math.random() * ul.length)
-  
+
   let updateMajor = (newIndex) => {
     ul.eq(mi).removeClass('active')
     hooks.eq(mi).removeClass('active')
     links.eq(mi).removeClass('active')
+    image.eq(mi).removeClass('active')
     mi = newIndex
     ul.eq(mi).addClass('active')
     name.html(ul.eq(mi).html())
     hooks.eq(mi).addClass('active')
     links.eq(mi).addClass('active')
+    image.eq(mi).addClass('active')
   }
   updateMajor(mi)
-  
+
   //Handle click event of the next major button
   $('#next-major').click(() => {
     updateMajor((mi + 1) % ul.length)
   })
-  
+
   $('#prev-major').click(() => {
     updateMajor((mi - 1 + ul.length) % ul.length)
   })
-  
+
   //Handle click event for major links
   ul.click(e => {
     updateMajor(ul.index(e.target))
@@ -67,7 +70,7 @@ $(document).ready(() => {
       inner.append(group)
       $('<i class="fa fa-circle"></i>').appendTo(indicator)
     }
-    
+
     updateIndicator(0)
     indicator.children().click(e => {
       updateIndicator(indicator.children().index(e.target))
@@ -104,7 +107,7 @@ $(document).ready(() => {
   $('.prev-proj').click(() => {
     try {
       carousel.carousel('prev')
-      updateIndicator((pi - 1 + indicator.children().length) % indicator.children().length) 
+      updateIndicator((pi - 1 + indicator.children().length) % indicator.children().length)
     }
     catch (err) {
     }
@@ -114,7 +117,7 @@ $(document).ready(() => {
   $('.next-proj').click(() => {
     try {
       carousel.carousel('next')
-      updateIndicator((pi + 1) % indicator.children().length) 
+      updateIndicator((pi + 1) % indicator.children().length)
     }
     catch (err) {
     }

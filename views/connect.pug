@@ -2,6 +2,9 @@ extends ../template.pug
 
 block style 
   link(rel='stylesheet' href ='/css/connect.css')
+    
+block script
+  script(src='/js/connect.js')
 
 block main
   div(class='page-header')
@@ -12,6 +15,35 @@ block main
     
   div(class='container page-intro')
     div(class='row')
-      p(class='col-10 offset-1') This is the orgs page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+      p(class='col-10 offset-1') Student organizations allow for extracurricular experience, utilizing and extending skills imparted in computing courses. These groups demonstrate creative computing efforts by channeling the collaborative spirit of UC San Diego.
       
   p(class='orgs-banner') Explore these orgs
+  
+  div(class='cards')
+    div(class='container')
+      div(class='row align-items-start')
+        div(class='nice-sidebar col-lg-3')
+          a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Tags
+            i(class='fa fa-chevron-down')
+          ul(id='tags' class='collapse show')
+            div(class='row no-gutters')
+              each t in orgTags
+                li(class='col-4 col-lg-12') #{t}
+                
+        div(class='col-lg-9')
+          - for(let i = 0; i < orgs.length; i++)
+            div(class='res-card row no-gutters filtered')
+              div(class="col-xs-12 col-md-4 map")
+                img(src=orgs[i].orgImage style="object-fit: cover")
+              a(class='flip-on-click col-xs-12 col-md-8 header'  data-toggle='collapse' href=`#res-txt-${i}`)
+                  
+                h3 #{orgs[i].name}
+                  i(class='fa fa-chevron-down')
+                    
+                  each t in orgs[i].tags
+                    h5(class='tag') #{orgTags[t]}
+                div(id=`res-txt-${i}` class='collapse text col-12') 
+                  h1 DESCRIPTION
+                  p #{orgs[i].description}
+                  a Find out more 
+                    i(class='fa fa-arrow-right')
