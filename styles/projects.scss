@@ -3,293 +3,150 @@
 @import 'index/title';
 
 p {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .intro-text {
-  justify-content: center;
-  margin: 116px 18% 160px 18%;
-  
-  > p {
-    color: $textblue;
-    font-size: 28px;
-    line-height: 54px;
-    letter-spacing: 0.72px;
-    cursor: default;
-    height: 162px;
-  }
+	justify-content: center;
+	margin: 116px 18% 160px 18%;
+	
+	> p {
+		color: $textblue;
+		font-size: 28px;
+		line-height: 54px;
+		cursor: default;
+		height: 162px;
+	}
 }
 
 .intro-prompt {
-  height: 128px;
-  background: $aquablue;
-  display: flex;
-  justify-content: center;
-  
-  h3 {
-    padding-top: 41px;
-    font-size: 36px;
-    letter-spacing: 0.72px;
-    color: white;
-    cursor: default;
-  }
+	height: 128px;
+	background: $aquablue;
+	display: flex;
+	justify-content: center;
+	
+	h3 {
+		padding-top: 41px;
+		font-size: 36px;
+		letter-spacing: 0.72px;
+		color: white;
+		cursor: default;
+	}
 }
 
 section {
-  background: $exlightblue;
-  padding-top: 80px;
-  
-  .project-type-wrapper {
-    
-    > a {
-      display: block;
-      background: white;
-      padding: 20px 0 20px 24px;
-      width: 100%;
-      font-weight: bold;
-      font-size: 18px;
-    }
+	background: $exlightblue;
+	padding-top: 80px;
+	
+	.project-type-wrapper {
+		
+		> a {
+			display: block;
+			background: white;
+			padding: 20px 0 20px 24px;
+			width: 100%;
+			font-weight: bold;
+			font-size: 18px;
+		}
 
-    ul {
-      padding: 20px 0 4px 40px;
-      background: white;
-      margin-top: 2px;
+		ul {
+			padding: 20px 0 4px 40px;
+			background: white;
+			margin-top: 2px;
 
-      li {
-        list-style-type: none;
-        margin-bottom: 16px;
+			li {
+				list-style-type: none;
+				margin-bottom: 16px;
 
-        a {
-          font-weight: bold;
-          font-size: 16px;
-        }
-      }
+				a {
+					font-weight: bold;
+					font-size: 16px;
+				}
+			}
 
-      li:hover:not(.active) {
-        list-style-type: initial;
-        a {
-          color: $darkblue;
-        }
-      }
+			li:hover:not(.active) {
+				list-style-type: initial;
+				a {
+					color: $darkblue;
+				}
+			}
 
-      li.active {
-        list-style-type: initial;
-        color: $orange;
-        
-        a {
-          color: $orange;
-        }
-      }
-    }
-  } 
-  
-  a {
-    width: auto;
-    height: auto;
+			li.active {
+				list-style-type: initial;
+				color: $orange;
+				
+				a {
+					color: $orange;
+				}
+			}
+		}
+	} 
+	
+	a {
+		width: auto;
+		height: auto;
 
-    .projectcard {
-      display: inline-flex;
-      cursor: pointer;
-      margin-bottom: 32px;
-      box-shadow: 0 4px 10px 0 $textblue;
+		.projectcard {
+			display: inline-flex;
+			cursor: pointer;
+			margin-bottom: 32px;
+			box-shadow: 0 4px 10px 0 $textblue;
 
-      img {
-        width: 350px;
-        height: 233px;
-      }
+			img {
+				width: 350px;
+				height: 233px;
+			}
 
-      .cardinfo{
-        background: $darkblue;
-        height: 233px;
-        width: 505px;
-        position: relative;
-        padding: 32px 0px 0px 40px;
+			.cardinfo{
+				background: $darkblue;
+				height: 233px;
+				width: 505px;
+				position: relative;
+				padding: 32px 0px 0px 40px;
 
-        p.project-name {
-          font-size: 28px;
-          font-weight: bold;
-          letter-spacing: 0.56px;
-          color: white;
-          line-height: 33px;
-          margin-bottom: 8px;
-        }
+				p.project-name {
+					font-size: 28px;
+					font-weight: bold;
+					letter-spacing: 0.56px;
+					color: white;
+					line-height: 33px;
+					margin-bottom: 8px;
+				}
 
-        p.project-creator {
-          font-size: 20px;
-          letter-spacing: 0.4px;
-          color: white;
-          line-height: 24px;
-          margin-bottom: 20px;
-        }
+				p.project-creator {
+					font-size: 20px;
+					letter-spacing: 0.4px;
+					color: white;
+					line-height: 24px;
+					margin-bottom: 20px;
+				}
 
-        i {
-          font-size: 20px;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          margin: 0px 24px 24px 0px;
-          color: white;
-        }
-      }
-    }
-  }
+				i {
+					font-size: 20px;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					margin: 0px 24px 24px 0px;
+					color: white;
+				}
+			}
+		}
+	}
+	
+	.tags {
+		display: flex;
 
-  a:hover {
-    text-decoration: none;
-  }
-  
-  .modal-dialog {
-    max-width: 920px;
-    margin: 5% auto;
-    
-    .modal-content {
-      width: 920px;
-      height: auto;
-      
-      .modal-header {
-        background: $darkblue;
-        height: 80px;
-        padding: 0;
-        
-        h5 {
-          display: flex;
-          color: white;
-          letter-spacing: 0.48px;
-          font-size: 28px;
-        }
-        
-        i{
-          color: white;
-          margin-right: 28.2;
-        }
-      }
-      
-      .modal-slideshow {
-        display: inline-flex;
-        justify-content: center;
-        margin-bottom: 40px;
+		.colorbackground {
+			background: #FF8585;
+			border-radius: 50px;
+			text-align: center;
+			width: 154px;
 
-        a {
-          position: relative;
-          width: 0;
-          background: $textblue;
-        }
-
-        a:nth-of-type(1) {
-          right: 50px;
-        }
-
-        a:nth-of-type(2) {
-          left: 50px;
-        }
-
-        .carousel-item.active {
-          display: flex;
-        }
-
-        .carousel-item {
-          justify-content: space-between;
-
-          img {
-            height: 487px;
-            width: 730px;
-          }
-
-          @media (max-width: $xl) {
-
-          }
-
-          div {
-            padding: 40px;
-
-            h1, h2, h3 {
-              color: $textblue;
-              margin: 0;
-            }
-
-            h1 {
-              font-size: 20px;
-              font-weight: bold;
-            }
-
-            h2 {
-              font-size: 16px;
-              margin-top: 10px;
-            }
-
-            h3 {
-              font-size: 16px;
-              font-weight: bold;
-              margin-top: 24px;
-            }
-          }
-
-          @media (max-width: $lg) {
-            article {
-              width: 45%;
-
-              img {
-                height: 233px;
-              }
-            }
-          }
-        }
-      }
-      
-      .modal-body {
-        display: inline-flex;
-        justify-content: space-between;
-        
-        .project-description {
-          margin-left: 64px;
-          width: 506px;
-        }
-        
-        .project-details {
-          margin-right: 103px;
-        }
-        
-        p.description-title {
-          font-weight: bold;
-          font-size: 13px;
-          color: #006A96;
-          letter-spacing: 0.26px;
-          bottom-margin: 12px;
-        }
-
-        p.description {
-          font-family: Roboto-Regular;
-          font-size: 16px;
-          color: #003E5C;
-          letter-spacing: 0.32px;
-        }
-        
-        a {
-          color: $textblue;
-          font-weight: bold;
-          
-          i {
-            color: $orange;
-          }
-        }
-      }
-    }
-  }
-  
-  .tags {
-    display: flex;
-
-    .colorbackground {
-      background: #FF8585;
-      border-radius: 50px;
-      text-align: center;
-      width: 154px;
-
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-    }
-  } 
+			font-size: 16px;
+			font-weight: bold;
+			color: white;
+		}
+	} 
 }
 
 @media(max-width: $xl) {
@@ -324,141 +181,6 @@ section {
         .cardinfo{
           height: 213px;
           width: 370px;
-        }
-      }
-    }
-    
-    .modal-dialog {
-
-      .modal-content {
-
-
-        .modal-header {
-          background: $darkblue;
-          height: 80px;
-          padding: 0;
-
-          h5 {
-            display: flex;
-            color: white;
-            letter-spacing: 0.48px;
-            font-size: 28px;
-          }
-
-          i{
-            color: white;
-            margin-right: 28.2;
-          }
-        }
-
-        .modal-slideshow {
-          display: inline-flex;
-          justify-content: center;
-          margin-bottom: 40px;
-
-          a {
-            position: relative;
-            width: 0;
-            background: $textblue;
-          }
-
-          a:nth-of-type(1) {
-            right: 50px;
-          }
-
-          a:nth-of-type(2) {
-            left: 50px;
-          }
-
-          .carousel-item.active {
-            display: flex;
-          }
-
-          .carousel-item {
-            justify-content: space-between;
-
-            img {
-              height: 487px;
-              width: 730px;
-            }
-
-            @media (max-width: $xl) {
-
-            }
-
-            div {
-              padding: 40px;
-
-              h1, h2, h3 {
-                color: $textblue;
-                margin: 0;
-              }
-
-              h1 {
-                font-size: 20px;
-                font-weight: bold;
-              }
-
-              h2 {
-                font-size: 16px;
-                margin-top: 10px;
-              }
-
-              h3 {
-                font-size: 16px;
-                font-weight: bold;
-                margin-top: 24px;
-              }
-            }
-
-            @media (max-width: $lg) {
-              article {
-                width: 45%;
-
-                img {
-                  height: 233px;
-                }
-              }
-            }
-          }
-        }
-
-        .modal-body {
-          display: inline-flex;
-          justify-content: space-between;
-
-          .project-description {
-            margin-left: 64px;
-            width: 506px;
-          }
-
-          .project-details {
-            margin-right: 103px;
-          }
-
-          p.description-title {
-            font-weight: bold;
-            font-size: 13px;
-            color: #006A96;
-            letter-spacing: 0.26px;
-            bottom-margin: 12px;
-          }
-
-          p.description {
-            font-family: Roboto-Regular;
-            font-size: 16px;
-            color: #003E5C;
-            letter-spacing: 0.32px;
-          }
-
-          a {
-            color: $textblue;
-            font-weight: bold;
-
-            i {
-              color: $orange;
-            }
-          }
         }
       }
     }
@@ -564,144 +286,6 @@ section {
         .cardinfo{
           height: 216px;
           width: 690px;
-        }
-      }
-    }
-
-    .modal-dialog {
-      max-width: 920px;
-      margin: 5% auto;
-
-      .modal-content {
-        width: 920px;
-        height: auto;
-
-        .modal-header {
-          background: $darkblue;
-          height: 80px;
-          padding: 0;
-
-          h5 {
-            display: flex;
-            color: white;
-            letter-spacing: 0.48px;
-            font-size: 28px;
-          }
-
-          i{
-            color: white;
-            margin-right: 28.2;
-          }
-        }
-
-        .modal-slideshow {
-          display: inline-flex;
-          justify-content: center;
-          margin-bottom: 40px;
-
-          a {
-            position: relative;
-            width: 0;
-            background: $textblue;
-          }
-
-          a:nth-of-type(1) {
-            right: 50px;
-          }
-
-          a:nth-of-type(2) {
-            left: 50px;
-          }
-
-          .carousel-item.active {
-            display: flex;
-          }
-
-          .carousel-item {
-            justify-content: space-between;
-
-            img {
-              height: 487px;
-              width: 730px;
-            }
-
-            @media (max-width: $xl) {
-
-            }
-
-            div {
-              padding: 40px;
-
-              h1, h2, h3 {
-                color: $textblue;
-                margin: 0;
-              }
-
-              h1 {
-                font-size: 20px;
-                font-weight: bold;
-              }
-
-              h2 {
-                font-size: 16px;
-                margin-top: 10px;
-              }
-
-              h3 {
-                font-size: 16px;
-                font-weight: bold;
-                margin-top: 24px;
-              }
-            }
-
-            @media (max-width: $lg) {
-              article {
-                width: 45%;
-
-                img {
-                  height: 233px;
-                }
-              }
-            }
-          }
-        }
-
-        .modal-body {
-          display: inline-flex;
-          justify-content: space-between;
-
-          .project-description {
-            margin-left: 64px;
-            width: 506px;
-          }
-
-          .project-details {
-            margin-right: 103px;
-          }
-
-          p.description-title {
-            font-weight: bold;
-            font-size: 13px;
-            color: #006A96;
-            letter-spacing: 0.26px;
-            bottom-margin: 12px;
-          }
-
-          p.description {
-            font-family: Roboto-Regular;
-            font-size: 16px;
-            color: #003E5C;
-            letter-spacing: 0.32px;
-          }
-
-          a {
-            color: $textblue;
-            font-weight: bold;
-
-            i {
-              color: $orange;
-            }
-          }
         }
       }
     }
@@ -825,144 +409,6 @@ section {
       }
     }
 
-    .modal-dialog {
-      max-width: 920px;
-      margin: 5% auto;
-
-      .modal-content {
-        width: 920px;
-        height: auto;
-
-        .modal-header {
-          background: $darkblue;
-          height: 80px;
-          padding: 0;
-
-          h5 {
-            display: flex;
-            color: white;
-            letter-spacing: 0.48px;
-            font-size: 28px;
-          }
-
-          i{
-            color: white;
-            margin-right: 28.2;
-          }
-        }
-
-        .modal-slideshow {
-          display: inline-flex;
-          justify-content: center;
-          margin-bottom: 40px;
-
-          a {
-            position: relative;
-            width: 0;
-            background: $textblue;
-          }
-
-          a:nth-of-type(1) {
-            right: 50px;
-          }
-
-          a:nth-of-type(2) {
-            left: 50px;
-          }
-
-          .carousel-item.active {
-            display: flex;
-          }
-
-          .carousel-item {
-            justify-content: space-between;
-
-            img {
-              height: 487px;
-              width: 730px;
-            }
-
-            @media (max-width: $xl) {
-
-            }
-
-            div {
-              padding: 40px;
-
-              h1, h2, h3 {
-                color: $textblue;
-                margin: 0;
-              }
-
-              h1 {
-                font-size: 20px;
-                font-weight: bold;
-              }
-
-              h2 {
-                font-size: 16px;
-                margin-top: 10px;
-              }
-
-              h3 {
-                font-size: 16px;
-                font-weight: bold;
-                margin-top: 24px;
-              }
-            }
-
-            @media (max-width: $lg) {
-              article {
-                width: 45%;
-
-                img {
-                  height: 233px;
-                }
-              }
-            }
-          }
-        }
-
-        .modal-body {
-          display: inline-flex;
-          justify-content: space-between;
-
-          .project-description {
-            margin-left: 64px;
-            width: 506px;
-          }
-
-          .project-details {
-            margin-right: 103px;
-          }
-
-          p.description-title {
-            font-weight: bold;
-            font-size: 13px;
-            color: #006A96;
-            letter-spacing: 0.26px;
-            bottom-margin: 12px;
-          }
-
-          p.description {
-            font-family: Roboto-Regular;
-            font-size: 16px;
-            color: #003E5C;
-            letter-spacing: 0.32px;
-          }
-
-          a {
-            color: $textblue;
-            font-weight: bold;
-
-            i {
-              color: $orange;
-            }
-          }
-        }
-      }
-    }
-
     .tags {
       display: flex;
 
@@ -978,4 +424,129 @@ section {
       }
     } 
   }
+}
+
+.modal-dialog {
+	max-width: 920px;
+}
+
+.modal-content {
+	overflow: hidden;
+}
+
+.modal-header {
+	padding: 20px 20px 20px 30px;
+	background-color: $darkblue;
+	border-bottom-style: none;
+
+	.project-title {
+		margin-bottom: 0;
+		color: white;
+		font-size: 28px;
+	}
+
+	.close {
+		opacity: 1;
+		text-shadow: none;
+
+		span {
+			color: white;
+		}
+	}
+
+	@media( max-width: $md ) {
+		padding: 15px 15px 15px 20px;
+
+		.project-title {
+			font-size: 24px;
+		}
+	}
+}
+
+.modal-body {
+	padding: 0;
+}
+
+.slideshow {
+	background: $textblue;
+
+	.carousel-item {
+		justify-content: center;
+	}
+}
+
+.proj-info {
+	padding: 40px 49px;
+
+	@media( max-width: $lg ) {
+		padding-left: 33px;
+		padding-right: 33px;
+	}
+
+	@media( max-width: $md ) {
+		padding: 32px 25px;
+	}
+
+	@media( max-width: $sm ) {
+		padding: 15px 0;
+	}
+}
+
+.description-title {
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 0.04em;
+	margin-bottom: 12px;
+	color: $darkblue;
+
+	@media( max-width: $md ) {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+}
+
+.project-description {
+	margin-bottom: 0;
+
+	.description {
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+
+	.description:last-child {
+		margin-bottom: 0;
+	}
+
+	@media( max-width: $lg ) {
+		margin-bottom: 24px;
+	}
+}
+
+.project-details {
+	.description, .link {
+		font-size: 20px;
+	}
+
+	.description:last-child {
+		margin-bottom: 24px;
+	}
+
+	.tags {
+		margin-bottom: 8px;
+	}
+
+	.tags:last-child {
+		margin-bottom: 24px;
+	}
+
+	.link>i {
+		color: $orange;
+		margin-left: 0.2em;
+	}
+
+	@media( max-width: $md ) {
+		.description, .link {
+			font-size: 18px;
+		}
+	}
 }
