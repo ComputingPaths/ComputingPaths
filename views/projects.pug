@@ -93,12 +93,10 @@ block main
 														- for(let j = 0; j < projects.length; j++)
 															p.description #{projects[i].members[j]}
 
-
-
 													div(class='detail-item')
 														p.description-title PROJECT TYPE
-														div(class='tags')
-																div(class='colorbackground') Web Application
+                                                        each t in projects[i].tags
+                                                          span(class='tag') #{projectTags[t]}
 
 													div(class='detail-item')
 														p.description-title MORE INFORMATION
