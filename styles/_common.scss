@@ -245,30 +245,42 @@ a:link:active, a:visited:active {
 // end section header
 
 // page banner
-.page-banner {
-	height: 128px;
+.page-blurb {
 	background: $aquablue;
-	font-size: 36px;
-	color: white;
-	font-weight: bold;
-	text-align: center;
 	padding-top: 41px;
-	margin-bottom: 0;
+	padding-bottom: 45px;
+
+	h1 {
+		color: white;
+		line-height: 42px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 36px;
+		margin-bottom: 0;
+	}
 }
 
 @media (max-width: $lg) {
-	.page-banner {
-		height: 96px;
-		font-size: 28px;
+	.page-blurb {
 		padding-top: 30px;
+		padding-bottom: 33px;
+
+		h1 {
+			font-size: 28px;
+			line-height: 33px;
+		}
 	}
 }
 
 @media (max-width: $md) {
-	.page-banner {
-		height: 72px;
-		font-size: 20px;
+	.page-blurb {
 		padding-top: 22px;
+		padding-bottom: 26px;
+
+		h1 {
+			font-size: 20px;
+			line-height: 24px;
+		}
 	}
 }
 // end page banner
