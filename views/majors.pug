@@ -19,6 +19,8 @@ block main
   
   div(class='page-blurb') 
     h1 Explore these majors
+  
+  div(class='pos' id=majors[0].short)
 
   main
     div(class='container')
@@ -35,7 +37,6 @@ block main
         div(class='col-lg-9')
           - for (let i = 0; i < majors.length; i++)
             div(class='major-card')
-              a(name=majors[i].short)
               h1 #{majors[i].name}
               img(src=majors[i].image)
               div(class='row no-gutters')
@@ -57,4 +58,6 @@ block main
                     each w in majors[i].websites
                       a(href=w) Major Website 
                         i(class='fa fa-arrow-right')
+              - if(i + 1 < majors.length)
+                  div(class='pos' id=majors[i + 1].short)
 

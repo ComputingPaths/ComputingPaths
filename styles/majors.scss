@@ -1,5 +1,10 @@
 @import 'common';
 
+.pos {
+  position: relative;
+  bottom: 80px;
+}
+
 main {
   padding-top: 80px;
   padding-bottom: 52px;
@@ -97,6 +102,10 @@ main {
           margin-bottom: 6px;
         }
       }
+    }
+
+    .pos {
+      bottom: 96px;
     }
   }
 }
