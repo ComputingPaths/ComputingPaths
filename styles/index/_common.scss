@@ -40,7 +40,6 @@
 .link-btn {
   background: $darkblue;
   width: 320px;
-  min-width: 320px;
   height: 56px;
   font-size: 18px;
   font-weight: 500;
@@ -91,6 +90,7 @@ a.link-btn:active {
   }
 
   a.link-btn {
+    display: block;
     font-size: 16px;
     padding-top: 15px;
     width: 100%;

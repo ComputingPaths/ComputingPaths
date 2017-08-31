@@ -20,15 +20,14 @@
 		box-shadow: 0 4px $shadow;
 
 		.header {
-			/*min-height: 255px;*/
+			min-height: 240px;
 			padding: 32px 40px;
 			background: $darkblue;
 
 			h3 {
-        background: none;
-				display: inline-block;
 				color: white;
 				font-size: 28px;
+        line-height: 33px;
 				font-weight: bold;
 				margin-bottom: 20px;
 				display: flex;
@@ -42,46 +41,68 @@
 			}
 		}
 
-		.map{
-			img{
-				width: 300px;
-				height:255px;
-				display: block;
-				width:100%;
-				/*background: url('/img/temp1.svg') center no-repeat;*/
-				/*background-size: cover;*/
-			}
+		img {
+			height:255px;
+			width:100%;
+      object-fit: cover;
 		}
   }
 
 	.text {
-		padding: 40px 64px;
 		background: white;
 
-		h1 {
-			font-size: 13px;
-			font-weight: bold;
-		}
+    div {
+      margin: 40px 64px;
 
-		p {
-			margin-bottom: 24px;
-		}
+      h1 {
+  			font-size: 13px;
+        line-height: 15px;
+  			font-weight: bold;
+        margin-bottom: 12px;
+  		}
 
-		a {
-			font-weight: bold;
+  		p {
+  			margin-bottom: 24px;
+        line-height: 24px;
+  		}
 
-			i {
-				color: $orange;
-			}
-		}
+  		a {
+  			font-weight: bold;
+        line-height: 19px;
+
+  			i {
+  				color: $orange;
+  			}
+  		}
+    }
 	}
 }
 
+@media (max-width: $xl) {
+  .cards {
+    .res-card img {
+      height: 240px;
+    }
+  }
+}
 @media (max-width: $lg) {
   .orgs-banner {
     height: 96px;
     font-size: 28px;
     padding-top: 30px;
+  }
+
+  .cards {
+    padding-top: 33;
+    padding-bottom: 48px;
+
+    .res-card img {
+      height: 345px;
+    }
+
+    .text div {
+      margin: 40px 48px;
+    }
   }
 }
 
@@ -90,5 +111,19 @@
     height: 72px;
     font-size: 20px;
     padding-top: 22px;
+  }
+
+  .cards {
+    padding-top: 0;
+
+    .res-card {
+      img {
+        height: 255px;
+      }
+
+      .header {
+        min-height: 208px;
+      }
+    }
   }
 }

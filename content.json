@@ -39,6 +39,7 @@
     {
       "name": "Tom Erbe, Professor",
       "major": "Interdisciplinary Computing and the Arts - Music",
+      "role": "Professor",
       "quote": "You might not know exactly where you’re going, but keep your interests in the forefront and things will open up. When I went to school, you couldn’t integrate art and technology in any meaningful way… but I found a position where I could do this. You find these opportunities and you weigh what’s important.",
       "image": "/img/TomErbe.jpg"
     }
@@ -207,9 +208,9 @@
   },
   "resources": [
     {
-      "name": "name 1",
-      "description": "description 1",
-      "mapImage": "/img/temp1.svg",
+      "name": "Envision Maker Studio",
+      "description": "Located in the Structural Materials and Engineering Building (SME 306), The EnVision Arts and Engineering Maker Studio at is a hands-on, experiential education facility where visual arts and engineering communities converge. The nearly 3,000 square foot studio provides a wide range of design, fabrication and prototyping tools, both analog and digital. Resources include workstations with CAD and Adobe CC software installed, 3d Printers, soldering stations, a laser cutter, and a vacuum former. The studio is accessible for Engineering or Visual Arts majors, and students enrolled in courses currently offered within the studio. 1",
+      "mapImage": "/img/sme.jpg",
       "mapLink": "map1link",
       "link": "testlink1",
       "image": "/img/temp1.svg",
@@ -221,9 +222,9 @@
       ]
     },
     {
-      "name": "name 2",
+      "name": "Tech Lending Program",
       "description": "description 2",
-      "mapImage": "/img/temp1.svg",
+      "mapImage": "/img/CommBldg.jpg",
       "mapLink": "map2link",
       "link": "testlink2",
       "image": "/img/temp1.svg",
@@ -261,15 +262,15 @@
       "organization": "CSE 110",
       "description": "Computer Science students develop a casual social platform for studying, collaboration, and meetings. \n\nFor the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem.\n\nAs their solution, the Studyspace team developed a website that connects students with peers and instructors instantly via video and text chat. Through the application, classmates can collaborate in course-specific channels to tackle challenging topics, ask questions, and prepare for exams. The website provides a multifaceted digital workspace that can host a range of activities, like TA office hours, group study sessions, and even a lounge area where students can share music and chat.\n\nThe project boasts a mix of techniques and backend software implementations, including Express.js, Firebase, MongoDB, and PeerJS. Studyspace also incorporates creative frontend and visual design features like alternate app color schemes and day/night modes that ensure the site is easy on the eyes for long periods of time. \n\nThe CSE 110 (Software Engineering) course focuses on an introduction to software development and engineering methods, including specification, design, implementation, testing, and process, as well as an emphasis on team development, agile methods, and use of tools as IDE's, version control, and test harnesses.",
       "members": [
-        "Eric Zhang", 
+        "Eric Zhang",
         "Isaac Wang",
-        "Andy Hwang", 
+        "Andy Hwang",
         "Gates Zeng",
         "Michael Youssef",
         "Saurabh Kulkarni",
         "Anish Sinha",
-        "Luke Thomas", 
-        "Zaki Siddiqui", 
+        "Luke Thomas",
+        "Zaki Siddiqui",
         "Kent Vuong"
       ],
       "link": "https://www.studyspace.me/",
@@ -355,7 +356,7 @@
       "organization": "2017 H.A.R.D. Hack",
       "description": "The Arduino Pong project, created during the 2017 H.A.R.D. Hack at UCSD,  is a modern take on the classic game, Pong.\n\nThe game is designed to be a single player Pong game where the user faces the upper edge of the screen, a randomly generated horizontal wall, and a pong ball with gradually increasing speed. The user must maneuver a small platform, the paddle, to prevent the moving pong ball from passing the lower edge of the screen.\n\nThe screen is split in half where the left side of the display is the actual game, while the right side is a score tracker. The score can be arbitrarily set to determine a winner, for example, the team normally tests the game with a set score of 15.\n\nThe project was built using an Arduino Uno with 1 output and 1 input. For the output, the team daisy chained four 8x8 LED matrices to create a 64x64 grid of red LEDs to create the display screen for the player. For the input, the player uses a traditional joystick, which controls the paddle.",
       "members": [
-        "Austin Hermida",  
+        "Austin Hermida",
         "Eric Ho",
         "Jeffry Jaman"
       ],

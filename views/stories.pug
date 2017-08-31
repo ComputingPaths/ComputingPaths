@@ -8,15 +8,14 @@ block style
 		
 block main
 	div(class='page-header')
-		svg
+		svg(class='hidden-xs-down')
 			rect
 			circle
 		h1 Stories &amp; Advice
 	
 	div(class='container page-intro')
 		div(class='row')
-			div(class='offset-1 col-10')
-				p Every path through UCSD is unique, and there’s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice.
+			p(class='col-sm-10 offset-sm-1') Every path through UCSD is unique, and there’s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice.
 			
 	div(class='story-video')
 		div(class='container')
@@ -28,16 +27,29 @@ block main
 			h1(class='col-12 size-28 bold') Rachel Keinouz 
 			h2(class='col-12 size-24 light med') Math-Computer Science  |  Class of 2017
 		div(class='row')
-			p(class='col-12 offset-lg-1 col-lg-5 push-lg-6 size-24 story-quote med') “There were so many times that I felt lost and I didn’t really know what I wanted to do or what my next step should be. And it involved a lot of reaching out to mentors to figure out what the best next step should be. I think what I learned is that you don’t have to have everything figured out and there’s never really a moment that you do have everything figured out, but as long as you are focused on what you can do next… then you’re going to be fine. It’s all going to work out one way or another.”
-			p(class='col-12 col-lg-6 pull-lg-6 size-20') Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
+			div(class='col-12 col-lg-6 size-20 story-story')
+				p Rachel entered UC San Diego as a Nanoengineering major, but after a few classes realized that the major wasn’t right for her. Her parents insisted she try taking a computer science class, just to see if she liked it–and after an introductory Java course (CSE 8A), realized that was her true passion. Rachel switched to the Math-Computer Science major because she was also interested in theoretical math topics as well as computer science.
+				p After her second year, Rachel landed her first internship. Yet while she assumed it would be her “dream internship”, the experience led her to again have doubts about her major choice. She decided to keep going, continuing to tutor in the Computer Science department and searching for other internships. Her following two internships were much more positive, and restored her passion for computing.
+				p These experiences then led Rachel to her job at Microsoft in the fall following her senior year.
+			p(class='offset-lg-1 col-lg-5 hidden-md-down size-24 story-quote med') “What I learned is that you don’t have to have everything figured out and there’s never really a moment that you do have everything figured out, but as long as you are focused on what you can do next... you're going to be fine.”
 	
 	div(class='more-stories')  
 		div(class='section-header')            
 			h1 More Stories
 			hr
 		div(class='container')
-			- for(let i = 0; i < stories.length; i++)
-				div(class='row')
+		- for(let i = 0; i < stories.length; i++)
+			- var theirRole = 'Class of ' + stories[i].class
+			if (stories[i].role !== undefined)
+				- theirRole = stories[i].role
+			div(class='row')
+				if (stories[i].image === null)
+					div(class='story-content col-lg-10 col-12 offset-lg-1')
+						h2(class='size-20 bold') #{stories[i].name}
+						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+						h1(class='size-20 nor') "#{stories[i].quote}"
+				else
+						
 					if (i % 2 === 0)
 						div(class='hidden-md-down col-sm-3 offset-lg-1')
 							img(src=stories[i].image)
@@ -45,7 +57,7 @@ block main
 						img(class='mx-auto' src=stories[i].image)
 					div(class='story-content col-12 col-lg-6 offset-lg-1')
 						h2(class='size-20 bold') #{stories[i].name}
-						h3(class='light size-18 nor') #{stories[i].major} | Class of #{stories[i].class}
+						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
 						h1(class='size-24 med') "#{stories[i].quote}"
 					if (i % 2 !== 0)
 						div(class='hidden-md-down col-sm-3 offset-md-1')

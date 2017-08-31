@@ -176,12 +176,23 @@ a:link:active, a:visited:active {
 		}
 	}
 }
+
+@media (max-width: $sm) {
+	.page-header {
+		padding-left: 15px;
+
+		h1 {
+			margin-left: 0;
+		}
+	}
+}
 // end page header
 
 // page intro
 .page-intro {
 	padding-top: 116px;
 	padding-bottom: 116px;
+	line-height: 42px;
 
 	p {
 		margin-bottom: 0;
@@ -196,6 +207,7 @@ a:link:active, a:visited:active {
 
 		p {
 			font-size: 24px;
+			line-height: 36px;
 		}
 	}
 }
@@ -207,6 +219,7 @@ a:link:active, a:visited:active {
 	
 		p {
 			font-size: 20px;
+			line-height: 30px;
 		}
 	}
 }
@@ -287,16 +300,18 @@ a:link:active, a:visited:active {
 
 // nice side bar
 .nice-sidebar {
-	
 	z-index: 1000;
 	position: sticky;
-	top: 80px;
+	top: 160px;
 
+	.margin {
+		background: $exlightblue;
+	}
 
 	a {
 		font-size: 18px;
 		font-weight: bold;
-		padding: 20px 24px;
+		padding: 19px 24px;
 		display: flex;
 		background: white;
 		justify-content: space-between;
@@ -311,16 +326,20 @@ a:link:active, a:visited:active {
 		padding: 0;
 		font-size: 16px;
 		font-weight: bold;
+		line-height: 19px;
 		box-shadow: 0 4px $shadow;
 		border: solid 1px $shadow;
+		margin-bottom: 32px;
 
 		div {
-			margin: 20px 0 0 40px;
+			margin: 20px 0 2px 40px;
 			
 			li {
 				list-style-type: circle;
 				margin-bottom: 16px;
 				cursor: pointer;
+				padding-left: 0;
+				padding-right: 20px;
 			}
 	
 			li.active {
@@ -333,6 +352,18 @@ a:link:active, a:visited:active {
 @media (max-width: $lg) {
 	.nice-sidebar {
 		top: 80px;
+
+		.margin {
+			height: 15px;
+		}
+
+		ul div {
+			margin-bottom: 7px;
+
+			li {
+				margin-bottom: 12px;
+			}
+		}
 	}
 }
 

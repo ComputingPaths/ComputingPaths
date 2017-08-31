@@ -8,44 +8,43 @@ block script
 
 block main
   div(class='page-header')
-    svg
+    svg(class='hidden-xs-down')
       rect
       circle
     h1 Student Organizations
     
   div(class='container page-intro')
     div(class='row')
-      p(class='col-10 offset-1') Student organizations allow for extracurricular experience, utilizing and extending skills imparted in computing courses. These groups demonstrate creative computing efforts by channeling the collaborative spirit of UC San Diego.
+      p(class='col-sm-10 offset-sm-1') Student organizations allow for extracurricular experience, utilizing and extending skills imparted in computing courses. These groups demonstrate creative computing efforts by channeling the collaborative spirit of UC San Diego.
       
-  div(class='page-blurb')
+  div(class='page-blurb container-fluid')
     h1 Explore these orgs
   
   div(class='cards')
     div(class='container')
       div(class='row align-items-start')
         div(class='nice-sidebar col-lg-3')
+          div(class='margin')
           a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Tags
             i(class='fa fa-chevron-down')
           ul(id='tags' class='collapse show')
-            div(class='row no-gutters')
+            div(class='row')
               each t in orgTags
-                li(class='col-4 col-lg-12') #{t}
+                li(class='col-6 col-md-4 col-lg-12') #{t}
                 
         div(class='col-lg-9')
           - for(let i = 0; i < orgs.length; i++)
-            - var mapImgPath = resources[i].mapImage
             div(class='res-card row no-gutters filtered')
-              div(class="col-xs-12 col-md-4 map")
-                img(src=orgs[i].orgImage style="object-fit: cover")
-              a(class='flip-on-click col-xs-12 col-md-8 header'  data-toggle='collapse' href=`#res-txt-${i}`)
-                  
+              div(class='col-lg-4')
+                img(src=orgs[i].orgImage)
+              a(class='flip-on-click col-lg-8 header' data-toggle='collapse' href=`#res-txt-${i}`)  
                 h3 #{orgs[i].name}
                   i(class='fa fa-chevron-down')
-                    
                 each t in orgs[i].tags
                   h5(class='tag') #{orgTags[t]}
               div(id=`res-txt-${i}` class='collapse text col-12') 
-                h1 DESCRIPTION
-                p #{orgs[i].description}
-                a Find out more 
-                  i(class='fa fa-arrow-right')
+                div
+                  h1 DESCRIPTION
+                  p #{orgs[i].description}
+                  a Find out more 
+                    i(class='fa fa-arrow-right')
