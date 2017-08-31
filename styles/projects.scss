@@ -284,7 +284,10 @@ section {
 
 .project-description {
 	margin-bottom: 0;
-
+  
+    pre {
+      white-space: pre-wrap;
+    }
 	.description {
 		font-size: 16px;
 		margin-bottom: 16px;
