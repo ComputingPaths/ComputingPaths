@@ -17,51 +17,68 @@
 }
 
 .res-banner {
-
-
 	background: linear-gradient($aquablue 67%, white 33%);
-	background-size: 100% 100%;
 	padding-top: 80px;
-	padding-bottom: 80px;
+	//padding-bottom: 80px;
 
-	img, .res-control-container {
-		height: 518px;
-	}
+	.carousel {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
 
-	img {
-		width: 100%;
-	}
+		.carousel-item {
+			flex-direction: column;
+	
+			.img {
+				height: 518px;
+				background-image: url('/img/temp1.svg');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				margin-bottom: 16px;
+			}
+		
+			.caption {
+				font-size: 28px;
+				font-weight: bold;
+			}
+		}
 
-	.carousel-inner {
-		height: 567px;
-	}
-
-	.res-control-container {
-		padding-top: 448px;
-	}
-
-	/* CHANGE FOR RESPONSIVENESS */
-	.carousel-caption {
-		left: 0;
-		right: auto;
-		padding-bottom: 0;
-		padding-top: 0;
-		height: 33px;
-		bottom: -49px;
-
-		h2 {
-			font-size: 28px;
+		.indicator {
+			display: inline-block;
+			height: 80px;
+			bottom: 40px;
+			background: white;
+			position: relative;
+			padding-top: 20px;
+			
+			svg {
+				margin: 0 8px;
+				width: 8px;
+				height: 8px;
+	
+				circle {
+					r: 4px;
+					cy: 4px;
+					cx: 4px;
+					fill: $textblue;
+				}
+	
+				circle.active {
+					fill: $orange;
+				}
+			}
 		}
 	}
-	/* CHANGE FOR RESPONSIVENESS */
-
+	
 	.carousel-control {
+		padding-bottom: 80px;
 
-		.fa-arrow-right, .fa-arrow-left {
+		i {
 			color: $orange;
-			font-size: 2.5em;
 		}
 	}
+
 
 	@media (max-width: $xl) {
 		background: linear-gradient($aquablue 62%, white 38%);
