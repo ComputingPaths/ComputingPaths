@@ -302,13 +302,14 @@ a:link:active, a:visited:active {
 .nice-sidebar {
 	z-index: 1000;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 160px;
 
 	.margin {
 		background: $exlightblue;
 	}
 
-	a {
+	> a {
 		font-size: 18px;
 		font-weight: bold;
 		padding: 19px 24px;

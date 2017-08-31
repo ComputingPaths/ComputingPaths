@@ -4,6 +4,36 @@ main {
   padding-top: 80px;
   background: $exlightblue;
 
+  .major-sidebar {
+    @extend .nice-sidebar;
+
+    ul {
+      div {
+        li {
+          list-style-type: none;
+        }
+
+        li.active {
+          list-style: disc;
+          color: $orange;
+
+          a {
+            color: $orange;
+          }
+        }
+
+        li:hover:not(.active) {
+          list-style: disc;
+          color: $darkblue;
+          
+          a {
+            color: $darkblue;
+          }
+        }
+      }
+    }
+  }
+
   .major-list-wrapper {
     > a {
       display: block;
