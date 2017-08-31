@@ -38,30 +38,43 @@ block main
 			h1 More Stories
 			hr
 		div(class='container')
-		- for(let i = 0; i < stories.length; i++)
-			- var theirRole = 'Class of ' + stories[i].class
-			if (stories[i].role !== undefined)
-				- theirRole = stories[i].role
-			div(class='row')
-				if (stories[i].image === null)
-					div(class='story-content col-lg-10 col-12 offset-lg-1')
-						h2(class='size-20 bold') #{stories[i].name}
-						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
-						h1(class='size-20 nor') "#{stories[i].quote}"
-				else
-						
-					if (i % 2 === 0)
-						div(class='hidden-md-down col-sm-3 offset-lg-1')
-							img(src=stories[i].image)
-					div(class='hidden-lg-up col-12' id='center-img')
-						img(class='mx-auto' src=stories[i].image)
-					div(class='story-content col-12 col-lg-6 offset-lg-1')
-						h2(class='size-20 bold') #{stories[i].name}
-						h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
-						h1(class='size-24 med') "#{stories[i].quote}"
-					if (i % 2 !== 0)
-						div(class='hidden-md-down col-sm-3 offset-md-1')
-							img( src=stories[i].image)
+			- for(let i = 0; i < stories.length; i++)
+				- var theirRole = 'Class of ' + stories[i].class
+				if (stories[i].role !== undefined)
+					- theirRole = stories[i].role
+				div(class='row')
+					if (stories[i].image === null)
+						div(class='story-content col-lg-10 col-12 offset-lg-1')
+							h2(class='size-20 bold') #{stories[i].name}
+							h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+							h1(class='size-20 nor') "#{stories[i].quote}"
+					else
+						//- Every other story
+						- var even = i % 2 === 0
+
+						//- Image left (even)
+						if (even)
+							div(class='hidden-md-down col-sm-3')
+								img(src=stories[i].image)
+						div(class='hidden-lg-up col-12' id='center-img')
+							img(class='mx-auto' src=stories[i].image)
+
+						//- Quote Offset (even)
+						if (even)
+							div(class='story-content col-12 col-lg-8 offset-lg-1')
+								h2(class='size-20 bold') #{stories[i].name}
+								h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+								h1(class='size-24') "#{stories[i].quote}"
+						else
+							div(class='story-content col-12 col-lg-8')
+								h2(class='size-20 bold') #{stories[i].name}
+								h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+								h1(class='size-24') "#{stories[i].quote}"
+
+						//- Image right (odd)
+						if (!even)
+							div(class='hidden-md-down col-sm-3 offset-lg-1')
+								img( src=stories[i].image)
  
 	div(class='next-steps')
 		div(class='section-header')            

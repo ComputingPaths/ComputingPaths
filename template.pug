@@ -63,11 +63,11 @@ html
             img(class='brand-ucsd' src='/img/logo_ucsd.png')
 
         div(class='row')
-          div(class='col-12 col-md-4')
+          div(class='col-12 col-md-3 col-lg-2 med')
             a(href='/') Home
               each page in pages
                 a(href=page.link) #{page.name}
-          div(class='col-md-8 hidden-sm-down')
+          div(class='col-md-9 hidden-sm-down med')
             each m in majors
               a(href='/') #{m.name}
         
