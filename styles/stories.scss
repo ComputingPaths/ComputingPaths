@@ -112,8 +112,10 @@
 
 	.row {
 		padding-top: 65px;
-		h1 {
-			margin-bottom: 24px;
+
+		h2 {
+			font-size: 24px;
+			margin-bottom: 16px;
 		}
 
 		p {
@@ -236,8 +238,9 @@
 
 	.next-steps {
 		.row {
-			h1 {
+			h2 {
 				font-size: 20px;
+				margin-bottom: 10px;
 			}
 			p {
 				font-size: 16px;
