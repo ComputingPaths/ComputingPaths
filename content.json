@@ -509,7 +509,7 @@
         "/img/projectImages/studyspace/3.jpg"
       ],
       "videos": [
-        ""
+        "https://www.youtube.com/embed/JOMxcJhTfeo"
       ],
       "link": "https://www.studyspace.me/",
       "tags": ["wa"]
@@ -530,7 +530,8 @@
         "/img/projectImages/kaiRobot/1.jpg"
       ],
       "videos": [
-        ""
+        "https://www.youtube.com/embed/Cx13LD9fahg",
+        "https://www.youtube.com/embed/IZ0l6Lv10O4"
       ],
       "link": "http://divergentengineering.weebly.com/kai-human-robot.html",
       "tags": ["ar"]
@@ -554,7 +555,6 @@
         "/img/projectImages/potholesSD/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/tjl014/Projects/blob/master/Potholes%20in%20San%20Diego.ipynb",
       "tags": ["da"]
@@ -575,7 +575,6 @@
         "/img/projectImages/memo/3.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "http://toriduong.com/me-mo.html",
       "tags": ["ma"]
@@ -594,7 +593,6 @@
         "/img/projectImages/micromouse/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "http://micromouseusa.com/",
       "tags": ["ar"]
@@ -614,7 +612,6 @@
         "/img/projectImages/endless/5.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "",
       "tags": ["ga"]
@@ -632,12 +629,12 @@
       ],
       "images": [
         "/img/projectImages/gentrification/1.jpg",
+        "/img/projectImages/gentrification/5.jpg",
         "/img/projectImages/gentrification/2.jpg",
         "/img/projectImages/gentrification/3.jpg",
         "/img/projectImages/gentrification/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/mec029/Pr_057/blob/master/FinalProject.ipynb",
       "tags": ["da"]
@@ -656,7 +653,7 @@
         "/img/projectImages/arduinoPong/1.jpg"
       ],
       "videos": [
-        ""
+        "https://www.youtube.com/embed/3nQwyJF6FP8"
       ],
       "link": "https://www.youtube.com/watch?v=3nQwyJF6FP8&feature=youtu.be",
       "tags": ["ar"]
@@ -677,7 +674,6 @@
         "/img/projectImages/gokoban/5.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/danaugrs/gokoban",
       "tags": ["ga"]
