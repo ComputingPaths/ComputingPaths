@@ -267,10 +267,13 @@ section {
 	-webkit-user-select: none;
 	-o-user-select: none;
 
+  
+
 	.carousel-item {
       justify-content: center;
       
       img, iframe{
+        width: 100%;
         height: 487px;
         
         @media( max-width: $lg ) {
@@ -282,14 +285,35 @@ section {
         }
 
         @media( max-width: $sm ) {
-          height: 280pxa;
+          height: 260px;
+        }
+        
+        @media( max-width: $xs ) {
+            height: 100px;
+            width: 225px;
         }
       }
 	}
   
     .carousel-control-prev, .carousel-control-next {
+      height: 487px;
+      width: 10%;
       i {
         color: white;
+      }
+      @media( max-width: $lg ) {
+          height: 460px;
+      }
+
+      @media( max-width: $md ) {
+          height: 340px;
+      }
+
+      @media( max-width: $sm ) {
+          height: 260px;
+      }
+      @media( max-width: $xs ) {
+          height: 100px;
       }
     }
 }
