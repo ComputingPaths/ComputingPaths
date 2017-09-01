@@ -59,7 +59,7 @@ block main
 												each d in majors[i].departments
 													li
 														a(href='#' class='link') #{departments[d]}
-										div(class='col-6 col-xl-12')
+										div(class='col-6 col-xl-12 more')
 											h5 MORE INFORMATION
 											ul
 												each w in majors[i].websites
@@ -75,3 +75,11 @@ block main
 												p() #{ex.data[j].expandDesc}
 							- if(i + 1 < majors.length)
 									div(class='pos' id=majors[i + 1].short)
+
+							//- Footnote
+							- if( majors[i].footnote )
+								div(class='footnote row no-gutters')
+									div(class='asterisk bold hidden-xs-down col-1')
+										h1 *
+									div(class='note col-12 col-sm-11')
+										p <span class="mini-asterisk hidden-sm-up">*</span> #{majors[i].note}

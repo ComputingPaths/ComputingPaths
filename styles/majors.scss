@@ -110,6 +110,12 @@ main {
 				}
 			}
 
+			.more {
+				ul {
+					margin-bottom: 0;
+				}
+			}
+
 			.expand {
 				margin-top: 32px;
 
@@ -141,6 +147,27 @@ main {
 			}
 		}
 
+		.footnote {
+			background-color: $lightorange;
+			padding: 24px 32px;
+
+			.asterisk h1 {
+				color: white;
+				font-size: 72px;
+			}
+
+			.note {
+				padding-top: 16px;
+				padding-bottom: 16px;
+				padding-right: 32px;
+
+				p {
+					color: white;
+					font-size: 16px;
+				}
+			}
+		}
+
 		.pos {
 			bottom: 96px;
 		}
@@ -152,6 +179,13 @@ main {
 		.major-card {
 			img {
 				height: 308px;
+			}
+
+			.footnote {
+
+				.note {
+					padding-left: 15px;
+				}
 			}
 		}
 	}
@@ -171,6 +205,12 @@ main {
 
 			.text {
 				padding: 40px 48px;
+
+				.more {
+					ul {
+						margin-bottom: 32px;
+					}
+				}
 			}
 
 			img {
@@ -186,10 +226,20 @@ main {
 		padding-bottom: 12px;
 
 		.major-card {
-			margin-bottom: 32px; 
+			margin-bottom: 32px;
+
+			h1 {
+				font-size: 24px;
+			}
 
 			.text {
 				padding: 32px 40px;
+
+				.more {
+					ul {
+						margin-bottom: 24px;
+					}
+				}
 
 				h5 {
 					font-size: 12px;
@@ -230,8 +280,34 @@ main {
 				}
 			}
 
+			.footnote {
+				padding: 20px 32px;
+
+				.asterisk h1 {
+					font-size: 56px;
+				}
+			}
+
 			img {
 				height: 255px;
+			}
+		}
+	}
+}
+
+@media (max-width: $sm) {
+	main {
+		.major-card {
+			h1 {
+				font-size: 20px;
+			}
+
+			.footnote {
+				padding: 15px 15px;
+
+				.mini-asterisk {
+					color: white;
+				}
 			}
 		}
 	}

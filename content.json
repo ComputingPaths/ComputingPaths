@@ -49,6 +49,7 @@
     {
       "name": "Bioinformatics",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "bsc",
@@ -60,11 +61,13 @@
         "http://bioinformatics.ucsd.edu/"
       ],
       "image": "/img/Bioinformatics.jpg",
-      "short": "bio"
+      "short": "bio",
+      "note": ""
     },
     {
       "name": "Cognitive Science",
       "cap": false,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "cog"
@@ -74,11 +77,13 @@
         "http://www.cogsci.ucsd.edu/"
       ],
       "image": "/img/CognitiveScience.jpg",
-      "short": "cog"
+      "short": "cog",
+      "note": ""
     },
     {
       "name": "Computer Science",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "cse"
@@ -88,11 +93,13 @@
         "https://cse.ucsd.edu/"
       ],
       "image": "/img/ComputerScience.jpg",
-      "short": "cse"
+      "short": "cse",
+      "note": ""
     },
     {
       "name": "Electrical & Computer Engineering",
       "cap": true,
+      "footnote": true,
       "degree": "bs",
       "departments": [
         "cse",
@@ -103,11 +110,13 @@
         "http://www.ece.ucsd.edu/"
       ],
       "image": "/img/ElectricalEngineering.jpg",
-      "short": "ece"
+      "short": "ece",
+      "note": "The Computer Engineering major is offered by both the CSE and ECE departments. Despite the major cap status, students within this major are able to switch into other majors within their respective departments such as pure Computer Science (CSE) or pure Electrical Engineering (ECE)."
     },
     {
       "name": "Math-Computer Science",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "mat"
@@ -117,11 +126,13 @@
         "https://math.ucsd.edu/"
       ],
       "image": "/img/Math-CS.jpg",
-      "short": "mcs"
+      "short": "mcs",
+      "note": ""
     },
     {
       "name": "Scientific Computation",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "mat",
@@ -134,11 +145,13 @@
         "https://physics.ucsd.edu/"
       ],
       "image": "/img/SciComp.jpg",
-      "short": "sci"
+      "short": "sci",
+      "note": ""
     },
     {
       "name": "Interdisciplinary Computing and the Arts",
       "cap": false,
+      "footnote": true,
       "degree": "ba",
       "departments": [
         "vis",
@@ -150,11 +163,13 @@
         "http://visarts.ucsd.edu/icam-interdisciplinary-computing-and-arts-minor"
       ],
       "image": "/img/ICAM.jpg",
-      "short": "ica"
+      "short": "ica",
+      "note": "Applicants may be asked to submit an optional supplemental application and/or portfolio/audition for faculty review."
     },
     {
       "name": "Speculative Design",
       "cap": false,
+      "footnote": false,
       "degree": "ba",
       "departments": [
         "vis"
@@ -164,11 +179,13 @@
         "http://visarts.ucsd.edu/majors-0"
       ],
       "image": "/img/SpecDesign.jpg",
-      "short": "spc"
+      "short": "spc",
+      "note": ""
     },
     {
       "name": "Data Science",
       "cap": false,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "cse"
@@ -178,7 +195,8 @@
         "http://jacobsschool.ucsd.edu/mas/dse/"
       ],
       "image": "/img/DataScience.jpg",
-      "short": "dat"
+      "short": "dat",
+      "note": ""
     }
   ],
   "degrees": {
@@ -271,7 +289,7 @@
     {
       "name": "The Computer Science Channel",
       "description": "Showcasing the excellence and diversity of the nation's premier research university, UCTV embraces the core missions of the University of California -- teaching, research and public service -- through quality, in-depth television that informs, educates and enriches the lives of people around the globe.",
-      "mapImage": "img/temp1.svg",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
       "link": "http://www.uctv.tv/computer-science/search-details.aspx?showID=31158",
       "tags": [
@@ -326,7 +344,7 @@
     {
       "name": "The Design Lab",
       "description": "Located in the California Institute of Telecommunication and Information Technology (Calit2) Building, The Design Lab is a newly established organization, proposing a novel mix of the practice and theory of thinking, observing, and making. The Design Lab is located within the California Institute of Telecommunication and Information Technology.",
-      "mapImage": "img/Atkinson.jpg",
+      "mapImage": "img/AtkinsonBldg.jpg",
       "mapLink": "map3link",
       "link": "http://designlab.ucsd.edu/",
       "tags": [
@@ -336,7 +354,7 @@
     {
       "name": "DevFair by CSES",
       "description": "Occurring every year during the Fall, DevFair takes the traditional career fair and spins it on its head. Rather than having companies set up booths that students can visit, they allow groups of students set up booths to showcase their projects to recruiters. This science fair-style presentation gives students the opportunity to show their potential better than a resume ever could. The event is geared towards UCSD undergraduate students in a tech-related field.",
-      "mapImage": "img/temp1.svg",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
       "link": "https://cses.ucsd.edu/devfair/",
       "tags": [
@@ -367,7 +385,7 @@
     {
       "name": "Disciplines in Engineering Career Fair (DECaF)",
       "description": "This event provides company representatives a unique opportunity to interact and engage with UC San Diego's talented engineering students regarding career options, internships, and permanent or summer employment opportunities. Open exclusively to UC San Diego students and alumni, DECaF is coordinated by the Triton Engineering Student Council and over 40 pre-professional engineering student organizations at the Jacobs School of Engineering. These engineering societies, representing the spectrum of disciplines at the Jacobs School, work in close collaboration to maximize the attendance of UC San Diego's 8,500 undergraduate and graduate student engineers and to ensure the satisfaction of companies involved.",
-      "mapImage": "img/temp1.svg",
+      "mapImage": "img/CP Generic Icon",
       "mapLink": "map3link",
       "link": "http://tesc.ucsd.edu/decaf/",
       "tags": [
@@ -376,14 +394,13 @@
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Electrical Engineering Student Tutoring",
+      "description": "Electrical Engineering tutoring sessions are available in Jacobs Hall (EBUI) 5101 on a daily basis. Walk-ins are welcome for students in the following courses: ECE 15-103, ECE 153 and ECE 174.",
+      "mapImage": "img/JacobsBldg.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
+      "link": "http://www.ece.ucsd.edu/undergraduate/ece-tutoring",
       "tags": [
-        "bs",
-        "ws"
+        "as"
       ]
     },
     {
@@ -391,80 +408,298 @@
       "description": "Located in the Structural Materials and Engineering Building (SME 306), The EnVision Arts and Engineering Maker Studio at is a hands-on, experiential education facility where visual arts and engineering communities converge. The nearly 3,000 square foot studio provides a wide range of design, fabrication and prototyping tools, both analog and digital. Resources include workstations with CAD and Adobe CC software installed, 3d Printers, soldering stations, a laser cutter, and a vacuum former. The studio is accessible for Engineering or Visual Arts majors, and students enrolled in courses currently offered within the studio. 1",
       "mapImage": "/img/sme.jpg",
       "mapLink": "map1link",
-      "link": "testlink1",
+      "link": "http://jacobsschool.ucsd.edu/envision/",
+      "tags": [
+        "ws"
+      ]
+    },
+    {
+      "name": "Gallery @ Calit2",
+      "description": "Located in Atkinson Hall, Gallery@Calit2 reflects the nexus of innovation implicit in Calit2's vision, and aims to advance our understanding and appreciation of the dynamic interplay among art, science and technology. Calit2 is a partnership between UC San Diego and UC Irvine, and houses over 1,000 researchers organized around more than 50 projects on the future of telecommunications and information technology and how these technologies will transform a range of applications important to the economy and citizens' quality of life.",
+      "mapImage": "img/AtkinsonBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://gallery.calit2.net/portal/",
+      "tags": [
+        "sc"
+      ]
+    },
+    {
+      "name": "Geisel Library",
+      "description": "Great Research Starts Here. Ranked among the nation's top 25 public academic libraries, Geisel Library plays a critical role in advancing and supporting UC San Diego.",
+      "mapImage": "img/GeiselLib.jpg",
+      "mapLink": "map3link",
+      "link": "http://libraries.ucsd.edu/",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "Gordon Leadership Center",
+      "description": "Located in the Powell-Focht Bioengineering Hall, the Gordon Engineering Center aims to identify and train effective engineering leaders who will create jobs and products that benefit society. This is accomplished through a series of workshops, courses and engineering leadership forums for undergraduate and graduate students at UC San Diego, as well as local professionals and high school students who aspire to become engineers.",
+      "mapImage": "img/BioBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/GordonCenter/",
+      "tags": [
+        "as"
+      ]
+    },
+    {
+      "name": "HackXX",
+      "description": "HackXX is UC San Diego's women's hackathon and an empowering place to build great projects. Over 24 hours, women will be given the tools and knowledge to materialize their technological dreams. They will be able to form strong bonds by collaborating with other women in tech, interacting with the the CS community, and engaging with industry representatives from top companies.",
+      "mapImage": "img/JacobsBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://hackxx.sdhacks.io/",
+      "tags": [
+        "ev",
+        "ws"
+      ]
+    },
+    {
+      "name": "H.A.R.D. Hack",
+      "description": "Hash out. Analyze. Research. Design. All core steps of overcoming engineering challenges. The HARD Hack is a 24 hour hardware centered hackathon hosted by IEEE and HKN.",
+      "mapImage": "img/JacobsBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://www.ece.ucsd.edu/events/hkn-ieee-h-a-r-d-hack",
+      "tags": [
+        "ev",
+        "ws"
+      ]
+    },
+    {
+      "name": "ICAM Project Studios",
+      "description": "Located in the Conrad Prebys Music Center, these four 200-square-foot studios are designed for individual work on computer music projects. Each studio is equipped with an eight-channel DAW (iMac with MOTU audio interface) and is acoustically treated. In addition, the four studios are designed with different orientations: one with equipment, monitoring and software to support video editing; one for recording, editing and mastering; one for work with MIDI synthesizers; and one with analog mixing and recording.",
+      "mapImage": "img/CPMCBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "tags": [
+        "ws"
+      ]
+    },
+    {
+      "name": "IDEA Learning Center",
+      "description": "The IDEA Learning Center, located at Jacobs Hall B805, is a space for all of the Engineering Learning Communities. Engineering Learning Communities are the formation of formal study groups that bring engineering students into a supportive environment where they can develop confidence, strengthen study skills, and learn the value of collaborative study. This small class environment seeks to increase student mastery and motivation by eliminating the intimidating large classes that engineering students experience particularly in the freshman year.",
+      "mapImage": "img/JacobsBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/idea/resources/idea_studylab.shtml",
       "tags": [
         "as",
-        "bs",
-        "ws",
+        "ws"
+      ]
+    },
+    {
+      "name": "IDEA Freshman Summer Engineering Institute",
+      "description": "Get a jump start on your academic career at UC San Diego's 5-week, residential Summer Engineering Institute (SEI), and earn six credits towards your engineering degree. Receive support in making the transition from high school to the rigors of a university-level engineering curriculum, and build awareness of relevant campus programs and resources. Take part in organized social activities on evenings and weekends, and begin forming a peer network and make lasting friendships.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/idea/programs/freshman_summer_institute.shtml",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "IDEA Transfer PrEP",
+      "description": "Transfer PrEP is a 3-day, 2-night program held over the summer for incoming transfer engineering students. This free program provides incoming students with the opportunity to become acclimated to campus life, build skills and habits necessary for success in engineering, and develop community amongst their peers before beginning their courses in the fall. Participants will live on campus throughout the duration of the program in residential halls with current undergraduate transfer students majoring in engineering as PrEP Leaders who will serve as their peer leaders and mentors throughout the duration of the program.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/idea/programs/summer_prep.shtml",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "Instructional Computing Laboratory",
+      "description": "Located in the Conrad Prebys Music Center, the 600-square-foot Instructional Computing Lab features 10 Intel iMac workstations and laptop work area. The composition work surfaces are based around Akai keyboard controllers. Software includes Ableton Live Suite 9, Max/MSP/Jitter 7, Soundhack, Pure Data, Sibelius 8, LogicX, and Adobe CS.",
+      "mapImage": "img/CPMCBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "Kamil Gallery",
+      "description": "Located in the lower level of the Mandeville Center, The Adam D. Kamil Art Gallery is a resource for Visual Arts students to view and exhibit art projects. Opportunities to exhibit work are offered on a quarterly basis.",
+      "mapImage": "img/MandevilleBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://visarts.ucsd.edu/mandeville-center",
+      "tags": [
         "sc"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Media Teaching Lab",
+      "description": "Located in the Communications Building, the Media Teaching Lab offers outstanding media facilities, equipment, and technical assistance provided to students and faculty. The facility offers rental services for equipment and workshops to learn software, photography work, and lighting. The Media Teaching Lab's aim is to facilitate students in making the highest quality videos and films with excellent sound, editing, and cinematography. The space also holds regular workshops and events to educate students in editing, HD workflow, cameras, and lighting all throughout the quarter.",
+      "mapImage": "img/CommBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://acms.ucsd.edu/students/medialab/",
+      "tags": [
+        "as",
+        "eq",
+        "ev"
+      ]
+    },
+    {
+      "name": "OASIS Math and Science",
+      "description": "OASIS math and science workshops are structured group-learning study-sessions led by a tutor who explains course concepts and encourages a collaborative learning environment. Each workshop session is 2 hours and meets twice a week",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/math-science/index.html",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "OASIS Summer Bridge",
+      "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/summer-bridge/index.html#//academics/_organizations/oasis/transition-programs/summer-bridge/index",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "OASIS TRIO Student Support Services Program & Summer Experience",
+      "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/summer-bridge/index.html#//academics/_organizations/oasis/transition-programs/summer-bridge/index",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "OASIS - 2Excel",
+      "description": "2Excel is a retention program serving second-year students. The program is a year-long commitment starting Fall through Spring quarter.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/2excel/index.html",
+      "tags": [
+        "as"
+      ]
+    },
+    {
+      "name": "OASIS Guardian Scholars Program",
+      "description": "The Guardian Scholars Program (GSP) is committed to supporting current and former foster youth at UCSD through a variety of holistic services that aid the students in achieving a college degree. The GSP understands that there are many hardships that foster youth endure and strives to be a resource and advocate for all its students.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/finances/financial-aid/types/scholarships/guardian.html",
+      "tags": [
+        "as"
+      ]
+    },
+    {
+      "name": "SD Hacks",
+      "description": "SD Hacks is About... Empowerment: They provide all hackers with expertise, hardware and software so they can build their dreams. Collaboration: They’re all here as fellow mentors, 4am-ers, and friends. Innovation: They strive to make each SD Hacks a memorable learning experience for all.",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
       "link": "testlink3",
+      "tags": [
+        "ev",
+        "ws"
+      ]
+    },
+    {
+      "name": "SPIS",
+      "description": "SPIS is a 5-week residential summer program on the UC San Diego campus for students accepted into CSE majors as well as for other UCSD admitted students who want to explore computer science as a career option. SPIS courses are taught by the very best faculty at UCSD. Students in the program interact with a wide range of CSE faculty and learn about computer science and engineering research. They also have opportunities to connect with engineers from the computer industry. SPIS provides an excellent student experience with individual meetings with faculty, tutoring from experienced CSE undergraduate students, collaborations with fellow students, individual advising to smooth the transition to UCSD, and living on campus.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://sites.google.com/a/eng.ucsd.edu/spis/",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "Structural & Material Engineering Building",
+      "description": "Located on the corner of Voigt Drive and Matthews Lane near Sixth College, the 183,000 square foot building houses a community of artists and engineers which includes 12 visual arts studios, a gallery and performance space, and 11 distinct visual arts research initiatives, and a state of the art paint booth. The building is also home to an array 160 graduate student, faculty, and staff offices and the EnVision makerspace.",
+      "mapImage": "img/sme.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/sme/",
       "tags": [
         "bs",
         "ws"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Teaching + Learning Commons",
+      "description": "In 2015, UC San Diego established the Teaching + Learning Commons to advance and improve how we teach and learn. Today, a suite of services and programs are in place to develop better instructors and more engaged learners. Our campus is committed to delivering an educational experience that prepares students who are capable of solving problems, leading, and innovating in a diverse and interconnected world. Tutoring is available for Math 2, 3C, 4C, 10A, 10B, 10C, 20A, 20B, and 20C as well as Chemistry 6A, 6B, and 6C.",
+      "mapImage": "img/GeiselLib.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
+      "link": "https://commons.ucsd.edu/",
       "tags": [
-        "bs",
+        "as",
         "ws"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
-      "mapLink": "map3link",
-      "link": "testlink3",
-      "tags": [
-        "bs",
-        "ws"
-      ]
-    },
-    {
-      "name": "Tech Lending Program",
-      "description": "description 2",
+      "name": "Tech Lending Program (TLP)",
+      "description": "The Tech Lending Program (TLP) circulates technology items, from calculators to digital cameras, to currently enrolled UC San Diego faculty, staff, and students. This is an effort by the Library to ensure that our users have the technological means to conduct research, and complete coursework as efficiently and effectively as possible. TLP’s initial inventory consists mostly of frequently requested items like device chargers, adapters (e.g., mini-HDMI to HDMI), flash drives, and headsets. A few high-end devices are also offered, including digital cameras, projectors, and Rokus. Non-electronic items include book stands and wrist rests. 2",
       "mapImage": "img/CommBldg.jpg",
       "mapLink": "map2link",
-      "link": "testlink2",
+      "link": "https://library.ucsd.edu/computing-and-technology/tech-lending/index.html",
       "tags": [
-        "eq",
+        "eq"
+      ]
+    },
+    {
+      "name": "UCSD Academy for Transfer Students",
+      "description": "The 2017 UC San Diego Academy for Transfer Students is intended for incoming transfer students (belonging to the Biological Sciences, Computer Science and Engineering, or Mathematics departments) who will be entering UC San Diego in the Fall quarter from a community college or from a four year college.  It is a five-week program where students can earn 8 units of credit (10 units for CSE and Math-CS students) in the major. The Academy primarily consists of gateway courses that are not typically offered at community colleges.The Academy also includes advising and other activities to help students smoothly transition to UC San Diego.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "http://academy.eng.ucsd.edu/",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "University Art Gallery",
+      "description": "Located on the outskirts of the Mandeville Center, near the Main Gym, The University Art Gallery aims to activate new fields of knowledge production, new material, discursive, and critical possibilities -- alternative forms of organization, exchange, collection, and presentation that can be incorporated into new understandings of artistic endeavor. Working with the conditions and interrelationships of publics, space, discourse, and pedagogy, it enhances the dialogue around diversity within contemporary cultural practice and supports fellows and students in their academic and professional development as curators, critics, writers and scholars.",
+      "mapImage": "img/MandevilleBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://visarts.ucsd.edu/university-art-gallery-uag",
+      "tags": [
         "sc"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Virtual Computing Labs",
+      "description": "The Virtual Computing Labs provide a virtual workspaces that can be accessed through the UCSD VPN, and provides students with a range of software programs like ArcGIS, Matlab, and SOLIDWORKS.",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
+      "link": "http://acms.ucsd.edu/students/govirtual/index.html",
+      "tags": [
+        "eq",
+        "ws"
+      ]
+    },
+    {
+      "name": "Visual Arts Facility",
+      "description": "Located between the Structural Materials and Engineering Building (SME) and Pepper Canyon Hall, the Visual Arts Facility hosts visual arts graduate student studios, a seminar room, the graduate photo lab, a computer lab, a gallery, and a performance space, a sound lab and a screening room.",
+      "mapImage": "img/VAFBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://visarts.ucsd.edu/visual-arts-facility-vaf",
       "tags": [
         "bs",
         "ws"
       ]
     },
     {
-      "name": "name 3",
-      "description": "description 3",
-      "mapImage": "img/temp1.svg",
+      "name": "Wood & Metal Shops",
+      "description": "Located in the Mandeville Center, these facilities provide access to wood/metal cutting tools to undergraduate students.",
+      "mapImage": "img/MandevilleBldg.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
-      "image": "/img/temp1.svg",
+      "link": "http://visarts.ucsd.edu/mandeville-center",
       "tags": [
-        "eq",
-        "sc",
-        "ev"
+        "ws"
       ]
     }
   ],
@@ -476,6 +711,18 @@
     "eq": "Equipment",
     "ws": "Workspaces"
   },
+	"resourceBanner":[
+		{
+			"name": "banner resource 1",
+			"image":"/img/temp1.svg",
+			"link": "testbannerimage1.com"
+		},
+    {
+			"name": "banner resource 2",
+			"image":"/img/temp1.svg",
+			"link": "testbannerimage2.com"
+		}
+	],
   "resourceBanner": [
     {
       "name": "banner resource 1",
