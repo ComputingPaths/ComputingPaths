@@ -93,12 +93,13 @@
     }
 
     nav {
+      display: flex;
+      justify-content: space-around;
       margin-top: 24px;
       text-align: center;
 
       i {
         color: $orange;
-        margin: 0 75px;
       }
     }
   }
