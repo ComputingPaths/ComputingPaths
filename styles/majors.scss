@@ -6,7 +6,6 @@
 }
 
 main {
-
 	padding-top: 80px;
 	padding-bottom: 52px;
 	background: $exlightblue;
@@ -68,35 +67,9 @@ main {
 			background: white;
 			padding: 40px 64px;
 
-			.expand{
-
-			/*min-height: 240px;*/
-				/*padding: 32px 40px;*/
-				background: $darkblue;
-				min-height: 100px;
-				margin-bottom: 0px;
-				padding: 0px;
-				.header{
-
-					align-items: center;
-					display: flex;
-					justify-content: space-between; 
-					i{
-						color: white;
-					}
-					h5{
-						align-items: center;
-
-					}
-				}
-				.description{
-					background: white;
-
-				}
-			}
-
 			p {
 				margin-top: 3px;
+				margin-bottom: 0;
 				font-size: 16px;
 			}
 
@@ -125,9 +98,45 @@ main {
 			ul {
 				margin-bottom: 32px;
 				padding: 0;
+				list-style: none;
 
-				h4, a {
+				.link {
+					font-weight: 500;
 					margin-bottom: 6px;
+				}
+
+				.link:hover {
+					color: $orange;
+				}
+			}
+
+			.expand {
+				margin-top: 32px;
+
+				.header {
+					background: $darkblue;
+					padding: 20px 32px;
+					margin-top: 4px;
+					margin-bottom: 0;
+					font-size: 18px;
+					line-height: 21px;
+					align-items: center;
+					display: flex;
+					justify-content: space-between; 
+					color: white;
+					font-weight: bold;
+
+					i {
+						color: white;
+					}
+				}
+
+				.spec {
+					border: 2px solid $shadow;
+
+					p {
+						margin: 24px 32px;
+					}
 				}
 			}
 		}
@@ -199,6 +208,24 @@ main {
 
 					h4, a {
 						margin-bottom: 5px;
+					}
+				}
+
+				.expand {
+					margin-top: 20px;
+	
+					.header {
+						padding: 16px 24px;
+						font-size: 16px;
+						line-height: 19px;
+	
+						i {
+							color: white;
+						}
+					}
+	
+					.spec p {	
+						margin: 18px 24px;
 					}
 				}
 			}
