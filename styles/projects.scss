@@ -317,7 +317,7 @@ section {
       }
 
       @media( max-width: $sm ) {
-         visibility: hidden;
+         //visibility: hidden;
           height: 260px;
       }
       @media( max-width: $xs ) {
