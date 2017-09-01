@@ -9,6 +9,7 @@ p {
 section {
 	background: $exlightblue;
 	padding-top: 80px;
+	padding-bottom: 80px;
 	
 	a {
 		width: auto;
@@ -18,11 +19,11 @@ section {
 			display: inline-flex;
 			cursor: pointer;
 			margin-bottom: 32px;
+			box-shadow: 0 4px 0px $textblue;
 
 			img {
 				width: 350px;
 				height: 233px;
-				box-shadow: 0 5px 0px $shadow;
 			}
 
 			.cardinfo{
@@ -31,7 +32,6 @@ section {
 				width: 505px;
 				position: relative;
 				padding: 32px 0px 0px 40px;
-				box-shadow: 0 5px 0px $textblue;
 
 				p.project-name {
 					font-size: 28px;
@@ -106,7 +106,8 @@ section {
 @media(max-width: $lg) {
 
 	section {
-		padding-top: 80px;
+		padding-top: 32px;
+		padding-bottom: 32px;
 
 		a {
 
@@ -199,9 +200,6 @@ section {
 	} 
 }
 
-.modal {
-}
-
 .modal-dialog {
 	max-width: 920px;
 }
@@ -243,6 +241,10 @@ section {
 
 .modal-body {
 	padding: 0;
+
+	.link:hover {
+		color: $orange;
+	}
 }
 
 .slideshow {

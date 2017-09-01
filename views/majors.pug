@@ -39,25 +39,31 @@ block main
             div(class='major-card')
               h1 #{majors[i].name}
               img(src=majors[i].image)
-              div(class='row no-gutters')
-                div(class='col-7')
+              div(class='text row no-gutters')
+                div(class='col-xl-7 flex-last flex-xl-first')
                   h5 DESCRIPTION
                   p #{majorDescriptions[majors[i].short]}
-                div(class='col-4 offset-1')
-                  h5 MAJOR CAP
-                  h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
-                  h5 DEGREE TYPE
-                  h4 #{degrees[majors[i].degree]}
-                  h5 DEPARTMENTS
-                  ul
-                    each d in majors[i].departments
-                      h4 #{departments[d]}
-                        i(class='fa fa-arrow-right')
-                  h5 MORE INFORMATION
-                  ul
-                    each w in majors[i].websites
-                      a(href=w) Major Website 
-                        i(class='fa fa-arrow-right')
+                div(class='col-xl-4 offset-xl-1 flex-first flex-xl-last')
+                  div(class='row')
+                    div(class='col-6 col-xl-12')
+                      h5 MAJOR CAP
+                      h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
+                    div(class='col-6 col-xl-12')
+                      h5 DEGREE TYPE
+                      h4 #{degrees[majors[i].degree]}
+                  div(class='row')
+                    div(class='col-6 col-xl-12')
+                      h5 DEPARTMENTS
+                      ul
+                        each d in majors[i].departments
+                          h4 #{departments[d]}
+                            i(class='fa fa-arrow-right')
+                    div(class='col-6 col-xl-12')
+                      h5 MORE INFORMATION
+                      ul
+                        each w in majors[i].websites
+                          a(href=w) Major Website 
+                            i(class='fa fa-arrow-right')
               - if(i + 1 < majors.length)
                   div(class='pos' id=majors[i + 1].short)
 
