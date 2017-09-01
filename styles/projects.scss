@@ -317,11 +317,11 @@ section {
       }
 
       @media( max-width: $sm ) {
+         visibility: hidden;
           height: 260px;
       }
       @media( max-width: $xs ) {
-          height: 100px;
-          width: 150px;
+ 
       }
     }
   }
