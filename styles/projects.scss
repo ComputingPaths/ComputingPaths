@@ -14,11 +14,11 @@ section {
 	a {
 		width: auto;
 		height: auto;
-				user-select: none;
-				-moz-user-select: none;
-				-khtml-user-select: none;
-				-webkit-user-select: none;
-				-o-user-select: none;
+		user-select: none;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		-o-user-select: none;
 
 		.projectcard {
 			display: inline-flex;
@@ -36,7 +36,7 @@ section {
 				height: 233px;
 				width: 505px;
 				position: relative;
-				padding: 32px 0px 0px 40px;
+				padding: 32px 40px;
 
 				p.project-name {
 					font-size: 28px;
@@ -111,8 +111,6 @@ section {
 @media(max-width: $lg) {
 
 	section {
-		padding-top: 32px;
-		padding-bottom: 32px;
 
 		a {
 
@@ -179,13 +177,13 @@ section {
 			.projectcard {
 
 				img {
-					width: 360px;
-					height: 240px;
+					width: 100%;
+					height: auto;
 				}
 
 				.cardinfo{
-					height: 170px;
-					width: 360px;
+					height: auto;
+					width: 100%;
 					
 					p.project-name {
 						font-size: 24px;
@@ -210,16 +208,15 @@ section {
 }
 
 .modal-content {
-		cursor: default;
+	cursor: default;
 	overflow: hidden;
-		z-index: 10000;
-		position: initial;
-		user-select: none;
-		-moz-user-select: none;
-		-khtml-user-select: none;
-		-webkit-user-select: none;
-		-o-user-select: none;
-
+	z-index: 10000;
+	position: initial;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
 }
 
 .modal-header {
@@ -270,11 +267,12 @@ section {
   
 
 	.carousel-item {
-      justify-content: center;
-      
+    justify-content: center;
+    
       img, iframe{
         width: 100%;
         height: 487px;
+        border-style:none;
         
         @media( max-width: $lg ) {
           height: 460px;
@@ -292,10 +290,10 @@ section {
             height: 100px;
             width: 225px;
         }
-      }
-	}
+
+    }
   
-    .carousel-control-prev, .carousel-control-next {
+      .carousel-control-prev, .carousel-control-next {
       height: 487px;
       width: 10%;
       i {
@@ -316,6 +314,7 @@ section {
           height: 100px;
       }
     }
+  }
 }
 
 .proj-info {
