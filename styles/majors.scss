@@ -6,6 +6,7 @@
 }
 
 main {
+
 	padding-top: 80px;
 	padding-bottom: 52px;
 	background: $exlightblue;
@@ -67,13 +68,31 @@ main {
 			background: white;
 			padding: 40px 64px;
 
-			.link {
-				font-weight: 500;
-				text-decoration: underline;
-			}
+			.expand{
 
-			.link:hover {
-				color: $orange;
+			/*min-height: 240px;*/
+				/*padding: 32px 40px;*/
+				background: $darkblue;
+				min-height: 100px;
+				margin-bottom: 0px;
+				padding: 0px;
+				.header{
+
+					align-items: center;
+					display: flex;
+					justify-content: space-between; 
+					i{
+						color: white;
+					}
+					h5{
+						align-items: center;
+
+					}
+				}
+				.description{
+					background: white;
+
+				}
 			}
 
 			p {
@@ -84,7 +103,7 @@ main {
 			h5 {
 				font-size: 13px;
 				line-height: 15px;
-				color: $darkblue;
+				color: $lightblue;
 				font-weight: bold;
 				margin-bottom: 12px;
 			}
