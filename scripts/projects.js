@@ -13,7 +13,7 @@ $(document).ready(function() {
   //if someone with more time can link them without 
   //creating a modal for each card like i tried to above
   //that would be greatly appreciated.
-  
+
   let index = 0;
   $.each($(".filtered"), function(index, value){
     var num = index + 1;
@@ -44,6 +44,4 @@ $(document).ready(function() {
   var num = index + 1;
   $(value).attr("href","#proj-carousel" + num);
   });
-  
-
 })
