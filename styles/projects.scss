@@ -270,7 +270,7 @@ section {
 	.carousel-item {
 		justify-content: center;
       
-      img{
+      img, iframe{
         height: 487px;
         
         @media( max-width: $lg ) {

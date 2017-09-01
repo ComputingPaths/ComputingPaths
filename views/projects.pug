@@ -69,6 +69,10 @@ block main
                             - for(let j = 0; j < projects[i].images.length; j++)
                               div(class='carousel-item' class = j === 0 ? 'active' : '')
                                 img(src=`${projects[i].images[j]}`)
+                            - for(let j = 0; j < projects[i].videos.length; j++)
+                              div(class='carousel-item')
+                                iframe(height='487px' width='730.5' src=`${projects[i].videos[j]}`)
+                            
                         
                         a(class='carousel-control-prev' data-slide='prev' href='#proj-carousel')
                           i(class='fa fa-arrow-left' aria-hidden='true')
