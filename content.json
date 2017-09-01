@@ -186,15 +186,51 @@
     }
   ],
   "departments": {
-    "bsc": "Biological Sciences",
-    "bie": "Bioengineering",
-    "cog": "Cognitive Sciences",
-    "cse": "Computer Science",
-    "ece": "Electrical Engineering",
-    "mat": "Mathematics",
-    "phy": "Physics",
-    "vis": "Visual Arts",
-    "mus": "Music"
+    "bsc":
+    {
+      "name": "Biological Sciences",
+      "link": "https://biology.ucsd.edu/"
+    },
+    "bie":
+    {
+      "name": "Bioengineering",
+      "link": "http://be.ucsd.edu/"
+    },
+    "cog":
+    {
+      "name": "Cognitive Sciences",
+      "link": "http://www.cogsci.ucsd.edu/"
+    },
+    "cse":
+    {
+      "name": "Computer Science",
+      "link": "https://cse.ucsd.edu/"
+    },
+    "ece":
+    {
+      "name": "Electrical Engineering",
+      "link": "http://www.ece.ucsd.edu/"
+    },
+    "mat":
+    {
+      "name": "Mathematics",
+      "link": "https://math.ucsd.edu/"
+    },
+    "phy":
+    {
+      "name": "Physics",
+      "link": "https://physics.ucsd.edu/"
+    },
+    "vis":
+    {
+      "name": "Visual Arts",
+      "link": "http://visarts.ucsd.edu/"
+    },
+    "mus":
+    {
+      "name": "Music",
+      "link": "http://musicweb.ucsd.edu/"
+    }
   },
   "majorDescriptions": {
     "bio": "Bioinformatics majors utilize computation to understand, interpret, and analyze the flow of information in biological systems. This major is offered separately by four UCSD departments: Biology, Computer Science, Bioengineering, and Chemistry. These four departments offer rigorous and interdisciplinary trainings for this new and evolving field. All of these departments provide courses on molecular biology, computer science and mathematics, while offering emphasis on each of their respective department subjects.",
