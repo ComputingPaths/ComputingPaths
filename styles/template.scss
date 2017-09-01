@@ -56,10 +56,10 @@ nav.navbar {
     right: 10%;
     top: 28px;
     padding: 0;
-    color: white;
     outline: none;
 
     i {
+      color: white;
       font-size: 24px;
     }
   }
@@ -79,6 +79,7 @@ nav.navbar {
       width: 100%;
       margin-top: 15px;
       margin-bottom: 15px;
+      margin-left: 0;
       text-align: center;
 
       .nav-link {

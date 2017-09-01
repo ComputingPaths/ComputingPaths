@@ -29,11 +29,11 @@ block main
         div(class='nice-sidebar col-lg-3')
           div(class='margin')
           a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Project Types
-            i(class='fa fa-chevron-down')
+            i(class='fa fa-chevron-up')
           ul(id='tags' class='collapse show')
             div(class='row')
               each t in projectTags
-                li(class='col-6 col-md-4 col-lg-12 no-select') #{t}
+                li(class='col-12 col-sm-6 col-md-4 col-lg-12 no-select') #{t}
                 
         div(class='col-lg-9')
           - for(let i = 0; i < projects.length; i++)
@@ -74,12 +74,12 @@ block main
                                 img(src=`${projects[i].images[j]}`)
                             
                         
-                          a(class='carousel-control-prev' data-slide='prev' href='#proj-carousel')
-                            i(class='fa fa-arrow-left fa-2x' aria-hidden='true')
-                            span(class='sr-only') Previous
-                          a(class='carousel-control-next' data-slide='next' href='#proj-carousel')
-                            i(class='fa fa-arrow-right fa-2x' aria-hidden='true')
-                            span(class='sr-only') Next
+                        a(class='carousel-control-prev' data-slide='prev' href='#proj-carousel')
+                          i(class='fa fa-arrow-left fa-2x' aria-hidden='true')
+                          span(class='sr-only') Previous
+                        a(class='carousel-control-next' data-slide='next' href='#proj-carousel')
+                          i(class='fa fa-arrow-right fa-2x' aria-hidden='true')
+                          span(class='sr-only') Next
 
 
                       div(class='row proj-info')

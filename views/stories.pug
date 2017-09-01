@@ -45,11 +45,11 @@ block main
 				if (stories[i].class !== undefined)
 					- theirRole += '| Class of ' + stories[i].class
 				div(class='row')
-					if (stories[i].image === null)
+					if (!stories[i].image)
 						div(class='story-content col-lg-10 col-12 offset-lg-1')
 							h2(class='size-20 bold') #{stories[i].name}
 							h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
-							h1(class='size-20 nor') "#{stories[i].quote}"
+							h1(class='size-20 nor') "!{stories[i].quote}"
 					else
 						//- Every other story
 						- var even = i % 2 === 0
