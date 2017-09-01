@@ -26,5 +26,4 @@ $(document).ready(function() {
   var num = index + 1;
   $(value).attr("id","proj-modal" + num);
   });
-  
 })

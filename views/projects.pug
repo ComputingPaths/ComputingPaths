@@ -65,15 +65,11 @@ block main
                       div(class='row slideshow')
                         div(id='proj-carousel' class='carousel slide offset-lg-1 col-lg-10 col-12' data-ride='carousel')
 
-                          ol(class='carousel-indicators')
-                            li(data-target='#proj-carousel' data-slide-to='0' class='active')
-                            li(data-target='#proj-carousel' data-slide-to='1')
-
                           div(class="carousel-inner" role="listbox")
-                            div(class='carousel-item active')
-                              img(src='/img/temp1.svg')
-                            div(class='carousel-item')
-                              img(src='/img/temp1.svg')
+                            - for(let j = 0; j < projects[i].images.length; j++)
+                              div(class='carousel-item' class = j === 0 ? 'active' : '')
+                                img(src=`${projects[i].images[j]}`)
+
 
                       div(class='row proj-info')
 
@@ -91,7 +87,7 @@ block main
 
                           div(class='detail-item')
                             p.description-title PROJECT MEMBERS
-                            - for(let j = 0; j < projects.length; j++)
+                            - for(let j = 0; j < projects[i].members.length; j++)
                               p.description #{projects[i].members[j]}
 
                           div(class='detail-item')
