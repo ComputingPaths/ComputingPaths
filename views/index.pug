@@ -84,13 +84,13 @@ block main
       h1 Triton Projects
       hr
     div(class='container')
-      main(class='row')
+      div(class='row align-items-center')
         a(class='prev-proj col-md-1 hidden-sm-down')
-          i(class='fa fa-arrow-left')
-        div(id="carouselExampleControls" class="carousel col-md-10 slide")
-          div(class="carousel-inner" role="listbox")
+          i(class='fa fa-arrow-left fa-2x')
+        div(id='carouselExampleControls' class='carousel col-md-10 slide')
+          div(class='carousel-inner row')
             - for (let i = 0; i < 10; i++)
-              article
+              div(class='proj-card col-12 col-lg-6')
                 img(src='/img/temp1.svg')
                 div
                   h1 Some Student Project
@@ -98,15 +98,15 @@ block main
                   h3 Read more 
                     i(class='fa fa-arrow-right')
         a(class='next-proj col-md-1 hidden-sm-down')
-          i(class='fa fa-arrow-right')
+          i(class='float-right fa fa-arrow-right fa-2x')
       nav
         a(class='prev-proj hidden-md-up')
           i(class='fa fa-arrow-left fa-2x')
-        ul(class='hidden-sm-down')
+        div(class='hidden-sm-down')
         a(class='next-proj hidden-md-up')
           i(class='fa fa-arrow-right fa-2x')
-      footer
-        a(class='link-btn' href='/projects.html') Link to projects
+
+      a(class='link-btn' href='/projects.html') Link to projects
       
   div(class='resources section')
     div(class='section-header')
