@@ -54,8 +54,10 @@ block main
                 a(href=`/majors.html#${m.short}`)
                   i(class='fa fa-arrow-right fa-2x align-middle')
       nav(class='hidden-md-up')
-        i(id='prev-major' class='fa fa-arrow-left fa-2x')
-        i(id='next-major' class='fa fa-arrow-right fa-2x')
+        a(id='prev-major')
+          i(class='fa fa-arrow-left fa-2x')
+        a(id='next-major')
+          i(class='fa fa-arrow-right fa-2x')
       a(class='link-btn hidden-lg-up' href=pages[1].link) Link to all the majors
         
         

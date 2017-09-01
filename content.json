@@ -49,7 +49,6 @@
     {
       "name": "Bioinformatics",
       "cap": true,
-      "footnote": false,
       "degree": "bs",
       "departments": [
         "bsc",
@@ -61,13 +60,11 @@
         "http://bioinformatics.ucsd.edu/"
       ],
       "image": "/img/Bioinformatics.jpg",
-      "short": "bio",
-      "note": ""
+      "short": "bio"
     },
     {
       "name": "Cognitive Science",
       "cap": false,
-      "footnote": false,
       "degree": "bs",
       "departments": [
         "cog"
@@ -77,13 +74,11 @@
         "http://www.cogsci.ucsd.edu/"
       ],
       "image": "/img/CognitiveScience.jpg",
-      "short": "cog",
-      "note": ""
+      "short": "cog"
     },
     {
       "name": "Computer Science",
       "cap": true,
-      "footnote": false,
       "degree": "bs",
       "departments": [
         "cse"
@@ -93,13 +88,11 @@
         "https://cse.ucsd.edu/"
       ],
       "image": "/img/ComputerScience.jpg",
-      "short": "cse",
-      "note": ""
+      "short": "cse"
     },
     {
       "name": "Electrical & Computer Engineering",
       "cap": true,
-      "footnote": true,
       "degree": "bs",
       "departments": [
         "cse",
@@ -116,7 +109,6 @@
     {
       "name": "Math-Computer Science",
       "cap": true,
-      "footnote": false,
       "degree": "bs",
       "departments": [
         "mat"
@@ -126,13 +118,11 @@
         "https://math.ucsd.edu/"
       ],
       "image": "/img/Math-CS.jpg",
-      "short": "mcs",
-      "note": ""
+      "short": "mcs"
     },
     {
       "name": "Scientific Computation",
       "cap": true,
-      "footnote": false,
       "degree": "bs",
       "departments": [
         "mat",
@@ -145,13 +135,11 @@
         "https://physics.ucsd.edu/"
       ],
       "image": "/img/SciComp.jpg",
-      "short": "sci",
-      "note": ""
+      "short": "sci"
     },
     {
       "name": "Interdisciplinary Computing and the Arts",
       "cap": false,
-      "footnote": true,
       "degree": "ba",
       "departments": [
         "vis",
@@ -169,7 +157,6 @@
     {
       "name": "Speculative Design",
       "cap": false,
-      "footnote": false,
       "degree": "ba",
       "departments": [
         "vis"
@@ -179,30 +166,25 @@
         "http://visarts.ucsd.edu/majors-0"
       ],
       "image": "/img/SpecDesign.jpg",
-      "short": "spc",
-      "note": ""
+      "short": "spc"
     },
     {
       "name": "Data Science",
       "cap": false,
-      "footnote": false,
       "degree": "bs",
       "departments": [
-        "cse"
+        "cse",
+        "cog",
+        "mat"
       ],
       "hook": "Data scientists use mathematics and computing to tackle the emerging need for data analysis in a wide range of industries.",
       "websites": [
         "http://jacobsschool.ucsd.edu/mas/dse/"
       ],
       "image": "/img/DataScience.jpg",
-      "short": "dat",
-      "note": ""
+      "short": "dat"
     }
   ],
-  "degrees": {
-    "bs": "Bachelor of Science",
-    "ba": "Bachelor of Arts"
-  },
   "departments": {
     "bsc": "Biological Sciences",
     "bie": "Bioengineering",
@@ -216,26 +198,85 @@
   },
   "majorDescriptions": {
     "bio": "Bioinformatics majors utilize computation to understand, interpret, and analyze the flow of information in biological systems. This major is offered separately by four UCSD departments: Biology, Computer Science, Bioengineering, and Chemistry. These four departments offer rigorous and interdisciplinary trainings for this new and evolving field. All of these departments provide courses on molecular biology, computer science and mathematics, while offering emphasis on each of their respective department subjects.",
-    "cog": "The cognitive science major is a diverse field that blends together the understanding of the brain, human behavior, and computation. Students can choose between five different specializations that span widely different disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts. Students can explore a variety of disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts, determined by their chosen specialization. Graduates of this program often go on to graduate school or work in research, UX and product design, and data analysis.",
-    "cse": "The Computer Science major allows students to initially explore computer science through algorithmic problem solving and programming in various languages, including Java and C. Students then progress to topics involving a deeper understanding of computer systems including advanced data structures and computer architecture. Additional elective courses provide depth into systems and networks, database analysis, security and cryptography topics, machine learning, computer vision, and graphics. Many graduates of this program go on to graduate school or choose careers that involve machine automation, UI/UX design, data analytics, application development, artificial intelligence, networking, and security.",
+    "cog": "The Cognitive Science major is a diverse field that blends together the understanding of the brain, human behavior, and computation. Students can choose between five different specializations that span widely different disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts. Students can explore a variety of disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts, determined by their chosen specialization. Graduates of this program often go on to graduate school or work in research, UX and product design, and data analysis.",
+    "cse": "The Computer Science major allows students to initially explore computer science through algorithmic problem solving and programming in various languages, including Java and C. Students then progress to topics involving a deeper understanding of computer systems including advanced data structures and computer architecture. Additional elective courses provide depth into systems and networks, database analysis, security and cryptography topics, machine learning, computer vision, and graphics.<br> Many graduates of this program go on to graduate school or choose careers that involve machine automation, UI/UX design, data analytics, application development, artificial intelligence, networking, and security.",
     "ece": "Both Computer Engineering and Electrical Engineering involve understanding of electricity, electronics, and electromagnetism in addition to computational knowledge. Students can choose to have more of a balance between software and hardware as computer engineers or a greater emphasis on hardware as electrical engineers.",
-    "mcs": "The Math-Computer Science (B.S) major is a specialized branch of mathematics, providing a focus on computer science. While not covering the same scope as a pure Computer Science major, Math CS prepares students to potentially work in a computing setting. Students are given flexibility in their course subjects, allowing the opportunity to have a greater focus on mathematics or to take a more even distribution of courses in mathematics and computer science. Students study subjects including abstract algebra, statistics and probability, combinatorics, algorithm analysis, programming, and data structures.",
-    "sci": "[Placeholder - there are two departments in this category: math and physics]",
+    "mcs": "The Math-Computer Science major is a specialized branch of mathematics, providing a focus on computer science. While not covering the same scope as a pure Computer Science major, Math CS prepares students to potentially work in a computing setting. Students are given flexibility in their course subjects, allowing the opportunity to have a greater focus on mathematics or to take a more even distribution of courses in mathematics and computer science. Students study subjects including abstract algebra, statistics and probability, combinatorics, algorithm analysis, programming, and data structures.",
+    "sci": "Scientific Computation is a grouping of two separate majors offered by the mathematics and physics departments, in conjunction with the computer science department. Both majors focus on the intersection of their respective fields and computing.",
     "ica": "The Interdisciplinary Computing and the Arts major (ICAM) is an exciting blend of computer science, art, and technology that explores today’s cutting-edge media. Access to a wide range of disciplines means that students are free to tailor the program to their artistic interests, and can take classes in fields like virtual reality, design communication, film production, and physical electronics programming. ICAM students gain technical, theoretical, and historical backgrounds that prepare them to anticipate and work with emerging trends in art, music, and technology. They can choose from either music technology or visual arts focuses, which influence their upper-level coursework, but often draw from both fields during their journey through the major.",
-    "spc": "The Speculative Design (B.A.) major mixes art, science, and emerging technology, with a focus on aesthetics, entrepreneurship, and activist intervention. Combining laboratory and field research in a creative studio setting, Speculative Design works from nano to urban scales to stimulate new ideas and innovative solutions. Rather than focusing on existing methodologies, this program prepares students to solve problems that will emerge in an uncertain future. Students may choose from four areas of emphasis: Public Culture and Urban Ecology, Design Computing, Design Research, and Media Design. ",
+    "spc": "The Speculative Design major mixes art, science, and emerging technology, with a focus on aesthetics, entrepreneurship, and activist intervention. Combining laboratory and field research in a creative studio setting, Speculative Design works from nano to urban scales to stimulate new ideas and innovative solutions. Rather than focusing on existing methodologies, this program prepares students to solve problems that will emerge in an uncertain future. Students may choose from four areas of emphasis: Public Culture and Urban Ecology, Design Computing, Design Research, and Media Design.",
     "dat": "Data science majors use mathematical models and computational methods to craft powerful data analysis and meet the emerging needs of data-driven industries, from manufacturing companies to government organizations. The core knowledge base of the data scientist lies at the intersection of computing and mathematics, coupled with the skills to abstract, build, and test predictive and descriptive models. Students in the program can expect coursework in mathematics, computer science, and statistics, as well as foundational lower division coursework in natural and physical sciences."
   },
   "majorExpand": {
     "bio": {
-      "expandType": "SPECIALIZATIONS",
+      "type": "SPECIALIZATIONS",
       "data": [
         {
-          "expandName": "Specialization 1",
-          "expandDesc": "this specialization 1 is so cool wowow"
+          "name": "Biology - Bioinformatics",
+          "detail": "The Biology - Bioinformatics major takes an interdisciplinary approach to biological study, applying computational methods to biological data analysis to investigate living organisms and their communities. This major exposes students to various fields of study, with an emphasis on understanding biological systems. Students analyze biological data, utilizing techniques in chemistry, mathematics, physics, and computer science. This degree will prepare students for graduate studies in biological and biomedical sciences, and provide training for work in the biomedical, pharmaceutical, biotechnology, and bioinformatics industries."
         },
         {
-          "expandName": "Specialization 2",
-          "expandDesc": "this specialization 2 is so cool wowow"
+          "name": "Computer Science - Bioinformatics",
+          "detail": "The Computer Science - Bioinformatics major applies computer science and mathematics to model the flow of information in biological systems and uses computational and experimental methods to develop an integrated understanding of living organisms. Many graduates in this degree go on to graduate school, medical school, or choose careers involved in computational molecular biology, bioinformatics, proteomics, approximation algorithms, human genome, and protein identification."
+        },
+        {
+          "name": "Bioengineering - Bioinformatics",
+          "detail": "The Bioengineering - Bioinformatics major explores the flow of information in living systems. This major emphasizes systems engineering, model-based approaches, and computer science to understanding bioinformatics data. This degree will provide a heightened understanding of cellular functions, protein structure and design, evolutionary biology, regulatory networks, the molecular basis of disease, the generation of novel therapeutics, and customized proteins. Graduates of this program often go on to work in fields of molecular biology and systems engineering analysis."
+        },
+        {
+          "name": "Chemistry - Bioinformatics",
+          "detail": "The Chemistry - Bioinformatics major accounts for an evolving field of qualitative and quantitative data by developing an understanding of systems properties of model organisms. This major is aimed at students interested in applying and developing tools of bioinformatics for the study of chemical processes in biological systems. Students can expect to tackle classes in computer science, mathematics, biology, and physics, with a strong emphasis on biochemistry and chemistry courses."
+        }
+      ]
+    },
+    "cog": {
+      "type": "SPECIALIZATIONS",
+      "data": [
+        {
+          "name": "Neuroscience",
+          "detail": "Neuroscience is intended for majors interested in neuroscience research or medicine. Elective coursework includes cognitive neuroscience, organic chemistry, biochemistry, and physiology."
+        },
+        {
+          "name": "Clinical Aspects of Cognition",
+          "detail": "Clinical Aspects of Cognition is intended for majors interested in cognitive neuropsychology, psychiatry, cognitive disorders, and the effects of drugs and brain-damage on cognitive functions. Allowed elective coursework includes organic chemistry, biochemistry, and physiology."
+        },
+        {
+          "name": "Design and Interaction",
+          "detail": "Design and Interaction is intended for majors interested in human computer interaction, web design, visualization, and applications of cognitive science in design and engineering. Elective coursework includes  cognitive science, computer science, computer engineering, and visual arts."
+        },
+        {
+          "name": "Language, Culture, and Cognition",
+          "detail": "Language, Culture, and Cognition is intended for majors whose primary interests include human psychology and applications of cognitive science in design and engineering. Elective coursework includes cognitive development, language, laboratory research of cognition, anthropology, and sociology."
+        },
+        {
+          "name": "Machine Learning and Neural Computation",
+          "detail": "Machine Learning and Neural Computation is intended for majors interested in computational and mathematical approaches to modeling cognition or building cognitive systems, theoretical neuroscience, as well as software engineering and data science. Elective coursework includes neural networks, artificial intelligence, and computer science."
+        }
+      ]
+    },
+    "ece": {
+      "type": "SPECIALIZATIONS",
+      "data": [
+        {
+          "name": "Computer Engineering",
+          "detail": "The Computer Engineering major is a unique blend of hardware and software allowing students to explore both the computer science and electrical engineering disciplines. Students obtain a range of knowledge from circuitry and programming to the design and analysis of computer architecture and electronic systems. Computer engineering students begin with core courses in both the CSE and ECE departments, but go on to take advanced elective courses to specialize in one, or both fields.<br>Many graduates in this degree program go on to graduate school or choose careers that involve the design of computer hardware and software systems in diverse areas such as computer graphics, computer-aided design, multimedia systems, databases, parallel computation, distributed computation, artificial intelligence, optical computing, and fabrication."
+        },
+        {
+          "name": "Electrical Engineering",
+          "detail": "Electrical Engineering is a flexible, broad, and powerful major that equips students for professions in engineering, medicine, law, and business administration. Students first go through a common lower-division series where they take courses in mathematics, physics, chemistry, and electrical and computer engineering, and then a flexible series of upper-division courses in topics like communication systems, machine learning, and signal and image processing.  Graduates have found high tech positions in diverse areas such as computer electronics, phone and satellite communication systems, advanced circuit and optical systems design, and wireless communications."
+        }
+      ]
+    },
+    "sci": {
+      "type": "SPECIALIZATIONS",
+      "data": [
+        {
+          "name": "Math - Scientific Computation",
+          "detail": "The Math - Scientific Computation major is a specialized branch of applied mathematics, utilizing computation to solve complicated numerical problems that apply to real world situations. This major emphasizes material most relevant to numerical simulation and scientific computation. Students are given an introduction to programming, and gain opportunities to utilize various methods in applied science and mathematics including approximation, software design, and scientific visualization. Students study subjects including linear algebra, statistics, numerical analysis, and optimization."
+        },
+        {
+          "name": "Physics – Computational Physics",
+          "detail": "The Physics – Computational Physics major is a specialized branch of applied physics,  exploring the intersection between physics and computing. Students enjoy access to major-restricted computer science, mathematics, and physics electives in topics like information technology, engineering application development, and high tech instrumentation. Students also gain a wealth of knowledge in several principal areas of physics and work with physics faculty to design an optimal career development track in the flexible curriculum. This major prepares students to enter the information technology and high tech industry workforce or to pursue graduate work in computational science or computational physics."
         }
       ]
     }
@@ -711,18 +752,6 @@
     "eq": "Equipment",
     "ws": "Workspaces"
   },
-	"resourceBanner":[
-		{
-			"name": "banner resource 1",
-			"image":"/img/temp1.svg",
-			"link": "testbannerimage1.com"
-		},
-    {
-			"name": "banner resource 2",
-			"image":"/img/temp1.svg",
-			"link": "testbannerimage2.com"
-		}
-	],
   "resourceBanner": [
     {
       "name": "banner resource 1",
@@ -811,8 +840,7 @@
         "/img/projectImages/potholesSD/3.jpg",
         "/img/projectImages/potholesSD/4.jpg"
       ],
-      "videos": [
-      ],
+      "videos": [],
       "link": "https://github.com/tjl014/Projects/blob/master/Potholes%20in%20San%20Diego.ipynb",
       "tags": [
         "da"
@@ -834,8 +862,7 @@
         "/img/projectImages/memo/2.jpg",
         "/img/projectImages/memo/3.jpg"
       ],
-      "videos": [
-      ],
+      "videos": [],
       "link": "http://toriduong.com/me-mo.html",
       "tags": [
         "ma"
@@ -854,8 +881,7 @@
         "/img/projectImages/micromouse/3.jpg",
         "/img/projectImages/micromouse/4.jpg"
       ],
-      "videos": [
-      ],
+      "videos": [],
       "link": "http://micromouseusa.com/",
       "tags": [
         "ar"
@@ -901,8 +927,7 @@
         "/img/projectImages/gentrification/3.jpg",
         "/img/projectImages/gentrification/4.jpg"
       ],
-      "videos": [
-      ],
+      "videos": [],
       "link": "https://github.com/mec029/Pr_057/blob/master/FinalProject.ipynb",
       "tags": [
         "da"
@@ -946,8 +971,7 @@
         "/img/projectImages/gokoban/4.jpg",
         "/img/projectImages/gokoban/5.jpg"
       ],
-      "videos": [
-      ],
+      "videos": [],
       "link": "https://github.com/danaugrs/gokoban",
       "tags": [
         "ga"

@@ -15,13 +15,12 @@ block main
 	
 	div(class='container page-intro')
 		div(class='row')
-			p(class='col-sm-10 offset-sm-1') This is the majors page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+			p(class='col-sm-10 offset-sm-1') A wide array of majors offer a unique computing experience at UCSD. These majors apply computational skills to both new and traditional subject matter, developing programming skills, fostering scientific study, and bolstering creativity.
 	
 	div(class='page-blurb') 
 		h1 Explore these majors
 	
 	div(class='pos' id=majors[0].short)
-
 
 	main
 		div(class='container')
@@ -43,7 +42,7 @@ block main
 							div(class='text row no-gutters')
 								div(class='col-xl-7 flex-last flex-xl-first')
 									h5 DESCRIPTION
-									p #{majorDescriptions[majors[i].short]}
+									p !{majorDescriptions[majors[i].short]}
 								div(class='col-xl-4 offset-xl-1 flex-first flex-xl-last')
 									div(class='row')
 										div(class='col-6 col-xl-12')
@@ -51,7 +50,10 @@ block main
 											h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
 										div(class='col-6 col-xl-12')
 											h5 DEGREE TYPE
-											h4 #{degrees[majors[i].degree]}
+											- if (majors[i].degree === 'bs')
+												h4 Bachelor of Science
+											- if (majors[i].degree === 'ba')
+												h4 Bachelor of Arts
 									div(class='row')
 										div(class='col-6 col-xl-12')
 											h5 DEPARTMENTS
@@ -67,19 +69,20 @@ block main
 								if (majorExpand[majors[i].short])
 									- let ex = majorExpand[majors[i].short]
 									div(class='col-12 flex-last expand')
-										h5 #{ex.expandType}
+										h5 #{ex.type}
 										- for(let j = 0; j < ex.data.length; j++)
-											a(class='flip-on-click header' data-toggle='collapse' href=`#res-txt-${j}`) #{ex.data[j].expandName}
+											a(class='flip-on-click header' data-toggle='collapse' href=`#ex-${i}-${j}`) #{ex.data[j].name}
 												i(class='fa fa-chevron-down')
-											div(id=`res-txt-${j}` class='collapse spec')
-												p() #{ex.data[j].expandDesc}
-							- if(i + 1 < majors.length)
-									div(class='pos' id=majors[i + 1].short)
+											div(id=`ex-${i}-${j}` class='collapse spec')
+												p() !{ex.data[j].detail}
 
 							//- Footnote
-							- if( majors[i].footnote )
+							- if(majors[i].note)
 								div(class='footnote row no-gutters')
 									div(class='asterisk bold hidden-xs-down col-1')
 										h1 *
 									div(class='note col-12 col-sm-11')
 										p <span class="mini-asterisk hidden-sm-up">*</span> #{majors[i].note}
+										
+							- if(i + 1 < majors.length)
+								div(class='pos' id=majors[i + 1].short)
