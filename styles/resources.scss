@@ -13,11 +13,16 @@
 			flex-direction: column;
 	
 			.img {
-				height: 518px;
-				background-image: url('/img/temp1.svg');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: cover;
+				img {
+					height: 518px;
+					width: 100%;
+					object-fit: cover;
+				}
+				
+				//background-image: url('/img/temp1.svg');
+				//background-repeat: no-repeat;
+				//background-position: center;
+				//background-size: cover;
 				margin-bottom: 16px;
 			}
 		
