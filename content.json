@@ -43,7 +43,7 @@
       "role": "Professor",
       "quote": "You might not know exactly where you’re going, but keep your interests in the forefront and things will open up. When I went to school, you couldn’t integrate art and technology in any meaningful way, but I found a position where I could do this. You find these opportunities and you weigh what’s important.",
       "image": "/img/TomErbe.jpg"
-    }, 
+    },
 		{
       "name": "Julian D’Angelo",
       "major": "Bioinformatics",
@@ -380,7 +380,7 @@
       "name": "Applied Physics and Mathematics Building",
       "description": "Located between Thurgood Marshall and John Muir College, the Applied Physics and Mathematics Building (APM) is a facility which houses research, offices, classrooms, meeting rooms, and other resources for students.",
       "mapImage": "img/APMBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=165070",
       "link": "https://www.math.ucsd.edu/",
       "tags": [
         "as",
@@ -392,7 +392,7 @@
       "name": "Atkinson Hall Facilities",
       "description": "Atkinson Hall includes many unique spaces that can meet the needs of almost any meeting, conference, or event. As the Qualcomm Institute’s headquarters, the 250,000sf building is a technologically advanced facility specializing in cutting-edge applications of technology and communication needs.",
       "mapImage": "img/AtkinsonBldg.jpg",
-      "mapLink": "map2link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163038",
       "link": "http://qi.ucsd.edu/facilities.php",
       "tags": [
         "bs",
@@ -403,7 +403,7 @@
       "name": "Calculus Lab",
       "description": "Located in the Applied Physics and Mathematics Building (APM B402), the Calculus Lab is a place for students who want extra help with their MATH 3C/4C, 10ABC or 20ABC classes. The lab is staffed with math TAs and undergraduate tutors each weekday from roughly 8am to 5pm. The Calc Lab is staffed from week 2 through 10 of each quarter.",
       "mapImage": "img/APMBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=165070",
       "link": "https://math.ucsd.edu/resources/calculus-tutoring/",
       "tags": [
         "as",
@@ -414,7 +414,7 @@
       "name": "Computer Music Instructional Laboratory",
       "description": "Located in the Conrad Prebys Music Center, The Computer Music Instructional Laboratory resides in a new 500-square-foot studio with machine isolation, acoustical treatment, mixer console, ergonomic workstation components, a high-resolution plasma screen, CD and DVD authoring, and integrated digital audio equipment for student access to audio processing, duplicating, high definition digital mixing and high-quality, multi-channel audio monitoring. The studio is built around a Yamaha DM2000 mixing console which is the central connection point for all digital and analog audio signals. The facility provides adequate space for instrumental rehearsal and interfacing experimentation and provides several firewire and USB audio interfaces for laptop computing.",
       "mapImage": "img/CPMCBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=186265",
       "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
       "tags": [
         "as",
@@ -436,7 +436,7 @@
       "name": "Computer Science and Engineering Building",
       "description": "Located along the Warren Mall, The Computer Science and Engineering building was designed to create a sense of community among the department's faculty, staff, students, and visitors. \"Interaction spaces\" for scholarly activity are located throughout the building where graduate and undergraduate students can drop in to discuss classroom topics, share research ideas, or hold casual conversations. The building houses laboratories dedicated to undergraduate instruction, as well as research facilities designed for ultimate flexibility so faculty and researchers can work on the technologies of the future.",
       "mapImage": "img/CSEBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163049",
       "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b",
       "tags": [
         "as",
@@ -447,7 +447,7 @@
       "name": "Conrad Prebys Music Center",
       "description": "Located near Pepper Canyon Hall and the Gilman Parking Structure, the Conrad Prebys Music Center (CPMC) is a facility which houses the university's music department. The center features a 400-seat Concert Hall, in addition to the 170-seat Recital Hall and an Experimental Theatre with variable digital acoustics system.",
       "mapImage": "img/CPMCBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=186265",
       "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=441",
       "tags": [
         "bs",
@@ -458,7 +458,7 @@
       "name": "CSE Basement",
       "description": "Located at the bottom floor of the Computer Science building, the Basement, commonly known as “the dungeon”, is a space with computer workstations for students to work on CSE-related assignments. Depending on the course, tutoring is available at specific hours.",
       "mapImage": "img/CSEBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163049",
       "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b",
       "tags": [
         "as",
@@ -469,7 +469,7 @@
       "name": "CSES: Late Night Hacks",
       "description": "Late Night Hacks is a procedural epistemology project group at UCSD, part of CSES. They work on various projects, and host talks on various subjects. Kind of like a CSE Town Hall meeting, once a week. Come hang out, share knowledge, and get involved. ",
       "mapImage": "img/CSEBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163049",
       "link": "https://cses.ucsd.edu/late-night/",
       "tags": [
         "ev",
@@ -480,7 +480,7 @@
       "name": "The Design Lab",
       "description": "Located in the California Institute of Telecommunication and Information Technology (Calit2) Building, The Design Lab is a newly established organization, proposing a novel mix of the practice and theory of thinking, observing, and making. The Design Lab is located within the California Institute of Telecommunication and Information Technology.",
       "mapImage": "img/AtkinsonBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163038",
       "link": "http://designlab.ucsd.edu/",
       "tags": [
         "ws"
@@ -511,7 +511,7 @@
       "name": "Digital Music Recording Studio",
       "description": "Located in the Conrad Prebys Music Center, this 1500-square-foot facility includes an acoustically designed live room with high ceilings, a wooden floor, and a control room with Genelec 5.1 surround monitoring. The studio houses a Macintosh system and many dedicated software packages for music production and recording, including a ProTools HD digital audio production package with 24 channels of digital I/O for precise digital recording and editing with Apogee converters and Grace Design microphone preamps. The studio supports MIDI for synthesis, processing, and control in music composition and performance, and includes hardware and software for CD and DVD mastering.",
       "mapImage": "img/CPMCBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163025",
       "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
       "tags": [
         "ws"
@@ -520,8 +520,8 @@
     {
       "name": "Disciplines in Engineering Career Fair (DECaF)",
       "description": "This event provides company representatives a unique opportunity to interact and engage with UC San Diego's talented engineering students regarding career options, internships, and permanent or summer employment opportunities. Open exclusively to UC San Diego students and alumni, DECaF is coordinated by the Triton Engineering Student Council and over 40 pre-professional engineering student organizations at the Jacobs School of Engineering. These engineering societies, representing the spectrum of disciplines at the Jacobs School, work in close collaboration to maximize the attendance of UC San Diego's 8,500 undergraduate and graduate student engineers and to ensure the satisfaction of companies involved.",
-      "mapImage": "img/CP Generic Icon",
-      "mapLink": "map3link",
+      "mapImage": "img/PriceCenter.jpg",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=166926",
       "link": "http://tesc.ucsd.edu/decaf/",
       "tags": [
         "bs",
@@ -532,7 +532,7 @@
       "name": "Electrical Engineering Student Tutoring",
       "description": "Electrical Engineering tutoring sessions are available in Jacobs Hall (EBUI) 5101 on a daily basis. Walk-ins are welcome for students in the following courses: ECE 15-103, ECE 153 and ECE 174.",
       "mapImage": "img/JacobsBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163125",
       "link": "http://www.ece.ucsd.edu/undergraduate/ece-tutoring",
       "tags": [
         "as"
@@ -542,7 +542,7 @@
       "name": "Envision Maker Studio",
       "description": "Located in the Structural Materials and Engineering Building (SME 306), The EnVision Arts and Engineering Maker Studio at is a hands-on, experiential education facility where visual arts and engineering communities converge. The nearly 3,000 square foot studio provides a wide range of design, fabrication and prototyping tools, both analog and digital. Resources include workstations with CAD and Adobe CC software installed, 3d Printers, soldering stations, a laser cutter, and a vacuum former. The studio is accessible for Engineering or Visual Arts majors, and students enrolled in courses currently offered within the studio. 1",
       "mapImage": "/img/sme.jpg",
-      "mapLink": "map1link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163174",
       "link": "http://jacobsschool.ucsd.edu/envision/",
       "tags": [
         "ws"
@@ -552,7 +552,7 @@
       "name": "Gallery @ Calit2",
       "description": "Located in Atkinson Hall, Gallery@Calit2 reflects the nexus of innovation implicit in Calit2's vision, and aims to advance our understanding and appreciation of the dynamic interplay among art, science and technology. Calit2 is a partnership between UC San Diego and UC Irvine, and houses over 1,000 researchers organized around more than 50 projects on the future of telecommunications and information technology and how these technologies will transform a range of applications important to the economy and citizens' quality of life.",
       "mapImage": "img/AtkinsonBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163038",
       "link": "http://gallery.calit2.net/portal/",
       "tags": [
         "sc"
@@ -562,7 +562,7 @@
       "name": "Geisel Library",
       "description": "Great Research Starts Here. Ranked among the nation's top 25 public academic libraries, Geisel Library plays a critical role in advancing and supporting UC San Diego.",
       "mapImage": "img/GeiselLib.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163025",
       "link": "http://libraries.ucsd.edu/",
       "tags": [
         "bs",
@@ -573,7 +573,7 @@
       "name": "Gordon Leadership Center",
       "description": "Located in the Powell-Focht Bioengineering Hall, the Gordon Engineering Center aims to identify and train effective engineering leaders who will create jobs and products that benefit society. This is accomplished through a series of workshops, courses and engineering leadership forums for undergraduate and graduate students at UC San Diego, as well as local professionals and high school students who aspire to become engineers.",
       "mapImage": "img/BioBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163125",
       "link": "http://jacobsschool.ucsd.edu/GordonCenter/",
       "tags": [
         "as"
@@ -583,7 +583,7 @@
       "name": "HackXX",
       "description": "HackXX is UC San Diego's women's hackathon and an empowering place to build great projects. Over 24 hours, women will be given the tools and knowledge to materialize their technological dreams. They will be able to form strong bonds by collaborating with other women in tech, interacting with the the CS community, and engaging with industry representatives from top companies.",
       "mapImage": "img/JacobsBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163125",
       "link": "http://hackxx.sdhacks.io/",
       "tags": [
         "ev",
@@ -594,7 +594,7 @@
       "name": "H.A.R.D. Hack",
       "description": "Hash out. Analyze. Research. Design. All core steps of overcoming engineering challenges. The HARD Hack is a 24 hour hardware centered hackathon hosted by IEEE and HKN.",
       "mapImage": "img/JacobsBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163125",
       "link": "http://www.ece.ucsd.edu/events/hkn-ieee-h-a-r-d-hack",
       "tags": [
         "ev",
@@ -605,7 +605,7 @@
       "name": "ICAM Project Studios",
       "description": "Located in the Conrad Prebys Music Center, these four 200-square-foot studios are designed for individual work on computer music projects. Each studio is equipped with an eight-channel DAW (iMac with MOTU audio interface) and is acoustically treated. In addition, the four studios are designed with different orientations: one with equipment, monitoring and software to support video editing; one for recording, editing and mastering; one for work with MIDI synthesizers; and one with analog mixing and recording.",
       "mapImage": "img/CPMCBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=186265",
       "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
       "tags": [
         "ws"
@@ -615,7 +615,7 @@
       "name": "IDEA Learning Center",
       "description": "The IDEA Learning Center, located at Jacobs Hall B805, is a space for all of the Engineering Learning Communities. Engineering Learning Communities are the formation of formal study groups that bring engineering students into a supportive environment where they can develop confidence, strengthen study skills, and learn the value of collaborative study. This small class environment seeks to increase student mastery and motivation by eliminating the intimidating large classes that engineering students experience particularly in the freshman year.",
       "mapImage": "img/JacobsBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163125",
       "link": "http://jacobsschool.ucsd.edu/idea/resources/idea_studylab.shtml",
       "tags": [
         "as",
@@ -648,7 +648,7 @@
       "name": "Instructional Computing Laboratory",
       "description": "Located in the Conrad Prebys Music Center, the 600-square-foot Instructional Computing Lab features 10 Intel iMac workstations and laptop work area. The composition work surfaces are based around Akai keyboard controllers. Software includes Ableton Live Suite 9, Max/MSP/Jitter 7, Soundhack, Pure Data, Sibelius 8, LogicX, and Adobe CS.",
       "mapImage": "img/CPMCBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=186265",
       "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
       "tags": [
         "as",
@@ -659,7 +659,7 @@
       "name": "Kamil Gallery",
       "description": "Located in the lower level of the Mandeville Center, The Adam D. Kamil Art Gallery is a resource for Visual Arts students to view and exhibit art projects. Opportunities to exhibit work are offered on a quarterly basis.",
       "mapImage": "img/MandevilleBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229230",
       "link": "http://visarts.ucsd.edu/mandeville-center",
       "tags": [
         "sc"
@@ -669,7 +669,7 @@
       "name": "Media Teaching Lab",
       "description": "Located in the Communications Building, the Media Teaching Lab offers outstanding media facilities, equipment, and technical assistance provided to students and faculty. The facility offers rental services for equipment and workshops to learn software, photography work, and lighting. The Media Teaching Lab's aim is to facilitate students in making the highest quality videos and films with excellent sound, editing, and cinematography. The space also holds regular workshops and events to educate students in editing, HD workflow, cameras, and lighting all throughout the quarter.",
       "mapImage": "img/CommBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163048",
       "link": "http://acms.ucsd.edu/students/medialab/",
       "tags": [
         "as",
@@ -756,7 +756,7 @@
       "name": "Structural & Material Engineering Building",
       "description": "Located on the corner of Voigt Drive and Matthews Lane near Sixth College, the 183,000 square foot building houses a community of artists and engineers which includes 12 visual arts studios, a gallery and performance space, and 11 distinct visual arts research initiatives, and a state of the art paint booth. The building is also home to an array 160 graduate student, faculty, and staff offices and the EnVision makerspace.",
       "mapImage": "img/sme.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163174",
       "link": "http://jacobsschool.ucsd.edu/sme/",
       "tags": [
         "bs",
@@ -767,7 +767,7 @@
       "name": "Teaching + Learning Commons",
       "description": "In 2015, UC San Diego established the Teaching + Learning Commons to advance and improve how we teach and learn. Today, a suite of services and programs are in place to develop better instructors and more engaged learners. Our campus is committed to delivering an educational experience that prepares students who are capable of solving problems, leading, and innovating in a diverse and interconnected world. Tutoring is available for Math 2, 3C, 4C, 10A, 10B, 10C, 20A, 20B, and 20C as well as Chemistry 6A, 6B, and 6C.",
       "mapImage": "img/GeiselLib.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163025",
       "link": "https://commons.ucsd.edu/",
       "tags": [
         "as",
@@ -778,7 +778,7 @@
       "name": "Tech Lending Program (TLP)",
       "description": "The Tech Lending Program (TLP) circulates technology items, from calculators to digital cameras, to currently enrolled UC San Diego faculty, staff, and students. This is an effort by the Library to ensure that our users have the technological means to conduct research, and complete coursework as efficiently and effectively as possible. TLP’s initial inventory consists mostly of frequently requested items like device chargers, adapters (e.g., mini-HDMI to HDMI), flash drives, and headsets. A few high-end devices are also offered, including digital cameras, projectors, and Rokus. Non-electronic items include book stands and wrist rests. 2",
       "mapImage": "img/CommBldg.jpg",
-      "mapLink": "map2link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163048",
       "link": "https://library.ucsd.edu/computing-and-technology/tech-lending/index.html",
       "tags": [
         "eq"
@@ -799,7 +799,7 @@
       "name": "University Art Gallery",
       "description": "Located on the outskirts of the Mandeville Center, near the Main Gym, The University Art Gallery aims to activate new fields of knowledge production, new material, discursive, and critical possibilities -- alternative forms of organization, exchange, collection, and presentation that can be incorporated into new understandings of artistic endeavor. Working with the conditions and interrelationships of publics, space, discourse, and pedagogy, it enhances the dialogue around diversity within contemporary cultural practice and supports fellows and students in their academic and professional development as curators, critics, writers and scholars.",
       "mapImage": "img/MandevilleBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229230",
       "link": "http://visarts.ucsd.edu/university-art-gallery-uag",
       "tags": [
         "sc"
@@ -820,7 +820,7 @@
       "name": "Visual Arts Facility",
       "description": "Located between the Structural Materials and Engineering Building (SME) and Pepper Canyon Hall, the Visual Arts Facility hosts visual arts graduate student studios, a seminar room, the graduate photo lab, a computer lab, a gallery, and a performance space, a sound lab and a screening room.",
       "mapImage": "img/VAFBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229265",
       "link": "http://visarts.ucsd.edu/visual-arts-facility-vaf",
       "tags": [
         "bs",
@@ -831,7 +831,7 @@
       "name": "Wood & Metal Shops",
       "description": "Located in the Mandeville Center, these facilities provide access to wood/metal cutting tools to undergraduate students.",
       "mapImage": "img/MandevilleBldg.jpg",
-      "mapLink": "map3link",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229230",
       "link": "http://visarts.ucsd.edu/mandeville-center",
       "tags": [
         "ws"
@@ -848,14 +848,48 @@
   },
   "resourceBanner": [
     {
-      "name": "banner resource 1",
-      "image": "/img/temp1.svg",
-      "link": "testbannerimage1.com"
+      "name": "Digital Media Lab",
+      "image": "img/resourceBanner/Digital Media Lab.jpg",
+      "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/"
+
+    },{
+      "name": "Media Teaching Lab",
+      "image": "img/resourceBanner/Media-Teaching-Lab.jpg",
+      "link": "http://acms.ucsd.edu/students/medialab/"
+    },{
+      "name": "University Art Gallery",
+      "image": "img/resourceBanner/University Art Gallery.jpg",
+      "link": "http://visarts.ucsd.edu/galleries_view"
     },
     {
-      "name": "banner resource 2",
-      "image": "/img/temp1.svg",
-      "link": "testbannerimage2.com"
+      "name": "Calit2 Protyping Lab",
+      "image": "img/resourceBanner/Calit2 Prototyping Lab.jpg",
+      "link": "http://www.calit2.net/"
+    },
+    {
+      "name": "Computer Science Basement",
+      "image": "img/resourceBanner/Computer-Science-Basement.jpg",
+      "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b"
+    },{
+      "name": "Design Lab",
+      "image": "img/resourceBanner/Design Lab.jpg",
+      "link": "http://designlab.ucsd.edu/"
+    },{
+      "name": "Jacobs School of Engineering",
+      "image": "img/resourceBanner/Jacobs-School-of-Engineering.jpg",
+      "link": "http://jacobsschool.ucsd.edu"
+    },{
+      "name": "IDEA Learning Center",
+      "image": "img/resourceBanner/IDEA-Learning-Center.jpg",
+      "link": "http://jacobsschool.ucsd.edu/idea/resources/idea_studylab.shtml"
+    },{
+      "name": "Conrad Prebys Music Center",
+      "image": "img/resourceBanner/Conrad Prebys Music Center.jpg",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=441"
+    },{
+      "name": "CSE Building",
+      "image": "img/resourceBanner/Computer Science & Engineering Building.jpg",
+      "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b"
     }
   ],
   "projects": [
