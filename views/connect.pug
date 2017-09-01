@@ -30,7 +30,7 @@ block main
           ul(id='tags' class='collapse show')
             div(class='row')
               each t in orgTags
-                li(class='col-6 col-md-4 col-lg-12') #{t}
+                li(class='col-12 col-sm-6 col-md-4 col-lg-12') #{t}
                 
         div(class='col-lg-9')
           - for(let i = 0; i < orgs.length; i++)
@@ -45,6 +45,6 @@ block main
               div(id=`res-txt-${i}` class='collapse text col-12') 
                 div
                   h1 DESCRIPTION
-                  p #{orgs[i].description}
-                  a Find out more 
+                  p !{orgs[i].description}
+                  a(href=orgs[i].link) Find out more 
                     i(class='fa fa-arrow-right')

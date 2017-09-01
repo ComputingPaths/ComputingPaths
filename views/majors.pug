@@ -32,7 +32,7 @@ block main
 					ul(class='collapse show' id='major-list')
 						div(class='row')
 							each m in majors
-								li(class='col-6 col-md-4 col-lg-12 no-select') 
+								li(class='col-12 col-sm-6 col-md-4 col-lg-12 no-select') 
 									a(href=`#${m.short}`) #{m.name}
 				div(class='col-lg-9')
 					- for (let i = 0; i < majors.length; i++)
@@ -45,23 +45,23 @@ block main
 									p !{majorDescriptions[majors[i].short]}
 								div(class='col-xl-4 offset-xl-1 flex-first flex-xl-last')
 									div(class='row')
-										div(class='col-6 col-xl-12')
+										div(class='col-12 col-sm-6 col-xl-12')
 											h5 MAJOR CAP
 											h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
-										div(class='col-6 col-xl-12')
+										div(class='col-12 col-sm-6 col-xl-12')
 											h5 DEGREE TYPE
 											- if (majors[i].degree === 'bs')
 												h4 Bachelor of Science
 											- if (majors[i].degree === 'ba')
 												h4 Bachelor of Arts
 									div(class='row')
-										div(class='col-6 col-xl-12')
+										div(class='col-12 col-sm-6 col-xl-12')
 											h5 DEPARTMENTS
 											ul
 												each d in majors[i].departments
 													li
 														a(href='#' class='link') #{departments[d]}
-										div(class='col-6 col-xl-12 more')
+										div(class='col-12 col-sm-6 col-xl-12')
 											h5 MORE INFORMATION
 											ul
 												each w in majors[i].websites
