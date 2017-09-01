@@ -2,6 +2,12 @@
   background: $exlightblue;
   margin-top:80px;
   padding: 179px 0;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  cursor: default;
 
   h1, h2 {
     font-weight: bold;
