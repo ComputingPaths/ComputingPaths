@@ -848,6 +848,15 @@
   },
   "resourceBanner": [
     {
+      "name": "Digital Media Lab",
+      "image": "img/resourceBanner/Digital Media Lab.jpg",
+      "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/"
+
+    },{
+      "name": "Media Teaching Lab",
+      "image": "img/resourceBanner/Media-Teaching-Lab.jpg",
+      "link": "http://acms.ucsd.edu/students/medialab/"
+    },{
       "name": "University Art Gallery",
       "image": "img/resourceBanner/University Art Gallery.jpg",
       "link": "http://visarts.ucsd.edu/galleries_view"
@@ -858,10 +867,29 @@
       "link": "http://www.calit2.net/"
     },
     {
-      "name": "Digital Media Lab",
-      "image": "img/resourceBanner/Digital Media Lab.jpg",
-      "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/"
-
+      "name": "Computer Science Basement",
+      "image": "img/resourceBanner/Computer-Science-Basement.jpg",
+      "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b"
+    },{
+      "name": "Design Lab",
+      "image": "img/resourceBanner/Design Lab.jpg",
+      "link": "http://designlab.ucsd.edu/"
+    },{
+      "name": "Jacobs School of Engineering",
+      "image": "img/resourceBanner/Jacobs-School-of-Engineering.jpg",
+      "link": "http://jacobsschool.ucsd.edu"
+    },{
+      "name": "IDEA Learning Center",
+      "image": "img/resourceBanner/IDEA-Learning-Center.jpg",
+      "link": "http://jacobsschool.ucsd.edu/idea/resources/idea_studylab.shtml"
+    },{
+      "name": "Conrad Prebys Music Center",
+      "image": "img/resourceBanner/Conrad Prebys Music Center.jpg",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=441"
+    },{
+      "name": "CSE Building",
+      "image": "img/resourceBanner/Computer Science & Engineering Building.jpg",
+      "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b"
     }
   ],
   "projects": [
