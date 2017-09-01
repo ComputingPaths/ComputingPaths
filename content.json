@@ -206,20 +206,21 @@
     "spc": "The Speculative Design (B.A.) major mixes art, science, and emerging technology, with a focus on aesthetics, entrepreneurship, and activist intervention. Combining laboratory and field research in a creative studio setting, Speculative Design works from nano to urban scales to stimulate new ideas and innovative solutions. Rather than focusing on existing methodologies, this program prepares students to solve problems that will emerge in an uncertain future. Students may choose from four areas of emphasis: Public Culture and Urban Ecology, Design Computing, Design Research, and Media Design. ",
     "dat": "Data science majors use mathematical models and computational methods to craft powerful data analysis and meet the emerging needs of data-driven industries, from manufacturing companies to government organizations. The core knowledge base of the data scientist lies at the intersection of computing and mathematics, coupled with the skills to abstract, build, and test predictive and descriptive models. Students in the program can expect coursework in mathematics, computer science, and statistics, as well as foundational lower division coursework in natural and physical sciences."
   },
-	"majorExpand":{
-		"bio": {
-			"expandType":"SPECIALIZATIONS",
-			"data":[
-				{
-					"expandName":"Specialization 1",
-					"expandDesc":"this specialization 1 is so cool wowow"
-				},{
-					"expandName":"Specialization 2"	,
-					"expandDesc":"this specialization 2 is so cool wowow"
-				}
-			]
-		}
-	},
+  "majorExpand": {
+    "bio": {
+      "expandType": "SPECIALIZATIONS",
+      "data": [
+        {
+          "expandName": "Specialization 1",
+          "expandDesc": "this specialization 1 is so cool wowow"
+        },
+        {
+          "expandName": "Specialization 2",
+          "expandDesc": "this specialization 2 is so cool wowow"
+        }
+      ]
+    }
+  },
   "resources": [
     {
       "name": "Envision Maker Studio",
@@ -269,17 +270,18 @@
     "eq": "Equipment",
     "ws": "Workspaces"
   },
-	"resourceBanner":[
-		{
-			"name": "banner resource 1",
-			"image":"/img/temp1.svg",
-			"link": "testbannerimage1.com"
-		},{
-			"name": "banner resource 2",
-			"image":"/img/temp1.svg",
-			"link": "testbannerimage2.com"
-		}
-	],
+  "resourceBanner": [
+    {
+      "name": "banner resource 1",
+      "image": "/img/temp1.svg",
+      "link": "testbannerimage1.com"
+    },
+    {
+      "name": "banner resource 2",
+      "image": "/img/temp1.svg",
+      "link": "testbannerimage2.com"
+    }
+  ],
   "projects": [
     {
       "name": "Studyspace.me",
@@ -307,7 +309,9 @@
         ""
       ],
       "link": "https://www.studyspace.me/",
-      "tags": ["wa"]
+      "tags": [
+        "wa"
+      ]
     },
     {
       "name": "KAi Human Robot Arm",
@@ -328,7 +332,9 @@
         ""
       ],
       "link": "http://divergentengineering.weebly.com/kai-human-robot.html",
-      "tags": ["ar"]
+      "tags": [
+        "ar"
+      ]
     },
     {
       "name": "Potholes in San Diego",
@@ -352,7 +358,9 @@
         ""
       ],
       "link": "https://github.com/tjl014/Projects/blob/master/Potholes%20in%20San%20Diego.ipynb",
-      "tags": ["da"]
+      "tags": [
+        "da"
+      ]
     },
     {
       "name": "me-mo",
@@ -373,15 +381,16 @@
         ""
       ],
       "link": "http://toriduong.com/me-mo.html",
-      "tags": ["ma"]
+      "tags": [
+        "ma"
+      ]
     },
     {
       "name": "California Micromouse Competition",
       "imageFolder": "micromouse",
       "organization": "IEEE",
       "description": "CAMM is a collegiate engineering competition where teams compete to create the best maze-solving robots. \n\nThe Micromouse competition has been around since its introduction by IEEE in 1977, and since 2006 we have been working on our own Micromouse projects here in UC San Diego to compete with other schools. The competition featured a 16x16 grid maze and was led by a wall-following robot-mouse, with objective to solve the maze as fast as possible without outside assistant or human control. To meet with popular demand, since 2011 we have hosted our own competition called the California Micromouse Competition (CAMM) at UC San Diego. Every year, IEEE at UC San Diego receives more than 200 applications and are able to sponsor 40 UC San Diego students to participate in the Micromouse Project, and we also have multiple schools from the west coast attending our competition.\n\nIn 2016, more than half of the awards at CAMM Competition was won by UCSD teams. They are: 2nd Place (Kevin Tain), Most Cells Traversed (Will Bui, Austin Hermida, Jocelyn Tran, Achint Singh, Andy Zhang), Design Award (Javier Urquizu, Eddie Calva, Christopher Lew, Nahoon Hwang), and Judge’s Favorite (Fengjunyan Li, Austin Xiao, Haoran Wang, Zhouhang Shao, Haocheng Liang). This project is an opportunity for students to learn and apply various hands-on skills critical for electrical engineers and computer scientists, including EagleCAD, digital signal processing, and microcontroller programming. Other than the technical skills, it is equally important for students to develop collaboration and research skills to help them along the way working in a competitive environment.",
-      "members": [
-      ],
+      "members": [],
       "images": [
         "/img/projectImages/micromouse/1.jpg",
         "/img/projectImages/micromouse/2.jpg",
@@ -392,7 +401,9 @@
         ""
       ],
       "link": "http://micromouseusa.com/",
-      "tags": ["ar"]
+      "tags": [
+        "ar"
+      ]
     },
     {
       "name": "Endless",
@@ -404,7 +415,8 @@
       ],
       "images": [
         "/img/projectImages/endless/1.jpg",
-        "/img/projectImages/endless/2.jpg",       "/img/projectImages/endless/3.jpg",
+        "/img/projectImages/endless/2.jpg",
+        "/img/projectImages/endless/3.jpg",
         "/img/projectImages/endless/4.jpg",
         "/img/projectImages/endless/5.jpg"
       ],
@@ -412,7 +424,9 @@
         ""
       ],
       "link": "",
-      "tags": ["ga"]
+      "tags": [
+        "ga"
+      ]
     },
     {
       "name": "Gentrification in San Diego",
@@ -420,7 +434,7 @@
       "organization": "COGS 108",
       "description": "A team of cognitive science students enter the debate over gentrification by analyzing and visualizing mass amounts of data.\n\n“How does gentrification contribute to changes in San Diego demographics? In particular, how do factors such as crime, home value, housing income and racial diversity change as a result of gentrification?”\n\nFor the final project in COGS 108 Data Science in Practice), one team posed this poignant question. The team first approached the issue by identifying gentrified San Diego neighborhoods, and then conducting a range of data visualization and statistical methods in order to meaningfully structure the large amounts of data present. In particular, the team explored how factors such as crime, home value, housing income and racial diversity change as a result of gentrification. Their purpose in exploring the subject was to shed light on a civic concern that’s widely disputed and debated in cities across the country.",
       "members": [
-        "Abena Bonsu",  
+        "Abena Bonsu",
         "Lauren Liao",
         "Megan Chang",
         "Raymond Arevalo"
@@ -435,7 +449,9 @@
         ""
       ],
       "link": "https://github.com/mec029/Pr_057/blob/master/FinalProject.ipynb",
-      "tags": ["da"]
+      "tags": [
+        "da"
+      ]
     },
     {
       "name": "Arduino Pong",
@@ -454,7 +470,9 @@
         ""
       ],
       "link": "https://www.youtube.com/watch?v=3nQwyJF6FP8&feature=youtu.be",
-      "tags": ["ar"]
+      "tags": [
+        "ar"
+      ]
     },
     {
       "name": "Gokoban",
@@ -475,7 +493,9 @@
         ""
       ],
       "link": "https://github.com/danaugrs/gokoban",
-      "tags": ["ga"]
+      "tags": [
+        "ga"
+      ]
     }
   ],
   "projectTags": {
@@ -492,7 +512,9 @@
       "description": "description1",
       "orgImage": "img/temp1.svg",
       "link": "testlink1",
-      "tags": ["ad"]
+      "tags": [
+        "ad"
+      ]
     },
     {
       "name": "org2",
