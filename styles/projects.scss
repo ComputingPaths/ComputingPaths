@@ -14,11 +14,11 @@ section {
 	a {
 		width: auto;
 		height: auto;
-				user-select: none;
-				-moz-user-select: none;
-				-khtml-user-select: none;
-				-webkit-user-select: none;
-				-o-user-select: none;
+		user-select: none;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		-o-user-select: none;
 
 		.projectcard {
 			display: inline-flex;
@@ -36,7 +36,7 @@ section {
 				height: 233px;
 				width: 505px;
 				position: relative;
-				padding: 32px 0px 0px 40px;
+				padding: 32px 40px;
 
 				p.project-name {
 					font-size: 28px;
@@ -111,8 +111,8 @@ section {
 @media(max-width: $lg) {
 
 	section {
-		padding-top: 32px;
-		padding-bottom: 32px;
+		padding-top: 33px;
+    padding-bottom: 48px;
 
 		a {
 
@@ -136,7 +136,7 @@ section {
 @media(max-width: $md) {
 
 	section {
-		padding-top: 80px;
+		padding-top: 0;
 
 		a {
 
@@ -173,19 +173,18 @@ section {
 @media(max-width: $sm) {
 
 	section {
-		padding-top: 60px;
 
 		a {
 			.projectcard {
 
 				img {
-					width: 360px;
-					height: 240px;
+					width: 100%;
+					height: auto;
 				}
 
 				.cardinfo{
-					height: 170px;
-					width: 360px;
+					height: auto;
+					width: 100%;
 					
 					p.project-name {
 						font-size: 24px;
@@ -210,16 +209,15 @@ section {
 }
 
 .modal-content {
-		cursor: default;
+	cursor: default;
 	overflow: hidden;
-		z-index: 10000;
-		position: initial;
-		user-select: none;
-		-moz-user-select: none;
-		-khtml-user-select: none;
-		-webkit-user-select: none;
-		-o-user-select: none;
-
+	z-index: 10000;
+	position: initial;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
 }
 
 .modal-header {
@@ -267,11 +265,15 @@ section {
 	-webkit-user-select: none;
 	-o-user-select: none;
 
+  
+
 	.carousel-item {
-      justify-content: center;
+    justify-content: center;
       
+    
       img, iframe{
         height: 487px;
+        border-style:none;
         
         @media( max-width: $lg ) {
           height: 460px;
@@ -282,17 +284,48 @@ section {
         }
 
         @media( max-width: $sm ) {
-          height: 280pxa;
+          height: 260px;
         }
+        
+        @media( max-width: $xs ) {
+          //height: 100px;
+          //width: 150px;
+          height: auto;
+          width: 100%;
+        }
+
       }
-	}
+      
+      @media( max-width: $xs ) {
+        height: 100px;
+        width: 150px;
+      }
+    }
   
     .carousel-control-prev, .carousel-control-next {
+      height: 487px;
+      width: 10%;
       i {
         color: white;
       }
+      @media( max-width: $lg ) {
+          height: 460px;
+      }
+
+      @media( max-width: $md ) {
+          height: 340px;
+      }
+
+      @media( max-width: $sm ) {
+          height: 260px;
+      }
+      @media( max-width: $xs ) {
+          height: 100px;
+          width: 150px;
+      }
     }
-}
+  }
+
 
 .proj-info {
 	padding: 40px 49px;
