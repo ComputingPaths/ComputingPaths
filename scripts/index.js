@@ -1,13 +1,16 @@
+// initialize the majors section
 function majorsSection() {
-  //Get the list of majors
+  // get the list of majors
   let ul = $('.majors aside li')
   let hooks = $('.majors main h2')
   let name = $('.majors main h1')
   let links = $('.majors button a')
   let image = $('.majors main img')
-  //Generate a random major index
+
+  // generate a random major index
   let mi = Math.floor(Math.random() * ul.length)
 
+  // update the current major related element
   let updateMajor = (newIndex) => {
     ul.eq(mi).removeClass('active')
     hooks.eq(mi).removeClass('active')
@@ -22,24 +25,21 @@ function majorsSection() {
   }
   updateMajor(mi)
 
-  //Handle click event of the next major button
+  // handle click event of the next major button
   $('#next-major').click(() => {
     updateMajor((mi + 1) % ul.length)
   })
-
+  // handle click event of the prev major button
   $('#prev-major').click(() => {
     updateMajor((mi - 1 + ul.length) % ul.length)
   })
-
-  //Handle click event for major links
+  // handle click event for major links
   ul.click(e => {
     updateMajor(ul.index(e.target))
   })
 }
 
-$(document).ready(() => {
-  majorsSection()
-
+function initProjCarousel() {
   let carousel = $('.carousel')
   let projs = $('.projects .proj-card')
   let inner = $('.projects .carousel-inner')
@@ -47,12 +47,14 @@ $(document).ready(() => {
   let cardPerGroup = 2
   let pi = 0;
 
+  // update the indicators on the carousel
   let updateIndicator = newIndex => {
     indicator.children().eq(pi).removeClass('active')
     pi = newIndex
     indicator.children().eq(pi).addClass('active')
   }
-
+  
+  // build project cards inside the carousel
   let buildCards = () => {
     inner.empty()
     indicator.empty()
@@ -72,12 +74,13 @@ $(document).ready(() => {
     }
 
     updateIndicator(0)
-    indicator.children().click(function() {
+    indicator.children().click(function () {
       updateIndicator(indicator.children().index(this))
       carousel.carousel(pi)
     })
   }
-
+  
+  // set media query callback
   let mql = window.matchMedia('(max-width: 991px)')
   mql.onchange = e => {
     if (e.matches) {
@@ -91,8 +94,8 @@ $(document).ready(() => {
   }
   if (mql.matches) cardPerGroup = 1
   buildCards()
-
-  // Handle click event for projects carousel left scroll
+  
+  // handle click event for projects carousel left scroll
   $('.prev-proj').click(() => {
     try {
       carousel.carousel('prev')
@@ -102,7 +105,7 @@ $(document).ready(() => {
     }
   })
 
-  // Handle click event for projects carousel right scroll
+  // handle click event for projects carousel right scroll
   $('.next-proj').click(() => {
     try {
       carousel.carousel('next')
@@ -111,4 +114,9 @@ $(document).ready(() => {
     catch (err) {
     }
   })
+}
+
+$(document).ready(() => {
+  majorsSection()
+  initProjCarousel()
 })
