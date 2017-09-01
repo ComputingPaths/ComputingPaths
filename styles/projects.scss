@@ -111,6 +111,8 @@ section {
 @media(max-width: $lg) {
 
 	section {
+		padding-top: 33px;
+    padding-bottom: 48px;
 
 		a {
 
@@ -134,7 +136,7 @@ section {
 @media(max-width: $md) {
 
 	section {
-		padding-top: 80px;
+		padding-top: 0;
 
 		a {
 
@@ -171,7 +173,6 @@ section {
 @media(max-width: $sm) {
 
 	section {
-		padding-top: 60px;
 
 		a {
 			.projectcard {
