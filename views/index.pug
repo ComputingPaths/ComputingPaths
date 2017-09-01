@@ -90,13 +90,13 @@ block main
           i(class='fa fa-arrow-left fa-2x')
         div(id='carouselExampleControls' class='carousel col-md-10 slide')
           div(class='carousel-inner row')
-            - for (let i = 0; i < 10; i++)
+            - for (let i = 0; i < projects.length; i++)
               div(class='proj-card col-12 col-lg-6')
-                img(src='/img/temp1.svg')
+                img(src=`/img/projectImages/${projects[i].imageFolder}/1.jpg`)
                 div
-                  h1 Some Student Project
-                  h2 Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed.
-                  h3 Read more 
+                  h1 #{projects[i].name}
+                  h2 #{projects[i].intro}
+                  a(href=`${projects[i].link}`) Read more 
                     i(class='fa fa-arrow-right')
         a(class='next-proj col-md-1 hidden-sm-down')
           i(class='float-right fa fa-arrow-right fa-2x')
