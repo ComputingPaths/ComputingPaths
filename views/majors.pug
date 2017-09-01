@@ -32,7 +32,7 @@ block main
 					ul(class='collapse show' id='major-list')
 						div(class='row')
 							each m in majors
-								li(class='col-6 col-md-4 col-lg-12 no-select') 
+								li(class='col-12 col-sm-6 col-md-4 col-lg-12 no-select') 
 									a(href=`#${m.short}`) #{m.name}
 				div(class='col-lg-9')
 					- for (let i = 0; i < majors.length; i++)
