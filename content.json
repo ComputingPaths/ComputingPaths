@@ -196,10 +196,10 @@
     "mus": "Music"
   },
   "majorDescriptions": {
-    "bio": "[Placeholder - need condensed overall description]",
+    "bio": "Bioinformatics majors utilize computation to understand, interpret, and analyze the flow of information in biological systems. This major is offered separately by four UCSD departments: Biology, Computer Science, Bioengineering, and Chemistry. These four departments offer rigorous and interdisciplinary trainings for this new and evolving field. All of these departments provide courses on molecular biology, computer science and mathematics, while offering emphasis on each of their respective department subjects.",
     "cog": "The cognitive science major is a diverse field that blends together the understanding of the brain, human behavior, and computation. Students can choose between five different specializations that span widely different disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts. Students can explore a variety of disciplines including neurological & biological sciences, computational sciences, social sciences, and visual arts, determined by their chosen specialization. Graduates of this program often go on to graduate school or work in research, UX and product design, and data analysis.",
     "cse": "The Computer Science major allows students to initially explore computer science through algorithmic problem solving and programming in various languages, including Java and C. Students then progress to topics involving a deeper understanding of computer systems including advanced data structures and computer architecture. Additional elective courses provide depth into systems and networks, database analysis, security and cryptography topics, machine learning, computer vision, and graphics. Many graduates of this program go on to graduate school or choose careers that involve machine automation, UI/UX design, data analytics, application development, artificial intelligence, networking, and security.",
-    "ece": "[Placeholder - there are two majors in this category: CE and EE]",
+    "ece": "Both Computer Engineering and Electrical Engineering involve understanding of electricity, electronics, and electromagnetism in addition to computational knowledge. Students can choose to have more of a balance between software and hardware as computer engineers or a greater emphasis on hardware as electrical engineers.",
     "mcs": "The Math-Computer Science (B.S) major is a specialized branch of mathematics, providing a focus on computer science. While not covering the same scope as a pure Computer Science major, Math CS prepares students to potentially work in a computing setting. Students are given flexibility in their course subjects, allowing the opportunity to have a greater focus on mathematics or to take a more even distribution of courses in mathematics and computer science. Students study subjects including abstract algebra, statistics and probability, combinatorics, algorithm analysis, programming, and data structures.",
     "sci": "[Placeholder - there are two departments in this category: math and physics]",
     "ica": "The Interdisciplinary Computing and the Arts major (ICAM) is an exciting blend of computer science, art, and technology that explores today’s cutting-edge media. Access to a wide range of disciplines means that students are free to tailor the program to their artistic interests, and can take classes in fields like virtual reality, design communication, film production, and physical electronics programming. ICAM students gain technical, theoretical, and historical backgrounds that prepare them to anticipate and work with emerging trends in art, music, and technology. They can choose from either music technology or visual arts focuses, which influence their upper-level coursework, but often draw from both fields during their journey through the major.",
@@ -223,12 +223,174 @@
   },
   "resources": [
     {
+      "name": "Applied Physics and Mathematics Building",
+      "description": "Located between Thurgood Marshall and John Muir College, the Applied Physics and Mathematics Building (APM) is a facility which houses research, offices, classrooms, meeting rooms, and other resources for students.",
+      "mapImage": "img/APMBldg.jpg",
+      "mapLink": "map3link",
+      "link": "https://www.math.ucsd.edu/",
+      "tags": [
+        "as",
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "Atkinson Hall Facilities",
+      "description": "Atkinson Hall includes many unique spaces that can meet the needs of almost any meeting, conference, or event. As the Qualcomm Institute’s headquarters, the 250,000sf building is a technologically advanced facility specializing in cutting-edge applications of technology and communication needs.",
+      "mapImage": "img/AtkinsonBldg.jpg",
+      "mapLink": "map2link",
+      "link": "http://qi.ucsd.edu/facilities.php",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "Calculus Lab",
+      "description": "Located in the Applied Physics and Mathematics Building (APM B402), the Calculus Lab is a place for students who want extra help with their MATH 3C/4C, 10ABC or 20ABC classes. The lab is staffed with math TAs and undergraduate tutors each weekday from roughly 8am to 5pm. The Calc Lab is staffed from week 2 through 10 of each quarter.",
+      "mapImage": "img/APMBldg.jpg",
+      "mapLink": "map3link",
+      "link": "https://math.ucsd.edu/resources/calculus-tutoring/",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "Computer Music Instructional Laboratory",
+      "description": "Located in the Conrad Prebys Music Center, The Computer Music Instructional Laboratory resides in a new 500-square-foot studio with machine isolation, acoustical treatment, mixer console, ergonomic workstation components, a high-resolution plasma screen, CD and DVD authoring, and integrated digital audio equipment for student access to audio processing, duplicating, high definition digital mixing and high-quality, multi-channel audio monitoring. The studio is built around a Yamaha DM2000 mixing console which is the central connection point for all digital and analog audio signals. The facility provides adequate space for instrumental rehearsal and interfacing experimentation and provides several firewire and USB audio interfaces for laptop computing.",
+      "mapImage": "img/CPMCBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "The Computer Science Channel",
+      "description": "Showcasing the excellence and diversity of the nation's premier research university, UCTV embraces the core missions of the University of California -- teaching, research and public service -- through quality, in-depth television that informs, educates and enriches the lives of people around the globe.",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "http://www.uctv.tv/computer-science/search-details.aspx?showID=31158",
+      "tags": [
+        "as",
+        "eq"
+      ]
+    },
+    {
+      "name": "Computer Science and Engineering Building",
+      "description": "Located along the Warren Mall, The Computer Science and Engineering building was designed to create a sense of community among the department's faculty, staff, students, and visitors. \"Interaction spaces\" for scholarly activity are located throughout the building where graduate and undergraduate students can drop in to discuss classroom topics, share research ideas, or hold casual conversations. The building houses laboratories dedicated to undergraduate instruction, as well as research facilities designed for ultimate flexibility so faculty and researchers can work on the technologies of the future.",
+      "mapImage": "img/CSEBldg.jpg",
+      "mapLink": "map3link",
+      "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "Conrad Prebys Music Center",
+      "description": "Located near Pepper Canyon Hall and the Gilman Parking Structure, the Conrad Prebys Music Center (CPMC) is a facility which houses the university's music department. The center features a 400-seat Concert Hall, in addition to the 170-seat Recital Hall and an Experimental Theatre with variable digital acoustics system.",
+      "mapImage": "img/CPMCBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=441",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "CSE Basement",
+      "description": "Located at the bottom floor of the Computer Science building, the Basement, commonly known as “the dungeon”, is a space with computer workstations for students to work on CSE-related assignments. Depending on the course, tutoring is available at specific hours.",
+      "mapImage": "img/CSEBldg.jpg",
+      "mapLink": "map3link",
+      "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "CSES: Late Night Hacks",
+      "description": "Late Night Hacks is a procedural epistemology project group at UCSD, part of CSES. They work on various projects, and host talks on various subjects. Kind of like a CSE Town Hall meeting, once a week. Come hang out, share knowledge, and get involved. ",
+      "mapImage": "img/CSEBldg.jpg",
+      "mapLink": "map3link",
+      "link": "https://cses.ucsd.edu/late-night/",
+      "tags": [
+        "ev",
+        "ws"
+      ]
+    },
+    {
+      "name": "The Design Lab",
+      "description": "Located in the California Institute of Telecommunication and Information Technology (Calit2) Building, The Design Lab is a newly established organization, proposing a novel mix of the practice and theory of thinking, observing, and making. The Design Lab is located within the California Institute of Telecommunication and Information Technology.",
+      "mapImage": "img/Atkinson.jpg",
+      "mapLink": "map3link",
+      "link": "http://designlab.ucsd.edu/",
+      "tags": [
+        "ws"
+      ]
+    },
+    {
+      "name": "DevFair by CSES",
+      "description": "Occurring every year during the Fall, DevFair takes the traditional career fair and spins it on its head. Rather than having companies set up booths that students can visit, they allow groups of students set up booths to showcase their projects to recruiters. This science fair-style presentation gives students the opportunity to show their potential better than a resume ever could. The event is geared towards UCSD undergraduate students in a tech-related field.",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "https://cses.ucsd.edu/devfair/",
+      "tags": [
+        "ev"
+      ]
+    },
+    {
+      "name": "Digital Media Lab",
+      "description": "Geisel Library's Digital Media Lab (DML) is open to all UCSD faculty, staff, and students, providing a space for media creation and editing. It is located in the Geisel East Commons, on the 2nd floor. Specific capabilities include free 3D printing, video editing (e.g., Final Cut, iMovie, Camtasia), image manipulation (e.g., Photoshop, Illustrator, After Effects), sound editing (e.g., Adobe Audition, Garageband), media-rich website creation (e.g., Dreamweaver, Flash, Filezilla), and basic productivity (e.g., MS Office, web browsers, Adobe Acrobat Pro). The DML is now offering support for app development, with Unity, Android Studio, and Steam enabled on all Windows workstations.",
+      "mapImage": "img/GeiselLib.jpg",
+      "mapLink": "map3link",
+      "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/",
+      "tags": [
+        "eq",
+        "ws"
+      ]
+    },
+    {
+      "name": "Digital Music Recording Studio",
+      "description": "Located in the Conrad Prebys Music Center, this 1500-square-foot facility includes an acoustically designed live room with high ceilings, a wooden floor, and a control room with Genelec 5.1 surround monitoring. The studio houses a Macintosh system and many dedicated software packages for music production and recording, including a ProTools HD digital audio production package with 24 channels of digital I/O for precise digital recording and editing with Apogee converters and Grace Design microphone preamps. The studio supports MIDI for synthesis, processing, and control in music composition and performance, and includes hardware and software for CD and DVD mastering.",
+      "mapImage": "img/CPMCBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "tags": [
+        "ws"
+      ]
+    },
+    {
+      "name": "Disciplines in Engineering Career Fair (DECaF)",
+      "description": "This event provides company representatives a unique opportunity to interact and engage with UC San Diego's talented engineering students regarding career options, internships, and permanent or summer employment opportunities. Open exclusively to UC San Diego students and alumni, DECaF is coordinated by the Triton Engineering Student Council and over 40 pre-professional engineering student organizations at the Jacobs School of Engineering. These engineering societies, representing the spectrum of disciplines at the Jacobs School, work in close collaboration to maximize the attendance of UC San Diego's 8,500 undergraduate and graduate student engineers and to ensure the satisfaction of companies involved.",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "http://tesc.ucsd.edu/decaf/",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "name3",
+      "description": "description3",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "testlink3",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
       "name": "Envision Maker Studio",
       "description": "Located in the Structural Materials and Engineering Building (SME 306), The EnVision Arts and Engineering Maker Studio at is a hands-on, experiential education facility where visual arts and engineering communities converge. The nearly 3,000 square foot studio provides a wide range of design, fabrication and prototyping tools, both analog and digital. Resources include workstations with CAD and Adobe CC software installed, 3d Printers, soldering stations, a laser cutter, and a vacuum former. The studio is accessible for Engineering or Visual Arts majors, and students enrolled in courses currently offered within the studio. 1",
       "mapImage": "/img/sme.jpg",
       "mapLink": "map1link",
       "link": "testlink1",
-      "image": "/img/temp1.svg",
       "tags": [
         "as",
         "bs",
@@ -237,21 +399,64 @@
       ]
     },
     {
+      "name": "name3",
+      "description": "description3",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "testlink3",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "name3",
+      "description": "description3",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "testlink3",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "name3",
+      "description": "description3",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "testlink3",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
       "name": "Tech Lending Program",
       "description": "description 2",
-      "mapImage": "img/CP Generic Icon.jpg",
+      "mapImage": "img/CommBldg.jpg",
       "mapLink": "map2link",
       "link": "testlink2",
-      "image": "/img/temp1.svg",
       "tags": [
         "eq",
         "sc"
       ]
     },
     {
+      "name": "name3",
+      "description": "description3",
+      "mapImage": "img/temp1.svg",
+      "mapLink": "map3link",
+      "link": "testlink3",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
       "name": "name 3",
       "description": "description 3",
-      "mapImage": "img/SME Snap 2.jpg",
+      "mapImage": "img/temp1.svg",
       "mapLink": "map3link",
       "link": "testlink3",
       "image": "/img/temp1.svg",
@@ -306,7 +511,7 @@
         "/img/projectImages/studyspace/3.jpg"
       ],
       "videos": [
-        ""
+        "https://www.youtube.com/embed/JOMxcJhTfeo"
       ],
       "link": "https://www.studyspace.me/",
       "tags": [
@@ -329,7 +534,8 @@
         "/img/projectImages/kaiRobot/1.jpg"
       ],
       "videos": [
-        ""
+        "https://www.youtube.com/embed/Cx13LD9fahg",
+        "https://www.youtube.com/embed/IZ0l6Lv10O4"
       ],
       "link": "http://divergentengineering.weebly.com/kai-human-robot.html",
       "tags": [
@@ -355,7 +561,6 @@
         "/img/projectImages/potholesSD/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/tjl014/Projects/blob/master/Potholes%20in%20San%20Diego.ipynb",
       "tags": [
@@ -378,7 +583,6 @@
         "/img/projectImages/memo/3.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "http://toriduong.com/me-mo.html",
       "tags": [
@@ -398,7 +602,6 @@
         "/img/projectImages/micromouse/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "http://micromouseusa.com/",
       "tags": [
@@ -421,7 +624,6 @@
         "/img/projectImages/endless/5.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "",
       "tags": [
@@ -441,12 +643,12 @@
       ],
       "images": [
         "/img/projectImages/gentrification/1.jpg",
+        "/img/projectImages/gentrification/5.jpg",
         "/img/projectImages/gentrification/2.jpg",
         "/img/projectImages/gentrification/3.jpg",
         "/img/projectImages/gentrification/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/mec029/Pr_057/blob/master/FinalProject.ipynb",
       "tags": [
@@ -467,7 +669,7 @@
         "/img/projectImages/arduinoPong/1.jpg"
       ],
       "videos": [
-        ""
+        "https://www.youtube.com/embed/3nQwyJF6FP8"
       ],
       "link": "https://www.youtube.com/watch?v=3nQwyJF6FP8&feature=youtu.be",
       "tags": [
@@ -490,7 +692,6 @@
         "/img/projectImages/gokoban/5.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/danaugrs/gokoban",
       "tags": [

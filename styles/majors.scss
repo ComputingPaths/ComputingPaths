@@ -98,9 +98,15 @@ main {
 			ul {
 				margin-bottom: 32px;
 				padding: 0;
+				list-style: none;
 
-				h4, a {
+				.link {
+					font-weight: 500;
 					margin-bottom: 6px;
+				}
+
+				.link:hover {
+					color: $orange;
 				}
 			}
 
