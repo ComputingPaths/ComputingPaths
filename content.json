@@ -848,14 +848,19 @@
   },
   "resourceBanner": [
     {
-      "name": "banner resource 1",
-      "image": "/img/temp1.svg",
-      "link": "testbannerimage1.com"
+      "name": "University Art Gallery",
+      "image": "img/ArtGallery.jpg",
+      "link": "http://visarts.ucsd.edu/galleries_view"
     },
     {
-      "name": "banner resource 2",
-      "image": "/img/temp1.svg",
-      "link": "testbannerimage2.com"
+      "name": "Calit2 Protyping Lab",
+      "image": "img/Calit2.jpg",
+      "link": "http://www.calit2.net/"
+    },
+    {
+      "name": "Digital Media Lab",
+      "image": "img/DML.jpg",
+      "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/"
     }
   ],
   "projects": [
