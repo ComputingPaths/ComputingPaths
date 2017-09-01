@@ -990,7 +990,7 @@
     {
       "name": "Undergraduate Bioinformatics Club",
       "description": "The Undergraduate Bioinformatics Club (UBIC) is an academic student organization at UCSD dedicated to supporting bioinformatics students and students interested in bioinformatics by facilitating access to jobs, internships, and research opportunities; events, programs, and seminars; communication, collaboration, and socialization between bioinformatics students; and more.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/UBIC.png",
       "link": "http://ubic.ucsd.edu/",
       "tags": [
         "ms"
@@ -999,7 +999,7 @@
     {
       "name": "Biomedical Engineering Society",
       "description": "The Biomedical Engineering Society (BMES) at the University of California, San Diego (UCSD) is dedicated to enriching the undergraduate experience for those in the Department of Bioengineering and for those interested in Biomedical Engineering by fostering personal growth and professional development.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/BMES.png",
       "link": "http://bmes.ucsd.edu/",
       "tags": [
         "ms",
@@ -1009,7 +1009,7 @@
     {
       "name": "Design at UCSD",
       "description": "A student-led group of designers focused on UX design, research, and design thinking with an appreciation for all design fields and related disciplines. Their organization is dedicated to three core values: preparing students to enter industry, getting students involved in the design community, and an emphasis on human-centered design.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/Design@UCSD.png",
       "link": "http://designatucsd.org/",
       "tags": [
         "ad"
@@ -1018,7 +1018,7 @@
     {
       "name": "Design for America",
       "description": "Design for America (DFA) is a national organization with that supports chapters from San Diego to New York City. It guides interdisciplinary teams to apply the design process to tackle extraordinary challenges in health, economy, education, and environment. DFA projects fuse collaboration, leadership, and creativity.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/DFA_UCSD.png",
       "link": "http://designforamerica.com/studio/dfa-ucsd/",
       "tags": [
         "ad"
@@ -1027,7 +1027,7 @@
     {
       "name": "Cognitive Science Student Association",
       "description": "The Cognitive Science Student Association was established to build and maintain a community of students with interest in the multidisciplinary aspects of Cognitive Science.  They maintain a strong relationship with UCSD’s prestigious Cognitive Science Department in order to deliver academic opportunities to our members and stay up-to-date with the most cutting edge research of Cognitive Science.  They also connect with professional groups in the San Diego area in order to help their members discover the multidisciplinary qualifications that Cognitive Science offers to the professional world.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/CSSA.png",
       "link": "http://cssa.ucsd.edu/",
       "tags": [
         "ms"
@@ -1036,7 +1036,7 @@
     {
       "name": "Divergent Engineering",
       "description": "Divergent Engineering (divE) began as an Arduino workshop with 6 engineers and a simple objective: teach students how program Arduino microcontroller boards and see what they can do with that knowledge. What started out as a workshop became an incubator that produced a working data logger, persistence of vision wand, a Skittle sorter, and a wall-avoiding robot in a single month.<br><br>Divergent Engineering aims to provide a nurturing environment for students to formulate and develop their goals as engineers and scientists; a place to begin accomplishing these goals; and a supportive setting to tinker, learn, challenge, and engineer.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/DivE.png",
       "link": "http://divergentengineering.weebly.com/about.html",
       "tags": [
         "cs",
@@ -1046,7 +1046,7 @@
     {
       "name": "Virtual Reality Club at UCSD",
       "description": "The Virtual Reality Club at UCSD is a student organization at UC San Diego that connects members with the VR industry through workshops, projects, and networking. Our mission is to foster a multidisciplinary community dedicated to exploring and creating Virtual and Augmented Reality experiences.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/VR_Club.png",
       "link": "http://vrclub.ucsd.edu/",
       "tags": [
         "cs",
@@ -1056,7 +1056,7 @@
     {
       "name": "Computer Science and Engineering Society",
       "description": "The Computer Science and Engineering Society (CSES) aims to form a passionate community of computer scientists and engineers at UC San Diego. From tech talks, to social events, to outreach, they have a diverse set of events and activities that appeal to any computer scientist or engineer.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/CSES.png",
       "link": "https://cses.ucsd.edu/",
       "tags": [
         "cs",
@@ -1066,7 +1066,7 @@
     {
       "name": "Triton Engineering Student Council",
       "description": "The Triton Engineering Student Council (TESC) exists to promote academic excellence, community involvement, and strong ethical values among the students of the Jacobs School of Engineering. TESC unites the engineering student organizations and sponsors events that benefit all engineering students.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/TESC.png",
       "link": "http://tesc.ucsd.edu/",
       "tags": [
         "en"
@@ -1085,7 +1085,7 @@
     {
       "name": "Women in Computing",
       "description": "Women in Computing are coders and engineers - both women and men - who support the female presence in computing. They run events, from tech talks to socials, and provide opportunities for female engineers to connect and succeed.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/WIC.png",
       "link": "http://wic.ucsd.edu/",
       "tags": [
         "cs",
@@ -1104,7 +1104,7 @@
     {
       "name": "Society of Women Engineering(SWE)",
       "description": "An organization dedicated to promoting women in engineering and science. Everybody is welcome to join, provided that they support women in engineering.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/SWE.png",
       "link": "http://swe.ucsd.edu/",
       "tags": [
         "en"
@@ -1133,7 +1133,7 @@
     {
       "name":"UCSD IEEE",
       "description": "IEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.<br><br>It is a non-profit organization, is the world’s leading professional association for the advancement of technology. Through its global membership, the IEEE is a leading authority on areas ranging from aerospace systems, computers and telecommunications to biomedical engineering, electric power and consumer electronics among others.<br><br>Members rely on the IEEE as a source of technical and professional information, resources and services. To foster an interest in the engineering profession, the IEEE also serves student members in colleges and universities around the world. Other important constituencies include prospective members and organizations that purchase IEEE products and participate in conferences or other IEEE programs.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/IEEE.png",
       "link": "http://ieee.ucsd.edu/",
       "tags": [
         "en"
@@ -1142,7 +1142,7 @@
     {
       "name":"Triton 3D",
       "description": "Triton 3D was founded by students with an interest in the applications of additive manufacturing and rapid prototyping. The goal was that in doing so, they could bring together students of all levels of experience that had an interest. From its inception in January 2015, Triton 3D had humble beginnings as a loose aggregate of students who were interested in 3D printing technology, but quickly grew into the school’s premiere source for 3D printing expertise and support.<br><br>Today, the organization has several active project teams with professors on cutting edge research, runs regular tutorials on CAD design and 3D printing, and provides technical support and advancement with existing design studios on campus.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/Triton3D.png",
       "link": "http://t3d.ucsd.edu/",
       "tags": [
         "cs",
@@ -1152,7 +1152,7 @@
     {
       "name":"Game Development Studio",
       "description": "The Game Development Studio (GDS) is an UCSD student organization dedicated to helping students gain experience in game design through collaborative projects. They are dedicated to working with a number of different platforms such as iPhones, Androids, and PCs. GDS is open to students from all different majors and backgrounds to join the club.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/GameDevStudio.png",
       "link": "http://gds.ucsd.edu/",
       "tags": [
         "cs",
