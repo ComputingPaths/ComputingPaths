@@ -336,7 +336,6 @@
         "/img/projectImages/potholesSD/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/tjl014/Projects/blob/master/Potholes%20in%20San%20Diego.ipynb",
       "tags": ["da"]
@@ -357,7 +356,6 @@
         "/img/projectImages/memo/3.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "http://toriduong.com/me-mo.html",
       "tags": ["ma"]
@@ -376,7 +374,6 @@
         "/img/projectImages/micromouse/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "http://micromouseusa.com/",
       "tags": ["ar"]
@@ -396,7 +393,6 @@
         "/img/projectImages/endless/5.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "",
       "tags": ["ga"]
@@ -414,12 +410,12 @@
       ],
       "images": [
         "/img/projectImages/gentrification/1.jpg",
+        "/img/projectImages/gentrification/5.jpg",
         "/img/projectImages/gentrification/2.jpg",
         "/img/projectImages/gentrification/3.jpg",
         "/img/projectImages/gentrification/4.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/mec029/Pr_057/blob/master/FinalProject.ipynb",
       "tags": ["da"]
@@ -459,7 +455,6 @@
         "/img/projectImages/gokoban/5.jpg"
       ],
       "videos": [
-        ""
       ],
       "link": "https://github.com/danaugrs/gokoban",
       "tags": ["ga"]
