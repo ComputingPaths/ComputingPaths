@@ -1,183 +1,211 @@
 @import 'common';
 
 .pos {
-  position: relative;
-  bottom: 80px;
+	position: relative;
+	bottom: 80px;
 }
 
 main {
-  padding-top: 80px;
-  padding-bottom: 52px;
-  background: $exlightblue;
 
-  .major-sidebar {
-    @extend .nice-sidebar;
+	padding-top: 80px;
+	padding-bottom: 52px;
+	background: $exlightblue;
 
-    ul {
-      margin-bottom: 64px;
+	.major-sidebar {
+		@extend .nice-sidebar;
 
-      div {
-        li {
-          list-style-type: none;
-        }
+		ul {
+			margin-bottom: 64px;
 
-        li.active {
-          list-style: disc;
-          color: $orange;
+			div {
+				li {
+					list-style-type: none;
+				}
 
-          a {
-            color: $orange;
-          }
-        }
+				li.active {
+					list-style: disc;
+					color: $orange;
 
-        li:hover:not(.active) {
-          list-style: disc;
-          color: $darkblue;
-          
-          a {
-            color: $darkblue;
-          }
-        }
-      }
-    }
-  }
+					a {
+						color: $orange;
+					}
+				}
 
-  .major-card {
-    margin-bottom: 64px;
-    box-shadow: 0 4px $shadow;
+				li:hover:not(.active) {
+					list-style: disc;
+					color: $darkblue;
+					
+					a {
+						color: $darkblue;
+					}
+				}
+			}
+		}
+	}
 
-    > h1 {
-      padding: 20px 0;
-      font-size: 28px;
-      line-height: 33px;
-      background: $darkblue;
-      color: white;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 0;
-    }
+	.major-card {
+		margin-bottom: 64px;
+		box-shadow: 0 4px $shadow;
 
-    img {
-      width: 100%;
-      height: 398px;
-      object-fit: cover;
-    }
+		> h1 {
+			padding: 20px 0;
+			font-size: 28px;
+			line-height: 33px;
+			background: $darkblue;
+			color: white;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 0;
+		}
 
-    .text {
-      background: white;
-      padding: 40px 64px;
+		img {
+			width: 100%;
+			height: 398px;
+			object-fit: cover;
+		}
 
-      p {
-        margin-top: 3px;
-        font-size: 16px;
-      }
+		.text {
+			background: white;
+			/*padding: 40px 64px;*/
 
-      h5 {
-        font-size: 13px;
-        line-height: 15px;
-        color: $lightblue;
-        font-weight: bold;
-        margin-bottom: 12px;
-      }
+			.expand{
 
-      h4, a {
-        font-size: 20px;
-        line-height: 26px;
-        font-weight: normal;
-        margin-bottom: 32px;
-        color: $textblue;
-        display: block;
-      }
+			/*min-height: 240px;*/
+				/*padding: 32px 40px;*/
+				background: $darkblue;
+				min-height: 100px;
+				margin-bottom: 0px;
+				padding: 0px;
+				.header{
 
-      i {
-        color: $orange;
-        margin-left: 6px;
-      }
+					align-items: center;
+					display: flex;
+					justify-content: space-between; 
+					i{
+						color: white;
+					}
+					h5{
+						align-items: center;
 
-      ul {
-        margin-bottom: 32px;
-        padding: 0;
+					}
+				}
+				.description{
+					background: white;
 
-        h4, a {
-          margin-bottom: 6px;
-        }
-      }
-    }
+				}
+			}
 
-    .pos {
-      bottom: 96px;
-    }
-  }
+			p {
+				margin-top: 3px;
+				font-size: 16px;
+			}
+
+			h5 {
+				font-size: 13px;
+				line-height: 15px;
+				color: $lightblue;
+				font-weight: bold;
+				margin-bottom: 12px;
+			}
+
+			h4, a {
+				font-size: 20px;
+				line-height: 26px;
+				font-weight: normal;
+				margin-bottom: 32px;
+				color: $textblue;
+				display: block;
+			}
+
+			i {
+				color: $orange;
+				margin-left: 6px;
+			}
+
+			ul {
+				margin-bottom: 32px;
+				padding: 0;
+
+				h4, a {
+					margin-bottom: 6px;
+				}
+			}
+		}
+
+		.pos {
+			bottom: 96px;
+		}
+	}
 }
 
 @media (max-width: $xl) {
-  main {
-    .major-card {
-      img {
-        height: 308px;
-      }
-    }
-  }
+	main {
+		.major-card {
+			img {
+				height: 308px;
+			}
+		}
+	}
 }
 
 @media (max-width: $lg) {
-  main {
-    padding-top: 33px;
-    padding-bottom: 32px;
+	main {
+		padding-top: 33px;
+		padding-bottom: 32px;
 
-    .major-sidebar ul {
-      margin-bottom: 30px;
-    }
+		.major-sidebar ul {
+			margin-bottom: 30px;
+		}
 
-    .major-card {
-      margin-bottom: 48px; 
+		.major-card {
+			margin-bottom: 48px; 
 
-      .text {
-        padding: 40px 48px;
-      }
+			.text {
+				padding: 40px 48px;
+			}
 
-      img {
-        height: 345px;
-      }
-    }
-  }
+			img {
+				height: 345px;
+			}
+		}
+	}
 }
 
 @media (max-width: $md) {
-  main {
-    padding-top: 0;
-    padding-bottom: 12px;
+	main {
+		padding-top: 0;
+		padding-bottom: 12px;
 
-    .major-card {
-      margin-bottom: 32px; 
+		.major-card {
+			margin-bottom: 32px; 
 
-      .text {
-        padding: 32px 40px;
+			.text {
+				padding: 32px 40px;
 
-        h5 {
-          font-size: 12px;
-          line-height: 14px;
-          margin-bottom: 10px;
-        }
+				h5 {
+					font-size: 12px;
+					line-height: 14px;
+					margin-bottom: 10px;
+				}
 
-        h4, a {
-          font-size: 18px;
-          line-height: 26px;
-          margin-bottom: 24px;
-        }
+				h4, a {
+					font-size: 18px;
+					line-height: 26px;
+					margin-bottom: 24px;
+				}
 
-        ul {
-          margin-bottom: 24px;
+				ul {
+					margin-bottom: 24px;
 
-          h4, a {
-            margin-bottom: 5px;
-          }
-        }
-      }
+					h4, a {
+						margin-bottom: 5px;
+					}
+				}
+			}
 
-      img {
-        height: 255px;
-      }
-    }
-  }
+			img {
+				height: 255px;
+			}
+		}
+	}
 }

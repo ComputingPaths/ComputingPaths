@@ -206,6 +206,20 @@
     "spc": "The Speculative Design (B.A.) major mixes art, science, and emerging technology, with a focus on aesthetics, entrepreneurship, and activist intervention. Combining laboratory and field research in a creative studio setting, Speculative Design works from nano to urban scales to stimulate new ideas and innovative solutions. Rather than focusing on existing methodologies, this program prepares students to solve problems that will emerge in an uncertain future. Students may choose from four areas of emphasis: Public Culture and Urban Ecology, Design Computing, Design Research, and Media Design. ",
     "dat": "Data science majors use mathematical models and computational methods to craft powerful data analysis and meet the emerging needs of data-driven industries, from manufacturing companies to government organizations. The core knowledge base of the data scientist lies at the intersection of computing and mathematics, coupled with the skills to abstract, build, and test predictive and descriptive models. Students in the program can expect coursework in mathematics, computer science, and statistics, as well as foundational lower division coursework in natural and physical sciences."
   },
+	"majorExpand":{
+		"bio": {
+			"expandType":"SPECIALIZATIONS",
+			"data":[
+				{
+					"expandName":"Specialization 1",
+					"expandDesc":"this specialization 1 is so cool wowow"
+				},{
+					"expandName":"Specialization 2"	,
+					"expandDesc":"this specialization 2 is so cool wowow"
+				}
+			]
+		}
+	},
   "resources": [
     {
       "name": "Applied Physics and Mathematics Building",
@@ -489,6 +503,14 @@
         "Zaki Siddiqui",
         "Kent Vuong"
       ],
+      "images": [
+        "/img/projectImages/studyspace/1.jpg",
+        "/img/projectImages/studyspace/2.jpg",
+        "/img/projectImages/studyspace/3.jpg"
+      ],
+      "videos": [
+        ""
+      ],
       "link": "https://www.studyspace.me/",
       "tags": ["wa"]
     },
@@ -503,6 +525,12 @@
         "Alex Phan",
         "Raul Pegan",
         "Ella Kan"
+      ],
+      "images": [
+        "/img/projectImages/kaiRobot/1.jpg"
+      ],
+      "videos": [
+        ""
       ],
       "link": "http://divergentengineering.weebly.com/kai-human-robot.html",
       "tags": ["ar"]
@@ -519,6 +547,15 @@
         "Vinh Doan",
         "Young Jin Yun"
       ],
+      "images": [
+        "/img/projectImages/potholesSD/1.jpg",
+        "/img/projectImages/potholesSD/2.jpg",
+        "/img/projectImages/potholesSD/3.jpg",
+        "/img/projectImages/potholesSD/4.jpg"
+      ],
+      "videos": [
+        ""
+      ],
       "link": "https://github.com/tjl014/Projects/blob/master/Potholes%20in%20San%20Diego.ipynb",
       "tags": ["da"]
     },
@@ -532,6 +569,14 @@
         "Melissa Ngu",
         "Ed Ngai"
       ],
+      "images": [
+        "/img/projectImages/memo/1.jpg",
+        "/img/projectImages/memo/2.jpg",
+        "/img/projectImages/memo/3.jpg"
+      ],
+      "videos": [
+        ""
+      ],
       "link": "http://toriduong.com/me-mo.html",
       "tags": ["ma"]
     },
@@ -541,6 +586,15 @@
       "organization": "IEEE",
       "description": "CAMM is a collegiate engineering competition where teams compete to create the best maze-solving robots. \n\nThe Micromouse competition has been around since its introduction by IEEE in 1977, and since 2006 we have been working on our own Micromouse projects here in UC San Diego to compete with other schools. The competition featured a 16x16 grid maze and was led by a wall-following robot-mouse, with objective to solve the maze as fast as possible without outside assistant or human control. To meet with popular demand, since 2011 we have hosted our own competition called the California Micromouse Competition (CAMM) at UC San Diego. Every year, IEEE at UC San Diego receives more than 200 applications and are able to sponsor 40 UC San Diego students to participate in the Micromouse Project, and we also have multiple schools from the west coast attending our competition.\n\nIn 2016, more than half of the awards at CAMM Competition was won by UCSD teams. They are: 2nd Place (Kevin Tain), Most Cells Traversed (Will Bui, Austin Hermida, Jocelyn Tran, Achint Singh, Andy Zhang), Design Award (Javier Urquizu, Eddie Calva, Christopher Lew, Nahoon Hwang), and Judge’s Favorite (Fengjunyan Li, Austin Xiao, Haoran Wang, Zhouhang Shao, Haocheng Liang). This project is an opportunity for students to learn and apply various hands-on skills critical for electrical engineers and computer scientists, including EagleCAD, digital signal processing, and microcontroller programming. Other than the technical skills, it is equally important for students to develop collaboration and research skills to help them along the way working in a competitive environment.",
       "members": [
+      ],
+      "images": [
+        "/img/projectImages/micromouse/1.jpg",
+        "/img/projectImages/micromouse/2.jpg",
+        "/img/projectImages/micromouse/3.jpg",
+        "/img/projectImages/micromouse/4.jpg"
+      ],
+      "videos": [
+        ""
       ],
       "link": "http://micromouseusa.com/",
       "tags": ["ar"]
@@ -552,6 +606,15 @@
       "description": "Endless is a looping, psychological videogame developed in the Computer Programming for the Arts course.\n\nEndless is a looping, psychological videogame developed for the course VIS 141A (Computer Programming for the Arts I) by Interdisciplinary Computing & the Arts student Oliver Engel (‘18). Using the Unity 3D engine, a series of basic puzzles are presented to the player, who is given a time limit to complete each. Upon completing the series of puzzles, the player is thrown back to the first puzzle, and finds that the controls and perspective have been altered, causing the puzzle to increase in difficulty. Each successive loop continues to distort the player’s experience, activating swirling walls of music and overwhelming sensory information as the game progresses. The game acts as a test of endurance in the face of information saturation and only rewards the user with a high score, depending on the amount of loops completed.\n\nThe game was completed with techniques and skills taught in the project-based VIS 141A course under Professor Brett Stalbaum, which allows students to gain API fluency through planning and coding software or software mediated art projects. In particular, this game was programmed with the C++ language and designed in Unity 3D.",
       "members": [
         "Oliver Engel"
+      ],
+      "images": [
+        "/img/projectImages/endless/1.jpg",
+        "/img/projectImages/endless/2.jpg",       "/img/projectImages/endless/3.jpg",
+        "/img/projectImages/endless/4.jpg",
+        "/img/projectImages/endless/5.jpg"
+      ],
+      "videos": [
+        ""
       ],
       "link": "",
       "tags": ["ga"]
@@ -567,6 +630,15 @@
         "Megan Chang",
         "Raymond Arevalo"
       ],
+      "images": [
+        "/img/projectImages/gentrification/1.jpg",
+        "/img/projectImages/gentrification/2.jpg",
+        "/img/projectImages/gentrification/3.jpg",
+        "/img/projectImages/gentrification/4.jpg"
+      ],
+      "videos": [
+        ""
+      ],
       "link": "https://github.com/mec029/Pr_057/blob/master/FinalProject.ipynb",
       "tags": ["da"]
     },
@@ -580,6 +652,12 @@
         "Eric Ho",
         "Jeffry Jaman"
       ],
+      "images": [
+        "/img/projectImages/arduinoPong/1.jpg"
+      ],
+      "videos": [
+        ""
+      ],
       "link": "https://www.youtube.com/watch?v=3nQwyJF6FP8&feature=youtu.be",
       "tags": ["ar"]
     },
@@ -590,6 +668,16 @@
       "description": "Gokoban is a 3D box-pushing elevator-riding award-winning puzzle game developed by Electrical Engineering student Daniel Salvadori.\n\nGokoban is a 3D box-pushing elevator-riding award-winning puzzle game. It was awarded 1st place in the 2017 Gopher Game Jam - an international competition where participants make a game in 3 months using the Go programming language. In the game, players control the Go gopher (the Go mascot) and your objective is to push the boxes until they are all on top of the marked pads. There are elevators that help you reach high places and move boxes up and down. Gokoban was inspired by traditional sokoban-style puzzles but with the added 3D aspect.\n\nGokoban  was created using G3N, an open-source 3D game engine created by Salvadori and his dad. At the time there weren't any active full-fledged game engines in Go, and he decided that building one together would be a great way to have fun while talking about math, algorithms and programming. When he heard about the Gopher Game Jam, Salvadori knew he had to make a game for it using his own 3D engine. \n\nGokoban, like G3N, is also completely open source, meaning all the game source code, sounds, textures, levels and 3D models are freely available online. It’s easy to modify the levels and even create new ones - there's no coding involved!",
       "members": [
         "Daniel Salvadori"
+      ],
+      "images": [
+        "/img/projectImages/gokoban/1.jpg",
+        "/img/projectImages/gokoban/2.jpg",
+        "/img/projectImages/gokoban/3.jpg",
+        "/img/projectImages/gokoban/4.jpg",
+        "/img/projectImages/gokoban/5.jpg"
+      ],
+      "videos": [
+        ""
       ],
       "link": "https://github.com/danaugrs/gokoban",
       "tags": ["ga"]

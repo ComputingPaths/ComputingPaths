@@ -1,69 +1,78 @@
 extends ../template.pug
 
 block style 
-  link(rel='stylesheet' href ='/css/majors.css')
+	link(rel='stylesheet' href ='/css/majors.css')
 
 block script
-  script(src='/js/majors.js')
+	script(src='/js/majors.js')
 
 block main
-  div(class='page-header')
-    svg(class='hidden-xs-down')
-      rect
-      circle
-    h1 The Majors
-  
-  div(class='container page-intro')
-    div(class='row')
-      p(class='col-sm-10 offset-sm-1') This is the majors page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
-  
-  div(class='page-blurb') 
-    h1 Explore these majors
-  
-  div(class='pos' id=majors[0].short)
+	div(class='page-header')
+		svg(class='hidden-xs-down')
+			rect
+			circle
+		h1 The Majors
+	
+	div(class='container page-intro')
+		div(class='row')
+			p(class='col-sm-10 offset-sm-1') This is the majors page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.
+	
+	div(class='page-blurb') 
+		h1 Explore these majors
+	
+	div(class='pos' id=majors[0].short)
 
-  main
-    div(class='container')
-      div(class='row align-items-start')
-        div(class='col-lg-3 major-sidebar')
-          div(class='margin')
-          a(class='flip-on-click' data-toggle='collapse' data-target='#major-list') Majors
-            i(class='fa fa-chevron-down')
-          ul(class='collapse show' id='major-list')
-            div(class='row')
-              each m in majors
-                li(class='col-6 col-md-4 col-lg-12 no-select') 
-                  a(href=`#${m.short}`) #{m.name}
-        div(class='col-lg-9')
-          - for (let i = 0; i < majors.length; i++)
-            div(class='major-card')
-              h1 #{majors[i].name}
-              img(src=majors[i].image)
-              div(class='text row no-gutters')
-                div(class='col-xl-7 flex-last flex-xl-first')
-                  h5 DESCRIPTION
-                  p #{majorDescriptions[majors[i].short]}
-                div(class='col-xl-4 offset-xl-1 flex-first flex-xl-last')
-                  div(class='row')
-                    div(class='col-6 col-xl-12')
-                      h5 MAJOR CAP
-                      h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
-                    div(class='col-6 col-xl-12')
-                      h5 DEGREE TYPE
-                      h4 #{degrees[majors[i].degree]}
-                  div(class='row')
-                    div(class='col-6 col-xl-12')
-                      h5 DEPARTMENTS
-                      ul
-                        each d in majors[i].departments
-                          h4 #{departments[d]}
-                            i(class='fa fa-arrow-right')
-                    div(class='col-6 col-xl-12')
-                      h5 MORE INFORMATION
-                      ul
-                        each w in majors[i].websites
-                          a(href=w) Major Website 
-                            i(class='fa fa-arrow-right')
-              - if(i + 1 < majors.length)
-                  div(class='pos' id=majors[i + 1].short)
+
+	main
+		div(class='container')
+			div(class='row align-items-start')
+				div(class='col-lg-3 major-sidebar')
+					div(class='margin')
+					a(class='flip-on-click' data-toggle='collapse' data-target='#major-list') Majors
+						i(class='fa fa-chevron-down')
+					ul(class='collapse show' id='major-list')
+						div(class='row')
+							each m in majors
+								li(class='col-6 col-md-4 col-lg-12 no-select') 
+									a(href=`#${m.short}`) #{m.name}
+				div(class='col-lg-9')
+					- for (let i = 0; i < majors.length; i++)
+						div(class='major-card')
+							h1 #{majors[i].name}
+							img(src=majors[i].image)
+							div(class='text row no-gutters')
+								div(class='col-xl-7 flex-last flex-xl-first')
+									h5 DESCRIPTION
+									p #{majorDescriptions[majors[i].short]}
+								div(class='col-xl-4 offset-xl-1 flex-first flex-xl-last')
+									div(class='row')
+										div(class='col-6 col-xl-12')
+											h5 MAJOR CAP
+											h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
+										div(class='col-6 col-xl-12')
+											h5 DEGREE TYPE
+											h4 #{degrees[majors[i].degree]}
+									div(class='row')
+										div(class='col-6 col-xl-12')
+											h5 DEPARTMENTS
+											ul
+												each d in majors[i].departments
+													h4 #{departments[d]}
+														i(class='fa fa-arrow-right')
+										div(class='col-6 col-xl-12')
+											h5 MORE INFORMATION
+											ul
+												each w in majors[i].websites
+													a(href=w class='link') Major Website
+							- if(i + 1 < majors.length)
+									div(class='pos' id=majors[i + 1].short)
+							if(majorExpand[majors[i].short])
+								div(class='row') 
+									div(class='col-12' class="text")
+										h5 #{majorExpand[majors[i].short].expandType}
+										- for(let j = 0; j<majorExpand[majors[i].short].data.length; j++)
+											a(class='flip-on-click col-lg-12 expand' data-toggle='collapse' href=`#res-txt-${j}`)
+												div(class="header")
+													h5 #{majorExpand[majors[i].short].data[j].expandName}
+													i(class='fa fa-chevron-down')
 
