@@ -45,6 +45,6 @@ block main
               div(id=`res-txt-${i}` class='collapse text col-12') 
                 div
                   h1 DESCRIPTION
-                  p #{orgs[i].description}
-                  a Find out more 
+                  p !{orgs[i].description}
+                  a(href=orgs[i].link) Find out more 
                     i(class='fa fa-arrow-right')

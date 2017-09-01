@@ -75,8 +75,6 @@ block main
 												i(class='fa fa-chevron-down')
 											div(id=`ex-${i}-${j}` class='collapse spec')
 												p() !{ex.data[j].detail}
-							- if(i + 1 < majors.length)
-									div(class='pos' id=majors[i + 1].short)
 
 							//- Footnote
 							- if(majors[i].note)
@@ -85,3 +83,6 @@ block main
 										h1 *
 									div(class='note col-12 col-sm-11')
 										p <span class="mini-asterisk hidden-sm-up">*</span> #{majors[i].note}
+										
+							- if(i + 1 < majors.length)
+								div(class='pos' id=majors[i + 1].short)
