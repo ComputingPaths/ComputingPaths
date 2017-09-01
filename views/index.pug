@@ -55,8 +55,10 @@ block main
                 a(href=`/majors.html#${m.short}`)
                   i(class='fa fa-arrow-right fa-2x align-middle')
       nav(class='hidden-md-up')
-        i(id='prev-major' class='fa fa-arrow-left fa-2x')
-        i(id='next-major' class='fa fa-arrow-right fa-2x')
+        a(id='prev-major')
+          i(class='fa fa-arrow-left fa-2x')
+        a(id='next-major')
+          i(class='fa fa-arrow-right fa-2x')
       a(class='link-btn hidden-lg-up' href=pages[1].link) Link to all the majors
         
         
@@ -66,19 +68,9 @@ block main
       hr
     div(class='container')
       main
-        div
-          p ORGANIZATION
-          p ORGANIZATION
-          p ORGANIZATION
-        div
-          p ORGANIZATION
-          p ORGANIZATION
-          p ORGANIZATION
-        div
-          p ORGANIZATION
-          p ORGANIZATION
-          p ORGANIZATION
-      a(class='link-btn' href=pages[2].link) Get involved
+        a(href='/connect.html')
+          img(src='/img/longimage.png')
+      a(class='link-btn' href=href=pages[2].link) Get involved
       
   div(class='projects section')
     div(class='section-header')
@@ -96,7 +88,7 @@ block main
                 div
                   h1 #{projects[i].name}
                   h2 #{projects[i].intro}
-                  a(href=`${projects[i].link}`) Read more 
+                  a(href='${projects[i].link}' class='bold') Read more 
                     i(class='fa fa-arrow-right')
         a(class='next-proj col-md-1 hidden-sm-down')
           i(class='float-right fa fa-arrow-right fa-2x')
