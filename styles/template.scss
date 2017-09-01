@@ -76,7 +76,18 @@ nav.navbar {
     }
 
     .nav-item {
-      margin: 0 0 40px 0;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: center;
+
+      .nav-link {
+        font-size: 18px;
+      }
+    }
+
+    .nav-item:last-child {
+      margin-bottom: 30px;
     }
   }
 
@@ -87,16 +98,6 @@ nav.navbar {
 
     img {
       height: 24px;
-    }
-
-    .nav-item {
-      width: 100%;
-      margin-bottom: 30px;
-      text-align: center;
-
-      .nav-link {
-        font-size: 18px;
-      }
     }
 
     .navbar-toggler-right {

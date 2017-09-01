@@ -41,10 +41,10 @@ $(document).ready(() => {
   majorsSection()
 
   let carousel = $('.carousel')
-  let projs = $('.projects article')
+  let projs = $('.projects .proj-card')
   let inner = $('.projects .carousel-inner')
-  let indicator = $('.projects nav ul')
-  let cardPerGroup = 3
+  let indicator = $('.projects nav div')
+  let cardPerGroup = 2
   let pi = 0;
 
   let updateIndicator = newIndex => {
@@ -72,25 +72,13 @@ $(document).ready(() => {
     }
 
     updateIndicator(0)
-    indicator.children().click(e => {
-      updateIndicator(indicator.children().index(e.target))
+    indicator.children().click(function() {
+      updateIndicator(indicator.children().index(this))
       carousel.carousel(pi)
     })
   }
 
-  let mql = window.matchMedia('(max-width: 992px)')
-  if (mql.matches) cardPerGroup = 2
-  mql.onchange = e => {
-    if (e.matches) {
-      cardPerGroup = 2
-      buildCards()
-    }
-    else {
-      cardPerGroup = 3
-      buildCards()
-    }
-  }
-  mql = window.matchMedia('(max-width: 768px)')
+  let mql = window.matchMedia('(max-width: 991px)')
   mql.onchange = e => {
     if (e.matches) {
       cardPerGroup = 1
@@ -103,6 +91,7 @@ $(document).ready(() => {
   }
   if (mql.matches) cardPerGroup = 1
   buildCards()
+
   // Handle click event for projects carousel left scroll
   $('.prev-proj').click(() => {
     try {

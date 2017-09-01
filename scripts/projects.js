@@ -27,4 +27,23 @@ $(document).ready(function() {
   $(value).attr("id","proj-modal" + num);
   });
   
+  index = 0;
+  $.each($(".carousel"), function(index, value){
+  var num = index + 1;
+  $(value).attr("id","proj-carousel" + num);
+  });
+
+  index = 0;
+  $.each($(".carousel-control-prev"), function(index, value){
+  var num = index + 1;
+  $(value).attr("id","#proj-carousel" + num);
+  });
+
+  index = 0;
+  $.each($(".carousel-control-next"), function(index, value){
+  var num = index + 1;
+  $(value).attr("href","#proj-carousel" + num);
+  });
+  
+
 })
