@@ -39,14 +39,16 @@ block main
 			hr
 		div(class='container')
 			- for(let i = 0; i < stories.length; i++)
-				- var theirRole = 'Class of ' + stories[i].class
+				- var theirRole = ''
 				if (stories[i].role !== undefined)
-					- theirRole = stories[i].role
+					- theirRole +=  '| ' + stories[i].role + ' '
+				if (stories[i].class !== undefined)
+					- theirRole += '| Class of ' + stories[i].class
 				div(class='row')
 					if (stories[i].image === null)
 						div(class='story-content col-lg-10 col-12 offset-lg-1')
 							h2(class='size-20 bold') #{stories[i].name}
-							h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+							h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
 							h1(class='size-20 nor') "#{stories[i].quote}"
 					else
 						//- Every other story
@@ -63,12 +65,12 @@ block main
 						if (even)
 							div(class='story-content col-12 col-lg-8 offset-lg-1')
 								h2(class='size-20 bold') #{stories[i].name}
-								h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+								h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
 								h1(class='size-24') "#{stories[i].quote}"
 						else
 							div(class='story-content col-12 col-lg-8')
 								h2(class='size-20 bold') #{stories[i].name}
-								h3(class='light size-18 nor') #{stories[i].major} | #{theirRole}
+								h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
 								h1(class='size-24') "#{stories[i].quote}"
 
 						//- Image right (odd)

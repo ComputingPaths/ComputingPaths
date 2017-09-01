@@ -30,8 +30,9 @@
       "image": "/img/JasmineWang.jpg"
     },
     {
-      "name": "Sarah Guthals, Professor, Co-founder of ThoughtSTEM",
+      "name": "Sarah Guthals, Co-founder of ThoughtSTEM",
       "major": "Computer Science Engineering",
+      "role": "Professor",
       "class": "2014",
       "quote": "I wanted to solve problems. A friend of mine told me to try a computer science class. So I took CSE 8A with Professor Beth Simon and I absolutely fell in love. I had no clue what I was doing. I would sit in the labs completely lost, but I loved it because there was always a process to follow. There was always a way of figuring it out.",
       "image": "/img/SarahGuthals.jpg"
@@ -288,7 +289,7 @@
     {
       "name": "The Computer Science Channel",
       "description": "Showcasing the excellence and diversity of the nation's premier research university, UCTV embraces the core missions of the University of California -- teaching, research and public service -- through quality, in-depth television that informs, educates and enriches the lives of people around the globe.",
-      "mapImage": "img/temp1.svg",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
       "link": "http://www.uctv.tv/computer-science/search-details.aspx?showID=31158",
       "tags": [
@@ -343,7 +344,7 @@
     {
       "name": "The Design Lab",
       "description": "Located in the California Institute of Telecommunication and Information Technology (Calit2) Building, The Design Lab is a newly established organization, proposing a novel mix of the practice and theory of thinking, observing, and making. The Design Lab is located within the California Institute of Telecommunication and Information Technology.",
-      "mapImage": "img/Atkinson.jpg",
+      "mapImage": "img/AtkinsonBldg.jpg",
       "mapLink": "map3link",
       "link": "http://designlab.ucsd.edu/",
       "tags": [
@@ -353,7 +354,7 @@
     {
       "name": "DevFair by CSES",
       "description": "Occurring every year during the Fall, DevFair takes the traditional career fair and spins it on its head. Rather than having companies set up booths that students can visit, they allow groups of students set up booths to showcase their projects to recruiters. This science fair-style presentation gives students the opportunity to show their potential better than a resume ever could. The event is geared towards UCSD undergraduate students in a tech-related field.",
-      "mapImage": "img/temp1.svg",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
       "link": "https://cses.ucsd.edu/devfair/",
       "tags": [
@@ -384,7 +385,7 @@
     {
       "name": "Disciplines in Engineering Career Fair (DECaF)",
       "description": "This event provides company representatives a unique opportunity to interact and engage with UC San Diego's talented engineering students regarding career options, internships, and permanent or summer employment opportunities. Open exclusively to UC San Diego students and alumni, DECaF is coordinated by the Triton Engineering Student Council and over 40 pre-professional engineering student organizations at the Jacobs School of Engineering. These engineering societies, representing the spectrum of disciplines at the Jacobs School, work in close collaboration to maximize the attendance of UC San Diego's 8,500 undergraduate and graduate student engineers and to ensure the satisfaction of companies involved.",
-      "mapImage": "img/temp1.svg",
+      "mapImage": "img/CP Generic Icon",
       "mapLink": "map3link",
       "link": "http://tesc.ucsd.edu/decaf/",
       "tags": [
@@ -393,14 +394,13 @@
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Electrical Engineering Student Tutoring",
+      "description": "Electrical Engineering tutoring sessions are available in Jacobs Hall (EBUI) 5101 on a daily basis. Walk-ins are welcome for students in the following courses: ECE 15-103, ECE 153 and ECE 174.",
+      "mapImage": "img/JacobsBldg.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
+      "link": "http://www.ece.ucsd.edu/undergraduate/ece-tutoring",
       "tags": [
-        "bs",
-        "ws"
+        "as"
       ]
     },
     {
@@ -408,80 +408,298 @@
       "description": "Located in the Structural Materials and Engineering Building (SME 306), The EnVision Arts and Engineering Maker Studio at is a hands-on, experiential education facility where visual arts and engineering communities converge. The nearly 3,000 square foot studio provides a wide range of design, fabrication and prototyping tools, both analog and digital. Resources include workstations with CAD and Adobe CC software installed, 3d Printers, soldering stations, a laser cutter, and a vacuum former. The studio is accessible for Engineering or Visual Arts majors, and students enrolled in courses currently offered within the studio. 1",
       "mapImage": "/img/sme.jpg",
       "mapLink": "map1link",
-      "link": "testlink1",
+      "link": "http://jacobsschool.ucsd.edu/envision/",
+      "tags": [
+        "ws"
+      ]
+    },
+    {
+      "name": "Gallery @ Calit2",
+      "description": "Located in Atkinson Hall, Gallery@Calit2 reflects the nexus of innovation implicit in Calit2's vision, and aims to advance our understanding and appreciation of the dynamic interplay among art, science and technology. Calit2 is a partnership between UC San Diego and UC Irvine, and houses over 1,000 researchers organized around more than 50 projects on the future of telecommunications and information technology and how these technologies will transform a range of applications important to the economy and citizens' quality of life.",
+      "mapImage": "img/AtkinsonBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://gallery.calit2.net/portal/",
+      "tags": [
+        "sc"
+      ]
+    },
+    {
+      "name": "Geisel Library",
+      "description": "Great Research Starts Here. Ranked among the nation's top 25 public academic libraries, Geisel Library plays a critical role in advancing and supporting UC San Diego.",
+      "mapImage": "img/GeiselLib.jpg",
+      "mapLink": "map3link",
+      "link": "http://libraries.ucsd.edu/",
+      "tags": [
+        "bs",
+        "ws"
+      ]
+    },
+    {
+      "name": "Gordon Leadership Center",
+      "description": "Located in the Powell-Focht Bioengineering Hall, the Gordon Engineering Center aims to identify and train effective engineering leaders who will create jobs and products that benefit society. This is accomplished through a series of workshops, courses and engineering leadership forums for undergraduate and graduate students at UC San Diego, as well as local professionals and high school students who aspire to become engineers.",
+      "mapImage": "img/BioBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/GordonCenter/",
+      "tags": [
+        "as"
+      ]
+    },
+    {
+      "name": "HackXX",
+      "description": "HackXX is UC San Diego's women's hackathon and an empowering place to build great projects. Over 24 hours, women will be given the tools and knowledge to materialize their technological dreams. They will be able to form strong bonds by collaborating with other women in tech, interacting with the the CS community, and engaging with industry representatives from top companies.",
+      "mapImage": "img/JacobsBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://hackxx.sdhacks.io/",
+      "tags": [
+        "ev",
+        "ws"
+      ]
+    },
+    {
+      "name": "H.A.R.D. Hack",
+      "description": "Hash out. Analyze. Research. Design. All core steps of overcoming engineering challenges. The HARD Hack is a 24 hour hardware centered hackathon hosted by IEEE and HKN.",
+      "mapImage": "img/JacobsBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://www.ece.ucsd.edu/events/hkn-ieee-h-a-r-d-hack",
+      "tags": [
+        "ev",
+        "ws"
+      ]
+    },
+    {
+      "name": "ICAM Project Studios",
+      "description": "Located in the Conrad Prebys Music Center, these four 200-square-foot studios are designed for individual work on computer music projects. Each studio is equipped with an eight-channel DAW (iMac with MOTU audio interface) and is acoustically treated. In addition, the four studios are designed with different orientations: one with equipment, monitoring and software to support video editing; one for recording, editing and mastering; one for work with MIDI synthesizers; and one with analog mixing and recording.",
+      "mapImage": "img/CPMCBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "tags": [
+        "ws"
+      ]
+    },
+    {
+      "name": "IDEA Learning Center",
+      "description": "The IDEA Learning Center, located at Jacobs Hall B805, is a space for all of the Engineering Learning Communities. Engineering Learning Communities are the formation of formal study groups that bring engineering students into a supportive environment where they can develop confidence, strengthen study skills, and learn the value of collaborative study. This small class environment seeks to increase student mastery and motivation by eliminating the intimidating large classes that engineering students experience particularly in the freshman year.",
+      "mapImage": "img/JacobsBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/idea/resources/idea_studylab.shtml",
       "tags": [
         "as",
-        "bs",
-        "ws",
+        "ws"
+      ]
+    },
+    {
+      "name": "IDEA Freshman Summer Engineering Institute",
+      "description": "Get a jump start on your academic career at UC San Diego's 5-week, residential Summer Engineering Institute (SEI), and earn six credits towards your engineering degree. Receive support in making the transition from high school to the rigors of a university-level engineering curriculum, and build awareness of relevant campus programs and resources. Take part in organized social activities on evenings and weekends, and begin forming a peer network and make lasting friendships.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/idea/programs/freshman_summer_institute.shtml",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "IDEA Transfer PrEP",
+      "description": "Transfer PrEP is a 3-day, 2-night program held over the summer for incoming transfer engineering students. This free program provides incoming students with the opportunity to become acclimated to campus life, build skills and habits necessary for success in engineering, and develop community amongst their peers before beginning their courses in the fall. Participants will live on campus throughout the duration of the program in residential halls with current undergraduate transfer students majoring in engineering as PrEP Leaders who will serve as their peer leaders and mentors throughout the duration of the program.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/idea/programs/summer_prep.shtml",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "Instructional Computing Laboratory",
+      "description": "Located in the Conrad Prebys Music Center, the 600-square-foot Instructional Computing Lab features 10 Intel iMac workstations and laptop work area. The composition work surfaces are based around Akai keyboard controllers. Software includes Ableton Live Suite 9, Max/MSP/Jitter 7, Soundhack, Pure Data, Sibelius 8, LogicX, and Adobe CS.",
+      "mapImage": "img/CPMCBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "Kamil Gallery",
+      "description": "Located in the lower level of the Mandeville Center, The Adam D. Kamil Art Gallery is a resource for Visual Arts students to view and exhibit art projects. Opportunities to exhibit work are offered on a quarterly basis.",
+      "mapImage": "img/MandevilleBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://visarts.ucsd.edu/mandeville-center",
+      "tags": [
         "sc"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Media Teaching Lab",
+      "description": "Located in the Communications Building, the Media Teaching Lab offers outstanding media facilities, equipment, and technical assistance provided to students and faculty. The facility offers rental services for equipment and workshops to learn software, photography work, and lighting. The Media Teaching Lab's aim is to facilitate students in making the highest quality videos and films with excellent sound, editing, and cinematography. The space also holds regular workshops and events to educate students in editing, HD workflow, cameras, and lighting all throughout the quarter.",
+      "mapImage": "img/CommBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://acms.ucsd.edu/students/medialab/",
+      "tags": [
+        "as",
+        "eq",
+        "ev"
+      ]
+    },
+    {
+      "name": "OASIS Math and Science",
+      "description": "OASIS math and science workshops are structured group-learning study-sessions led by a tutor who explains course concepts and encourages a collaborative learning environment. Each workshop session is 2 hours and meets twice a week",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/math-science/index.html",
+      "tags": [
+        "as",
+        "ws"
+      ]
+    },
+    {
+      "name": "OASIS Summer Bridge",
+      "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/summer-bridge/index.html#//academics/_organizations/oasis/transition-programs/summer-bridge/index",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "OASIS TRIO Student Support Services Program & Summer Experience",
+      "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/summer-bridge/index.html#//academics/_organizations/oasis/transition-programs/summer-bridge/index",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "OASIS - 2Excel",
+      "description": "2Excel is a retention program serving second-year students. The program is a year-long commitment starting Fall through Spring quarter.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/2excel/index.html",
+      "tags": [
+        "as"
+      ]
+    },
+    {
+      "name": "OASIS Guardian Scholars Program",
+      "description": "The Guardian Scholars Program (GSP) is committed to supporting current and former foster youth at UCSD through a variety of holistic services that aid the students in achieving a college degree. The GSP understands that there are many hardships that foster youth endure and strives to be a resource and advocate for all its students.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://students.ucsd.edu/finances/financial-aid/types/scholarships/guardian.html",
+      "tags": [
+        "as"
+      ]
+    },
+    {
+      "name": "SD Hacks",
+      "description": "SD Hacks is About... Empowerment: They provide all hackers with expertise, hardware and software so they can build their dreams. Collaboration: They’re all here as fellow mentors, 4am-ers, and friends. Innovation: They strive to make each SD Hacks a memorable learning experience for all.",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
       "link": "testlink3",
+      "tags": [
+        "ev",
+        "ws"
+      ]
+    },
+    {
+      "name": "SPIS",
+      "description": "SPIS is a 5-week residential summer program on the UC San Diego campus for students accepted into CSE majors as well as for other UCSD admitted students who want to explore computer science as a career option. SPIS courses are taught by the very best faculty at UCSD. Students in the program interact with a wide range of CSE faculty and learn about computer science and engineering research. They also have opportunities to connect with engineers from the computer industry. SPIS provides an excellent student experience with individual meetings with faculty, tutoring from experienced CSE undergraduate students, collaborations with fellow students, individual advising to smooth the transition to UCSD, and living on campus.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "https://sites.google.com/a/eng.ucsd.edu/spis/",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "Structural & Material Engineering Building",
+      "description": "Located on the corner of Voigt Drive and Matthews Lane near Sixth College, the 183,000 square foot building houses a community of artists and engineers which includes 12 visual arts studios, a gallery and performance space, and 11 distinct visual arts research initiatives, and a state of the art paint booth. The building is also home to an array 160 graduate student, faculty, and staff offices and the EnVision makerspace.",
+      "mapImage": "img/sme.jpg",
+      "mapLink": "map3link",
+      "link": "http://jacobsschool.ucsd.edu/sme/",
       "tags": [
         "bs",
         "ws"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Teaching + Learning Commons",
+      "description": "In 2015, UC San Diego established the Teaching + Learning Commons to advance and improve how we teach and learn. Today, a suite of services and programs are in place to develop better instructors and more engaged learners. Our campus is committed to delivering an educational experience that prepares students who are capable of solving problems, leading, and innovating in a diverse and interconnected world. Tutoring is available for Math 2, 3C, 4C, 10A, 10B, 10C, 20A, 20B, and 20C as well as Chemistry 6A, 6B, and 6C.",
+      "mapImage": "img/GeiselLib.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
+      "link": "https://commons.ucsd.edu/",
       "tags": [
-        "bs",
+        "as",
         "ws"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
-      "mapLink": "map3link",
-      "link": "testlink3",
-      "tags": [
-        "bs",
-        "ws"
-      ]
-    },
-    {
-      "name": "Tech Lending Program",
-      "description": "description 2",
+      "name": "Tech Lending Program (TLP)",
+      "description": "The Tech Lending Program (TLP) circulates technology items, from calculators to digital cameras, to currently enrolled UC San Diego faculty, staff, and students. This is an effort by the Library to ensure that our users have the technological means to conduct research, and complete coursework as efficiently and effectively as possible. TLP’s initial inventory consists mostly of frequently requested items like device chargers, adapters (e.g., mini-HDMI to HDMI), flash drives, and headsets. A few high-end devices are also offered, including digital cameras, projectors, and Rokus. Non-electronic items include book stands and wrist rests. 2",
       "mapImage": "img/CommBldg.jpg",
       "mapLink": "map2link",
-      "link": "testlink2",
+      "link": "https://library.ucsd.edu/computing-and-technology/tech-lending/index.html",
       "tags": [
-        "eq",
+        "eq"
+      ]
+    },
+    {
+      "name": "UCSD Academy for Transfer Students",
+      "description": "The 2017 UC San Diego Academy for Transfer Students is intended for incoming transfer students (belonging to the Biological Sciences, Computer Science and Engineering, or Mathematics departments) who will be entering UC San Diego in the Fall quarter from a community college or from a four year college.  It is a five-week program where students can earn 8 units of credit (10 units for CSE and Math-CS students) in the major. The Academy primarily consists of gateway courses that are not typically offered at community colleges.The Academy also includes advising and other activities to help students smoothly transition to UC San Diego.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "mapLink": "map3link",
+      "link": "http://academy.eng.ucsd.edu/",
+      "tags": [
+        "as",
+        "ev"
+      ]
+    },
+    {
+      "name": "University Art Gallery",
+      "description": "Located on the outskirts of the Mandeville Center, near the Main Gym, The University Art Gallery aims to activate new fields of knowledge production, new material, discursive, and critical possibilities -- alternative forms of organization, exchange, collection, and presentation that can be incorporated into new understandings of artistic endeavor. Working with the conditions and interrelationships of publics, space, discourse, and pedagogy, it enhances the dialogue around diversity within contemporary cultural practice and supports fellows and students in their academic and professional development as curators, critics, writers and scholars.",
+      "mapImage": "img/MandevilleBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://visarts.ucsd.edu/university-art-gallery-uag",
+      "tags": [
         "sc"
       ]
     },
     {
-      "name": "name3",
-      "description": "description3",
-      "mapImage": "img/temp1.svg",
+      "name": "Virtual Computing Labs",
+      "description": "The Virtual Computing Labs provide a virtual workspaces that can be accessed through the UCSD VPN, and provides students with a range of software programs like ArcGIS, Matlab, and SOLIDWORKS.",
+      "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
+      "link": "http://acms.ucsd.edu/students/govirtual/index.html",
+      "tags": [
+        "eq",
+        "ws"
+      ]
+    },
+    {
+      "name": "Visual Arts Facility",
+      "description": "Located between the Structural Materials and Engineering Building (SME) and Pepper Canyon Hall, the Visual Arts Facility hosts visual arts graduate student studios, a seminar room, the graduate photo lab, a computer lab, a gallery, and a performance space, a sound lab and a screening room.",
+      "mapImage": "img/VAFBldg.jpg",
+      "mapLink": "map3link",
+      "link": "http://visarts.ucsd.edu/visual-arts-facility-vaf",
       "tags": [
         "bs",
         "ws"
       ]
     },
     {
-      "name": "name 3",
-      "description": "description 3",
-      "mapImage": "img/temp1.svg",
+      "name": "Wood & Metal Shops",
+      "description": "Located in the Mandeville Center, these facilities provide access to wood/metal cutting tools to undergraduate students.",
+      "mapImage": "img/MandevilleBldg.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
-      "image": "/img/temp1.svg",
+      "link": "http://visarts.ucsd.edu/mandeville-center",
       "tags": [
-        "eq",
-        "sc",
-        "ev"
+        "ws"
       ]
     }
   ],
@@ -493,6 +711,18 @@
     "eq": "Equipment",
     "ws": "Workspaces"
   },
+	"resourceBanner":[
+		{
+			"name": "banner resource 1",
+			"image":"/img/temp1.svg",
+			"link": "testbannerimage1.com"
+		},
+    {
+			"name": "banner resource 2",
+			"image":"/img/temp1.svg",
+			"link": "testbannerimage2.com"
+		}
+	],
   "resourceBanner": [
     {
       "name": "banner resource 1",
@@ -510,6 +740,7 @@
       "name": "Studyspace.me",
       "imageFolder": "studyspace",
       "organization": "CSE 110",
+      "intro": "Studyspace.me is a casual social platform for studying, collaboration, and meetings.",
       "description": "Computer Science students develop a casual social platform for studying, collaboration, and meetings. \n\nFor the course CSE 110 (Software Engineering), students are offered the opportunity to learn common software practices used in industry on an application which they build with a small team of developers. Each team has one quarter to create a project that demonstrates a creative solution to a problem.\n\nAs their solution, the Studyspace team developed a website that connects students with peers and instructors instantly via video and text chat. Through the application, classmates can collaborate in course-specific channels to tackle challenging topics, ask questions, and prepare for exams. The website provides a multifaceted digital workspace that can host a range of activities, like TA office hours, group study sessions, and even a lounge area where students can share music and chat.\n\nThe project boasts a mix of techniques and backend software implementations, including Express.js, Firebase, MongoDB, and PeerJS. Studyspace also incorporates creative frontend and visual design features like alternate app color schemes and day/night modes that ensure the site is easy on the eyes for long periods of time. \n\nThe CSE 110 (Software Engineering) course focuses on an introduction to software development and engineering methods, including specification, design, implementation, testing, and process, as well as an emphasis on team development, agile methods, and use of tools as IDE's, version control, and test harnesses.",
       "members": [
         "Eric Zhang",
@@ -540,6 +771,7 @@
       "name": "KAi Human Robot Arm",
       "imageFolder": "kaiRobot",
       "organization": "Divergent Engineering",
+      "intro": "Engineering students craft a humanoid robot hand with the help of an Arduino microcontroller.",
       "description": "Engineering students craft a humanoid robot hand with the help of an Arduino microcontroller. \n\nKAi is a human robot based on the open source humanoid robot, “Inmoov”. The Divergent Engineering team successfully built an operational arm with five human-like fingers controlled using five flex sensors. The arm is controlled by an Arduino Uno wired to several potentiometers that recreate the motion of human hands with animatronic “joints”.\n\nThe team has programmed KAi to be autonomous with certain preset hand signs, such as the peace sign. KAi is even able to play a game of rock-paper-scissors with the user motioning out the game’s commonly used hand signs. Using the newly developed muscle sensors, which allows user muscle movement to be recorded by the Arduino,  the team plans to implement a glove-like mechanism to control the fingers.",
       "members": [
         "Phuong Truong",
@@ -564,6 +796,7 @@
       "name": "Potholes in San Diego",
       "imageFolder": "potholesSD",
       "organization": "COGS 108",
+      "intro": "Working with immense amounts of data, a team of cognitive science students tackle the growing pothole problem in San Diego.",
       "description": "Working with immense amounts of data, a team of cognitive science students tackle the growing pothole problem in San Diego.\n\n“People have become so desensitized to potholes that their frustration with them has become an everyday routine. For the safety of people and their cars, we asked, what approaches can be taken towards increasing the efficiency of pothole repair? And where should San Diego be allocating their pothole workers and resources?”\n\nThose were the questions asked by a team of students taking the COGS 108 (Data Science in Practice) course. Working with immense amounts of public data, the team first generated visual heat maps of San Diego potholes with the help of the ArcGIS program. They then compared pothole data with a range of other conditions, including the presence of bus stops, parking meters, and population. Using statistical algorithms, computer programming languages, and industry-standard software, the team was able to analyze the complex relations between all of the factors and develop recommendations for how the city of San Diego might begin to solve their issues with potholes. The project demonstrates the practicality of a computing-based approach in data science.",
       "members": [
         "Lee Anne Mercado",
@@ -589,6 +822,7 @@
       "name": "me-mo",
       "imageFolder": "memo",
       "organization": "COGS 120",
+      "intro": "me-mo is a mobile personal travelling app, allowing individuals to document their travels.",
       "description": "Cognitive Science students develop a mobile personal travelling app to document their travels. \n\nFor the course COGS 120 (Interaction Design) with Professor Philip Guo, students develop a quarter-long project where they design and develop a mobile application within a given premise. In response to the topic Visualizing and Interacting with Histories, Tori Duong (‘18), Melissa Ngu (‘17), and Ed Ngai (‘17) wondered how they might help people represent and interact with histories in a visual way. Their solution was “me-mo”, a personal traveling app that helps users keep track of places they’ve been to or want to visit in the future. The team of three approached the project by first studying the needs of users and using storyboards to illustrate the different personas and scenarios in which their app would be used. Working with criticism and review from their classmates, the team went on to rapid prototyping and developing low-fidelity wireframes which were then tested on users. Their final project incorporates a wide array of techniques and insight gained from the COGS 120 course. \n\nThe COGS 120 (Interaction Design) course is structured through weekly skill-building assignments and regular small design studio sessions designed to foster constructive conversations around each team’s progress throughout the quarter. ",
       "members": [
         "Tori Duong",
@@ -611,6 +845,7 @@
       "name": "California Micromouse Competition",
       "imageFolder": "micromouse",
       "organization": "IEEE",
+      "intro": "CAMM is a collegiate engineering competition where teams compete to create the best maze-solving robots.",
       "description": "CAMM is a collegiate engineering competition where teams compete to create the best maze-solving robots. \n\nThe Micromouse competition has been around since its introduction by IEEE in 1977, and since 2006 we have been working on our own Micromouse projects here in UC San Diego to compete with other schools. The competition featured a 16x16 grid maze and was led by a wall-following robot-mouse, with objective to solve the maze as fast as possible without outside assistant or human control. To meet with popular demand, since 2011 we have hosted our own competition called the California Micromouse Competition (CAMM) at UC San Diego. Every year, IEEE at UC San Diego receives more than 200 applications and are able to sponsor 40 UC San Diego students to participate in the Micromouse Project, and we also have multiple schools from the west coast attending our competition.\n\nIn 2016, more than half of the awards at CAMM Competition was won by UCSD teams. They are: 2nd Place (Kevin Tain), Most Cells Traversed (Will Bui, Austin Hermida, Jocelyn Tran, Achint Singh, Andy Zhang), Design Award (Javier Urquizu, Eddie Calva, Christopher Lew, Nahoon Hwang), and Judge’s Favorite (Fengjunyan Li, Austin Xiao, Haoran Wang, Zhouhang Shao, Haocheng Liang). This project is an opportunity for students to learn and apply various hands-on skills critical for electrical engineers and computer scientists, including EagleCAD, digital signal processing, and microcontroller programming. Other than the technical skills, it is equally important for students to develop collaboration and research skills to help them along the way working in a competitive environment.",
       "members": [],
       "images": [
@@ -630,6 +865,7 @@
       "name": "Endless",
       "imageFolder": "endless",
       "organization": "VIS 141A",
+      "intro": "Endless is a looping, psychological videogame developed in the Computer Programming for the Arts course.",
       "description": "Endless is a looping, psychological videogame developed in the Computer Programming for the Arts course.\n\nEndless is a looping, psychological videogame developed for the course VIS 141A (Computer Programming for the Arts I) by Interdisciplinary Computing & the Arts student Oliver Engel (‘18). Using the Unity 3D engine, a series of basic puzzles are presented to the player, who is given a time limit to complete each. Upon completing the series of puzzles, the player is thrown back to the first puzzle, and finds that the controls and perspective have been altered, causing the puzzle to increase in difficulty. Each successive loop continues to distort the player’s experience, activating swirling walls of music and overwhelming sensory information as the game progresses. The game acts as a test of endurance in the face of information saturation and only rewards the user with a high score, depending on the amount of loops completed.\n\nThe game was completed with techniques and skills taught in the project-based VIS 141A course under Professor Brett Stalbaum, which allows students to gain API fluency through planning and coding software or software mediated art projects. In particular, this game was programmed with the C++ language and designed in Unity 3D.",
       "members": [
         "Oliver Engel"
@@ -643,15 +879,14 @@
       ],
       "videos": [
       ],
-      "link": "",
-      "tags": [
-        "ga"
-      ]
+      "link": "https://docs.google.com/document/d/1SQGfeSgG_ffJO4cOglkVPocJGZZFL4_da0wKYe7Idn8/edit",
+      "tags": ["ga"]
     },
     {
       "name": "Gentrification in San Diego",
       "imageFolder": "gentrification",
       "organization": "COGS 108",
+      "intro": "A team of cognitive science students enter the debate over gentrification by analyzing and visualizing mass amounts of data.",
       "description": "A team of cognitive science students enter the debate over gentrification by analyzing and visualizing mass amounts of data.\n\n“How does gentrification contribute to changes in San Diego demographics? In particular, how do factors such as crime, home value, housing income and racial diversity change as a result of gentrification?”\n\nFor the final project in COGS 108 Data Science in Practice), one team posed this poignant question. The team first approached the issue by identifying gentrified San Diego neighborhoods, and then conducting a range of data visualization and statistical methods in order to meaningfully structure the large amounts of data present. In particular, the team explored how factors such as crime, home value, housing income and racial diversity change as a result of gentrification. Their purpose in exploring the subject was to shed light on a civic concern that’s widely disputed and debated in cities across the country.",
       "members": [
         "Abena Bonsu",
@@ -677,6 +912,7 @@
       "name": "Arduino Pong",
       "imageFolder": "arduinoPong",
       "organization": "2017 H.A.R.D. Hack",
+      "intro": "The Arduino Pong project, created during the 2017 H.A.R.D. Hack at UCSD,  is a modern take on the classic game, Pong.",
       "description": "The Arduino Pong project, created during the 2017 H.A.R.D. Hack at UCSD,  is a modern take on the classic game, Pong.\n\nThe game is designed to be a single player Pong game where the user faces the upper edge of the screen, a randomly generated horizontal wall, and a pong ball with gradually increasing speed. The user must maneuver a small platform, the paddle, to prevent the moving pong ball from passing the lower edge of the screen.\n\nThe screen is split in half where the left side of the display is the actual game, while the right side is a score tracker. The score can be arbitrarily set to determine a winner, for example, the team normally tests the game with a set score of 15.\n\nThe project was built using an Arduino Uno with 1 output and 1 input. For the output, the team daisy chained four 8x8 LED matrices to create a 64x64 grid of red LEDs to create the display screen for the player. For the input, the player uses a traditional joystick, which controls the paddle.",
       "members": [
         "Austin Hermida",
@@ -698,6 +934,7 @@
       "name": "Gokoban",
       "imageFolder": "gokoban",
       "organization": "2017 Gopher Game Jam",
+      "intro": "Gokoban is a 3D box-pushing elevator-riding award-winning puzzle game developed by Electrical Engineering student Daniel Salvadori.",
       "description": "Gokoban is a 3D box-pushing elevator-riding award-winning puzzle game developed by Electrical Engineering student Daniel Salvadori.\n\nGokoban is a 3D box-pushing elevator-riding award-winning puzzle game. It was awarded 1st place in the 2017 Gopher Game Jam - an international competition where participants make a game in 3 months using the Go programming language. In the game, players control the Go gopher (the Go mascot) and your objective is to push the boxes until they are all on top of the marked pads. There are elevators that help you reach high places and move boxes up and down. Gokoban was inspired by traditional sokoban-style puzzles but with the added 3D aspect.\n\nGokoban  was created using G3N, an open-source 3D game engine created by Salvadori and his dad. At the time there weren't any active full-fledged game engines in Go, and he decided that building one together would be a great way to have fun while talking about math, algorithms and programming. When he heard about the Gopher Game Jam, Salvadori knew he had to make a game for it using his own 3D engine. \n\nGokoban, like G3N, is also completely open source, meaning all the game source code, sounds, textures, levels and 3D models are freely available online. It’s easy to modify the levels and even create new ones - there's no coding involved!",
       "members": [
         "Daniel Salvadori"
