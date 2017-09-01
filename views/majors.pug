@@ -57,13 +57,14 @@ block main
 											h5 DEPARTMENTS
 											ul
 												each d in majors[i].departments
-													h4 #{departments[d]}
-														i(class='fa fa-arrow-right')
+													li
+														a(href='#' class='link') #{departments[d]}
 										div(class='col-6 col-xl-12')
 											h5 MORE INFORMATION
 											ul
 												each w in majors[i].websites
-													a(href=w class='link') Major Website
+													li
+														a(href=w class='link') Major Website
 							- if(i + 1 < majors.length)
 									div(class='pos' id=majors[i + 1].short)
 							if(majorExpand[majors[i].short])
