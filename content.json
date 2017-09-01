@@ -849,17 +849,17 @@
   "resourceBanner": [
     {
       "name": "University Art Gallery",
-      "image": "img/ArtGallery.jpg",
+      "image": "img/resourceBanner/University Art Gallery.jpg",
       "link": "http://visarts.ucsd.edu/galleries_view"
     },
     {
       "name": "Calit2 Protyping Lab",
-      "image": "img/Calit2.jpg",
+      "image": "img/resourceBanner/Calit2 Prototyping Lab.jpg",
       "link": "http://www.calit2.net/"
     },
     {
       "name": "Digital Media Lab",
-      "image": "img/DML.jpg",
+      "image": "img/resourceBanner/Digital Media Lab.jpg",
       "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/"
 
     }

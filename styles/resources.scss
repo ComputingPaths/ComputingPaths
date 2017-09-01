@@ -19,10 +19,6 @@
 					object-fit: cover;
 				}
 				
-				//background-image: url('/img/temp1.svg');
-				//background-repeat: no-repeat;
-				//background-position: center;
-				//background-size: cover;
 				margin-bottom: 16px;
 			}
 		
@@ -147,7 +143,7 @@
 	.res-banner {
 		background: linear-gradient($aquablue 62%, white 38%);
 	
-		.carousel .carousel-item .img{
+		.carousel .carousel-item .img img {
 			height: 433px;
 		}
 	}
@@ -166,7 +162,7 @@
 		
 		.carousel {
 			.carousel-item {
-				.img {
+				.img img {
 					height: 321px;
 					margin-bottom: 12px;
 				}
@@ -208,7 +204,7 @@
 
 		.carousel {
 			.carousel-item {
-				.img {
+				.img img {
 					height: 287px;
 					margin-bottom: 8px;
 				}

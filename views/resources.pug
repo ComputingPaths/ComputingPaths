@@ -25,7 +25,7 @@ block main
             - for (let i = 0; i < resourceBanner.length; i++)
               div(class='carousel-item' class=i === 0 ? 'active' : '')
                 a(class='img' href=resourceBanner[i].link)
-									img(src=resourceBanner[i].image)
+                  img(src=resourceBanner[i].image)
                 a(class='caption' href=resourceBanner[i].link) #{resourceBanner[i].name}
           div(class='indicator')
             - for (let i = 0; i < resourceBanner.length; i++)
