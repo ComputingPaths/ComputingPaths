@@ -693,7 +693,6 @@
     "eq": "Equipment",
     "ws": "Workspaces"
   },
-<<<<<<< HEAD
 	"resourceBanner":[
 		{
 			"name": "banner resource 1",
@@ -706,7 +705,6 @@
 			"link": "testbannerimage2.com"
 		}
 	],
-=======
   "resourceBanner": [
     {
       "name": "banner resource 1",
@@ -719,7 +717,6 @@
       "link": "testbannerimage2.com"
     }
   ],
->>>>>>> 4458b579e2aa0b979aa4f48196675f71eea5b334
   "projects": [
     {
       "name": "Studyspace.me",
