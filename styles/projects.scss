@@ -268,30 +268,30 @@ section {
 	-o-user-select: none;
 
 	.carousel-item {
-		justify-content: center;
-			
-		img{
-			height: 487px;
-			
-			@media( max-width: $lg ) {
-				height: 460px;
-			}
+      justify-content: center;
+      
+      img, iframe{
+        height: 487px;
+        
+        @media( max-width: $lg ) {
+          height: 460px;
+        }
 
-			@media( max-width: $md ) {
-				height: 340px;
-			}
+        @media( max-width: $md ) {
+          height: 340px;
+        }
 
-			@media( max-width: $sm ) {
-				height: 280pxa;
-			}
-		}
+        @media( max-width: $sm ) {
+          height: 280pxa;
+        }
+      }
 	}
-
-	.carousel-control-prev, .carousel-control-next {
-		i {
-			color: white;
-		}
-	}
+  
+    .carousel-control-prev, .carousel-control-next {
+      i {
+        color: white;
+      }
+    }
 }
 
 .proj-info {

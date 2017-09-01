@@ -36,7 +36,7 @@ $(document).ready(function() {
   index = 0;
   $.each($(".carousel-control-prev"), function(index, value){
   var num = index + 1;
-  $(value).attr("id","#proj-carousel" + num);
+  $(value).attr("href","#proj-carousel" + num);
   });
 
   index = 0;
