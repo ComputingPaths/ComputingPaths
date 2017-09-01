@@ -1,10 +1,14 @@
+// predefined colors of tags
 let colors = ['#EDABFF', '#ABDBFF', '#FF8585', '#50E3C2', '#FFD5AD', '#C2ADFF']
-let grey = '#C6D1D7';
+let grey = '#C6D1D7'
 
-function initNideSidebar() {
+// initilize the tagging and filtering system
+function initNiceSidebar() {
+  // return if no sidebar presents
   let li = $('.nice-sidebar li')
   if (!li.length) return
 
+  // build the mapping between tag name and color
   let colorMap = new Map()
   li.each((i, e) => {
     e = $(e)
@@ -13,65 +17,78 @@ function initNideSidebar() {
     e.css('color', colorMap[e.html()])
   })
 
+  // elements to be filtered
   let filtered = $('.filtered')
   let removed = []
   let tags = $('.tag')
-  li.click(e => {
-    e = $(e.target)
+
+  // trigger filter when a list element is clicked
+  li.click(function() {
+    let e = $(this)
 
     if (e.hasClass('active')) {
+      // deactivate tag
       e.removeClass('active')
       e.css('color', grey)
       tags.filter((ti, te) => te.innerHTML === e.html()).css('background-color', grey)
     }
     else {
+      // activate tag
       e.addClass('active')
       e.css('color', colorMap[e.html()])
       tags.filter((ti, te) => te.innerHTML === e.html()).css('background-color', colorMap[e.html()])
     }
 
+    // filter elements
     filtered.each((fi, fe) => {
-      if ($(fe).find('.tag').is((ti, te) => li.filter('.active').is((ai, ae) => te.innerHTML === ae.innerHTML))) {
+      // if the current element should show up
+      fe = $(fe)
+      if (fe.find('.tag').is((ti, te) => li.filter('.active').is((ai, ae) => te.innerHTML === ae.innerHTML))) {
         if (removed[fi]) {
-
-          $(fe).css('display', removed[fi])
-          $(fe).hide().fadeIn(500);
+          // show the element
+          fe.css('display', removed[fi])
+          fe.hide().fadeIn(500)
           removed[fi] = undefined
         }
       }
       else {
         if (!removed[fi]) {
-          //fe element to hide, fi its index
-          removed[fi] = $(fe).css('display')
-          //don't show card
-          //$()makes dom into jqery obj
-          $(fe).fadeOut(500, function () {
-            $(fe).css('display', 'none');
-          });
-
+          // else hide the element
+          removed[fi] = fe.css('display')
+          fe.fadeOut(500, function () {
+            fe.css('display', 'none')
+          })
         }
       }
     })
   })
 
+  // apply initial color to all tags
   tags.each((i, e) => {
     $(e).css('background-color', colorMap[e.innerHTML])
   })
 }
 
+// initialize the .flip-on-click class.
+// arrows with this class will be flipped on click
 function flipOnClick() {
   $('.flip-on-click').click(function () {
     $(this).find('i').toggleClass('fa-flip-vertical')
   })
 }
 
-$(document).ready(() => {
+// initialize the sidebae
+function initNavbar() {
+  // apply the .active class to the current nav link
   $('.navbar-nav')
     .children()
     .children()
     .filter((i, e) => e.pathname === window.location.pathname)
     .addClass('active')
+}
 
-  initNideSidebar()
+$(document).ready(() => {
+  initNavbar()
+  initNiceSidebar()
   flipOnClick()
 })
