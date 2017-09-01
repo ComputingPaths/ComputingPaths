@@ -48,6 +48,7 @@
     {
       "name": "Bioinformatics",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "bsc",
@@ -59,11 +60,13 @@
         "http://bioinformatics.ucsd.edu/"
       ],
       "image": "/img/Bioinformatics.jpg",
-      "short": "bio"
+      "short": "bio",
+      "note": ""
     },
     {
       "name": "Cognitive Science",
       "cap": false,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "cog"
@@ -73,11 +76,13 @@
         "http://www.cogsci.ucsd.edu/"
       ],
       "image": "/img/CognitiveScience.jpg",
-      "short": "cog"
+      "short": "cog",
+      "note": ""
     },
     {
       "name": "Computer Science",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "cse"
@@ -87,11 +92,13 @@
         "https://cse.ucsd.edu/"
       ],
       "image": "/img/ComputerScience.jpg",
-      "short": "cse"
+      "short": "cse",
+      "note": ""
     },
     {
       "name": "Electrical & Computer Engineering",
       "cap": true,
+      "footnote": true,
       "degree": "bs",
       "departments": [
         "cse",
@@ -102,11 +109,13 @@
         "http://www.ece.ucsd.edu/"
       ],
       "image": "/img/ElectricalEngineering.jpg",
-      "short": "ece"
+      "short": "ece",
+      "note": "The Computer Engineering major is offered by both the CSE and ECE departments. Despite the major cap status, students within this major are able to switch into other majors within their respective departments such as pure Computer Science (CSE) or pure Electrical Engineering (ECE)."
     },
     {
       "name": "Math-Computer Science",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "mat"
@@ -116,11 +125,13 @@
         "https://math.ucsd.edu/"
       ],
       "image": "/img/Math-CS.jpg",
-      "short": "mcs"
+      "short": "mcs",
+      "note": ""
     },
     {
       "name": "Scientific Computation",
       "cap": true,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "mat",
@@ -133,11 +144,13 @@
         "https://physics.ucsd.edu/"
       ],
       "image": "/img/SciComp.jpg",
-      "short": "sci"
+      "short": "sci",
+      "note": ""
     },
     {
       "name": "Interdisciplinary Computing and the Arts",
       "cap": false,
+      "footnote": true,
       "degree": "ba",
       "departments": [
         "vis",
@@ -149,11 +162,13 @@
         "http://visarts.ucsd.edu/icam-interdisciplinary-computing-and-arts-minor"
       ],
       "image": "/img/ICAM.jpg",
-      "short": "ica"
+      "short": "ica",
+      "note": "Applicants may be asked to submit an optional supplemental application and/or portfolio/audition for faculty review."
     },
     {
       "name": "Speculative Design",
       "cap": false,
+      "footnote": false,
       "degree": "ba",
       "departments": [
         "vis"
@@ -163,11 +178,13 @@
         "http://visarts.ucsd.edu/majors-0"
       ],
       "image": "/img/SpecDesign.jpg",
-      "short": "spc"
+      "short": "spc",
+      "note": ""
     },
     {
       "name": "Data Science",
       "cap": false,
+      "footnote": false,
       "degree": "bs",
       "departments": [
         "cse"
@@ -177,7 +194,8 @@
         "http://jacobsschool.ucsd.edu/mas/dse/"
       ],
       "image": "/img/DataScience.jpg",
-      "short": "dat"
+      "short": "dat",
+      "note": ""
     }
   ],
   "degrees": {
