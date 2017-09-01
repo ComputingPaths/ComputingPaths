@@ -50,9 +50,9 @@ block main
 											h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
 										div(class='col-12 col-sm-6 col-xl-12')
 											h5 DEGREE TYPE
-											- if (majors[i].degree === 'bs')
+											if (majors[i].degree === 'bs')
 												h4 Bachelor of Science
-											- if (majors[i].degree === 'ba')
+											if (majors[i].degree === 'ba')
 												h4 Bachelor of Arts
 									div(class='row')
 										div(class='col-12 col-sm-6 col-xl-12')
@@ -70,19 +70,19 @@ block main
 									- let ex = majorExpand[majors[i].short]
 									div(class='col-12 flex-last expand')
 										h5 #{ex.type}
-										- for(let j = 0; j < ex.data.length; j++)
+										- for (let j = 0; j < ex.data.length; j++)
 											a(class='flip-on-click header' data-toggle='collapse' href=`#ex-${i}-${j}`) #{ex.data[j].name}
 												i(class='fa fa-chevron-down')
 											div(id=`ex-${i}-${j}` class='collapse spec')
-												p() !{ex.data[j].detail}
+												p !{ex.data[j].detail}
 
 							//- Footnote
-							- if(majors[i].note)
+							if (majors[i].note)
 								div(class='footnote row no-gutters')
 									div(class='asterisk bold hidden-xs-down col-1')
 										h1 *
 									div(class='note col-12 col-sm-11')
 										p <span class="mini-asterisk hidden-sm-up">*</span> #{majors[i].note}
 										
-							- if(i + 1 < majors.length)
+							if (i + 1 < majors.length)
 								div(class='pos' id=majors[i + 1].short)
