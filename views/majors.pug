@@ -68,5 +68,14 @@ block main
                   div(class='pos' id=majors[i + 1].short)
               if(majorExpand[majors[i].short])
                 div(class='row') 
-                  div(class='col-7')
-                    h5 SPEC
+                  div(class='col-12' class="text")
+                    h5 #{majorExpand[majors[i].short].expandType}
+                    - for(let j = 0; j<majorExpand[majors[i].short].data.length; j++)
+                      a(class='flip-on-click col-lg-12 expand' data-toggle='collapse' href=`#res-txt-${j}`)
+                        div(class="header")
+                          h5 #{majorExpand[majors[i].short].data[j].expandName}
+                          i(class='fa fa-chevron-down')
+
+                      div(id=`res-txt-${j}` class='collapse expand text col-12')
+                        div(class="description")
+                          h5 #{majorExpand[majors[i].short].data[j].expandDesc}

@@ -65,7 +65,34 @@ main {
 
     .text {
       background: white;
-      padding: 40px 64px;
+      /*padding: 40px 64px;*/
+
+      .expand{
+
+      /*min-height: 240px;*/
+        /*padding: 32px 40px;*/
+        background: $darkblue;
+        min-height: 100px;
+        margin-bottom: 0px;
+        padding: 0px;
+        .header{
+          min-height;
+          align-items: center;
+          display: flex;
+          justify-content: space-between; 
+          i{
+            color: white;
+          }
+          h5{
+            align-items: center;
+
+          }
+        }
+        .description{
+          background: white;
+
+        }
+      }
 
       p {
         margin-top: 3px;

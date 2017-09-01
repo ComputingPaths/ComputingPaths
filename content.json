@@ -208,11 +208,14 @@
   },
 	"majorExpand":{
 		"bio": {
-			"expandType":"special",
+			"expandType":"SPECIALIZATIONS",
 			"data":[
 				{
 					"expandName":"Specialization 1",
-					"expandDesc":"this specialization is so cool wowow"
+					"expandDesc":"this specialization 1 is so cool wowow"
+				},{
+					"expandName":"Specialization 2"	,
+					"expandDesc":"this specialization 2 is so cool wowow"
 				}
 			]
 		}
