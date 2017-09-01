@@ -36,7 +36,7 @@ section {
 				height: 233px;
 				width: 505px;
 				position: relative;
-				padding: 32px 0px 0px 40px;
+				padding: 32px 40px;
 
 				p.project-name {
 					font-size: 28px;
@@ -111,8 +111,6 @@ section {
 @media(max-width: $lg) {
 
 	section {
-		padding-top: 32px;
-		padding-bottom: 32px;
 
 		a {
 
@@ -179,13 +177,13 @@ section {
 			.projectcard {
 
 				img {
-					width: 360px;
-					height: 240px;
+					width: 100%;
+					height: auto;
 				}
 
 				.cardinfo{
-					height: 170px;
-					width: 360px;
+					height: auto;
+					width: 100%;
 					
 					p.project-name {
 						font-size: 24px;
@@ -210,16 +208,15 @@ section {
 }
 
 .modal-content {
-		cursor: default;
+	cursor: default;
 	overflow: hidden;
-		z-index: 10000;
-		position: initial;
-		user-select: none;
-		-moz-user-select: none;
-		-khtml-user-select: none;
-		-webkit-user-select: none;
-		-o-user-select: none;
-
+	z-index: 10000;
+	position: initial;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
 }
 
 .modal-header {
