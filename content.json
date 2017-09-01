@@ -30,8 +30,9 @@
       "image": "/img/JasmineWang.jpg"
     },
     {
-      "name": "Sarah Guthals, Professor, Co-founder of ThoughtSTEM",
+      "name": "Sarah Guthals, Co-founder of ThoughtSTEM",
       "major": "Computer Science Engineering",
+      "role": "Professor",
       "class": "2014",
       "quote": "I wanted to solve problems. A friend of mine told me to try a computer science class. So I took CSE 8A with Professor Beth Simon and I absolutely fell in love. I had no clue what I was doing. I would sit in the labs completely lost, but I loved it because there was always a process to follow. There was always a way of figuring it out.",
       "image": "/img/SarahGuthals.jpg"
