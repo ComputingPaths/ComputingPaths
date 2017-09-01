@@ -848,12 +848,16 @@
   },
   "resourceBanner": [
     {
-      "name": "banner resource 1",
-      "image": "/img/temp1.svg",
-      "link": "testbannerimage1.com"
+      "name": "University Art Gallery",
+      "image": "img/resourceBanner/University Art Gallery.jpg",
+      "link": ""
     },
     {
-      "name": "banner resource 2",
+      "name": "Computer Science Basement",
+      "image": "img/resourceBanner/Computer-Science-Basement.jpg",
+      "link": "testbannerimage2.com"
+    },    {
+      "name": "cat",
       "image": "/img/temp1.svg",
       "link": "testbannerimage2.com"
     }
