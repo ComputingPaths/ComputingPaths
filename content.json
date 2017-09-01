@@ -963,6 +963,24 @@
       ]
     },
     {
+      "name": "Hash Functions in Cryptography",
+      "imageFolder": "hashCryptography",
+      "organization": "CSE 191",
+      "intro": "Julia Len researches and proposes improvements to modern cryptography and data security.",
+      "description": "If you’ve ever logged into Gmail or Facebook, you’ve used a hash function. Hash functions are the tools with which we protect our valuable data–data like passwords on social media sites, banking information, or even the messages you send over Apple’s iMessage. Computer Science student Julia Len notes that it has been proven that hash functions can be broken, and therefore accessed by a third party–so how can we improve these systems? In response, Len showcases proofs that simplify hash conversion and ultimately bolster safety guarantees of online data. The project promises to increase confidence in the security of people’s everyday interactions.\n\nLen fell in love with cryptography after taking CSE 107 (Introduction to Cryptography). She decided to take CSE 191 (Projects in Cryptography), where she worked with Professor Mihir Bellare and graduate student Joseph Jaeger to develop this project. Their research was successful enough that the accompanying paper was accepted by the 2017 ACM Conference on Computer and Communications Security (CCS), where Len will be presenting her work.",
+      "members": [
+        "Julia Len"
+      ],
+      "images": [
+        "/img/projectImages/hashCryptography/1.jpg",
+        "/img/projectImages/hashCryptography/2.jpg"
+      ],
+      "videos": [
+      ],
+      "link": "https://www.sigsac.org/ccs/CCS2017/",
+      "tags": ["re"]
+    },
+    {
       "name": "California Micromouse Competition",
       "imageFolder": "micromouse",
       "organization": "IEEE",
