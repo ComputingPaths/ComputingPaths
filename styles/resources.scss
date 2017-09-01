@@ -71,12 +71,12 @@
 	
 	.res-card {
 		margin-bottom: 32px;
-		box-shadow: 0 4px $textblue;
 
 		.header {
 			min-height: 240px;
 			padding: 32px 40px;
 			background: $darkblue;
+			box-shadow: 0 4px $textblue;
 
 			h3 {
 				color: white;
@@ -94,16 +94,22 @@
 				}
 			}
 		}
+
+		.map {
+			box-shadow: 0 4px $textblue;
+		}
 		
 		img {
 			height: 255px;		
 			width: 100%;
 			object-fit: cover;
+			
 		}	
 	}
 
 	.text {
 		background: white;
+		box-shadow: 0 4px $shadow;
 
 		div {
 			margin: 40px 64px;
