@@ -200,9 +200,6 @@ section {
 	} 
 }
 
-.modal {
-}
-
 .modal-dialog {
 	max-width: 920px;
 }
@@ -244,6 +241,10 @@ section {
 
 .modal-body {
 	padding: 0;
+
+	.link:hover {
+		color: $orange;
+	}
 }
 
 .slideshow {
