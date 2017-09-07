@@ -55,6 +55,16 @@
 				}
 			}
 		}
+		@media (max-width: $md){
+			.indicator{
+				display: none;
+			}
+			.caption{
+				padding-bottom: 10px;
+			}
+		}
+
+
 	}
 	
 	.carousel-control {
