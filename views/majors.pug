@@ -18,7 +18,7 @@ block main
 			p(class='col-sm-10 offset-sm-1') A wide array of majors offer a unique computing experience at UCSD. These majors apply computational skills to both new and traditional subject matter, developing programming skills, fostering scientific study, and bolstering creativity.
 	
 	div(class='page-blurb') 
-		h1 Explore these majors
+		h1 Learn more about the computing majors
 	
 	div(class='pos' id=majors[0].short)
 
@@ -47,7 +47,10 @@ block main
 									div(class='row')
 										div(class='col-12 col-sm-6 col-xl-12')
 											h5 MAJOR CAP
-											h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
+											if (majors[i].note)
+												h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}*
+											else
+												h4 #{majors[i].cap ? 'Capped' : 'Not Capped'}
 										div(class='col-12 col-sm-6 col-xl-12')
 											h5 DEGREE TYPE
 											if (majors[i].degree === 'bs')

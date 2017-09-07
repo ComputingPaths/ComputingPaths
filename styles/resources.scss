@@ -16,7 +16,6 @@
 				img {
 					height: 518px;
 					width: 100%;
-					object-fit: cover;
 				}
 				
 				margin-bottom: 16px;
@@ -36,7 +35,6 @@
 			bottom: 30px;
 			background: white;
 			position: relative;
-			padding-top: 10px;
 			
 			svg {
 				margin: 0 8px;
@@ -54,7 +52,28 @@
 					fill: $orange;
 				}
 			}
+
+			svg:hover {
+				cursor: pointer;
+			}
 		}
+
+		@media (max-width: $lg) {
+			.indicator {
+				svg {
+					margin: 0 6px;
+					width: 6px;
+					height: 6px;
+		
+					circle {
+						r: 3px;
+						cy: 3px;
+						cx: 3px;
+					}
+				}
+			}
+		}
+
 		@media (max-width: $md){
 			.indicator{
 				display: none;
@@ -101,21 +120,30 @@
 				align-items: center;
 
 				i {
+					margin-left: 40px;
 					color: white;
 				}
 			}
 		}
 
-		.map {
+		.map-container {
 			box-shadow: 0 4px $textblue;
 		}
 		
-		img {
-			height: 255px;		
-			width: 100%;
-			object-fit: cover;
-			
-		}	
+		.map {
+			height: 255px;
+			overflow: hidden;
+
+			img {
+				position: relative;
+				height: 100%;
+	    	top: 50%;
+	    	left: 50%;
+	    	-webkit-transform: translateY(-50%) translateX(-50%);
+	    	-ms-transform: translateY(-50%) translateX(-50%);
+	    	transform: translateY(-50%) translateX(-50%);
+			}
+		}
 	}
 
 	.text {
@@ -157,12 +185,6 @@
 			height: 433px;
 		}
 	}
-
-	.cards {
-		.res-card img {		 
-			height: 240px;
-		}
-	}
 }
 
 @media (max-width: $lg) {
@@ -197,7 +219,7 @@
 		padding-top: 32;
 		padding-bottom: 32px;
 
-		.res-card img {
+		.res-card .map {
 			height: 345px;
 		}
 
@@ -213,9 +235,12 @@
 		padding-top: 32px;
 
 		.carousel {
+			margin-bottom: 24px;
+
 			.carousel-item {
 				.img img {
-					height: 287px;
+					height: auto;
+					width: 100%;
 					margin-bottom: 8px;
 				}
 
@@ -231,7 +256,7 @@
 		padding-top: 0;
 
 		.res-card {
-			img {
+			.map {
 				height: 255px;
 			}
 
