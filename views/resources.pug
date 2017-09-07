@@ -27,7 +27,7 @@ block main
                 a(class='img' href=resourceBanner[i].link)
                   img(src=resourceBanner[i].image)
                 a(class='caption' href=resourceBanner[i].link) #{resourceBanner[i].name}
-          div(class='indicator')
+          div(class='indicator ')
             - for (let i = 0; i < resourceBanner.length; i++)
               svg
                 circle
