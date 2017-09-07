@@ -9,38 +9,35 @@
     width: auto;
 
     .proj-card {
+
       img {
-        height: 256px;
+        height: auto;
         width: 100%;
-        object-fit: cover;
       }
 
       div {
         padding: 40px;
-        background-color: white;
-        height: 234px;
-
-        h1, h2, h3 {
-          margin: 0;
-          line-height: 24px;
-        }
+        background-color: $darkblue;
+        min-height: 228px;
+        border-bottom: solid 4px $textblue;
 
         h1 {
-          font-size: 20px;
+          color: white;
+          font-size: 28px;
           font-weight: bold;
-          margin-bottom: 10px;
+          margin-bottom: 32px;
+          line-height: 1.2em;
         }
 
-        h2 {
+        a {
+          color: white;
           font-size: 16px;
-          font-weight: normal;
-          margin-bottom: 24px;
+          font-weight: 500;
         }
 
-        h3 {
-          font-size: 16px;
-          font-weight: bold;
-          line-height: 20px;
+        i {
+          color: white;
+          margin-left: 8px;
         }
       }
     }
@@ -68,16 +65,7 @@
     margin-top: 48px;
   }
 
-  @media (max-width: $xl) {
-    .carousel-inner .proj-card img {
-      height: 205px;
-    }
-  }
-
   @media (max-width: $lg) {
-    .carousel-inner .proj-card img {
-      height: 233px;
-    }
 
     nav {
       margin-top: 36px;
@@ -91,17 +79,13 @@
   @media (max-width: $md) {
     .carousel-inner {
       .proj-card {
-        img {
-          height: 360px;
-        }
 
         div {
           padding: 32px;
 
           h1 {
-            margin-bottom: 10px;
-            font-size: 18px;
-            line-height: 21px;
+            margin-bottom: 20px;
+            font-size: 24px;
           }
         }
       }

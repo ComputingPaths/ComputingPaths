@@ -41,7 +41,7 @@ block main
             div(class='col-sm-6 col-lg-12')
               - for (let i = Math.ceil(majors.length / 2); i < majors.length; i++)
                 li #{majors[i].name}
-          a(class='link-btn hidden-md-down' href=pages[1].link) Link to all the majors
+          a(class='link-btn hidden-md-down' href=pages[1].link) Explore the majors
         main(class='col-lg-7')
           each m in majors
             img(src=m.image class='img-fluid')   
@@ -50,16 +50,15 @@ block main
               h1
               each m in majors
                 h2 #{m.hook}
-            button
-              each m in majors
-                a(href=`/majors.html#${m.short}`)
-                  i(class='fa fa-arrow-right fa-2x align-middle')
+            each m in majors
+              a(href=`/majors.html#${m.short}`)
+                i(class='fa fa-arrow-right fa-2x')
       nav(class='hidden-md-up')
         a(id='prev-major')
           i(class='fa fa-arrow-left fa-2x')
         a(id='next-major')
           i(class='fa fa-arrow-right fa-2x')
-      a(class='link-btn hidden-lg-up' href=pages[1].link) Link to all the majors
+      a(class='link-btn hidden-lg-up' href=pages[1].link) Explore the majors
         
         
   div(class='orgs section')
@@ -87,8 +86,8 @@ block main
                 img(src=`/img/projectImages/${projects[i].imageFolder}/1.jpg`)
                 div
                   h1 #{projects[i].name}
-                  h2 #{projects[i].intro}
-                  a(href='${projects[i].link}' class='bold') Read more 
+                  //- h2 #{projects[i].intro}
+                  a(href='${projects[i].link}') Find out more
                     i(class='fa fa-arrow-right')
         a(class='next-proj col-md-1 hidden-sm-down')
           i(class='float-right fa fa-arrow-right fa-2x')
@@ -99,7 +98,7 @@ block main
         a(class='next-proj hidden-md-up')
           i(class='fa fa-arrow-right fa-2x')
 
-      a(class='link-btn' href='/projects.html') Link to projects
+      a(class='link-btn' href='/projects.html') More Triton projects
       
   div(class='resources section')
     div(class='section-header')
