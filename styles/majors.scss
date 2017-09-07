@@ -14,7 +14,6 @@ main {
 		@extend .nice-sidebar;
 
 		ul {
-			margin-bottom: 64px;
 
 			div {
 				li {
@@ -196,10 +195,6 @@ main {
 	main {
 		padding-top: 33px;
 		padding-bottom: 32px;
-
-		.major-sidebar ul {
-			margin-bottom: 30px;
-		}
 
 		.major-card {
 			margin-bottom: 48px; 

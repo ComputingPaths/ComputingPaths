@@ -344,6 +344,7 @@ a:link:active, a:visited:active {
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+	margin-bottom: 32px;
 
 
 	.margin {
@@ -361,6 +362,7 @@ a:link:active, a:visited:active {
 		cursor: pointer;
 		line-height: 21px;
 		border: solid 1px $shadow;
+		box-shadow: 0 3px $shadow;
 	}
 
 	ul {
@@ -369,9 +371,9 @@ a:link:active, a:visited:active {
 		font-size: 16px;
 		font-weight: bold;
 		line-height: 19px;
-		box-shadow: 0 4px $shadow;
+		box-shadow: 0 3px $shadow;
 		border: solid 1px $shadow;
-		margin-bottom: 32px;
+		margin-bottom: 0;
 
 		div {
 			margin: 20px 0 2px 40px;
