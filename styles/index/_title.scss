@@ -1,6 +1,8 @@
 .title {
-  background: $exlightblue;
-  margin-top:80px;
+  /*background: $exlightblue;*/
+  background: url("/img/splashes/splash_home.jpg") center no-repeat;
+  background-size: cover;
+  margin-top: 80px;
   padding: 179px 0;
   user-select: none;
   -moz-user-select: none;
@@ -10,6 +12,7 @@
   cursor: default;
 
   h1, h2 {
+    color: white;
     font-weight: bold;
   }
 
