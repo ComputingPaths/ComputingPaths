@@ -1142,7 +1142,8 @@
       "link": "http://ubic.ucsd.edu/",
       "tags": [
         "ms"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Biomedical Engineering Society",
@@ -1152,7 +1153,8 @@
       "tags": [
         "ms",
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Design at UCSD",
@@ -1161,7 +1163,8 @@
       "link": "http://designatucsd.org/",
       "tags": [
         "ad"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Design for America",
@@ -1170,7 +1173,8 @@
       "link": "http://designforamerica.com/studio/dfa-ucsd/",
       "tags": [
         "ad"
-      ]
+      ],
+      "dark": true
     },
     {
       "name": "Cognitive Science Student Association",
@@ -1179,7 +1183,8 @@
       "link": "http://cssa.ucsd.edu/",
       "tags": [
         "ms"
-      ]
+      ],
+      "dark": true
     },
     {
       "name": "Divergent Engineering",
@@ -1189,7 +1194,8 @@
       "tags": [
         "cs",
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Virtual Reality Club at UCSD",
@@ -1199,7 +1205,8 @@
       "tags": [
         "cs",
         "ad"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Computer Science and Engineering Society",
@@ -1209,7 +1216,8 @@
       "tags": [
         "cs",
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Triton Engineering Student Council",
@@ -1218,7 +1226,8 @@
       "link": "http://tesc.ucsd.edu/",
       "tags": [
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Video Game Development Club",
@@ -1228,7 +1237,8 @@
       "tags": [
         "cs",
         "ad"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Women in Computing",
@@ -1238,7 +1248,8 @@
       "tags": [
         "cs",
         "en"
-      ]
+      ],
+      "dark": true
     },
     {
       "name": "ECE Undergraduate Student Council",
@@ -1247,7 +1258,8 @@
       "link": "http://ucsdeceusc.weebly.com/",
       "tags": [
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Society of Women Engineering(SWE)",
@@ -1256,7 +1268,8 @@
       "link": "http://swe.ucsd.edu/",
       "tags": [
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name": "Society of Undergraduate Mathematics Students",
@@ -1267,7 +1280,8 @@
         "en",
         "cs",
         "ms"
-      ]
+      ],
+      "dark": false
     },
     {
       "name":"UCSD AUVSI",
@@ -1276,7 +1290,8 @@
       "link": "http://auvsi.ucsd.edu/",
       "tags": [
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name":"UCSD IEEE",
@@ -1285,7 +1300,8 @@
       "link": "http://ieee.ucsd.edu/",
       "tags": [
         "en"
-      ]
+      ],
+      "dark": false
     },
     {
       "name":"Triton 3D",
@@ -1295,7 +1311,8 @@
       "tags": [
         "cs",
         "ad"
-      ]
+      ],
+      "dark": false
     },
     {
       "name":"Game Development Studio",
@@ -1305,7 +1322,8 @@
       "tags": [
         "cs",
         "ad"
-      ]
+      ],
+      "dark": false
     },
     {
       "name":"24fps",
@@ -1314,7 +1332,8 @@
       "link": "http://studentorg.ucsd.edu/RdOnlyDetail.aspx?data=6885",
       "tags": [
         "ad"
-      ]
+      ],
+      "dark": false
     },
     {
       "name":"Data Science Student Society",
@@ -1324,7 +1343,8 @@
       "tags": [
         "cs",
         "ms"
-      ]
+      ],
+      "dark": false
     }
   ],
   "orgTags": {

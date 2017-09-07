@@ -35,8 +35,12 @@ block main
         div(class='col-lg-9')
           - for(let i = 0; i < orgs.length; i++)
             div(class='res-card row no-gutters filtered')
-              div(class='col-12')
-                img(src=orgs[i].orgImage)
+              if (orgs[i].dark)
+                div(class='col-12 logo' style='background-color: #003E5C')
+                  img(src=orgs[i].orgImage)
+              else
+                div(class='col-12 logo' style='background-color: white')
+                  img(src=orgs[i].orgImage)
               a(class='flip-on-click col-12 header' data-toggle='collapse' href=`#res-txt-${i}`)  
                 h3 #{orgs[i].name}
                   i(class='fa fa-chevron-down')
