@@ -26,8 +26,8 @@ block main
         div(class='nice-sidebar col-lg-3')
           div(class='margin')
           a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Tags
-            i(class='fa fa-chevron-up')
-          ul(id='tags' class='collapse show')
+            i(class='fa fa-chevron-down')
+          ul(id='tags' class='collapse')
             div(class='row')
               each t in orgTags
                 li(class='col-12 col-sm-6 col-md-4 col-lg-12') #{t}
