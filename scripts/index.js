@@ -4,7 +4,7 @@ function majorsSection() {
   let ul = $('.majors aside li')
   let hooks = $('.majors main h2')
   let name = $('.majors main h1')
-  let links = $('.majors button a')
+  let links = $('.majors main a')
   let image = $('.majors main img')
 
   // generate a random major index

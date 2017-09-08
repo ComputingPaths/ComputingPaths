@@ -43,46 +43,67 @@
       display: flex;
       justify-content: space-between;
 
+      @media (max-width: $sm) {
+        min-height: 152px;
+      }
+
       article {
         width: 80%;
         background: white;
         padding: 40px;
+        box-shadow: 0 4px 0 $shadow;
 
         h1 {
-          font-size: 20px;
+          font-size: 24px;
           font-weight: bold;
-          margin-bottom: 16px;
+          line-height: 1.2em;
+          margin-bottom: 20px;
+
+          @media (max-width: $sm) {
+            font-size: 20px;
+            margin-bottom: 0;
+          }
         }
 
         h2 {
-          font-size: 20px;
+          font-size: 18px;
           font-weight: normal;
           display: none;
           line-height: 1.5;
         }
 
         h2.active {
+          @media (max-width: $sm) {
+            display: none;
+          }
           display: initial;
         }
       }
 
-      button {
+      a {
         width: 20%;
         background-color: $darkblue;
+        box-shadow: 0 4px 0 $textblue;
         border: none;
-        outline: none;
-
-        a {
-          display: none;
-        }
-
-        a.active {
-          display: initial;
-        }
+        display: none;
 
         i {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translateY(-50%) translateX(-50%);
+          -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
           color: white;
+
+          @media (max-width: $md) {
+            font-size: 24px;
+          }
         }
+      }
+
+      a.active {
+          display: initial;
       }
     }
   }
