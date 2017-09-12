@@ -1,8 +1,11 @@
 .projects {
   background-color: $exlightblue;
 
-  i {
-    color: $orange;
+  .prev-proj, .next-proj {
+    i {
+      cursor: pointer;
+      color: $orange;
+    }
   }
 
   .carousel-inner {
@@ -48,16 +51,28 @@
     justify-content: space-around;
     margin-top: 48px;
 
-    div {
-      i {
-        color: $textblue;
-        font-size: 8px;
-        margin: 0 10px;
-      }
+    svg {
+      margin: 0 8px;
+      width: 8px;
+      height: 8px;
 
-      i.active {
-        color: $orange;
+      circle {
+        r: 4px;
+        cy: 4px;
+        cx: 4px;
+        fill: $textblue;
       }
+    }
+
+    svg.active {
+
+      circle {
+        fill: $orange;
+      }
+    }
+
+    svg:hover {
+      cursor: pointer;
     }
   }
 

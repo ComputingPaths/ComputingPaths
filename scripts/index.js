@@ -70,7 +70,7 @@ function initProjCarousel() {
         }
       }
       inner.append(group)
-      $('<i class="fa fa-circle"></i>').appendTo(indicator)
+      $('<svg><circle></circle></svg>').appendTo(indicator)
     }
 
     updateIndicator(0)
