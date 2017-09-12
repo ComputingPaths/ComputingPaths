@@ -74,13 +74,16 @@ a:link:active, a:visited:active {
 .page-header {
 	background: $exlightblue;
 	margin-top: 80px;
-	padding: 210px 0 80px 0;
 	user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
-    cursor: default;
+	cursor: default;
+
+	// -moz-box-shadow: inset 0 -116px 116px -116px rgba(0,0,0,0.2);
+	// -webkit-box-shadow: inset 0 -116px 116px -116px rgba(0,0,0,0.2);
+	// box-shadow: inset 0 -116px 116px -116px rgba(0,0,0,0.2);
 
 
 	svg {
@@ -105,7 +108,9 @@ a:link:active, a:visited:active {
 	}
 
 	h1 {
+		padding: 210px 0 80px 0;
 		display: inline-block;
+		color: white;
 		margin: 0 0 0 16px;
 		font-size: 56px;
 		font-weight: bold;
@@ -131,9 +136,9 @@ a:link:active, a:visited:active {
 
 @media(max-width: $lg) {
 	.page-header {
-		padding: 182px 0 64px 0;
 
 		h1 {
+			padding: 182px 0 64px 0;
 			font-size: 36px;
 			margin-left: 12px;
 			line-height: 42px;
@@ -162,9 +167,9 @@ a:link:active, a:visited:active {
 @media (max-width: $md) {
 	.page-header {
 		margin-top: 64px;
-		padding: 111px 0 48px 0;
 
 		h1 {
+			padding: 111px 0 48px 0;
 			font-size: 28px;
 			line-height: 33px;
 			margin-left: 6px;
@@ -192,9 +197,9 @@ a:link:active, a:visited:active {
 
 @media (max-width: $sm) {
 	.page-header {
-		padding-left: 15px;
 
 		h1 {
+			padding-left: 15px;
 			margin-left: 0;
 		}
 	}
@@ -208,7 +213,7 @@ a:link:active, a:visited:active {
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
-    cursor: default;
+		cursor: default;
 
 	padding-top: 116px;
 	padding-bottom: 116px;
@@ -252,7 +257,7 @@ a:link:active, a:visited:active {
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
-    cursor: default;
+		cursor: default;
 
 	h1 {
 		font-size: 36px;
@@ -296,7 +301,7 @@ a:link:active, a:visited:active {
 	background: $aquablue;
 	padding-top: 41px;
 	padding-bottom: 45px;
-    cursor: default;
+		cursor: default;
 
 	h1 {
 		color: white;

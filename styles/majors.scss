@@ -1,5 +1,10 @@
 @import 'common';
 
+.page-header {
+	background: url("/img/splashes/splash_major.jpg") no-repeat center;
+	background-size: cover;
+}
+
 .pos {
 	position: relative;
 	bottom: 80px;
