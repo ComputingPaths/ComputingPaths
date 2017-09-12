@@ -261,11 +261,15 @@ section {
 }
 
 .modal-body {
-	padding: 0;
+	//padding: 0;
 
 	.link:hover {
 		color: $orange;
 	}
+}
+
+.modal-open {
+	padding-right: 0px !important; 
 }
 
 .slideshow {
