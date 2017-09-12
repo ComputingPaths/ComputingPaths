@@ -1136,16 +1136,6 @@
   },
   "orgs": [
     {
-      "name": "Undergraduate Bioinformatics Club",
-      "description": "The Undergraduate Bioinformatics Club (UBIC) is an academic student organization at UCSD dedicated to supporting bioinformatics students and students interested in bioinformatics by facilitating access to jobs, internships, and research opportunities; events, programs, and seminars; communication, collaboration, and socialization between bioinformatics students; and more.",
-      "orgImage": "img/OrgLogos/UBIC.png",
-      "link": "http://ubic.ucsd.edu/",
-      "tags": [
-        "ms"
-      ],
-      "dark": false
-    },
-    {
       "name": "Biomedical Engineering Society",
       "description": "The Biomedical Engineering Society (BMES) at the University of California, San Diego (UCSD) is dedicated to enriching the undergraduate experience for those in the Department of Bioengineering and for those interested in Biomedical Engineering by fostering personal growth and professional development.",
       "orgImage": "img/OrgLogos/BMES.png",
@@ -1153,6 +1143,38 @@
       "tags": [
         "ms",
         "en"
+      ],
+      "dark": false
+    },
+    {
+      "name": "Cognitive Science Student Association",
+      "description": "The Cognitive Science Student Association was established to build and maintain a community of students with interest in the multidisciplinary aspects of Cognitive Science.  They maintain a strong relationship with UCSD’s prestigious Cognitive Science Department in order to deliver academic opportunities to our members and stay up-to-date with the most cutting edge research of Cognitive Science.  They also connect with professional groups in the San Diego area in order to help their members discover the multidisciplinary qualifications that Cognitive Science offers to the professional world.",
+      "orgImage": "img/OrgLogos/CSSA.png",
+      "link": "http://cssa.ucsd.edu/",
+      "tags": [
+        "ms"
+      ],
+      "dark": true
+    },
+    {
+      "name": "Computer Science and Engineering Society",
+      "description": "The Computer Science and Engineering Society (CSES) aims to form a passionate community of computer scientists and engineers at UC San Diego. From tech talks, to social events, to outreach, they have a diverse set of events and activities that appeal to any computer scientist or engineer.",
+      "orgImage": "img/OrgLogos/CSES.png",
+      "link": "https://cses.ucsd.edu/",
+      "tags": [
+        "cs",
+        "en"
+      ],
+      "dark": false
+    },
+    {
+      "name":"Data Science Student Society",
+      "description": "The Data Science Student Society at UCSD is an interdisciplinary academic organization designed to immerse the community in the diverse and growing facets of Data Science: Machine Learning, Computational Statistics, Data Mining, Visualization, Predictive Analytics, and any new emerging relevant fields of study. With practical hands-on data projects, a professional portfolio-building approach, and fun outreach activities, the Data Science Student Society at UCSD strives to enrich the academic life of the student community by strengthening them for success in their current and future pursuits of Data Science related fields.",
+      "orgImage": "img/CP Generic Icon.jpg",
+      "link": "http://ds3.ucsd.edu/",
+      "tags": [
+        "cs",
+        "ms"
       ],
       "dark": false
     },
@@ -1177,16 +1199,6 @@
       "dark": true
     },
     {
-      "name": "Cognitive Science Student Association",
-      "description": "The Cognitive Science Student Association was established to build and maintain a community of students with interest in the multidisciplinary aspects of Cognitive Science.  They maintain a strong relationship with UCSD’s prestigious Cognitive Science Department in order to deliver academic opportunities to our members and stay up-to-date with the most cutting edge research of Cognitive Science.  They also connect with professional groups in the San Diego area in order to help their members discover the multidisciplinary qualifications that Cognitive Science offers to the professional world.",
-      "orgImage": "img/OrgLogos/CSSA.png",
-      "link": "http://cssa.ucsd.edu/",
-      "tags": [
-        "ms"
-      ],
-      "dark": true
-    },
-    {
       "name": "Divergent Engineering",
       "description": "Divergent Engineering (divE) began as an Arduino workshop with 6 engineers and a simple objective: teach students how program Arduino microcontroller boards and see what they can do with that knowledge. What started out as a workshop became an incubator that produced a working data logger, persistence of vision wand, a Skittle sorter, and a wall-avoiding robot in a single month.<br><br>Divergent Engineering aims to provide a nurturing environment for students to formulate and develop their goals as engineers and scientists; a place to begin accomplishing these goals; and a supportive setting to tinker, learn, challenge, and engineer.",
       "orgImage": "img/OrgLogos/DivE.png",
@@ -1198,66 +1210,23 @@
       "dark": false
     },
     {
-      "name": "Virtual Reality Club at UCSD",
-      "description": "The Virtual Reality Club at UCSD is a student organization at UC San Diego that connects members with the VR industry through workshops, projects, and networking. Our mission is to foster a multidisciplinary community dedicated to exploring and creating Virtual and Augmented Reality experiences.",
-      "orgImage": "img/OrgLogos/VR_Club.png",
-      "link": "http://vrclub.ucsd.edu/",
-      "tags": [
-        "cs",
-        "ad"
-      ],
-      "dark": false
-    },
-    {
-      "name": "Computer Science and Engineering Society",
-      "description": "The Computer Science and Engineering Society (CSES) aims to form a passionate community of computer scientists and engineers at UC San Diego. From tech talks, to social events, to outreach, they have a diverse set of events and activities that appeal to any computer scientist or engineer.",
-      "orgImage": "img/OrgLogos/CSES.png",
-      "link": "https://cses.ucsd.edu/",
-      "tags": [
-        "cs",
-        "en"
-      ],
-      "dark": false
-    },
-    {
-      "name": "Triton Engineering Student Council",
-      "description": "The Triton Engineering Student Council (TESC) exists to promote academic excellence, community involvement, and strong ethical values among the students of the Jacobs School of Engineering. TESC unites the engineering student organizations and sponsors events that benefit all engineering students.",
-      "orgImage": "img/OrgLogos/TESC.png",
-      "link": "http://tesc.ucsd.edu/",
-      "tags": [
-        "en"
-      ],
-      "dark": false
-    },
-    {
-      "name": "Video Game Development Club",
-      "description": "The Video Game Development Club seeks to bring students who are interested in the process of video game design and development together in a collaborative environment. Students can develop games from start to finish with their peers, and seek feedback and assistance with ideas and projects they may be working on.",
-      "orgImage": "img/CP Generic Icon.jpg",
-      "link": "https://www.facebook.com/groups/VGDC.UCSD/",
-      "tags": [
-        "cs",
-        "ad"
-      ],
-      "dark": false
-    },
-    {
-      "name": "Women in Computing",
-      "description": "Women in Computing are coders and engineers - both women and men - who support the female presence in computing. They run events, from tech talks to socials, and provide opportunities for female engineers to connect and succeed.",
-      "orgImage": "img/OrgLogos/WIC.png",
-      "link": "http://wic.ucsd.edu/",
-      "tags": [
-        "cs",
-        "en"
-      ],
-      "dark": true
-    },
-    {
       "name": "ECE Undergraduate Student Council",
       "description": "The Undergraduate Student Council is the representative of Electrical and Computer Engineering (ECE) undergraduate students at the University of California, San Diego (UCSD). Through networking, programming, leadership, and relevant education, the council strives to effect change within the department and campus at large, building a stronger and longer-lasting community for current and future engineers.",
       "orgImage": "img/CP Generic Icon.jpg",
       "link": "http://ucsdeceusc.weebly.com/",
       "tags": [
         "en"
+      ],
+      "dark": false
+    },
+    {
+      "name":"Game Development Studio",
+      "description": "The Game Development Studio (GDS) is an UCSD student organization dedicated to helping students gain experience in game design through collaborative projects. They are dedicated to working with a number of different platforms such as iPhones, Androids, and PCs. GDS is open to students from all different majors and backgrounds to join the club.",
+      "orgImage": "img/OrgLogos/GameDevStudio.png",
+      "link": "http://gds.ucsd.edu/",
+      "tags": [
+        "cs",
+        "ad"
       ],
       "dark": false
     },
@@ -1284,20 +1253,10 @@
       "dark": false
     },
     {
-      "name":"UCSD AUVSI",
-      "description": "The UC San Diego Autonomous Airplane Team designs, builds, tests and flies their own autonomous flying vehicle. They design their system from the ground up, do their own engineering, and fabricate the final product themselves. They find their own sponsors, manage their own resources, and conduct their own public relations. Their test pilots are students or professional volunteers. Student designed. Student built. Student competition.",
-      "orgImage": "img/CP Generic Icon.jpg",
-      "link": "http://auvsi.ucsd.edu/",
-      "tags": [
-        "en"
-      ],
-      "dark": false
-    },
-    {
-      "name":"UCSD IEEE",
-      "description": "IEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.<br><br>It is a non-profit organization, is the world’s leading professional association for the advancement of technology. Through its global membership, the IEEE is a leading authority on areas ranging from aerospace systems, computers and telecommunications to biomedical engineering, electric power and consumer electronics among others.<br><br>Members rely on the IEEE as a source of technical and professional information, resources and services. To foster an interest in the engineering profession, the IEEE also serves student members in colleges and universities around the world. Other important constituencies include prospective members and organizations that purchase IEEE products and participate in conferences or other IEEE programs.",
-      "orgImage": "img/OrgLogos/IEEE.png",
-      "link": "http://ieee.ucsd.edu/",
+      "name": "Triton Engineering Student Council",
+      "description": "The Triton Engineering Student Council (TESC) exists to promote academic excellence, community involvement, and strong ethical values among the students of the Jacobs School of Engineering. TESC unites the engineering student organizations and sponsors events that benefit all engineering students.",
+      "orgImage": "img/OrgLogos/TESC.png",
+      "link": "http://tesc.ucsd.edu/",
       "tags": [
         "en"
       ],
@@ -1315,15 +1274,67 @@
       "dark": false
     },
     {
-      "name":"Game Development Studio",
-      "description": "The Game Development Studio (GDS) is an UCSD student organization dedicated to helping students gain experience in game design through collaborative projects. They are dedicated to working with a number of different platforms such as iPhones, Androids, and PCs. GDS is open to students from all different majors and backgrounds to join the club.",
-      "orgImage": "img/OrgLogos/GameDevStudio.png",
-      "link": "http://gds.ucsd.edu/",
+      "name":"UCSD IEEE",
+      "description": "IEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.<br><br>It is a non-profit organization, is the world’s leading professional association for the advancement of technology. Through its global membership, the IEEE is a leading authority on areas ranging from aerospace systems, computers and telecommunications to biomedical engineering, electric power and consumer electronics among others.<br><br>Members rely on the IEEE as a source of technical and professional information, resources and services. To foster an interest in the engineering profession, the IEEE also serves student members in colleges and universities around the world. Other important constituencies include prospective members and organizations that purchase IEEE products and participate in conferences or other IEEE programs.",
+      "orgImage": "img/OrgLogos/IEEE.png",
+      "link": "http://ieee.ucsd.edu/",
+      "tags": [
+        "en"
+      ],
+      "dark": false
+    },
+    {
+      "name":"UCSD AUVSI",
+      "description": "The UC San Diego Autonomous Airplane Team designs, builds, tests and flies their own autonomous flying vehicle. They design their system from the ground up, do their own engineering, and fabricate the final product themselves. They find their own sponsors, manage their own resources, and conduct their own public relations. Their test pilots are students or professional volunteers. Student designed. Student built. Student competition.",
+      "orgImage": "img/CP Generic Icon.jpg",
+      "link": "http://auvsi.ucsd.edu/",
+      "tags": [
+        "en"
+      ],
+      "dark": false
+    },
+    {
+      "name": "Undergraduate Bioinformatics Club",
+      "description": "The Undergraduate Bioinformatics Club (UBIC) is an academic student organization at UCSD dedicated to supporting bioinformatics students and students interested in bioinformatics by facilitating access to jobs, internships, and research opportunities; events, programs, and seminars; communication, collaboration, and socialization between bioinformatics students; and more.",
+      "orgImage": "img/OrgLogos/UBIC.png",
+      "link": "http://ubic.ucsd.edu/",
+      "tags": [
+        "ms"
+      ],
+      "dark": false
+    },
+    {
+      "name": "Video Game Development Club",
+      "description": "The Video Game Development Club seeks to bring students who are interested in the process of video game design and development together in a collaborative environment. Students can develop games from start to finish with their peers, and seek feedback and assistance with ideas and projects they may be working on.",
+      "orgImage": "img/CP Generic Icon.jpg",
+      "link": "https://www.facebook.com/groups/VGDC.UCSD/",
       "tags": [
         "cs",
         "ad"
       ],
       "dark": false
+    },
+    {
+      "name": "Virtual Reality Club at UCSD",
+      "description": "The Virtual Reality Club at UCSD is a student organization at UC San Diego that connects members with the VR industry through workshops, projects, and networking. Our mission is to foster a multidisciplinary community dedicated to exploring and creating Virtual and Augmented Reality experiences.",
+      "orgImage": "img/OrgLogos/VR_Club.png",
+      "link": "http://vrclub.ucsd.edu/",
+      "tags": [
+        "cs",
+        "ad"
+      ],
+      "dark": false
+    },
+    {
+      "name": "Women in Computing",
+      "description": "Women in Computing are coders and engineers - both women and men - who support the female presence in computing. They run events, from tech talks to socials, and provide opportunities for female engineers to connect and succeed.",
+      "orgImage": "img/OrgLogos/WIC.png",
+      "link": "http://wic.ucsd.edu/",
+      "tags": [
+        "cs",
+        "en"
+      ],
+      "dark": true
     },
     {
       "name":"24fps",
@@ -1332,17 +1343,6 @@
       "link": "http://studentorg.ucsd.edu/RdOnlyDetail.aspx?data=6885",
       "tags": [
         "ad"
-      ],
-      "dark": false
-    },
-    {
-      "name":"Data Science Student Society",
-      "description": "The Data Science Student Society at UCSD is an interdisciplinary academic organization designed to immerse the community in the diverse and growing facets of Data Science: Machine Learning, Computational Statistics, Data Mining, Visualization, Predictive Analytics, and any new emerging relevant fields of study. With practical hands-on data projects, a professional portfolio-building approach, and fun outreach activities, the Data Science Student Society at UCSD strives to enrich the academic life of the student community by strengthening them for success in their current and future pursuits of Data Science related fields.",
-      "orgImage": "img/CP Generic Icon.jpg",
-      "link": "http://ds3.ucsd.edu/",
-      "tags": [
-        "cs",
-        "ms"
       ],
       "dark": false
     }
