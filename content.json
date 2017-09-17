@@ -86,17 +86,11 @@
       "class": "2016",
       "quote":"I didn’t do any programming until I took beginning Java classes at Mira Costa, but I wasn’t really into it. But once I took MUS 176 with Tom Erbe, and we looked at C++ and making audio effects plugins, that’s when I started to really get into programming. I’ve been able to heavily apply everything that I’m interested in on all of my projects."
     },{
-      "name": "Terry Le",
-      "major": "Mathematics",
-      "role": "Department Advisor",
-      "quote":"In mathematics, you can go into any career. Almost every discipline leverages statistics and probability.<br><br>Given the fact that mathematics is valued in all disciplines, students can go into many different areas. However, they may have to do extra side-work, or a minor, in order to be a proficient or develop a background in that particular area."
-    },{
       "name": "Hannah Chou",
       "major": "Electrical Engineering",
       "class": "2015",
       "quote":"When I was in undergrad, I was choosing between physiological sciences and electrical engineering. I’ve realized that you can do electrical engineering with a lot of different fields. That’s why I’m interested in medical devices. You still get human interaction with medical devices in electrical engineering."
-    },
-		{
+    },{
       "name": "Davis Liang",
       "major": "Electrical Engineering",
       "class": "2016",
