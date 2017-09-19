@@ -41,9 +41,12 @@ block main
 			- for(let i = 0; i < stories.length; i++)
 				- var theirRole = ''
 				if (stories[i].role !== undefined)
-					- theirRole +=  '| ' + stories[i].role + ' '
+					- theirRole += stories[i].role
 				if (stories[i].class !== undefined)
-					- theirRole += '| Class of ' + stories[i].class
+					if (theirRole === '')
+						- theirRole += 'Class of ' + stories[i].class
+					else
+						- theirRole += ' | Class of ' + stories[i].class
 				div(class='row')
 					if (!stories[i].image)
 						div(class='story-content col-lg-10 col-12 offset-lg-1')
