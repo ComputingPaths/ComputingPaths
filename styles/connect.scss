@@ -28,7 +28,7 @@
 		margin-bottom: 32px;
 
 		.header {
-			min-height: 240px;
+//			min-height: 240px;
 			padding: 32px 40px;
 			background: $darkblue;
       box-shadow: 0 4px $textblue;
@@ -52,9 +52,14 @@
   }
 
   .logo {
-    height: 550px;
+//    height: 100px;
     padding: 40px;
     box-shadow: 0 4px $textblue;
+		
+		img{
+			    max-width: 100%;
+    max-height: 100%;
+		}
   }
 
   img {
@@ -103,7 +108,7 @@
 @media (max-width: $xl) {
   .cards {
     .logo {
-      height: 460px;
+      height: 150px;
     }
   }
 }
@@ -119,7 +124,7 @@
     padding-bottom: 48px;
 
     .logo {
-      height: 345px;
+      height: 150px;
     }
 
     .text div {
@@ -140,12 +145,13 @@
 
     .res-card {
       logo {
-        height: 255px;
+        height: 150px;
       }
 
       .header {
-        min-height: 208px;
-      }
+        min-height: 100px;
+			}
+     
     }
   }
 }

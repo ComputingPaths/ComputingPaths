@@ -7,7 +7,7 @@
     "dev": "concurrently --kill-others-on-fail \"npm run pug:watch\" \"npm run sass:watch\" \"npm run babel:watch\"",
     "predev": "npm run build",
     "build": "npm run clean && npm run cp && npm run pug && npm run sass && npm run babel",
-    "publish": "scp -r dist/* cpaths@cpaths-dev.ucsd.edu:/var/www/cpaths/htdocs",
+    "publish": "scp -r dist/* cpaths@computingpaths.ucsd.edu:/var/www/cpaths/htdocs",
     "prepublish": "npm run build",
     "pug": "node processor.js",
     "pug:watch": "node dev.js",
