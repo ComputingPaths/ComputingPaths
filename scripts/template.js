@@ -13,15 +13,16 @@ function initNiceSidebar() {
   li.each((i, e) => {
     e = $(e)
     colorMap[e.html()] = colors[i]
-    e.addClass('active')
-    e.css('color', colorMap[e.html()])
+    //e.addClass('active')
+    e.css('color', grey)
+    //e.css('color', colorMap[e.html()])
   })
 
   // elements to be filtered
   let filtered = $('.filtered')
   let removed = []
   let tags = $('.tag')
-
+  
   // trigger filter when a list element is clicked
   li.click(function() {
     let e = $(this)

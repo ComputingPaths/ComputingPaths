@@ -1,5 +1,14 @@
 @import 'common';
 
+.page-header {
+  background: url("/img/splashes/splash_connect.jpg") no-repeat center;
+  background-size: cover;
+
+  h1 {
+    color: $textblue;
+  }
+}
+
 .orgs-banner {
   height: 128px;
   background: $aquablue;

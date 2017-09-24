@@ -2,16 +2,10 @@
 @import 'styles/common';
 @import 'index/title';
 
-/*
 .page-header {
-	background-image: url("/img/splashes/splash_projects.jpg");
+	background: url("/img/splashes/splash_projects.jpg") no-repeat center;
 	background-size: cover;
-
-	h1 {
-		color: white;
-	}
 }
-*/
 
 p {
 	margin-bottom: 0px;
@@ -261,11 +255,15 @@ section {
 }
 
 .modal-body {
-	padding: 0;
+	//padding: 0;
 
 	.link:hover {
 		color: $orange;
 	}
+}
+
+.modal-open {
+	padding-right: 15px !important; 
 }
 
 .slideshow {
