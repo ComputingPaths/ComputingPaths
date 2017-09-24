@@ -23,7 +23,7 @@ block main
   div(class='cards')
     div(class='container')
       div(class='row align-items-start')
-        div(class='nice-sidebar col-lg-3')
+        div(class='nice-sidebar col-lg-3' style="display: none;")
           div(class='margin')
           a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Tags
             i(class='fa fa-chevron-down')
@@ -31,8 +31,8 @@ block main
             div(class='row')
               each t in orgTags
                 li(class='col-12 col-sm-6 col-md-4 col-lg-12') #{t}
-                
-        div(class='col-lg-9')
+      		     
+        div(class='col-lg-6' style='margin: 0 auto;  display: inline;')
           - for(let i = 0; i < orgs.length; i++)
             div(class='res-card row no-gutters filtered')
               if (orgs[i].dark)
