@@ -71,6 +71,7 @@ html
             img(class='brand-cp' src='/img/logo.png')
           div(class='col-12 col-sm-6')
             img(class='brand-ucsd' src='/img/logo_ucsd.png')
+            
 
         div(class='row')
           div(class='col-12 col-md-3 col-lg-2 med')
@@ -79,5 +80,7 @@ html
                 a(href=page.link) #{page.name}
           div(class='col-md-9 hidden-sm-down med')
             each m in majors
-              a(href='/') #{m.name}
-        
+              a(href=`/majors.html#${m.short}`) #{m.name}
+        div(class='report') 
+          h5 Have a question or want to report an error? Please email: 
+          a(href='mailto:computingpaths@eng.ucsd.edu' target="_blank") computingpaths@eng.ucsd.edu

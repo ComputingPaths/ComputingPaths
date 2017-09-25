@@ -131,6 +131,24 @@ footer.unique {
     display: block;
     margin-bottom: 8px;
   }
+	
+	.report {
+						float: right;
+			color: white;
+//			display: inline-block;
+		
+			font-weight: 500;
+		h5 {
+			font-size: 1rem;
+			margin-top: 10px;
+		
+		}
+		
+		a {
+			float: right;
+			text-decoration: underline;
+		}
+	}
 
   img {
     height: 24px;
