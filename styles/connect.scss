@@ -52,7 +52,7 @@
   }
 
   .logo {
-//    height: 100px;
+    height: 300px;
     padding: 40px;
     box-shadow: 0 4px $textblue;
 		
@@ -108,7 +108,7 @@
 @media (max-width: $xl) {
   .cards {
     .logo {
-      height: 150px;
+      height: 250px;
     }
   }
 }
@@ -122,10 +122,6 @@
   .cards {
     padding-top: 33px;
     padding-bottom: 48px;
-
-    .logo {
-      height: 150px;
-    }
 
     .text div {
       margin: 40px 48px;
@@ -144,8 +140,8 @@
     padding-top: 0;
 
     .res-card {
-      logo {
-        height: 150px;
+      .logo {
+        height: 200px;
       }
 
       .header {
