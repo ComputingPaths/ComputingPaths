@@ -1152,7 +1152,7 @@
     {
       "name":"Data Science Student Society",
       "description": "The Data Science Student Society at UCSD is an interdisciplinary academic organization designed to immerse the community in the diverse and growing facets of Data Science: Machine Learning, Computational Statistics, Data Mining, Visualization, Predictive Analytics, and any new emerging relevant fields of study. With practical hands-on data projects, a professional portfolio-building approach, and fun outreach activities, the Data Science Student Society at UCSD strives to enrich the academic life of the student community by strengthening them for success in their current and future pursuits of Data Science related fields.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/DS3.png",
       "link": "http://ds3.ucsd.edu/",
       "tags": [
         "cs",
@@ -1194,7 +1194,7 @@
     {
       "name": "ECE Undergraduate Student Council",
       "description": "The Undergraduate Student Council is the representative of Electrical and Computer Engineering (ECE) undergraduate students at the University of California, San Diego (UCSD). Through networking, programming, leadership, and relevant education, the council strives to effect change within the department and campus at large, building a stronger and longer-lasting community for current and future engineers.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "orgImage": "img/OrgLogos/ECEUSC.png",
       "link": "http://ucsdeceusc.weebly.com/",
       "tags": [
         "en"
