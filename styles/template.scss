@@ -150,6 +150,14 @@ footer.unique {
 			font-size: 14px;
 			text-decoration: underline;
 		}
+
+		h5, a {
+			text-align: right;
+
+			@media (max-width: $sm) {
+				text-align: left;
+			}
+		}
 	}
 
 	img {
