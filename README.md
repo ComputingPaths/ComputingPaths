@@ -1,12 +1,13 @@
 # Computing Paths Website Guide
 
 ## Table of Contents
-1. Introduction
-2. Prerequisites
-3. Publish Changes to Live Website
-4. Add a Project
-5. Add a Resource
-6. Edit Majors Page
+1. [Introduction](README.md/#introduction)
+2. [Prerequisites](README.md/#prerequisites)
+3. [Publish Changes to Live Website](README.md/#publish-changes-to-live-website)
+4. [content.json](README.md/#contentjson)
+5. [Add a Project](README.md/#add-a-project)
+6. [Add a Resource](README.md/#add-a-resource)
+7. [Edit Majors Page](README.md/#edit-majors-page)
 
 
 ## Introduction
