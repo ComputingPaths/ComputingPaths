@@ -83,7 +83,7 @@ To edit content on the majors page, first navigate to the majors section within 
 Once you have found the majors section, find the key-value pair you wish to edit, and then information can then be directly changed. The key-value pairs contained for each major are: name, cap, degree, departments, hook, websites, image, short.
 
 -	name: The title of the major
--	cap: true, if the major is capped, and false if not (**NOTE**: this value is not surrounded in quotations, as shown in the above picture)
+-	cap: true, if the major is capped, and false if not (**NOTE**: this value is not surrounded in quotations)
 -	degree: bs for bachelors of science, ba for bachelors of science, etc.
 -	hook: A brief, and engaging description of this major
 -	websites: The link to the official major page
