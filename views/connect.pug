@@ -1,54 +1,75 @@
 extends ../template.pug
 
 block style 
-  link(rel='stylesheet' href ='/css/connect.css')
-    
+	link(rel='stylesheet' href ='/css/connect.css')
+		
 block script
-  script(src='/js/resources.js')
+	script(src='/js/resources.js')
 
 block main
-  div(class='page-header')
-    svg(class='hidden-xs-down')
-      rect
-      circle
-    h1 Student Organizations
-    
-  div(class='container page-intro')
-    div(class='row')
-      p(class='col-sm-10 offset-sm-1') Student organizations allow for extracurricular experience, utilizing and extending skills imparted in computing courses. These groups demonstrate creative computing efforts by channeling the collaborative spirit of UC San Diego.
-      
-  div(class='page-blurb container-fluid')
-    h1 Discover and connect with other motivated students
-  
-  div(class='cards')
-    div(class='container')
-      div(class='row align-items-start')
-        div(class='nice-sidebar col-lg-3')
-          div(class='margin')
-          a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Tags
-            i(class='fa fa-chevron-down')
-          ul(id='tags' class='collapse')
-            div(class='row')
-              each t in orgTags
-                li(class='col-12 col-sm-6 col-md-4 col-lg-12') #{t}
-                
-        div(class='col-lg-9')
-          - for(let i = 0; i < orgs.length; i++)
-            div(class='res-card row no-gutters filtered')
-              if (orgs[i].dark)
-                div(class='col-12 logo' style='background-color: #003E5C')
-                  img(src=orgs[i].orgImage)
-              else
-                div(class='col-12 logo' style='background-color: white')
-                  img(src=orgs[i].orgImage)
-              a(class='flip-on-click col-12 header' data-toggle='collapse' href=`#res-txt-${i}`)  
-                h3 #{orgs[i].name}
-                  i(class='fa fa-chevron-down')
-                each t in orgs[i].tags
-                  h5(class='tag') #{orgTags[t]}
-              div(id=`res-txt-${i}` class='collapse text col-12') 
-                div
-                  h1 DESCRIPTION
-                  p !{orgs[i].description}
-                  a(href=orgs[i].link) Find out more 
-                    i(class='fa fa-arrow-right')
+	div(class='page-header')
+		svg(class='hidden-xs-down')
+			rect
+			circle
+		h1 Student Organizations
+		
+	div(class='container page-intro')
+		div(class='row')
+			p(class='col-sm-10 offset-sm-1') Student organizations allow for extracurricular experience, utilizing and extending skills imparted in computing courses. These groups demonstrate creative computing efforts by channeling the collaborative spirit of UC San Diego.
+			
+	div(class='page-blurb container-fluid')
+		h1 Discover and connect with other motivated students
+	
+	div(class='cards')
+		div(class='container')
+			div(class='nice-sidebar' style="display: none;")
+				div(class='margin')
+				a(class='flip-on-click' data-toggle='collapse' data-target='#tags') Tags
+					i(class='fa fa-chevron-down')
+				ul(id='tags' class='collapse')
+					div(class='row')
+						each t in orgTags
+							li(class='col-12 col-sm-6 col-md-4 col-lg-12') #{t}
+
+			- for(let i = 0; i < orgs.length; i++)
+
+				div(class='row')
+					div(class='res-card row no-gutters filtered col-12 col-lg-6')
+						if (orgs[i].dark)
+							div(class='logo' style='background-color: #003E5C')
+								img(src=orgs[i].orgImage)
+						else
+							div(class='logo' style='background-color: white')
+								img(src=orgs[i].orgImage)
+						a(class='flip-on-click header' data-toggle='collapse' href=`#res-txt-${i}`)  
+							h3 #{orgs[i].name}
+								i(class='fa fa-chevron-down')
+							each t in orgs[i].tags
+								h5(class='tag') #{orgTags[t]}
+						div(id=`res-txt-${i}` class='collapse text') 
+							div
+								h1 DESCRIPTION
+								p !{orgs[i].description}
+								a(href=orgs[i].link) Find out more 
+									i(class='fa fa-arrow-right')
+
+					- i++
+
+					div(class='res-card row no-gutters filtered col-12 col-lg-6')
+						if (orgs[i].dark)
+							div(class='logo' style='background-color: #003E5C')
+								img(src=orgs[i].orgImage)
+						else
+							div(class='logo' style='background-color: white')
+								img(src=orgs[i].orgImage)
+						a(class='flip-on-click header' data-toggle='collapse' href=`#res-txt-${i}`)  
+							h3 #{orgs[i].name}
+								i(class='fa fa-chevron-down')
+							each t in orgs[i].tags
+								h5(class='tag') #{orgTags[t]}
+						div(id=`res-txt-${i}` class='collapse text') 
+							div
+								h1 DESCRIPTION
+								p !{orgs[i].description}
+								a(href=orgs[i].link) Find out more 
+									i(class='fa fa-arrow-right')

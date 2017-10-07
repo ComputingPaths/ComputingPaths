@@ -4,6 +4,7 @@ let grey = '#C6D1D7'
 
 // initilize the tagging and filtering system
 function initNiceSidebar() {
+	
   // return if no sidebar presents
   let li = $('.nice-sidebar li')
   if (!li.length) return
@@ -13,15 +14,16 @@ function initNiceSidebar() {
   li.each((i, e) => {
     e = $(e)
     colorMap[e.html()] = colors[i]
-    e.addClass('active')
-    e.css('color', colorMap[e.html()])
+    //e.addClass('active')
+    e.css('color', grey)
+    //e.css('color', colorMap[e.html()])
   })
 
   // elements to be filtered
   let filtered = $('.filtered')
   let removed = []
   let tags = $('.tag')
-
+  
   // trigger filter when a list element is clicked
   li.click(function() {
     let e = $(this)
@@ -72,23 +74,23 @@ function initNiceSidebar() {
 // initialize the .flip-on-click class.
 // arrows with this class will be flipped on click
 function flipOnClick() {
-  $('.flip-on-click').click(function () {
-    $(this).find('i').toggleClass('fa-flip-vertical')
-  })
+	$('.flip-on-click').click(function () {
+		$(this).find('i').toggleClass('fa-flip-vertical')
+	})
 }
 
 // initialize the sidebae
 function initNavbar() {
-  // apply the .active class to the current nav link
-  $('.navbar-nav')
-    .children()
-    .children()
-    .filter((i, e) => e.pathname === window.location.pathname)
-    .addClass('active')
+	// apply the .active class to the current nav link
+	$('.navbar-nav')
+		.children()
+		.children()
+		.filter((i, e) => e.pathname === window.location.pathname)
+		.addClass('active')
 }
 
 $(document).ready(() => {
-  initNavbar()
-  initNiceSidebar()
-  flipOnClick()
+	initNavbar()
+	initNiceSidebar()
+	flipOnClick()
 })
