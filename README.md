@@ -52,7 +52,7 @@ If the value in a key value pair is a list of values, then the value is surround
 
 ## Add a Project
 Projects can be added inside the *content.json* file. Search for the key “projects” within *content.json* (using ctrl+F is helpful).
-![Projects](https://github.com/ComputingPaths/ComputingPaths/tree/master/readmeImages/projects.png)
+![Projects](https://github.com/ComputingPaths/ComputingPaths/blob/master/readmeImages/projects.png)
 
 To add a new project, add key-value pairs for all project data. These are: name, intro, description, members, images, videos, link, and tags.
 
@@ -70,7 +70,7 @@ To add a new project, add key-value pairs for all project data. These are: name,
 
 ## Add a Resource
 Adding a resource is identical in procedure to adding a new project, except that the key-value pairs are different of course. First, find the key “resources” in *content.json*.
-![Resources](https://github.com/ComputingPaths/ComputingPaths/tree/master/readmeImages/resources.png)
+![Resources](https://github.com/ComputingPaths/ComputingPaths/blob/master/readmeImages/resources.png)
 
 Next, add key-value pairs for all resources data, which are: name, description, mapImage, mapLink, link, and tags.
 
@@ -86,7 +86,7 @@ Next, add key-value pairs for all resources data, which are: name, description, 
 
 ## Edit Majors Page
 To edit content on the majors page, first navigate to the majors section within *content.json*, which is accomplished identically to the projects and resources section.
-![Majors](https://github.com/ComputingPaths/ComputingPaths/tree/master/readmeImages/majors.png)
+![Majors](https://github.com/ComputingPaths/ComputingPaths/blob/master/readmeImages/majors.png)
 
 Once you have found the majors section, find the key-value pair you wish to edit, and then information can then be directly changed. The key-value pairs contained for each major are: name, cap, degree, departments, hook, websites, image, short.
 
@@ -102,11 +102,11 @@ Once you have found the majors section, find the key-value pair you wish to edit
 There are two additional sections within *content.json* for majors content: major descriptions, and specializations within a major.
 
 To edit major descriptions, find the key titled “majorDescriptions”.
-![Major Descriptions](https://github.com/ComputingPaths/ComputingPaths/tree/master/readmeImages/majordescriptions.png)
+![Major Descriptions](https://github.com/ComputingPaths/ComputingPaths/blob/master/readmeImages/majordescriptions.png)
 
 This will contain a list of key-value pairs, where the key is the abbreviation for a major given by the “short” value above. The description can be edited directly here.
 
 To edit major specializations, find the key titled “majorExpand” (just below “majorDescriptions”).
-![Major Specializations](https://github.com/ComputingPaths/ComputingPaths/tree/master/readmeImages/majorexpand.png)
+![Major Specializations](https://github.com/ComputingPaths/ComputingPaths/blob/master/readmeImages/majorexpand.png)
 
 As with the major descriptions, each major is identified by its abbreviation. Within each major, there are keys titled name and detail. Name is the title of the major specialization, and detail is a short description of that specialization.
