@@ -17,16 +17,21 @@ Whether you want to add new projects, resources, or edit the Majors page to the 
 ## Prerequisites
 Node Package Manager (npm) must be installed in order to run the command which publishes changes to the live website. npm can be downloaded and installed from this webpage: https://nodejs.org/en/.
 
+If you are working as a developer on the website, several tools must be installed using npm. This is accomplished in one step by navigating to the root directory of your local repository and running the command:
+```
+$ npm install
+```
+
 
 ## Publish Changes to Live Website
 Before attempting to publish changes to the live website, ensure the ComputingPaths GitHub repo is up-to-date with all changes you have made by adding and committing your changes. This can be accomplished by running the commands:
 ```
-git add content.json
-git commit -m "[brief message explaining what changes were made]"
+$ git add content.json
+$ git commit -m "[brief message explaining what changes were made]"
 ```
 Finally, to publish these changes to the live website, run the command:
 ```
-npm run publish
+$ npm run publish
 ```
 
 
