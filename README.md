@@ -29,7 +29,7 @@ Before attempting to publish changes to the live website, ensure the ComputingPa
 $ git add content.json
 $ git commit -m "[brief message explaining what changes were made]"
 ```
-Finally, to publish these changes to the live website, run the command:
+Finally, to publish these changes to the live website run the following command (you will be prompted to enter the password for the ComputingPaths account on the ieng servers):
 ```
 $ npm run publish
 ```
