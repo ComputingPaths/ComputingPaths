@@ -1,32 +1,31 @@
 {
   "name": "computing-paths",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Development version of computingpaths.ucsd.edu",
   "private": true,
   "scripts": {
-    "dev": "concurrently --kill-others-on-fail \"npm run pug:watch\" \"npm run sass:watch\" \"npm run babel:watch\"",
+    "dev": "run-p pug:watch sass:watch babel:watch",
     "predev": "npm run build",
-    "build": "npm run clean && npm run cp && npm run pug && npm run sass && npm run babel",
+    "build": "run-s clean copy pug sass babel",
     "publish": "scp -r dist/* cpaths@computingpaths.ucsd.edu:/var/www/cpaths/htdocs",
     "prepublish": "npm run build",
     "pug": "node processor.js",
     "pug:watch": "node dev.js",
-    "sass": "node-sass --output-style compressed -o dist/css styles",
-    "sass:watch": "npm run sass -- -w -r",
-    "babel": "babel scripts --compact=true -d dist/js",
-    "babel:watch": "npm run babel -- -w",
+    "sass": "node-sass-chokidar styles --output-style compressed --output dist/css",
+    "sass:watch": "node-sass-chokidar styles --watch --output dist/css",
+    "babel": "babel scripts --presets=env --compact=true --no-comments --minified --out-dir dist/js",
+    "babel:watch": "babel scripts --watch --out-dir dist/js",
     "clean": "rimraf dist && mkdir dist",
-    "cp": "cp -r images dist/img"
+    "copy": "cp -r images dist/img"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "camelcase": "^4.1.0",
-    "concurrently": "^3.5.0",
-    "express": "^4.15.3",
-    "firebase-admin": "^5.2.1",
-    "node-sass": "^4.5.3",
-    "pug": "^2.0.0-rc.3",
-    "rimraf": "^2.6.1"
+    "babel-preset-env": "^1.7.0",
+    "camelcase": "^5.0.0",
+    "express": "^4.16.3",
+    "node-sass-chokidar": "^1.3.0",
+    "npm-run-all": "^4.1.3",
+    "pug": "^2.0.3",
+    "rimraf": "^2.6.2"
   }
 }
