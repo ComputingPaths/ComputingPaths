@@ -9,6 +9,10 @@
     3. [Add a Resource](README.md/#add-a-resource)
     4. [Edit Majors Page](README.md/#edit-majors-page)
 4. [Development Guide](README.md/#development-guide)
+    1. [Technology](README.md/#technology)
+    2. [Project Structure](README.md/#project-structure)
+    3. [Workflow](README.md/#workflow)
+    4. [npm run dev](README.md/#npm-run-dev)
 5. [Publish Changes to Live Website](README.md/#publish-changes-to-live-website)
 
 
