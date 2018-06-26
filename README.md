@@ -114,11 +114,11 @@ As with the major descriptions, each major is identified by its abbreviation. Wi
 4. [jquery](https://api.jquery.com/): a DOM manipulation library
 
 ### Project Structure
-/views/        - pug/html files for each page on the website
-/styles/       - scss/css files for each page on the website
-/scripts/      - javascript files for each page on the website
-/images/       - all the images that are used on the website
-/dist/         - build output directory
+/views/        - pug/html files for each page on the website  
+/styles/       - scss/css files for each page on the website  
+/scripts/      - javascript files for each page on the website  
+/images/       - all the images that are used on the website  
+/dist/         - build output directory  
 /readmeImages/ - images used in readme files
 
 ### Workflow
