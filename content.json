@@ -493,7 +493,7 @@
       "description": "Located in the Conrad Prebys Music Center, this 1500-square-foot facility includes an acoustically designed live room with high ceilings, a wooden floor, and a control room with Genelec 5.1 surround monitoring. The studio houses a Macintosh system and many dedicated software packages for music production and recording, including a ProTools HD digital audio production package with 24 channels of digital I/O for precise digital recording and editing with Apogee converters and Grace Design microphone preamps. The studio supports MIDI for synthesis, processing, and control in music composition and performance, and includes hardware and software for CD and DVD mastering.",
       "mapImage": "img/CPMCBldg.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163025",
-      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B108",
       "tags": [
         "ws"
       ]
@@ -587,7 +587,7 @@
       "description": "Located in the Conrad Prebys Music Center, these four 200-square-foot studios are designed for individual work on computer music projects. Each studio is equipped with an eight-channel DAW (iMac with MOTU audio interface) and is acoustically treated. In addition, the four studios are designed with different orientations: one with equipment, monitoring and software to support video editing; one for recording, editing and mastering; one for work with MIDI synthesizers; and one with analog mixing and recording.",
       "mapImage": "img/CPMCBldg.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=186265",
-      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#B104",
+      "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=403#icam",
       "tags": [
         "ws"
       ]
@@ -684,7 +684,6 @@
       "name": "OASIS TRIO Student Support Services Program & Summer Experience",
       "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://oasis.ucsd.edu/programs/trio/index.html",
       "tags": [
         "as",
@@ -695,7 +694,6 @@
       "name": "OASIS - 2Excel",
       "description": "2Excel is a retention program serving second-year students. The program is a year-long commitment starting Fall through Spring quarter.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://oasis.ucsd.edu/programs/2excel.html",
       "tags": [
         "as"
@@ -705,7 +703,6 @@
       "name": "OASIS Guardian Scholars Program",
       "description": "The Guardian Scholars Program (GSP) is committed to supporting current and former foster youth at UCSD through a variety of holistic services that aid the students in achieving a college degree. The GSP understands that there are many hardships that foster youth endure and strives to be a resource and advocate for all its students.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://students.ucsd.edu/finances/financial-aid/types/scholarships/guardian.html",
       "tags": [
         "as"
@@ -715,7 +712,6 @@
       "name": "SD Hacks",
       "description": "SD Hacks is About... Empowerment: They provide all hackers with expertise, hardware and software so they can build their dreams. Collaboration: They’re all here as fellow mentors, 4am-ers, and friends. Innovation: They strive to make each SD Hacks a memorable learning experience for all.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://www.sdhacks.io/",
       "tags": [
         "ev",
@@ -726,7 +722,6 @@
       "name": "SPIS",
       "description": "SPIS is a 5-week residential summer program on the UC San Diego campus for students accepted into CSE majors as well as for other UCSD admitted students who want to explore computer science as a career option. SPIS courses are taught by the very best faculty at UCSD. Students in the program interact with a wide range of CSE faculty and learn about computer science and engineering research. They also have opportunities to connect with engineers from the computer industry. SPIS provides an excellent student experience with individual meetings with faculty, tutoring from experienced CSE undergraduate students, collaborations with fellow students, individual advising to smooth the transition to UCSD, and living on campus.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://sites.google.com/a/eng.ucsd.edu/spis/",
       "tags": [
         "as",
@@ -769,7 +764,6 @@
       "name": "UCSD Academy for Transfer Students",
       "description": "The 2017 UC San Diego Academy for Transfer Students is intended for incoming transfer students (belonging to the Biological Sciences, Computer Science and Engineering, or Mathematics departments) who will be entering UC San Diego in the Fall quarter from a community college or from a four year college.  It is a five-week program where students can earn 8 units of credit (10 units for CSE and Math-CS students) in the major. The Academy primarily consists of gateway courses that are not typically offered at community colleges.The Academy also includes advising and other activities to help students smoothly transition to UC San Diego.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "http://academy.eng.ucsd.edu/",
       "tags": [
         "as",
@@ -781,7 +775,7 @@
       "description": "Located on the outskirts of the Mandeville Center, near the Main Gym, The University Art Gallery aims to activate new fields of knowledge production, new material, discursive, and critical possibilities -- alternative forms of organization, exchange, collection, and presentation that can be incorporated into new understandings of artistic endeavor. Working with the conditions and interrelationships of publics, space, discourse, and pedagogy, it enhances the dialogue around diversity within contemporary cultural practice and supports fellows and students in their academic and professional development as curators, critics, writers and scholars.",
       "mapImage": "img/MandevilleBldg.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229230",
-      "link": "http://visarts.ucsd.edu/university-art-gallery-uag",
+      "link": "https://visarts.ucsd.edu/about/facilities.html",
       "tags": [
         "sc"
       ]
@@ -790,7 +784,6 @@
       "name": "Virtual Computing Labs",
       "description": "The Virtual Computing Labs provide a virtual workspaces that can be accessed through the UCSD VPN, and provides students with a range of software programs like ArcGIS, Matlab, and SOLIDWORKS.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "http://acms.ucsd.edu/students/govirtual/index.html",
       "tags": [
         "eq",
@@ -813,7 +806,7 @@
       "description": "Located in the Mandeville Center, these facilities provide access to wood/metal cutting tools to undergraduate students.",
       "mapImage": "img/MandevilleBldg.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229230",
-      "link": "http://visarts.ucsd.edu/mandeville-center",
+      "link": "https://visarts.ucsd.edu/about/facilities.html",
       "tags": [
         "ws"
       ]
@@ -840,7 +833,7 @@
     },{
       "name": "University Art Gallery",
       "image": "img/resourceBanner/University Art Gallery.jpg",
-      "link": "http://visarts.ucsd.edu/galleries_view"
+      "link": "https://visarts.ucsd.edu/about/facilities.html"
     },
     {
       "name": "Calit2 Protyping Lab",
