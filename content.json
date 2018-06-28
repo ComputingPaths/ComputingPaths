@@ -110,7 +110,7 @@
       ],
       "hook": "Cognitive Science students are at the forefront of researching solutions and developing technology designed to better suit humanity.",
       "websites": [
-        "http://www.cogsci.ucsd.edu/"
+        "http://www.cogsci.ucsd.edu/undergraduates/major/index.html"
       ],
       "image": "/img/CognitiveScience.jpg",
       "short": "cog"
@@ -238,7 +238,7 @@
     "cog":
     {
       "name": "Cognitive Sciences",
-      "link": "http://www.cogsci.ucsd.edu/undergraduates/major/index.html"
+      "link": "http://www.cogsci.ucsd.edu/"
     },
     "cse":
     {
