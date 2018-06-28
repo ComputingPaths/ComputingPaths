@@ -52,8 +52,8 @@ block main
 								p !{orgs[i].description}
 								a(href=orgs[i].link) Find out more 
 									i(class='fa fa-arrow-right')
-
 					- i++
+					- if(i >= orgs.length) break;
 
 					div(class='res-card row no-gutters filtered col-12 col-lg-6')
 						if (orgs[i].dark)
