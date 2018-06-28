@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "run-p pug:watch sass:watch babel:watch",
     "predev": "npm run build",
-    "build": "run-s clean copy pug sass babel",
+    "build": "run-s clean copy",
     "publish": "scp -r dist/* cpaths@computingpaths.ucsd.edu:/var/www/cpaths/htdocs",
     "prepublish": "npm run build",
     "pug": "node processor.js",
