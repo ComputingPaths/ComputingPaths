@@ -641,7 +641,7 @@
       "description": "Located in the lower level of the Mandeville Center, The Adam D. Kamil Art Gallery is a resource for Visual Arts students to view and exhibit art projects. Opportunities to exhibit work are offered on a quarterly basis.",
       "mapImage": "img/MandevilleBldg.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229230",
-      "link": "http://visarts.ucsd.edu/mandeville-center",
+      "link": "https://visarts.ucsd.edu/about/facilities.html",
       "tags": [
         "sc"
       ]
@@ -716,7 +716,7 @@
       "description": "SD Hacks is About... Empowerment: They provide all hackers with expertise, hardware and software so they can build their dreams. Collaboration: They’re all here as fellow mentors, 4am-ers, and friends. Innovation: They strive to make each SD Hacks a memorable learning experience for all.",
       "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
-      "link": "testlink3",
+      "link": "https://www.sdhacks.io/",
       "tags": [
         "ev",
         "ws"
@@ -802,7 +802,7 @@
       "description": "Located between the Structural Materials and Engineering Building (SME) and Pepper Canyon Hall, the Visual Arts Facility hosts visual arts graduate student studios, a seminar room, the graduate photo lab, a computer lab, a gallery, and a performance space, a sound lab and a screening room.",
       "mapImage": "img/VAFBldg.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229265",
-      "link": "http://visarts.ucsd.edu/visual-arts-facility-vaf",
+      "link": "https://visarts.ucsd.edu/about/facilities.html",
       "tags": [
         "bs",
         "ws"
