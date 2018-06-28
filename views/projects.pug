@@ -106,7 +106,8 @@ block main
                               each t in projects[i].tags
                                 span(class='tag') #{projectTags[t]}
 
-                          div(class='detail-item')
-                            p.description-title MORE INFORMATION
-                            a(class='link' href=`${projects[i].link}`) Find out more    
-                              i(class='fa fa-arrow-right')
+                          if !(projects[i].link===false)
+                            div(class='detail-item')
+                              p.description-title MORE INFORMATION
+                              a(class='link' href=`${projects[i].link}`) Find out more    
+                                i(class='fa fa-arrow-right')

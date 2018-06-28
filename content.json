@@ -912,7 +912,7 @@
         "https://www.youtube.com/embed/Cx13LD9fahg",
         "https://www.youtube.com/embed/IZ0l6Lv10O4"
       ],
-      "link": "http://divergentengineering.weebly.com/kai-human-robot.html",
+      "link": false,
       "tags": [
         "ar"
       ]
@@ -1021,7 +1021,7 @@
       ],
       "videos": [
       ],
-      "link": "https://drive.google.com/drive/folders/0Bxzpk0EMSYLOQUZkaHVRdzNDZ1E",
+      "link": false,
       "tags": ["ga"]
     },
     {
