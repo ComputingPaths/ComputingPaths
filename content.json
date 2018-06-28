@@ -1149,6 +1149,16 @@
       "dark": false
     },
     {
+      "name":"CSforeach",
+      "description": "CS foreach is a non-profit student organization with the goal of increasing access to Computer Science education throughout San Diego county by initiating efforts to teach in underserved communities and cultivating mentorship between UCSD and K-12 students.",
+      "orgImage": "img/OrgLogos/CSforeach.png",
+      "link": "http://csforeach.ucsd.edu/",
+      "tags": [
+        "cs"
+      ],
+      "dark": false
+    },
+    {
       "name":"Data Science Student Society",
       "description": "The Data Science Student Society at UCSD is an interdisciplinary academic organization designed to immerse the community in the diverse and growing facets of Data Science: Machine Learning, Computational Statistics, Data Mining, Visualization, Predictive Analytics, and any new emerging relevant fields of study. With practical hands-on data projects, a professional portfolio-building approach, and fun outreach activities, the Data Science Student Society at UCSD strives to enrich the academic life of the student community by strengthening them for success in their current and future pursuits of Data Science related fields.",
       "orgImage": "img/OrgLogos/DS3.png",
@@ -1183,7 +1193,7 @@
       "name": "Divergent Engineering",
       "description": "Divergent Engineering (divE) began as an Arduino workshop with 6 engineers and a simple objective: teach students how program Arduino microcontroller boards and see what they can do with that knowledge. What started out as a workshop became an incubator that produced a working data logger, persistence of vision wand, a Skittle sorter, and a wall-avoiding robot in a single month.<br><br>Divergent Engineering aims to provide a nurturing environment for students to formulate and develop their goals as engineers and scientists; a place to begin accomplishing these goals; and a supportive setting to tinker, learn, challenge, and engineer.",
       "orgImage": "img/OrgLogos/DivE.png",
-      "link": "http://divergentengineering.weebly.com/about.html",
+      "link": "http://divergentengineering.weebly.com/",
       "tags": [
         "cs",
         "en"
@@ -1194,7 +1204,7 @@
       "name": "ECE Undergraduate Student Council",
       "description": "The Undergraduate Student Council is the representative of Electrical and Computer Engineering (ECE) undergraduate students at the University of California, San Diego (UCSD). Through networking, programming, leadership, and relevant education, the council strives to effect change within the department and campus at large, building a stronger and longer-lasting community for current and future engineers.",
       "orgImage": "img/OrgLogos/ECEUSC.png",
-      "link": "http://ucsdeceusc.weebly.com/",
+      "link": "http://eceusc.ucsd.edu/",
       "tags": [
         "en"
       ],
@@ -1204,7 +1214,7 @@
       "name":"Game Development Studio",
       "description": "The Game Development Studio (GDS) is an UCSD student organization dedicated to helping students gain experience in game design through collaborative projects. They are dedicated to working with a number of different platforms such as iPhones, Androids, and PCs. GDS is open to students from all different majors and backgrounds to join the club.",
       "orgImage": "img/OrgLogos/GameDevStudio.png",
-      "link": "http://gds.ucsd.edu/",
+      "link": "https://www.facebook.com/groups/GameDevStudio/",
       "tags": [
         "cs",
         "ad"
@@ -1258,7 +1268,7 @@
       "name":"UCSD IEEE",
       "description": "IEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.<br><br>It is a non-profit organization, is the world’s leading professional association for the advancement of technology. Through its global membership, the IEEE is a leading authority on areas ranging from aerospace systems, computers and telecommunications to biomedical engineering, electric power and consumer electronics among others.<br><br>Members rely on the IEEE as a source of technical and professional information, resources and services. To foster an interest in the engineering profession, the IEEE also serves student members in colleges and universities around the world. Other important constituencies include prospective members and organizations that purchase IEEE products and participate in conferences or other IEEE programs.",
       "orgImage": "img/OrgLogos/IEEE.png",
-      "link": "http://ieee.ucsd.edu/",
+      "link": "http://ieeeucsd.org/",
       "tags": [
         "en"
       ],
@@ -1321,7 +1331,7 @@
       "name":"24fps",
       "description": "24FPS is a film fluency and production club curated to include individuals interested and motivated about learning about film history, production, and experimentation within the medium. This club aims to give voice and purpose to media makers on campus, encouraging collaboration towards final cinematic projects. Members are given an opportunity to learn from the ground up as independent filmmakers and critics, using their ingenuity, arguments, and peers to establish skills in media. Meetings consist of open forum discussion, project assignments, and networking. ",
       "orgImage": "img/CP Generic Icon.jpg",
-      "link": "http://studentorg.ucsd.edu/RdOnlyDetail.aspx?data=6885",
+      "link": "https://www.facebook.com/24FPSucsd/",
       "tags": [
         "ad"
       ],
