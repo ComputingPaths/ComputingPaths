@@ -406,7 +406,6 @@
       "name": "The Computer Science Channel",
       "description": "Showcasing the excellence and diversity of the nation's premier research university, UCTV embraces the core missions of the University of California -- teaching, research and public service -- through quality, in-depth television that informs, educates and enriches the lives of people around the globe.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "http://www.uctv.tv/computer-science/search-details.aspx?showID=31158",
       "tags": [
         "as",
@@ -471,7 +470,6 @@
       "name": "DevFair by CSES",
       "description": "Occurring every year during the Fall, DevFair takes the traditional career fair and spins it on its head. Rather than having companies set up booths that students can visit, they allow groups of students set up booths to showcase their projects to recruiters. This science fair-style presentation gives students the opportunity to show their potential better than a resume ever could. The event is geared towards UCSD undergraduate students in a tech-related field.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://cses.ucsd.edu/devfair/",
       "tags": [
         "ev"
@@ -607,7 +605,6 @@
       "name": "IDEA Freshman Summer Engineering Institute",
       "description": "Get a jump start on your academic career at UC San Diego's 5-week, residential Summer Engineering Institute (SEI), and earn six credits towards your engineering degree. Receive support in making the transition from high school to the rigors of a university-level engineering curriculum, and build awareness of relevant campus programs and resources. Take part in organized social activities on evenings and weekends, and begin forming a peer network and make lasting friendships.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "http://jacobsschool.ucsd.edu/idea/programs/freshman_summer_institute.shtml",
       "tags": [
         "as",
@@ -618,7 +615,6 @@
       "name": "IDEA Transfer PrEP",
       "description": "Transfer PrEP is a 3-day, 2-night program held over the summer for incoming transfer engineering students. This free program provides incoming students with the opportunity to become acclimated to campus life, build skills and habits necessary for success in engineering, and develop community amongst their peers before beginning their courses in the fall. Participants will live on campus throughout the duration of the program in residential halls with current undergraduate transfer students majoring in engineering as PrEP Leaders who will serve as their peer leaders and mentors throughout the duration of the program.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "http://jacobsschool.ucsd.edu/idea/programs/summer_prep.shtml",
       "tags": [
         "as",
@@ -662,7 +658,6 @@
       "name": "OASIS Math and Science",
       "description": "OASIS math and science workshops are structured group-learning study-sessions led by a tutor who explains course concepts and encourages a collaborative learning environment. Each workshop session is 2 hours and meets twice a week",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://students.ucsd.edu/sponsor/oasis/math-science/index.html",
       "tags": [
         "as",
@@ -673,7 +668,6 @@
       "name": "OASIS Summer Bridge",
       "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "mapLink": "map3link",
       "link": "https://oasis.ucsd.edu/programs/summer-bridge/index.html",
       "tags": [
         "as",
