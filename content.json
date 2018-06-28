@@ -674,7 +674,7 @@
       "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
       "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
-      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/summer-bridge/index.html#//academics/_organizations/oasis/transition-programs/summer-bridge/index",
+      "link": "https://oasis.ucsd.edu/programs/summer-bridge/index.html",
       "tags": [
         "as",
         "ev"
@@ -685,7 +685,7 @@
       "description": "A year-long transition program for incoming freshman students that begins with an intensive 5 week residential & academic component in August. Summer Bridge continues throughout the academic year, providing academic & personal support throughout your first year at UC San Diego.",
       "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
-      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/summer-bridge/index.html#//academics/_organizations/oasis/transition-programs/summer-bridge/index",
+      "link": "https://oasis.ucsd.edu/programs/trio/index.html",
       "tags": [
         "as",
         "ev"
@@ -696,7 +696,7 @@
       "description": "2Excel is a retention program serving second-year students. The program is a year-long commitment starting Fall through Spring quarter.",
       "mapImage": "img/CP Generic Icon.jpg",
       "mapLink": "map3link",
-      "link": "https://students.ucsd.edu/sponsor/oasis/transition-programs/2excel/index.html",
+      "link": "https://oasis.ucsd.edu/programs/2excel.html",
       "tags": [
         "as"
       ]
@@ -994,7 +994,7 @@
       ],
       "videos": [
       ],
-      "link": "https://www.sigsac.org/ccs/CCS2017/",
+      "link": "https://ucsdnews.ucsd.edu/pressrelease/computer_science_major_honored_for_undergraduate_research_in_applied_crypto",
       "tags": ["re"]
     },
     {
