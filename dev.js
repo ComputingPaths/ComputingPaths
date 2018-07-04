@@ -37,10 +37,10 @@ fs.watch('template.pug', () => {
 
 fs.watch('content.json', () => {
   console.log('content.json has been changed')
-  let data = fs.readFileSync('content.json', 'utf8')
-  if (!data) return
-  locals = JSON.parse(data)
-  renderAll()
+  setTimeout(() => {
+    locals = JSON.parse(fs.readFileSync('content.json', 'utf8'));
+    renderAll()
+  }, 500)
 })
 
 fs.watch('images', { recursive: true }, () => {

@@ -41,47 +41,56 @@
       "quote": "You might not know exactly where you’re going, but keep your interests in the forefront and things will open up. When I went to school, you couldn’t integrate art and technology in any meaningful way, but I found a position where I could do this. You find these opportunities and you weigh what’s important.",
       "image": "/img/TomErbe.jpg"
     },
-		{
+    {
       "name": "Julian D’Angelo",
       "class": "2016",
-      "quote":"I chose Bioinformatics because it’s extremely multidisciplinary. I also chose the major because of the inevitability of importance of computational skills and programming, because that’s where science fields in general are going."
-    },{
+      "quote": "I chose Bioinformatics because it’s extremely multidisciplinary. I also chose the major because of the inevitability of importance of computational skills and programming, because that’s where science fields in general are going."
+    },
+    {
       "name": "Sneha Jayaprakash",
       "class": "2016",
-      "quote":"I thought that bioinformatics was more bioengineering focused, but I found that it was much more focused on computation. I realized that bioinformatics is  a major where doing four years of undergrad isn’t enough. It helps to have a more solid foundation, so getting a master’s or PhD would help a lot for students who want to pursue that later."
-    },{
+      "quote": "I thought that bioinformatics was more bioengineering focused, but I found that it was much more focused on computation. I realized that bioinformatics is  a major where doing four years of undergrad isn’t enough. It helps to have a more solid foundation, so getting a master’s or PhD would help a lot for students who want to pursue that later."
+    },
+    {
       "name": "Sam Payne",
       "role": "PhD Scientist",
-      "quote":"When I was an undergraduate degree in 2000, my sister recognized my interest in biology and skill set in computer science and told me that there was an emerging field called bioinformatics, but that there were no degrees for it yet. This led me to choose courses in my undergraduate degree that would prepare me to be a bioinformatics researcher."
-    },{
+      "quote": "When I was an undergraduate degree in 2000, my sister recognized my interest in biology and skill set in computer science and told me that there was an emerging field called bioinformatics, but that there were no degrees for it yet. This led me to choose courses in my undergraduate degree that would prepare me to be a bioinformatics researcher."
+    },
+    {
       "name": "Rachel Kim",
       "class": "2016",
-      "quote":"When I applied for college, I applied to be in the psychology department. I changed to Cognitive Science because people told me it goes outside studies of just the brain. All of my classes before my sophomore year were about the brain and the body. When we took a class that was more of a group project, where we had to design an app, it made me feel like: ‘This is my field!’ because I love interacting with people."
-    },{
+      "quote": "When I applied for college, I applied to be in the psychology department. I changed to Cognitive Science because people told me it goes outside studies of just the brain. All of my classes before my sophomore year were about the brain and the body. When we took a class that was more of a group project, where we had to design an app, it made me feel like: ‘This is my field!’ because I love interacting with people."
+    },
+    {
       "name": "Jason Sandoval",
       "role": "Veteran | Arista Networks Engineer",
-      "quote":"I transferred in to UCSD from Mesa college. Before that, I was in the Air Force for 9 years. When I was in the Air Force, I had the chance to train into a different job so I decided to try programming. Programing in the Air Force is not “real programming”. It’s a little strange, but I got a little taste of it. So when I got out of the Air Force, did some contract work, and decided I wanted to do something else; that’s why I headed to programming."
-    },{
+      "quote": "I transferred in to UCSD from Mesa college. Before that, I was in the Air Force for 9 years. When I was in the Air Force, I had the chance to train into a different job so I decided to try programming. Programing in the Air Force is not “real programming”. It’s a little strange, but I got a little taste of it. So when I got out of the Air Force, did some contract work, and decided I wanted to do something else; that’s why I headed to programming."
+    },
+    {
       "name": "Chyheim Jackson-Burgess",
-			"class": "2016",
+      "class": "2016",
       "role": "Google - YouTube Gaming",
-      "quote":"As a child I was really interested in video games, so I ran around my local high school to find opportunities to develop video games. I found this summer camp, where we created small video game projects and I learned C# there. After that, I did a summer program at Google called the Computer Science Summer Institute and there I learned about Python, Javascript, and HTML. Ever since then, I have been interested in Computer Science."
-    },{
+      "quote": "As a child I was really interested in video games, so I ran around my local high school to find opportunities to develop video games. I found this summer camp, where we created small video game projects and I learned C# there. After that, I did a summer program at Google called the Computer Science Summer Institute and there I learned about Python, Javascript, and HTML. Ever since then, I have been interested in Computer Science."
+    },
+    {
       "name": "Terry Zhou",
       "class": "2018",
-      "quote":"I had a robot project in high school… That was the first time I programmed software that applied to hardware. You can see how the robot moves and you have to program how it moves instead of focusing on purely software or hardware. That’s when I realized that Computer Engineering is more interesting than pure CS or EE.  If you’re interested in EE, switch into an EE major. If you’re interested in CS, switch to a CS major. If you’re not sure and you like both, you should do CE."
-    },{
+      "quote": "I had a robot project in high school… That was the first time I programmed software that applied to hardware. You can see how the robot moves and you have to program how it moves instead of focusing on purely software or hardware. That’s when I realized that Computer Engineering is more interesting than pure CS or EE.  If you’re interested in EE, switch into an EE major. If you’re interested in CS, switch to a CS major. If you’re not sure and you like both, you should do CE."
+    },
+    {
       "name": "Ben Breidenthal",
       "class": "2016",
-      "quote":"I didn’t do any programming until I took beginning Java classes at Mira Costa, but I wasn’t really into it. But once I took MUS 176 with Tom Erbe, and we looked at C++ and making audio effects plugins, that’s when I started to really get into programming. I’ve been able to heavily apply everything that I’m interested in on all of my projects."
-    },{
+      "quote": "I didn’t do any programming until I took beginning Java classes at Mira Costa, but I wasn’t really into it. But once I took MUS 176 with Tom Erbe, and we looked at C++ and making audio effects plugins, that’s when I started to really get into programming. I’ve been able to heavily apply everything that I’m interested in on all of my projects."
+    },
+    {
       "name": "Hannah Chou",
       "class": "2015",
-      "quote":"When I was in undergrad, I was choosing between physiological sciences and electrical engineering. I’ve realized that you can do electrical engineering with a lot of different fields. That’s why I’m interested in medical devices. You still get human interaction with medical devices in electrical engineering."
-    },{
+      "quote": "When I was in undergrad, I was choosing between physiological sciences and electrical engineering. I’ve realized that you can do electrical engineering with a lot of different fields. That’s why I’m interested in medical devices. You still get human interaction with medical devices in electrical engineering."
+    },
+    {
       "name": "Davis Liang",
       "class": "2016",
-      "quote":"Electrical Engineering is very, very hard. It is not for the faint hearted. However, it is very rewarding in that you learn a lot of things that are extendable into other fields of study. For example, if you pick another major, you will not learn about things such as fourier transforms, signal convolution, and how computers work on the hardware level."
+      "quote": "Electrical Engineering is very, very hard. It is not for the faint hearted. However, it is very rewarding in that you learn a lot of things that are extendable into other fields of study. For example, if you pick another major, you will not learn about things such as fourier transforms, signal convolution, and how computers work on the hardware level."
     }
   ],
   "majors": [
@@ -96,7 +105,8 @@
       ],
       "hook": "Bioinformatics majors address the growing need for trained computational biologists in the rapidly growing field of biological data analysis.",
       "websites": [
-        "http://bioinformatics.ucsd.edu/"
+        "http://www.be.ucsd.edu/bioinformatics",
+        "http://www.be.ucsd.edu/bioinformatics-flowchart"
       ],
       "image": "/img/Bioinformatics.jpg",
       "short": "bio"
@@ -225,48 +235,39 @@
     }
   ],
   "departments": {
-    "bsc":
-    {
+    "bsc": {
       "name": "Biological Sciences",
       "link": "https://biology.ucsd.edu/"
     },
-    "bie":
-    {
+    "bie": {
       "name": "Bioengineering",
       "link": "http://be.ucsd.edu/"
     },
-    "cog":
-    {
+    "cog": {
       "name": "Cognitive Sciences",
       "link": "http://www.cogsci.ucsd.edu/"
     },
-    "cse":
-    {
+    "cse": {
       "name": "Computer Science",
       "link": "https://cse.ucsd.edu/"
     },
-    "ece":
-    {
+    "ece": {
       "name": "Electrical Engineering",
       "link": "http://www.ece.ucsd.edu/"
     },
-    "mat":
-    {
+    "mat": {
       "name": "Mathematics",
       "link": "https://math.ucsd.edu/"
     },
-    "phy":
-    {
+    "phy": {
       "name": "Physics",
       "link": "https://physics.ucsd.edu/"
     },
-    "vis":
-    {
+    "vis": {
       "name": "Visual Arts",
       "link": "http://visarts.ucsd.edu/"
     },
-    "mus":
-    {
+    "mus": {
       "name": "Music",
       "link": "http://musicweb.ucsd.edu/"
     }
@@ -819,12 +820,13 @@
       "name": "Digital Media Lab",
       "image": "img/resourceBanner/Digital Media Lab.jpg",
       "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/"
-
-    },{
+    },
+    {
       "name": "Media Teaching Lab",
       "image": "img/resourceBanner/Media-Teaching-Lab.jpg",
       "link": "http://acms.ucsd.edu/students/medialab/"
-    },{
+    },
+    {
       "name": "University Art Gallery",
       "image": "img/resourceBanner/University Art Gallery.jpg",
       "link": "https://visarts.ucsd.edu/about/facilities.html"
@@ -838,23 +840,28 @@
       "name": "Computer Science Basement",
       "image": "img/resourceBanner/Computer-Science-Basement.jpg",
       "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b"
-    },{
+    },
+    {
       "name": "Design Lab",
       "image": "img/resourceBanner/Design Lab.jpg",
       "link": "http://designlab.ucsd.edu/"
-    },{
+    },
+    {
       "name": "Jacobs School of Engineering",
       "image": "img/resourceBanner/Jacobs-School-of-Engineering.jpg",
       "link": "http://jacobsschool.ucsd.edu"
-    },{
+    },
+    {
       "name": "IDEA Learning Center",
       "image": "img/resourceBanner/IDEA-Learning-Center.jpg",
       "link": "http://jacobsschool.ucsd.edu/idea/resources/idea_studylab.shtml"
-    },{
+    },
+    {
       "name": "Conrad Prebys Music Center",
       "image": "img/resourceBanner/Conrad Prebys Music Center.jpg",
       "link": "http://musicweb.ucsd.edu/about/about-pages.php?i=441"
-    },{
+    },
+    {
       "name": "CSE Building",
       "image": "img/resourceBanner/Computer Science & Engineering Building.jpg",
       "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b"
@@ -979,10 +986,11 @@
         "/img/projectImages/hashCryptography/1.jpg",
         "/img/projectImages/hashCryptography/2.jpg"
       ],
-      "videos": [
-      ],
+      "videos": [],
       "link": "https://ucsdnews.ucsd.edu/pressrelease/computer_science_major_honored_for_undergraduate_research_in_applied_crypto",
-      "tags": ["re"]
+      "tags": [
+        "re"
+      ]
     },
     {
       "name": "California Micromouse Competition",
@@ -1019,10 +1027,11 @@
         "/img/projectImages/endless/4.jpg",
         "/img/projectImages/endless/5.jpg"
       ],
-      "videos": [
-      ],
+      "videos": [],
       "link": false,
-      "tags": ["ga"]
+      "tags": [
+        "ga"
+      ]
     },
     {
       "name": "Gentrification in San Diego",
@@ -1136,7 +1145,7 @@
       "dark": false
     },
     {
-      "name":"CSforeach",
+      "name": "CSforeach",
       "description": "CS foreach is a non-profit student organization with the goal of increasing access to Computer Science education throughout San Diego county by initiating efforts to teach in underserved communities and cultivating mentorship between UCSD and K-12 students.",
       "orgImage": "img/OrgLogos/CSforeach.png",
       "link": "http://csforeach.ucsd.edu/",
@@ -1146,7 +1155,7 @@
       "dark": false
     },
     {
-      "name":"Data Science Student Society",
+      "name": "Data Science Student Society",
       "description": "The Data Science Student Society at UCSD is an interdisciplinary academic organization designed to immerse the community in the diverse and growing facets of Data Science: Machine Learning, Computational Statistics, Data Mining, Visualization, Predictive Analytics, and any new emerging relevant fields of study. With practical hands-on data projects, a professional portfolio-building approach, and fun outreach activities, the Data Science Student Society at UCSD strives to enrich the academic life of the student community by strengthening them for success in their current and future pursuits of Data Science related fields.",
       "orgImage": "img/OrgLogos/DS3.png",
       "link": "http://ds3.ucsd.edu/",
@@ -1198,7 +1207,7 @@
       "dark": false
     },
     {
-      "name":"Game Development Studio",
+      "name": "Game Development Studio",
       "description": "The Game Development Studio (GDS) is an UCSD student organization dedicated to helping students gain experience in game design through collaborative projects. They are dedicated to working with a number of different platforms such as iPhones, Androids, and PCs. GDS is open to students from all different majors and backgrounds to join the club.",
       "orgImage": "img/OrgLogos/GameDevStudio.png",
       "link": "https://www.facebook.com/groups/GameDevStudio/",
@@ -1241,7 +1250,7 @@
       "dark": false
     },
     {
-      "name":"Triton 3D",
+      "name": "Triton 3D",
       "description": "Triton 3D was founded by students with an interest in the applications of additive manufacturing and rapid prototyping. The goal was that in doing so, they could bring together students of all levels of experience that had an interest. From its inception in January 2015, Triton 3D had humble beginnings as a loose aggregate of students who were interested in 3D printing technology, but quickly grew into the school’s premiere source for 3D printing expertise and support.<br><br>Today, the organization has several active project teams with professors on cutting edge research, runs regular tutorials on CAD design and 3D printing, and provides technical support and advancement with existing design studios on campus.",
       "orgImage": "img/OrgLogos/Triton3D.png",
       "link": "http://t3d.ucsd.edu/",
@@ -1252,7 +1261,7 @@
       "dark": false
     },
     {
-      "name":"UCSD IEEE",
+      "name": "UCSD IEEE",
       "description": "IEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.<br><br>It is a non-profit organization, is the world’s leading professional association for the advancement of technology. Through its global membership, the IEEE is a leading authority on areas ranging from aerospace systems, computers and telecommunications to biomedical engineering, electric power and consumer electronics among others.<br><br>Members rely on the IEEE as a source of technical and professional information, resources and services. To foster an interest in the engineering profession, the IEEE also serves student members in colleges and universities around the world. Other important constituencies include prospective members and organizations that purchase IEEE products and participate in conferences or other IEEE programs.",
       "orgImage": "img/OrgLogos/IEEE.png",
       "link": "http://ieeeucsd.org/",
@@ -1262,7 +1271,7 @@
       "dark": false
     },
     {
-      "name":"UCSD AUVSI",
+      "name": "UCSD AUVSI",
       "description": "The UC San Diego Autonomous Airplane Team designs, builds, tests and flies their own autonomous flying vehicle. They design their system from the ground up, do their own engineering, and fabricate the final product themselves. They find their own sponsors, manage their own resources, and conduct their own public relations. Their test pilots are students or professional volunteers. Student designed. Student built. Student competition.",
       "orgImage": "img/CP Generic Icon.jpg",
       "link": "http://auvsi.ucsd.edu/",
@@ -1315,7 +1324,7 @@
       "dark": true
     },
     {
-      "name":"24fps",
+      "name": "24fps",
       "description": "24FPS is a film fluency and production club curated to include individuals interested and motivated about learning about film history, production, and experimentation within the medium. This club aims to give voice and purpose to media makers on campus, encouraging collaboration towards final cinematic projects. Members are given an opportunity to learn from the ground up as independent filmmakers and critics, using their ingenuity, arguments, and peers to establish skills in media. Meetings consist of open forum discussion, project assignments, and networking. ",
       "orgImage": "img/CP Generic Icon.jpg",
       "link": "https://www.facebook.com/24FPSucsd/",
