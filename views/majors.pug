@@ -67,8 +67,8 @@ block main
 										div(class='col-12 col-sm-6 col-xl-12')
 											h5 MORE INFORMATION
 											ul
-												each w in majors[i].websites
-													a(href=w class='link') Major Website
+												each info in majors[i].moreInfo
+													a(href=info.link class='link') #{info.name}
 								if (majorExpand[majors[i].short])
 									- let ex = majorExpand[majors[i].short]
 									div(class='col-12 flex-last expand')

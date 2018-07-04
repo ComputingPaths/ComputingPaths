@@ -104,9 +104,15 @@
         "bie"
       ],
       "hook": "Bioinformatics majors address the growing need for trained computational biologists in the rapidly growing field of biological data analysis.",
-      "websites": [
-        "http://www.be.ucsd.edu/bioinformatics",
-        "http://www.be.ucsd.edu/bioinformatics-flowchart"
+      "moreInfo": [
+        {
+          "name": "Major Website",
+          "link": "http://www.be.ucsd.edu/bioinformatics"
+        },
+        {
+          "name": "Major Flowchart",
+          "link": "http://www.be.ucsd.edu/bioinformatics-flowchart"
+        }
       ],
       "image": "/img/Bioinformatics.jpg",
       "short": "bio"
@@ -119,8 +125,11 @@
         "cog"
       ],
       "hook": "Cognitive Science students are at the forefront of researching solutions and developing technology designed to better suit humanity.",
-      "websites": [
-        "http://www.cogsci.ucsd.edu/undergraduates/major/index.html"
+      "moreInfo": [
+        {
+          "name": "Major Website",
+          "link": "http://www.cogsci.ucsd.edu/undergraduates/major/index.html"
+        }
       ],
       "image": "/img/CognitiveScience.jpg",
       "short": "cog"
@@ -133,8 +142,11 @@
         "cse"
       ],
       "hook": "Computer science students gain knowledge in key computing theories and languages, directly preparing them to enter high tech industry.",
-      "websites": [
-        "https://cse.ucsd.edu/"
+      "moreInfo": [
+        {
+          "name": "Major Website",
+          "link": "https://cse.ucsd.edu/"
+        }
       ],
       "image": "/img/ComputerScience.jpg",
       "short": "cse"
@@ -148,8 +160,11 @@
         "ece"
       ],
       "hook": "Electrical and Computer Engineering students unite principles of mathematics and science to become architects of electronic systems.",
-      "websites": [
-        "http://www.ece.ucsd.edu/"
+      "moreInfo": [
+        {
+          "name": "Major Website",
+          "link": "http://www.ece.ucsd.edu/"
+        }
       ],
       "image": "/img/ElectricalEngineering.jpg",
       "short": "ece",
@@ -163,8 +178,11 @@
         "mat"
       ],
       "hook": "Mathematics–Computer Science students focus on the intersection between mathematics and theoretical computer science.",
-      "websites": [
-        "https://math.ucsd.edu/"
+      "moreInfo": [
+        {
+          "name": "Major Website",
+          "link": "https://math.ucsd.edu/"
+        }
       ],
       "image": "/img/Math-CS.jpg",
       "short": "mcs"
@@ -179,9 +197,15 @@
         "cse"
       ],
       "hook": "Scientific Computation majors bridge the gap between applied mathematics, physics, and computer science.",
-      "websites": [
-        "https://math.ucsd.edu/",
-        "https://physics.ucsd.edu/"
+      "moreInfo": [
+        {
+          "name": "Math Department",
+          "link": "https://math.ucsd.edu/"
+        },
+        {
+          "name": "Physics Department",
+          "link": "https://physics.ucsd.edu/"
+        }
       ],
       "image": "/img/SciComp.jpg",
       "short": "sci"
@@ -195,9 +219,15 @@
         "mus"
       ],
       "hook": "Interdisciplinary Computing and the Arts students embody the new generation of artists and musicians.",
-      "websites": [
-        "http://musicweb.ucsd.edu/ugrad/ugrad-pages.php?i=103",
-        "http://visarts.ucsd.edu/icam-interdisciplinary-computing-and-arts-minor"
+      "moreInfo": [
+        {
+          "name": "Music ICAM",
+          "link": "http://musicweb.ucsd.edu/ugrad/ugrad-pages.php?i=103"
+        },
+        {
+          "name": "Visual Arts ICAM",
+          "link": "https://visarts.ucsd.edu/undergrad/major-req/icam.html"
+        }
       ],
       "image": "/img/ICAM.jpg",
       "short": "ica",
@@ -211,8 +241,11 @@
         "vis"
       ],
       "hook": "Speculative Design is a 21st century mix of art, science, and emerging technology focused on aesthetic and entrepreneurial and activist intervention.",
-      "websites": [
-        "https://visarts.ucsd.edu/undergrad/major-req/spec-design.html"
+      "moreInfo": [
+        {
+          "name": "Major Website",
+          "link": "https://visarts.ucsd.edu/undergrad/major-req/spec-design.html"
+        }
       ],
       "image": "/img/SpecDesign.jpg",
       "short": "spc"
@@ -227,8 +260,11 @@
         "mat"
       ],
       "hook": "Data scientists use mathematics and computing to tackle the emerging need for data analysis in a wide range of industries.",
-      "websites": [
-        "http://dsc.ucsd.edu/"
+      "moreInfo": [
+        {
+          "name": "Major Website",
+          "link": "http://dsc.ucsd.edu/"
+        }
       ],
       "image": "/img/DataScience.jpg",
       "short": "dat"
