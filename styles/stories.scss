@@ -93,6 +93,27 @@
 			display: flex;
 			flex-direction: column;
 
+			div{
+				order: 2;
+				margin: 0;
+				padding: 0;
+
+				
+				div{
+					.right{
+						float: right;
+						font-size: 18px;
+					}
+				}
+				
+			}
+
+			a{
+
+				margin-bottom: 10px;
+				order: 4;
+			}
+
 			h2 {
 				margin-bottom: 10px;
 				order: 2;

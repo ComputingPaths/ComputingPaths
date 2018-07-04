@@ -50,36 +50,61 @@ block main
 				div(class='row')
 					if (!stories[i].image)
 						div(class='story-content col-lg-10 col-12 offset-lg-1')
-							h2(class='size-20 bold') #{stories[i].name}
-							h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
 							h1(class='size-20 nor') "!{stories[i].quote}"
+							div(class = 'row')
+									div(class = 'col')
+										h2(class='size-20 bold') #{stories[i].name}
+									-if (stories[i].link != false)
+										div(class='col right')
+											a(href=stories[i].link class='right') Learn more    
+												i(class='fa fa-arrow-right')
+
+									div(class="w-100")
+									div(class='col')
+										h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
 					else
 						//- Every other story
 						- var even = i % 2 === 0
 
 						//- Image left (even)
 						if (even)
+							
 							div(class='hidden-md-down col-sm-3')
-								img(src=stories[i].image)
+								a(href=stories[i].link)
+									img(src=stories[i].image)
 						div(class='hidden-lg-up col-12' id='center-img')
 							img(class='mx-auto' src=stories[i].image)
 
 						//- Quote Offset (even)
-						if (even)
+						if (even && stories.link)
 							div(class='story-content col-12 col-lg-8 offset-lg-1')
+								//-#{stories[i].link}
 								h2(class='size-20 bold') #{stories[i].name}
 								h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
 								h1(class='size-24') "#{stories[i].quote}"
 						else
 							div(class='story-content col-12 col-lg-8')
-								h2(class='size-20 bold') #{stories[i].name}
-								h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
+								
 								h1(class='size-24') "#{stories[i].quote}"
+								div(class = 'row')
+									div(class = 'col')
+										h2(class='size-20 bold') #{stories[i].name}
+									-if (stories[i].link !=  false)
+										div(class='col right')
+											a(href=stories[i].link class='right') Learn more    
+												i(class='fa fa-arrow-right')
+
+									div(class="w-100")
+									div(class='col')
+										h3(class='light size-18 nor') #{stories[i].major} #{theirRole}
+									
+
 
 						//- Image right (odd)
 						if (!even)
-							div(class='hidden-md-down col-sm-3 offset-lg-1')
-								img( src=stories[i].image)
+								div(class='hidden-md-down col-sm-3 offset-lg-1')
+									a(href=stories[i].link class='right')
+										img( src=stories[i].image)
  
 	div(class='next-steps')
 		div(class='section-header')            
