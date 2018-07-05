@@ -625,6 +625,16 @@
       ]
     },
     {
+      "name": "HandShake",
+      "description": "A career services platform that connects students and employers to democratize the job finding experience in college and beyond.",
+      "mapImage": "img/CP Generic Icon.jpg",
+      "link": "https://ucsd.joinhandshake.com/",
+      "tags": [
+        "ev",
+        "sc"
+      ]
+    },
+    {
       "name": "H.A.R.D. Hack",
       "description": "Hash out. Analyze. Research. Design. All core steps of overcoming engineering challenges. The HARD Hack is a 24 hour hardware centered hackathon hosted by IEEE and HKN.",
       "mapImage": "img/JacobsBldg.jpg",
