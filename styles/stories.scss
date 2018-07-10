@@ -93,8 +93,12 @@
 			display: flex;
 			flex-direction: column;
 
+			img{
+				order: 1;
+			}
+
 			div{
-				order: 2;
+				order: 3;
 				margin: 0;
 				padding: 0;
 
@@ -102,7 +106,12 @@
 				div{
 					.right{
 						float: right;
-						font-size: 18px;
+						font-size: 19px;
+					}
+					
+					.left{
+						float:left;
+						padding-left:0px;
 					}
 				}
 				
@@ -110,22 +119,22 @@
 
 			a{
 				margin-bottom: 10px;
-				order: 4;
+				order: 5;
 			}
 
 			h2 {
 				margin-bottom: 10px;
-				order: 2;
+				order: 3;
 			}
 
 			h3 {
 				margin-bottom: 10px;
-				order: 3;
+				order: 4;
 			}
 
 			h1 {
 				margin-bottom: 32px;
-				order: 1;
+				order: 2;
 				line-height: 1.5;
 				font-weight: 400;
 			}
