@@ -533,7 +533,8 @@
       "mapImage": "img/CP Generic Icon.jpg",
       "link": "https://cses.ucsd.edu/devfair/",
       "tags": [
-        "ev"
+        "ev",
+        "cr"
       ]
     },
     {
@@ -565,7 +566,8 @@
       "link": "http://tesc.ucsd.edu/decaf/",
       "tags": [
         "bs",
-        "ws"
+        "ws",
+        "cr"
       ]
     },
     {
@@ -637,7 +639,8 @@
       "link": "https://ucsd.joinhandshake.com/",
       "tags": [
         "ev",
-        "sc"
+        "sc",
+        "cr"
       ]
     },
     {
@@ -880,6 +883,7 @@
   "resourceTags": {
     "as": "Academic Support",
     "bs": "Buildings",
+    "cr": "Careers",
     "ev": "Events",
     "sc": "Showcases",
     "eq": "Equipment",
