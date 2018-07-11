@@ -1,5 +1,5 @@
 // predefined colors of tags
-let colors = ['#EDABFF', '#ABDBFF', '#F9EE6D', '#FF8585', '#50E3C2', '#FFD5AD', '#C2ADFF']
+let colors = ['#EDABFF', '#ABDBFF', '#F8DE7E', '#FF8585', '#50E3C2', '#FFD5AD', '#C2ADFF']
 let grey = '#C6D1D7'
 
 // initilize the tagging and filtering system

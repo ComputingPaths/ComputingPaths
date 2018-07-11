@@ -52,11 +52,11 @@
       "link": "https://www.youtube.com/watch?v=W4phVBHBhxY"
     },
     {
-      "name": "Terry Zhou",
-      "class": "2018",
-      "quote":"I had a robot project in high school… That was the first time I programmed software that applied to hardware. You can see how the robot moves and you have to program how it moves instead of focusing on purely software or hardware. That’s when I realized that Computer Engineering is more interesting than pure CS or EE.  If you’re interested in EE, switch into an EE major. If you’re interested in CS, switch to a CS major. If you’re not sure and you like both, you should do CE.",
-      "image": "/img/TerryZhou.jpg",
-      "link": "https://www.youtube.com/watch?v=KFRKsQoiU18"
+      "name": "Jason Sandoval",
+      "role": "Veteran | Arista Networks Engineer",
+      "quote":"I transferred in to UCSD from Mesa college. Before that, I was in the Air Force for 9 years. When I was in the Air Force, I had the chance to train into a different job so I decided to try programming. Programing in the Air Force is not “real programming”. It’s a little strange, but I got a little taste of it. So when I got out of the Air Force, did some contract work, and decided I wanted to do something else; that’s why I headed to programming.",
+      "image": "/img/JasonSandoval.jpg",
+      "link": "https://www.youtube.com/watch?v=WNtRl2kWOGQ"
     },
     {
       "name": "Ben Breidenthal",
@@ -64,13 +64,6 @@
       "quote":"I didn’t do any programming until I took beginning Java classes at Mira Costa, but I wasn’t really into it. But once I took MUS 176 with Tom Erbe, and we looked at C++ and making audio effects plugins, that’s when I started to really get into programming. I’ve been able to heavily apply everything that I’m interested in on all of my projects.",
       "image": "/img/BenBreidenthal.jpg",
       "link": "https://www.youtube.com/watch?v=sph31UwzNIY"
-    },
-    {
-      "name": "Jason Sandoval",
-      "role": "Veteran | Arista Networks Engineer",
-      "quote":"I transferred in to UCSD from Mesa college. Before that, I was in the Air Force for 9 years. When I was in the Air Force, I had the chance to train into a different job so I decided to try programming. Programing in the Air Force is not “real programming”. It’s a little strange, but I got a little taste of it. So when I got out of the Air Force, did some contract work, and decided I wanted to do something else; that’s why I headed to programming.",
-      "image": "/img/JasonSandoval.jpg",
-      "link": "https://www.youtube.com/watch?v=WNtRl2kWOGQ"
     },
     {
       "name": "Julian D’Angelo",
@@ -102,6 +95,13 @@
       "quote":"When I was an undergraduate degree in 2000, my sister recognized my interest in biology and skill set in computer science and told me that there was an emerging field called bioinformatics, but that there were no degrees for it yet. This led me to choose courses in my undergraduate degree that would prepare me to be a bioinformatics researcher.",
       "image": "/img/SamPayne.jpg",
       "link": "https://www.youtube.com/watch?v=BZhqgHJkTxk"
+    },
+    {
+      "name": "Terry Zhou",
+      "class": "2018",
+      "quote":"I had a robot project in high school… That was the first time I programmed software that applied to hardware. You can see how the robot moves and you have to program how it moves instead of focusing on purely software or hardware. That’s when I realized that Computer Engineering is more interesting than pure CS or EE.  If you’re interested in EE, switch into an EE major. If you’re interested in CS, switch to a CS major. If you’re not sure and you like both, you should do CE.",
+      "image": "/img/TerryZhou.jpg",
+      "link": "https://www.youtube.com/watch?v=KFRKsQoiU18"
     },
     {
       "name": "Hannah Chou",
@@ -443,7 +443,7 @@
     },
     {
       "name": "Content Tutoring",
-      "description": "Drop-in tutoring is available for Math, Physics, and Chemistry. All tutoring sessions will in the Teaching + Learning Commons, no appointment necessary.Tutors will assist students on a first-come/first-helped basis. There may be a short wait if many students are seeking tutoring for the same course. The tutor may assist up to 3 students at a time for the same course in 20-minute session or slightly longer if no students are waiting.",
+      "description": "The Teaching + Learning Commons is the foundation for achieving the university’s goal to be a student-centered university. Its programs and services create a contiguous, multi-layered network of support that jointly enhance learning and increase academic success. Specifically, The Commons: Advances teaching excellence and student academic success; Analyzes and tracks students’ academic success and assesses student and instructional success initiatives; Increases access to education on campus and beyond; Drop-in tutoring is available for Math, Physics, and Chemistry. Tutors will assist students on a first-come/first-helped basis.",
       "mapImage": "img/GeiselLib.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163025",
       "link": "http://commons.ucsd.edu/students/math-chemistry-tutoring/",
