@@ -717,6 +717,19 @@
       ]
     },
     {
+      "name": "Mandeville",
+      "description": " The Mandeville Center houses visual arts class and conference rooms, staff offices, student advising, computer lab, digital photography lab, the Adam D. Kamil Gallery, the undergraduate wood and metal shop, as well as the University Art Gallery.",
+      "mapImage": "img/MandevilleBldg.jpg",
+      "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=229230",
+      "link": "http://mandeville.ucsd.edu/",
+      "tags": [
+        "bd",
+        "ws",
+        "as",
+        "ga"
+      ]
+    },
+    {
       "name": "Media Teaching Lab",
       "description": "Located in the Communications Building, the Media Teaching Lab offers outstanding media facilities, equipment, and technical assistance provided to students and faculty. The facility offers rental services for equipment and workshops to learn software, photography work, and lighting. The Media Teaching Lab's aim is to facilitate students in making the highest quality videos and films with excellent sound, editing, and cinematography. The space also holds regular workshops and events to educate students in editing, HD workflow, cameras, and lighting all throughout the quarter.",
       "mapImage": "img/CommBldg.jpg",
@@ -866,7 +879,8 @@
       "link": "https://visarts.ucsd.edu/about/facilities.html",
       "tags": [
         "bs",
-        "ws"
+        "ws",
+        "bd"
       ]
     },
     {
