@@ -1316,9 +1316,9 @@
       "dark": false
     },
     {
-      "name": "Society of Undergraduate Mathematics Students",
-      "description": "The Society for Undergraduate Mathematics Students (SUMS) hosts various seminars dealing with graduate education, careers, and topics in mathematics to provide resources for their members. They also hold social events in order for mathematically-inclined people to meet and exchange ideas.",
-      "orgImage": "img/CP Generic Icon.jpg",
+      "name": "Society of Undergraduate Mathematics Students(SUMS)",
+      "description": "SUMS strives to serve UCSD’s mathematics community and department by promoting mathematics and related fields and industries. SUMS hosts talks, technical workshops, professional events, panels, peer advising, and social events in a collaboration among like-minded students, faculty, and staff.",
+      "orgImage": "img/OrgLogos/SUMS.png",
       "link": "http://sums.ucsd.edu/",
       "tags": [
         "en",
