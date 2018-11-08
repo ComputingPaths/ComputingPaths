@@ -39,6 +39,7 @@ function majorsSection() {
   })
 }
 
+
 function initProjCarousel() {
   let carousel = $('.carousel')
   let projs = $('.projects .proj-card')
@@ -116,9 +117,45 @@ function initProjCarousel() {
   })
 }
 
+function initHeaderCarousel() {
+  let carousel = $('.carousel')
+  let indicator = $('.departments nav div')
+  let pi = 0;
+
+  // update the indicators on the carousel
+  let updateIndicator = newIndex => {
+    indicator.children().eq(pi).removeClass('active')
+    pi = newIndex
+    indicator.children().eq(pi).addClass('active')
+  }
+  
+  // handle click event for projects carousel left scroll
+  $('.prev-proj').click(() => {
+    try {
+      console.log('prev click')
+      carousel.carousel('prev')
+      updateIndicator((pi - 1 + indicator.children().length) % indicator.children().length)
+    }
+    catch (err) {
+    }
+  })
+
+  // handle click event for projects carousel right scroll
+  $('.next-proj').click(() => {
+    try {
+      carousel.carousel('next')
+      updateIndicator((pi + 1) % indicator.children().length)
+    }
+    catch (err) {
+    }
+  })
+   
+}
+
 $(document).ready(() => {
   majorsSection()
   initProjCarousel()
+  $('.carousel').carousel()
 
     //source: https://stackoverflow.com/questions/21349984/how-to-make-bootstrap-carousel-slider-use-mobile-left-right-swipe
   $(".carousel").on("touchstart", function(event){
