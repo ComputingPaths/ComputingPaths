@@ -40,7 +40,7 @@ function majorsSection() {
 }
 
 function initProjCarousel() {
-  let carousel = $('.carousel')
+  let carousel = $('#carouselExampleControls')
   let projs = $('.projects .proj-card')
   let inner = $('.projects .carousel-inner')
   let indicator = $('.projects nav div')
