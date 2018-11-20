@@ -11,10 +11,30 @@
   background-color: $exlightblue;
 }
 
-
 #topCarousel img {
   width: 100%;
   height: 600px;
+}
+
+#mobile-carousel-caption {
+  visibility: hidden;
+}
+
+#top-carousel-caption {
+  visibility: visible
+}
+
+@media screen and (max-width: 800px) {
+  #topCarousel img {
+    width: 100%;
+    height: 300px;
+  }
+  #mobile-carousel-caption {
+    visibility: visible;
+  }
+  #top-carousel-caption {
+    visibility: hidden;
+  }
 }
 
 .title {
