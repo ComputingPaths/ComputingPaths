@@ -10,7 +10,7 @@ block script
 block main
   div(class='title')
     div(class='container-fluid')
-      div(class='row')
+      div(class='row no-gutters')
         div(class='col-sm-12')
           div(id='topCarousel' class='carousel slide' data-ride='carousel')
             //- Indicators
@@ -23,7 +23,7 @@ block main
             div(class="carousel-inner")
               div(class="carousel-item active")
                 img(src="https://oneclassblog.com/wp-content/uploads/2018/07/maxresdefault-3.jpg")
-                div(class="carousel-caption d-none d-md-block")
+                div(class="carousel-caption d-none d-md-block" id="top-carousel-caption")
                   h1(class='col-12') Discover your path.
                   h2(class='col-12') Find out how to make computing part of your journey.
               div(class="carousel-item")
@@ -39,6 +39,12 @@ block main
               span(class="carousel-control-next-icon")
               span(class="sr-only") Next
   
+  div(class="container" id="mobile-carousel-caption")
+    div(class="row no-gutters")
+      div(class="col-12 text-left`")
+        h3(class="font-weight-bold") Discover your path.
+        h4 Find out how to make computing part of your journey.
+
   div(class='stories section')
     div(class='section-header')
       h1 Stories &amp; Advice
