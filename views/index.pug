@@ -23,14 +23,10 @@ block main
             div(class="carousel-inner")
               div(class="carousel-item active")
                 img(src="https://oneclassblog.com/wp-content/uploads/2018/07/maxresdefault-3.jpg")
-                div(class="carousel-caption d-none d-md-block" id="top-carousel-caption")
-                  h1(class='col-12') Discover your path.
-                  h2(class='col-12') Find out how to make computing part of your journey.
               div(class="carousel-item")
                 img(src="img/ElectricalEngineering.jpg")
               div(class="carousel-item")
                 img(src="http://vision.ucsd.edu/cse_bldg_hires.jpg")
-
             //- Left & Right Controls
             a(class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev")
               span(class="carousel-control-prev-icon")
@@ -38,7 +34,10 @@ block main
             a(class="carousel-control-next" href="#topCarousel" role="button" data-slide="next")
               span(class="carousel-control-next-icon")
               span(class="sr-only") Next
-  
+          div(class="carousel-caption d-none d-md-block" id="top-carousel-caption")
+            h1(class='col-12') Discover your path.
+            h2(class='col-12') Find out how to make computing part of your journey.
+
   div(class="container" id="mobile-carousel-caption")
     div(class="row no-gutters")
       div(class="col-12 text-left`")
@@ -57,7 +56,7 @@ block main
             h2(class="med") "What sealed the deal on software engineering for me was that rush you get when something finally works."
             h3(class="bold") Rachel Keirouz <span>| Mathematics-Computer Science</span>
       a(class='link-btn' href=pages[0].link) Read their stories
-      
+
   div(class='majors section')
     div(class='section-header')
       h1 The Majors
@@ -75,7 +74,7 @@ block main
           a(class='link-btn hidden-md-down' href=pages[1].link) Explore the majors
         main(class='col-lg-7')
           each m in majors
-            img(src=m.image class='img-fluid')   
+            img(src=m.image class='img-fluid')
           div
             article
               h1
@@ -90,8 +89,8 @@ block main
         a(id='next-major')
           i(class='fa fa-arrow-right fa-2x')
       a(class='link-btn hidden-lg-up' href=pages[1].link) Explore the majors
-        
-        
+
+
   div(class='orgs section')
     div(class='section-header')
       h1 Connect
@@ -101,7 +100,7 @@ block main
         a(href='/connect.html')
           img(src='/img/longimage.png')
       a(class='link-btn' href=href=pages[2].link) Get involved
-      
+
   div(class='projects section')
     div(class='section-header')
       h1 Triton Projects
@@ -130,7 +129,7 @@ block main
           i(class='fa fa-arrow-right fa-2x')
 
       a(class='link-btn' href='/projects.html') More Triton projects
-      
+
   div(class='resources section')
     div(class='section-header')
       h1 Start Exploring
