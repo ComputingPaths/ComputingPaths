@@ -25,7 +25,7 @@
     font-size: 36px;
     margin: 0;
   }
-  
+
   a {
     position: absolute;
     top:50%;
@@ -33,21 +33,25 @@
   }
 
   .control-next {
-    right:0;   
+    right:0;
   }
-  
+
   i {
     position: absolute;
     top:50%;
   }
 
   .fa-arrow-right {
-    right: 0;   
+    right: 0;
   }
 
   .fa-arrow-left {
-    left: 0;   
+    left: 0;
   }
+}
+
+#topCarousel {
+  margin-top:70px;
 }
 
 @media (max-width: $lg) {
@@ -58,7 +62,7 @@
       font-size: 48px;
       margin-bottom: 12px;
     }
-  
+
     h2 {
       font-size: 32px;
     }
@@ -69,11 +73,11 @@
   .title {
     margin-top: 0;
     padding: 0!important;
-    
+
     h1 {
       font-size: 36px;
     }
-  
+
     h2 {
       font-size: 20px;
     }
