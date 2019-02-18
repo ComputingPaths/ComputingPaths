@@ -71,7 +71,7 @@
       "quote":"I chose Bioinformatics because it’s extremely multidisciplinary. I also chose the major because of the inevitability of importance of computational skills and programming, because that’s where science fields in general are going.",
       "image": "/img/JulianDAngelo.jpg",
       "link": "https://www.youtube.com/watch?v=RxAmu_XOtfA"
-    
+
     },
     {
       "name": "Rachel Kim",
@@ -478,7 +478,7 @@
       "description": "Located along the Warren Mall, The Computer Science and Engineering building was designed to create a sense of community among the department's faculty, staff, students, and visitors. \"Interaction spaces\" for scholarly activity are located throughout the building where graduate and undergraduate students can drop in to discuss classroom topics, share research ideas, or hold casual conversations. The building houses laboratories dedicated to undergraduate instruction, as well as research facilities designed for ultimate flexibility so faculty and researchers can work on the technologies of the future.",
       "mapImage": "img/CSEBldg.jpg",
       "mapLink": "https://maps.ucsd.edu/map/?id=1005&mrkIid=163049",
-      "link": "https://cse.ucsd.edu/about/computer-science-and-engineering-building-ebu3b",
+      "link": "https://cse.ucsd.edu/about/our-building",
       "tags": [
         "as",
         "ws"
@@ -541,8 +541,8 @@
       "name": "Digital Media Lab",
       "description": "Geisel Library's Digital Media Lab (DML) is open to all UCSD faculty, staff, and students, providing a space for media creation and editing. It is located in the Geisel East Commons, on the 2nd floor. Specific capabilities include free 3D printing, video editing (e.g., Final Cut, iMovie, Camtasia), image manipulation (e.g., Photoshop, Illustrator, After Effects), sound editing (e.g., Adobe Audition, Garageband), media-rich website creation (e.g., Dreamweaver, Flash, Filezilla), and basic productivity (e.g., MS Office, web browsers, Adobe Acrobat Pro). The DML is now offering support for app development, with Unity, Android Studio, and Steam enabled on all Windows workstations.",
       "mapImage": "img/GeiselLib.jpg",
-      "mapLink": "map3link",
-      "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/",
+      "mapLink": "https://maps.ucsd.edu/map/Default.htm?id=1005&mrkIid=163049",
+      "link": "https://library.ucsd.edu/computing-and-technology/digital-media-lab/index.html",
       "tags": [
         "eq",
         "ws"
@@ -775,7 +775,7 @@
       "name": "OASIS - 2Excel",
       "description": "2Excel is a retention program serving second-year students. The program is a year-long commitment starting Fall through Spring quarter.",
       "mapImage": "img/CP Generic Icon.jpg",
-      "link": "https://oasis.ucsd.edu/programs/2excel.html",
+      "link": "https://oasis.ucsd.edu/programs/2nd-year/index.html",
       "tags": [
         "as"
       ]
