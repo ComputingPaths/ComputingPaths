@@ -131,11 +131,7 @@
       "moreInfo": [
         {
           "name": "Major Website",
-          "link": "http://www.be.ucsd.edu/bioinformatics"
-        },
-        {
-          "name": "Major Flowchart",
-          "link": "http://www.be.ucsd.edu/bioinformatics-flowchart"
+          "link": "https://biology.ucsd.edu/education/undergrad/maj-min/majors/index.html"
         }
       ],
       "image": "/img/Bioinformatics.jpg",
@@ -333,7 +329,7 @@
     }
   },
   "majorDescriptions": {
-    "bio": "Bioinformatics majors utilize computation to understand, interpret, and analyze the flow of information in biological systems. This major is offered separately by four UCSD departments: Biology, Computer Science, Bioengineering, and Chemistry. These four departments offer rigorous and interdisciplinary trainings for this new and evolving field. All of these departments provide courses on molecular biology, computer science and mathematics, while offering emphasis on each of their respective department subjects.",
+    "bio": "The Bioinformatics major offers rigorous, interdisciplinary training in the rapidly growing and evolving field of bioinformatics within the Division of Biological Sciences. Bioinformatics uses computational approaches to analyze biological data (e.g., large scale genomic, proteomic, and metabolomic datasets) to investigate living organisms and their communities. An understanding of the qualitative and quantitative biological data that are accruing, and the tools used to analyze them, requires substantial mastery of biology, chemistry, mathematics, physics, and computer science. The interdisciplinary bioinformatics specialization will be offered by two other departments (computer science and engineering and bioengineering). All three versions of the bioinformatics specialization share a common set of core requirements, and also have distinct requirements reflecting each unit’s academic focus.",
     "cog": "The Cognitive Science major is an interdisciplinary and diverse field that blends the understanding of the brain, human behavior, and computation. Students can choose to explore specializations that span a wide breadth of disciplines including: neural/biological sciences, computational sciences, machine learning, cognitive modeling, cognitive/machine perception, computational neuroscience, social sciences, and design.  Graduates of this program often go on to graduate school or work in research, UX and product design, and data analysis.",
     "cse": "The Computer Science major allows students to initially explore computer science through algorithmic problem solving and programming in various languages, including Java and C. Students then progress to topics involving a deeper understanding of computer systems including advanced data structures and computer architecture. Additional elective courses provide depth into systems and networks, database analysis, security and cryptography topics, machine learning, computer vision, and graphics.<br> Many graduates of this program go on to graduate school or choose careers that involve machine automation, UI/UX design, data analytics, application development, artificial intelligence, networking, and security.",
     "ece": "Both Computer Engineering and Electrical Engineering involve understanding of electricity, electronics, and electromagnetism in addition to computational knowledge. Students can choose to have more of a balance between software and hardware as computer engineers or a greater emphasis on hardware as electrical engineers.",
@@ -349,7 +345,7 @@
       "data": [
         {
           "name": "Biology - Bioinformatics",
-          "detail": "The Biology - Bioinformatics major takes an interdisciplinary approach to biological study, applying computational methods to biological data analysis to investigate living organisms and their communities. This major exposes students to various fields of study, with an emphasis on understanding biological systems. Students analyze biological data, utilizing techniques in chemistry, mathematics, physics, and computer science. This degree will prepare students for graduate studies in biological and biomedical sciences, and provide training for work in the biomedical, pharmaceutical, biotechnology, and bioinformatics industries."
+          "detail": "The Biology - The bioinformatics specialization offered by the Division of Biological Sciences is aimed at a student interested in applying, and to some extent developing, tools of bioinformatics for the study of biological systems. Students will receive a Bachelor of Science degree in biology with a specialization in bioinformatics. This degree will prepare students for graduate studies in biological and biomedical sciences, and provide excellent training for work in the biomedical, pharmaceutical, biotechnology, and bioinformatics industries."
         },
         {
           "name": "Computer Science - Bioinformatics",
