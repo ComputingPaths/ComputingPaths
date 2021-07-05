@@ -1295,17 +1295,6 @@
       "dark": false
     },
     {
-      "name": "Game Development Studio",
-      "description": "The Game Development Studio (GDS) is an UCSD student organization dedicated to helping students gain experience in game design through collaborative projects. They are dedicated to working with a number of different platforms such as iPhones, Androids, and PCs. GDS is open to students from all different majors and backgrounds to join the club.",
-      "orgImage": "img/OrgLogos/GameDevStudio.png",
-      "link": "https://www.facebook.com/groups/GameDevStudio/",
-      "tags": [
-        "cs",
-        "ad"
-      ],
-      "dark": false
-    },
-    {
       "name": "Society of Women Engineering(SWE)",
       "description": "An organization dedicated to promoting women in engineering and science. Everybody is welcome to join, provided that they support women in engineering.",
       "orgImage": "img/OrgLogos/SWE.png",
@@ -1334,17 +1323,6 @@
       "link": "http://tesc.ucsd.edu/",
       "tags": [
         "en"
-      ],
-      "dark": false
-    },
-    {
-      "name": "Triton 3D",
-      "description": "Triton 3D was founded by students with an interest in the applications of additive manufacturing and rapid prototyping. The goal was that in doing so, they could bring together students of all levels of experience that had an interest. From its inception in January 2015, Triton 3D had humble beginnings as a loose aggregate of students who were interested in 3D printing technology, but quickly grew into the school’s premiere source for 3D printing expertise and support.<br><br>Today, the organization has several active project teams with professors on cutting edge research, runs regular tutorials on CAD design and 3D printing, and provides technical support and advancement with existing design studios on campus.",
-      "orgImage": "img/OrgLogos/Triton3D.png",
-      "link": "http://t3d.ucsd.edu/",
-      "tags": [
-        "cs",
-        "ad"
       ],
       "dark": false
     },
@@ -1418,6 +1396,19 @@
       "link": "https://www.facebook.com/24FPSucsd/",
       "tags": [
         "ad"
+      ],
+      "dark": false
+    },
+    {
+      "name": "ACM at UCSD",
+      "description": "ACM is San Diego's largest computing organization - an inclusive community that welcomes over 1500 developers, designers, and innovators. The group is composed of 5 sub-organizations which focus on AI, Design, Security, Software Engineering, and Entrepreneurship. Together they host over 200 events each year ranging from workshops and panels to hikes and game nights. As a chapter the world's largest computing society, the Association for Computing Machinery connects hundreds of college campuses and thousands of computing students from around the world.",
+      "orgImage": "img/OrgLogos/ACMatUCSD.png",
+      "link": "https://acmucsd.com/",
+      "tags": [
+        "cs",
+        "ad",
+        "en",
+        "ms"
       ],
       "dark": false
     }
