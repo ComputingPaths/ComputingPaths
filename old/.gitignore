@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+.sass-cache
+public/css/*
+public/js/*
+public/*.html
+*.log
+dist
+.vscode
