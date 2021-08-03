@@ -31,5 +31,4 @@ module.exports = {
     'react/jsx-filename-extension': ['warn', { extensions: ['.ts', '.tsx'] }],
     'react/no-array-index-key': 'off'
   },
-    }
 };
