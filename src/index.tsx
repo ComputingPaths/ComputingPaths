@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import ConnectPage from './layout/containers/ConnectPage';
+import ConnectPage from './layout/containers/ConnectPage.tsx';
 import HomePage from './layout/containers/HomePage';
 import MajorPage from './layout/containers/MajorPage';
 import ProjectPage from './layout/containers/ProjectPage';
