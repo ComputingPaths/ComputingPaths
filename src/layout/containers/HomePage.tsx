@@ -1,10 +1,11 @@
 import React from 'react';
 
-import PageLayout from '../containers/PageLayout';
+import PageLayout from './PageLayout';
+import HomePage from '../components/HomePage';
 
 const HomePageContainer: React.FC = () => (
   <PageLayout>
-    Home
+    <HomePage />
   </PageLayout>
 );
 

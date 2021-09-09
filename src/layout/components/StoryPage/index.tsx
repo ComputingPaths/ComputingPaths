@@ -2,12 +2,10 @@ import React from 'react';
 
 import './style.scss';
 
-const StoryPage: React.FC = () => {
-  return (
-    <div className="story-page">
-      story
-    </div>
-  );
-};
+const StoryPage: React.FC = () => (
+  <div className="story-page">
+    Story
+  </div>
+);
 
 export default StoryPage;

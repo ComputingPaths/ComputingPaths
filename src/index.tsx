@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import ConnectPage from './layout/containers/ConnectPage.tsx';
+import ConnectPage from './layout/containers/ConnectPage';
 import HomePage from './layout/containers/HomePage';
 import MajorPage from './layout/containers/MajorPage';
 import ProjectPage from './layout/containers/ProjectPage';
 import ResourcePage from './layout/containers/ResourcePage';
 import StoryPage from './layout/containers/StoryPage';
+import Content from './content/Content';
 
 ReactDOM.render(
   <Router>
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route exact path="/projects" component={ProjectPage} />
       <Route exact path="/resources" component={ResourcePage} />
       <Route exact path="/stories" component={StoryPage} />
+      <Route exact path="/content" component={Content} />
     </Switch>
   </Router>,
   document.getElementById('root'),

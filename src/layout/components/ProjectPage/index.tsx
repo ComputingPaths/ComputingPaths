@@ -2,12 +2,10 @@ import React from 'react';
 
 import './style.scss';
 
-const ProjectPage: React.FC = () => {
-  return (
-    <div className="project-page">
-      project
-    </div>
-  );
-};
+const ProjectPage: React.FC = () => (
+  <div className="project-page">
+    Project
+  </div>
+);
 
 export default ProjectPage;

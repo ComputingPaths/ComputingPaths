@@ -1,10 +1,11 @@
 import React from 'react';
 
 import PageLayout from './PageLayout';
+import ResourcePage from '../components/ResourcePage';
 
 const ResourcePageContainer: React.FC = () => (
   <PageLayout>
-    Resource
+    <ResourcePage />
   </PageLayout>
 );
 

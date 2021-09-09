@@ -2,12 +2,10 @@ import React from 'react';
 
 import './style.scss';
 
-const MajorPage: React.FC = () => {
-  return (
-    <div className="major-page">
-      major
-    </div>
-  );
-};
+const MajorPage: React.FC = () => (
+  <div className="major-page">
+    Major
+  </div>
+);
 
 export default MajorPage;

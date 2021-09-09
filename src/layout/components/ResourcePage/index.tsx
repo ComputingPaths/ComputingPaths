@@ -2,12 +2,10 @@ import React from 'react';
 
 import './style.scss';
 
-const ResourcePage: React.FC = () => {
-  return (
-    <div className="resource-page">
-      resource
-    </div>
-  );
-};
+const ResourcePage: React.FC = () => (
+  <div className="resource-page">
+    Resource
+  </div>
+);
 
 export default ResourcePage;
