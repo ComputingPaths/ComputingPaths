@@ -26,5 +26,5 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.WEBHOOK_URL }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'PR with commit message {{ github.event.head_commit.message }} has been merged.' 
+          args: 'PR with commit message ${{ github.event.head_commit.message }} has been merged.' 
 
