@@ -7,8 +7,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,9 +21,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Sends a webhook to the discord server
-      - name: Invoke deployment hook
-        uses: distributhor/workflow-webhook@v2
+      - name: Discord notification
         env:
-          webhook_url: ${{ secrets.WEBHOOK_URL }}
-          webhook_secret: ""
+          DISCORD_WEBHOOK: ${{ secrets.WEBHOOK_URL }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'PR with commit message {{ github.event.head_commit.message }} has been merged.' 
 
