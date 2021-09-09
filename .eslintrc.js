@@ -32,5 +32,14 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
     'react/no-array-index-key': 'off',
+    'import/extensions': 'off',
   },
+  settings: {
+    'import/resolver': {
+        node: {
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            moduleDirectory: ['node_modules', 'src/'],
+        },
+    },
+  }
 };

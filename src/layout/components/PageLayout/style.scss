@@ -1,0 +1,10 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/reset.scss';
+@import '../../../styles/vars.scss';
+
+.content {
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
