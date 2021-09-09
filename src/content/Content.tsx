@@ -35,10 +35,8 @@ const Content: React.FC = () => {
 
   return (
     <div>
-      meow
       {
         typeof (data)
-        // (data && data.length) ? data.map((rating) => <h1>{rating.meow}</h1>) : null
       }
     </div>
   );
