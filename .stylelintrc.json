@@ -1,4 +1,7 @@
 {
     "plugins": [ "stylelint-order" ],
-    "extends": "stylelint-config-sass-guidelines"
+    "extends": "stylelint-config-sass-guidelines",
+    "rules": {
+        "selector-max-id": 2
+    }
 }

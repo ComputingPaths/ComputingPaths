@@ -10,6 +10,8 @@ import ResourcePage from './layout/containers/ResourcePage';
 import StoryPage from './layout/containers/StoryPage';
 import Content from './content/Content';
 
+import './index.scss';
+
 ReactDOM.render(
   <Router>
     <Switch>

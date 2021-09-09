@@ -1,0 +1,9 @@
+@import './styles/reset';
+@import './styles/fonts';
+
+html,
+body,
+#root {
+  font-family: $font-family;
+  height: 100%;
+}
