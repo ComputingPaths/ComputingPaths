@@ -1,0 +1,69 @@
+$font-family: 'Inter', sans-serif;
+
+@mixin font-display-1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+@mixin font-heading-1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+@mixin font-heading-2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+@mixin font-heading-3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+@mixin font-nav-bar-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@mixin font-subtitle-1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@mixin font-story-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@mixin font-subtitle-2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@mixin font-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin font-linked-text {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+@mixin font-footer-heading-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@mixin font-footer-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@mixin font-small-button-text {
+  font-size: 12px;
+  font-weight: 400;
+}
