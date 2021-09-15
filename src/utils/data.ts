@@ -1,7 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
-export const useData: React.FC = (page: string): Array<{}> => {
+export enum PageTypes {
+  Pages = 'pages',
+  Stories = 'stories',
+  Majors = 'majors',
+  Departments = 'departments',
+  MajorDescriptions = 'majorDescriptions',
+  MajorExpand = 'majorExpand',
+  Resources = 'resources',
+  ResourcesTags = 'resourcesTags',
+  ResourceBanner = 'resourceBanner',
+  Projects = 'projects',
+  ProjectTags = 'projectTags',
+  Orgs = 'orgs',
+  OrgTags = 'orgTags',
+}
+
+export const useData: React.FC = (page: PageTypes): Array<{}> => {
   const [data, setData] = useState([]);
 
   const contentMappings = {
