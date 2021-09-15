@@ -34,13 +34,17 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error'],
   },
   settings: {
     'import/resolver': {
-        node: {
-            extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            moduleDirectory: ['node_modules', 'src/'],
-        },
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        moduleDirectory: ['node_modules', 'src/'],
+      },
     },
-  }
+  },
 };

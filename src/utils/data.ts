@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
-export enum PageTypes {
+enum PageTypes {
   Pages = 'pages',
   Stories = 'stories',
   Majors = 'majors',
