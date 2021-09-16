@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { pages } from '../../../vars';
+
 import './style.scss';
 
 interface HeaderProps {
@@ -8,13 +10,6 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = (props) => {
   const { heroURL } = props;
-
-  const pages = [
-    { title: 'Stories', link: '/stories' }, { title: 'Majors', link: '/majors' },
-    { title: 'Student Organizations', link: '/organizations' },
-    { title: 'Projects', link: '/projects' },
-    { title: 'Resources', link: '/resources' },
-  ];
 
   return (
     <>
