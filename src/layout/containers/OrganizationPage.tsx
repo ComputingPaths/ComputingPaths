@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import PageLayout from './PageLayout';
 import OrganizationPage from '../components/OrganizationPage';
+import Footer from '../components/Footer';
 
 const OrganizationPageContainer: React.FC = () => (
   <>
@@ -10,6 +11,7 @@ const OrganizationPageContainer: React.FC = () => (
     <PageLayout>
       <OrganizationPage />
     </PageLayout>
+    <Footer />
   </>
 );
 

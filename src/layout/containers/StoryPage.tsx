@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import PageLayout from './PageLayout';
 import StoryPage from '../components/StoryPage';
+import Footer from '../components/Footer';
 
 const StoryPageContainer: React.FC = () => (
   <>
@@ -10,6 +11,7 @@ const StoryPageContainer: React.FC = () => (
     <PageLayout>
       <StoryPage />
     </PageLayout>
+    <Footer />
   </>
 );
 
