@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { useData } from '../../../utils/data';
+import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const MajorPage: React.FC = () => {
-  const data = useData('majors');
+  const data = useData(DataTypes.Majors);
 
   return (
     <div className="major-page">

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { useData } from '../../../utils/data';
+import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const ConnectPage: React.FC = () => {
-  const data = useData('orgs');
+  const data = useData(DataTypes.Orgs);
 
   return (
     <div className="connect-page">

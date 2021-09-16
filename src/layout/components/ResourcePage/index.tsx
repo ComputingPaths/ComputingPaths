@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { useData } from '../../../utils/data';
+import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const ResourcePage: React.FC = () => {
-  const data = useData('resources');
+  const data = useData(DataTypes.Resources);
 
   return (
     <div className="resource-page">

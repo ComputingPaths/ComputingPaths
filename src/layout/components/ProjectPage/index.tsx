@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { useData } from '../../../utils/data';
+import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const ProjectPage: React.FC = () => {
-  const data = useData('projects');
+  const data = useData(DataTypes.Projects);
 
   return (
     <div className="project-page">

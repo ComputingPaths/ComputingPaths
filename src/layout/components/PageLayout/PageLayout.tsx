@@ -3,7 +3,7 @@ import React from 'react';
 import './style.scss';
 
 interface PageLayoutProps {
-  children: React.ComponentClass | React.FC;
+  children: React.ReactNode;
 }
 
 const PageLayout: React.FC<PageLayoutProps> = (props) => {

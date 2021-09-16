@@ -2,12 +2,12 @@ import React from 'react';
 
 import StoryCard from '../StoryCard';
 
-import { useData } from '../../../utils/data';
+import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const StoryPage: React.FC = () => {
-  const data = useData('stories');
+  const data = useData(DataTypes.Stories);
 
   return (
     <div className="story-page">
