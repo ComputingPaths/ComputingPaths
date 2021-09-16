@@ -15,35 +15,31 @@ interface StoryCardProps {
     linkURL?: string;
 }
 
-const StoryCard: React.FC<StoryCardProps> = (props) => {
-  const {
-    leftToRight = true,
-    photoURL,
-    headingText,
-    quoteText,
-    authorName,
-    authorDescriptor,
-    linkText,
-    linkURL,
-  } = props;
-
-  return (
-    <div className="story-card">
-      {leftToRight && photoURL && <img className="story-card-photo left" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
-      <div>
-        {headingText && <p className="story-card-heading">{headingText}</p>}
-        {quoteText && <div className="story-card-quote"><p className="story-card-quote-text">{quoteText}</p></div>}
-        <div className="story-card-bottom">
-          <p>
-            {authorName && <span className="story-card-name">{authorName}</span>}
-            {authorDescriptor && <span className="story-card-descriptor">{authorDescriptor}</span>}
-          </p>
-          {linkText && linkURL && <a className="story-card-link" href={linkURL}>{linkText}<img className="story-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>}
-        </div>
+const StoryCard: React.FC<StoryCardProps> = ({
+  leftToRight = true,
+  photoURL,
+  headingText,
+  quoteText,
+  authorName,
+  authorDescriptor,
+  linkText,
+  linkURL,
+}) => (
+  <div className="story-card">
+    {leftToRight && photoURL && <img className="story-card-photo left" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
+    <div>
+      {headingText && <p className="story-card-heading">{headingText}</p>}
+      {quoteText && <div className="story-card-quote"><p className="story-card-quote-text">{quoteText}</p></div>}
+      <div className="story-card-bottom">
+        <p>
+          {authorName && <span className="story-card-name">{authorName}</span>}
+          {authorDescriptor && <span className="story-card-descriptor">{authorDescriptor}</span>}
+        </p>
+        {linkText && linkURL && <a className="story-card-link" href={linkURL}>{linkText}<img className="story-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>}
       </div>
-      {!leftToRight && photoURL && <img className="story-card-photo right" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
     </div>
-  );
-};
+    {!leftToRight && photoURL && <img className="story-card-photo right" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
+  </div>
+);
 
 export default StoryCard;
