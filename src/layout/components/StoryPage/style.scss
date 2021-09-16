@@ -1,8 +1,6 @@
 @import '../../../styles/fonts';
 
 .story-page {
-  padding: 3rem 7rem;
-
   &-title {
     @include font-heading-1;
   }
