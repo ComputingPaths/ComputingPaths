@@ -18,7 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint \"src/**/*.{ts,tsx}\" && npx stylelint \"src/**/*.scss\"",
-    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix && npx stylelint \"**/*.scss\" --fix",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix && npx stylelint \"src/**/*.scss\" --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

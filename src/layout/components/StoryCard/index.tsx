@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LinkedArrow from '../../../assets/LinkedArrow.svg';
+
 import './style.scss';
 
 interface StoryCardProps {
@@ -30,10 +32,14 @@ const StoryCard: React.FC<StoryCardProps> = (props) => {
       {leftToRight && photoURL && <img className="story-card-photo left" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
       <div>
         {headingText && <p className="story-card-heading">{headingText}</p>}
-        {quoteText && <p className="story-card-quote">{quoteText}</p>}
-        {authorName && <p className="story-card-name">{authorName}</p>}
-        {authorDescriptor && <p className="story-card-descriptor">{authorDescriptor}</p>}
-        {linkText && linkURL && <a className="story-card-link" href={linkURL}>{linkText}</a>}
+        {quoteText && <div className="story-card-quote"><p className="story-card-quote-text">{quoteText}</p></div>}
+        <div className="story-card-bottom">
+          <p>
+            {authorName && <span className="story-card-name">{authorName}</span>}
+            {authorDescriptor && <span className="story-card-descriptor">{authorDescriptor}</span>}
+          </p>
+          {linkText && linkURL && <a className="story-card-link" href={linkURL}>{linkText}<img className="story-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>}
+        </div>
       </div>
       {!leftToRight && photoURL && <img className="story-card-photo right" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
     </div>
