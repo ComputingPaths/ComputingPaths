@@ -10,8 +10,6 @@ const ErrorPage: React.FC = () => {
 
   const error = data[Math.floor(Math.random() * data.length)] || {};
 
-  console.log(data);
-
   if (!error.Message) {
     error.Message = 'Error 404: Unable to find the page you were looking for.';
   }
