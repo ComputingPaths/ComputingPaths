@@ -1,0 +1,33 @@
+@import '../../../styles/fonts';
+
+.header {
+  align-items: center;
+  background-color: #f9f9f9;
+  display: flex;
+  flex: 0 0 auto;
+  height: 5.25rem;
+  padding: 0 7rem;
+
+  &-logo {
+    width: 11rem;
+  }
+
+  &-links {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin-left: 9rem;
+    padding-right: 11rem;
+  }
+
+  &-link {
+    @include font-nav-bar-text;
+  }
+}
+
+.hero {
+  height: 20rem;
+  object-fit: cover;
+  width: 100%;
+}

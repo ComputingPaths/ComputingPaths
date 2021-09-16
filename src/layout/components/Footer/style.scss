@@ -1,0 +1,41 @@
+@import '../../../styles/fonts';
+@import '../../../styles/vars';
+
+.footer {
+  align-items: center;
+  background-color: $color-primary-navy;
+  color: #fff;
+  display: flex;
+  flex: 0 0 auto;
+  height: 16rem;
+  padding-left: 7rem;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-logo {
+    width: 10.375rem;
+  }
+
+  &-contact {
+    @include font-footer-heading-text;
+    margin-top: 1rem;
+  }
+
+  &-email {
+    @include font-footer-text;
+    margin-top: 0.5rem;
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+  }
+
+  &-link {
+    @include font-footer-heading-text;
+  }
+}
