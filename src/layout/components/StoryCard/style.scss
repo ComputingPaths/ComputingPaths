@@ -1,0 +1,71 @@
+@import '../../../styles/fonts';
+@import '../../../styles/vars';
+
+.story-card {
+  display: flex;
+  margin-top: 6.25rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &-photo {
+    box-shadow: 16px 16px $color-accent-orange;
+    flex-shrink: 0;
+    height: 15rem;
+    object-fit: cover;
+    width: 24rem;
+
+    &.left {
+      margin-right: 3rem;
+    }
+
+    &.right {
+      margin-left: 3rem;
+    }
+  }
+
+  &-heading {
+    @include font-heading-3;
+  }
+
+  &-quote {
+    border-left: 6px solid $color-accent-orange;
+
+    &-text {
+      @include font-story-text;
+      margin-left: 1rem;
+      margin-top: 0.75rem;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+
+  &-name {
+    @include font-subtitle-1;
+  }
+
+  &-descriptor {
+    @include font-text;
+    margin-left: 0.75rem;
+  }
+
+  &-link {
+    &,
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active { // Selectors are needed to override css reset styling
+      @include font-linked-text;
+    }
+
+    &-arrow {
+      margin-left: 0.5rem;
+    }
+  }
+}

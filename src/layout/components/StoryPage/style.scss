@@ -1,0 +1,16 @@
+@import '../../../styles/fonts';
+
+.story-page {
+  &-title {
+    @include font-heading-1;
+  }
+
+  &-text {
+    @include font-text;
+    margin-top: 1.5rem;
+  }
+
+  &-stories {
+    margin-top: 6rem;
+  }
+}
