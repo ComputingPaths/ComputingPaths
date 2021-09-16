@@ -18,7 +18,7 @@ export enum DataTypes {
 }
 
 export const useData = (page: DataTypes): Array<any> => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<any[]>([]);
 
   const contentMappings = {
     pages: '1910980686',
@@ -38,7 +38,7 @@ export const useData = (page: DataTypes): Array<any> => {
 
   useEffect(() => {
     const gid = contentMappings[page];
-    Papa.parse(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${gid}`, {
+    Papa.parse<any>(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${gid}`, {
       download: true,
       header: true,
       complete: (results) => {
