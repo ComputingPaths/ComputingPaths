@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { DataTypes, useData } from '../../../utils/data';
@@ -6,7 +6,11 @@ import { DataTypes, useData } from '../../../utils/data';
 import './style.scss';
 
 const ErrorPage: React.FC = () => {
-  const data = useData(DataTypes.Errors);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Errors).then((result) => setData(result));
+  }, []);
 
   const error = data[Math.floor(Math.random() * data.length)] || {};
 

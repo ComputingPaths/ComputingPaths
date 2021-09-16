@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const HomePage: React.FC = () => {
-  const data = useData(DataTypes.Departments);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Departments).then((result) => setData(result));
+  }, []);
 
   return (
     <div className="home-page">

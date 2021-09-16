@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const ResourcePage: React.FC = () => {
-  const data = useData(DataTypes.Resources);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Resources).then((result) => setData(result));
+  }, []);
 
   return (
     <div className="resource-page">

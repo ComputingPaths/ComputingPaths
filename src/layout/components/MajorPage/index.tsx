@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const MajorPage: React.FC = () => {
-  const data = useData(DataTypes.Majors);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Majors).then((result) => setData(result));
+  }, []);
 
   return (
     <div className="major-page">

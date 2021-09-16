@@ -1,53 +1,35 @@
-import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
 export enum DataTypes {
-  Pages = 'pages',
-  Stories = 'stories',
-  Majors = 'majors',
-  Departments = 'departments',
-  MajorDescriptions = 'majorDescriptions',
-  MajorExpand = 'majorExpand',
-  Resources = 'resources',
-  ResourcesTags = 'resourcesTags',
-  ResourceBanner = 'resourceBanner',
-  Projects = 'projects',
-  ProjectTags = 'projectTags',
-  Orgs = 'orgs',
-  OrgTags = 'orgTags',
-  Errors = 'errors',
+  Pages = '1910980686',
+  Stories = '1646384161',
+  Majors = '860790804',
+  Departments = '929723649',
+  MajorDescriptions = '1664677404',
+  MajorExpand = '1867072131',
+  Resources = '2135229956',
+  ResourcesTags = '167316779',
+  ResourceBanner = '1661600010',
+  Projects = '1379985722',
+  ProjectTags = '568500304',
+  Orgs = '1399526925',
+  OrgTags = '218206546',
+  Errors = '395912477',
 }
 
-export const useData = (page: DataTypes): Array<any> => {
-  const [data, setData] = useState<any[]>([]);
+export const useData = (gid: DataTypes): Promise<Array<any>> => new Promise((resolve) => {
+  const cachedData = sessionStorage.getItem(gid);
 
-  const contentMappings = {
-    pages: '1910980686',
-    stories: '1646384161',
-    majors: '860790804',
-    departments: '929723649',
-    majorDescriptions: '1664677404',
-    majorExpand: '1867072131',
-    resources: '2135229956',
-    resourcesTags: '167316779',
-    resourceBanner: '1661600010',
-    projects: '1379985722',
-    projectTags: '568500304',
-    orgs: '1399526925',
-    orgTags: '218206546',
-    errors: '395912477',
-  };
+  if (cachedData) {
+    resolve(JSON.parse(cachedData));
+  }
 
-  useEffect(() => {
-    const gid = contentMappings[page];
-    Papa.parse<any>(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${gid}`, {
-      download: true,
-      header: true,
-      complete: (results) => {
-        setData(results.data);
-      },
-    });
-  }, [page]);
-
-  return data;
-};
+  Papa.parse<any>(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${gid}`, {
+    download: true,
+    header: true,
+    complete: (results) => {
+      sessionStorage.setItem(gid, JSON.stringify(results.data));
+      resolve(results.data);
+    },
+  });
+});
