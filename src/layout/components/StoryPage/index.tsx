@@ -22,7 +22,7 @@ const StoryPage: React.FC = () => {
             headingText="Example heading text, need to determine how to split this from quote."
             quoteText={story.Quote}
             authorName={story.Name}
-            authorDescriptor={story.Class ? `Class of ${story.Class}` : null}
+            authorDescriptor={story.Class ? `Class of ${story.Class}` : undefined}
             linkText={`Hear ${story.Name}'s story`}
             linkURL={story.Link}
           />
