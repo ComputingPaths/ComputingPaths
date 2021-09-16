@@ -2,17 +2,13 @@ import React from 'react';
 import PageLayout from '../components/PageLayout/PageLayout';
 
 interface PageLayoutContainerProps {
-  children: React.ReactChildren | React.ReactChild[] | React.ReactElement;
+  children: React.ReactNode
 }
 
-const PageLayoutContainer: React.FC<PageLayoutContainerProps> = (props) => {
-  const { children } = props;
-
-  return (
-    <PageLayout>
-      {children}
-    </PageLayout>
-  );
-};
+const PageLayoutContainer: React.FC<PageLayoutContainerProps> = ({ children }) => (
+  <PageLayout>
+    {children}
+  </PageLayout>
+);
 
 export default PageLayoutContainer;
