@@ -1,0 +1,40 @@
+@import '../../../styles/fonts';
+
+.story-card {
+  display: flex;
+  margin: 4rem 0;
+
+  &-photo {
+    flex-shrink: 0;
+    height: 15.0625rem;
+    width: 17.75rem;
+
+    &.left {
+      margin-right: 3rem;
+    }
+
+    &.right {
+      margin-left: 3rem;
+    }
+  }
+
+  &-heading {
+    @include font-heading-3;
+  }
+
+  &-quote {
+    @include font-story-text;
+  }
+
+  &-name {
+    @include font-subtitle-1;
+  }
+
+  &-descriptor {
+    @include font-text;
+  }
+
+  &-link {
+    @include font-linked-text;
+  }
+}
