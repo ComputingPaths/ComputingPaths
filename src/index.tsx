@@ -8,6 +8,7 @@ import MajorPage from './layout/containers/MajorPage';
 import ProjectPage from './layout/containers/ProjectPage';
 import ResourcePage from './layout/containers/ResourcePage';
 import StoryPage from './layout/containers/StoryPage';
+import ErrorPage from './layout/containers/ErrorPage';
 
 import './index.scss';
 
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Route exact path="/organizations" component={OrganizationPage} />
       <Route exact path="/projects" component={ProjectPage} />
       <Route exact path="/resources" component={ResourcePage} />
+      <Route path="/" component={ErrorPage} />
     </Switch>
   </Router>,
   document.getElementById('root'),

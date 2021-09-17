@@ -15,6 +15,7 @@ export enum DataTypes {
   ProjectTags = 'projectTags',
   Orgs = 'orgs',
   OrgTags = 'orgTags',
+  Errors = 'errors',
 }
 
 export const useData = (page: DataTypes): Array<any> => {
@@ -34,6 +35,7 @@ export const useData = (page: DataTypes): Array<any> => {
     projectTags: '568500304',
     orgs: '1399526925',
     orgTags: '218206546',
+    errors: '395912477',
   };
 
   useEffect(() => {
