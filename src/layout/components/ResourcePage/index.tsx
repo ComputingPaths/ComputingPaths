@@ -14,7 +14,7 @@ const ResourcePage: React.FC = () => {
   return (
     <div className="resource-page">
       Resource
-      {(data && data.length) ? data.map((resource) => <h1>{resource.Name}</h1>) : null}
+      {data.map((resource) => <h1>{resource.Name}</h1>)}
     </div>
   );
 };

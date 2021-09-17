@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-page">
       Home
-      {(data && data.length) ? data.map((department) => <h1>{department.Name}</h1>) : null}
+      {data.map((department) => <h1>{department.Name}</h1>)}
     </div>
   );
 };
