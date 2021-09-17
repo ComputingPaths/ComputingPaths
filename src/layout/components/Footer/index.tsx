@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { pages } from '../../../vars';
 
@@ -12,7 +13,7 @@ const Footer: React.FC = () => (
       <a href="mailto:computingpaths@eng.ucsd.edu"><p className="footer-email">computingpaths@eng.ucsd.edu</p></a>
     </div>
     <div className="footer-links">
-      {pages.map((page) => (<a className="footer-link" href={page.link}>{page.title}</a>))}
+      {pages.map((page) => (<Link to={page.link}><p className="footer-link">{page.title}</p></Link>))}
     </div>
   </div>
 );
