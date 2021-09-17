@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = (props) => {
           <img className="header-logo" src="/img/logo-dark.png" alt="Dark Logo" />
         </Link>
         <div className="header-links">
-          {pages.map((page) => (<Link to={page.link}><p className="header-link">{page.title}</p></Link>))}
+          {pages.map((page, index) => (<Link to={page.link}><p className="header-link" key={index}>{page.title}</p></Link>))}
         </div>
       </div>
       {heroURL && <img className="hero" src={heroURL} alt="Page Hero Divider" />}
