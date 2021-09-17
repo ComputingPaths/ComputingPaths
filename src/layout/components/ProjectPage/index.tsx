@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 const ProjectPage: React.FC = () => {
-  const [data, setData] = useState<Array<any>>([]);
-
-  useEffect(() => {
-    useData(DataTypes.Projects).then((result) => setData(result));
-  }, []);
+  const data = useData(DataTypes.Projects);
 
   return (
     <div className="project-page">

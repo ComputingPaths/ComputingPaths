@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import StoryCard from '../StoryCard';
 
@@ -7,11 +7,7 @@ import { DataTypes, useData } from '../../../utils/data';
 import './style.scss';
 
 const StoryPage: React.FC = () => {
-  const [data, setData] = useState<Array<any>>([]);
-
-  useEffect(() => {
-    useData(DataTypes.Stories).then((result) => setData(result));
-  }, []);
+  const data = useData(DataTypes.Stories);
 
   return (
     <div className="story-page">
