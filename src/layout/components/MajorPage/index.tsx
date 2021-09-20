@@ -10,7 +10,7 @@ const MajorPage: React.FC = () => {
   return (
     <div className="major-page">
       Major
-      {(data && data.length) ? data.map((major) => <h1>{major.Name}</h1>) : null}
+      {data.map((major) => <h1>{major.Name}</h1>)}
     </div>
   );
 };

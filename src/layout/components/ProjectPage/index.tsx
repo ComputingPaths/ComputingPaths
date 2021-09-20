@@ -10,7 +10,7 @@ const ProjectPage: React.FC = () => {
   return (
     <div className="project-page">
       Project
-      {(data && data.length) ? data.map((project) => <h1>{project.Name}</h1>) : null}
+      {data.map((project) => <h1>{project.Name}</h1>)}
     </div>
   );
 };

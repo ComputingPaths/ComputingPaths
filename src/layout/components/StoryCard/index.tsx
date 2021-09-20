@@ -35,7 +35,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
           {authorName && <span className="story-card-name">{authorName}</span>}
           {authorDescriptor && <span className="story-card-descriptor">{authorDescriptor}</span>}
         </p>
-        {linkText && linkURL && <a className="story-card-link" href={linkURL}>{linkText}<img className="story-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>}
+        {linkText && linkURL && <a className="story-card-link" target="_blank" rel="noopener noreferrer" href={linkURL}>{linkText}<img className="story-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>}
       </div>
     </div>
     {!leftToRight && photoURL && <img className="story-card-photo right" src={photoURL} alt={`${authorName || 'Story Card'}`} />}

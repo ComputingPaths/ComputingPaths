@@ -10,7 +10,7 @@ const OrganizationPage: React.FC = () => {
   return (
     <div className="organization-page">
       Organization
-      {(data && data.length) ? data.map((org) => <h1>{org.Name}</h1>) : null}
+      {data.map((org) => <h1>{org.Name}</h1>)}
     </div>
   );
 };
