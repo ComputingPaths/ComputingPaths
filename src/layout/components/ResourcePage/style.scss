@@ -1,0 +1,15 @@
+@import '../../../styles/fonts';
+
+.resource-page {
+  &-title {
+    @include font-heading-1;
+  }
+
+  &-resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: -2rem;
+    margin-top: 1rem;
+  }
+}

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import { DataTypes, useData } from '../../../utils/data';
 
+import ResourceCard from '../ResourceCard';
+
 import './style.scss';
 
 const ResourcePage: React.FC = () => {
@@ -15,8 +17,17 @@ const ResourcePage: React.FC = () => {
 
   return (
     <div className="resource-page">
-      Resource
-      {data.map((resource) => <h1>{resource.Name}</h1>)}
+      <h1 className="resource-page-title">Resources</h1>
+      <p className="resource-page-text">Become familiar with campus resources</p>
+      <div className="resource-page-resources">
+        {data.map((resource) => (
+          <ResourceCard
+            photoURL={resource.Mapimage}
+            title={resource.Name}
+            tags={resource.Tags}
+          />
+        ))}
+      </div>
     </div>
   );
 };
