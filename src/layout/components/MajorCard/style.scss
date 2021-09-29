@@ -1,0 +1,76 @@
+@import '../../../styles/fonts';
+@import '../../../styles/vars';
+
+.major-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 50rem;
+  color: $color-neutrals-white;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &-photo {
+    flex-shrink: 0;
+    height: 15rem;
+    object-fit: cover;
+    width:100%;
+  }
+
+  &-top {
+    padding: 1rem 3rem;
+    background-color: $color-primary-navy;
+    display: flex;
+    align-items: center;
+  }
+
+  &-heading {
+    @include font-heading-3;
+    margin-right: 1.5rem;
+    max-width: 60%;
+  }
+
+  &-tag{
+    @include font-small-button-text;
+    background-color: $color-accent-orange;
+    border-radius: 3.35rem;
+    text-align: center;
+    padding: .5rem .75rem;
+    margin-right: 1rem;
+  }
+
+  &-bottom {
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-primary-blue;
+  }
+
+
+  &-description{
+    width: 29rem;
+  }
+
+  &-subheading {
+    @include font-subtitle-1;
+  }
+
+  &-links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
+
+  &-link {
+    text-decoration: underline;
+    margin-top: .5rem;
+
+    &-arrow {
+      margin-left: 0.5rem;
+      color: $color-neutrals-white;
+    }
+  }
+}

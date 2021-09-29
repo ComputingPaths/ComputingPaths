@@ -1,0 +1,42 @@
+@import '../../../styles/fonts';
+@import '../../../styles/vars';
+
+.major-page {
+  &-title {
+    @include font-heading-1;
+  }
+
+  &-subheading {
+    @include font-heading-2;
+    margin-top: 6rem;
+  }
+
+  &-sidebar{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start
+  }
+
+  &-main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-link {
+    @include font-subtitle-1;
+    width: 18rem;
+    color: $color-neutrals-grey;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    border-radius: .25rem;
+    display: inline-flex;
+  }
+
+  &-cards {
+    margin-top: 3rem;
+  }
+}
