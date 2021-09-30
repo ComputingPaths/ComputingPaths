@@ -11,29 +11,29 @@
     margin-top: 6rem;
   }
 
-  &-sidebar{
-    margin-top: 3rem;
+  &-sidebar {
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
-    align-self: flex-start
+    margin-top: 3rem;
   }
 
-  &-main-content{
-    width: 100%;
+  &-main-content {
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
   }
 
   &-link {
     @include font-subtitle-1;
-    width: 18rem;
-    color: $color-neutrals-grey;
+    border-radius: 0.25rem;
     box-sizing: border-box;
-    padding: 1rem 1.5rem;
-    border-radius: .25rem;
+    color: $color-neutrals-grey;
     display: inline-flex;
+    padding: 1rem 1.5rem;
+    width: 18rem;
   }
 
   &-cards {

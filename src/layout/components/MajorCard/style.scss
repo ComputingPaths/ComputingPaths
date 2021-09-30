@@ -2,11 +2,11 @@
 @import '../../../styles/vars';
 
 .major-card {
+  color: $color-neutrals-white;
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
   width: 50rem;
-  color: $color-neutrals-white;
 
   &:first-child {
     margin-top: 0;
@@ -16,14 +16,14 @@
     flex-shrink: 0;
     height: 15rem;
     object-fit: cover;
-    width:100%;
+    width: 100%;
   }
 
   &-top {
-    padding: 1rem 3rem;
+    align-items: center;
     background-color: $color-primary-navy;
     display: flex;
-    align-items: center;
+    padding: 1rem 3rem;
   }
 
   &-heading {
@@ -32,25 +32,25 @@
     max-width: 60%;
   }
 
-  &-tag{
+  &-tag {
     @include font-small-button-text;
     background-color: $color-accent-orange;
     border-radius: 3.35rem;
-    text-align: center;
-    padding: .5rem .75rem;
     margin-right: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
   }
 
   &-bottom {
-    padding: 3rem;
+    background-color: $color-primary-blue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: $color-primary-blue;
+    padding: 3rem;
   }
 
 
-  &-description{
+  &-description {
     width: 29rem;
   }
 
@@ -58,19 +58,19 @@
     @include font-subtitle-1;
   }
 
-  &-links{
+  &-links {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.25rem;
   }
 
   &-link {
+    margin-top: 0.5rem;
     text-decoration: underline;
-    margin-top: .5rem;
 
     &-arrow {
-      margin-left: 0.5rem;
       color: $color-neutrals-white;
+      margin-left: 0.5rem;
     }
   }
 }
