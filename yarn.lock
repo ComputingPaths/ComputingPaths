@@ -1258,7 +1258,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.1.5", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13":
   version "7.15.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
   integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
@@ -10069,6 +10069,13 @@ react-router-dom@^5.3.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
+react-router-hash-link@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/react-router-hash-link/-/react-router-hash-link-2.4.3.tgz#570824d53d6c35ce94d73a46c8e98673a127bf08"
+  integrity sha512-NU7GWc265m92xh/aYD79Vr1W+zAIXDWp3L2YZOYP4rCqPnJ6LI6vh3+rKgkidtYijozHclaEQTAHaAaMWPVI4A==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-router@5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.2.1.tgz#4d2e4e9d5ae9425091845b8dbc6d9d276239774d"
@@ -10150,6 +10157,14 @@ react-scripts@4.0.3:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
+
+react-sticky-box@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/react-sticky-box/-/react-sticky-box-0.9.3.tgz#8450d4cef8e4fdd7b0351520365bc98c97da11af"
+  integrity sha512-Y/qO7vTqAvXuRR6G6ZCW4fX2Bz0GZRwiiLTVeZN5CVz9wzs37ev0Xj3KSKF/PzF0jifwATivI4t24qXG8rSz4Q==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+    resize-observer-polyfill "^1.5.1"
 
 react@^17.0.2:
   version "17.0.2"
@@ -10466,6 +10481,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -10980,6 +11000,11 @@ slice-ansi@^4.0.0:
     ansi-styles "^4.0.0"
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

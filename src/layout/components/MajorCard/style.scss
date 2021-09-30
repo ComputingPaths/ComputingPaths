@@ -2,7 +2,7 @@
 @import '../../../styles/vars';
 
 .major-card {
-  color: $color-neutrals-white;
+  color: $color-neutrals-black;
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
@@ -28,27 +28,28 @@
 
   &-heading {
     @include font-heading-3;
+    color: $color-neutrals-white;
     margin-right: 1.5rem;
     max-width: 60%;
   }
 
   &-tag {
     @include font-small-button-text;
-    background-color: $color-accent-orange;
+    background-color: $color-primary-dark-yellow;
     border-radius: 3.35rem;
+    color: $color-primary-navy;
     margin-right: 1rem;
     padding: 0.5rem 0.75rem;
     text-align: center;
   }
 
   &-bottom {
-    background-color: $color-primary-blue;
+    background-color: $color-neutrals-white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 3rem;
   }
-
 
   &-description {
     width: 29rem;
@@ -69,7 +70,6 @@
     text-decoration: underline;
 
     &-arrow {
-      color: $color-neutrals-white;
       margin-left: 0.5rem;
     }
   }

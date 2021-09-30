@@ -32,24 +32,26 @@ const MajorPage: React.FC = () => {
     <div className="major-page">
       <h1 className="major-page-title">Majors</h1>
       <p className="major-page-text">A wide array of majors offer a unique computing experience at UCSD. These major apply computational skills to both new and traditional subject matter, developing programming skills, fostering scientific study, and bolstering creativity.</p>
-      <h2 className="major-page-subheading">Learn more about the computing majors</h2>
-      <div className="major-page-main-content">
-        <StickyBox className="major-page-sidebar" offsetTop={10} offsetBottom={10}>
-          {data.map((major) => <div className="major-page-link"><Link smooth to={`majors/#${major.Name.replace(/\s/g, '-')}`}>{major.Name}</Link></div>)}
-        </StickyBox>
-        <div className="major-page-cards">
-          {data.map((major) => (
-            <MajorCard
-              majorText={major.Name}
-              capped={major.Cap === 'TRUE'}
-              degreeText={major.Degree === 'bs' ? 'Bachelor of Science' : 'Bachelor of Arts'}
-              departments={major.Departments.split(',').map((element) => departmentNames[element])}
-              majorDescription={major.Hook}
-              photoURL={major.Image}
-              linkText={major['Moreinfo Name']}
-              linkURL={major['Moreinfo Link']}
-            />
-          ))}
+      <div className="major-page-content">
+        <h2 className="major-page-subheading">Learn more about the computing majors</h2>
+        <div className="major-page-scroll-content">
+          <StickyBox className="major-page-sidebar" offsetTop={10} offsetBottom={10}>
+            {data.map((major) => <div className="major-page-link"><Link smooth to={`majors/#${major.Name.replace(/\s/g, '-')}`}>{major.Name}</Link></div>)}
+          </StickyBox>
+          <div className="major-page-cards">
+            {data.map((major) => (
+              <MajorCard
+                majorText={major.Name}
+                capped={major.Cap === 'TRUE'}
+                degreeText={major.Degree === 'bs' ? 'Bachelor of Science' : 'Bachelor of Arts'}
+                departments={major.Departments.split(',').map((element) => departmentNames[element])}
+                majorDescription={major.Hook}
+                photoURL={major.Image}
+                linkText={major['Moreinfo Name']}
+                linkURL={major['Moreinfo Link']}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

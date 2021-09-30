@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LinkedArrow from '../../../assets/WhiteLinkedArrow.svg';
+import LinkedArrow from '../../../assets/LinkedArrow.svg';
 
 import { DataTypes, useData } from '../../../utils/data';
 

@@ -6,31 +6,39 @@
     @include font-heading-1;
   }
 
+  &-text {
+    @include font-text;
+    margin-top: 1.5rem;
+  }
+
   &-subheading {
     @include font-heading-2;
-    margin-top: 6rem;
   }
 
   &-sidebar {
-    align-self: flex-start;
-    display: flex;
-    flex-direction: column;
+    height: fit-content;
     margin-top: 3rem;
+    // align-self: flex-start;
+    position: sticky;
   }
 
-  &-main-content {
+  &-content {
+    background-color: $color-background-grey;
+    margin: 3rem -7rem -3rem;
+    padding: 3rem 7rem;
+  }
+
+  &-scroll-content {
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    // justify-content: space-between;
   }
 
   &-link {
     @include font-subtitle-1;
     border-radius: 0.25rem;
     box-sizing: border-box;
-    color: $color-neutrals-grey;
+    color: $color-neutrals-dark-grey;
     display: inline-flex;
     padding: 1rem 1.5rem;
     width: 18rem;
