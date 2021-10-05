@@ -19,7 +19,7 @@ const StoryPage: React.FC = () => {
             key={index}
             leftToRight={index % 2 === 0}
             photoURL={story.Image}
-            headingText="Example heading text, need to determine how to split this from quote."
+            headingText={story.HighlightedQuote ? `"${story.HighlightedQuote}"` : undefined}
             quoteText={story.Quote}
             authorName={story.Name}
             authorDescriptor={story.Class ? `Class of ${story.Class}` : undefined}

@@ -1,7 +1,13 @@
+@import '../../../styles';
+
 .content {
   flex: 1 0 auto;
   overflow: hidden;
   padding: 3rem 7rem;
   position: relative;
   vertical-align: top;
+
+  @media(max-width: $size-small) { 
+    padding: 1.5rem;
+  }
 }
