@@ -43,29 +43,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   });
 
   return (
-    <div ref={menuRef} className="project-card">
-      {photoURL && <img className="project-card-photo" src={photoURL.split(',')[0]} alt={`${projectName || 'Project Card'}`} />}
-      <p className="project-card-section">
-        <h2 className="project-card-heading">{projectName}</h2>
-        <h2 className="project-card-organization">{organization}</h2>
-        <span className={`project-card-project-tag ${projectTag.toLowerCase()}`}>{projectTag}</span>
-        <button className="project-card-expand-arrow" type="button" onClick={() => useModal(!modal)}>
-          <img src={ExpandArrow} alt="Expand Arrow" />
-        </button>
-      </p>
+    <>
+      <div ref={menuRef} onClick={() => useModal(!modal)} className="project-card">
+        {photoURL && <img className="project-card-photo" src={photoURL.split(',')[0]} alt={`${projectName || 'Project Card'}`} />}
+        <p className="project-card-section">
+          <h2 className="project-card-heading">{projectName}</h2>
+          <h2 className="project-card-organization">{organization}</h2>
+          <span className={`project-card-project-tag ${projectTag.toLowerCase()}`}>{projectTag}</span>
+          <img className="project-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
+        </p>
+      </div>
       {modal && (
-      <ProjectModalCard
-        description={description}
-        organization={organization}
-        photoURL={photoURL}
-        projectMembers={projectMembers}
-        projectName={projectName}
-        projectTag={projectTag}
-        projectLink={projectLink}
-        videoURL={videoURL}
-      />
+        <ProjectModalCard
+          description={description}
+          organization={organization}
+          photoURL={photoURL}
+          projectMembers={projectMembers}
+          projectName={projectName}
+          projectTag={projectTag}
+          projectLink={projectLink}
+          videoURL={videoURL}
+        />
       )}
-    </div>
+    </>
   );
 };
 
