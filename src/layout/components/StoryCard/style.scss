@@ -10,18 +10,19 @@
   }
 
   &-photo {
-    box-shadow: 16px 16px $color-accent-orange;
+    box-shadow: 16px 16px $color-primary-dark-yellow;
     flex-shrink: 0;
     height: 15rem;
     object-fit: cover;
-    width: 24rem;
+    width: 17.5rem;
 
     &.left {
-      margin-right: 3rem;
+      margin-right: 8.5rem;
     }
 
     &.right {
-      margin-left: 3rem;
+      box-shadow: 16px 16px $color-primary-navy;
+      margin-left: 8.5rem;
     }
   }
 
@@ -30,12 +31,16 @@
   }
 
   &-quote {
-    border-left: 6px solid $color-accent-orange;
+    border-left: 6px solid $color-primary-dark-yellow;
 
     &-text {
       @include font-story-text;
       margin-left: 1rem;
       margin-top: 0.75rem;
+    }
+
+    &.right {
+      border-color: $color-primary-navy; 
     }
   }
 
