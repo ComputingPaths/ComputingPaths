@@ -27,8 +27,8 @@
   &-project-tag {
     @include font-small-button-text;
     border-radius: 1rem;
-    padding: 0.25rem 0.8rem;
     overflow: hidden;
+    padding: 0.25rem 0.8rem;
 
     &.arduino {
       background-color: $color-tag-grass-green;
