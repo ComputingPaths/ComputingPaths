@@ -54,7 +54,7 @@
     }
   }
 
-  @media(max-width: $size-small) { 
+  @media(max-width: $site-size-small) { 
     flex-direction: column;
     height: unset;
     padding: 1.5rem;

@@ -6,6 +6,7 @@ body,
 #root {
   font-family: $font-family;
   height: 100%;
+  min-width: $site-min-width;
 }
 
 #root {

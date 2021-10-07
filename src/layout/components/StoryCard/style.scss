@@ -73,7 +73,7 @@
     }
   }
 
-  @media(max-width: $size-small) {
+  @media(max-width: $site-size-small) {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -97,6 +97,10 @@
       margin-top: 2.5rem;
     }
 
+    &-bottom {
+      display: block;
+    }
+
     &-descriptor {
       margin-left: 0.75rem;
     }
@@ -104,10 +108,6 @@
     &-link {
       display: inline-block;
       margin-top: 0.5rem;
-    }
-
-    &-bottom {
-      display: block;
     }
   }
 }
