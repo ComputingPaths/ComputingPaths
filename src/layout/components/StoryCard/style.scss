@@ -1,9 +1,8 @@
-@import '../../../styles/fonts';
-@import '../../../styles/vars';
+@import '../../../styles';
 
 .story-card {
   display: flex;
-  margin-top: 6.25rem;
+  margin-top: 5rem;
 
   &:first-child {
     margin-top: 0;
@@ -71,6 +70,44 @@
 
     &-arrow {
       margin-left: 0.5rem;
+    }
+  }
+
+  @media(max-width: $site-size-small) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    &.right {
+      flex-direction: column-reverse;
+    }
+
+    &-photo {
+      &.left {
+        margin: 0;
+      }
+
+      &.right {
+        margin: 0;
+      }
+    }
+
+    &-heading {
+      margin-top: 2.5rem;
+    }
+
+    &-bottom {
+      display: block;
+    }
+
+    &-descriptor {
+      margin-left: 0.75rem;
+    }
+
+    &-link {
+      display: inline-block;
+      margin-top: 0.5rem;
     }
   }
 }

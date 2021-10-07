@@ -25,7 +25,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
   linkText,
   linkURL,
 }) => (
-  <div className="story-card">
+  <div className={`story-card ${leftToRight ? 'left' : 'right'}`}>
     {leftToRight && photoURL && <img className="story-card-photo left" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
     <div>
       {headingText && <p className="story-card-heading">{headingText}</p>}
