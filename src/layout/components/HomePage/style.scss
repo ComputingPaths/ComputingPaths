@@ -1,0 +1,49 @@
+@import '../../../styles/fonts';
+@import '../../../styles/vars';
+
+.home-page {
+
+  &-majors-container {
+    display: flex;
+  }
+
+  &-majors-section {
+    background-color: $color-neutrals-grey;
+    height: 400px;
+    position: relative;
+    margin: 0 15px;
+    width: calc(33%);
+
+    &-description {
+      @include font-subtitle-1;
+      padding: 15px 25px;
+    }
+
+    &-major {
+      @include font-heading-3;
+      background-color: $color-neutrals-dark-grey;
+      padding: 10px 25px;
+      position: absolute;
+      bottom: 0;
+      overflow: hidden;
+      text-align: center;
+      width: calc(100% - 50px);
+    }
+  }
+
+  &-subheader {
+    @include font-heading-2;
+
+    &.major {
+      text-align: center;
+    }
+  }
+
+  &-title {
+    @include font-heading-1;
+  }
+
+  &-text {
+    @include font-text;
+  }
+}
