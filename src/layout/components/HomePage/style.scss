@@ -3,7 +3,7 @@
 
 .home-page {
   &-image {
-    background-color: grey;
+    background-color: $color-neutrals-grey;
     flex-grow: 0;
     flex-shrink: 0;
     height: 220px;
@@ -17,9 +17,9 @@
   &-majors-section {
     background-color: $color-neutrals-grey;
     height: 400px;
+    margin: 0 1rem;
     overflow: hidden;
     position: relative;
-    margin: 0 1rem;
     width: calc(33%);
 
     &-description {
@@ -32,11 +32,11 @@
     &-major {
       @include font-heading-3;
       background-color: $color-neutrals-dark-grey;
+      bottom: 0;
       height: 2.25rem;
+      overflow: hidden;
       padding: 0.5rem 1rem;
       position: absolute;
-      bottom: 0;
-      overflow: hidden;
       text-align: center;
       width: calc(100% - 2rem);
     }
@@ -61,8 +61,8 @@
     background: $color-gradients-blue-teal;
     box-sizing: border-box;
     color: #fff;
-    padding: 2rem;
     margin: 2rem 0 2rem -7rem;
+    padding: 2rem;
     width: 100vw;
   }
 
