@@ -2,6 +2,13 @@
 @import '../../../styles/vars';
 
 .home-page {
+  &-image {
+    background-color: grey;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 220px;
+    width: 200px;
+  }
 
   &-majors-container {
     display: flex;
@@ -10,25 +17,48 @@
   &-majors-section {
     background-color: $color-neutrals-grey;
     height: 400px;
+    overflow: hidden;
     position: relative;
-    margin: 0 15px;
+    margin: 0 1rem;
     width: calc(33%);
 
     &-description {
       @include font-subtitle-1;
-      padding: 15px 25px;
+      height: 100%;
+      overflow: hidden;
+      padding: 1rem 2rem;
     }
 
     &-major {
       @include font-heading-3;
       background-color: $color-neutrals-dark-grey;
-      padding: 10px 25px;
+      height: 2.25rem;
+      padding: 0.5rem 1rem;
       position: absolute;
       bottom: 0;
       overflow: hidden;
       text-align: center;
-      width: calc(100% - 50px);
+      width: calc(100% - 2rem);
     }
+  }
+
+  &-resources {
+    display: inline-flex;
+
+    &-section {
+      margin: 0 2rem;
+    }
+    
+  }
+
+  &-stories {
+    @include font-heading-3;
+    background: $color-gradients-blue-teal;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem 0 2rem -7rem;
+    width: 100vw;
   }
 
   &-subheader {
@@ -37,6 +67,15 @@
     &.major {
       text-align: center;
     }
+  }
+
+  &-tags {
+    @include font-small-button-text;
+    background-color: $color-primary-mustard;
+    border-radius: 1rem;
+    color: #fff;
+    overflow: hidden;
+    padding: 0.25rem 0.8rem;
   }
 
   &-title {
