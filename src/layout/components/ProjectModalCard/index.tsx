@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
+import ExpandArrow from '../../../assets/ExpandArrow.svg';
 import LeftArrow from '../../../assets/LeftArrow.svg';
 import LinkedArrow from '../../../assets/LinkedArrow.svg';
 import RightArrow from '../../../assets/RightArrow.svg';
@@ -15,6 +16,7 @@ interface ProjectModalCardProps {
     projectTag: string;
     projectLink?: string;
     videoURL?: string;
+    setModal: any;
 }
 
 const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
@@ -26,10 +28,26 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
   projectTag,
   projectLink,
   videoURL,
+  setModal,
 }) => {
   const [slide, setSlide] = useState(0);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && (!event.target.className.includes('project-modal-card') || event.target.className === 'project-modal-card-expand-arrow')) {
+      setModal(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  });
+
   return (
-    <div className="project-modal-card">
+    <div ref={menuRef} className="project-modal-card">
       <section className="project-modal-card-carousel">
         {photoURL.split(',').map((picture, index) => {
           if (index === slide) {
@@ -47,6 +65,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
           ))}
         </div>
       </section>
+      <img className="project-modal-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
       <p className="project-modal-card-tag">
         <span className="project-modal-card-project-name">{projectName}</span>
         <span className="project-modal-card-organization">{organization}</span>
@@ -69,8 +88,8 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
           <p className="project-modal-card-links">
             <span className="project-modal-card-header">More Information</span>
             <span>
-              <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span>Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
-              <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={videoURL}> <span>Youtube Link</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+              <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+              <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={videoURL}> <span className="project-modal-card-link">Youtube Link</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
             </span>
           </p>
         </section>

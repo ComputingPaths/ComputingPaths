@@ -48,6 +48,13 @@
     }
   }
 
+  &-expand-arrow {
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
   &-header {
     @include font-subtitle-1;
     line-height: 2.5rem;
