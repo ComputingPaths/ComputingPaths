@@ -25,11 +25,11 @@ const StoryCard: React.FC<StoryCardProps> = ({
   linkText,
   linkURL,
 }) => (
-  <div className="story-card">
+  <div className={`story-card ${leftToRight ? 'left' : 'right'}`}>
     {leftToRight && photoURL && <img className="story-card-photo left" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
     <div>
       {headingText && <p className="story-card-heading">{headingText}</p>}
-      {quoteText && <div className="story-card-quote"><p className="story-card-quote-text">{quoteText}</p></div>}
+      {quoteText && <div className={`story-card-quote ${leftToRight ? 'left' : 'right'}`}><p className="story-card-quote-text">{quoteText}</p></div>}
       <div className="story-card-bottom">
         <p>
           {authorName && <span className="story-card-name">{authorName}</span>}

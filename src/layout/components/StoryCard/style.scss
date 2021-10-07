@@ -1,27 +1,27 @@
-@import '../../../styles/fonts';
-@import '../../../styles/vars';
+@import '../../../styles';
 
 .story-card {
   display: flex;
-  margin-top: 6.25rem;
+  margin-top: 5rem;
 
   &:first-child {
     margin-top: 0;
   }
 
   &-photo {
-    box-shadow: 16px 16px $color-accent-orange;
+    box-shadow: 16px 16px $color-primary-dark-yellow;
     flex-shrink: 0;
     height: 15rem;
     object-fit: cover;
-    width: 24rem;
+    width: 17.5rem;
 
     &.left {
-      margin-right: 3rem;
+      margin-right: 8.5rem;
     }
 
     &.right {
-      margin-left: 3rem;
+      box-shadow: 16px 16px $color-primary-navy;
+      margin-left: 8.5rem;
     }
   }
 
@@ -30,12 +30,16 @@
   }
 
   &-quote {
-    border-left: 6px solid $color-accent-orange;
+    border-left: 6px solid $color-primary-dark-yellow;
 
     &-text {
       @include font-story-text;
       margin-left: 1rem;
       margin-top: 0.75rem;
+    }
+
+    &.right {
+      border-color: $color-primary-navy; 
     }
   }
 
@@ -66,6 +70,44 @@
 
     &-arrow {
       margin-left: 0.5rem;
+    }
+  }
+
+  @media(max-width: $site-size-small) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    &.right {
+      flex-direction: column-reverse;
+    }
+
+    &-photo {
+      &.left {
+        margin: 0;
+      }
+
+      &.right {
+        margin: 0;
+      }
+    }
+
+    &-heading {
+      margin-top: 2.5rem;
+    }
+
+    &-bottom {
+      display: block;
+    }
+
+    &-descriptor {
+      margin-left: 0.75rem;
+    }
+
+    &-link {
+      display: inline-block;
+      margin-top: 0.5rem;
     }
   }
 }

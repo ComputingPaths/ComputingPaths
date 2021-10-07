@@ -1,0 +1,157 @@
+@import '../../../styles/fonts';
+@import '../../../styles/vars';
+
+.project-modal-card {
+  background: #fff;
+  box-shadow: 0 0 0 9999rem rgba(216, 208, 208, 0.5);
+  height: 80%;
+  left: max(5vw, calc(50vw - 35rem));
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  top: 10%;
+  width: min(90vw, 70rem);
+  z-index: 1;
+
+  &-arrow {
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    padding: 0.5rem;
+    position: absolute;
+    top: 50%;
+
+    &.left {
+      left: 1rem;
+    }
+
+    &.right {
+      right: 1rem;
+    }
+  }
+
+  &-carousel {
+    height: 25vh;
+    position: relative;
+  }
+
+  &-dot {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 0.5rem;
+    margin: 0 0.1rem;
+    opacity: 50%;
+    width: 0.5rem;
+
+    &.select {
+      opacity: 100%;
+    }
+  }
+
+  &-expand-arrow {
+    padding: 1.15rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &-header {
+    @include font-subtitle-1;
+    line-height: 2.5rem;
+  }
+
+  &-description,
+  &-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-info {
+    flex-basis: 10.5rem;
+    flex-shrink: 0;
+    margin-left: 1.5rem;
+  }
+
+  &-image {
+    height: 25vh;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &-members {
+    list-style-type: none;
+  }
+
+  &-organization {
+    @include font-footer-heading-text;
+    margin: 0 1.5rem;
+  }
+
+  &-point {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &-project-name {
+    @include font-heading-3;
+  }
+
+  &-project-tag {
+    @include font-small-button-text;
+    border-radius: 1rem;
+    padding: 0.25rem 0.8rem;
+
+    &.arduino {
+      background-color: $color-tag-grass-green;
+    }
+
+    &.datamining {
+      background-color: $color-tag-teal;
+    }
+
+    &.game {
+      background-color: $color-tag-light-orange;
+    }
+
+    &.mobile.app {
+      background-color: $color-tag-lilac;
+    }
+
+    &.research {
+      background-color: $color-tag-coral;
+    }
+
+    &.web.app {
+      background-color: $color-tag-light-blue;
+    }
+  }
+
+  &-section {
+    display: flex;
+    padding: 3rem;
+  }
+
+  &-slide {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    top: -2rem;
+    width: 100%;
+  }
+
+  &-tag {
+    background-color: $color-primary-navy;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  &-text {
+    margin: 0.5rem 0;
+  }
+
+  &-website {
+    span {
+      text-decoration: underline !important;
+    }
+  }
+}

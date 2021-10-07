@@ -1,4 +1,4 @@
-@import '../../../styles/fonts';
+@import '../../../styles';
 
 .story-page {
   &-title {
@@ -12,5 +12,15 @@
 
   &-stories {
     margin-top: 6rem;
+  }
+
+  @media(max-width: $site-size-small) { 
+    &-text {
+      margin-top: 0.5rem;
+    }
+
+    &-stories {
+      margin-top: 3rem;
+    }
   }
 }
