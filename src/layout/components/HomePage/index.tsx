@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
         <h2 className="">Stories &#38; Majors</h2>
         <p className="">What sealed the deal on software engineering for me was that rush you get when something finally works</p>
         <h3 className="">Rachel Keirouz | Mathematics - Computer Science</h3>
-        <h3 className="">Read their stories <a className="story-card-link" target="_self" rel="noopener noreferrer" href="/stories"><img className="story-card-link-arrow" src={RightArrow} alt="Right Arrow" /></a></h3>
+        <h3 className="">Read their stories <a className="home-page-link" target="_self" rel="noopener noreferrer" href="/stories"><img className="home-page-link-arrow" src={RightArrow} alt="Right Arrow" /></a></h3>
       </section>
       <section className="home-page-resources">
         <div className="home-page-image" />

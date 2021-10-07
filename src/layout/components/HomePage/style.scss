@@ -44,11 +44,16 @@
 
   &-resources {
     display: inline-flex;
+    margin: 2rem 0;
 
     &-section {
       margin: 0 2rem;
     }
-    
+  }
+
+  &-link-arrow {
+    filter: brightness(0) invert(100%);
+    margin-bottom: -0.25rem;
   }
 
   &-stories {
@@ -84,5 +89,6 @@
 
   &-text {
     @include font-text;
+    margin: 0.75rem 0 1rem;
   }
 }
