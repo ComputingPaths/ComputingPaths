@@ -17,20 +17,23 @@ const Header: React.FC<HeaderProps> = (props) => {
 
   return (
     <>
-      <div className={`header-mobile-links${menu ? ' open' : ''}`}>
-        {pages.map((page, index) => (<Link to={page.link} key={index}><p className="header-link">{page.title}</p></Link>))}
-      </div>
       <div className="header">
-        <Link to="/">
-          <img className="header-logo" src="/img/logo-dark.png" alt="Dark Logo" />
-        </Link>
-        <div className="header-links">
-          {pages.map((page, index) => (<Link to={page.link} key={index}><p className="header-link" key={index}>{page.title}</p></Link>))}
+        <div className="header-content">
+          <Link to="/">
+            <img className="header-logo" src="/img/logo-dark.png" alt="Dark Logo" />
+          </Link>
+          <div className="header-links">
+            {pages.map((page, index) => (<Link to={page.link} key={index}><p className="header-link" key={index}>{page.title}</p></Link>))}
+          </div>
+          <div className="header-mobile">
+            <button className="header-mobile-button" type="button" onClick={() => setMenu(!menu)}><img className="header-mobile-icon" src={HeaderMenu} alt="Mobile Menu" /></button>
+          </div>
         </div>
-        <div className="header-mobile">
-          <button className="header-mobile-button" type="button" onClick={() => setMenu(!menu)}><img className="header-mobile-icon" src={HeaderMenu} alt="Mobile Menu" /></button>
+        <div className={`header-mobile-links${menu ? ' open' : ''}`}>
+          {pages.map((page, index) => (<Link to={page.link} key={index}><p className="header-link">{page.title}</p></Link>))}
         </div>
       </div>
+      <div className="spacer" />
       {heroURL && <img className="hero" src={heroURL} alt="Page Hero Divider" />}
     </>
   );
