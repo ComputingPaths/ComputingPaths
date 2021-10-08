@@ -1,13 +1,20 @@
 @import '../../../styles';
 
 .header {
-  align-items: center;
-  background-color: #f5f5f5;
-  display: flex;
-  flex: 0 0 auto;
-  height: 5.25rem;
-  padding: 0 7rem;
-  position: relative;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+
+  &-content {
+    align-items: center;
+    background-color: #f5f5f5;
+    display: flex;
+    flex: 0 0 auto;
+    height: 5.25rem;
+    padding: 0 7rem;
+  }
 
   &-logo {
     width: 11rem;
@@ -38,16 +45,19 @@
     justify-content: space-around;
     left: 0;
     padding: 0.25rem 0.5rem;
-    position: absolute;
+    position: fixed;
+    right: 0;
     top: calc(-12.5rem + 5.25rem);
     transition: top 0.5s;
-    width: 100%;
+    z-index: -1;
   }
 
   @media(max-width: $site-size-small) {
-    height: 3.5rem;
-    justify-content: space-between;
-    padding: 0 1.5rem;
+    &-content {
+      height: 3.5rem;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
 
     &-logo {
       width: 6.25rem;
@@ -84,6 +94,14 @@
         top: 3.5rem;
       }
     }
+  }
+}
+
+.spacer {
+  min-height: 5.25rem;
+
+  @media(max-width: $site-size-small) {
+    min-height: 3.5rem;
   }
 }
 
