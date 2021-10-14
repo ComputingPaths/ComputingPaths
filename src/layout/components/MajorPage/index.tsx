@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import StickyBox from 'react-sticky-box';
+// import StickyBox from 'react-sticky-box';
 
 import MajorCard from '../MajorCard';
 
@@ -35,13 +35,14 @@ const MajorPage: React.FC = () => {
       <div className="major-page-content">
         <h2 className="major-page-subheading">Learn more about the computing majors</h2>
         <div className="major-page-scroll-content">
-          <StickyBox className="major-page-sidebar" offsetTop={10} offsetBottom={10}>
-            {data.map((major) => <div className="major-page-link"><Link smooth to={`majors/#${major.Name.replace(/\s/g, '-')}`}>{major.Name}</Link></div>)}
-          </StickyBox>
+          <div className="major-page-sidebar">
+            {data.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors/#${major.Name.replace(/\s/g, '-')}`}>{major.Name}</Link></div>)}
+          </div>
           <div className="major-page-cards">
-            {data.map((major) => (
+            {data.map((major, index) => (
               <MajorCard
                 majorText={major.Name}
+                key={index}
                 capped={major.Cap === 'TRUE'}
                 degreeText={major.Degree === 'bs' ? 'Bachelor of Science' : 'Bachelor of Arts'}
                 departments={major.Departments.split(',').map((element) => departmentNames[element])}

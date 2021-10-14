@@ -35,32 +35,35 @@ const MajorCard: React.FC<MajorCardProps> = ({
   });
 
   return (
-    <div className="major-card" id={majorText && majorText.replace(/\s/g, '-')}>
-      {photoURL && <img className="major-card-photo" src={photoURL} alt={`${majorText || 'Major Card'}`} />}
-      <div className="major-card-top">
-        {majorText && <p className="major-card-heading">{majorText}</p>}
-        {capped && <p className="major-card-tag">Capped</p>}
-        {degreeText && <p className="major-card-tag">{degreeText}</p>}
-      </div>
-      <div className="major-card-bottom">
-        <div className="major-card-bottom-left">
-          <p className="major-card-subheading">Description</p>
-          {majorDescription && <p className="major-card-description">{majorDescription}</p>}
+    <>
+      <div id={majorText && majorText.replace(/\s/g, '-')} />
+      <div className="major-card">
+        {photoURL && <img className="major-card-photo" src={photoURL} alt={`${majorText || 'Major Card'}`} />}
+        <div className="major-card-top">
+          {majorText && <p className="major-card-heading">{majorText}</p>}
+          {capped && <p className="major-card-tag">Capped</p>}
+          {degreeText && <p className="major-card-tag">{degreeText}</p>}
         </div>
-        <div className="major-card-bottom-right">
-          <p className="major-card-subheading">Departments</p>
-          <div className="major-card-links">
-            {departments && departments.map((department) => (
-              <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={departmentURLs[department]}>{department}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
-            ))}
+        <div className="major-card-bottom">
+          <div className="major-card-bottom-left">
+            <p className="major-card-subheading">Description</p>
+            {majorDescription && <p className="major-card-description">{majorDescription}</p>}
           </div>
-          <div className="major-card-links">
-            <p className="major-card-subheading">More Information</p>
-            <a style={{ textDecoration: 'underline' }} className="major-card-link" target="_blank" rel="noopener noreferrer" href={linkURL}>{linkText}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+          <div className="major-card-bottom-right">
+            <p className="major-card-subheading">Departments</p>
+            <div className="major-card-links">
+              {departments && departments.map((department, index) => (
+                <a className="major-card-link" key={index} target="_blank" rel="noopener noreferrer" href={departmentURLs[department]}>{department}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+              ))}
+            </div>
+            <div className="major-card-links">
+              <p className="major-card-subheading">More Information</p>
+              <a style={{ textDecoration: 'underline' }} className="major-card-link" target="_blank" rel="noopener noreferrer" href={linkURL}>{linkText}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
