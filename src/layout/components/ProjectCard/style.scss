@@ -21,6 +21,7 @@
   }
 
   &-photo {
+    height: min(10rem, 15vw);
     object-fit: cover;
   }
 
