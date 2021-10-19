@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
 export enum DataTypes {
@@ -18,34 +17,28 @@ export enum DataTypes {
   Errors = '395912477',
 }
 
-const fetchData = (gid: DataTypes): Array<any> => {
-  const [data, setData] = useState<any[]>([]);
-
-  useEffect(() => {
-    Papa.parse<any>(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${gid}`, {
-      download: true,
-      header: true,
-      complete: (results) => {
-        setData(results.data);
-      },
-    });
-  }, [gid]);
-
-  return data;
-};
-
-export const useData = (gid: DataTypes): Array<any> => {
+export const useData = (gid: DataTypes): Promise<Array<any>> => new Promise((resolve, reject) => {
   const cacheData = sessionStorage.getItem(gid);
 
   if (cacheData) {
-    return JSON.parse(cacheData);
+    resolve(JSON.parse(cacheData));
+    return;
   }
 
-  const newData = fetchData(gid);
+  Papa.parse<any>(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${gid}`, {
+    download: true,
+    header: true,
+    complete: (results) => {
+      const { data } = results;
 
-  if (newData.length !== 0) {
-    sessionStorage.setItem(gid, JSON.stringify(newData));
-  }
+      if (data.length !== 0) {
+        sessionStorage.setItem(gid, JSON.stringify(data));
+      }
 
-  return newData;
-};
+      resolve(data);
+    },
+    error: (error) => {
+      reject(error);
+    },
+  });
+});
