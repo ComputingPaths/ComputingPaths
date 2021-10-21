@@ -36,7 +36,7 @@ const MajorCard: React.FC<MajorCardProps> = ({
 
   return (
     <>
-      <div id={majorText && majorText.replace(/\s/g, '-')} />
+      <div id={majorText && majorText.replace(/\s/g, '-')} className="major-hyperlink" />
       <div className="major-card">
         {photoURL && <img className="major-card-photo" src={photoURL} alt={`${majorText || 'Major Card'}`} />}
         <div className="major-card-top">

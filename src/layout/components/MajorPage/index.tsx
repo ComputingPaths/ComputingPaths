@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-// import StickyBox from 'react-sticky-box';
 
 import MajorCard from '../MajorCard';
 

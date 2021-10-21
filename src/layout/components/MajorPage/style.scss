@@ -18,15 +18,9 @@
   &-sidebar {
     align-self: start;
     flex-basis: 300px;
-    // align-self: flex-start;
-    // height: fit-content;
-    // margin-top: 3rem;
-    // position: sticky;
-    // top: 0;
-
     flex-grow: 1;
     position: sticky;
-    top: 0;
+    top: calc(5.25rem + 2.25rem); // Header + Top Margin Heights
   }
 
   &-content {
@@ -36,8 +30,8 @@
   }
 
   &-scroll-content {
-    // align-items: flex-start;
     display: flex;
+    margin-top: 2.25rem;
   }
 
   &-link {
@@ -48,9 +42,5 @@
     display: inline-flex;
     padding: 1rem 1.5rem;
     width: 18rem;
-  }
-
-  &-cards {
-    margin-top: 3rem;
   }
 }

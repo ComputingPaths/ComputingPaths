@@ -1,11 +1,18 @@
 @import '../../../styles/fonts';
 @import '../../../styles/vars';
 
+.major-hyperlink {
+  display: block;
+  position: relative;
+  top: -5.25rem; // Header height offset
+  visibility: hidden;
+}
+
 .major-card {
   color: $color-neutrals-black;
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-bottom: 5rem;
   width: 50rem;
 
   &:first-child {
