@@ -1,24 +1,34 @@
 import React from 'react';
 
+import ExpandArrow from '../../../assets/ExpandArrow.svg';
+
 import './style.scss';
 
 interface ResourceCardProps {
-    photoURL?: string;
-    title?: string;
-    tags?: string;
+    description: string;
+    organization: string;
+    photoURL: string;
+    resourceLink: string;
+    resourceMembers: string;
+    resourceName: string;
+    resourceTag: string;
+    videoURL: string;
 }
 
 const ResourceCard: React.FC<ResourceCardProps> = ({
+  organization,
   photoURL,
-  title,
-  tags,
+  resourceName,
+  resourceTag,
 }) => (
   <div className="resource-card">
-    {photoURL && <img className="resource-card-image" src={photoURL} alt={title} />}
-    <div className="resource-card-content">
-      {title && <p className="resource-card-title">{title}</p>}
-      {tags && <div className="resource-card-tags">{tags.split(',').map((tag) => <p className="resource-card-tag">{tag}</p>)}</div>}
-    </div>
+    {photoURL && <img className="resource-card-photo" src={photoURL.split(',')[0]} alt={`${resourceName || 'Resource Card'}`} />}
+    <p className="resource-card-section">
+      <h2 className="resource-card-heading">{resourceName}</h2>
+      <h2 className="resource-card-organization">{organization}</h2>
+      <span className={`resource-card-resource-tag ${resourceTag.toLowerCase()}`}>{resourceTag}</span>
+      <img className="resource-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
+    </p>
   </div>
 );
 

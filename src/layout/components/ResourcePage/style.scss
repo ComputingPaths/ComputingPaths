@@ -1,15 +1,47 @@
 @import '../../../styles/fonts';
+@import '../../../styles/vars';
 
 .resource-page {
-  &-title {
-    @include font-heading-1;
+  &-heading {
+    @include font-heading-2;
+    margin-top: 5rem;
   }
 
-  &-resources {
+  &-resource {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: -2rem;
-    margin-top: 1rem;
+    justify-content: space-between;
+    margin: 0 -1.5rem;
+  }
+
+  &-tag-button {
+    @include font-subtitle-1;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    color: $color-neutrals-dark-grey;
+    flex: 1;
+    margin: 0.25rem;
+    padding: 1rem 1.5rem;
+
+    &.select {
+      background-color: $color-primary-blue;
+      color: #fff;
+    }
+  }
+
+  &-tag-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-text {
+    @include font-text;
+    margin-top: 1.5rem;
+  }
+
+  &-title {
+    @include font-heading-1;
   }
 }
