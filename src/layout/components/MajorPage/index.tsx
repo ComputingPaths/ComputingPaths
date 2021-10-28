@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import MajorCard from '../MajorCard';
@@ -8,8 +8,22 @@ import { DataTypes, useData } from '../../../utils/data';
 import './style.scss';
 
 const MajorPage: React.FC = () => {
-  const data = useData(DataTypes.Majors);
-  const departmentData = useData(DataTypes.Departments);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Majors)
+      .then((newData) => setData(newData))
+      .catch(() => setData([]));
+  }, [useData]);
+
+  const [departmentData, setDepartmentData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Departments)
+      .then((newData) => setDepartmentData(newData))
+      .catch(() => setData([]));
+  }, [useData]);
+
   const departmentNames = {
     bsc: 'Biological Sciences',
     cse: 'Computer Science',
@@ -21,6 +35,7 @@ const MajorPage: React.FC = () => {
     mus: 'Music',
     ece: 'Electrical Engineering',
   };
+
   const departmentURLs = new Map();
 
   departmentData.forEach((department) => {

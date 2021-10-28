@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { DataTypes, useData } from '../../../utils/data';
 import ProjectCard from '../ProjectCard';
@@ -6,7 +6,13 @@ import ProjectCard from '../ProjectCard';
 import './style.scss';
 
 const ProjectPage: React.FC = () => {
-  const data = useData(DataTypes.Projects);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Projects)
+      .then((newData) => setData(newData))
+      .catch(() => setData([]));
+  }, [useData]);
   const [filter, setFilter] = useState<string[]>([]);
 
   const updateFilter = (tag: string) => {
