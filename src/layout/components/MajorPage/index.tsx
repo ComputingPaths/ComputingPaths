@@ -21,7 +21,7 @@ const MajorPage: React.FC = () => {
   useEffect(() => {
     useData(DataTypes.Departments)
       .then((newData) => setDepartmentData(newData))
-      .catch(() => setData([]));
+      .catch(() => setDepartmentData([]));
   }, [useData]);
 
   const departmentNames = {

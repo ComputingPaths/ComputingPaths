@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import LinkedArrow from '../../../assets/LinkedArrow.svg';
 
@@ -27,7 +27,14 @@ const MajorCard: React.FC<MajorCardProps> = ({
   linkURL,
   photoURL,
 }) => {
-  const departmentData = useData(DataTypes.Departments);
+  const [departmentData, setDepartmentData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Departments)
+      .then((newData) => setDepartmentData(newData))
+      .catch(() => setDepartmentData([]));
+  }, [useData]);
+
   const departmentURLs = new Map();
 
   departmentData.forEach((department) => {
