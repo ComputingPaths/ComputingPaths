@@ -4,7 +4,7 @@
 .major-hyperlink {
   display: block;
   position: relative;
-  top: -5.25rem; // Header height offset
+  top: calc(-5.25rem - 2.25rem); // Header height offset and padding
   visibility: hidden;
 }
 
