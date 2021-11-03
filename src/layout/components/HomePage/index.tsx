@@ -1,42 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import CarouselRightArrow from '../../../assets/CarouselRightArrow.svg';
 import Gear from '../../../assets/Gear.svg';
 import LeftQuote from '../../../assets/LeftQuote.svg';
 import RightQuote from '../../../assets/RightQuote.svg';
 import { DataTypes, useData } from '../../../utils/data';
+
 import './style.scss';
 
 const HomePage: React.FC = () => {
   const [data, setData] = useState<Array<any>>([]);
 
   useEffect(() => {
-    useData(DataTypes.Departments)
+    useData(DataTypes.Majors)
       .then((newData) => setData(newData))
       .catch(() => setData([]));
   }, [useData]);
 
   return (
     <main className="home-page">
-      <h1 className="home-page-title">Discover Your Path in Computing</h1>
-      <Link to="/organizations">
-        <button className="home-page-home-button" type="submit">Find Your Home</button>
-      </Link>
-      <h2 className="home-page-header major">The Majors</h2>
-      <section className="home-page-majors-container">
-        <div className="home-page-majors-section">
-          <p className="home-page-majors-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h3 className="home-page-majors-section-major">Bioinformatics</h3>
+      <section className="home-page-landing">
+        <div className="home-page-title-section">
+          <h1 className="home-page-title">Discover Your Path in Computing</h1>
+          <Link to="/organizations">
+            <button className="home-page-home-button" type="submit">Find Your Home</button>
+          </Link>
         </div>
-        <div className="home-page-majors-section">
-          <p className="home-page-majors-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p className="home-page-majors-section-major">Cognitive Science</p>
-        </div>
-        <div className="home-page-majors-section">
-          <p className="home-page-majors-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p className="home-page-majors-section-major">Computer Science</p>
-        </div>
+        <div className="home-page-image" />
       </section>
+      <h2 className="home-page-header major">Majors</h2>
+      <section className="home-page-majors-container">
+        {data.map((major) => (
+          <div className="home-page-majors-section">
+            <img className="home-page-majors-section-image" src={major.Image} alt="major" />
+            <h3 className="home-page-majors-section-major">{major.Name}</h3>
+          </div>
+        ))}
+      </section>
+      <img className="home-page-right-arrow" src={CarouselRightArrow} alt="Right Arrow" />
       <article className="home-page-stories-section">
         <h2 className="home-page-header">Stories &#38; Advice</h2>
         <section className="home-page-stories">
@@ -76,7 +78,6 @@ const HomePage: React.FC = () => {
           </Link>
         </div>
       </section>
-      {data.map((major) => <h1>{major.Name}</h1>)}
     </main>
   );
 };
