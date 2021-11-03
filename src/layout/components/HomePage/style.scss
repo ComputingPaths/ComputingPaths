@@ -10,10 +10,10 @@
   &-home-button {
     @include font-subtitle-1;
     background-color: $color-primary-mustard;
-    border: none;
+    border: 0;
     border-radius: 5px;
     color: #fff;
-    padding: 1rem 0 1rem;
+    padding: 1rem 0;
     width: 190px;
 
   }
@@ -55,8 +55,9 @@
 
     &-major {
       @include font-heading-3;
-      background-color: $color-neutrals-dark-grey;
+      background-color: $color-primary-navy;
       bottom: 0;
+      color: #fff;
       height: 2.25rem;
       overflow: hidden;
       padding: 0.5rem 1rem;
@@ -99,9 +100,9 @@
       align-items: center;
       display: flex;
       flex-shrink: 0;
-      position: relative;
       height: 350px;
       justify-content: center;
+      position: relative;
       width: 350px;
       z-index: 0;
     }
@@ -126,15 +127,15 @@
     }
 
     &-right-quote {
-      position: relative;
       left: calc(100% - 80px);
+      position: relative;
     }
 
     &-section {
       background: $color-background-grey;
       box-sizing: border-box;
       margin: 2rem auto 2rem -7rem;
-      padding: 0.1rem 7rem;
+      padding: 1rem 7rem;
       width: 100vw;
     }
 
@@ -193,14 +194,14 @@
       }
   
       &-right-quote {
-        position: relative;
         left: calc(100% - 25px);
+        position: relative;
         width: 25px;
       }
 
       &-section {
         margin: 2rem auto 2rem -1.5rem;
-        padding: 0.1rem 1.5rem;
+        padding: 1rem 1.5rem;
       }
     }
   }
