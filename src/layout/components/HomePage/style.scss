@@ -23,7 +23,7 @@
     flex-grow: 0;
     flex-shrink: 0;
     height: 25rem;
-    width: 24rem;
+    width: 25rem;
 
     &-circle {
       border-radius: 50%;
@@ -175,6 +175,11 @@
 
 @media(max-width: $site-size-small) {
   .home-page {
+    &-image {
+      height: 20rem;
+      width: 20rem;
+    }
+
     &-landing {
       flex-wrap: wrap;
       justify-content: center;
@@ -234,11 +239,13 @@
     }
 
     &-title {
+      margin: 2rem;
       text-align: left;
 
       &-section {
         margin-bottom: 2rem;
         text-align: center;
+        width: 100%;
       }
     }
   }
