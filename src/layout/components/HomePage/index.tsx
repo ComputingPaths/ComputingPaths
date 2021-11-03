@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import RightArrow from '../../../assets/RightArrow.svg';
-
+import Gear from '../../../assets/Gear.svg';
+import LeftQuote from '../../../assets/LeftQuote.svg';
+import RightQuote from '../../../assets/RightQuote.svg';
 import { DataTypes, useData } from '../../../utils/data';
 import './style.scss';
 
@@ -17,8 +19,10 @@ const HomePage: React.FC = () => {
   return (
     <main className="home-page">
       <h1 className="home-page-title">Discover Your Path in Computing</h1>
-      <button className="home-page-button" type="submit">Find Your Home</button>
-      <h2 className="home-page-subheader major">The Majors</h2>
+      <Link to="/organizations">
+        <button className="home-page-home-button" type="submit">Find Your Home</button>
+      </Link>
+      <h2 className="home-page-header major">The Majors</h2>
       <section className="home-page-majors-container">
         <div className="home-page-majors-section">
           <p className="home-page-majors-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -33,18 +37,33 @@ const HomePage: React.FC = () => {
           <p className="home-page-majors-section-major">Computer Science</p>
         </div>
       </section>
-      <section className="home-page-stories">
-        <h2 className="">Stories &#38; Majors</h2>
-        <p className="">What sealed the deal on software engineering for me was that rush you get when something finally works</p>
-        <h3 className="">Rachel Keirouz | Mathematics - Computer Science</h3>
-        <h3 className="">Read their stories <a className="home-page-link" target="_self" rel="noopener noreferrer" href="/stories"><img className="home-page-link-arrow" src={RightArrow} alt="Right Arrow" /></a></h3>
-      </section>
+      <article className="home-page-stories-section">
+        <h2 className="home-page-header">Stories &#38; Advice</h2>
+        <section className="home-page-stories">
+          <div className="home-page-stories-image">
+            <img className="home-page-stories-gear" src={Gear} alt="Gear Quote" />
+            <img className="home-page-image-circle" src="/img/story.jpg" alt="Advice" />
+          </div>
+          <div className="home-page-stories-text">
+            <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" />
+            <p className="home-page-stories-quote">What sealed the deal on software engineering for me was that rush you get when something finally works</p>
+            <h3 className="home-page-stories-name">
+              Rachel Keirouz &nbsp;
+              <span>Mathematics - Computer Science</span>
+            </h3>
+            <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" />
+          </div>
+        </section>
+      </article>
+      <h2 className="home-page-header">Get Involved</h2>
       <section className="home-page-resources">
         <div className="home-page-image" />
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Student Organizations</h2>
           <p className="home-page-text">Student Organizations allow for extracurricular expierence, utilizing and extending skills imparted in computing courses. These groups demonstrate creating computing efforts by channeling the collaborative spirit of UC San Diego.</p>
-          <span className="home-page-tags">Get Involved!</span>
+          <Link to="/organizations">
+            <button className="home-page-home-button" type="submit">Learn More</button>
+          </Link>
         </div>
       </section>
       <section className="home-page-resources">
@@ -52,15 +71,9 @@ const HomePage: React.FC = () => {
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Projects</h2>
           <p className="home-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
-          <span className="home-page-tags">Get Projects!</span>
-        </div>
-      </section>
-      <section className="home-page-resources">
-        <div className="home-page-image" />
-        <div className="home-page-resources-section">
-          <h2 className="home-page-subheader">Labs</h2>
-          <p className="home-page-text">The labs at UC San Diego are solving major societal issues, such as large-scale education, automation, healthcare, visualization of complex phenomena and data, social interactions, citizen science, and the ethical issues that are of ever-increasing importance.</p>
-          <span className="home-page-tags">Learn More!</span>
+          <Link to="/projects">
+            <button className="home-page-home-button" type="submit">See Projects</button>
+          </Link>
         </div>
       </section>
       {data.map((major) => <h1>{major.Name}</h1>)}

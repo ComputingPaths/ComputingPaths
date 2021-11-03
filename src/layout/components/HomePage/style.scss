@@ -2,12 +2,36 @@
 @import '../../../styles/vars';
 
 .home-page {
+  &-header {
+    @include font-heading-1;
+    margin: 2rem 0;
+  }
+
+  &-home-button {
+    @include font-subtitle-1;
+    background-color: $color-primary-mustard;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1rem 0 1rem;
+    width: 190px;
+
+  }
+
   &-image {
     background-color: $color-neutrals-grey;
     flex-grow: 0;
     flex-shrink: 0;
     height: 220px;
-    width: 200px;
+    width: 220px;
+
+    &-circle {
+      border-radius: 50%;
+      height: calc(100% - 120px);
+      object-fit: cover;
+      object-position: left;
+      width: calc(100% - 120px);
+    }
   }
 
   &-majors-container {
@@ -43,11 +67,13 @@
   }
 
   &-resources {
+    align-items: center;
     display: inline-flex;
-    margin: 2rem 0;
+    margin-bottom: 1rem;
 
     &-section {
       margin: 0 2rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -57,38 +83,125 @@
   }
 
   &-stories {
-    @include font-heading-3;
-    background: $color-gradients-blue-teal;
-    box-sizing: border-box;
-    color: #fff;
-    margin: 2rem 0 2rem -7rem;
-    padding: 2rem;
-    width: 100vw;
+    align-items: center;
+    display: flex;
+
+    &-gear {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &-image {
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      position: relative;
+      height: 350px;
+      justify-content: center;
+      width: 350px;
+      z-index: 0;
+    }
+
+    &-name {
+      @include font-heading-3;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 80px;
+    }
+
+    &-name > span {
+      @include font-text;
+      color: $color-neutrals-dark-grey;
+    }
+
+    &-quote {
+      @include font-heading-2;
+      margin: 1rem auto;
+      padding: 0 80px;
+    }
+
+    &-right-quote {
+      position: relative;
+      left: calc(100% - 80px);
+    }
+
+    &-section {
+      background: $color-background-grey;
+      box-sizing: border-box;
+      margin: 2rem auto 2rem -7rem;
+      padding: 0.1rem 7rem;
+      width: 100vw;
+    }
+
+    &-text {
+      margin: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 
   &-subheader {
     @include font-heading-2;
-
-    &.major {
-      text-align: center;
-    }
-  }
-
-  &-tags {
-    @include font-small-button-text;
-    background-color: $color-primary-mustard;
-    border-radius: 1rem;
-    color: #fff;
-    overflow: hidden;
-    padding: 0.25rem 0.8rem;
   }
 
   &-title {
-    @include font-heading-1;
+    @include font-display-1;
   }
 
   &-text {
     @include font-text;
     margin: 0.75rem 0 1rem;
+  }
+}
+
+@media(max-width: $site-size-small) {
+  .home-page {
+    &-resources {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-section {
+        margin: 2rem auto;
+        width: 100%;
+      }
+    }
+    
+    &-stories {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-image {
+        height: 280px;
+        width: 280px;
+      }
+
+      &-left-quote {
+        padding: 15px;
+        width: 25px;
+      }
+  
+      &-name {
+        padding: 0 30px 0 35px;
+      }
+
+      &-quote {
+        padding: 0 30px 0 35px;
+      }
+  
+      &-right-quote {
+        position: relative;
+        left: calc(100% - 25px);
+        width: 25px;
+      }
+
+      &-section {
+        margin: 2rem auto 2rem -1.5rem;
+        padding: 0.1rem 1.5rem;
+      }
+    }
   }
 }
