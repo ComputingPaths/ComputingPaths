@@ -74,6 +74,8 @@ const OrganizationPage: React.FC = () => {
                   img={org.Orgimage}
                   tags={verboseTags}
                   link={org.Link}
+                  linkedin={org.Linkedin}
+                  email={org.Email}
                 />
               );
             }

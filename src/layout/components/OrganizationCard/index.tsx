@@ -10,11 +10,13 @@ type OrganizationCardProps = {
     name: string,
     img: string,
     tags: string[],
-    link: string
+    link: string,
+    linkedin: string,
+    email: string
 }
 
 const OrganizationCard: React.FC<OrganizationCardProps> = ({
-  name, img, tags, link,
+  name, img, tags, link, linkedin, email,
 }) => (
   <div className="org-card">
     <img className="org-card-logo" src={img} alt={name} />
@@ -26,13 +28,13 @@ const OrganizationCard: React.FC<OrganizationCardProps> = ({
         ))}
       </div>
       <div className="org-card-links">
-        <a href="#">
+        <a href={`mailto:${email}`}>
           <img src={EmailIcon} alt="Email Icon" />
         </a>
         <a href={link}>
           <img src={WebsiteIcon} alt="Email Icon" />
         </a>
-        <a href="#">
+        <a href={linkedin}>
           <img src={LinkedinIcon} alt="Linkedin Icon" />
         </a>
       </div>
