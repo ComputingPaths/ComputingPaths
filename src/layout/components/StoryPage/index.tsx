@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import StoryCard from '../StoryCard';
 
@@ -7,7 +7,13 @@ import { DataTypes, useData } from '../../../utils/data';
 import './style.scss';
 
 const StoryPage: React.FC = () => {
-  const data = useData(DataTypes.Stories);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Stories)
+      .then((newData) => setData(newData))
+      .catch(() => setData([]));
+  }, [useData]);
 
   return (
     <div className="story-page">
@@ -19,7 +25,7 @@ const StoryPage: React.FC = () => {
             key={index}
             leftToRight={index % 2 === 0}
             photoURL={story.Image}
-            headingText="Example heading text, need to determine how to split this from quote."
+            headingText={story.HighlightedQuote ? `"${story.HighlightedQuote}"` : undefined}
             quoteText={story.Quote}
             authorName={story.Name}
             authorDescriptor={story.Class ? `Class of ${story.Class}` : undefined}

@@ -3,7 +3,7 @@
 
 .project-modal-card {
   background: #fff;
-  box-shadow: 0 0 0 9999rem rgba(216, 208, 208, 0.5);
+  box-shadow: 0 0 0 9999rem rgba(50, 50, 50, 0.5);
   height: 80%;
   left: max(5vw, calc(50vw - 35rem));
   overflow-x: hidden;
@@ -11,7 +11,7 @@
   position: fixed;
   top: 10%;
   width: min(90vw, 70rem);
-  z-index: 1;
+  z-index: 2;
 
   &-arrow {
     background-color: #fff;

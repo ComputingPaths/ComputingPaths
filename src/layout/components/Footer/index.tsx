@@ -13,7 +13,7 @@ const Footer: React.FC = () => (
       <a href="mailto:computingpaths@eng.ucsd.edu"><p className="footer-email">computingpaths@eng.ucsd.edu</p></a>
     </div>
     <div className="footer-links">
-      {pages.map((page, index) => (<Link to={page.link}><p className="footer-link" key={index}>{page.title}</p></Link>))}
+      {pages.map((page, index) => (<Link to={page.link} key={index}><p className="footer-link">{page.title}</p></Link>))}
     </div>
     <div className="footer-issue">
       <p className="footer-issue-heading">Have an issue?</p>

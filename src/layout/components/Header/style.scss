@@ -1,12 +1,20 @@
-@import '../../../styles/fonts';
+@import '../../../styles';
 
 .header {
-  align-items: center;
-  background-color: #f9f9f9;
-  display: flex;
-  flex: 0 0 auto;
-  height: 5.25rem;
-  padding: 0 7rem;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+
+  &-content {
+    align-items: center;
+    background-color: #f5f5f5;
+    display: flex;
+    flex: 0 0 auto;
+    height: 5.25rem;
+    padding: 0 7rem;
+  }
 
   &-logo {
     width: 11rem;
@@ -16,18 +24,94 @@
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 9rem;
-    padding-right: 11rem;
   }
 
   &-link {
     @include font-nav-bar-text;
   }
+
+  &-mobile {
+    display: none;
+  }
+
+  &-mobile-links {
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 12.5rem;
+    justify-content: space-around;
+    left: 0;
+    padding: 0.25rem 0.5rem;
+    position: fixed;
+    right: 0;
+    top: calc(-12.5rem + 5.25rem);
+    transition: top 0.5s;
+    z-index: -1;
+  }
+
+  @media(max-width: $site-size-small) {
+    &-content {
+      height: 3.5rem;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
+
+    &-logo {
+      width: 6.25rem;
+    }
+  
+    &-links {
+      display: none;
+    }
+  
+    &-link {
+      padding: 0.25rem;
+    }
+
+    &-mobile {
+      display: block;
+
+      &-button {
+        background: none;
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      &-icon {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-mobile-links {
+      top: calc(-12.5rem + 3.5rem);
+
+      &.open {
+        top: 3.5rem;
+      }
+    }
+  }
+}
+
+.spacer {
+  min-height: 5.25rem;
+
+  @media(max-width: $site-size-small) {
+    min-height: 3.5rem;
+  }
 }
 
 .hero {
+  flex-shrink: 0;
   height: 20rem;
   object-fit: cover;
   width: 100%;
+
+  @media(max-width: $site-size-small) {
+    height: 12.5rem;
+  }
 }

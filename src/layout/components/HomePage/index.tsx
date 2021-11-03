@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import RightArrow from '../../../assets/RightArrow.svg';
 
@@ -6,11 +6,18 @@ import { DataTypes, useData } from '../../../utils/data';
 import './style.scss';
 
 const HomePage: React.FC = () => {
-  const data = useData(DataTypes.Majors);
+  const [data, setData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.Departments)
+      .then((newData) => setData(newData))
+      .catch(() => setData([]));
+  }, [useData]);
 
   return (
     <main className="home-page">
       <h1 className="home-page-title">Discover Your Path in Computing</h1>
+      <button className="home-page-button" type="submit">Find Your Home</button>
       <h2 className="home-page-subheader major">The Majors</h2>
       <section className="home-page-majors-container">
         <div className="home-page-majors-section">
