@@ -1,0 +1,59 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/vars.scss';
+
+.orgs-page {
+    padding-bottom: 100px;
+
+    &-header {
+        h1 {
+            @include font-heading-1;
+        }
+        padding-bottom: 36px;
+    }
+    h2 {
+        @include font-heading-3;
+    }
+    &-grid {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 36px;
+        row-gap: 48px;
+    }
+    &-tag {
+        &-button {
+            @include font-subtitle-1;
+            background-color: #fff;
+            border: 0;
+            border-radius: 0.25rem;
+            color: $color-neutrals-dark-grey;
+            flex: 1;
+            margin: 0.25rem;
+            padding: 1rem 1.5rem;
+        
+            &.select {
+              background-color: $color-primary-blue;
+              color: #fff;
+            }
+        }
+                
+        &-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .orgs-page-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .orgs-page-grid {
+        grid-template-columns: 1fr;
+    }
+}
