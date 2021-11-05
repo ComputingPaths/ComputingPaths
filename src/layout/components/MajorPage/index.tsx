@@ -4,18 +4,11 @@ import { HashLink as Link } from 'react-router-hash-link';
 import MajorCard from '../MajorCard';
 
 import { DataTypes, useData } from '../../../utils/data';
+import { parseDegree, parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
 
 const MajorPage: React.FC = () => {
-  const [data, setData] = useState<Array<any>>([]);
-
-  useEffect(() => {
-    useData(DataTypes.Majors)
-      .then((newData) => setData(newData))
-      .catch(() => setData([]));
-  }, [useData]);
-
   const [departmentData, setDepartmentData] = useState<Array<any>>([]);
 
   useEffect(() => {
@@ -24,23 +17,25 @@ const MajorPage: React.FC = () => {
       .catch(() => setDepartmentData([]));
   }, [useData]);
 
-  const departmentNames = {
-    bsc: 'Biological Sciences',
-    cse: 'Computer Science',
-    bie: 'Bioengineering',
-    cog: 'Cognitive Sciences',
-    mat: 'Mathematics',
-    phy: 'Physics',
-    vis: 'Visual Arts',
-    mus: 'Music',
-    ece: 'Electrical Engineering',
-  };
+  const departmentMap = parseLookup(departmentData);
 
-  const departmentURLs = new Map();
+  const [majorData, setMajorData] = useState<Array<any>>([]);
 
-  departmentData.forEach((department) => {
-    departmentURLs.set(department.Name, department.Link);
-  });
+  useEffect(() => {
+    useData(DataTypes.Majors)
+      .then((newData) => setMajorData(newData))
+      .catch(() => setMajorData([]));
+  }, [useData]);
+
+  // const [majorSpecsData, setMajorSpecsData] = useState<Array<any>>([]);
+
+  // useEffect(() => {
+  //   useData(DataTypes.MajorSpecs)
+  //     .then((newData) => setMajorSpecsData(newData))
+  //     .catch(() => setMajorSpecsData([]));
+  // }, [useData]);
+
+  // const specsMap = parseLookup(majorSpecsData);
 
   return (
     <div className="major-page">
@@ -50,20 +45,25 @@ const MajorPage: React.FC = () => {
         <h2 className="major-page-subheading">Learn more about the computing majors</h2>
         <div className="major-page-scroll-content">
           <div className="major-page-sidebar">
-            {data.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors/#${major.Name.replace(/\s/g, '-')}`}>{major.Name}</Link></div>)}
+            {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors/#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
           </div>
           <div className="major-page-cards">
-            {data.map((major, index) => (
+            {majorData.map((major, index) => (
               <MajorCard
-                majorText={major.Name}
+                image={major.image}
+                name={major.name}
+                capped={major.capped === 'TRUE'}
+                degree_type={parseDegree(major.degree_type)}
+                description={major.description}
+                departments={parseList(major.departments).map((department_code) => {
+                  const department = departmentMap.get(department_code);
+                  return { title: department.name, url: department.link };
+                })}
+                links={[
+                  { title: major.link_1_title, url: major.link_1_url },
+                  { title: major.link_2_title, url: major.link_2_url }]}
+                specializations={[]} // TODO
                 key={index}
-                capped={major.Cap === 'TRUE'}
-                degreeText={major.Degree === 'bs' ? 'Bachelor of Science' : 'Bachelor of Arts'}
-                departments={major.Departments.split(',').map((element) => departmentNames[element])}
-                majorDescription={major.Hook}
-                photoURL={major.Image}
-                linkText={major['Moreinfo Name']}
-                linkURL={major['Moreinfo Link']}
               />
             ))}
           </div>

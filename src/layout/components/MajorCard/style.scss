@@ -74,7 +74,15 @@
 
   &-link {
     margin-top: 0.5rem;
-    text-decoration: underline;
+
+    &,
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active { // Selectors are needed to override css reset styling
+      @include font-linked-text;
+    }
 
     &-arrow {
       margin-left: 0.5rem;

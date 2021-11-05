@@ -1,77 +1,50 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import LinkedArrow from '../../../assets/LinkedArrow.svg';
-
-import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
 interface MajorCardProps {
-    majorText?: string;
-    capped?: boolean;
-    degreeText?: string;
-    departments?: string[];
-    majorDescription?: string;
-    linkText?: string;
-    linkURL?: string;
-    photoURL?: string;
+    image: string;
+    name: string;
+    capped: boolean;
+    degree_type: string;
+    description: string;
+    departments: { title: string; url: string; }[];
+    links: { title: string; url: string }[];
+    specializations?: { name: string, detail: string }[];
 }
 
 const MajorCard: React.FC<MajorCardProps> = ({
-  majorText,
-  capped,
-  degreeText,
-  departments,
-  majorDescription,
-  linkText,
-  linkURL,
-  photoURL,
-}) => {
-  const [departmentData, setDepartmentData] = useState<Array<any>>([]);
-
-  useEffect(() => {
-    useData(DataTypes.Departments)
-      .then((newData) => setDepartmentData(newData))
-      .catch(() => setDepartmentData([]));
-  }, [useData]);
-
-  const departmentURLs = new Map();
-
-  departmentData.forEach((department) => {
-    departmentURLs.set(department.Name, department.Link);
-  });
-
-  return (
-    <>
-      <div id={majorText && majorText.replace(/\s/g, '-')} className="major-hyperlink" />
-      <div className="major-card">
-        {photoURL && <img className="major-card-photo" src={photoURL} alt={`${majorText || 'Major Card'}`} />}
-        <div className="major-card-top">
-          {majorText && <p className="major-card-heading">{majorText}</p>}
-          {capped && <p className="major-card-tag">Capped</p>}
-          {degreeText && <p className="major-card-tag">{degreeText}</p>}
+  image, name, capped, degree_type, description, departments, links,
+}) => (
+  <>
+    <div id={name && name.replace(/\s/g, '-')} className="major-hyperlink" />
+    <div className="major-card">
+      {image && <img className="major-card-photo" src={image} alt={`${name || 'Major Card'}`} />}
+      <div className="major-card-top">
+        {name && <p className="major-card-heading">{name}</p>}
+        {capped && <p className="major-card-tag">Capped</p>}
+        {degree_type && <p className="major-card-tag">{degree_type}</p>}
+      </div>
+      <div className="major-card-bottom">
+        <div className="major-card-bottom-left">
+          <p className="major-card-subheading">Description</p>
+          {description && <p className="major-card-description">{description}</p>}
         </div>
-        <div className="major-card-bottom">
-          <div className="major-card-bottom-left">
-            <p className="major-card-subheading">Description</p>
-            {majorDescription && <p className="major-card-description">{majorDescription}</p>}
+        <div className="major-card-bottom-right">
+          <p className="major-card-subheading">Departments</p>
+          <div className="major-card-links">
+            {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
           </div>
-          <div className="major-card-bottom-right">
-            <p className="major-card-subheading">Departments</p>
-            <div className="major-card-links">
-              {departments && departments.map((department, index) => (
-                <a className="major-card-link" key={index} target="_blank" rel="noopener noreferrer" href={departmentURLs[department]}>{department}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
-              ))}
-            </div>
-            <div className="major-card-links">
-              <p className="major-card-subheading">More Information</p>
-              <a style={{ textDecoration: 'underline' }} className="major-card-link" target="_blank" rel="noopener noreferrer" href={linkURL}>{linkText}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
-            </div>
+          <div className="major-card-links">
+            <p className="major-card-subheading">More Information</p>
+            {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
           </div>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 export default MajorCard;
