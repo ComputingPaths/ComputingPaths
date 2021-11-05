@@ -28,15 +28,21 @@ const OrganizationCard: React.FC<OrganizationCardProps> = ({
         ))}
       </div>
       <div className="org-card-links">
+        {email && (
         <a href={`mailto:${email}`}>
           <img src={EmailIcon} alt="Email Icon" />
         </a>
+        )}
+        {link && (
         <a href={link}>
           <img src={WebsiteIcon} alt="Email Icon" />
         </a>
+        )}
+        {linkedin && (
         <a href={linkedin}>
           <img src={LinkedinIcon} alt="Linkedin Icon" />
         </a>
+        )}
       </div>
     </div>
   </div>
