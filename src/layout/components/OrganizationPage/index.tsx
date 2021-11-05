@@ -7,6 +7,7 @@ import './style.scss';
 const OrganizationPage: React.FC = () => {
   const [orgs, setOrgs] = useState<Array<any>>([]);
   const [orgTags, setOrgTags] = useState<Array<any>>([]);
+  const [headerImg, setHeaderImg] = useState<string>('');
 
   const [filter, setFilter] = useState<string[]>([]);
 
@@ -32,20 +33,24 @@ const OrganizationPage: React.FC = () => {
   );
 
   useEffect(() => {
-    Promise.all([useData(DataTypes.OrgTags), useData(DataTypes.Orgs)])
+    Promise.all([useData(DataTypes.OrgTags), useData(DataTypes.Orgs), useData(DataTypes.Misc)])
       .then((data) => {
         setOrgTags(data[0]);
         setOrgs(data[1]);
+        const objArr = data[2].filter((obj) => (obj.Key === 'orgHeader'));
+        setHeaderImg(objArr[0].Value);
       })
       .catch(() => {
         setOrgTags([]);
         setOrgs([]);
+        setHeaderImg('');
       });
   }, [useData]);
 
   return (
     <div className="orgs-page">
       <div className="orgs-page-header">
+        <img src={headerImg} alt="Student Organization Logos" />
         <h1>Student Organizations</h1>
         <p>Student organizations allow for extracurricular experience,
           utilizing and extending skills imparted in computing courses.
