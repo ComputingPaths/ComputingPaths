@@ -1,0 +1,135 @@
+@import '../../../styles';
+
+.major-hyperlink {
+  display: block;
+  position: relative;
+  top: calc(-5.25rem - 2.25rem); // Header height offset and padding
+  visibility: hidden;
+
+  @media(max-width: $site-size-small) { 
+    top: calc(-3.5rem - 1rem); // Header height offset and padding
+  }
+}
+
+.major-card {
+  color: $color-neutrals-black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  width: 50rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &-photo {
+    flex-shrink: 0;
+    height: 15rem;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &-top {
+    align-items: center;
+    background-color: $color-primary-navy;
+    display: flex;
+    padding: 1.5rem 3rem;
+  }
+
+  &-heading {
+    @include font-heading-3;
+    color: $color-neutrals-white;
+    margin-right: 1.5rem;
+    max-width: 60%;
+  }
+
+  &-tags {
+    display: flex;
+  }
+
+  &-tag {
+    @include font-small-button-text;
+    background-color: $color-primary-dark-yellow;
+    border-radius: 3.35rem;
+    color: $color-primary-navy;
+    margin-right: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+  }
+
+  &-bottom {
+    background-color: $color-neutrals-white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+
+    &-right {
+      margin-top: 2rem;
+    }
+  }
+
+  &-description {
+    width: 29rem;
+  }
+
+  &-subheading {
+    @include font-subtitle-1;
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
+
+  &-link {
+    margin-top: 0.5rem;
+
+    &,
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active { // Selectors are needed to override css reset styling
+      @include font-linked-text;
+    }
+
+    &-arrow {
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media(max-width: $site-size-small) {
+    margin-bottom: 1.5rem;
+    width: unset;
+
+    &-photo {
+      height: 7.5rem;
+    }
+    
+    &-top {
+      align-items: unset;
+      flex-direction: column;
+      padding: 0.75rem 1rem;
+    }
+
+    &-tags {
+      margin-top: 0.5rem;
+    }
+
+    &-tag {
+      margin-right: 0.5rem;
+      padding: 0.25rem 0.5rem;
+    }
+    
+    &-bottom {
+      flex-direction: column;
+      padding: 1.5rem 1rem;
+    }
+    
+    &-description {
+      margin-top: 0.5rem;
+      width: unset;
+    }
+  }
+}
