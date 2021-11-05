@@ -50,7 +50,7 @@ const MajorPage: React.FC = () => {
             {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors/#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
           </div>
           <div className="major-page-mobile-navigation">
-            <Dropdown options={majorData.map((major) => major.name)} placeholder="Select a major" onChange={(major) => { location.hash = `#${major.value.replace(/\s/g, '-')}`; }} />
+            <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={majorData.map((major) => major.name)} placeholder="Select a major" onChange={(major) => { location.hash = `#${major.value.replace(/\s/g, '-')}`; }} />
           </div>
           <div className="major-page-cards">
             {majorData.map((major, index) => (

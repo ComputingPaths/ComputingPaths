@@ -99,18 +99,18 @@
     }
   }
 
-  @media(max-width: $site-size-small) { 
-    width: unset;
+  @media(max-width: $site-size-small) {
     margin-bottom: 1.5rem;
+    width: unset;
 
     &-photo {
       height: 7.5rem;
     }
     
     &-top {
-      padding: 0.75rem 1rem;
-      flex-direction: column;
       align-items: unset;
+      flex-direction: column;
+      padding: 0.75rem 1rem;
     }
 
     &-tags {
@@ -123,35 +123,13 @@
     }
     
     &-bottom {
-      padding: 1.5rem 1rem;
       flex-direction: column;
+      padding: 1.5rem 1rem;
     }
     
     &-description {
       margin-top: 0.5rem;
       width: unset;
-    }
-    
-    &-subheading {
-
-    }
-    
-    &-links {
-
-    }
-
-    &-link {
-      &,
-      &:link,
-      &:visited,
-      &:focus,
-      &:hover,
-      &:active { // Selectors are needed to override css reset styling
-
-      }
-      &-arrow {
-
-      }
     }
   }
 }
