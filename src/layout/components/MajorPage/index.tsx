@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import MajorCard from '../MajorCard';
@@ -47,16 +49,20 @@ const MajorPage: React.FC = () => {
           <div className="major-page-sidebar">
             {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors/#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
           </div>
+          <div className="major-page-mobile-navigation">
+            <Dropdown options={majorData.map((major) => major.name)} placeholder="Select a major" onChange={(major) => { location.hash = `#${major.value.replace(/\s/g, '-')}`; }} />
+          </div>
           <div className="major-page-cards">
             {majorData.map((major, index) => (
               <MajorCard
                 image={major.image}
                 name={major.name}
                 capped={major.capped === 'TRUE'}
-                degree_type={parseDegree(major.degree_type)}
+                degreeType={parseDegree(major.degree_type)}
                 description={major.description}
-                departments={parseList(major.departments).map((department_code) => {
-                  const department = departmentMap.get(department_code);
+                departments={parseList(major.departments).map((departmentCode) => {
+                  const department = departmentMap.get(departmentCode);
+
                   return { title: department.name, url: department.link };
                 })}
                 links={[

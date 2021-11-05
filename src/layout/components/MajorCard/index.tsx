@@ -8,7 +8,7 @@ interface MajorCardProps {
     image: string;
     name: string;
     capped: boolean;
-    degree_type: string;
+    degreeType: string;
     description: string;
     departments: { title: string; url: string; }[];
     links: { title: string; url: string }[];
@@ -16,7 +16,7 @@ interface MajorCardProps {
 }
 
 const MajorCard: React.FC<MajorCardProps> = ({
-  image, name, capped, degree_type, description, departments, links,
+  image, name, capped, degreeType, description, departments, links,
 }) => (
   <>
     <div id={name && name.replace(/\s/g, '-')} className="major-hyperlink" />
@@ -24,8 +24,12 @@ const MajorCard: React.FC<MajorCardProps> = ({
       {image && <img className="major-card-photo" src={image} alt={`${name || 'Major Card'}`} />}
       <div className="major-card-top">
         {name && <p className="major-card-heading">{name}</p>}
-        {capped && <p className="major-card-tag">Capped</p>}
-        {degree_type && <p className="major-card-tag">{degree_type}</p>}
+        {(capped || degreeType) && (
+        <div className="major-card-tags">
+          {capped && <p className="major-card-tag">Capped</p>}
+          {degreeType && <p className="major-card-tag">{degreeType}</p>}
+        </div>
+        )}
       </div>
       <div className="major-card-bottom">
         <div className="major-card-bottom-left">

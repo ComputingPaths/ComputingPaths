@@ -23,6 +23,26 @@
     top: calc(5.25rem + 2.25rem); // Header + Top Margin Heights
   }
 
+  &-mobile-navigation {
+    display: none;
+
+    .Dropdown-root {
+      height: 2.5rem;
+
+      .Dropdown-control {
+        border-radius: 4px;
+      }
+
+      .Dropdown-arrow {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+
+  &-cards {
+    margin-top: 1rem;
+  }
+
   &-content {
     background-color: $color-background-grey;
     margin: 3rem -7rem -3rem;
@@ -42,5 +62,41 @@
     display: inline-flex;
     padding: 1rem 1.5rem;
     width: 18rem;
+  }
+
+  @media(max-width: $site-size-small) {
+    &-title {
+
+    }
+  
+    &-text {
+
+    }
+  
+    &-subheading {
+
+    }
+  
+    &-sidebar {
+      display: none;
+    }
+
+    &-mobile-navigation {
+      display: unset;
+    }
+  
+    &-content {
+      margin: 1.5rem -1.5rem -1.5rem;
+      padding: 1.5rem 1.5rem;
+    }
+  
+    &-scroll-content {
+      margin-top: 1rem;
+      flex-direction: column;
+    }
+  
+    &-link {
+
+    }
   }
 }
