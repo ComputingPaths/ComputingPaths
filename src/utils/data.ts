@@ -1,12 +1,10 @@
 import Papa from 'papaparse';
 
 export enum DataTypes {
-  Pages = '1910980686',
   Stories = '1646384161',
-  Majors = '860790804',
   Departments = '929723649',
-  MajorDescriptions = '1664677404',
-  MajorExpand = '1867072131',
+  Majors = '860790804',
+  MajorSpecializations = '1867072131',
   Resources = '2135229956',
   ResourcesTags = '167316779',
   ResourceBanner = '1661600010',
