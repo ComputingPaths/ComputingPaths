@@ -91,7 +91,7 @@ $font-family: 'Inter', sans-serif;
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  text-decoration-line: underline;
+  text-decoration: underline;
     
   @media(max-width: $site-size-small) { 
     font-size: 14px;

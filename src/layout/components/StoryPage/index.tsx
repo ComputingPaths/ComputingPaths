@@ -24,13 +24,13 @@ const StoryPage: React.FC = () => {
           <StoryCard
             key={index}
             leftToRight={index % 2 === 0}
-            photoURL={story.Image}
-            headingText={story.HighlightedQuote ? `"${story.HighlightedQuote}"` : undefined}
-            quoteText={story.Quote}
-            authorName={story.Name}
-            authorDescriptor={story.Class ? `Class of ${story.Class}` : undefined}
-            linkText={`Hear ${story.Name}'s story`}
-            linkURL={story.Link}
+            photoURL={story.image}
+            headingText={story.highlighted_quote ? `"${story.highlighted_quote}"` : undefined}
+            quoteText={story.quote}
+            authorName={story.name}
+            authorDescriptor={story.class ? `Class of ${story.class}` : undefined}
+            linkText={`Hear ${story.name}'s story`}
+            linkURL={story.link}
           />
         ))}
       </div>

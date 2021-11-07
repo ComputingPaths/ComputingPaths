@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import smoothscroll from 'smoothscroll-polyfill';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import OrganizationPage from './layout/containers/OrganizationPage';
@@ -11,6 +12,8 @@ import StoryPage from './layout/containers/StoryPage';
 import ErrorPage from './layout/containers/ErrorPage';
 
 import './index.scss';
+
+smoothscroll.polyfill();
 
 ReactDOM.render(
   <Router>
