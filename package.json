@@ -14,7 +14,7 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "ESLINT_NO_DEV_ERRORS=true react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint \"src/**/*.{ts,tsx}\" && npx stylelint \"src/**/*.scss\"",
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix && npx stylelint \"src/**/*.scss\" --fix",
