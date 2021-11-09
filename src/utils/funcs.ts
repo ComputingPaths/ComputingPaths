@@ -18,8 +18,8 @@ export const parseLookup = (input: any[]): Map<string, any> => {
 
   const response = new Map();
 
-  input.forEach((item) => {
-    response.set(item.code, item);
+  input.forEach((item, index) => {
+    response.set(item.code, { ...item, index });
   });
 
   return response;

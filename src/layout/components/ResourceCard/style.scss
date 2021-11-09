@@ -1,78 +1,121 @@
-@import '../../../styles/fonts';
-@import '../../../styles/vars';
+@import '../../../styles';
 
 .resource-card {
+  background-color: $color-primary-navy;
   display: flex;
-  flex-direction: column;
-  margin: 1.5rem;
-  width: calc(90% - 3rem);
+  height: 16.75rem;
+  margin: 0 2rem 1.5rem 0;
+  width: 37rem;
 
-  &-expand-arrow {
-    bottom: 1.15rem;
-    position: absolute;
-    right: 0.75rem;
-    width: 1rem;
-  }
-
-  &-heading {
-    @include font-subtitle-1;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  &-photo {
-    height: min(10rem, 15vw);
+  &-image {
+    height: 100%;
     object-fit: cover;
+    width: 15rem;
   }
 
-  &-resource-tag {
-    @include font-small-button-text;
-    border-radius: 1rem;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
     overflow: hidden;
-    padding: 0.25rem 0.8rem;
+    padding: 1.5rem;
+    position: relative;
 
-    &.arduino {
+    &.visible {
+      overflow: scroll;
+    }
+  }
+
+  &-name {
+    @include font-subtitle-1;
+    color: #fff;
+  }
+
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+  }
+
+  &-tag {
+    @include font-small-button-text;
+    align-items: center;
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    flex-shrink: 0;
+    height: 1.75rem;
+    margin: 0.75rem 0.75rem 0 0;
+    padding: 0 0.75rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &.grass-green {
       background-color: $color-tag-grass-green;
     }
-
-    &.datamining {
+    
+    &.teal {
       background-color: $color-tag-teal;
     }
-
-    &.game {
+    
+    &.light-orange {
       background-color: $color-tag-light-orange;
     }
-
-    &.mobile.app {
+    
+    &.lilac {
       background-color: $color-tag-lilac;
     }
-
-    &.research {
+    
+    &.coral {
       background-color: $color-tag-coral;
     }
-
-    &.web.app {
+    
+    &.light-blue {
       background-color: $color-tag-light-blue;
     }
   }
 
-  &-organization {
-    @include font-subtitle-1;
-    margin: 0.5rem 0 1.25rem;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  &-section {
-    background: $color-primary-navy;
+  &-view {
+    @include font-linked-text;
+    background: none;
+    border: transparent;
     color: #fff;
-    padding: 1rem;
-    position: relative;
-  }
-}
+    text-align: left;
+    width: 8rem;
 
-@media (min-width: 768px) {
-  .resource-card {
-    width: min(calc(33% - 3rem), 22.5rem);
+    &-arrow {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &-hidden {
+    background-color: $color-primary-navy;
+    display: flex;
+    flex-direction: column;
+    height: 16.75rem;
+    justify-content: space-between;
+    left: 0;
+    overflow: scroll;
+    padding: 1.5rem;
+    position: absolute;
+    top: 16.75rem;
+    transition: top 0.5s;
+
+    &.visible {
+      top: 0;
+    }
+  }
+
+  &-description {
+    @include font-text;
+    color: #fff;
+  }
+
+  &-link {
+    @include font-linked-text;
+    color: #fff;
   }
 }

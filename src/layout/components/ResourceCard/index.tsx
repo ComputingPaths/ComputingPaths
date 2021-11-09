@@ -1,35 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import ExpandArrow from '../../../assets/ExpandArrow.svg';
+import LinkedArrow from '../../../assets/WhiteLinkedArrow.svg';
 
 import './style.scss';
 
 interface ResourceCardProps {
+    image: string;
+    imageLink: string;
+    name: string;
+    tags: ({ name: any; color: string; } | null)[];
+    link: string;
     description: string;
-    organization: string;
-    photoURL: string;
-    resourceLink: string;
-    resourceMembers: string;
-    resourceName: string;
-    resourceTag: string;
-    videoURL: string;
 }
 
 const ResourceCard: React.FC<ResourceCardProps> = ({
-  organization,
-  photoURL,
-  resourceName,
-  resourceTag,
-}) => (
-  <div className="resource-card">
-    {photoURL && <img className="resource-card-photo" src={photoURL.split(',')[0]} alt={`${resourceName || 'Resource Card'}`} />}
-    <p className="resource-card-section">
-      <h2 className="resource-card-heading">{resourceName}</h2>
-      <h2 className="resource-card-organization">{organization}</h2>
-      <span className={`resource-card-resource-tag ${resourceTag.toLowerCase()}`}>{resourceTag}</span>
-      <img className="resource-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
-    </p>
-  </div>
-);
+  image, imageLink, name, tags, link, description,
+}) => {
+  const [visible, setVisible] = useState<boolean>(false);
+
+  return (
+    <div className="resource-card">
+      <a target="_blank" rel="noopener noreferrer" href={imageLink}><img className="resource-card-image" src={image || '/img/CP Generic Icon.jpg'} alt={name} /></a>
+      <div className={`resource-card-content${visible ? ' visible' : ''}`}>
+        <div>
+          <p className="resource-card-name">{name}</p>
+          <div className="resource-card-tags">
+            {tags.map((tag) => (tag ? <p className={`resource-card-tag ${tag.color}`}>{tag.name}</p> : null))}
+          </div>
+        </div>
+        <button className="resource-card-view" type="button" onClick={() => setVisible(!visible)}>View More<img className="resource-card-view-arrow" src={LinkedArrow} alt="Arrow" /></button>
+        <div className={`resource-card-hidden${visible ? ' visible' : ''}`}>
+          <p className="resource-card-description">{description}</p>
+          <a target="_blank" rel="noopener noreferrer" href={link}><p className="resource-card-link">Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="Arrow" /></p></a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default ResourceCard;

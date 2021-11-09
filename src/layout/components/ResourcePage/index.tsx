@@ -1,22 +1,37 @@
 import React, { useEffect, useState } from 'react';
 
-import { DataTypes, useData } from '../../../utils/data';
 import ResourceCard from '../ResourceCard';
+
+import { DataTypes, useData } from '../../../utils/data';
+import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
 
+const colors = ['grass-green', 'teal', 'light-orange', 'lilac', 'coral', 'light-blue'];
+
 const ResourcePage: React.FC = () => {
-  const [data, setData] = useState<Array<any>>([]);
+  const [resourceTagsData, setResourceTagsData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.ResourceTags)
+      .then((newData) => setResourceTagsData(newData))
+      .catch(() => setResourceTagsData([]));
+  }, [useData]);
+
+  const resourceTagMap = parseLookup(resourceTagsData);
+
+  const [resourcesData, setResourcesData] = useState<Array<any>>([]);
 
   useEffect(() => {
     useData(DataTypes.Resources)
-      .then((newData) => setData(newData))
-      .catch(() => setData([]));
+      .then((newData) => setResourcesData(newData))
+      .catch(() => setResourcesData([]));
   }, [useData]);
+
   const [filter, setFilter] = useState<string[]>([]);
 
   const updateFilter = (tag: string) => {
-    let newFilter:string[] = [...filter];
+    let newFilter: string[] = [...filter];
     const index = filter.indexOf(tag);
 
     if (tag !== '' && index === -1) {
@@ -25,49 +40,53 @@ const ResourcePage: React.FC = () => {
       newFilter.splice(index, 1);
     }
 
-    if (tag === '' || newFilter.length === 6) {
+    if (tag === '' || newFilter.length === resourceTagsData.length) {
       newFilter = [];
     }
 
     setFilter([...newFilter]);
   };
 
-  const checkFilter = (tag: string) => (
-    filter.indexOf(tag) === -1
-  );
+  const isFiltering = (tag: string): boolean => filter.indexOf(tag) !== -1;
 
   return (
     <main className="resource-page">
       <h1 className="resource-page-title">Resources</h1>
-      <p className="resource-page-text">Every path through UCSD is unique, and there’s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice..</p>
-      <p className="resource-page-heading">Become familiar with campus resource</p>
-      <div className="resource-page-tag-section">
-        <button className={filter.length !== 0 ? 'resource-page-tag-button' : 'resource-page-tag-button select'} type="button" onClick={() => updateFilter('')}>All</button>
-        <button className={checkFilter('Mobile App') ? 'resource-page-tag-button' : 'resource-page-tag-button select'} type="button" onClick={() => updateFilter('Mobile App')}>Mobile App</button>
-        <button className={checkFilter('Web App') ? 'resource-page-tag-button' : 'resource-page-tag-button select'} type="button" onClick={() => updateFilter('Web App')}>Web App</button>
-        <button className={checkFilter('Arduino') ? 'resource-page-tag-button' : 'resource-page-tag-button select'} type="button" onClick={() => updateFilter('Arduino')}>Arduino</button>
-        <button className={checkFilter('Datamining') ? 'resource-page-tag-button' : 'resource-page-tag-button select'} type="button" onClick={() => updateFilter('Datamining')}>Datamining</button>
-        <button className={checkFilter('Research') ? 'resource-page-tag-button' : 'resource-page-tag-button select'} type="button" onClick={() => updateFilter('Research')}>Research</button>
-        <button className={checkFilter('Game') ? 'resource-page-tag-button' : 'resource-page-tag-button select'} type="button" onClick={() => updateFilter('Game')}>Game</button>
-      </div>
-      <div className="resource-page-resource">
-        {data.map((resource) => {
-          if (filter.length === 0 || filter.indexOf(resource.Tags) >= 0) {
-            return (
-              <ResourceCard
-                description={resource.Description}
-                organization={resource.Organization}
-                photoURL={resource.Images}
-                resourceLink={resource.Link}
-                resourceMembers={resource.Members}
-                resourceName={resource.Name}
-                resourceTag={resource.Tags}
-                videoURL={resource.Videos}
-              />
-            );
-          }
-          return null;
-        })}
+      <p className="resource-page-text">Every path through UCSD is unique, and there&apos;s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice.</p>
+      <div className="resource-page-content">
+        <p className="resource-page-heading">Become familiar with campus resources</p>
+        <div className="resource-page-tag-section">
+          <button className={`resource-page-tag-button${filter.length === 0 ? ' selected' : ''}`} type="button" onClick={() => updateFilter('')}>All</button>
+          {
+          resourceTagsData.map((resource, index) => (
+            <button className={`resource-page-tag-button${isFiltering(resource.code) ? ' selected' : ''}`} type="button" onClick={() => updateFilter(resource.code)} key={index}>{resource.name}</button>
+          ))
+        }
+        </div>
+        <div className="resource-page-resource">
+          {resourcesData.map((resource) => {
+            if (filter.length === 0
+              || filter.filter((value) => parseList(resource.tags).includes(value)).length !== 0) {
+              return (
+                <ResourceCard
+                  image={resource.map_image}
+                  imageLink={resource.map_link}
+                  name={resource.name}
+                  tags={parseList(resource.tags).map((tagCode) => {
+                    const tag = resourceTagMap.get(tagCode);
+
+                    return tag
+                      ? { name: tag.name, color: colors[tag.index % colors.length] }
+                      : null;
+                  })}
+                  link={resource.link}
+                  description={resource.description}
+                />
+              );
+            }
+            return null;
+          })}
+        </div>
       </div>
     </main>
   );
