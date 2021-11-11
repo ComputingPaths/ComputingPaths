@@ -6,21 +6,27 @@
   &-header {
     padding-bottom: 36px;
 
-    img {
-      animation: scrollacross 12s linear infinite;
-      margin-bottom: 40px;
-      width: 200vh;
-    }
-
     h1 {
       @include font-heading-1;
     }
+  }
 
-    @keyframes scrollacross {
-      100% {
-        transform: translateX(-72.2%);
-      }
+  &-marquee {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 40px;
+    width: 100vh;
+
+    img {
+      animation: scrollacross 10s linear infinite;
+      width: 200vh;
+      will-change: transform;
     }
+  }
+
+  @keyframes scrollacross {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }
 
   h2 {

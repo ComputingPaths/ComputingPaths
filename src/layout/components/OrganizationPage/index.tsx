@@ -50,7 +50,10 @@ const OrganizationPage: React.FC = () => {
   return (
     <div className="orgs-page">
       <div className="orgs-page-header">
-        <img src={headerImg} alt="Student Organization Logos" />
+        <div className="orgs-page-marquee">
+          <img src={headerImg} alt="Student Organization Logos" />
+          <img src={headerImg} alt="Student Organization Logos" />
+        </div>
         <h1>Student Organizations</h1>
         <p>Student organizations allow for extracurricular experience,
           utilizing and extending skills imparted in computing courses.
