@@ -3,9 +3,10 @@
 .resource-card {
   background-color: $color-primary-navy;
   display: flex;
-  height: 16.75rem;
+  min-height: 16.75rem;
   margin: 0 2rem 1.5rem 0;
   width: 37rem;
+  flex-shrink: 0;
 
   &-image {
     height: 100%;
@@ -117,5 +118,24 @@
   &-link {
     @include font-linked-text;
     color: #fff;
+  }
+
+  @media(max-width: $site-size-small) { 
+    width: 20.5rem;
+    flex-direction: column;
+
+    &-image {
+      height: 8.5rem;
+      width: 100%;
+    }
+
+    &-content {
+      min-height: 10.5rem;
+      padding: 1rem;
+    }
+
+    &-hidden {
+      padding: 1rem;
+    }
   }
 }
