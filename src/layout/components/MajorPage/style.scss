@@ -1,0 +1,86 @@
+@import '../../../styles/fonts';
+@import '../../../styles/vars';
+
+.major-page {
+  &-title {
+    @include font-heading-1;
+  }
+
+  &-text {
+    @include font-text;
+    margin-top: 1.5rem;
+  }
+
+  &-subheading {
+    @include font-heading-2;
+  }
+
+  &-sidebar {
+    align-self: start;
+    flex-basis: 300px;
+    flex-grow: 1;
+    position: sticky;
+    top: calc(5.25rem + 2.25rem); // Header + Top Margin Heights
+  }
+
+  &-mobile-navigation {
+    display: none;
+
+    .dropdown-root {
+      height: 2.5rem;
+
+      .dropdown-control {
+        border-radius: 4px;
+      }
+
+      .dropdown-arrow {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+
+  &-cards {
+    margin-top: 1rem;
+  }
+
+  &-content {
+    background-color: $color-background-grey;
+    margin: 3rem -7rem -3rem;
+    padding: 3rem 7rem;
+  }
+
+  &-scroll-content {
+    display: flex;
+    margin-top: 2.25rem;
+  }
+
+  &-link {
+    @include font-subtitle-1;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    color: $color-neutrals-dark-grey;
+    display: inline-flex;
+    padding: 1rem 1.5rem;
+    width: 18rem;
+  }
+
+  @media(max-width: $site-size-small) {
+    &-sidebar {
+      display: none;
+    }
+
+    &-mobile-navigation {
+      display: unset;
+    }
+  
+    &-content {
+      margin: 1.5rem -1.5rem -1.5rem;
+      padding: 1.5rem;
+    }
+  
+    &-scroll-content {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  }
+}
