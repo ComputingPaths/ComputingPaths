@@ -18,11 +18,18 @@
 
   }
 
-  &-image {
-    background-color: $color-neutrals-grey;
+  &-involed-image {
     flex-grow: 0;
     flex-shrink: 0;
     height: 25rem;
+    object-fit: cover;
+    object-position: center;
+    width: 25rem;
+  }
+
+  &-image {
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 25rem;
 
     &-circle {
@@ -44,6 +51,7 @@
     display: flex;
     overflow-x: scroll;
     position: relative;
+    scroll-behavior: smooth;
   }
 
   &-majors-section {
@@ -90,6 +98,8 @@
   }
 
   &-right-arrow {
+    background-color: transparent;
+    border: 0;
     cursor: pointer;
     margin-top: -18rem;
     position: absolute;
@@ -175,12 +185,17 @@
 
 @media(max-width: $site-size-small) {
   .home-page {
-    &-image {
+    &-involed-image {
       height: 20rem;
       width: 20rem;
     }
 
+    &-image {
+      width: 20rem;
+    }
+
     &-landing {
+      flex-direction: column-reverse;
       flex-wrap: wrap;
       justify-content: center;
     }
