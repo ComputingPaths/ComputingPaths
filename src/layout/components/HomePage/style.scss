@@ -9,13 +9,10 @@
 
   &-home-button {
     @include font-subtitle-1;
-    background-color: $color-primary-mustard;
+    background-color: $color-primary-dark-yellow;
     border: 0;
     border-radius: 5px;
-    color: #fff;
-    padding: 1rem 0;
-    width: 11.5rem;
-
+    padding: 0.75rem 1.5rem;
   }
 
   &-involed-image {
@@ -44,14 +41,13 @@
   &-landing {
     align-items: center;
     display: flex;
-    justify-content: center;
   }
 
   &-majors-container {
     display: flex;
     overflow-x: scroll;
     position: relative;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
   }
 
   &-majors-section {
@@ -84,7 +80,7 @@
   &-resources {
     align-items: center;
     display: inline-flex;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     &-section {
       margin: 0 2rem;
@@ -92,16 +88,11 @@
     }
   }
 
-  &-link-arrow {
-    filter: brightness(0) invert(100%);
-    margin-bottom: -0.25rem;
-  }
-
   &-right-arrow {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    margin-top: -18rem;
+    margin-top: -16rem;
     position: absolute;
     right: 2.5rem;
   }
@@ -187,7 +178,7 @@
   .home-page {
     &-involed-image {
       height: 20rem;
-      width: 20rem;
+      width: min(20rem, 100%);
     }
 
     &-image {
@@ -200,17 +191,29 @@
       justify-content: center;
     }
 
+    &-links {
+      margin: auto;
+    }
+
     &-majors-section {
       height: 20rem;
       width: 20rem;
+
+      &-major {
+        height: 1.5rem;
+      }
     }
 
     &-resources {
+      display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
 
       &-section {
-        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto 0;
         width: 100%;
       }
     }
@@ -229,7 +232,6 @@
       }
 
       &-left-quote {
-        padding: 1rem;
         width: 1.5rem;
       }
   
@@ -255,11 +257,12 @@
 
     &-title {
       margin: 2rem;
-      text-align: left;
+      word-break: break-word;
 
       &-section {
-        margin-bottom: 2rem;
-        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         width: 100%;
       }
     }

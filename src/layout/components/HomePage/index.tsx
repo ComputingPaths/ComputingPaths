@@ -20,6 +20,23 @@ const HomePage: React.FC = () => {
     }
   };
 
+  const handleLoop = (event) => {
+    if (menuRef.current && event.target.className === 'home-page-majors-container') {
+      const extra = menuRef.current.scrollWidth - menuRef.current.clientWidth;
+      const diff = extra - menuRef.current.scrollLeft;
+
+      if (diff === 0) {
+        menuRef.current.scrollTo(-extra, 0);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (menuRef.current) {
+      menuRef.current.addEventListener('scroll', handleLoop);
+    }
+  });
+
   useEffect(() => {
     useData(DataTypes.Majors)
       .then((newData) => setMajor(newData))
@@ -64,7 +81,7 @@ const HomePage: React.FC = () => {
             <p className="home-page-stories-quote">{homeData.length > 0 ? homeData[0].story_quote : null}</p>
             <h3 className="home-page-stories-name">
               {homeData.length > 0 ? homeData[0].story_name : null} &nbsp;
-              <span>{homeData.length > 0 ? homeData[0].study_bio : null}</span>
+              <span>{homeData.length > 0 ? homeData[0].story_bio : null}</span>
             </h3>
             <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" />
           </div>
@@ -76,7 +93,7 @@ const HomePage: React.FC = () => {
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Student Organizations</h2>
           <p className="home-page-text">Student Organizations allow for extracurricular expierence, utilizing and extending skills imparted in computing courses. These groups demonstrate creating computing efforts by channeling the collaborative spirit of UC San Diego.</p>
-          <Link to="/organizations">
+          <Link className="home-page-links" to="/organizations">
             <button className="home-page-home-button" type="submit">Learn More</button>
           </Link>
         </div>
@@ -86,7 +103,7 @@ const HomePage: React.FC = () => {
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Projects</h2>
           <p className="home-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
-          <Link to="/projects">
+          <Link className="home-page-links" to="/projects">
             <button className="home-page-home-button" type="submit">See Projects</button>
           </Link>
         </div>
