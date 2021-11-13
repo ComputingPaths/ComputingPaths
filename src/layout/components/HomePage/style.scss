@@ -196,8 +196,8 @@
     }
 
     &-majors-section {
-      height: 20rem;
-      width: 20rem;
+      height: min(20rem, calc(100vw - 2.5rem));
+      width: min(20rem, 100%);
 
       &-major {
         height: 1.5rem;
@@ -227,8 +227,8 @@
       justify-content: center;
 
       &-image {
-        height: 20rem;
-        width: 20rem;
+        height: min(20rem, calc(100vw - 2.5rem));
+        width: min(20rem, 100%);
       }
 
       &-left-quote {
