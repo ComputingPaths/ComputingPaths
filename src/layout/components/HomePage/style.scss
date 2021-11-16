@@ -46,6 +46,7 @@
   &-majors-container {
     display: flex;
     overflow-x: scroll;
+    overflow-y: scroll;
     position: relative;
     // scroll-behavior: smooth;
   }
@@ -95,6 +96,11 @@
     margin-top: -16rem;
     position: absolute;
     right: 2.5rem;
+  }
+
+  &-left-arrow {
+    background-color: transparent;
+    cursor: pointer;
   }
 
   &-stories {

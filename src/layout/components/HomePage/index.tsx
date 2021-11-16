@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import CarouselRightArrow from '../../../assets/CarouselRightArrow.svg';
+import CarouselLeftArrow from '../../../assets/CarouselLeftArrow.svg';
 import Gear from '../../../assets/Gear.svg';
 import LeftQuote from '../../../assets/LeftQuote.svg';
 import RightQuote from '../../../assets/RightQuote.svg';
@@ -16,26 +17,10 @@ const HomePage: React.FC = () => {
 
   const handleNav = () => {
     if (menuRef && menuRef.current) {
-      menuRef.current.scrollLeft += 450;
+      const widthOfItem = (menuRef.current.childNodes[0] as HTMLDivElement).clientWidth;
+      menuRef.current.scrollLeft += widthOfItem;
     }
   };
-
-  const handleLoop = (event) => {
-    if (menuRef.current && event.target.className === 'home-page-majors-container') {
-      const extra = menuRef.current.scrollWidth - menuRef.current.clientWidth;
-      const diff = extra - menuRef.current.scrollLeft;
-
-      if (diff === 0) {
-        menuRef.current.scrollTo(-extra, 0);
-      }
-    }
-  };
-
-  useEffect(() => {
-    if (menuRef.current) {
-      menuRef.current.addEventListener('scroll', handleLoop);
-    }
-  });
 
   useEffect(() => {
     useData(DataTypes.Majors)
@@ -58,8 +43,11 @@ const HomePage: React.FC = () => {
         <img className="home-page-image" src="/img/HomePageLogo.svg" alt="home page logo" />
       </section>
       <h2 className="home-page-header major">Majors</h2>
+      <button className="home-page-left-arrow" type="submit" onClick={handleNav}>
+        <img src={CarouselLeftArrow} alt="Left Arrow" />
+      </button>
       <section className="home-page-majors-container" ref={menuRef}>
-        {majors.map((major) => (
+        {majors.concat(majors[0] || []).map((major) => (
           <div className="home-page-majors-section">
             <img className="home-page-majors-section-image" src={major.image} alt="major" />
             <h3 className="home-page-majors-section-major">{major.name}</h3>
