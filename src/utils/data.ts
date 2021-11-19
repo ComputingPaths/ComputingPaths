@@ -1,6 +1,7 @@
 import Papa from 'papaparse';
 
 export enum DataTypes {
+  Home='395547379',
   Stories = '1646384161',
   Departments = '929723649',
   Majors = '860790804',
