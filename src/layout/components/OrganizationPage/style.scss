@@ -13,15 +13,15 @@
   }
 
   .marquee {
-    width: 100vw;
     height: 20rem;
     margin: 0 -7rem;
+    width: 100vw;
   }
 
   .marquee-content {
+    animation: scrolling 20s linear infinite;
     display: flex;
     list-style: none;
-    animation: scrolling 20s linear infinite;
   }
 
   .marquee-item {
