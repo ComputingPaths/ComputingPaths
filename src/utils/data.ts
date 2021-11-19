@@ -12,6 +12,7 @@ export enum DataTypes {
   ProjectTags = '568500304',
   Orgs = '1399526925',
   OrgTags = '218206546',
+  Misc = '29489883',
   Errors = '395912477',
 }
 
