@@ -7,7 +7,7 @@ export enum DataTypes {
   Majors = '860790804',
   MajorSpecializations = '1867072131',
   Resources = '2135229956',
-  ResourcesTags = '167316779',
+  ResourceTags = '167316779',
   ResourceBanner = '1661600010',
   Projects = '1379985722',
   ProjectTags = '568500304',

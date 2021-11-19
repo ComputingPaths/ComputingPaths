@@ -1,0 +1,59 @@
+@import '../../../styles';
+
+.resource-page {
+  &-title {
+    @include font-heading-1;
+  }
+
+  &-text {
+    @include font-text;
+    margin-top: 1.5rem;
+  }
+
+  &-content {
+    background-color: $color-background-grey;
+    margin: 3rem -7rem -3rem;
+    padding: 3rem 7rem;
+  }
+
+  &-heading {
+    @include font-heading-2;
+  }
+
+  &-resource {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3rem -2rem -1.5rem 0;
+  }
+
+  &-tag-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.25rem;
+  }
+
+  &-tag-button {
+    @include font-subtitle-1;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    color: $color-neutrals-dark-grey;
+    flex: 1;
+    margin: 0.25rem;
+    padding: 1rem 1.5rem;
+
+    &.selected {
+      background-color: $color-primary-blue;
+      color: #fff;
+    }
+  }
+
+  @media(max-width: $site-size-small) {
+    &-content {
+      margin: 1.5rem -1.5rem -1.5rem;
+      padding: 1.5rem;
+    }
+  }
+}

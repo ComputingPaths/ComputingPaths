@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const ResourcePageContainer: React.FC = () => (
   <>
-    <Header />
+    <Header heroURL="/img/splashes/splash_resources.jpg" />
     <PageLayout>
       <ResourcePage />
     </PageLayout>

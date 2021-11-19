@@ -1,0 +1,156 @@
+@import '../../../styles';
+
+.resource-card {
+  background-color: $color-primary-navy;
+  height: 33.25rem;
+  margin: 0 2rem 1.5rem 0;
+  width: 32rem;
+
+  &-image {
+    height: 16.625rem;
+    object-fit: cover;
+    width: 32rem;
+  }
+
+  &-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 16.625rem;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 1.5rem;
+    position: relative;
+    width: 32rem;
+  }
+
+  &-name {
+    @include font-subtitle-1;
+    color: #fff;
+  }
+
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+  }
+
+  &-tag {
+    @include font-small-button-text;
+    align-items: center;
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    flex-shrink: 0;
+    height: 1.75rem;
+    margin: 0.75rem 0.75rem 0 0;
+    padding: 0 0.75rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &.grass-green {
+      background-color: $color-tag-grass-green;
+    }
+    
+    &.teal {
+      background-color: $color-tag-teal;
+    }
+    
+    &.light-orange {
+      background-color: $color-tag-light-orange;
+    }
+    
+    &.lilac {
+      background-color: $color-tag-lilac;
+    }
+    
+    &.coral {
+      background-color: $color-tag-coral;
+    }
+    
+    &.light-blue {
+      background-color: $color-tag-light-blue;
+    }
+  }
+
+  &-view {
+    @include font-linked-text;
+    background: none;
+    border: transparent;
+    color: #fff;
+    text-align: left;
+    width: 8rem;
+
+    &-arrow {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &-hidden {
+    background-color: $color-primary-navy;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 16.625rem;
+    justify-content: space-between;
+    left: 0;
+    overflow: scroll;
+    padding: 1.5rem 3.75rem 1.5rem 1.5rem;
+    position: absolute;
+    top: 16.625rem;
+    transition: top 0.5s;
+    width: 32rem;
+
+    &.visible {
+      top: 0;
+    }
+  }
+
+  &-button {
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 1.25rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    width: 1.25rem;
+  }
+
+  &-description {
+    @include font-text;
+    color: #fff;
+  }
+
+  &-link {
+    @include font-linked-text;
+    color: #fff;
+  }
+
+  @media(max-width: $site-size-small) {
+    flex-direction: column;
+    width: 20.5rem;
+
+    &-image {
+      height: 8.5rem;
+      width: 100%;
+    }
+
+    &-content {
+      min-height: 10.5rem;
+      padding: 1rem;
+    }
+
+    &-hidden {
+      padding: 1rem;
+    }
+  }
+}
