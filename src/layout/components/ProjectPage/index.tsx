@@ -16,38 +16,7 @@ const ProjectPage: React.FC = () => {
       .then((newData) => setData(newData))
       .catch(() => setData([]));
   }, [useData]);
-  const [filter, setFilter] = useState<string[]>([]);
-
-  const [projectTagsData, setProjectTagsData] = useState<Array<any>>([]);
-
-  useEffect(() => {
-    useData(DataTypes.ProjectTags)
-      .then((newData) => setProjectTagsData(newData))
-      .catch(() => setProjectTagsData([]));
-  }, [useData]);
-
-  const projectTagMap = parseLookup(projectTagsData);
-
-  const updateFilter = (tag: string) => {
-    let newFilter:string[] = [...filter];
-    const index = filter.indexOf(tag);
-
-    if (tag !== '' && index === -1) {
-      newFilter.push(tag);
-    } else if (tag !== '' && index >= 0) {
-      newFilter.splice(index, 1);
-    }
-
-    if (tag === '' || newFilter.length === 6) {
-      newFilter = [];
-    }
-
-    setFilter([...newFilter]);
-  };
-
-  const checkFilter = (tag: string) => (
-    filter.indexOf(tag) === -1
-  );
+  const [filter, setFilter] = useState<string>('');
 
   return (
     <main className="projects-page">
@@ -55,18 +24,17 @@ const ProjectPage: React.FC = () => {
       <p className="projects-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
       <p className="projects-page-heading">Learn more about computing majors</p>
       <div className="projects-page-tag-section">
-        <button className={filter.length !== 0 ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => updateFilter('')}>All</button>
-        <button className={checkFilter('Mobile App') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => updateFilter('Mobile App')}>Mobile App</button>
-        <button className={checkFilter('Web App') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => updateFilter('Web App')}>Web App</button>
-        <button className={checkFilter('Arduino') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => updateFilter('Arduino')}>Arduino</button>
-        <button className={checkFilter('Datamining') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => updateFilter('Datamining')}>Datamining</button>
-        <button className={checkFilter('Research') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => updateFilter('Research')}>Research</button>
-        <button className={checkFilter('Game') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => updateFilter('Game')}>Game</button>
+        <button className={filter !== '' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('')}>All</button>
+        <button className={filter !== ('Mobile App') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Mobile App')}>Mobile App</button>
+        <button className={filter !== ('Web App') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Web App')}>Web App</button>
+        <button className={filter !== ('Arduino') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Arduino')}>Arduino</button>
+        <button className={filter !== ('Datamining') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Datamining')}>Datamining</button>
+        <button className={filter !== ('Research') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Research')}>Research</button>
+        <button className={filter !== ('Game') ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Game')}>Game</button>
       </div>
       <div className="projects-page-projects">
         {data.map((project) => {
-          if (filter.length === 0
-            || filter.filter((value) => parseList(project.tags).includes(value)).length !== 0) {
+          if (filter === '' || project.Tags.includes(filter)) {
             return (
               <ProjectCard
                 description={project.description}
