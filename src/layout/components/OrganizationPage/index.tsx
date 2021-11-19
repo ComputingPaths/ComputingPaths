@@ -7,7 +7,7 @@ import './style.scss';
 const OrganizationPage: React.FC = () => {
   const [orgs, setOrgs] = useState<Array<any>>([]);
   const [orgTags, setOrgTags] = useState<Array<any>>([]);
-  const [headerImg, setHeaderImg] = useState<string>('');
+  const [headerImg, setHeaderImg] = useState<string>('https://i.imgur.com/pBrH1AN.png');
 
   const [filter, setFilter] = useState<string[]>([]);
 
@@ -37,8 +37,8 @@ const OrganizationPage: React.FC = () => {
       .then((data) => {
         setOrgTags(data[0]);
         setOrgs(data[1]);
-        const objArr = data[2].filter((obj) => (obj.Key === 'orgHeader'));
-        setHeaderImg(objArr[0].Value);
+        // const objArr = data[2].filter((obj) => (obj.Key === 'orgHeader'));
+        // setHeaderImg(objArr[0].Value);
       })
       .catch(() => {
         setOrgTags([]);
@@ -50,9 +50,15 @@ const OrganizationPage: React.FC = () => {
   return (
     <div className="orgs-page">
       <div className="orgs-page-header">
-        <div className="orgs-page-marquee">
-          <img src={headerImg} alt="Student Organization Logos" />
-          <img src={headerImg} alt="Student Organization Logos" />
+        <div className="marquee">
+          <ul className="marquee-content">
+            <li className="marquee-item">
+              <img className="marquee-image" src={headerImg} alt="marquee" />
+            </li>
+            <li className="marquee-item">
+              <img className="marquee-image" src={headerImg} alt="marquee" />
+            </li>
+          </ul>
         </div>
         <h1>Student Organizations</h1>
         <p>Student organizations allow for extracurricular experience,

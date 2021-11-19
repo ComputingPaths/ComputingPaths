@@ -8,25 +8,33 @@
 
     h1 {
       @include font-heading-1;
+      margin-top: 3rem;
     }
   }
 
-  &-marquee {
-    box-sizing: border-box;
+  .marquee {
+    width: 100vw;
+    height: 20rem;
+    margin: 0 -7rem;
+  }
+
+  .marquee-content {
     display: flex;
-    margin-bottom: 40px;
-    width: 100vh;
-
-    img {
-      animation: scrollacross 10s linear infinite;
-      width: 200vh;
-      will-change: transform;
-    }
+    list-style: none;
+    animation: scrolling 20s linear infinite;
   }
 
-  @keyframes scrollacross {
+  .marquee-item {
+    flex-shrink: 0;
+  }
+
+  .marquee-image {
+    height: 20rem;
+  }
+
+  @keyframes scrolling {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translatex(-2171px); }
   }
 
   h2 {
