@@ -9,11 +9,12 @@
 
   &-content {
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     display: flex;
     flex: 0 0 auto;
     height: 5.25rem;
     padding: 0 7rem;
+    border-bottom: 1px solid #E4E4E4;
   }
 
   &-logo {
