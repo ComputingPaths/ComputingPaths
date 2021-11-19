@@ -18,20 +18,20 @@
     @include font-subtitle-1;
     background-color: #fff;
     border: 0;
-    border-radius: 0.25rem;
-    color: $color-neutrals-dark-grey;
+    color: $color-neutrals-grey;
     flex: 1;
-    margin: 0.25rem;
     padding: 1rem 1.5rem;
+    border-bottom: solid 4px $color-neutrals-grey;
 
     &.select {
-      background-color: $color-primary-blue;
-      color: #fff;
+      border-bottom: solid 4px $color-primary-blue;
+      color: $color-neutrals-black;
     }
   }
 
   &-tag-section {
     display: flex;
+    margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: space-between;
   }
