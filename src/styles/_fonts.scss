@@ -8,7 +8,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-heading-1 {
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 800;
     
   @media(max-width: $site-size-small) { 
@@ -17,7 +17,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-heading-2 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 800;
     
   @media(max-width: $site-size-small) { 
@@ -27,7 +27,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-heading-3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
     
   @media(max-width: $site-size-small) { 
@@ -37,7 +37,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-nav-bar-text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 
   @media(max-width: $site-size-small) { 
@@ -46,7 +46,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-subtitle-1 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
     
   @media(max-width: $site-size-small) { 
@@ -55,7 +55,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-story-text {
-  font-size: 20px;
+  font-size: 15px;
   font-style: italic;
   font-weight: 400;
     
@@ -64,18 +64,8 @@ $font-family: 'Inter', sans-serif;
   }
 }
 
-@mixin font-subtitle-2 {
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-    
-  @media(max-width: $site-size-small) { 
-    font-size: 16px;
-  }
-}
-
 @mixin font-text {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
     
   @media(max-width: $site-size-small) { 
@@ -85,7 +75,7 @@ $font-family: 'Inter', sans-serif;
 
 @mixin font-linked-text {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   text-decoration: underline;
     
@@ -95,7 +85,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-footer-heading-text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
     
   @media(max-width: $site-size-small) { 
@@ -104,7 +94,7 @@ $font-family: 'Inter', sans-serif;
 }
 
 @mixin font-footer-text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
     
   @media(max-width: $site-size-small) { 
