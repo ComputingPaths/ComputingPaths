@@ -43,12 +43,22 @@
     display: flex;
   }
 
+  &-left-arrow {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    left: 2.5rem;
+    margin-top: -16rem;
+    position: absolute;
+    z-index: 1;
+  }
+
   &-majors-container {
     display: flex;
     overflow-x: scroll;
     overflow-y: scroll;
     position: relative;
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
   &-majors-section {
@@ -96,11 +106,6 @@
     margin-top: -16rem;
     position: absolute;
     right: 2.5rem;
-  }
-
-  &-left-arrow {
-    background-color: transparent;
-    cursor: pointer;
   }
 
   &-stories {
@@ -197,6 +202,11 @@
       justify-content: center;
     }
 
+    &-left-arrow,
+    &-right-arrow {
+      display: none;
+    }
+
     &-links {
       margin: auto;
     }
@@ -222,10 +232,6 @@
         margin: 2rem auto 0;
         width: 100%;
       }
-    }
-
-    &-right-arrow {
-      display: none;
     }
     
     &-stories {

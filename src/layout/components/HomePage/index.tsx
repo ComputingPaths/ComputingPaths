@@ -15,10 +15,14 @@ const HomePage: React.FC = () => {
   const [homeData, setHomeData] = useState<Array<any>>([]);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const handleNav = () => {
+  const handleNav = (event) => {
     if (menuRef && menuRef.current) {
       const widthOfItem = (menuRef.current.childNodes[0] as HTMLDivElement).clientWidth;
-      menuRef.current.scrollLeft += widthOfItem;
+      if (event.target.className.includes('home-page-left-arrow')) {
+        menuRef.current.scrollLeft -= widthOfItem;
+      } else {
+        menuRef.current.scrollLeft += widthOfItem;
+      }
     }
   };
 
@@ -43,9 +47,6 @@ const HomePage: React.FC = () => {
         <img className="home-page-image" src="/img/HomePageLogo.svg" alt="home page logo" />
       </section>
       <h2 className="home-page-header major">Majors</h2>
-      <button className="home-page-left-arrow" type="submit" onClick={handleNav}>
-        <img src={CarouselLeftArrow} alt="Left Arrow" />
-      </button>
       <section className="home-page-majors-container" ref={menuRef}>
         {majors.concat(majors[0] || []).map((major) => (
           <div className="home-page-majors-section">
@@ -54,8 +55,11 @@ const HomePage: React.FC = () => {
           </div>
         ))}
       </section>
+      <button className="home-page-left-arrow" type="submit" onClick={handleNav}>
+        <img className="home-page-left-arrow-button" src={CarouselLeftArrow} alt="Left Arrow" />
+      </button>
       <button className="home-page-right-arrow" type="submit" onClick={handleNav}>
-        <img src={CarouselRightArrow} alt="Right Arrow" />
+        <img className="home-page-right-arrow-button" src={CarouselRightArrow} alt="Right Arrow" />
       </button>
       <article className="home-page-stories-section">
         <h2 className="home-page-header">Stories &#38; Advice</h2>
