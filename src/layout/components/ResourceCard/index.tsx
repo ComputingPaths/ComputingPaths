@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import LinkedArrow from '../../../assets/WhiteLinkedArrow.svg';
+import XIcon from '../../../assets/x.svg';
 
 import './style.scss';
 
@@ -28,8 +29,11 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
             {tags.map((tag) => (tag ? <p className={`resource-card-tag ${tag.color}`}>{tag.name}</p> : null))}
           </div>
         </div>
-        <button className="resource-card-view" type="button" onClick={() => setVisible(!visible)}>View More<img className="resource-card-view-arrow" src={LinkedArrow} alt="Arrow" /></button>
+        <button className="resource-card-view" type="button" onClick={() => setVisible(true)}>View More<img className="resource-card-view-arrow" src={LinkedArrow} alt="Arrow" /></button>
         <div className={`resource-card-hidden${visible ? ' visible' : ''}`}>
+          <button className="resource-card-button" type="button" onClick={() => setVisible(false)}>
+            <img src={XIcon} alt="X" />
+          </button>
           <p className="resource-card-description">{description}</p>
           <a target="_blank" rel="noopener noreferrer" href={link}><p className="resource-card-link">Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="Arrow" /></p></a>
         </div>
