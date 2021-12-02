@@ -151,6 +151,16 @@
     }
   }
 
+  &-note {
+    border: 2px solid $color-primary-dark-yellow;
+    padding: 1rem 3rem;
+    background-color: $color-neutrals-white;
+
+    &-text {
+      @include font-text;
+    }
+  }
+
   @media(max-width: $site-size-small) {
     margin-bottom: 1.5rem;
     width: unset;
@@ -197,6 +207,10 @@
       &-content {
         padding: 0.75rem 1rem;
       }
+    }
+
+    &-note {
+      padding: 0.5rem 1rem;
     }
   }
 }

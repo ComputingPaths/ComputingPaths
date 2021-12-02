@@ -14,10 +14,11 @@ interface MajorCardProps {
     departments: { title: string; url: string; }[];
     links: { title: string; url: string }[];
     specializations: { name: string, detail: string }[];
+    note: string;
 }
 
 const MajorCard: React.FC<MajorCardProps> = ({
-  image, name, capped, degreeType, description, departments, links, specializations,
+  image, name, capped, degreeType, description, departments, links, specializations, note,
 }) => {
   const [open, setOpen] = useState(-1);
   return (
@@ -66,6 +67,11 @@ const MajorCard: React.FC<MajorCardProps> = ({
         ))}
       </div>
       )}
+        {note && (
+        <div className="major-card-note">
+          <p className="major-card-note-text">{note}</p>
+        </div>
+        )}
       </div>
     </>
   );

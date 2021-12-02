@@ -71,6 +71,7 @@ const MajorPage: React.FC = () => {
                   { title: major.link_1_title, url: major.link_1_url },
                   { title: major.link_2_title, url: major.link_2_url }]}
                 specializations={parseSpecializations(specsMap.get(major.code))}
+                note={major.note}
                 key={index}
               />
             ))}
