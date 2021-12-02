@@ -6,7 +6,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 import MajorCard from '../MajorCard';
 
 import { DataTypes, useData } from '../../../utils/data';
-import { parseDegree, parseList, parseLookup } from '../../../utils/funcs';
+import {
+  parseDegree, parseList, parseLookup, parseSpecializations,
+} from '../../../utils/funcs';
 
 import './style.scss';
 
@@ -29,15 +31,15 @@ const MajorPage: React.FC = () => {
       .catch(() => setMajorData([]));
   }, [useData]);
 
-  // const [majorSpecsData, setMajorSpecsData] = useState<Array<any>>([]);
+  const [majorSpecsData, setMajorSpecsData] = useState<Array<any>>([]);
 
-  // useEffect(() => {
-  //   useData(DataTypes.MajorSpecs)
-  //     .then((newData) => setMajorSpecsData(newData))
-  //     .catch(() => setMajorSpecsData([]));
-  // }, [useData]);
+  useEffect(() => {
+    useData(DataTypes.MajorSpecializations)
+      .then((newData) => setMajorSpecsData(newData))
+      .catch(() => setMajorSpecsData([]));
+  }, [useData]);
 
-  // const specsMap = parseLookup(majorSpecsData);
+  const specsMap = parseLookup(majorSpecsData);
 
   return (
     <div className="major-page">
@@ -68,7 +70,7 @@ const MajorPage: React.FC = () => {
                 links={[
                   { title: major.link_1_title, url: major.link_1_url },
                   { title: major.link_2_title, url: major.link_2_url }]}
-                specializations={[]} // TODO
+                specializations={parseSpecializations(specsMap.get(major.code))}
                 key={index}
               />
             ))}
