@@ -19,7 +19,9 @@
     "lint": "eslint \"src/**/*.{ts,tsx}\" && npx stylelint \"src/**/*.scss\"",
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix && npx stylelint \"src/**/*.scss\" --fix",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish": "scp -r build/* cpaths@computingpaths.ucsd.edu:/var/www/cpaths/htdocs",
+    "prepublish": "yarn build"
   },
   "eslintConfig": {
     "extends": [
