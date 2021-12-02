@@ -34,3 +34,31 @@ export const parseList = (input: string): string[] => {
 
   return input.split(',').map((element) => element.trim());
 };
+
+// Parse the major specializations structure into an array
+// Handles empty specializations and makes rendering easier
+export const parseSpecializations = (input: any): { name: string, detail: string }[] => {
+  if (!input) {
+    return [];
+  }
+
+  const result: { name: string, detail: string }[] = [];
+
+  if (input.spec_1_name && input.spec_1_detail) {
+    result.push({ name: input.spec_1_name, detail: input.spec_1_detail });
+  }
+  if (input.spec_2_name && input.spec_2_detail) {
+    result.push({ name: input.spec_2_name, detail: input.spec_2_detail });
+  }
+  if (input.spec_3_name && input.spec_3_detail) {
+    result.push({ name: input.spec_3_name, detail: input.spec_3_detail });
+  }
+  if (input.spec_4_name && input.spec_4_detail) {
+    result.push({ name: input.spec_4_name, detail: input.spec_4_detail });
+  }
+  if (input.spec_5_name && input.spec_5_detail) {
+    result.push({ name: input.spec_5_name, detail: input.spec_5_detail });
+  }
+
+  return result;
+};
