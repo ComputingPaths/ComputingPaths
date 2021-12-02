@@ -9,28 +9,7 @@ const OrganizationPage: React.FC = () => {
   const [orgTags, setOrgTags] = useState<Array<any>>([]);
   const [headerImg, setHeaderImg] = useState<string>('https://i.imgur.com/pBrH1AN.png');
 
-  const [filter, setFilter] = useState<string[]>([]);
-
-  const updateFilter = (tag: string) => {
-    let newFilter:string[] = [...filter];
-    const index = filter.indexOf(tag);
-
-    if (tag !== '' && index === -1) {
-      newFilter.push(tag);
-    } else if (tag !== '' && index >= 0) {
-      newFilter.splice(index, 1);
-    }
-
-    if (tag === '' || newFilter.length === 6) {
-      newFilter = [];
-    }
-
-    setFilter([...newFilter]);
-  };
-
-  const checkFilter = (tag: string) => (
-    filter.indexOf(tag) === -1
-  );
+  const [filter, setFilter] = useState<string>('');
 
   useEffect(() => {
     Promise.all([useData(DataTypes.OrgTags), useData(DataTypes.Orgs), useData(DataTypes.Misc)])
@@ -67,11 +46,11 @@ const OrganizationPage: React.FC = () => {
           the collaborative spirit of UC San Diego.
         </p>
         <div className="orgs-page-tag-section">
-          <button className={filter.length !== 0 ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => updateFilter('')}>All</button>
-          <button className={checkFilter('cs') ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => updateFilter('cs')}>Computer Science</button>
-          <button className={checkFilter('ad') ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => updateFilter('ad')}>Arts & Design</button>
-          <button className={checkFilter('ms') ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => updateFilter('ms')}>Math & Science</button>
-          <button className={checkFilter('en') ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => updateFilter('en')}>Engineering</button>
+          <button className={filter !== '' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('')}>All</button>
+          <button className={filter !== 'cs' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('cs')}>Computer Science</button>
+          <button className={filter !== 'ad' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('ad')}>Arts & Design</button>
+          <button className={filter !== 'ms' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('ms')}>Math & Science</button>
+          <button className={filter !== 'en' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('en')}>Engineering</button>
         </div>
       </div>
       <div className="orgs-page-main">
@@ -80,7 +59,7 @@ const OrganizationPage: React.FC = () => {
           {orgTags && orgs.map((org) => {
             const tags = org.Tags.split(',');
             const verboseTags = tags.map((tag) => (orgTags[0][tag]));
-            if (filter.length === 0 || filter.some((item) => tags.indexOf(item) >= 0)) {
+            if (filter === '' || org.Tags.includes(filter)) {
               return (
                 <OrganizationCard
                   key={org.Name}
