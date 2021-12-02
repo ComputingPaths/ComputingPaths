@@ -152,9 +152,9 @@
   }
 
   &-note {
+    background-color: $color-neutrals-white;
     border: 2px solid $color-primary-dark-yellow;
     padding: 1rem 3rem;
-    background-color: $color-neutrals-white;
 
     &-text {
       @include font-text;
