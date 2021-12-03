@@ -48,7 +48,6 @@ export const parseSpecializations = (input: any): { name: string, detail: string
 
   while (input[`spec_${index}_name`] && input[`spec_${index}_detail`]) {
     result.push({ name: input[`spec_${index}_name`], detail: input[`spec_${index}_detail`] });
-
     index += 1;
   }
 
