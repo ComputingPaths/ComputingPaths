@@ -16,7 +16,9 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
   const [majors, setMajor] = useState<Array<any>>([]);
-  const [homeData, setHomeData] = useState<Array<any>>([]);
+  const [homeData, setHomeData] = useState<any>({});
+  const [stories, setStories] = useState<Array<any>>([]);
+
   const menuRef = useRef<HTMLDivElement>(null);
 
   const handleNav = (event) => {
@@ -34,9 +36,14 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
     useData(DataTypes.Majors)
       .then((newData) => setMajor(newData))
       .catch(() => setMajor([]));
+
     useData(DataTypes.Home)
-      .then((newData) => setHomeData(newData))
+      .then((newData) => setHomeData(newData[0] || {}))
       .catch(() => setHomeData([]));
+
+    useData(DataTypes.Stories)
+      .then((newData) => setStories(newData))
+      .catch(() => setStories([]));
   }, [useData]);
 
   return (
@@ -67,25 +74,30 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       </button>
       <article className="home-page-stories-section">
         <h2 className="home-page-header">Stories &#38; Advice</h2>
+        {stories.length !== 0 && (
         <section className="home-page-stories">
           <div className="home-page-stories-image">
             <img className="home-page-stories-gear" src={Gear} alt="Gear Quote" />
-            <img className="home-page-image-circle" src={homeData.length > 0 ? homeData[0].story_photo : null} alt="Advice" />
+            <img className="home-page-image-circle" src={stories.length > 0 ? stories[0].image : null} alt="Advice" />
           </div>
           <div className="home-page-stories-text">
             <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" />
-            <p className="home-page-stories-quote">{homeData.length > 0 ? homeData[0].story_quote : null}</p>
+            <p className="home-page-stories-quote">{stories[0].highlighted_quote}</p>
             <h3 className="home-page-stories-name">
-              {homeData.length > 0 ? homeData[0].story_name : null} &nbsp;
-              <span>{homeData.length > 0 ? homeData[0].story_bio : null}</span>
+              {stories[0].name} &nbsp;
+              <span>{`${stories[0].role ? `${stories[0].role}` : ''}${stories[0].role && stories[0].class ? ' | ' : ''}${stories[0].class ? `Class of ${stories[0].class}` : ''}`}</span>
             </h3>
             <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" />
+            <Link className="home-page-links" to="/stories">
+              <button className="home-page-home-button" type="submit">Read More</button>
+            </Link>
           </div>
         </section>
+        )}
       </article>
       <h2 className="home-page-header">Get Involved</h2>
       <section className="home-page-resources">
-        <img className="home-page-involed-image" src={homeData.length > 0 ? homeData[0].student_org_photo : null} alt="org logo" />
+        <img className="home-page-involed-image" src={homeData.student_org_photo} alt="org logo" />
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Student Organizations</h2>
           <p className="home-page-text">Student Organizations allow for extracurricular expierence, utilizing and extending skills imparted in computing courses. These groups demonstrate creating computing efforts by channeling the collaborative spirit of UC San Diego.</p>
@@ -95,7 +107,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
         </div>
       </section>
       <section className="home-page-resources">
-        <img className="home-page-involed-image" src={homeData.length > 0 ? homeData[0].projects_photo : null} alt="projects logo" />
+        <img className="home-page-involed-image" src={homeData.projects_photo} alt="projects logo" />
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Projects</h2>
           <p className="home-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
