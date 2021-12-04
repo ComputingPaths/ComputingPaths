@@ -8,43 +8,43 @@ import './style.scss';
 interface ProjectCardProps {
     description: string;
     organization: string;
-    photoURL: string;
+    images: string[];
     projectLink: string;
-    projectMembers: string;
+    projectMembers: string[];
     projectName: string;
-    projectTag: string;
+    projectTags: ({ name: any; color: string; } | null)[];
     videoURL: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   organization,
-  photoURL,
+  images,
   projectLink,
   projectMembers,
   projectName,
-  projectTag,
+  projectTags,
   videoURL,
 }) => {
   const [modal, useModal] = useState(false);
 
   return (
     <div onClick={() => useModal(true)} className="project-card">
-      {photoURL && <img className="project-card-photo" src={photoURL.split(',')[0]} alt={`${projectName || 'Project Card'}`} />}
+      {images.length !== 0 && <img className="project-card-photo" src={images[0]} alt={`${projectName || 'Project Card'}`} />}
       <p className="project-card-section">
         <h2 className="project-card-heading">{projectName}</h2>
         <h2 className="project-card-organization">{organization}</h2>
-        <span className={`project-card-project-tag ${projectTag.toLowerCase()}`}>{projectTag}</span>
+        {projectTags.map((tag) => (tag && <span className={`project-card-project-tag ${tag.color}`}>{tag.name}</span>))}
         <img className="project-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
       </p>
       {modal && (
         <ProjectModalCard
           description={description}
           organization={organization}
-          photoURL={photoURL}
+          images={images}
           projectMembers={projectMembers}
           projectName={projectName}
-          projectTag={projectTag}
+          projectTags={projectTags}
           projectLink={projectLink}
           videoURL={videoURL}
           setModal={(showModal) => {
