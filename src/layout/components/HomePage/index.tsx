@@ -10,7 +10,11 @@ import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
 
-const HomePage: React.FC = () => {
+interface HomePageProps {
+  heroURL: string;
+}
+
+const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
   const [majors, setMajor] = useState<Array<any>>([]);
   const [homeData, setHomeData] = useState<Array<any>>([]);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -44,7 +48,7 @@ const HomePage: React.FC = () => {
             <button className="home-page-home-button" type="submit">Find Your Home</button>
           </Link>
         </div>
-        <img className="home-page-image" src="/img/HomePageLogo.svg" alt="home page logo" />
+        <img className="home-page-image" src={heroURL} alt="home page logo" />
       </section>
       <h2 className="home-page-header major">Majors</h2>
       <section className="home-page-majors-container" ref={menuRef}>

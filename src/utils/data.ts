@@ -1,6 +1,7 @@
 import Papa from 'papaparse';
 
 export enum DataTypes {
+  Headers = '29489883',
   Home='395547379',
   Stories = '1646384161',
   Departments = '929723649',
@@ -13,7 +14,6 @@ export enum DataTypes {
   ProjectTags = '568500304',
   Orgs = '1399526925',
   OrgTags = '218206546',
-  Misc = '29489883',
   Errors = '395912477',
 }
 
