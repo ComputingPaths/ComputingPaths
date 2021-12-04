@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
 import { DataTypes, useData } from '../../../utils/data';
+import { parseList, parseLookup } from '../../../utils/funcs';
 import ProjectCard from '../ProjectCard';
 
 import './style.scss';
+
+const colors = ['grass-green', 'teal', 'light-orange', 'lilac', 'coral', 'light-blue'];
 
 const ProjectPage: React.FC = () => {
   const [data, setData] = useState<Array<any>>([]);
@@ -14,6 +17,16 @@ const ProjectPage: React.FC = () => {
       .catch(() => setData([]));
   }, [useData]);
   const [filter, setFilter] = useState<string[]>([]);
+
+  const [projectTagsData, setProjectTagsData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.ProjectTags)
+      .then((newData) => setProjectTagsData(newData))
+      .catch(() => setProjectTagsData([]));
+  }, [useData]);
+
+  const projectTagMap = parseLookup(projectTagsData);
 
   const updateFilter = (tag: string) => {
     let newFilter:string[] = [...filter];
@@ -52,16 +65,23 @@ const ProjectPage: React.FC = () => {
       </div>
       <div className="projects-page-projects">
         {data.map((project) => {
-          if (filter.length === 0 || filter.indexOf(project.Tags) >= 0) {
+          if (filter.length === 0
+            || filter.filter((value) => parseList(project.tags).includes(value)).length !== 0) {
             return (
               <ProjectCard
-                description={project.Description}
-                organization={project.Organization}
-                photoURL={project.Images}
-                projectLink={project.Link}
-                projectMembers={project.Members}
-                projectName={project.Name}
-                projectTag={project.Tags}
+                description={project.description}
+                organization={project.organization}
+                images={parseList(project.images)}
+                projectLink={project.link}
+                projectMembers={parseList(project.members)}
+                projectName={project.name}
+                projectTags={parseList(project.tags).map((tagCode) => {
+                  const tag = projectTagMap.get(tagCode);
+
+                  return tag
+                    ? { name: tag.name, color: colors[tag.index % colors.length] }
+                    : null;
+                })}
                 videoURL={project.Videos}
               />
             );

@@ -31,27 +31,27 @@
     overflow: hidden;
     padding: 0.25rem 0.8rem;
 
-    &.arduino {
+    &.grass-green {
       background-color: $color-tag-grass-green;
     }
-
-    &.datamining {
+    
+    &.teal {
       background-color: $color-tag-teal;
     }
-
-    &.game {
+    
+    &.light-orange {
       background-color: $color-tag-light-orange;
     }
-
-    &.mobile.app {
+    
+    &.lilac {
       background-color: $color-tag-lilac;
     }
-
-    &.research {
+    
+    &.coral {
       background-color: $color-tag-coral;
     }
-
-    &.web.app {
+    
+    &.light-blue {
       background-color: $color-tag-light-blue;
     }
   }

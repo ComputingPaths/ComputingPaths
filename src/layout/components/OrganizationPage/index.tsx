@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { DataTypes, useData } from '../../../utils/data';
+
 import OrganizationCard from '../OrganizationCard';
+
+import { DataTypes, useData } from '../../../utils/data';
+import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
 
@@ -8,6 +11,8 @@ const OrganizationPage: React.FC = () => {
   const [orgs, setOrgs] = useState<Array<any>>([]);
   const [orgTags, setOrgTags] = useState<Array<any>>([]);
   const [headerImg, setHeaderImg] = useState<string>('https://i.imgur.com/pBrH1AN.png');
+
+  const orgTagMap = parseLookup(orgTags);
 
   const [filter, setFilter] = useState<string[]>([]);
 
@@ -78,18 +83,18 @@ const OrganizationPage: React.FC = () => {
         <h2>Discover and connect with other motivated students</h2>
         <div className="orgs-page-grid">
           {orgTags && orgs.map((org) => {
-            const tags = org.Tags.split(',');
-            const verboseTags = tags.map((tag) => (orgTags[0][tag]));
+            const tags = parseList(org.tags);
+            const verboseTags = tags.map((tag) => (orgTagMap.get(tag).name));
             if (filter.length === 0 || filter.some((item) => tags.indexOf(item) >= 0)) {
               return (
                 <OrganizationCard
-                  key={org.Name}
-                  name={org.Name}
-                  img={org.Orgimage}
+                  key={org.name}
+                  name={org.name}
+                  img={org.org_image}
                   tags={verboseTags}
-                  link={org.Link}
-                  linkedin={org.Linkedin}
-                  email={org.Email}
+                  link={org.link}
+                  linkedin={org.linkedin}
+                  email={org.email}
                 />
               );
             }
