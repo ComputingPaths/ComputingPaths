@@ -5,17 +5,10 @@
   display: flex;
   flex-direction: column;
 
-  &-image {
-    height: 22.25rem;
-    object-fit: cover;
-    width: 36.625rem;
-  }
-
   &-message {
     @include font-heading-2;
     margin-top: 1.375rem;
     text-align: center;
-    width: 36.625rem;
   }
 
   &-button {
@@ -28,5 +21,13 @@
     margin-top: 2rem;
     padding: 0;
     width: 26.5rem;
+  }
+
+  @media(max-width: $site-size-small) {
+    &-button {
+      height: 2.25rem;
+      margin-top: 1rem;
+      width: 14rem;
+    }
   }
 }
