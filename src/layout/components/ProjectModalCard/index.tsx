@@ -10,10 +10,10 @@ import './style.scss';
 interface ProjectModalCardProps {
     description: string;
     organization: string;
-    photoURL: string;
-    projectMembers: string;
+    images: string[];
+    projectMembers: string[];
     projectName: string;
-    projectTag: string;
+    projectTags: ({ name: any; color: string; } | null)[];
     projectLink?: string;
     videoURL?: string;
     setModal: any;
@@ -22,10 +22,10 @@ interface ProjectModalCardProps {
 const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
   description,
   organization,
-  photoURL,
+  images,
   projectMembers,
   projectName,
-  projectTag,
+  projectTags,
   projectLink,
   videoURL,
   setModal,
@@ -49,7 +49,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
   return (
     <div ref={menuRef} className="project-modal-card">
       <section className="project-modal-card-carousel">
-        {photoURL.split(',').map((picture, index) => {
+        {images.map((picture, index) => {
           if (index === slide) {
             return (
               <img className="project-modal-card-image" src={picture} alt="project" />
@@ -57,10 +57,10 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
           }
           return null;
         })}
-        <button className="project-modal-card-arrow left" type="button" onClick={() => setSlide(slide - 1 === -1 ? photoURL.split(',').length - 1 : slide - 1)}><img className="project-modal-card-point" src={LeftArrow} alt="back arrow" /></button>
-        <button className="project-modal-card-arrow right" type="button" onClick={() => setSlide(slide + 1 === photoURL.split(',').length ? 0 : slide + 1)}><img className="project-modal-card-point" src={RightArrow} alt="right arrow" /></button>
+        <button className="project-modal-card-arrow left" type="button" onClick={() => setSlide(slide - 1 === -1 ? images.length - 1 : slide - 1)}><img className="project-modal-card-point" src={LeftArrow} alt="back arrow" /></button>
+        <button className="project-modal-card-arrow right" type="button" onClick={() => setSlide(slide + 1 === images.length ? 0 : slide + 1)}><img className="project-modal-card-point" src={RightArrow} alt="right arrow" /></button>
         <div className="project-modal-card-slide">
-          {photoURL.split(',').map((photo, index) => (
+          {images.map((photo, index) => (
             <div className={slide === index ? 'project-modal-card-dot select' : 'project-modal-card-dot'} />
           ))}
         </div>
@@ -69,7 +69,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
       <p className="project-modal-card-tag">
         <span className="project-modal-card-project-name">{projectName}</span>
         <span className="project-modal-card-organization">{organization}</span>
-        <span className={`project-modal-card-project-tag ${projectTag.toLowerCase()}`}>{projectTag}</span>
+        {projectTags.map((tag) => (tag && <span className={`project-modal-card-project-tag ${tag.color}`}>{tag.name}</span>))}
       </p>
       <div className="project-modal-card-section">
         <p className="project-modal-card-description">
@@ -81,7 +81,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
         <section className="project-modal-card-info">
           <ul className="project-modal-card-members">
             <span className="project-modal-card-header">Project Members</span>
-            {projectMembers.split(',').map((name) => (
+            {projectMembers.map((name) => (
               <li>{name}</li>
             ))}
           </ul>
