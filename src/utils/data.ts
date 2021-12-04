@@ -14,7 +14,6 @@ export enum DataTypes {
   Orgs = '1399526925',
   OrgTags = '218206546',
   Misc = '29489883',
-  Errors = '395912477',
 }
 
 export const useData = (gid: DataTypes): Promise<Array<any>> => new Promise((resolve, reject) => {
