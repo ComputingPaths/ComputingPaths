@@ -57,15 +57,14 @@
     text-align: center;
   }
 
-  &-middle {
+  &-bottom {
     background-color: $color-neutrals-white;
+    padding: 3rem;
+  }
+
+  &-info {
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
-
-    &-right {
-      margin-top: 2rem;
-    }
   }
 
   &-description {
@@ -99,13 +98,8 @@
     }
   }
 
-  &-bottom {
-    background-color: $color-neutrals-white;
-    padding: 0 3rem 0.5rem;
-  }
-
   &-specialization {
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     position: relative;
 
     &-heading {
@@ -115,7 +109,7 @@
       display: flex;
       height: 4.75rem;
       justify-content: space-between;
-      padding: 0 2.625rem;
+      padding: 0 2.5rem;
     }
 
     &-name {
@@ -138,7 +132,7 @@
     &-content {
       border: 1px solid $color-primary-navy;
       display: none;
-      padding: 1rem 2.625rem;
+      padding: 1rem 2.5rem;
       transition: height 0.5s;
 
       &.open {
@@ -152,9 +146,10 @@
   }
 
   &-note {
+    margin-top: 2rem;
     background-color: $color-neutrals-white;
     border: 2px solid $color-primary-dark-yellow;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
 
     &-text {
       @include font-text;
@@ -183,10 +178,17 @@
       margin-right: 0.5rem;
       padding: 0.25rem 0.5rem;
     }
-    
-    &-middle {
-      flex-direction: column;
+
+    &-bottom {
       padding: 1.5rem 1rem;
+    }
+    
+    &-info {
+      flex-direction: column;
+
+      &-right {
+        margin-top: 2rem;
+      }
     }
     
     &-description {
@@ -194,11 +196,9 @@
       width: unset;
     }
 
-    &-bottom {
-      padding: 0 1rem 1.5rem;
-    }
-
     &-specialization {
+      margin-top: 1.5rem;
+
       &-heading {
         height: 4.75rem;
         padding: 0 1rem;
