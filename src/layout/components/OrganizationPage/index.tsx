@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import OrganizationCard from '../OrganizationCard';
 
-import { DataTypes, useData } from '../../../utils/data';
+import {
+  DataTypes, useData, Orgs,
+} from '../../../utils/data';
 import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
@@ -12,7 +14,7 @@ interface OrganizationPageProps {
 }
 
 const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
-  const [orgs, setOrgs] = useState<Array<any>>([]);
+  const [orgs, setOrgs] = useState<Array<Orgs>>([]);
   const [orgTags, setOrgTags] = useState<Array<any>>([]);
 
   const orgTagMap = parseLookup(orgTags);

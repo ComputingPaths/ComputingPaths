@@ -5,7 +5,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import MajorCard from '../MajorCard';
 
-import { DataTypes, useData } from '../../../utils/data';
+import {
+  DataTypes, useData, Majors,
+} from '../../../utils/data';
 import {
   parseDegree, parseList, parseLookup, parseSpecializations,
 } from '../../../utils/funcs';
@@ -23,7 +25,7 @@ const MajorPage: React.FC = () => {
 
   const departmentMap = parseLookup(departmentData);
 
-  const [majorData, setMajorData] = useState<Array<any>>([]);
+  const [majorData, setMajorData] = useState<Array<Majors>>([]);
 
   useEffect(() => {
     useData(DataTypes.Majors)
