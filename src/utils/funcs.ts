@@ -44,20 +44,11 @@ export const parseSpecializations = (input: any): { name: string, detail: string
 
   const result: { name: string, detail: string }[] = [];
 
-  if (input.spec_1_name && input.spec_1_detail) {
-    result.push({ name: input.spec_1_name, detail: input.spec_1_detail });
-  }
-  if (input.spec_2_name && input.spec_2_detail) {
-    result.push({ name: input.spec_2_name, detail: input.spec_2_detail });
-  }
-  if (input.spec_3_name && input.spec_3_detail) {
-    result.push({ name: input.spec_3_name, detail: input.spec_3_detail });
-  }
-  if (input.spec_4_name && input.spec_4_detail) {
-    result.push({ name: input.spec_4_name, detail: input.spec_4_detail });
-  }
-  if (input.spec_5_name && input.spec_5_detail) {
-    result.push({ name: input.spec_5_name, detail: input.spec_5_detail });
+  let index = 1;
+
+  while (input[`spec_${index}_name`] && input[`spec_${index}_detail`]) {
+    result.push({ name: input[`spec_${index}_name`], detail: input[`spec_${index}_detail`] });
+    index += 1;
   }
 
   return result;
