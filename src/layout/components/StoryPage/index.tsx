@@ -28,7 +28,7 @@ const StoryPage: React.FC = () => {
             headingText={story.highlighted_quote ? `"${story.highlighted_quote}"` : undefined}
             quoteText={story.quote}
             authorName={story.name}
-            authorDescriptor={story.class ? `Class of ${story.class}` : undefined}
+            authorDescriptor={`${story.role ? `${story.role}` : ''}${story.role && story.class ? ' | ' : ''}${story.class ? `Class of ${story.class}` : ''}`}
             linkText={`Hear ${story.name}'s story`}
             linkURL={story.link}
           />
