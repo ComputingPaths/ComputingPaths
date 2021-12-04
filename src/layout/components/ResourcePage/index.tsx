@@ -69,8 +69,8 @@ const ResourcePage: React.FC = () => {
               || filter.filter((value) => parseList(resource.tags).includes(value)).length !== 0) {
               return (
                 <ResourceCard
-                  image={resource.map_image}
-                  imageLink={resource.map_link}
+                  image={resource.image}
+                  imageLink={resource.image_link}
                   name={resource.name}
                   tags={parseList(resource.tags).map((tagCode) => {
                     const tag = resourceTagMap.get(tagCode);
@@ -79,7 +79,7 @@ const ResourcePage: React.FC = () => {
                       ? { name: tag.name, color: colors[tag.index % colors.length] }
                       : null;
                   })}
-                  link={resource.link}
+                  link={resource.view_more_link}
                   description={resource.description}
                 />
               );
