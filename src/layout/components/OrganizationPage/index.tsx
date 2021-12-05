@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Dropdown from 'react-dropdown';
 
 import OrganizationCard from '../OrganizationCard';
 
@@ -16,6 +17,8 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
   const [orgTags, setOrgTags] = useState<Array<any>>([]);
 
   const orgTagMap = parseLookup(orgTags);
+  const orgTagValues = orgTags.map(tagObj => tagObj.name);
+  orgTagValues.unshift("All")
 
   const [filter, setFilter] = useState<string>('');
 
@@ -51,20 +54,26 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
           the collaborative spirit of UC San Diego.
         </p>
         <div className="orgs-page-tag-section">
-          <button className={filter !== '' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('')}>All</button>
-          <button className={filter !== 'cs' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('cs')}>Computer Science</button>
-          <button className={filter !== 'ad' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('ad')}>Arts & Design</button>
-          <button className={filter !== 'ms' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('ms')}>Math & Science</button>
-          <button className={filter !== 'en' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter('en')}>Engineering</button>
+          <button className={filter !== '' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('')}>All</button>
+          {
+            orgTagValues && orgTagValues.map(tagVal => {
+              if (tagVal !== 'All')
+                return (<button className={filter !== tagVal ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter(tagVal)}>{tagVal}</button>)
+            })
+          }
+        </div>
+        <div className="projects-page-mobile-dropdown">
+          <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={orgTagValues} placeholder="Select an organization category" onChange={(tag) => { tag.value !== 'All' ? setFilter(tag.value) : setFilter('')}} />
         </div>
       </div>
       <div className="orgs-page-main">
         <h2>Discover and connect with other motivated students</h2>
         <div className="orgs-page-grid">
           {orgTags && orgs.map((org) => {
-            const tags = org.Tags.split(',');
-            const verboseTags = tags.map((tag) => (orgTags[0][tag]));
-            if (filter === '' || org.Tags.includes(filter)) {
+            const tags = parseList(org.tags);
+            const verboseTags = tags.map((tag) => (orgTagMap.get(tag).name));
+            if (filter === '' ||
+              verboseTags.includes(filter)) {
               return (
                 <OrganizationCard
                   key={org.name}

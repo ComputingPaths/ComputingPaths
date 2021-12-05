@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Dropdown from 'react-dropdown';
 
 import ResourceCard from '../ResourceCard';
 
@@ -19,6 +20,8 @@ const ResourcePage: React.FC = () => {
   }, [useData]);
 
   const resourceTagMap = parseLookup(resourceTagsData);
+  const resourceTagValues = resourceTagsData.map(tagObj => tagObj.name);
+  resourceTagValues.unshift("All")
 
   const [resourcesData, setResourcesData] = useState<Array<any>>([]);
 
@@ -40,13 +43,21 @@ const ResourcePage: React.FC = () => {
           <button className={`resource-page-tag-button${filter === '' ? ' selected' : ''}`} type="button" onClick={() => setFilter('')}>All</button>
           {
           resourceTagsData.map((resource, index) => (
-            <button className={`resource-page-tag-button${filter === resource.code ? ' selected' : ''}`} type="button" onClick={() => setFilter(resource.code)} key={index}>{resource.name}</button>
+            <button className={`resource-page-tag-button${filter === resource.name ? ' selected' : ''}`} type="button" onClick={() => setFilter(resource.name)} key={index}>{resource.name}</button>
           ))
         }
         </div>
+        <div className="projects-page-mobile-dropdown">
+          <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={resourceTagValues} placeholder="Select a resource category" onChange={(tag) => { tag.value !== 'All' ? setFilter(tag.value) : setFilter('')}} />
+        </div>
         <div className="resource-page-resource">
-          {resourcesData.map((resource) => {
-            if (filter === '' || resource.tags.includes(filter)) {
+          {resourceTagsData && resourcesData.map((resource) => {
+            const verboseTags = parseList(resource.tags).map(tagCode => {
+              const tag = resourceTagMap.get(tagCode);
+              return tag ? tag.name : null;
+            });
+            if (filter === '' ||
+              verboseTags.includes(filter)) {
               return (
                 <ResourceCard
                   image={resource.image}

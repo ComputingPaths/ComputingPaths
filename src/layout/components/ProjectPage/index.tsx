@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Dropdown from 'react-dropdown';
 
 import { DataTypes, useData } from '../../../utils/data';
 import { parseList, parseLookup } from '../../../utils/funcs';
@@ -18,6 +19,18 @@ const ProjectPage: React.FC = () => {
   }, [useData]);
   const [filter, setFilter] = useState<string>('');
 
+  const [projectTagsData, setProjectTagsData] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    useData(DataTypes.ProjectTags)
+      .then((newData) => setProjectTagsData(newData))
+      .catch(() => setProjectTagsData([]));
+  }, [useData]);
+
+  const projectTagMap = parseLookup(projectTagsData);
+  const projectTagValues = projectTagsData.map(tagObj => tagObj.name);
+  projectTagValues.unshift("All")
+
   return (
     <main className="projects-page">
       <h1 className="projects-page-title">Projects</h1>
@@ -32,9 +45,17 @@ const ProjectPage: React.FC = () => {
         <button className={filter !== 'Research' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Research')}>Research</button>
         <button className={filter !== 'Game' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Game')}>Game</button>
       </div>
+      <div className="projects-page-mobile-dropdown">
+        <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={projectTagValues} placeholder="Select a project category" onChange={(tag) => { tag.value !== 'All' ? setFilter(tag.value) : setFilter('')}} />
+      </div>
       <div className="projects-page-projects">
         {data.map((project) => {
-          if (filter === '' || project.Tags.includes(filter)) {
+          const verboseTags = parseList(project.tags).map(tagCode => {
+            const tag = projectTagMap.get(tagCode);
+            return tag ? tag.name : null;
+          });
+          if (filter === '' ||
+            verboseTags.includes(filter)) {
             return (
               <ProjectCard
                 description={project.description}
