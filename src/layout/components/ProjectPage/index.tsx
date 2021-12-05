@@ -28,8 +28,8 @@ const ProjectPage: React.FC = () => {
   }, [useData]);
 
   const projectTagMap = parseLookup(projectTagsData);
-  const projectTagValues = projectTagsData.map(tagObj => tagObj.name);
-  projectTagValues.unshift("All")
+  const projectTagValues = projectTagsData.map((tagObj) => tagObj.name);
+  projectTagValues.unshift('All');
 
   return (
     <main className="projects-page">
@@ -46,16 +46,16 @@ const ProjectPage: React.FC = () => {
         <button className={filter !== 'Game' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Game')}>Game</button>
       </div>
       <div className="projects-page-mobile-dropdown">
-        <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={projectTagValues} placeholder="Select a project category" onChange={(tag) => { tag.value !== 'All' ? setFilter(tag.value) : setFilter('')}} />
+        <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={projectTagValues} placeholder="Select a project category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
       </div>
       <div className="projects-page-projects">
         {data.map((project) => {
-          const verboseTags = parseList(project.tags).map(tagCode => {
+          const verboseTags = parseList(project.tags).map((tagCode) => {
             const tag = projectTagMap.get(tagCode);
             return tag ? tag.name : null;
           });
-          if (filter === '' ||
-            verboseTags.includes(filter)) {
+          if (filter === ''
+            || verboseTags.includes(filter)) {
             return (
               <ProjectCard
                 description={project.description}

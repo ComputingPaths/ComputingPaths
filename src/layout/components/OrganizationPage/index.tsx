@@ -17,8 +17,8 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
   const [orgTags, setOrgTags] = useState<Array<any>>([]);
 
   const orgTagMap = parseLookup(orgTags);
-  const orgTagValues = orgTags.map(tagObj => tagObj.name);
-  orgTagValues.unshift("All")
+  const orgTagValues = orgTags.map((tagObj) => tagObj.name);
+  orgTagValues.unshift('All');
 
   const [filter, setFilter] = useState<string>('');
 
@@ -56,14 +56,14 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
         <div className="orgs-page-tag-section">
           <button className={filter !== '' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('')}>All</button>
           {
-            orgTagValues && orgTagValues.map(tagVal => {
-              if (tagVal !== 'All')
-                return (<button className={filter !== tagVal ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter(tagVal)}>{tagVal}</button>)
+            orgTagValues && orgTagValues.map((tagVal) => {
+              if (tagVal !== 'All') return (<button className={filter !== tagVal ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter(tagVal)}>{tagVal}</button>);
+              return null;
             })
           }
         </div>
         <div className="projects-page-mobile-dropdown">
-          <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={orgTagValues} placeholder="Select an organization category" onChange={(tag) => { tag.value !== 'All' ? setFilter(tag.value) : setFilter('')}} />
+          <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={orgTagValues} placeholder="Select an organization category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
         </div>
       </div>
       <div className="orgs-page-main">
@@ -72,8 +72,8 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
           {orgTags && orgs.map((org) => {
             const tags = parseList(org.tags);
             const verboseTags = tags.map((tag) => (orgTagMap.get(tag).name));
-            if (filter === '' ||
-              verboseTags.includes(filter)) {
+            if (filter === ''
+              || verboseTags.includes(filter)) {
               return (
                 <OrganizationCard
                   key={org.name}

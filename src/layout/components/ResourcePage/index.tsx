@@ -20,8 +20,8 @@ const ResourcePage: React.FC = () => {
   }, [useData]);
 
   const resourceTagMap = parseLookup(resourceTagsData);
-  const resourceTagValues = resourceTagsData.map(tagObj => tagObj.name);
-  resourceTagValues.unshift("All")
+  const resourceTagValues = resourceTagsData.map((tagObj) => tagObj.name);
+  resourceTagValues.unshift('All');
 
   const [resourcesData, setResourcesData] = useState<Array<any>>([]);
 
@@ -48,16 +48,16 @@ const ResourcePage: React.FC = () => {
         }
         </div>
         <div className="projects-page-mobile-dropdown">
-          <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={resourceTagValues} placeholder="Select a resource category" onChange={(tag) => { tag.value !== 'All' ? setFilter(tag.value) : setFilter('')}} />
+          <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={resourceTagValues} placeholder="Select a resource category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
         </div>
         <div className="resource-page-resource">
           {resourceTagsData && resourcesData.map((resource) => {
-            const verboseTags = parseList(resource.tags).map(tagCode => {
+            const verboseTags = parseList(resource.tags).map((tagCode) => {
               const tag = resourceTagMap.get(tagCode);
               return tag ? tag.name : null;
             });
-            if (filter === '' ||
-              verboseTags.includes(filter)) {
+            if (filter === ''
+              || verboseTags.includes(filter)) {
               return (
                 <ResourceCard
                   image={resource.image}
