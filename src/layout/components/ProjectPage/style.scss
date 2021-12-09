@@ -18,15 +18,14 @@
     @include font-subtitle-1;
     background-color: #fff;
     border: 0;
-    border-radius: 0.25rem;
-    color: $color-neutrals-dark-grey;
+    border-bottom: solid 2px $color-neutrals-grey;
+    color: $color-neutrals-grey;
     flex: 1;
-    margin: 0.25rem;
     padding: 1rem 1.5rem;
 
     &.select {
-      background-color: $color-primary-blue;
-      color: #fff;
+      border-bottom: solid 5px $color-primary-blue;
+      color: $color-neutrals-black;
     }
   }
 
@@ -34,6 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2rem;
   }
 
   &-text {
@@ -43,5 +43,32 @@
 
   &-title {
     @include font-heading-1;
+  }
+
+  &-mobile-dropdown {
+    display: none;
+
+    .dropdown-root {
+      height: 2.5rem;
+      margin-top: 1rem;
+
+      .dropdown-control {
+        border-radius: 4px;
+      }
+
+      .dropdown-arrow {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+
+  @media(max-width: $site-size-small) {
+    &-tag-section {
+      display: none;
+    }
+
+    &-mobile-dropdown {
+      display: unset;
+    }
   }
 }

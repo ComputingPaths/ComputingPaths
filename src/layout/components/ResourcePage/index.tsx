@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Dropdown from 'react-dropdown';
 
 import ResourceCard from '../ResourceCard';
 
@@ -21,6 +22,8 @@ const ResourcePage: React.FC = () => {
   }, [useData]);
 
   const resourceTagMap = parseLookup(resourceTagsData);
+  const resourceTagValues = resourceTagsData.map((tagObj) => tagObj.name);
+  resourceTagValues.unshift('All');
 
   const [resourcesData, setResourcesData] = useState<Array<Resources>>([]);
 
@@ -30,26 +33,7 @@ const ResourcePage: React.FC = () => {
       .catch(() => setResourcesData([]));
   }, [useData]);
 
-  const [filter, setFilter] = useState<string[]>([]);
-
-  const updateFilter = (tag: string) => {
-    let newFilter: string[] = [...filter];
-    const index = filter.indexOf(tag);
-
-    if (tag !== '' && index === -1) {
-      newFilter.push(tag);
-    } else if (tag !== '' && index >= 0) {
-      newFilter.splice(index, 1);
-    }
-
-    if (tag === '' || newFilter.length === resourceTagsData.length) {
-      newFilter = [];
-    }
-
-    setFilter([...newFilter]);
-  };
-
-  const isFiltering = (tag: string): boolean => filter.indexOf(tag) !== -1;
+  const [filter, setFilter] = useState<string>('');
 
   return (
     <main className="resource-page">
@@ -58,17 +42,24 @@ const ResourcePage: React.FC = () => {
       <div className="resource-page-content">
         <p className="resource-page-heading">Become familiar with campus resources</p>
         <div className="resource-page-tag-section">
-          <button className={`resource-page-tag-button${filter.length === 0 ? ' selected' : ''}`} type="button" onClick={() => updateFilter('')}>All</button>
+          <button className={`resource-page-tag-button${filter === '' ? ' selected' : ''}`} type="button" onClick={() => setFilter('')}>All</button>
           {
           resourceTagsData.map((resource, index) => (
-            <button className={`resource-page-tag-button${isFiltering(resource.code) ? ' selected' : ''}`} type="button" onClick={() => updateFilter(resource.code)} key={index}>{resource.name}</button>
+            <button className={`resource-page-tag-button${filter === resource.name ? ' selected' : ''}`} type="button" onClick={() => setFilter(resource.name)} key={index}>{resource.name}</button>
           ))
         }
         </div>
+        <div className="projects-page-mobile-dropdown">
+          <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={resourceTagValues} placeholder="Select a resource category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
+        </div>
         <div className="resource-page-resource">
-          {resourcesData.map((resource) => {
-            if (filter.length === 0
-              || filter.filter((value) => parseList(resource.tags).includes(value)).length !== 0) {
+          {resourceTagsData && resourcesData.map((resource) => {
+            const verboseTags = parseList(resource.tags).map((tagCode) => {
+              const tag = resourceTagMap.get(tagCode);
+              return tag ? tag.name : null;
+            });
+            if (filter === ''
+              || verboseTags.includes(filter)) {
               return (
                 <ResourceCard
                   image={resource.image}
