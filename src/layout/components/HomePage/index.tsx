@@ -8,7 +8,9 @@ import LeftQuote from '../../../assets/LeftQuote.svg';
 import RightQuote from '../../../assets/RightQuote.svg';
 
 import { parseLookup } from '../../../utils/funcs';
-import { DataTypes, useData } from '../../../utils/data';
+import {
+  DataTypes, Home, Majors, Stories, useData,
+} from '../../../utils/data';
 
 import './style.scss';
 
@@ -17,9 +19,13 @@ interface HomePageProps {
 }
 
 const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
-  const [majors, setMajor] = useState<Array<any>>([]);
-  const [homeData, setHomeData] = useState<any>({});
-  const [stories, setStories] = useState<Array<any>>([]);
+  const [majors, setMajor] = useState<Array<Majors>>([]);
+  const [homeData, setHomeData] = useState<Home>({
+    student_org_photo: '',
+    projects_photo: '',
+    featured_story: '',
+  });
+  const [stories, setStories] = useState<Array<Stories>>([]);
 
   const storyLookup = parseLookup(stories, 'name');
 
@@ -43,7 +49,11 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
 
     useData(DataTypes.Home)
       .then((newData) => setHomeData(newData[0] || {}))
-      .catch(() => setHomeData([]));
+      .catch(() => setHomeData({
+        student_org_photo: '',
+        projects_photo: '',
+        featured_story: '',
+      }));
 
     useData(DataTypes.Stories)
       .then((newData) => setStories(newData))
