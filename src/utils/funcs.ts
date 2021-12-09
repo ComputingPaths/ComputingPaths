@@ -11,7 +11,7 @@ export const parseDegree = (degree) => {
 };
 
 // Parse a list of data with a code field, which will be converted to a Map
-export const parseLookup = (input: any[]): Map<string, any> => {
+export const parseLookup = (input: any[], keyName: string = 'code'): Map<string, any> => {
   if (!input) {
     return new Map();
   }
@@ -19,7 +19,7 @@ export const parseLookup = (input: any[]): Map<string, any> => {
   const response = new Map();
 
   input.forEach((item, index) => {
-    response.set(item.code, { ...item, index });
+    response.set(item[keyName], { ...item, index });
   });
 
   return response;

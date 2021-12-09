@@ -6,6 +6,8 @@ import CarouselLeftArrow from '../../../assets/CarouselLeftArrow.svg';
 import Gear from '../../../assets/Gear.svg';
 import LeftQuote from '../../../assets/LeftQuote.svg';
 import RightQuote from '../../../assets/RightQuote.svg';
+
+import { parseLookup } from '../../../utils/funcs';
 import { DataTypes, useData } from '../../../utils/data';
 
 import './style.scss';
@@ -18,6 +20,8 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
   const [majors, setMajor] = useState<Array<any>>([]);
   const [homeData, setHomeData] = useState<any>({});
   const [stories, setStories] = useState<Array<any>>([]);
+
+  const storyLookup = parseLookup(stories, 'name');
 
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -45,6 +49,8 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       .then((newData) => setStories(newData))
       .catch(() => setStories([]));
   }, [useData]);
+
+  const story = storyLookup.get(homeData.featured_story);
 
   return (
     <main className="home-page">
@@ -74,18 +80,18 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       </button>
       <article className="home-page-stories-section">
         <h2 className="home-page-header">Stories &#38; Advice</h2>
-        {stories.length !== 0 && (
+        {story && (
         <section className="home-page-stories">
           <div className="home-page-stories-image">
             <img className="home-page-stories-gear" src={Gear} alt="Gear Quote" />
-            <img className="home-page-image-circle" src={stories.length > 0 ? stories[0].image : null} alt="Advice" />
+            <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt="Advice" />
           </div>
           <div className="home-page-stories-text">
             <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" />
-            <p className="home-page-stories-quote">{stories[0].highlighted_quote}</p>
+            <p className="home-page-stories-quote">{story.highlighted_quote}</p>
             <h3 className="home-page-stories-name">
-              {stories[0].name} &nbsp;
-              <span>{`${stories[0].role ? `${stories[0].role}` : ''}${stories[0].role && stories[0].class ? ' | ' : ''}${stories[0].class ? `Class of ${stories[0].class}` : ''}`}</span>
+              {story.name} &nbsp;
+              <span>{`${story.role ? `${story.role}` : ''}${story.role && story.class ? ' | ' : ''}${story.class ? `Class of ${story.class}` : ''}`}</span>
             </h3>
             <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" />
             <Link className="home-page-links" to="/stories">
