@@ -3,7 +3,9 @@ import Dropdown from 'react-dropdown';
 
 import ResourceCard from '../ResourceCard';
 
-import { DataTypes, useData } from '../../../utils/data';
+import {
+  DataTypes, useData, Resources,
+} from '../../../utils/data';
 import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
@@ -23,7 +25,7 @@ const ResourcePage: React.FC = () => {
   const resourceTagValues = resourceTagsData.map((tagObj) => tagObj.name);
   resourceTagValues.unshift('All');
 
-  const [resourcesData, setResourcesData] = useState<Array<any>>([]);
+  const [resourcesData, setResourcesData] = useState<Array<Resources>>([]);
 
   useEffect(() => {
     useData(DataTypes.Resources)

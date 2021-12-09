@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Dropdown from 'react-dropdown';
 
-import { DataTypes, useData } from '../../../utils/data';
+import {
+  DataTypes, useData, Projects,
+} from '../../../utils/data';
 import { parseList, parseLookup } from '../../../utils/funcs';
 import ProjectCard from '../ProjectCard';
 
@@ -10,7 +12,7 @@ import './style.scss';
 const colors = ['grass-green', 'teal', 'light-orange', 'lilac', 'coral', 'light-blue'];
 
 const ProjectPage: React.FC = () => {
-  const [data, setData] = useState<Array<any>>([]);
+  const [data, setData] = useState<Array<Projects>>([]);
 
   useEffect(() => {
     useData(DataTypes.Projects)
@@ -71,7 +73,7 @@ const ProjectPage: React.FC = () => {
                     ? { name: tag.name, color: colors[tag.index % colors.length] }
                     : null;
                 })}
-                videoURL={project.Videos}
+                videoURL={project.videos}
               />
             );
           }
