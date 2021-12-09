@@ -137,16 +137,16 @@
 
   @media(max-width: $site-size-small) {
     flex-direction: column;
-    width: 20.5rem;
     height: calc(8.5rem + 16.625rem);
+    width: 20.5rem;
 
     &-content {
       width: unset;
     }
 
     &-hidden {
-      width: unset;
       padding: 1rem 2rem 1rem 1rem;
+      width: unset;
     }
 
     &-button {
