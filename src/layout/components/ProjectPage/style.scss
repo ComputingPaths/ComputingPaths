@@ -63,6 +63,10 @@
   }
 
   @media(max-width: $site-size-small) {
+    &-projects {
+      justify-content: center;
+    }
+
     &-tag-section {
       display: none;
     }
