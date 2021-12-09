@@ -51,7 +51,7 @@ const MajorPage: React.FC = () => {
         <h2 className="major-page-subheading">Learn more about the computing majors</h2>
         <div className="major-page-scroll-content">
           <div className="major-page-sidebar">
-            {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors/#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
+            {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
           </div>
           <div className="major-page-mobile-navigation">
             <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={majorData.map((major) => major.name)} placeholder="Select a major" onChange={(major) => { location.hash = `#${major.value.replace(/\s/g, '-')}`; }} />
