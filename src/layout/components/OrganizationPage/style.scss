@@ -15,6 +15,7 @@
   .marquee {
     height: 20rem;
     margin: 0 -7rem;
+    overflow: hidden;
     width: 100vw;
   }
 
@@ -92,6 +93,11 @@
   }
 
   @media(max-width: $site-size-small) {
+    .marquee {
+      margin: 0 -3.5rem;
+      width: calc(100vw + 3.5rem);
+    }
+
     &-tag-section {
       display: none;
     }

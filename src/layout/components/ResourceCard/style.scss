@@ -137,7 +137,24 @@
 
   @media(max-width: $site-size-small) {
     flex-direction: column;
+    height: calc(8.5rem + 16.625rem);
     width: 20.5rem;
+
+    &-content {
+      width: unset;
+    }
+
+    &-hidden {
+      padding: 1rem 2rem 1rem 1rem;
+      width: unset;
+    }
+
+    &-button {
+      height: 1.25rem;
+      right: 0.75rem;
+      top: 0.75rem;
+      width: 1.25rem;
+    }
 
     &-image {
       height: 8.5rem;
@@ -149,8 +166,5 @@
       padding: 1rem;
     }
 
-    &-hidden {
-      padding: 1rem;
-    }
   }
 }
