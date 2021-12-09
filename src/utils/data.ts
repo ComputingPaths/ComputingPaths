@@ -19,6 +19,7 @@ export enum DataTypes {
 export interface Home {
   'student_org_photo': string;
   'projects_photo': string;
+  'featured_story': string;
 }
 
 export interface Stories {
