@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import ResourceCard from '../ResourceCard';
 
-import { DataTypes, useData } from '../../../utils/data';
+import {
+  DataTypes, useData, Resources,
+} from '../../../utils/data';
 import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
@@ -20,7 +22,7 @@ const ResourcePage: React.FC = () => {
 
   const resourceTagMap = parseLookup(resourceTagsData);
 
-  const [resourcesData, setResourcesData] = useState<Array<any>>([]);
+  const [resourcesData, setResourcesData] = useState<Array<Resources>>([]);
 
   useEffect(() => {
     useData(DataTypes.Resources)

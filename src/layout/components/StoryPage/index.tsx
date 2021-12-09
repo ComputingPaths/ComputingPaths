@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 import StoryCard from '../StoryCard';
 
-import { DataTypes, useData } from '../../../utils/data';
+import { DataTypes, useData, Stories } from '../../../utils/data';
 
 import './style.scss';
 
 const StoryPage: React.FC = () => {
-  const [data, setData] = useState<Array<any>>([]);
+  const [data, setData] = useState<Array<Stories>>([]);
 
   useEffect(() => {
     useData(DataTypes.Stories)
