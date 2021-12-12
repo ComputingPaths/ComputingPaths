@@ -38,7 +38,7 @@ const ResourcePage: React.FC = () => {
   return (
     <main className="resource-page">
       <h1 className="resource-page-title">Resources</h1>
-      <p className="resource-page-text">Every path through UCSD is unique, and there&apos;s no right or wrong path. Some students have explored many different routes on their way to finding the right fit for them. These are their stories and advice.</p>
+      <p className="resource-page-text">Discover the many resources available at UC San Diego: study spaces, career and research opportunities, and academic support.</p>
       <div className="resource-page-content">
         <p className="resource-page-heading">Become familiar with campus resources</p>
         <div className="resource-page-tag-section">
