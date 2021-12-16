@@ -1,11 +1,13 @@
 import Papa from 'papaparse';
 
+const SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRnb171PEsXBbxO5V6oD2bEHVomLzNmcCaCAmuVngkLGIVMKe8eue3Rdz1N-Ioghpq7wDOO3cQ9tIw9/pub?output=csv';
+
 export enum DataTypes {
   Headers = '29489883',
   Home='395547379',
   Stories = '1646384161',
-  Departments = '929723649',
   Majors = '860790804',
+  Departments = '929723649',
   MajorSpecializations = '1867072131',
   Resources = '2135229956',
   ResourceTags = '167316779',
@@ -90,7 +92,7 @@ export const useData = (gid: DataTypes): Promise<Array<any>> => new Promise((res
   const prefetch = () => {
     Object.keys(DataTypes).forEach((type) => {
       if (DataTypes[type] !== gid) {
-        Papa.parse<any>(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${DataTypes[type]}`, {
+        Papa.parse<any>(`${SPREADSHEET_URL}&gid=${DataTypes[type]}`, {
           download: true,
           header: true,
           complete: (results) => {
@@ -107,7 +109,7 @@ export const useData = (gid: DataTypes): Promise<Array<any>> => new Promise((res
     });
   };
 
-  Papa.parse<any>(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQPxfDC-DdscHUL8Zj8ObqyoyaB92ffcMtoWnFMbM1oZeCFG6Jwxba23ysjZ2JJEKpPdNwaKTj3PdH5/pub?output=csv&gid=${gid}`, {
+  Papa.parse<any>(`${SPREADSHEET_URL}&gid=${gid}`, {
     download: true,
     header: true,
     complete: (results) => {
