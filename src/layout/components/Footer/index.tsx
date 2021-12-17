@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
     </div>
     <div className="footer-issue">
       <p className="footer-issue-heading">Have an issue?</p>
-      <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/xKkMgde4E9p8Pmoo6"><p className="footer-issue-link">Fill out this form</p></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/Sosw6WvxEupsz1Sx6"><p className="footer-issue-link">Fill out this form</p></a>
     </div>
   </div>
 );
