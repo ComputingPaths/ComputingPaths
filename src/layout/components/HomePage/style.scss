@@ -75,18 +75,18 @@
 
     &-major {
       @include font-heading-3;
+      align-items: center;
       background-color: $color-primary-navy;
       bottom: 0;
       color: #fff;
+      display: flex;
       height: 3.5rem;
+      justify-content: center;
       overflow: hidden;
       padding: 0.5rem 1rem;
       position: absolute;
-      width: calc(100% - 2rem);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
+      width: calc(100% - 2rem);
     }
   }
 
