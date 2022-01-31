@@ -78,12 +78,15 @@
       background-color: $color-primary-navy;
       bottom: 0;
       color: #fff;
-      height: 2.25rem;
+      height: 3.5rem;
       overflow: hidden;
       padding: 0.5rem 1rem;
       position: absolute;
-      text-align: center;
       width: calc(100% - 2rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 
