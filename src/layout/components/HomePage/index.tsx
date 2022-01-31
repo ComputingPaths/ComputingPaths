@@ -33,11 +33,29 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
 
   const handleNav = (event) => {
     if (menuRef && menuRef.current) {
-      const widthOfItem = (menuRef.current.childNodes[0] as HTMLDivElement).clientWidth;
+      const element = (menuRef.current.childNodes[0] as HTMLDivElement);
+
+      // Sourced from: https://stackoverflow.com/a/23270007
+      const style = window.getComputedStyle(element);
+      const width = element.offsetWidth;
+      const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+      const padding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+      const border = parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+
+      const elementSize = width + margin - padding + border;
+
       if (event.target.className.includes('home-page-left-arrow')) {
-        menuRef.current.scrollLeft -= widthOfItem;
+        menuRef.current.scrollBy({
+          top: 0,
+          left: -elementSize,
+          behavior: 'smooth',
+        });
       } else {
-        menuRef.current.scrollLeft += widthOfItem;
+        menuRef.current.scrollBy({
+          top: 0,
+          left: +elementSize,
+          behavior: 'smooth',
+        });
       }
     }
   };
