@@ -75,7 +75,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       </section>
       <h2 className="home-page-header major">Majors</h2>
       <section className="home-page-majors-container" ref={menuRef}>
-        {majors.concat(majors[0] || []).map((major) => (
+        {majors.map((major) => (
           <Link to={`/majors#${major.name.replace(/\s/g, '-')}`} className="home-page-majors-section">
             <img className="home-page-majors-section-image" src={major.image} alt="major" />
             <h3 className="home-page-majors-section-major">{major.name}</h3>
