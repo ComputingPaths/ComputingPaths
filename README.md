@@ -1,5 +1,5 @@
 # Welcome to Computing Paths!
-This repository hosts the source code and site content of the Computing Paths website. For details about how to edit site content and develop new features, please refer to the project [content guide](https://docs.google.com/document/d/12iLqgWvaljmn5DHFf40c7IAfIczRxqgae5M5gN6tRB4/edit#).
+This repository hosts the source code and site content of the Computing Paths website. For details about how to edit site content and develop new features, please refer to the project [content guide](https://docs.google.com/document/d/1oJeoiLy2kp-hF9ntmxVzWUoYXXmplfEFkj459G5BRE0/edit).
 
 ## Development Process
 
