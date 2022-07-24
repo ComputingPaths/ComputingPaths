@@ -15,6 +15,19 @@
     padding: 3rem 7rem;
   }
 
+  &-map {
+    width: 1280px;
+    height: 960px;
+    border-style:solid;
+    border-width: 8px;
+    border-color: black;
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+  }
+
   &-heading {
     @include font-heading-2;
   }
