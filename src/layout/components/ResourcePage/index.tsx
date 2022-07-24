@@ -40,7 +40,7 @@ const ResourcePage: React.FC = () => {
       <h1 className="resource-page-title">Resources</h1>
       <p className="resource-page-text">Discover the many resources available at UC San Diego: study spaces, career and research opportunities, and academic support.</p>
       <div className="resource-page-content">
-      <p className="resource-page-heading">Become familiar with campus resources</p>
+        <p className="resource-page-heading">Become familiar with campus resources</p>
         <div className="resource-page-map">
           <iframe
             title="resource-map"
