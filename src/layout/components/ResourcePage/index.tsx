@@ -44,9 +44,10 @@ const ResourcePage: React.FC = () => {
         <div className="resource-page-map">
           <iframe
             title="resource-map"
+            frameBorder="0"
             src="https://www.google.com/maps/d/u/3/embed?mid=1eF2bl9kWspR7kr8wsJFz7WytAg0J1kc&ehbc=2E12F"
-            width="1280"
-            height="960"
+            width="1152"
+            height="864"
           />
         </div>
         <div className="resource-page-tag-section">
