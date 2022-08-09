@@ -16,15 +16,23 @@
   }
 
   &-map {
+    position: relative;
     border-radius: 3px;
     border-style: solid;
     border-width: 6px;
     display: block;
-    height: 864px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
-    width: 1152px;
+    max-width: 50%;
+    max-height: 60%;
+
+    &-iframe {
+      aspect-ratio: 4/3;
+      display: block;
+      width: 100%;
+      height: 50%;
+    }
   }
 
   &-heading {
