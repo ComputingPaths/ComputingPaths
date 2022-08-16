@@ -41,6 +41,16 @@ const ResourcePage: React.FC = () => {
       <p className="resource-page-text">Discover the many resources available at UC San Diego: study spaces, career and research opportunities, and academic support.</p>
       <div className="resource-page-content">
         <p className="resource-page-heading">Become familiar with campus resources</p>
+        <div className="resource-page-map">
+          <iframe
+            className="resource-page-map-iframe"
+            title="resource-map"
+            frameBorder="0"
+            src="https://www.google.com/maps/d/u/3/embed?mid=1qNFk4YFl86VMKQ-KYxR0qwWEUyMbpU8&ehbc=2E312F"
+            width="1152"
+            height="864"
+          />
+        </div>
         <div className="resource-page-tag-section">
           <button className={`resource-page-tag-button${filter === '' ? ' selected' : ''}`} type="button" onClick={() => setFilter('')}>All</button>
           {
