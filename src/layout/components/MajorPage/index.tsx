@@ -1,87 +1,96 @@
-import React, { useEffect, useState } from 'react';
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
-import { HashLink as Link } from 'react-router-hash-link';
+import React, { useState } from 'react';
 
-import MajorCard from '../MajorCard';
-
-import {
-  DataTypes, useData, Majors,
-} from '../../../utils/data';
-import {
-  parseDegree, parseList, parseLookup, parseSpecializations,
-} from '../../../utils/funcs';
+import LinkedArrow from '../../../assets/LinkedArrow.svg';
+import Caret from '../../../assets/caret.svg';
 
 import './style.scss';
 
-const MajorPage: React.FC = () => {
-  const [departmentData, setDepartmentData] = useState<Array<any>>([]);
+interface MajorCardProps {
+    image: string;
+    name: string;
+    capped: boolean;
+    degreeType: string;
+    description: string;
+    departments: { title: string; url: string; }[];
+    links: { title: string; url: string }[];
+    specializations: { name: string, detail: string }[];
+    note: string;
+}
 
-  useEffect(() => {
-    useData(DataTypes.Departments)
-      .then((newData) => setDepartmentData(newData))
-      .catch(() => setDepartmentData([]));
-  }, [useData]);
-
-  const departmentMap = parseLookup(departmentData);
-
-  const [majorData, setMajorData] = useState<Array<Majors>>([]);
-
-  useEffect(() => {
-    useData(DataTypes.Majors)
-      .then((newData) => setMajorData(newData))
-      .catch(() => setMajorData([]));
-  }, [useData]);
-
-  const [majorSpecsData, setMajorSpecsData] = useState<Array<any>>([]);
-
-  useEffect(() => {
-    useData(DataTypes.MajorSpecializations)
-      .then((newData) => setMajorSpecsData(newData))
-      .catch(() => setMajorSpecsData([]));
-  }, [useData]);
-
-  const specsMap = parseLookup(majorSpecsData);
-
-  return (
-    <div className="major-page">
-      <h1 className="major-page-title">Majors</h1>
-      <p className="major-page-text">A wide array of majors offer a unique computing experience at UCSD. These major apply computational skills to both new and traditional subject matter, developing programming skills, fostering scientific study, and bolstering creativity.</p>
-      <div className="major-page-content">
-        <h2 className="major-page-subheading">Learn more about the computing majors</h2>
-        <div className="major-page-scroll-content">
-          <div className="major-page-sidebar">
-            {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
+const MajorCard: React.FC<MajorCardProps> = ({
+  image, name, capped, degreeType, description, departments, links, specializations, note,
+}) => (
+  <>
+    <div id={name && name.replace(/\s/g, '-')} className="major-hyperlink" />
+    <div className="major-card">
+      {image && <img className="major-card-photo" src={image} alt={`${name || 'Major Card'}`} />}
+      <div className="major-card-top">
+        {name && <p className="major-card-heading">{name}</p>}
+        {(capped || degreeType) && (
+          <div className="major-card-tags">
+            {capped && <p className="major-card-tag">Capped</p>}
+            {degreeType && <p className="major-card-tag">{degreeType}</p>}
           </div>
-          <div className="major-page-mobile-navigation">
-            <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={majorData.map((major) => major.name)} placeholder="Select a major" onChange={(major) => { location.hash = `#${major.value.replace(/\s/g, '-')}`; }} />
+        )}
+      </div>
+      <div className="major-card-bottom">
+        <div className="major-card-info">
+          <div className="major-card-info-left">
+            <p className="major-card-subheading">Description</p>
+            {description && <p className="major-card-description">{description}</p>}
+            <div className="major-card-links">
+              <p className="major-card-subheading">More Information: </p>
+              {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
+            </div>
           </div>
-          <div className="major-page-cards">
-            {majorData.map((major, index) => (
-              <MajorCard
-                image={major.image}
-                name={major.name}
-                capped={major.capped === 'TRUE'}
-                degreeType={parseDegree(major.degree_type)}
-                description={major.description}
-                departments={parseList(major.departments).map((departmentCode) => {
-                  const department = departmentMap.get(departmentCode);
-
-                  return { title: department.name, url: department.link };
-                })}
-                links={[
-                  { title: major.link_1_title, url: major.link_1_url },
-                  { title: major.link_2_title, url: major.link_2_url }]}
-                specializations={parseSpecializations(specsMap.get(major.code))}
-                note={major.note}
-                key={index}
-              />
-            ))}
+          <div className="major-card-info-right">
+            <p className="major-card-subheading">Courses</p>
+            <div className="major-card-links">
+              {/* {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)} */}
+              {/* changing the layout of departments section */}
+              {/* {departments.length !== 0 && (departments.map((department, index) => {
+                const [open, setOpen] = useState<boolean>(false);
+                return (
+                  <div className="major-card-courses" key={index}>
+                    <div className="major-card-courses-heading" onClick={() => setOpen(!open)}>
+                    <p className="major-card-courses-name">{department.title}</p>
+                    <button className={`major-card-courses-button ${open ? 'open' : ''}`} type="button"><img src={Caret} alt="Description" /></button>
+                    </div>
+                  <div className={`major-card-specialization-content ${open ? 'open' : ''}`}>
+                    <p className="major-card-specialization-detail">{department.url}</p>
+                  </div>
+                </div>
+                );
+              })
+            )} */}
+            </div>
+            {/* <div className="major-card-links"><p className="major-card-subheading">More Information</p>{links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
+            </div> */}
           </div>
         </div>
+        {specializations.length !== 0 && (specializations.map((specialization, index) => {
+          const [open, setOpen] = useState<boolean>(false);
+          return (
+            <div className="major-card-specialization" key={index}>
+              <div className="major-card-specialization-heading" onClick={() => setOpen(!open)}>
+                <p className="major-card-specialization-name">{specialization.name}</p>
+                <button className={`major-card-specialization-button ${open ? 'open' : ''}`} type="button"><img src={Caret} alt="Description" /></button>
+              </div>
+              <div className={`major-card-specialization-content ${open ? 'open' : ''}`}>
+                <p className="major-card-specialization-detail">{specialization.detail}</p>
+              </div>
+            </div>
+          );
+        })
+        )}
+        {note && (
+        <div className="major-card-note">
+          <p className="major-card-note-text">{note}</p>
+        </div>
+        )}
       </div>
     </div>
-  );
-};
+  </>
+);
 
-export default MajorPage;
+export default MajorCard;
