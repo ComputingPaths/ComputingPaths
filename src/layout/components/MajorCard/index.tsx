@@ -38,28 +38,45 @@ const MajorCard: React.FC<MajorCardProps> = ({
           <div className="major-card-info-left">
             <p className="major-card-subheading">Description</p>
             {description && <p className="major-card-description">{description}</p>}
-          </div>
-          <div className="major-card-info-right">
-            <p className="major-card-subheading">Departments</p>
             <div className="major-card-links">
-              {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
-            </div>
-            <div className="major-card-links">
-              <p className="major-card-subheading">More Information</p>
+              <p className="major-card-subheading">More Information: </p>
               {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
             </div>
           </div>
+          <div className="major-card-info-right">
+            <p className="major-card-subheading">Courses</p>
+            <div className="major-card-links">
+              {/* {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)} */}
+              {/* changing the layout of departments section */}
+              {/* {departments.length !== 0 && (departments.map((department, index) => {
+                const [open, setOpen] = useState<boolean>(false);
+                return (
+                  <div className="major-card-courses" key={index}>
+                    <div className="major-card-courses-heading" onClick={() => setOpen(!open)}>
+                    <p className="major-card-courses-name">{department.title}</p>
+                    <button className={`major-card-courses-button ${open ? 'open' : ''}`} type="button"><img src={Caret} alt="Description" /></button>
+                    </div>
+                  <div className={`major-card-specialization-content ${open ? 'open' : ''}`}>
+                    <p className="major-card-specialization-detail">{department.url}</p>
+                  </div>
+                </div>
+                );
+              })
+            )} */}
+            </div>
+            {/* <div className="major-card-links"><p className="major-card-subheading">More Information</p>{links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
+            </div> */}
+          </div>
         </div>
         {specializations.length !== 0 && (specializations.map((specialization, index) => {
-          const [open, setOpen] = useState<boolean>(false);
-
+          const [open2, setOpen2] = useState<boolean>(false);
           return (
             <div className="major-card-specialization" key={index}>
-              <div className="major-card-specialization-heading" onClick={() => setOpen(!open)}>
+              <div className="major-card-specialization-heading" onClick={() => setOpen2(!open2)}>
                 <p className="major-card-specialization-name">{specialization.name}</p>
-                <button className={`major-card-specialization-button ${open ? 'open' : ''}`} type="button"><img src={Caret} alt="Description" /></button>
+                <button className={`major-card-specialization-button ${open2 ? 'open' : ''}`} type="button"><img src={Caret} alt="Description" /></button>
               </div>
-              <div className={`major-card-specialization-content ${open ? 'open' : ''}`}>
+              <div className={`major-card-specialization-content ${open2 ? 'open' : ''}`}>
                 <p className="major-card-specialization-detail">{specialization.detail}</p>
               </div>
             </div>
