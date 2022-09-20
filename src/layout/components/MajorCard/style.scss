@@ -6,7 +6,7 @@
   top: calc(-5.25rem - 2.25rem); // Header height offset and padding
   visibility: hidden;
 
-  @media(max-width: $site-size-small) {
+  @media(max-width: $site-size-small) { 
     top: calc(-3.5rem - 1rem); // Header height offset and padding
   }
 }
@@ -68,7 +68,7 @@
   }
 
   &-description {
-    width: 25rem;
+    width: 29rem;
   }
 
   &-subheading {
@@ -145,47 +145,6 @@
     }
   }
 
-  &-courses {
-      &-button {
-        background: none;
-        border: 0;
-        cursor: pointer;
-        margin: 0 0.40rem;
-        padding: 0;
-        transform: rotate(180deg);
-
-        &.open {
-          transform: rotate(0deg);
-        }
-      }
-
-      &-heading {
-        align-items: center;
-        background-color: $color-primary-navy;
-        color: $color-neutrals-white;
-        display: flex;
-        height: 4.0rem;
-        justify-content: space-between;
-        padding: 0 3.5rem;
-      }
-
-      &-content {
-        border: 1px solid $color-primary-navy;
-        display: none;
-        padding: 1rem 2.5rem;
-        transition: height 0.5s;
-
-        &.open {
-          display: block;
-        }
-      }
-
-      &-detail {
-        @include font-text;
-      }
-
-  }
-
   &-note {
     background-color: $color-neutrals-white;
     border: 2px solid $color-primary-dark-yellow;
@@ -204,7 +163,7 @@
     &-photo {
       height: 7.5rem;
     }
-
+    
     &-top {
       align-items: unset;
       flex-direction: column;
@@ -223,7 +182,7 @@
     &-bottom {
       padding: 1.5rem 1rem;
     }
-
+    
     &-info {
       flex-direction: column;
 
@@ -231,11 +190,10 @@
         margin-top: 2rem;
       }
     }
-
+    
     &-description {
       margin-top: 0.5rem;
       width: unset;
-      //width: 20%;
     }
 
     &-specialization {
