@@ -10,7 +10,7 @@ const Footer: React.FC = () => (
     <div className="footer-content">
       <img className="footer-logo" src="/img/logo_ucsd.png" alt="UCSD Logo" />
       <p className="footer-contact">Contact</p>
-      <a href="mailto:computingpaths@eng.ucsd.edu"><p className="footer-email">computingpaths@eng.ucsd.edu</p></a>
+      <a href="mailto:computingpaths@eng.ucsd.edu"><p className="footer-email">computingpaths@ucsd.edu</p></a>
     </div>
     <div className="footer-links">
       {pages.map((page, index) => (<Link to={page.link} key={index}><p className="footer-link">{page.title}</p></Link>))}
