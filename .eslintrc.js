@@ -20,6 +20,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'linebreak-style': 0,
     'react/prop-types': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react-hooks/exhaustive-deps': 'off',

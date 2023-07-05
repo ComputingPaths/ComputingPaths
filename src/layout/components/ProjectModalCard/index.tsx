@@ -46,6 +46,58 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
     };
   });
 
+  if (videoURL !== '') {
+    return (
+      <div ref={menuRef} className="project-modal-card">
+        <section className="project-modal-card-carousel">
+          {images.map((picture, index) => {
+            if (index === slide) {
+              return (
+                <img className="project-modal-card-image" src={picture} alt="project" />
+              );
+            }
+            return null;
+          })}
+          <button className="project-modal-card-arrow left" type="button" onClick={() => setSlide(slide - 1 === -1 ? images.length - 1 : slide - 1)}><img className="project-modal-card-point" src={LeftArrow} alt="back arrow" /></button>
+          <button className="project-modal-card-arrow right" type="button" onClick={() => setSlide(slide + 1 === images.length ? 0 : slide + 1)}><img className="project-modal-card-point" src={RightArrow} alt="right arrow" /></button>
+          <div className="project-modal-card-slide">
+            {images.map((photo, index) => (
+              <div className={slide === index ? 'project-modal-card-dot select' : 'project-modal-card-dot'} />
+            ))}
+          </div>
+        </section>
+        <img className="project-modal-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
+        <p className="project-modal-card-tag">
+          <span className="project-modal-card-project-name">{projectName}</span>
+          <span className="project-modal-card-organization">{organization}</span>
+          {projectTags.map((tag) => (tag && <span className={`project-modal-card-project-tag ${tag.color}`}>{tag.name}</span>))}
+        </p>
+        <div className="project-modal-card-section">
+          <p className="project-modal-card-description">
+            <span className="project-modal-card-header">Description</span>
+            {description.split('\\n\\n').map((paragraph) => (
+              <p className="project-modal-card-text">{paragraph}</p>
+            ))}
+          </p>
+          <section className="project-modal-card-info">
+            <ul className="project-modal-card-members">
+              <span className="project-modal-card-header">Project Members</span>
+              {projectMembers.map((name) => (
+                <li>{name}</li>
+              ))}
+            </ul>
+            <p className="project-modal-card-links">
+              <span className="project-modal-card-header">More Information</span>
+              <span>
+                <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+                <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={videoURL}> <span className="project-modal-card-link">Project Video</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+              </span>
+            </p>
+          </section>
+        </div>
+      </div>
+    );
+  }
   return (
     <div ref={menuRef} className="project-modal-card">
       <section className="project-modal-card-carousel">
@@ -89,7 +141,6 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
             <span className="project-modal-card-header">More Information</span>
             <span>
               <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
-              <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={videoURL}> <span className="project-modal-card-link">Youtube Link</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
             </span>
           </p>
         </section>

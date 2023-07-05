@@ -9,7 +9,7 @@ import ProjectCard from '../ProjectCard';
 
 import './style.scss';
 
-const colors = ['grass-green', 'teal', 'light-orange', 'lilac', 'coral', 'light-blue'];
+const colors = ['grass-green', 'teal', 'light-orange', 'lilac', 'coral', 'light-blue', 'dark-green'];
 
 const ProjectPage: React.FC = () => {
   const [data, setData] = useState<Array<Projects>>([]);
@@ -40,12 +40,13 @@ const ProjectPage: React.FC = () => {
       <p className="projects-page-heading">Learn more about computing majors</p>
       <div className="projects-page-tag-section">
         <button className={filter !== '' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('')}>All</button>
-        <button className={filter !== 'Mobile App' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Mobile App')}>Mobile App</button>
-        <button className={filter !== 'Web App' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Web App')}>Web App</button>
-        <button className={filter !== 'Arduino' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Arduino')}>Arduino</button>
+        <button className={filter !== 'App' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('App')}>App</button>
+        <button className={filter !== 'Art' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Art')}>Art</button>
+        <button className={filter !== 'Artificial Intelligence' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Artificial Intelligence')}>Artificial Intelligence</button>
         <button className={filter !== 'Datamining' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Datamining')}>Datamining</button>
-        <button className={filter !== 'Research' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Research')}>Research</button>
         <button className={filter !== 'Game' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Game')}>Game</button>
+        <button className={filter !== 'Hardware' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Hardware')}>Hardware</button>
+        <button className={filter !== 'Research' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('Research')}>Research</button>
       </div>
       <div className="projects-page-mobile-dropdown">
         <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={projectTagValues} placeholder="Select a project category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
