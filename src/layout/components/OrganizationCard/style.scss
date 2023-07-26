@@ -32,6 +32,34 @@
       margin-right: 4px;
       padding: 5px 10px;
     }
+
+    &.cyan-blue {
+      background-color: $color-tag-cyan-blue;
+    }
+    
+    &.light-green {
+      background-color: $color-tag-light-green;
+    }
+    
+    &.light-yellow {
+      background-color: $color-tag-light-yellow;
+    }
+    
+    &.lilac {
+      background-color: $color-tag-lilac;
+    }
+    
+    &.light-red {
+      background-color: $color-tag-light-red;
+    }
+    
+    &.light-blue {
+      background-color: $color-tag-light-blue;
+    }
+
+    &.light-brown {
+      background-color: $color-tag-light-brown;
+    }
   }
 
   &-links {
