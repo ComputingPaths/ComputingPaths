@@ -6,10 +6,10 @@ import WebsiteIcon from '../../../assets/website-icon.svg';
 
 import './style.scss';
 
-type OrganizationCardProps = {
+interface OrganizationCardProps {
     name: string,
     img: string,
-    tags: string[],
+    tags: ({ name: any; color: string; } | null)[],
     link: string,
     linkedin: string,
     email: string
@@ -23,9 +23,7 @@ const OrganizationCard: React.FC<OrganizationCardProps> = ({
     <div className="org-card-info">
       <h3>{name}</h3>
       <div className="org-card-tags">
-        {tags?.length > 0 && tags?.map((tag) => (
-          <span>{tag}</span>
-        ))}
+        {tags.map((tag) => (tag ? <p className={`resource-card-tag ${tag.color}`}>{tag.name}</p> : null))}
       </div>
       <div className="org-card-links">
         {email && (

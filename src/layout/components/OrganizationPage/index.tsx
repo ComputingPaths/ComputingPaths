@@ -10,6 +10,8 @@ import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
 
+const colors = ['cyan-blue', 'light-green', 'light-yellow', 'lilac', 'light-red', 'light-blue', 'light-brown', 'light-pink', 'mint'];
+
 interface OrganizationPageProps {
   heroURL: string;
 }
@@ -72,8 +74,10 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
         <h2>Discover and connect with other motivated students</h2>
         <div className="orgs-page-grid">
           {orgTags && orgs.map((org) => {
-            const tags = parseList(org.tags);
-            const verboseTags = tags.map((tag) => (orgTagMap.get(tag).name));
+            const verboseTags = parseList(org.tags).map((tagCode) => {
+              const tag = orgTagMap.get(tagCode);
+              return tag ? tag.name : null;
+            });
             if (filter === ''
               || verboseTags.includes(filter)) {
               return (
@@ -81,7 +85,13 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
                   key={org.name}
                   name={org.name}
                   img={org.org_image}
-                  tags={verboseTags}
+                  tags={parseList(org.tags).map((tagCode) => {
+                    const tag = orgTagMap.get(tagCode);
+
+                    return tag
+                      ? { name: tag.name, color: colors[tag.index % colors.length] }
+                      : null;
+                  })}
                   link={org.link}
                   linkedin={org.linkedin}
                   email={org.email}
