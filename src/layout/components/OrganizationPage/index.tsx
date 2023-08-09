@@ -10,7 +10,7 @@ import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
 
-const colors = ['cyan-blue', 'light-green', 'light-yellow', 'lilac', 'light-red', 'light-blue', 'light-brown', 'light-pink', 'mint'];
+const colors = ['cyan-blue', 'light-green', 'light-yellow', 'light-red', 'light-blue', 'light-brown', 'mint'];
 
 interface OrganizationPageProps {
   heroURL: string;
