@@ -31,32 +31,32 @@
     overflow: hidden;
     padding: 0.25rem 0.8rem;
 
-    &.grass-green {
-      background-color: $color-tag-grass-green;
+    &.cyan-blue {
+      background-color: $color-tag-cyan-blue;
     }
     
-    &.teal {
-      background-color: $color-tag-teal;
+    &.light-green {
+      background-color: $color-tag-light-green;
     }
     
-    &.light-orange {
-      background-color: $color-tag-light-orange;
+    &.light-yellow {
+      background-color: $color-tag-light-yellow;
     }
-    
-    &.lilac {
-      background-color: $color-tag-lilac;
-    }
-    
-    &.coral {
-      background-color: $color-tag-coral;
+
+    &.light-red {
+      background-color: $color-tag-light-red;
     }
     
     &.light-blue {
       background-color: $color-tag-light-blue;
     }
 
-    &.dark-green {
-      background-color: $color-tag-dark-green;
+    &.light-brown {
+      background-color: $color-tag-light-brown;
+    }
+
+    &.mint {
+      background-color: $color-tag-mint;
     }
   }
 
@@ -72,6 +72,11 @@
     color: #fff;
     padding: 1rem;
     position: relative;
+  }
+
+  &-section span {
+    color: $color-primary-navy;
+    font-weight: bold;
   }
 }
 

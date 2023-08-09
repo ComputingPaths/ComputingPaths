@@ -39,9 +39,10 @@
     @include font-small-button-text;
     align-items: center;
     border-radius: 1rem;
-    color: #fff;
+    color: $color-primary-navy;
     display: flex;
     flex-shrink: 0;
+    font-weight: bold;
     height: 1.75rem;
     margin: 0.75rem 0.75rem 0 0;
     padding: 0 0.75rem;
@@ -50,28 +51,32 @@
       margin-right: 0;
     }
     
-    &.grass-green {
-      background-color: $color-tag-grass-green;
+    &.cyan-blue {
+      background-color: $color-tag-cyan-blue;
     }
     
-    &.teal {
-      background-color: $color-tag-teal;
+    &.light-green {
+      background-color: $color-tag-light-green;
     }
     
-    &.light-orange {
-      background-color: $color-tag-light-orange;
+    &.light-yellow {
+      background-color: $color-tag-light-yellow;
     }
     
-    &.lilac {
-      background-color: $color-tag-lilac;
-    }
-    
-    &.coral {
-      background-color: $color-tag-coral;
+    &.light-red {
+      background-color: $color-tag-light-red;
     }
     
     &.light-blue {
       background-color: $color-tag-light-blue;
+    }
+
+    &.light-brown {
+      background-color: $color-tag-light-brown;
+    }
+
+    &.mint {
+      background-color: $color-tag-mint;
     }
   }
 

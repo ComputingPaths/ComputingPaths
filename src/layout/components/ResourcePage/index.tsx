@@ -10,7 +10,7 @@ import { parseList, parseLookup } from '../../../utils/funcs';
 
 import './style.scss';
 
-const colors = ['grass-green', 'teal', 'light-orange', 'lilac', 'coral', 'light-blue'];
+const colors = ['cyan-blue', 'light-green', 'light-yellow', 'light-red', 'light-blue', 'light-brown', 'mint'];
 
 const ResourcePage: React.FC = () => {
   const [resourceTagsData, setResourceTagsData] = useState<Array<any>>([]);

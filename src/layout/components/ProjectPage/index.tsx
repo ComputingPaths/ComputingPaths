@@ -9,7 +9,7 @@ import ProjectCard from '../ProjectCard';
 
 import './style.scss';
 
-const colors = ['grass-green', 'teal', 'light-orange', 'lilac', 'coral', 'light-blue', 'dark-green'];
+const colors = ['cyan-blue', 'light-green', 'light-yellow', 'light-red', 'light-blue', 'light-brown', 'mint'];
 
 const ProjectPage: React.FC = () => {
   const [data, setData] = useState<Array<Projects>>([]);

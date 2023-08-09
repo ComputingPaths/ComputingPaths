@@ -15,10 +15,42 @@
   &-tags {
     display: flex;
     flex-wrap: wrap;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &.cyan-blue {
+      background-color: $color-tag-cyan-blue;
+    }
+    
+    &.light-green {
+      background-color: $color-tag-light-green;
+    }
+    
+    &.light-yellow {
+      background-color: $color-tag-light-yellow;
+    }
+    
+    &.light-red {
+      background-color: $color-tag-light-red;
+    }
+    
+    &.light-blue {
+      background-color: $color-tag-light-blue;
+    }
+
+    &.light-brown {
+      background-color: $color-tag-light-brown;
+    }
+
+    &.mint {
+      background-color: $color-tag-mint;
+    }
   }
 
   &-info {
-    background-color: $color-primary-blue;
+    background-color: $color-primary-navy;
     height: calc(100% - 220px);
     padding: 10px 18px;
 
