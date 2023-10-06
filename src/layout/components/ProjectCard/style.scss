@@ -28,11 +28,12 @@
   &-project-tag {
     @include font-small-button-text;
     border-radius: 1rem;
+    margin: 0.75rem 0.75rem 0 0;
     overflow: hidden;
     padding: 0.25rem 0.8rem;
 
-    &.cyan-blue {
-      background-color: $color-tag-cyan-blue;
+    &.white {
+      background-color: $color-tag-white;
     }
     
     &.light-green {
