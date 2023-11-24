@@ -1,20 +1,20 @@
 import Papa from 'papaparse';
 
-const SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRnb171PEsXBbxO5V6oD2bEHVomLzNmcCaCAmuVngkLGIVMKe8eue3Rdz1N-Ioghpq7wDOO3cQ9tIw9/pub?output=csv';
+const SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSqa6YgNEdB5SzjzJ-nXG92HF4Xu6imIK3dcVEsiI4JgVYH0tK7T4hsl97F2ibOs7Jyc2Tt8PX3I3Ev/pub?output=csv';
 
 export enum DataTypes {
-  Headers = '29489883',
-  Home='395547379',
-  Stories = '1646384161',
-  Majors = '860790804',
-  Departments = '929723649',
-  MajorSpecializations = '1867072131',
-  Resources = '2135229956',
-  ResourceTags = '167316779',
-  Projects = '1379985722',
-  ProjectTags = '568500304',
-  Orgs = '1399526925',
-  OrgTags = '218206546',
+  Headers = '1406986876',
+  Home='258274824',
+  Stories = '945891449',
+  Majors = '671599184',
+  Departments = '708783744',
+  MajorSpecializations = '282915431',
+  Resources = '724376777',
+  ResourceTags = '889894826',
+  Projects = '1080412543',
+  ProjectTags = '981158604',
+  Orgs = '1598985992',
+  OrgTags = '1495718252',
 }
 
 export interface Home {
