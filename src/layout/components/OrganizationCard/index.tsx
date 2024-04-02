@@ -23,7 +23,7 @@ const OrganizationCard: React.FC<OrganizationCardProps> = ({
     <div className="org-card-info">
       <h3>{name}</h3>
       <div className="org-card-tags">
-        {tags.map((tag) => (tag ? <p className={`resource-card-tag ${tag.color}`}>{tag.name}</p> : null))}
+        {tags.map((tag) => (tag ? <p className={`org-card-tag ${tag.color}`}>{tag.name}</p> : null))}
       </div>
       <div className="org-card-links">
         {email && (

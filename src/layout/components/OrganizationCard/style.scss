@@ -15,7 +15,21 @@
   &-tags {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0.25rem;
+  }
 
+  &-tag {
+    @include font-small-button-text;
+    align-items: center;
+    border-radius: 1rem;
+    color: $color-primary-navy;
+    display: flex;
+    flex-shrink: 0;
+    font-weight: bold;
+    height: 1.75rem;
+    margin: 0.75rem 0.75rem 0 0;
+    padding: 0 0.75rem;
+    
     &:last-child {
       margin-right: 0;
     }
