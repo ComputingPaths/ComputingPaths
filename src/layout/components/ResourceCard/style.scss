@@ -1,4 +1,5 @@
 @import '../../../styles';
+@import '../../../styles/base';
 
 .resource-card {
   background-color: $color-primary-navy;
@@ -30,54 +31,11 @@
   }
 
   &-tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0.25rem;
+    @include shared-tags-style;
   }
 
   &-tag {
-    @include font-small-button-text;
-    align-items: center;
-    border-radius: 1rem;
-    color: $color-primary-navy;
-    display: flex;
-    flex-shrink: 0;
-    font-weight: bold;
-    height: 1.75rem;
-    margin: 0.75rem 0.75rem 0 0;
-    padding: 0 0.75rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-    
-    &.white {
-      background-color: $color-tag-white;
-    }
-    
-    &.light-green {
-      background-color: $color-tag-light-green;
-    }
-    
-    &.light-yellow {
-      background-color: $color-tag-light-yellow;
-    }
-    
-    &.light-red {
-      background-color: $color-tag-light-red;
-    }
-    
-    &.light-blue {
-      background-color: $color-tag-light-blue;
-    }
-
-    &.light-brown {
-      background-color: $color-tag-light-brown;
-    }
-
-    &.mint {
-      background-color: $color-tag-mint;
-    }
+    @include shared-tag-style;
   }
 
   &-view {
