@@ -36,6 +36,7 @@
 
   &-tag {
     @include shared-tag-style;
+    @include shared-tag-color;
   }
 
   &-view {

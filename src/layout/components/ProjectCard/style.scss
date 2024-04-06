@@ -27,40 +27,12 @@
   }
 
   &-project-tag {
-    @include shared-tag-style;
-    // @include font-small-button-text;
-    // border-radius: 1rem;
-    // margin: 0.75rem 0.75rem 0 0;
-    // overflow: hidden;
-    // padding: 0.25rem 0.8rem;
-
-    // &.white {
-    //   background-color: $color-tag-white;
-    // }
-    
-    // &.light-green {
-    //   background-color: $color-tag-light-green;
-    // }
-    
-    // &.light-yellow {
-    //   background-color: $color-tag-light-yellow;
-    // }
-
-    // &.light-red {
-    //   background-color: $color-tag-light-red;
-    // }
-    
-    // &.light-blue {
-    //   background-color: $color-tag-light-blue;
-    // }
-
-    // &.light-brown {
-    //   background-color: $color-tag-light-brown;
-    // }
-
-    // &.mint {
-    //   background-color: $color-tag-mint;
-    // }
+    @include font-small-button-text;
+    border-radius: 1rem;
+    margin: 0.75rem 0.75rem 0 0;
+    overflow: hidden;
+    padding: 0.25rem 0.8rem;
+    @include shared-tag-color;
   }
 
   &-organization {
@@ -81,6 +53,18 @@
     color: $color-primary-navy;
     font-weight: bold;
   }
+}
+
+span.project-modal-card-project-tag.white,
+span.project-modal-card-project-tag.light-green,
+span.project-modal-card-project-tag.light-yellow,
+span.project-modal-card-project-tag.light-red,
+span.project-modal-card-project-tag.light-blue,
+span.project-modal-card-project-tag.light-brown,
+span.project-modal-card-project-tag.mint {
+  font-weight: bold;
+  color: $color-primary-navy;
+  margin-left: 1rem;
 }
 
 @media (min-width: 768px) {
