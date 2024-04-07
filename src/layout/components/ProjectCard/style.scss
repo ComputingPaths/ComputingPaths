@@ -28,11 +28,11 @@
 
   &-project-tag {
     @include font-small-button-text;
+    @include shared-tag-color;
     border-radius: 1rem;
     margin: 0.75rem 0.75rem 0 0;
     overflow: hidden;
     padding: 0.25rem 0.8rem;
-    @include shared-tag-color;
   }
 
   &-organization {
@@ -55,15 +55,15 @@
   }
 }
 
-span.project-modal-card-project-tag.white,
-span.project-modal-card-project-tag.light-green,
-span.project-modal-card-project-tag.light-yellow,
-span.project-modal-card-project-tag.light-red,
-span.project-modal-card-project-tag.light-blue,
-span.project-modal-card-project-tag.light-brown,
-span.project-modal-card-project-tag.mint {
-  font-weight: bold;
+.project-modal-card-project-tag.white,
+.project-modal-card-project-tag.light-green,
+.project-modal-card-project-tag.light-yellow,
+.project-modal-card-project-tag.light-red,
+.project-modal-card-project-tag.light-blue,
+.project-modal-card-project-tag.light-brown,
+.project-modal-card-project-tag.mint {
   color: $color-primary-navy;
+  font-weight: bold;
   margin-left: 1rem;
 }
 
