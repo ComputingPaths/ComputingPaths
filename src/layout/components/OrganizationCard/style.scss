@@ -1,4 +1,5 @@
 @import '../../../styles';
+@import '../../../styles/base';
 
 .org-card {
   h3 {
@@ -13,40 +14,12 @@
   }
 
   &-tags {
-    display: flex;
-    flex-wrap: wrap;
+    @include shared-tags-style;
+  }
 
-    &:last-child {
-      margin-right: 0;
-    }
-    
-    &.white {
-      background-color: $color-tag-white;
-    }
-    
-    &.light-green {
-      background-color: $color-tag-light-green;
-    }
-    
-    &.light-yellow {
-      background-color: $color-tag-light-yellow;
-    }
-    
-    &.light-red {
-      background-color: $color-tag-light-red;
-    }
-    
-    &.light-blue {
-      background-color: $color-tag-light-blue;
-    }
-
-    &.light-brown {
-      background-color: $color-tag-light-brown;
-    }
-
-    &.mint {
-      background-color: $color-tag-mint;
-    }
+  &-tag {
+    @include shared-tag-style;
+    @include shared-tag-color;
   }
 
   &-info {
@@ -68,7 +41,7 @@
 
   &-links {
     display: flex;
-    margin-top: 8px;
+    margin-top: 2rem;
 
     a {
       padding-right: 20px;

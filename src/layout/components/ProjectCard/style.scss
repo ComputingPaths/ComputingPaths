@@ -1,5 +1,6 @@
 @import '../../../styles/fonts';
 @import '../../../styles/vars';
+@import '../../../styles/base';
 
 .project-card {
   display: flex;
@@ -27,38 +28,11 @@
 
   &-project-tag {
     @include font-small-button-text;
+    @include shared-tag-color;
     border-radius: 1rem;
     margin: 0.75rem 0.75rem 0 0;
     overflow: hidden;
     padding: 0.25rem 0.8rem;
-
-    &.white {
-      background-color: $color-tag-white;
-    }
-    
-    &.light-green {
-      background-color: $color-tag-light-green;
-    }
-    
-    &.light-yellow {
-      background-color: $color-tag-light-yellow;
-    }
-
-    &.light-red {
-      background-color: $color-tag-light-red;
-    }
-    
-    &.light-blue {
-      background-color: $color-tag-light-blue;
-    }
-
-    &.light-brown {
-      background-color: $color-tag-light-brown;
-    }
-
-    &.mint {
-      background-color: $color-tag-mint;
-    }
   }
 
   &-organization {
@@ -79,6 +53,18 @@
     color: $color-primary-navy;
     font-weight: bold;
   }
+}
+
+.project-modal-card-project-tag.white,
+.project-modal-card-project-tag.light-green,
+.project-modal-card-project-tag.light-yellow,
+.project-modal-card-project-tag.light-red,
+.project-modal-card-project-tag.light-blue,
+.project-modal-card-project-tag.light-brown,
+.project-modal-card-project-tag.mint {
+  color: $color-primary-navy;
+  font-weight: bold;
+  margin-left: 1rem;
 }
 
 @media (min-width: 768px) {
