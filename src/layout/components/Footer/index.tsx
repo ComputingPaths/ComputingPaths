@@ -8,7 +8,7 @@ import './style.scss';
 const Footer: React.FC = () => (
   <div className="footer">
     <div className="footer-content">
-      <img className="footer-logo" src="/img/logo_ucsd.png" alt="UCSD Logo" />
+      <img className="footer-logo" src="/img/logo_ucsd.webp" alt="UCSD Logo" width="166px" height="32px" />
       <p className="footer-contact">Contact</p>
       <a href="mailto:computingpaths@eng.ucsd.edu"><p className="footer-email">computingpaths@ucsd.edu</p></a>
     </div>

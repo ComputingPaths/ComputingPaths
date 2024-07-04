@@ -115,13 +115,13 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
             <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt="Advice" />
           </div>
           <div className="home-page-stories-text">
-            <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" />
+            <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" width="24px" height="20px" />
             <p className="home-page-stories-quote">{story.highlighted_quote}</p>
             <h3 className="home-page-stories-name">
               {story.name} &nbsp;
               <span>{`${story.role ? `${story.role}` : ''}${story.role && story.class ? ' | ' : ''}${story.class ? `Class of ${story.class}` : ''}`}</span>
             </h3>
-            <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" />
+            <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" width="24px" height="20px" />
             <Link className="home-page-links" to="/stories">
               <button className="home-page-home-button" type="submit">Read More</button>
             </Link>
