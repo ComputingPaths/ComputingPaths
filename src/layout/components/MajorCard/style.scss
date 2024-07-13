@@ -52,11 +52,11 @@
     @include font-small-button-text;
     @include shared-tag-color;
     border-radius: 3.35rem;
-    font-weight: bold;
     color: $color-primary-navy;
     margin-right: 1rem;
     padding: 0.5rem 0.75rem;
     text-align: center;
+    font-weight: bold;
   }
 
   &-bottom {
