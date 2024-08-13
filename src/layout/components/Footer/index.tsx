@@ -1,6 +1,8 @@
 // File: Footer/index.tsx
-// This file defines the Footer component, which is displayed at the bottom of each page on the "Computing Paths" website.
-// The footer includes the UCSD logo, contact information, navigation links to different pages, and a link to report issues.import React from 'react'
+// This file defines the Footer component, which is displayed at the bottom 
+// of each page on the "Computing Paths" website.
+// The footer includes the UCSD logo, contact information, navigation links
+// to different pages, and a link to report issues.import React from 'react'
 
 import { Link } from 'react-router-dom';
 

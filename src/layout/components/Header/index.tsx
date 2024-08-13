@@ -1,6 +1,8 @@
 // File: Header/index.tsx
-// This file defines the Header component, which is the navigation bar for the "Computing Paths" website.
-// The header includes a logo, navigation links for desktop and mobile views, and an optional hero image.
+// This file defines the Header component, which is the navigation bar
+// for the "Computing Paths" website.
+// The header includes a logo, navigation links for desktop and
+// mobile views, and an optional hero image.
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
