@@ -5,11 +5,8 @@
 // to different pages, and a link to report issues.import React from 'react'
 
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-
 import { pages } from '../../../vars';
-
 import './style.scss';
 
 // The Footer component is a functional component that renders the website's footer.

@@ -8,7 +8,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import CarouselRightArrow from '../../../assets/CarouselRightArrow.svg';
 import CarouselLeftArrow from '../../../assets/CarouselLeftArrow.svg';
 import Gear from '../../../assets/Gear.svg';

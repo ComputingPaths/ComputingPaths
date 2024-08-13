@@ -5,7 +5,6 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './style.scss';
 
 // The ErrorPage component is a functional component that renders an error message
