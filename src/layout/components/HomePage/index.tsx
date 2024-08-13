@@ -1,3 +1,8 @@
+// File: HomePage/index.tsx
+// This file defines the HomePage component, which is the main landing page for the "Computing Paths" website.
+// The homepage includes sections for majors, stories and advice, student organizations, and projects.
+// The content is dynamically fetched using a custom `useData` hook, and the page layout is enhanced with carousel functionality.
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,19 +19,29 @@ import {
 
 import './style.scss';
 
+// Interface defining the props for the HomePage content
 interface HomePageProps {
-  heroURL: string;
+  heroURL: string; // URL for the hero image displayed on the homepage
 }
 
+// The HomePage component is a functional component that renders the main landing page.
+// It uses the `useState` hook to manage the state of majors, home data, and stories, and the `useEffect` hook to fetch data on mount.
 const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
+  
+  // State for storing majors data
   const [majors, setMajor] = useState<Array<Majors>>([]);
+
+  // State for storing home data such as student organization and project photos
   const [homeData, setHomeData] = useState<Home>({
     student_org_photo: '',
     projects_photo: '',
     featured_story: '',
   });
+
+  // State for storing stories data
   const [stories, setStories] = useState<Array<Stories>>([]);
 
+  // Creates a lookup table for stories based on names for quick access
   const storyLookup = parseLookup(stories, 'name');
 
   const menuRef = useRef<HTMLDivElement>(null);
