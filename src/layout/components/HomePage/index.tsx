@@ -159,9 +159,9 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
           </div>
         </section>
         )}
+      </article>
 
       {/* Student Organizations section */}
-        </article>
       <h2 className="home-page-header">Get Involved</h2>
       <section className="home-page-resources">
         <img className="home-page-involed-image" src={homeData.student_org_photo} alt="org logo" />
