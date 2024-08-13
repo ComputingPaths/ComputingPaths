@@ -28,10 +28,9 @@ interface HomePageProps {
 }
 
 // The HomePage component is a functional component that renders the main landing page.
-// It uses the `useState` hook to manage the state of majors, home data, and stories, 
+// It uses the `useState` hook to manage the state of majors, home data, and stories,
 // and the `useEffect` hook to fetch data on mount.
 const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
-
   // State for storing majors data
   const [majors, setMajor] = useState<Array<Majors>>([]);
 
@@ -162,7 +161,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
         )}
 
       {/* Student Organizations section */}
-      </article>
+        </article>
       <h2 className="home-page-header">Get Involved</h2>
       <section className="home-page-resources">
         <img className="home-page-involed-image" src={homeData.student_org_photo} alt="org logo" />
