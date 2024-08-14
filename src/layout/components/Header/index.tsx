@@ -6,8 +6,10 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import HeaderMenu from '../../../assets/HeaderMenu.svg';
 import { pages } from '../../../vars';
+
 import './style.scss';
 
 interface HeaderProps {
