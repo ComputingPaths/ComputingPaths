@@ -1,8 +1,14 @@
+// File: MajorCard/index.tsx
+// This file defines the MajorCard component, which displays details about a
+// specific major, including its description, departments, links,
+// specializations, and tags like whether it's capped or its degree type.
+
 import React, { useState } from 'react';
 import LinkedArrow from '../../../assets/LinkedArrow.svg';
 import Caret from '../../../assets/caret.svg';
 import './style.scss';
 
+// Interface defining the props for the MajorCard component
 interface MajorCardProps {
     image: string;
     name: string;
@@ -15,11 +21,13 @@ interface MajorCardProps {
     note: string;
 }
 
+// Interface for tags representing the major's attributes
 interface Tag {
   name: string;
   color: string;
 }
 
+// Mapping degree types and other attributes to specific colors for tags
 const tagColorMap: { [key: string]: string } = {
   /* Add new colors for new bachelor degrees here in the future.
   Refer to color list in ../styles/_vars.scss */
@@ -28,11 +36,15 @@ const tagColorMap: { [key: string]: string } = {
   'Bachelor of Science (BS)': 'mint',
 };
 
+// MajorCard component renders details about a major, including its image,
+// description, departments, links, and specializations.
 const MajorCard: React.FC<MajorCardProps> = ({
   image, name, capped, degreeType, description, departments, links, specializations, note,
 }) => {
   const tags: Tag[] = [];
+  // Add "Capped" tag if the major is capped
   if (capped) tags.push({ name: 'Capped', color: tagColorMap.Capped });
+  // Add degree type tag with corresponding color
   if (degreeType) {
     /* Change line of code below to add additional colors
     based on new bachelor degrees in the future */
@@ -43,8 +55,10 @@ const MajorCard: React.FC<MajorCardProps> = ({
   return (
     <>
       <div id={name && name.replace(/\s/g, '-')} className="major-hyperlink" />
+      {/* Main container for the MajorCard */}
       <div className="major-card">
         {image && <img className="major-card-photo" src={image} alt={`${name || 'Major Card'}`} />}
+        {/* Top section with the major's name and tags */}
         <div className="major-card-top">
           {name && <p className="major-card-heading">{name}</p>}
           {(capped || degreeType) && (
@@ -55,6 +69,7 @@ const MajorCard: React.FC<MajorCardProps> = ({
             </div>
           )}
         </div>
+        {/* Bottom section with the major's description, departments, and links */}
         <div className="major-card-bottom">
           <div className="major-card-info">
             <div className="major-card-info-left">
@@ -72,6 +87,8 @@ const MajorCard: React.FC<MajorCardProps> = ({
               </div>
             </div>
           </div>
+
+          {/* Expandable sections for specializations */}
           {specializations.length !== 0 && (specializations.map((specialization, index) => {
             const [open, setOpen] = useState<boolean>(false);
 
@@ -88,6 +105,8 @@ const MajorCard: React.FC<MajorCardProps> = ({
             );
           })
           )}
+
+          {/* Additional notes section */}
           {note && (
           <div className="major-card-note">
             <p className="major-card-note-text">{note}</p>

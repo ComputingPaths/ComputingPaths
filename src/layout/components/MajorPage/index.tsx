@@ -1,3 +1,7 @@
+// File: MajorPage/index.tsx
+// This component renders the main page for majors at UCSD, including a list of
+// majors and detailed cards for each major, with options for desktop and mobile navigation.
+
 import React, { useEffect, useState } from 'react';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
@@ -14,33 +18,43 @@ import {
 
 import './style.scss';
 
+// MajorPage component renders a list of majors and detailed information about each major.
+// It uses state to store and manage data fetched from the backend using the useData hook.
 const MajorPage: React.FC = () => {
+  // State for storing department data
   const [departmentData, setDepartmentData] = useState<Array<any>>([]);
 
+  // Fetch department data on component mount
   useEffect(() => {
     useData(DataTypes.Departments)
       .then((newData) => setDepartmentData(newData))
       .catch(() => setDepartmentData([]));
   }, [useData]);
 
+  // Create a lookup map for departments
   const departmentMap = parseLookup(departmentData);
 
+  // State for storing major data
   const [majorData, setMajorData] = useState<Array<Majors>>([]);
 
+  // Fetch major data on component mount
   useEffect(() => {
     useData(DataTypes.Majors)
       .then((newData) => setMajorData(newData))
       .catch(() => setMajorData([]));
   }, [useData]);
 
+  // State for storing major specializations data
   const [majorSpecsData, setMajorSpecsData] = useState<Array<any>>([]);
 
+  // Fetch major specializations data on component mount
   useEffect(() => {
     useData(DataTypes.MajorSpecializations)
       .then((newData) => setMajorSpecsData(newData))
       .catch(() => setMajorSpecsData([]));
   }, [useData]);
 
+  // Create a lookup map for major specializations
   const specsMap = parseLookup(majorSpecsData);
 
   return (
@@ -53,9 +67,11 @@ const MajorPage: React.FC = () => {
           <div className="major-page-sidebar">
             {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
           </div>
+          {/* Dropdown for mobile navigation */}
           <div className="major-page-mobile-navigation">
             <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={majorData.map((major) => major.name)} placeholder="Select a major" onChange={(major) => { location.hash = `#${major.value.replace(/\s/g, '-')}`; }} />
           </div>
+          {/* Cards for each major */}
           <div className="major-page-cards">
             {majorData.map((major, index) => (
               <MajorCard
