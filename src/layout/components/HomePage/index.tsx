@@ -159,7 +159,6 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
           </div>
         </section>
         )}
-      </article>
 
       {/* Student Organizations section */}
         </article>
