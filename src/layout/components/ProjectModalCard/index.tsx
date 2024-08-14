@@ -27,7 +27,7 @@ interface ProjectModalCardProps {
 }
 
 // ProjectModalCard component renders a detailed view of a project inside a modal,
-// including images, descriptions, and member information. The modal can be closed 
+// including images, descriptions, and member information. The modal can be closed
 // by clicking outside its content area.
 const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
   description,

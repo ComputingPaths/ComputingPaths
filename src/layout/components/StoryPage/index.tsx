@@ -1,6 +1,6 @@
 // File: StoryPage/index.tsx
-// This component renders a page that displays a collection of stories from students at UCSD. Each 
-// story is presented with a quote, author details, and a link to read the full story. The stories 
+// This component renders a page that displays a collection of stories from students at UCSD. Each
+// story is presented with a quote, author details, and a link to read the full story. The stories
 // are displayed using the StoryCard component in an alternating left-to-right layout.
 
 import React, { useEffect, useState } from 'react';
