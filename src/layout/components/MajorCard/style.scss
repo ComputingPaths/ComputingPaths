@@ -1,4 +1,5 @@
 @import '../../../styles';
+@import '../../../styles/base';
 
 .major-hyperlink {
   display: block;
@@ -49,9 +50,10 @@
 
   &-tag {
     @include font-small-button-text;
-    background-color: $color-primary-dark-yellow;
+    @include shared-tag-color;
     border-radius: 3.35rem;
     color: $color-primary-navy;
+    font-weight: bold;
     margin-right: 1rem;
     padding: 0.5rem 0.75rem;
     text-align: center;

@@ -1,3 +1,11 @@
+// File: HomePage/index.tsx
+// This file defines the HomePage component, which is the main landing page
+// for the "Computing Paths" website.
+// The homepage includes sections for majors, stories and advice,
+// student organizations, and projects.
+// The content is dynamically fetched using a custom `useData` hook, and the
+// page layout is enhanced with carousel functionality.
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,23 +22,35 @@ import {
 
 import './style.scss';
 
+// Interface defining the props for the HomePage content
 interface HomePageProps {
-  heroURL: string;
+  heroURL: string; // URL for the hero image displayed on the homepage
 }
 
+// The HomePage component is a functional component that renders the main landing page.
+// It uses the `useState` hook to manage the state of majors, home data, and stories,
+// and the `useEffect` hook to fetch data on mount.
 const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
+  // State for storing majors data
   const [majors, setMajor] = useState<Array<Majors>>([]);
+
+  // State for storing home data such as student organization and project photos
   const [homeData, setHomeData] = useState<Home>({
     student_org_photo: '',
     projects_photo: '',
     featured_story: '',
   });
+
+  // State for storing stories data
   const [stories, setStories] = useState<Array<Stories>>([]);
 
+  // Creates a lookup table for stories based on names for quick access
   const storyLookup = parseLookup(stories, 'name');
 
+  // Majors carousel container for handling scroll functionality
   const menuRef = useRef<HTMLDivElement>(null);
 
+  // Function to handle carousel navigation
   const handleNav = (event) => {
     if (menuRef && menuRef.current) {
       const element = (menuRef.current.childNodes[0] as HTMLDivElement);
@@ -44,6 +64,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
 
       const elementSize = width + margin - padding + border;
 
+      // Scroll the container baed on left or right arrow
       if (event.target.className.includes('home-page-left-arrow')) {
         menuRef.current.scrollBy({
           top: 0,
@@ -60,11 +81,14 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
     }
   };
 
+  // useEffect hook to fetch data when the component mounts
   useEffect(() => {
+    // Fetch majors data
     useData(DataTypes.Majors)
       .then((newData) => setMajor(newData))
       .catch(() => setMajor([]));
 
+    // Fetch home data
     useData(DataTypes.Home)
       .then((newData) => setHomeData(newData[0] || {}))
       .catch(() => setHomeData({
@@ -73,15 +97,18 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
         featured_story: '',
       }));
 
+    // Fetch stories data
     useData(DataTypes.Stories)
       .then((newData) => setStories(newData))
       .catch(() => setStories([]));
   }, [useData]);
 
+  // Retrive featured story from the lookup table
   const story = storyLookup.get(homeData.featured_story);
 
   return (
     <main className="home-page">
+      {/* Hero section with title and hero image */}
       <section className="home-page-landing">
         <div className="home-page-title-section">
           <h1 className="home-page-title">Discover Your Path in Computing</h1>
@@ -100,12 +127,16 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
           </Link>
         ))}
       </section>
+
+      {/* Majors section with carousel functionality */}
       <button className="home-page-left-arrow" type="submit" onClick={handleNav}>
         <img className="home-page-left-arrow-button" src={CarouselLeftArrow} alt="Left Arrow" />
       </button>
       <button className="home-page-right-arrow" type="submit" onClick={handleNav}>
         <img className="home-page-right-arrow-button" src={CarouselRightArrow} alt="Right Arrow" />
       </button>
+
+      {/* Stories and advice section */}
       <article className="home-page-stories-section">
         <h2 className="home-page-header">Stories &#38; Advice</h2>
         {story && (
@@ -115,13 +146,13 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
             <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt="Advice" />
           </div>
           <div className="home-page-stories-text">
-            <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" />
+            <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" width="24px" height="20px" />
             <p className="home-page-stories-quote">{story.highlighted_quote}</p>
             <h3 className="home-page-stories-name">
               {story.name} &nbsp;
               <span>{`${story.role ? `${story.role}` : ''}${story.role && story.class ? ' | ' : ''}${story.class ? `Class of ${story.class}` : ''}`}</span>
             </h3>
-            <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" />
+            <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" width="24px" height="20px" />
             <Link className="home-page-links" to="/stories">
               <button className="home-page-home-button" type="submit">Read More</button>
             </Link>
@@ -129,6 +160,8 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
         </section>
         )}
       </article>
+
+      {/* Student Organizations section */}
       <h2 className="home-page-header">Get Involved</h2>
       <section className="home-page-resources">
         <img className="home-page-involed-image" src={homeData.student_org_photo} alt="org logo" />
@@ -140,6 +173,8 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
           </Link>
         </div>
       </section>
+
+      {/* Projects section */}
       <section className="home-page-resources">
         <img className="home-page-involed-image" src={homeData.projects_photo} alt="projects logo" />
         <div className="home-page-resources-section">
