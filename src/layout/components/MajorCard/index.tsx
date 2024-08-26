@@ -1,7 +1,7 @@
 // File: MajorCard/index.tsx
 // This file defines the MajorCard component, which displays details about a
 // specific major, including its description, departments, links,
-// specializations, and tags like whether it's capped or its degree type.
+// specializations, and tags like whether it's selective (previously capped) or its degree type.
 
 import React, { useState } from 'react';
 import LinkedArrow from '../../../assets/LinkedArrow.svg';
@@ -12,7 +12,7 @@ import './style.scss';
 interface MajorCardProps {
     image: string;
     name: string;
-    capped: boolean;
+    selective: boolean;
     degreeType: string;
     description: string;
     departments: { title: string; url: string; }[];
@@ -31,7 +31,7 @@ interface Tag {
 const tagColorMap: { [key: string]: string } = {
   /* Add new colors for new bachelor degrees here in the future.
   Refer to color list in ../styles/_vars.scss */
-  Capped: 'light-yellow',
+  Selective: 'light-yellow',
   'Bachelor of Art (BA)': 'light-blue',
   'Bachelor of Science (BS)': 'mint',
 };
@@ -39,11 +39,11 @@ const tagColorMap: { [key: string]: string } = {
 // MajorCard component renders details about a major, including its image,
 // description, departments, links, and specializations.
 const MajorCard: React.FC<MajorCardProps> = ({
-  image, name, capped, degreeType, description, departments, links, specializations, note,
+  image, name, selective, degreeType, description, departments, links, specializations, note,
 }) => {
   const tags: Tag[] = [];
-  // Add "Capped" tag if the major is capped
-  if (capped) tags.push({ name: 'Capped', color: tagColorMap.Capped });
+  // Add "Selective" tag if the major is selective
+  if (selective) tags.push({ name: 'Selective', color: tagColorMap.Selective });
   // Add degree type tag with corresponding color
   if (degreeType) {
     /* Change line of code below to add additional colors
@@ -61,7 +61,7 @@ const MajorCard: React.FC<MajorCardProps> = ({
         {/* Top section with the major's name and tags */}
         <div className="major-card-top">
           {name && <p className="major-card-heading">{name}</p>}
-          {(capped || degreeType) && (
+          {(selective || degreeType) && (
             <div className="major-card-tags">
               {tags.map((tag, index) => (
                 <p key={index} className={`major-card-tag ${tag.color}`}>{tag.name}</p>

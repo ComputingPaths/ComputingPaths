@@ -77,7 +77,7 @@ const MajorPage: React.FC = () => {
               <MajorCard
                 image={major.image}
                 name={major.name}
-                capped={major.capped === 'TRUE'}
+                selective={major.selective === 'TRUE'}
                 degreeType={parseDegree(major.degree_type)}
                 description={major.description}
                 departments={parseList(major.departments).map((departmentCode) => {
