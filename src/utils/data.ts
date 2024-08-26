@@ -36,7 +36,7 @@ export interface Stories {
 export interface Majors {
   code: string;
   name: string;
-  capped: string;
+  selective: string;
   'degree_type': string;
   departments: string;
   hook: string;
