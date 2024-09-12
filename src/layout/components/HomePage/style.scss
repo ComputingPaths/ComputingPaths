@@ -2,9 +2,9 @@
 @import '../../../styles/vars';
 
 .home-page-stories-text {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -20,9 +20,9 @@
     background-color: $color-primary-dark-yellow;
     border: 0;
     border-radius: 5px;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
     cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
   }
 
   &-involed-image {
@@ -259,7 +259,7 @@
       }
 
       &-quote {
-        padding: 0 1rem 0 1rem;
+        padding: 0 1rem;
       }
 
       &-section {
@@ -285,18 +285,19 @@
     }
   }
 }
+
 .home-page-stories-text {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 .home-page-stories-quote-container {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   position: relative;
 }
@@ -311,6 +312,6 @@
 
 @media (max-width: 1199px) {
   .home-page-stories-name {
-      text-align: left;
+    text-align: left;
   }
 }
