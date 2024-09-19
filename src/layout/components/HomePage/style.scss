@@ -1,6 +1,14 @@
 @import '../../../styles/fonts';
 @import '../../../styles/vars';
 
+.home-page-stories-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .home-page {
   &-header {
     @include font-heading-1;
@@ -12,6 +20,8 @@
     background-color: $color-primary-dark-yellow;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
     padding: 0.75rem 1.5rem;
   }
 
@@ -153,11 +163,6 @@
       padding: 0 5rem;
     }
 
-    &-right-quote {
-      left: calc(100% - 5rem);
-      position: relative;
-    }
-
     &-section {
       background: $color-background-grey;
       box-sizing: border-box;
@@ -254,13 +259,7 @@
       }
 
       &-quote {
-        padding: 0 1.8rem 0 2rem;
-      }
-  
-      &-right-quote {
-        left: calc(100% - 1.5rem);
-        position: relative;
-        width: 1.5rem;
+        padding: 0 1rem;
       }
 
       &-section {
@@ -284,5 +283,35 @@
         width: 100%;
       }
     }
+  }
+}
+
+.home-page-stories-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.home-page-stories-quote-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.home-page-stories-left-quote {
+  flex-shrink: 0;
+}
+
+.home-page-stories-right-quote {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1199px) {
+  .home-page-stories-name {
+    text-align: left;
   }
 }

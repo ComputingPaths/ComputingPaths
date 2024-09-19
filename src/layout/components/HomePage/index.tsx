@@ -116,7 +116,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
             <button className="home-page-home-button" type="submit">Find Your Home</button>
           </Link>
         </div>
-        <img className="home-page-image" src={heroURL} alt="home page logo" />
+        <img className="home-page-image" src={heroURL} alt="home page logo" width="320" height="344" />
       </section>
       <h2 className="home-page-header major">Majors</h2>
       <section className="home-page-majors-container" ref={menuRef}>
@@ -146,17 +146,20 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
             <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt="Advice" />
           </div>
           <div className="home-page-stories-text">
-            <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" width="24px" height="20px" />
-            <p className="home-page-stories-quote">{story.highlighted_quote}</p>
+            <div className="home-page-stories-quote-container">
+              <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" width="24px" height="20px" />
+              <p className="home-page-stories-quote">{story.highlighted_quote}</p>
+              <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" width="24px" height="20px" />
+            </div>
             <h3 className="home-page-stories-name">
               {story.name} &nbsp;
               <span>{`${story.role ? `${story.role}` : ''}${story.role && story.class ? ' | ' : ''}${story.class ? `Class of ${story.class}` : ''}`}</span>
             </h3>
-            <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" width="24px" height="20px" />
             <Link className="home-page-links" to="/stories">
-              <button className="home-page-home-button" type="submit">Read More</button>
+              <button id="home-page-stories-button" className="home-page-home-button" type="submit">Read More</button>
             </Link>
           </div>
+
         </section>
         )}
       </article>
