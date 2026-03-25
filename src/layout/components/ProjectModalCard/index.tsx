@@ -105,7 +105,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
             </ul>
             <p className="project-modal-card-links">
               <span className="project-modal-card-header">More Information</span>
-              <span>
+              <span className="project-modal-card-links-list">
                 <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
                 <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={videoURL}> <span className="project-modal-card-link">Project Video</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
               </span>
@@ -157,7 +157,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
           </ul>
           <p className="project-modal-card-links">
             <span className="project-modal-card-header">More Information</span>
-            <span>
+            <span className="project-modal-card-links-list">
               <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
             </span>
           </p>

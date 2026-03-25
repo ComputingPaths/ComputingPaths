@@ -94,11 +94,22 @@ const MajorCard: React.FC<MajorCardProps> = ({
 
             return (
               <div className="major-card-specialization" key={index}>
-                <div className="major-card-specialization-heading" onClick={() => setOpen(!open)}>
-                  <p className="major-card-specialization-name">{specialization.name}</p>
-                  <button className={`major-card-specialization-button ${open ? 'open' : ''}`} type="button"><img src={Caret} alt="Description" /></button>
-                </div>
-                <div className={`major-card-specialization-content ${open ? 'open' : ''}`}>
+                <button
+                  type="button"
+                  className={`major-card-specialization-heading ${open ? 'open' : ''}`}
+                  onClick={() => setOpen(!open)}
+                  aria-expanded={open}
+                  aria-controls={`specialization-content-${index}`}
+                >
+                  <span className="major-card-specialization-name">{specialization.name}</span>
+                  <span className="major-card-specialization-button" aria-hidden="true">
+                    <img src={Caret} alt="" />
+                  </span>
+                </button>
+                <div
+                  id={`specialization-content-${index}`}
+                  className={`major-card-specialization-content ${open ? 'open' : ''}`}
+                >
                   <p className="major-card-specialization-detail">{specialization.detail}</p>
                 </div>
               </div>

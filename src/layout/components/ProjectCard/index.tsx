@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const [modal, useModal] = useState(false); // State for controlling the modal visibility
 
   return (
-    <div onClick={() => useModal(true)} className="project-card">
+    <button type="button" onClick={() => useModal(true)} className="project-card">
       {/* Display the first project image if available */}
       {images.length !== 0 && <img className="project-card-photo" src={images[0]} alt={`${projectName || 'Project Card'}`} />}
       {/* Display project name, organization, tags, and expand icon */}
@@ -62,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           }}
         />
       )}
-    </div>
+    </button>
   );
 };
 

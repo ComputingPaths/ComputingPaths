@@ -64,6 +64,13 @@
   &-links {
     display: flex;
     flex-direction: column;
+
+    &-list {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
   }
 
   &-info {
