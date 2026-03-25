@@ -59,10 +59,7 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
         <div className="marquee">
           <ul className="marquee-content">
             <li className="marquee-item">
-              <img className="marquee-image" src={heroURL} alt="marquee" />
-            </li>
-            <li className="marquee-item">
-              <img className="marquee-image" src={heroURL} alt="marquee" />
+              <img className="marquee-image" src={heroURL} alt="banner of different student organization logos at UCSD" />
             </li>
           </ul>
         </div>

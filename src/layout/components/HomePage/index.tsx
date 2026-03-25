@@ -116,7 +116,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
             Find Your Home
           </Link>
         </div>
-        <img className="home-page-image" src={heroURL} alt="home page logo" width="320" height="344" />
+        <img className="home-page-image" src={heroURL} alt="ComputingPaths Logo" width="320" height="344" />
       </section>
       <div className="home-page-section-intro">
         <h2 className="home-page-header major">Majors</h2>
@@ -146,7 +146,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
         <section className="home-page-stories">
           <div className="home-page-stories-image">
             <img className="home-page-stories-gear" src={Gear} alt="Gear Quote" />
-            <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt="Advice" />
+            <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt="Portrait of a person giving advice" />
           </div>
           <div className="home-page-stories-text">
             <div className="home-page-stories-quote-container">
@@ -175,7 +175,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       <h2 className="home-page-header">Get Involved</h2>
       <p className="home-page-section-description">Get involved in the computing community at UC San Diego through opportunities that extend beyond the classroom. From student organizations to projects and events, these experiences allow you to apply your skills, explore your interests, and connect with others in computing.</p>
       <section className="home-page-resources">
-        <img className="home-page-involed-image" src={homeData.student_org_photo} alt="org logo" />
+        <img className="home-page-involed-image" src={homeData.student_org_photo} alt="Group of people celebrating and dancing at UCSD" />
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Student Organizations</h2>
           <p className="home-page-text">Student Organizations allow for extracurricular expierence, utilizing and extending skills imparted in computing courses. These groups demonstrate creating computing efforts by channeling the collaborative spirit of UC San Diego.</p>
@@ -187,7 +187,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
 
       {/* Projects section */}
       <section className="home-page-resources">
-        <img className="home-page-involed-image" src={homeData.projects_photo} alt="projects logo" />
+        <img className="home-page-involed-image" src={homeData.projects_photo} alt="Students showcasing their project" />
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Projects</h2>
           <p className="home-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>

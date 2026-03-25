@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = (props) => {
             <img
               className="header-logo"
               src="/img/logo-dark.webp"
-              alt="Computing Paths home"
+              alt="ComputingPaths logo"
               width="166"
               height="32"
             />
@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = (props) => {
       </div>
 
       <div className="spacer" />
-      {heroURL && <img className="hero" src={heroURL} alt="Page Hero Divider" />}
+      {heroURL && <img className="hero" src={heroURL} alt="Page divider of heading and body content" />}
     </>
   );
 };
