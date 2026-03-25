@@ -36,14 +36,14 @@
   &-logo-link:focus-visible,
   &-link:focus-visible,
   &-mobile-button:focus-visible {
+    border-radius: 4px;
     outline: 3px solid #00629b;
     outline-offset: 3px;
-    border-radius: 4px;
   }
 
   &-logo-link {
-    display: inline-flex;
     align-items: center;
+    display: inline-flex;
   }
 
   &-logo {
@@ -60,8 +60,8 @@
 
   &-link {
     @include font-nav-bar-text;
-    display: inline-flex;
     align-items: center;
+    display: inline-flex;
     text-decoration: none;
   }
 

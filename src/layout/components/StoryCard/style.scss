@@ -1,4 +1,5 @@
 @import '../../../styles';
+
 .story-card {
   display: flex;
   margin-top: 5rem;
@@ -58,6 +59,12 @@
   }
 
   &-link {
+    align-items: center;
+
+    display: inline-flex;
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+
     &,
     &:link,
     &:visited,
@@ -67,11 +74,6 @@
       @include font-linked-text;
     }
 
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.2s ease, filter 0.2s ease;
-
     &:hover,
     &:focus-visible {
       filter: brightness(1.05);
@@ -79,9 +81,9 @@
     }
 
     &:focus-visible {
+      border-radius: 4px;
       outline: 3px solid #00629b;
       outline-offset: 3px;
-      border-radius: 4px;
     }
 
     &-arrow {
