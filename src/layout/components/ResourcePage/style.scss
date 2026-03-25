@@ -58,13 +58,25 @@
     background-color: #fff;
     border: 0;
     border-bottom: solid 2px $color-neutrals-grey;
-    color: $color-neutrals-grey;
+    color: $color-neutrals-black;
+    cursor: pointer;
     flex: 1;
     padding: 1rem 1.5rem;
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      filter: brightness(1.05);
+      transform: scale(1.02);
+    }
+
+    &:focus-visible {
+      outline: 3px solid #00629b;
+      outline-offset: 3px;
+    }
 
     &.selected {
       border-bottom: solid 5px $color-primary-blue;
-      color: $color-neutrals-black;
     }
   }
 

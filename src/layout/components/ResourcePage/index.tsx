@@ -67,14 +67,14 @@ const ResourcePage: React.FC = () => {
         </div>
         <div className="resource-page-tag-section">
           {/* Tag buttons for filtering resources */}
-          <button className={`resource-page-tag-button${filter === '' ? ' selected' : ''}`} type="button" onClick={() => setFilter('')}>All</button>
+          <button className={`resource-page-tag-button${filter === '' ? ' selected' : ''}`} type="button" aria-pressed={filter === ''} onClick={() => setFilter('')}>All</button>
           {
           resourceTagsData.map((resource, index) => (
-            <button className={`resource-page-tag-button${filter === resource.name ? ' selected' : ''}`} type="button" onClick={() => setFilter(resource.name)} key={index}>{resource.name}</button>
+            <button className={`resource-page-tag-button${filter === resource.name ? ' selected' : ''}`} type="button" aria-pressed={filter === resource.name} onClick={() => setFilter(resource.name)} key={index}>{resource.name}</button>
           ))
         }
         </div>
-        <div className="projects-page-mobile-dropdown">
+        <div className="resource-page-mobile-dropdown">
           {/* Dropdown for mobile tag selection */}
           <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={resourceTagValues} placeholder="Select a resource category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
         </div>

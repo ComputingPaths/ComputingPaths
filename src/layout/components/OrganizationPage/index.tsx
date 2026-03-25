@@ -74,15 +74,15 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
         </p>
         <div className="orgs-page-tag-section">
           {/* Tag buttons for filtering organizations */}
-          <button className={filter !== '' ? 'projects-page-tag-button' : 'projects-page-tag-button select'} type="button" onClick={() => setFilter('')}>All</button>
+          <button className={filter !== '' ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" aria-pressed={filter === ''} onClick={() => setFilter('')}>All</button>
           {
             orgTagValues && orgTagValues.map((tagVal) => {
-              if (tagVal !== 'All') return (<button className={filter !== tagVal ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" onClick={() => setFilter(tagVal)}>{tagVal}</button>);
+              if (tagVal !== 'All') return (<button className={filter !== tagVal ? 'orgs-page-tag-button' : 'orgs-page-tag-button select'} type="button" aria-pressed={filter === tagVal} onClick={() => setFilter(tagVal)}>{tagVal}</button>);
               return null;
             })
           }
         </div>
-        <div className="projects-page-mobile-dropdown">
+        <div className="orgs-page-mobile-dropdown">
           {/* Dropdown for mobile tag selection */}
           <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={orgTagValues} placeholder="Select an organization category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
         </div>

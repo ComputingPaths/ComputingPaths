@@ -112,17 +112,20 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       <section className="home-page-landing">
         <div className="home-page-title-section">
           <h1 className="home-page-title">Discover Your Path in Computing</h1>
-          <Link to="/organizations">
-            <button className="home-page-home-button" type="submit">Find Your Home</button>
+          <Link to="/organizations" className="home-page-home-button">
+            Find Your Home
           </Link>
         </div>
         <img className="home-page-image" src={heroURL} alt="home page logo" width="320" height="344" />
       </section>
-      <h2 className="home-page-header major">Majors</h2>
+      <div className="home-page-section-intro">
+        <h2 className="home-page-header major">Majors</h2>
+        <p className="home-page-section-description">Explore computing-related majors at UC San Diego and discover how each path connects to different interests and career opportunities. These majors span a range of disciplines, from technical foundations to interdisciplinary applications, allowing students to build skills and explore areas that align with their goals.</p>
+      </div>
       <section className="home-page-majors-container" ref={menuRef}>
         {majors.map((major) => (
           <Link to={`/majors#${major.name.replace(/\s/g, '-')}`} className="home-page-majors-section">
-            <img className="home-page-majors-section-image" src={major.image} alt="major" />
+            <img className="home-page-majors-section-image" src={major.image} alt={`${major.name} major`} />
             <h3 className="home-page-majors-section-major">{major.name}</h3>
           </Link>
         ))}
@@ -155,8 +158,12 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
               {story.name} &nbsp;
               <span>{`${story.role ? `${story.role}` : ''}${story.role && story.class ? ' | ' : ''}${story.class ? `Class of ${story.class}` : ''}`}</span>
             </h3>
-            <Link className="home-page-links" to="/stories">
-              <button id="home-page-stories-button" className="home-page-home-button" type="submit">Read More</button>
+            <Link
+              id="home-page-stories-button"
+              className="home-page-home-button home-page-links"
+              to="/stories"
+            >
+              Read More
             </Link>
           </div>
 
@@ -166,13 +173,14 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
 
       {/* Student Organizations section */}
       <h2 className="home-page-header">Get Involved</h2>
+      <p className="home-page-section-description">Get involved in the computing community at UC San Diego through opportunities that extend beyond the classroom. From student organizations to projects and events, these experiences allow you to apply your skills, explore your interests, and connect with others in computing.</p>
       <section className="home-page-resources">
         <img className="home-page-involed-image" src={homeData.student_org_photo} alt="org logo" />
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Student Organizations</h2>
           <p className="home-page-text">Student Organizations allow for extracurricular expierence, utilizing and extending skills imparted in computing courses. These groups demonstrate creating computing efforts by channeling the collaborative spirit of UC San Diego.</p>
-          <Link className="home-page-links" to="/organizations">
-            <button className="home-page-home-button" type="submit">Learn More</button>
+          <Link className="home-page-home-button home-page-links" to="/organizations">
+            Learn More
           </Link>
         </div>
       </section>
@@ -183,8 +191,8 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
         <div className="home-page-resources-section">
           <h2 className="home-page-subheader">Projects</h2>
           <p className="home-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
-          <Link className="home-page-links" to="/projects">
-            <button className="home-page-home-button" type="submit">See Projects</button>
+          <Link className="home-page-home-button home-page-links" to="/projects">
+            See Projects
           </Link>
         </div>
       </section>

@@ -1,5 +1,4 @@
 @import '../../../styles';
-
 .story-card {
   display: flex;
   margin-top: 5rem;
@@ -64,8 +63,25 @@
     &:visited,
     &:focus,
     &:hover,
-    &:active { // Selectors are needed to override css reset styling
+    &:active {
       @include font-linked-text;
+    }
+
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      filter: brightness(1.05);
+      transform: scale(1.02);
+    }
+
+    &:focus-visible {
+      outline: 3px solid #00629b;
+      outline-offset: 3px;
+      border-radius: 4px;
     }
 
     &-arrow {
@@ -106,7 +122,7 @@
     }
 
     &-link {
-      display: inline-block;
+      display: inline-flex;
       margin-top: 0.5rem;
     }
   }
