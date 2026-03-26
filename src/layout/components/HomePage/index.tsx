@@ -116,7 +116,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
             Find Your Home
           </Link>
         </div>
-        <img className="home-page-image" src={heroURL} alt="ComputingPaths Logo" width="320" height="344" />
+        <img className="home-page-image" src={heroURL} alt="Computing Paths logo" width="320" height="344" />
       </section>
       <div className="home-page-section-intro">
         <h2 className="home-page-header major">Majors</h2>
@@ -132,11 +132,11 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       </section>
 
       {/* Majors section with carousel functionality */}
-      <button className="home-page-left-arrow" type="submit" onClick={handleNav}>
-        <img className="home-page-left-arrow-button" src={CarouselLeftArrow} alt="Left Arrow" />
+      <button className="home-page-left-arrow" type="button" onClick={handleNav} aria-label="scrolls majors left">
+        <img className="home-page-left-arrow-button" src={CarouselLeftArrow} alt="" />
       </button>
-      <button className="home-page-right-arrow" type="submit" onClick={handleNav}>
-        <img className="home-page-right-arrow-button" src={CarouselRightArrow} alt="Right Arrow" />
+      <button className="home-page-right-arrow" type="button" onClick={handleNav} aria-label="scrolls majors right">
+        <img className="home-page-right-arrow-button" src={CarouselRightArrow} alt="" />
       </button>
 
       {/* Stories and advice section */}
@@ -145,14 +145,14 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
         {story && (
         <section className="home-page-stories">
           <div className="home-page-stories-image">
-            <img className="home-page-stories-gear" src={Gear} alt="Gear Quote" />
-            <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt="Portrait of a person giving advice" />
+            <img className="home-page-stories-gear" src={Gear} alt="" />
+            <img className="home-page-image-circle" src={stories.length > 0 ? story.image : null} alt={story.name ? `Portrait of ${story.name}` : ''} />
           </div>
           <div className="home-page-stories-text">
             <div className="home-page-stories-quote-container">
-              <img className="home-page-stories-left-quote" src={LeftQuote} alt="Left Quote" width="24px" height="20px" />
+              <img className="home-page-stories-left-quote" src={LeftQuote} alt="" width="24px" height="20px" />
               <p className="home-page-stories-quote">{story.highlighted_quote}</p>
-              <img className="home-page-stories-right-quote" src={RightQuote} alt="Right Quote" width="24px" height="20px" />
+              <img className="home-page-stories-right-quote" src={RightQuote} alt="" width="24px" height="20px" />
             </div>
             <h3 className="home-page-stories-name">
               {story.name} &nbsp;

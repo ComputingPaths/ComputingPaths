@@ -38,18 +38,18 @@ const OrganizationCard: React.FC<OrganizationCardProps> = ({
       {/* Display contact links: email, website, and LinkedIn */}
       <div className="org-card-links">
         {email && (
-        <a href={`mailto:${email}`}>
-          <img src={EmailIcon} alt="Email Icon" />
+        <a href={`mailto:${email}`} aria-label={`Email ${name}`}>
+          <img src={EmailIcon} alt="" />
         </a>
         )}
         {link && (
-        <a href={link}>
-          <img src={WebsiteIcon} alt="Email Icon" />
+        <a href={link} aria-label={`Visit ${name} website`}>
+          <img src={WebsiteIcon} alt="" />
         </a>
         )}
         {linkedin && (
-        <a href={linkedin}>
-          <img src={LinkedinIcon} alt="Linkedin Icon" />
+        <a href={linkedin} aria-label={`Visit ${name} LinkedIn`}>
+          <img src={LinkedinIcon} alt="" />
         </a>
         )}
       </div>

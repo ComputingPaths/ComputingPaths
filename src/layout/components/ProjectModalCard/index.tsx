@@ -66,14 +66,14 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
           {images.map((picture, index) => {
             if (index === slide) {
               return (
-                <img className="project-modal-card-image" src={picture} alt="project" />
+                <img className="project-modal-card-image" src={picture} alt={projectName ? `${projectName} project image ${index + 1}` : `Project image ${index + 1}`} />
               );
             }
             return null;
           })}
           {/* Left and right navigation arrows */}
-          <button className="project-modal-card-arrow left" type="button" onClick={() => setSlide(slide - 1 === -1 ? images.length - 1 : slide - 1)}><img className="project-modal-card-point" src={LeftArrow} alt="back arrow" /></button>
-          <button className="project-modal-card-arrow right" type="button" onClick={() => setSlide(slide + 1 === images.length ? 0 : slide + 1)}><img className="project-modal-card-point" src={RightArrow} alt="right arrow" /></button>
+          <button className="project-modal-card-arrow left" type="button" aria-label="Previous project image" onClick={() => setSlide(slide - 1 === -1 ? images.length - 1 : slide - 1)}><img className="project-modal-card-point" src={LeftArrow} alt="" /></button>
+          <button className="project-modal-card-arrow right" type="button" aria-label="Next project image" onClick={() => setSlide(slide + 1 === images.length ? 0 : slide + 1)}><img className="project-modal-card-point" src={RightArrow} alt="" /></button>
           {/* Slide indicators */}
           <div className="project-modal-card-slide">
             {images.map((photo, index) => (
@@ -81,7 +81,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
             ))}
           </div>
         </section>
-        <img className="project-modal-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
+        <img className="project-modal-card-expand-arrow" src={ExpandArrow} alt="" />
         <p className="project-modal-card-tag">
           <span className="project-modal-card-project-name">{projectName}</span>
           <span className="project-modal-card-organization">{organization}</span>
@@ -106,8 +106,8 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
             <p className="project-modal-card-links">
               <span className="project-modal-card-header">More Information</span>
               <span className="project-modal-card-links-list">
-                <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
-                <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={videoURL}> <span className="project-modal-card-link">Project Video</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+                <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="" /></a>
+                <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={videoURL}> <span className="project-modal-card-link">Project Video</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="" /></a>
               </span>
             </p>
           </section>
@@ -122,20 +122,20 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
         {images.map((picture, index) => {
           if (index === slide) {
             return (
-              <img className="project-modal-card-image" src={picture} alt="project" />
+              <img className="project-modal-card-image" src={picture} alt={projectName ? `${projectName} project image ${index + 1}` : `Project image ${index + 1}`} />
             );
           }
           return null;
         })}
-        <button className="project-modal-card-arrow left" type="button" onClick={() => setSlide(slide - 1 === -1 ? images.length - 1 : slide - 1)}><img className="project-modal-card-point" src={LeftArrow} alt="back arrow" /></button>
-        <button className="project-modal-card-arrow right" type="button" onClick={() => setSlide(slide + 1 === images.length ? 0 : slide + 1)}><img className="project-modal-card-point" src={RightArrow} alt="right arrow" /></button>
+        <button className="project-modal-card-arrow left" type="button" aria-label="Previous project image" onClick={() => setSlide(slide - 1 === -1 ? images.length - 1 : slide - 1)}><img className="project-modal-card-point" src={LeftArrow} alt="" /></button>
+        <button className="project-modal-card-arrow right" type="button" aria-label="Next project image" onClick={() => setSlide(slide + 1 === images.length ? 0 : slide + 1)}><img className="project-modal-card-point" src={RightArrow} alt="" /></button>
         <div className="project-modal-card-slide">
           {images.map((photo, index) => (
             <div className={slide === index ? 'project-modal-card-dot select' : 'project-modal-card-dot'} />
           ))}
         </div>
       </section>
-      <img className="project-modal-card-expand-arrow" src={ExpandArrow} alt="Expand Arrow" />
+      <img className="project-modal-card-expand-arrow" src={ExpandArrow} alt="" />
       <p className="project-modal-card-tag">
         <span className="project-modal-card-project-name">{projectName}</span>
         <span className="project-modal-card-organization">{organization}</span>
@@ -158,7 +158,7 @@ const ProjectModalCard: React.FC<ProjectModalCardProps> = ({
           <p className="project-modal-card-links">
             <span className="project-modal-card-header">More Information</span>
             <span className="project-modal-card-links-list">
-              <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>
+              <a className="project-modal-card-website" target="_blank" rel="noopener noreferrer" href={projectLink}> <span className="project-modal-card-link">Project Website</span> <img className="project-modal-card-link-arrow" src={LinkedArrow} alt="" /></a>
             </span>
           </p>
         </section>

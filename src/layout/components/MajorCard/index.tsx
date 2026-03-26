@@ -57,7 +57,7 @@ const MajorCard: React.FC<MajorCardProps> = ({
       <div id={name && name.replace(/\s/g, '-')} className="major-hyperlink" />
       {/* Main container for the MajorCard */}
       <div className="major-card">
-        {image && <img className="major-card-photo" src={image} alt={`${name || 'Major Card'}`} />}
+        {image && <img className="major-card-photo" src={image} alt={name ? `${name} major` : 'Major'} />}
         {/* Top section with the major's name and tags */}
         <div className="major-card-top">
           {name && <p className="major-card-heading">{name}</p>}
@@ -79,11 +79,11 @@ const MajorCard: React.FC<MajorCardProps> = ({
             <div className="major-card-info-right">
               <p className="major-card-subheading">Departments</p>
               <div className="major-card-links">
-                {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
+                {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
               </div>
               <div className="major-card-links">
                 <p className="major-card-subheading">More Information</p>
-                {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
+                {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
               </div>
             </div>
           </div>
