@@ -78,10 +78,12 @@
     justify-content: space-around;
     left: 0;
     padding: 0.25rem 0.5rem;
+    pointer-events: none;
     position: fixed;
     right: 0;
     top: calc(-12.5rem + 5.25rem);
     transition: top 0.5s;
+    visibility: hidden;
     z-index: -1;
   }
 
@@ -125,7 +127,9 @@
       top: calc(-12.5rem + 3.5rem);
 
       &.open {
+        pointer-events: auto;
         top: 3.5rem;
+        visibility: visible;
       }
     }
   }

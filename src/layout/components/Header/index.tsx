@@ -4,7 +4,7 @@
 // The header includes a logo, navigation links for desktop and
 // mobile views, and an optional hero image.
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import HeaderMenu from '../../../assets/HeaderMenu.svg';
@@ -19,6 +19,22 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = (props) => {
   const { heroURL } = props;
   const [menu, setMenu] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setMenu(false);
+      }
+    };
+
+    if (menu) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [menu]);
 
   return (
     <>
@@ -49,15 +65,20 @@ const Header: React.FC<HeaderProps> = (props) => {
               onClick={() => setMenu(!menu)}
               aria-label={menu ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={menu}
+              aria-controls="header-mobile-links"
             >
               <img className="header-mobile-icon" src={HeaderMenu} alt="" />
             </button>
           </div>
         </div>
 
-        <div className={`header-mobile-links${menu ? ' open' : ''}`}>
+        <div
+          id="header-mobile-links"
+          className={`header-mobile-links${menu ? ' open' : ''}`}
+          aria-hidden={!menu}
+        >
           {pages.map((page, index) => (
-            <Link to={page.link} className="header-link" key={index}>
+            <Link to={page.link} className="header-link" key={index} tabIndex={menu ? 0 : -1}>
               {page.title}
             </Link>
           ))}
