@@ -51,7 +51,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   // Function to handle carousel navigation
-  const handleNav = (event) => {
+  const handleNav = (direction: 'left' | 'right') => {
     if (menuRef && menuRef.current) {
       const element = (menuRef.current.childNodes[0] as HTMLDivElement);
 
@@ -65,7 +65,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       const elementSize = width + margin - padding + border;
 
       // Scroll the container baed on left or right arrow
-      if (event.target.className.includes('home-page-left-arrow')) {
+      if (direction === 'left') {
         menuRef.current.scrollBy({
           top: 0,
           left: -elementSize,
@@ -106,6 +106,10 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
   // Retrive featured story from the lookup table
   const story = storyLookup.get(homeData.featured_story);
 
+  useEffect(() => {
+    document.title = 'Home | Computing Paths';
+  }, []);
+
   return (
     <main className="home-page">
       {/* Hero section with title and hero image */}
@@ -132,10 +136,10 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       </section>
 
       {/* Majors section with carousel functionality */}
-      <button className="home-page-left-arrow" type="button" onClick={handleNav} aria-label="scrolls majors left">
+      <button className="home-page-left-arrow" type="button" onClick={() => handleNav('left')} aria-label="Scroll majors left">
         <img className="home-page-left-arrow-button" src={CarouselLeftArrow} alt="" />
       </button>
-      <button className="home-page-right-arrow" type="button" onClick={handleNav} aria-label="scrolls majors right">
+      <button className="home-page-right-arrow" type="button" onClick={() => handleNav('right')} aria-label="Scroll majors right">
         <img className="home-page-right-arrow-button" src={CarouselRightArrow} alt="" />
       </button>
 

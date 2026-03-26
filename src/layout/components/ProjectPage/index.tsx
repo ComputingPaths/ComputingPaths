@@ -39,6 +39,10 @@ const ProjectPage: React.FC = () => {
   const projectTagValues = projectTagsData.map((tagObj) => tagObj.name);
   projectTagValues.unshift('All');
 
+  useEffect(() => {
+    document.title = 'Projects | Computing Paths';
+  }, []);
+
   return (
     <main className="projects-page">
       <h1 className="projects-page-title">Projects</h1>

@@ -48,6 +48,10 @@ const ResourcePage: React.FC = () => {
   // State for the current filter tag
   const [filter, setFilter] = useState<string>('');
 
+  useEffect(() => {
+    document.title = 'Resources | Computing Paths';
+  }, []);
+
   return (
     <main className="resource-page">
       <h1 className="resource-page-title">Resources</h1>

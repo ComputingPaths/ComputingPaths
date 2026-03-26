@@ -57,6 +57,10 @@ const MajorPage: React.FC = () => {
   // Create a lookup map for major specializations
   const specsMap = parseLookup(majorSpecsData);
 
+  useEffect(() => {
+    document.title = 'Majors | Computing Paths';
+  }, []);
+
   return (
     <div className="major-page">
       <h1 className="major-page-title">Majors</h1>

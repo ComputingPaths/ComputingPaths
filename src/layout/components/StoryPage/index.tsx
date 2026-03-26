@@ -25,6 +25,10 @@ const StoryPage: React.FC = () => {
       .catch(() => setData([]));
   }, [useData]);
 
+  useEffect(() => {
+    document.title = 'Stories | Computing Paths';
+  }, []);
+
   return (
     <div className="story-page">
       <h1 className="story-page-title">Stories</h1>

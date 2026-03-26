@@ -53,6 +53,10 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
       });
   }, [useData]);
 
+  useEffect(() => {
+    document.title = 'Student Organizations | Computing Paths';
+  }, []);
+
   return (
     <div className="orgs-page">
       <div className="orgs-page-header">
