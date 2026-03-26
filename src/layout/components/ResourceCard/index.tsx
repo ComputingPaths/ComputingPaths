@@ -27,6 +27,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
 }) => {
   // State to control visibility of extra content
   const [visible, setVisible] = useState<boolean>(false);
+  const detailsId = `resource-card-details-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
   return (
     <div className="resource-card">
@@ -40,14 +41,28 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
             {tags.map((tag) => (tag ? <p className={`resource-card-tag ${tag.color}`}>{tag.name}</p> : null))}
           </div>
         </div>
-        <button className="resource-card-view" type="button" onClick={() => setVisible(true)}>View More<img className="resource-card-view-arrow" src={LinkedArrow} alt="Arrow" /></button>
+        <button
+          className="resource-card-view"
+          type="button"
+          onClick={() => setVisible(true)}
+          aria-expanded={visible}
+          aria-controls={detailsId}
+        >
+          View More
+          <img className="resource-card-view-arrow" src={LinkedArrow} alt="" />
+        </button>
         {/* Hidden section revealed on click, showing description and learn more link */}
-        <div className={`resource-card-hidden${visible ? ' visible' : ''}`}>
-          <button className="resource-card-button" type="button" onClick={() => setVisible(false)}>
-            <img src={XIcon} alt="X" />
+        <div
+          id={detailsId}
+          className={`resource-card-hidden${visible ? ' visible' : ''}`}
+          hidden={!visible}
+          aria-hidden={!visible}
+        >
+          <button className="resource-card-button" type="button" onClick={() => setVisible(false)} aria-label="Close resource details">
+            <img src={XIcon} alt="" />
           </button>
           <p className="resource-card-description">{description}</p>
-          <a target="_blank" rel="noopener noreferrer" href={link}><p className="resource-card-link">Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="Arrow" /></p></a>
+          <a target="_blank" rel="noopener noreferrer" href={link}><p className="resource-card-link">Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="" /></p></a>
         </div>
       </div>
     </div>
