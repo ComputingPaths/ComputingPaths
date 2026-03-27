@@ -3,7 +3,7 @@
 
 .org-card {
   h3 {
-    color: #fff;
+    color: $color-neutrals-white;
     padding-bottom: 8px;
   }
 
@@ -30,7 +30,7 @@
     span {
       background-color: $color-primary-navy;
       border-radius: 14px;
-      color: #fff;
+      color: $color-neutrals-white;
       font-size: 0.8rem;
       font-weight: 600;
       margin-bottom: 8px;

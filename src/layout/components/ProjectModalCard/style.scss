@@ -12,7 +12,7 @@
 }
 
 .project-modal-card {
-  background: #fff;
+  background: $color-neutrals-white;
   height: 80%;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -20,7 +20,7 @@
   width: min(90vw, 70rem);
 
   &-arrow {
-    background-color: #fff;
+    background-color: $color-neutrals-white;
     border: 0;
     border-radius: 50%;
     padding: 0.5rem;
@@ -43,7 +43,7 @@
 
   &-close {
     align-items: center;
-    background-color: #fff;
+    background-color: $color-neutrals-white;
     border: 1px solid $color-neutrals-grey;
     border-radius: 50%;
     cursor: pointer;
@@ -64,7 +64,7 @@
   }
 
   &-dot {
-    background-color: #fff;
+    background-color: $color-neutrals-white;
     border-radius: 50%;
     height: 0.5rem;
     margin: 0 0.1rem;
@@ -178,7 +178,7 @@
 
   &-tag {
     background-color: $color-primary-navy;
-    color: #fff;
+    color: $color-neutrals-white;
     padding: 1rem;
   }
 

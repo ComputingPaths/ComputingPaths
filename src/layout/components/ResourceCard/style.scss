@@ -27,7 +27,7 @@
 
   &-name {
     @include font-subtitle-1;
-    color: #fff;
+    color: $color-neutrals-white;
   }
 
   &-tags {
@@ -43,7 +43,7 @@
     @include font-linked-text;
     background: none;
     border: transparent;
-    color: #fff;
+    color: $color-neutrals-white;
     text-align: left;
     width: 8rem;
 
@@ -54,6 +54,7 @@
 
   &-hidden {
     background-color: $color-primary-navy;
+    color: $color-neutrals-white;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -74,7 +75,7 @@
 
   &-button {
     align-items: center;
-    background-color: #fff;
+    background-color: $color-neutrals-white;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -91,13 +92,13 @@
 
   &-description {
     @include font-text;
-    color: #fff;
+    color: $color-neutrals-white;
   }
 
   &-link {
     @include font-linked-text;
     align-items: center;
-    color: #fff;
+    color: $color-neutrals-white;
     display: inline-flex;
   }
 

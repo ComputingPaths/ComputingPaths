@@ -55,7 +55,7 @@
 
   &-tag-button {
     @include font-subtitle-1;
-    background-color: #fff;
+    background-color: $color-neutrals-white;
     border: 0;
     border-bottom: solid 2px $color-neutrals-grey;
     color: $color-neutrals-black;
