@@ -19,14 +19,14 @@ const Footer: React.FC = () => (
     <div className="footer-content">
       <img className="footer-logo" src="/img/logo_ucsd.webp" alt="UCSD Logo" width="166px" height="32px" />
       <p className="footer-contact">Contact</p>
-      <a href="mailto:computingpaths@ucsd.edu"><p className="footer-email">computingpaths@ucsd.edu</p></a>
+      <a href="mailto:computingpaths@ucsd.edu" className="footer-email">computingpaths@ucsd.edu</a>
     </div>
     <div className="footer-links">
-      {pages.map((page, index) => (<Link to={page.link} key={index}><p className="footer-link">{page.title}</p></Link>))}
+      {pages.map((page, index) => (<Link to={page.link} className="footer-link" key={index}>{page.title}</Link>))}
     </div>
     <div className="footer-issue">
       <p className="footer-issue-heading">Have an issue?</p>
-      <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/Sosw6WvxEupsz1Sx6"><p className="footer-issue-link">Fill out this form</p></a>
+      <a className="footer-issue-link" target="_blank" rel="noopener noreferrer" href="https://forms.gle/Sosw6WvxEupsz1Sx6">Fill out this form</a>
     </div>
   </footer>
 );

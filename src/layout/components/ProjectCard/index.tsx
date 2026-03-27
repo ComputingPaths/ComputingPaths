@@ -42,12 +42,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {/* Display the first project image if available */}
         {images.length !== 0 && <img className="project-card-photo" src={images[0]} alt={projectName ? `${projectName} project preview` : 'Project preview'} />}
         {/* Display project name, organization, tags, and expand icon */}
-        <p className="project-card-section">
+        <div className="project-card-section">
           <h2 className="project-card-heading">{projectName}</h2>
-          <h2 className="project-card-organization">{organization}</h2>
+          <p className="project-card-organization">{organization}</p>
           {projectTags.map((tag, index) => (tag && <span key={`${tag.name}-${index}`} className={`project-card-project-tag ${tag.color}`}>{tag.name}</span>))}
           <img className="project-card-expand-arrow" src={ExpandArrow} alt="" />
-        </p>
+        </div>
       </button>
 
       {modal && (

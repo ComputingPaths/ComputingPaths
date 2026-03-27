@@ -18,9 +18,7 @@ const ErrorPage: React.FC = () => {
   return (
     <div className="error-page">
       <p className="error-page-message">Oops, our gears are broken. Let’s find you a better page for you to go to.</p>
-      <Link to="/">
-        <button className="error-page-button" type="button">Home</button>
-      </Link>
+      <Link to="/" className="error-page-button">Home</Link>
     </div>
   );
 };

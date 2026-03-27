@@ -12,14 +12,19 @@
   }
 
   &-button {
+    align-items: center;
     @include font-subtitle-1;
     background: #c4c4c4;
     border: transparent;
+    color: inherit;
     cursor: pointer;
+    display: flex;
     height: 4.5rem;
+    justify-content: center;
     margin: 0;
     margin-top: 2rem;
     padding: 0;
+    text-decoration: none;
     width: 26.5rem;
   }
 

@@ -96,7 +96,9 @@
 
   &-link {
     @include font-linked-text;
+    align-items: center;
     color: #fff;
+    display: inline-flex;
   }
 
   @media(max-width: $site-size-small) {

@@ -62,7 +62,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
             <img src={XIcon} alt="" />
           </button>
           <p className="resource-card-description">{description}</p>
-          <a target="_blank" rel="noopener noreferrer" href={link}><p className="resource-card-link">Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="" /></p></a>
+          <a className="resource-card-link" target="_blank" rel="noopener noreferrer" href={link}>Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="" /></a>
         </div>
       </div>
     </div>
