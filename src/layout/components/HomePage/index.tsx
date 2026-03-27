@@ -111,7 +111,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
   }, []);
 
   return (
-    <main className="home-page">
+    <div className="home-page">
       {/* Hero section with title and hero image */}
       <section className="home-page-landing">
         <div className="home-page-title-section">
@@ -200,7 +200,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 };
 

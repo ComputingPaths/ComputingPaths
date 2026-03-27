@@ -38,7 +38,8 @@ const Header: React.FC<HeaderProps> = (props) => {
 
   return (
     <>
-      <div className="header">
+      <a href="#main-content" className="skip-link">Skip to main content</a>
+      <header className="header">
         <div className="header-content">
           <Link to="/" className="header-logo-link">
             <img
@@ -50,13 +51,13 @@ const Header: React.FC<HeaderProps> = (props) => {
             />
           </Link>
 
-          <div className="header-links">
+          <nav className="header-links" aria-label="Primary">
             {pages.map((page, index) => (
               <Link to={page.link} className="header-link" key={index}>
                 {page.title}
               </Link>
             ))}
-          </div>
+          </nav>
 
           <div className="header-mobile">
             <button
@@ -72,9 +73,10 @@ const Header: React.FC<HeaderProps> = (props) => {
           </div>
         </div>
 
-        <div
+        <nav
           id="header-mobile-links"
           className={`header-mobile-links${menu ? ' open' : ''}`}
+          aria-label="Primary"
           aria-hidden={!menu}
         >
           {pages.map((page, index) => (
@@ -82,8 +84,8 @@ const Header: React.FC<HeaderProps> = (props) => {
               {page.title}
             </Link>
           ))}
-        </div>
-      </div>
+        </nav>
+      </header>
 
       <div className="spacer" />
       {heroURL && <img className="hero" src={heroURL} alt="Page divider of heading and body content" />}

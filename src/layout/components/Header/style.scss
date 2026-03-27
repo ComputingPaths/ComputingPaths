@@ -1,5 +1,20 @@
 @import '../../../styles';
 
+.skip-link {
+  background-color: #fff;
+  color: $color-primary-navy;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  text-decoration: none;
+  top: -4rem;
+  z-index: 3;
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
 .header {
   left: 0;
   position: fixed;

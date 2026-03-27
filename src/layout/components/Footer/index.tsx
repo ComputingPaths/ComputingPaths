@@ -15,7 +15,7 @@ import './style.scss';
 // The Footer component is a functional component that renders the website's footer.
 // It includes a logo, contact email, navigation links, and a form link for reporting issues.
 const Footer: React.FC = () => (
-  <div className="footer">
+  <footer className="footer">
     <div className="footer-content">
       <img className="footer-logo" src="/img/logo_ucsd.webp" alt="UCSD Logo" width="166px" height="32px" />
       <p className="footer-contact">Contact</p>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => (
       <p className="footer-issue-heading">Have an issue?</p>
       <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/Sosw6WvxEupsz1Sx6"><p className="footer-issue-link">Fill out this form</p></a>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

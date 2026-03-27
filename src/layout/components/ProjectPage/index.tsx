@@ -44,7 +44,7 @@ const ProjectPage: React.FC = () => {
   }, []);
 
   return (
-    <main className="projects-page">
+    <div className="projects-page">
       <h1 className="projects-page-title">Projects</h1>
       <p className="projects-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
       <p className="projects-page-heading">Learn more about computing majors</p>
@@ -114,7 +114,7 @@ const ProjectPage: React.FC = () => {
           return null;
         })}
       </div>
-    </main>
+    </div>
   );
 };
 

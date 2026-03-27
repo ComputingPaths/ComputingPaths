@@ -53,7 +53,7 @@ const ResourcePage: React.FC = () => {
   }, []);
 
   return (
-    <main className="resource-page">
+    <div className="resource-page">
       <h1 className="resource-page-title">Resources</h1>
       <p className="resource-page-text">Discover the many resources available at UC San Diego: study spaces, career and research opportunities, and academic support.</p>
       <div className="resource-page-content">
@@ -112,7 +112,7 @@ const ResourcePage: React.FC = () => {
           })}
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
