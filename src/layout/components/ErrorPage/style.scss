@@ -12,8 +12,8 @@
   }
 
   &-button {
-    align-items: center;
     @include font-subtitle-1;
+    align-items: center;
     background: #c4c4c4;
     border: transparent;
     color: inherit;
