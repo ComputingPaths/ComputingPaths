@@ -52,8 +52,18 @@ const ResourcePage: React.FC = () => {
     document.title = 'Resources | Computing Paths';
   }, []);
 
+  const filteredResourcesCount = resourcesData.filter((resource) => {
+    if (filter === '') return true;
+    const verboseTags = parseList(resource.tags).map((tagCode) => {
+      const tag = resourceTagMap.get(tagCode);
+      return tag ? tag.name : null;
+    });
+    return verboseTags.includes(filter);
+  }).length;
+
   return (
     <div className="resource-page">
+      <p aria-live="polite" aria-atomic="true" className="sr-only">{filteredResourcesCount} resources shown</p>
       <h1 className="resource-page-title">Resources</h1>
       <p className="resource-page-text">Discover the many resources available at UC San Diego: study spaces, career and research opportunities, and academic support.</p>
       <div className="resource-page-content">

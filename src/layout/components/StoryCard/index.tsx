@@ -66,6 +66,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
             href={linkURL}
           >
             {linkText}
+            <span className="sr-only"> (opens in new tab)</span>
             <img className="story-card-link-arrow" src={LinkedArrow} alt="" />
           </a>
         )}

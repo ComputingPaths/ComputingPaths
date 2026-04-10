@@ -166,6 +166,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
               id="home-page-stories-button"
               className="home-page-home-button home-page-links"
               to="/stories"
+              aria-label={story.name ? `Read more stories from ${story.name}` : 'Read more stories'}
             >
               Read More
             </Link>
@@ -181,9 +182,9 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       <section className="home-page-resources">
         <img className="home-page-involed-image" src={homeData.student_org_photo} alt="Group of people celebrating and dancing at UCSD" />
         <div className="home-page-resources-section">
-          <h2 className="home-page-subheader">Student Organizations</h2>
+          <h3 className="home-page-subheader">Student Organizations</h3>
           <p className="home-page-text">Student Organizations allow for extracurricular expierence, utilizing and extending skills imparted in computing courses. These groups demonstrate creating computing efforts by channeling the collaborative spirit of UC San Diego.</p>
-          <Link className="home-page-home-button home-page-links" to="/organizations">
+          <Link className="home-page-home-button home-page-links" to="/organizations" aria-label="Learn more about Student Organizations">
             Learn More
           </Link>
         </div>
@@ -193,7 +194,7 @@ const HomePage: React.FC<HomePageProps> = ({ heroURL }) => {
       <section className="home-page-resources">
         <img className="home-page-involed-image" src={homeData.projects_photo} alt="Students showcasing their project" />
         <div className="home-page-resources-section">
-          <h2 className="home-page-subheader">Projects</h2>
+          <h3 className="home-page-subheader">Projects</h3>
           <p className="home-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
           <Link className="home-page-home-button home-page-links" to="/projects">
             See Projects

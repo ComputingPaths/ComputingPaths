@@ -60,7 +60,7 @@ const MajorCard: React.FC<MajorCardProps> = ({
         {image && <img className="major-card-photo" src={image} alt={name ? `${name} major` : 'Major'} />}
         {/* Top section with the major's name and tags */}
         <div className="major-card-top">
-          {name && <p className="major-card-heading">{name}</p>}
+          {name && <h3 className="major-card-heading">{name}</h3>}
           {(selective || degreeType) && (
             <div className="major-card-tags">
               {tags.map((tag, index) => (
@@ -79,11 +79,11 @@ const MajorCard: React.FC<MajorCardProps> = ({
             <div className="major-card-info-right">
               <p className="major-card-subheading">Departments</p>
               <div className="major-card-links">
-                {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
+                {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<span className="sr-only"> (opens in new tab)</span><img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
               </div>
               <div className="major-card-links">
                 <p className="major-card-subheading">More Information</p>
-                {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
+                {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<span className="sr-only"> (opens in new tab)</span><img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
               </div>
             </div>
           </div>

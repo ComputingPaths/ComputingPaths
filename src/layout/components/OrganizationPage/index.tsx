@@ -40,6 +40,9 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
   // State for the current filter tag
   const [filter, setFilter] = useState<string>('');
 
+  // State for marquee pause/play
+  const [marquePaused, setMarqueePaused] = useState<boolean>(false);
+
   // Fetch organization and tag data on component mount
   useEffect(() => {
     Promise.all([useData(DataTypes.OrgTags), useData(DataTypes.Orgs)])
@@ -57,15 +60,33 @@ const OrganizationPage: React.FC<OrganizationPageProps> = ({ heroURL }) => {
     document.title = 'Student Organizations | Computing Paths';
   }, []);
 
+  const filteredOrgsCount = orgs.filter((org) => {
+    if (filter === '') return true;
+    const verboseTags = parseList(org.tags).map((tagCode) => {
+      const tag = orgTagMap.get(tagCode);
+      return tag ? tag.name : null;
+    });
+    return verboseTags.includes(filter);
+  }).length;
+
   return (
     <div className="orgs-page">
+      <p aria-live="polite" aria-atomic="true" className="sr-only">{filteredOrgsCount} organizations shown</p>
       <div className="orgs-page-header">
         <div className="marquee">
-          <ul className="marquee-content">
+          <ul className={`marquee-content${marquePaused ? ' paused' : ''}`}>
             <li className="marquee-item">
               <img className="marquee-image" src={heroURL} alt="banner of different student organization logos at UCSD" />
             </li>
           </ul>
+          <button
+            type="button"
+            className="marquee-pause-button"
+            aria-label={marquePaused ? 'Play marquee animation' : 'Pause marquee animation'}
+            onClick={() => setMarqueePaused(!marquePaused)}
+          >
+            {marquePaused ? '▶' : '⏸'}
+          </button>
         </div>
         <h1>Student Organizations</h1>
         <p>Student organizations allow for extracurricular experience,

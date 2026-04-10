@@ -32,7 +32,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
   return (
     <div className="resource-card">
       {/* Display the resource image with a link */}
-      <a target="_blank" rel="noopener noreferrer" href={imageLink}><img className="resource-card-image" src={image || '/img/CP Generic Icon.jpg'} alt={name} /></a>
+      <a target="_blank" rel="noopener noreferrer" href={imageLink} aria-label={`${name} (opens in new tab)`}><img className="resource-card-image" src={image || '/img/logo_ucsd.jpg'} alt={name} /></a>
       {/* Content section with name, tags, and view more button */}
       <div className={`resource-card-content${visible ? ' visible' : ''}`}>
         <div>
@@ -62,7 +62,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
             <img src={XIcon} alt="" />
           </button>
           <p className="resource-card-description">{description}</p>
-          <a className="resource-card-link" target="_blank" rel="noopener noreferrer" href={link}>Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="" /></a>
+          <a className="resource-card-link" target="_blank" rel="noopener noreferrer" href={link} aria-label={`Learn more about ${name} (opens in new tab)`}>Learn More<img className="resource-card-view-arrow" src={LinkedArrow} alt="" /></a>
         </div>
       </div>
     </div>

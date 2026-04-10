@@ -43,8 +43,18 @@ const ProjectPage: React.FC = () => {
     document.title = 'Projects | Computing Paths';
   }, []);
 
+  const filteredProjectsCount = data.filter((project) => {
+    if (filter === '') return true;
+    const verboseTags = parseList(project.tags).map((tagCode) => {
+      const tag = projectTagMap.get(tagCode);
+      return tag ? tag.name : null;
+    });
+    return verboseTags.includes(filter);
+  }).length;
+
   return (
     <div className="projects-page">
+      <p aria-live="polite" aria-atomic="true" className="sr-only">{filteredProjectsCount} projects shown</p>
       <h1 className="projects-page-title">Projects</h1>
       <p className="projects-page-text">Computing students create impressive bodies of work throughout their time at UC San Diego, whether for classes, internships, or just for fun.</p>
       <p className="projects-page-heading">Learn more about computing majors</p>
