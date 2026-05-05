@@ -57,10 +57,10 @@ const MajorCard: React.FC<MajorCardProps> = ({
       <div id={name && name.replace(/\s/g, '-')} className="major-hyperlink" />
       {/* Main container for the MajorCard */}
       <div className="major-card">
-        {image && <img className="major-card-photo" src={image} alt={`${name || 'Major Card'}`} />}
+        {image && <img className="major-card-photo" src={image} alt={name ? `${name} major` : 'Major'} />}
         {/* Top section with the major's name and tags */}
         <div className="major-card-top">
-          {name && <p className="major-card-heading">{name}</p>}
+          {name && <h3 className="major-card-heading">{name}</h3>}
           {(selective || degreeType) && (
             <div className="major-card-tags">
               {tags.map((tag, index) => (
@@ -79,11 +79,11 @@ const MajorCard: React.FC<MajorCardProps> = ({
             <div className="major-card-info-right">
               <p className="major-card-subheading">Departments</p>
               <div className="major-card-links">
-                {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
+                {departments && departments.map((department, index) => department.title && department.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={department.url} key={index}>{department.title}<span className="sr-only"> (opens in new tab)</span><img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
               </div>
               <div className="major-card-links">
                 <p className="major-card-subheading">More Information</p>
-                {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<img className="major-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>)}
+                {links && links.map((link, index) => link.title && link.url && <a className="major-card-link" target="_blank" rel="noopener noreferrer" href={link.url} key={index}>{link.title}<span className="sr-only"> (opens in new tab)</span><img className="major-card-link-arrow" src={LinkedArrow} alt="" /></a>)}
               </div>
             </div>
           </div>
@@ -94,11 +94,22 @@ const MajorCard: React.FC<MajorCardProps> = ({
 
             return (
               <div className="major-card-specialization" key={index}>
-                <div className="major-card-specialization-heading" onClick={() => setOpen(!open)}>
-                  <p className="major-card-specialization-name">{specialization.name}</p>
-                  <button className={`major-card-specialization-button ${open ? 'open' : ''}`} type="button"><img src={Caret} alt="Description" /></button>
-                </div>
-                <div className={`major-card-specialization-content ${open ? 'open' : ''}`}>
+                <button
+                  type="button"
+                  className={`major-card-specialization-heading ${open ? 'open' : ''}`}
+                  onClick={() => setOpen(!open)}
+                  aria-expanded={open}
+                  aria-controls={`specialization-content-${index}`}
+                >
+                  <span className="major-card-specialization-name">{specialization.name}</span>
+                  <span className="major-card-specialization-button" aria-hidden="true">
+                    <img src={Caret} alt="" />
+                  </span>
+                </button>
+                <div
+                  id={`specialization-content-${index}`}
+                  className={`major-card-specialization-content ${open ? 'open' : ''}`}
+                >
                   <p className="major-card-specialization-detail">{specialization.detail}</p>
                 </div>
               </div>

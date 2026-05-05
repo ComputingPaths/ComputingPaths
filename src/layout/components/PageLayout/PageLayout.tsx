@@ -18,7 +18,7 @@ const PageLayout: React.FC<PageLayoutProps> = (props) => {
 
   return (
     <>
-      <main className="content">
+      <main id="main-content" className="content" tabIndex={-1}>
         {children}
       </main>
     </>

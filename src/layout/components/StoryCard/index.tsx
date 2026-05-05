@@ -24,7 +24,7 @@ interface StoryCardProps {
 // StoryCard component renders a card with optional photo, heading, quote, and author details.
 // It supports layout customization to show the photo on the left or right.
 const StoryCard: React.FC<StoryCardProps> = ({
-  leftToRight = true, // Default layout has the photo on the left
+  leftToRight = true,
   photoURL,
   headingText,
   quoteText,
@@ -33,27 +33,54 @@ const StoryCard: React.FC<StoryCardProps> = ({
   linkText,
   linkURL,
 }) => (
-  <div className={`story-card ${leftToRight ? 'left' : 'right'}`}>
-    {/* Conditionally render the photo on the left if leftToRight is true */}
-    {leftToRight && photoURL && <img className="story-card-photo left" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
+  <article className={`story-card ${leftToRight ? 'left' : 'right'}`}>
+    {leftToRight && photoURL && (
+      <img
+        className="story-card-photo left"
+        src={photoURL}
+        alt={authorName ? `Portrait of ${authorName}` : ''}
+      />
+    )}
+
     <div>
-      {/* Render the heading text if provided */}
-      {headingText && <p className="story-card-heading">{headingText}</p>}
-      {/* Render the quote text if provided, with conditional alignment */}
-      {quoteText && <div className={`story-card-quote ${leftToRight ? 'left' : 'right'}`}><p className="story-card-quote-text">{quoteText}</p></div>}
+      {headingText && <h3 className="story-card-heading">{headingText}</h3>}
+
+      {quoteText && (
+        <div className={`story-card-quote ${leftToRight ? 'left' : 'right'}`}>
+          <p className="story-card-quote-text">{quoteText}</p>
+        </div>
+      )}
+
       <div className="story-card-bottom">
-        {/* Render the author's name and descriptor */}
         <p>
           {authorName && <span className="story-card-name">{authorName}</span>}
           <br />
           {authorDescriptor && <span className="story-card-descriptor">{authorDescriptor}</span>}
         </p>
-        {/* Render the read more link if both linkText and linkURL are provided */}
-        {linkText && linkURL && <a className="story-card-link" target="_blank" rel="noopener noreferrer" href={linkURL}>{linkText}<img className="story-card-link-arrow" src={LinkedArrow} alt="Link Arrow" /></a>}
+
+        {linkText && linkURL && (
+          <a
+            className="story-card-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={linkURL}
+          >
+            {linkText}
+            <span className="sr-only"> (opens in new tab)</span>
+            <img className="story-card-link-arrow" src={LinkedArrow} alt="" />
+          </a>
+        )}
       </div>
     </div>
-    {!leftToRight && photoURL && <img className="story-card-photo right" src={photoURL} alt={`${authorName || 'Story Card'}`} />}
-  </div>
+
+    {!leftToRight && photoURL && (
+      <img
+        className="story-card-photo right"
+        src={photoURL}
+        alt={authorName ? `Portrait of ${authorName}` : ''}
+      />
+    )}
+  </article>
 );
 
 export default StoryCard;

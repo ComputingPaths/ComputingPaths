@@ -13,3 +13,28 @@ body,
   display: flex;
   flex-direction: column;
 }
+
+// Visually hidden but accessible to screen readers
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Accessibility, clicking tab allows for a border box to appear around the tabbed item
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[role='button']:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid $color-primary-blue;
+  outline-offset: 3px;
+}

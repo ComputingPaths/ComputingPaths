@@ -1,5 +1,20 @@
 @import '../../../styles';
 
+.skip-link {
+  background-color: $color-neutrals-white;
+  color: $color-primary-navy;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  text-decoration: none;
+  top: -4rem;
+  z-index: 3;
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
 .header {
   left: 0;
   position: fixed;
@@ -9,12 +24,41 @@
 
   &-content {
     align-items: center;
-    background-color: #fff;
+    background-color: $color-neutrals-white;
     border-bottom: 1px solid #e4e4e4;
     display: flex;
     flex: 0 0 auto;
     height: 5.25rem;
     padding: 0 7rem;
+  }
+
+  &-logo-link,
+  &-link,
+  &-mobile-button {
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+
+  &-logo-link:hover,
+  &-link:hover,
+  &-mobile-button:hover,
+  &-logo-link:focus-visible,
+  &-link:focus-visible,
+  &-mobile-button:focus-visible {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+  }
+
+  &-logo-link:focus-visible,
+  &-link:focus-visible,
+  &-mobile-button:focus-visible {
+    border-radius: 4px;
+    outline: 3px solid #00629b;
+    outline-offset: 3px;
+  }
+
+  &-logo-link {
+    align-items: center;
+    display: inline-flex;
   }
 
   &-logo {
@@ -31,6 +75,9 @@
 
   &-link {
     @include font-nav-bar-text;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: none;
   }
 
   &-mobile {
@@ -46,14 +93,16 @@
     justify-content: space-around;
     left: 0;
     padding: 0.25rem 0.5rem;
+    pointer-events: none;
     position: fixed;
     right: 0;
     top: calc(-12.5rem + 5.25rem);
     transition: top 0.5s;
+    visibility: hidden;
     z-index: -1;
   }
 
-  @media(max-width: $site-size-small) {
+  @media (max-width: $site-size-small) {
     &-content {
       height: 3.5rem;
       justify-content: space-between;
@@ -63,11 +112,11 @@
     &-logo {
       width: 6.25rem;
     }
-  
+
     &-links {
       display: none;
     }
-  
+
     &-link {
       padding: 0.25rem;
     }
@@ -78,6 +127,7 @@
       &-button {
         background: none;
         border: 0;
+        cursor: pointer;
         margin: 0;
         padding: 0;
       }
@@ -92,7 +142,9 @@
       top: calc(-12.5rem + 3.5rem);
 
       &.open {
+        pointer-events: auto;
         top: 3.5rem;
+        visibility: visible;
       }
     }
   }
@@ -101,7 +153,7 @@
 .spacer {
   min-height: 5.25rem;
 
-  @media(max-width: $site-size-small) {
+  @media (max-width: $site-size-small) {
     min-height: 3.5rem;
   }
 }
@@ -112,7 +164,24 @@
   object-fit: cover;
   width: 100%;
 
-  @media(max-width: $site-size-small) {
+  @media (max-width: $site-size-small) {
     height: 12.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-logo-link,
+  .header-link,
+  .header-mobile-button {
+    transition: none;
+  }
+
+  .header-logo-link:hover,
+  .header-link:hover,
+  .header-mobile-button:hover,
+  .header-logo-link:focus-visible,
+  .header-link:focus-visible,
+  .header-mobile-button:focus-visible {
+    transform: none;
   }
 }

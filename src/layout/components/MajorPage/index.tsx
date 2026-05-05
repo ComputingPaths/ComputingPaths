@@ -57,6 +57,10 @@ const MajorPage: React.FC = () => {
   // Create a lookup map for major specializations
   const specsMap = parseLookup(majorSpecsData);
 
+  useEffect(() => {
+    document.title = 'Majors | Computing Paths';
+  }, []);
+
   return (
     <div className="major-page">
       <h1 className="major-page-title">Majors</h1>
@@ -65,7 +69,16 @@ const MajorPage: React.FC = () => {
         <h2 className="major-page-subheading">Learn more about the computing majors</h2>
         <div className="major-page-scroll-content">
           <div className="major-page-sidebar">
-            {majorData.map((major, index) => <div className="major-page-link" key={index}><Link smooth to={`/majors#${major.name.replace(/\s/g, '-')}`}>{major.name}</Link></div>)}
+            {majorData.map((major) => (
+              <Link
+                key={major.name}
+                className="major-page-link"
+                smooth
+                to={`/majors#${major.name.replace(/\s/g, '-')}`}
+              >
+                {major.name}
+              </Link>
+            ))}
           </div>
           {/* Dropdown for mobile navigation */}
           <div className="major-page-mobile-navigation">

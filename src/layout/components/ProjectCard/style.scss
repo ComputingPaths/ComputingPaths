@@ -3,9 +3,17 @@
 @import '../../../styles/base';
 
 .project-card {
+  appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
+  padding: 0;
+  text-align: left;
   width: calc(90% - 3rem);
 
   &-expand-arrow {
@@ -44,7 +52,7 @@
 
   &-section {
     background: $color-primary-navy;
-    color: #fff;
+    color: $color-neutrals-white;
     padding: 1rem;
     position: relative;
   }

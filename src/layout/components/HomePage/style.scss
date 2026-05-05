@@ -23,6 +23,32 @@
     cursor: pointer;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+
+  &-majors-section {
+    overflow: hidden;
+  }
+
+  &-majors-section-image {
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+
+  &-majors-section:hover .home-page-majors-section-image,
+  &-majors-section:focus-visible .home-page-majors-section-image {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+  }
+
+  &-home-button:hover,
+  &-home-button:focus-visible {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+  }
+
+  &-home-button:focus-visible {
+    outline: 3px solid $color-primary-blue;
+    outline-offset: 3px;
   }
 
   &-involed-image {
@@ -70,6 +96,16 @@
     scroll-behavior: smooth;
   }
 
+  &-section-intro {
+    margin-bottom: 1rem;
+  }
+
+  &-section-description {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0.75rem 0 1rem;
+  }
+
   &-majors-section {
     flex-shrink: 0;
     height: min(calc(33vw - 1rem), 26rem);
@@ -88,7 +124,7 @@
       align-items: center;
       background-color: $color-primary-navy;
       bottom: 0;
-      color: #fff;
+      color: $color-neutrals-white;
       display: flex;
       height: 3.5rem;
       justify-content: center;
@@ -98,6 +134,11 @@
       text-align: center;
       width: calc(100% - 2rem);
     }
+  }
+
+  &-majors-section:focus-visible {
+    outline: 3px solid $color-primary-blue;
+    outline-offset: 3px;
   }
 
   &-resources {
@@ -154,7 +195,7 @@
 
     &-name > span {
       @include font-text;
-      color: $color-neutrals-dark-grey;
+      color: $color-neutrals-black;
     }
 
     &-quote {

@@ -27,7 +27,7 @@
 
   &-name {
     @include font-subtitle-1;
-    color: #fff;
+    color: $color-neutrals-white;
   }
 
   &-tags {
@@ -43,7 +43,7 @@
     @include font-linked-text;
     background: none;
     border: transparent;
-    color: #fff;
+    color: $color-neutrals-white;
     text-align: left;
     width: 8rem;
 
@@ -55,6 +55,7 @@
   &-hidden {
     background-color: $color-primary-navy;
     box-sizing: border-box;
+    color: $color-neutrals-white;
     display: flex;
     flex-direction: column;
     height: 16.625rem;
@@ -74,7 +75,7 @@
 
   &-button {
     align-items: center;
-    background-color: #fff;
+    background-color: $color-neutrals-white;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -91,12 +92,14 @@
 
   &-description {
     @include font-text;
-    color: #fff;
+    color: $color-neutrals-white;
   }
 
   &-link {
     @include font-linked-text;
-    color: #fff;
+    align-items: center;
+    color: $color-neutrals-white;
+    display: inline-flex;
   }
 
   @media(max-width: $site-size-small) {

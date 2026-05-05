@@ -4,7 +4,7 @@
 // The header includes a logo, navigation links for desktop and
 // mobile views, and an optional hero image.
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import HeaderMenu from '../../../assets/HeaderMenu.svg';
@@ -13,37 +13,82 @@ import { pages } from '../../../vars';
 import './style.scss';
 
 interface HeaderProps {
-    heroURL?: string;
+  heroURL?: string;
 }
 
-// The Header component is a functional component that renders the website's header.
-// It includes a logo, navigation links, a mobile menu toggle, and optionally, a hero image.
 const Header: React.FC<HeaderProps> = (props) => {
   const { heroURL } = props;
-
-  // Mobile Menu set to false by default, once the mobile menu is clicked, then it is set to true.
   const [menu, setMenu] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setMenu(false);
+      }
+    };
+
+    if (menu) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [menu]);
 
   return (
     <>
-      <div className="header">
+      <a href="#main-content" className="skip-link">Skip to main content</a>
+      <header className="header">
         <div className="header-content">
-          <Link to="/">
-            <img className="header-logo" src="/img/logo-dark.webp" alt="Dark Logo" width="166px" height="32px" />
+          <Link to="/" className="header-logo-link">
+            <img
+              className="header-logo"
+              src="/img/logo-dark.webp"
+              alt="ComputingPaths logo"
+              width="166"
+              height="32"
+            />
           </Link>
-          <div className="header-links">
-            {pages.map((page, index) => (<Link to={page.link} key={index}><p className="header-link" key={index}>{page.title}</p></Link>))}
-          </div>
+
+          <nav className="header-links" aria-label="Primary">
+            {pages.map((page, index) => (
+              <Link to={page.link} className="header-link" key={index}>
+                {page.title}
+              </Link>
+            ))}
+          </nav>
+
           <div className="header-mobile">
-            <button className="header-mobile-button" type="button" onClick={() => setMenu(!menu)}><img className="header-mobile-icon" src={HeaderMenu} alt="Mobile Menu" /></button>
+            <button
+              className="header-mobile-button"
+              type="button"
+              onClick={() => setMenu(!menu)}
+              aria-label={menu ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={menu}
+              aria-controls="header-mobile-links"
+            >
+              <img className="header-mobile-icon" src={HeaderMenu} alt="" />
+            </button>
           </div>
         </div>
-        <div className={`header-mobile-links${menu ? ' open' : ''}`}>
-          {pages.map((page, index) => (<Link to={page.link} key={index}><p className="header-link">{page.title}</p></Link>))}
-        </div>
-      </div>
+
+        <nav
+          id="header-mobile-links"
+          className={`header-mobile-links${menu ? ' open' : ''}`}
+          aria-label="Primary"
+          aria-hidden={!menu}
+        >
+          {pages.map((page, index) => (
+            <Link to={page.link} className="header-link" key={index} tabIndex={menu ? 0 : -1}>
+              {page.title}
+            </Link>
+          ))}
+        </nav>
+      </header>
+
       <div className="spacer" />
-      {heroURL && <img className="hero" src={heroURL} alt="Page Hero Divider" />}
+      {heroURL && <img className="hero" src={heroURL} alt="Page divider of heading and body content" />}
     </>
   );
 };

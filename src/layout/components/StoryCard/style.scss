@@ -59,13 +59,31 @@
   }
 
   &-link {
+    align-items: center;
+
+    display: inline-flex;
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+
     &,
     &:link,
     &:visited,
     &:focus,
     &:hover,
-    &:active { // Selectors are needed to override css reset styling
+    &:active {
       @include font-linked-text;
+    }
+
+    &:hover,
+    &:focus-visible {
+      filter: brightness(1.05);
+      transform: scale(1.02);
+    }
+
+    &:focus-visible {
+      border-radius: 4px;
+      outline: 3px solid #00629b;
+      outline-offset: 3px;
     }
 
     &-arrow {
@@ -106,7 +124,7 @@
     }
 
     &-link {
-      display: inline-block;
+      display: inline-flex;
       margin-top: 0.5rem;
     }
   }

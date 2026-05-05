@@ -48,8 +48,22 @@ const ResourcePage: React.FC = () => {
   // State for the current filter tag
   const [filter, setFilter] = useState<string>('');
 
+  useEffect(() => {
+    document.title = 'Resources | Computing Paths';
+  }, []);
+
+  const filteredResourcesCount = resourcesData.filter((resource) => {
+    if (filter === '') return true;
+    const verboseTags = parseList(resource.tags).map((tagCode) => {
+      const tag = resourceTagMap.get(tagCode);
+      return tag ? tag.name : null;
+    });
+    return verboseTags.includes(filter);
+  }).length;
+
   return (
-    <main className="resource-page">
+    <div className="resource-page">
+      <p aria-live="polite" aria-atomic="true" className="sr-only">{filteredResourcesCount} resources shown</p>
       <h1 className="resource-page-title">Resources</h1>
       <p className="resource-page-text">Discover the many resources available at UC San Diego: study spaces, career and research opportunities, and academic support.</p>
       <div className="resource-page-content">
@@ -67,14 +81,14 @@ const ResourcePage: React.FC = () => {
         </div>
         <div className="resource-page-tag-section">
           {/* Tag buttons for filtering resources */}
-          <button className={`resource-page-tag-button${filter === '' ? ' selected' : ''}`} type="button" onClick={() => setFilter('')}>All</button>
+          <button className={`resource-page-tag-button${filter === '' ? ' selected' : ''}`} type="button" aria-pressed={filter === ''} onClick={() => setFilter('')}>All</button>
           {
           resourceTagsData.map((resource, index) => (
-            <button className={`resource-page-tag-button${filter === resource.name ? ' selected' : ''}`} type="button" onClick={() => setFilter(resource.name)} key={index}>{resource.name}</button>
+            <button className={`resource-page-tag-button${filter === resource.name ? ' selected' : ''}`} type="button" aria-pressed={filter === resource.name} onClick={() => setFilter(resource.name)} key={index}>{resource.name}</button>
           ))
         }
         </div>
-        <div className="projects-page-mobile-dropdown">
+        <div className="resource-page-mobile-dropdown">
           {/* Dropdown for mobile tag selection */}
           <Dropdown className="dropdown-root" controlClassName="dropdown-control" arrowClassName="dropdown-arrow" options={resourceTagValues} placeholder="Select a resource category" onChange={(tag) => (tag.value !== 'All' ? setFilter(tag.value) : setFilter(''))} />
         </div>
@@ -108,7 +122,7 @@ const ResourcePage: React.FC = () => {
           })}
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
