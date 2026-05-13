@@ -8,6 +8,10 @@ For a preview of the latest stable development branch, visit [https://computingp
 
 All PRs that are made will also generate a netlify deployment preview, which can be used to share the status of your PR.
 
+yarn run publish
+scp -r build/* cpaths@computingpaths.ucsd.edu:/var/www/cpaths/htdocs
+s
+
 ## Style and Conventions
 
 Please make your branch names follow the format `yourname/whatyourworkingon`. For example, if I'm going to be updating the stories page, I'd make my branch called `ronak/update-stories-page`.
