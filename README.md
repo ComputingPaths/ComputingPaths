@@ -9,8 +9,7 @@ For a preview of the latest stable development branch, visit [https://computingp
 All PRs that are made will also generate a netlify deployment preview, which can be used to share the status of your PR.
 
 yarn run publish
-scp -r build/* cpaths@computingpaths.ucsd.edu:/var/www/cpaths/htdocs
-s
+scp -r build/* cpaths@mywebsite.eng.ucsd.edu:/var/www/cpaths/htdocs
 
 ## Style and Conventions
 
